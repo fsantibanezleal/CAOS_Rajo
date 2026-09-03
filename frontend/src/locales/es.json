@@ -70,6 +70,21 @@
       "categories": "Categorías",
       "seed": "Semilla (lon, lat)",
       "frames": "Cuadros"
+    },
+    "production": {
+      "title": "Produccion de cobre de mina por pais",
+      "lede": "Donde se ubican los sitios de cobre en el cuadro mundial: produccion de mina en miles de toneladas metricas de cobre contenido, 2025 estimado por el USGS, junto a la cifra que la oficina de estadisticas de Chile reporto para el mismo ano.",
+      "columns": {
+        "country": "Pais",
+        "sites": "Sitios de cobre aqui",
+        "mine2024": "Mina 2024 (kt)",
+        "mine2025": "Mina 2025e (kt)",
+        "reported2025": "Reportado 2025 (kt)",
+        "reserves": "Reservas (kt)"
+      },
+      "other": "Otros paises (entre ellos Mongolia, Brasil, Panama, Uzbekistan)",
+      "world": "Total mundial (redondeado)",
+      "note": "Transcrito de U.S. Geological Survey, Mineral Commodity Summaries 2026, Copper (febrero de 2026), y de la produccion de cobre de mina por empresa de Cochilco (libro 1960 a 2025). La columna USGS 2025 es una estimacion; la columna Cochilco es el total nacional reportado."
     }
   },
   "methods": {

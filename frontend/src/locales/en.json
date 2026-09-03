@@ -70,6 +70,21 @@
       "categories": "Categories",
       "seed": "Seed (lon, lat)",
       "frames": "Frames"
+    },
+    "production": {
+      "title": "Copper mine production by country",
+      "lede": "Where the copper sites sit in the world picture: mine production in thousand metric tons of copper content, 2025 estimated by the USGS, next to the figure Chile's statistics office reported for the same year.",
+      "columns": {
+        "country": "Country",
+        "sites": "Copper sites here",
+        "mine2024": "Mine 2024 (kt)",
+        "mine2025": "Mine 2025e (kt)",
+        "reported2025": "Reported 2025 (kt)",
+        "reserves": "Reserves (kt)"
+      },
+      "other": "Other countries (Mongolia, Brazil, Panama, Uzbekistan among them)",
+      "world": "World total (rounded)",
+      "note": "Transcribed from U.S. Geological Survey, Mineral Commodity Summaries 2026, Copper (February 2026), and from Cochilco's copper mine production by company (workbook 1960 to 2025). The USGS 2025 column is an estimate; the Cochilco column is the reported national total."
     }
   },
   "methods": {

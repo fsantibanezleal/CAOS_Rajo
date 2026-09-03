@@ -24,8 +24,9 @@ test('the Data page lists the sources, the facts, the contracts and the catalog 
   const errors = collectErrors(page);
   await gotoRajo(page, '/data');
   await expect(page.getByTestId('data-page')).toBeVisible();
-  for (const g of ['imagery', 'elevation', 'footprints', 'basemaps']) await expect(page.getByTestId(`sources-${g}`)).toBeVisible();
-  expect(await page.locator('[data-testid^="sources-"] tbody tr').count()).toBeGreaterThanOrEqual(10);
+  for (const g of ['imagery', 'elevation', 'footprints', 'basemaps', 'context']) await expect(page.getByTestId(`sources-${g}`)).toBeVisible();
+  expect(await page.locator('[data-testid^="sources-"] tbody tr').count()).toBeGreaterThanOrEqual(14);
+  await expect(page.getByTestId('sources-context')).toContainText('Cochilco');
   await expect(page.getByTestId('catalog-summary')).toBeVisible({ timeout: 60_000 });
   expect(await page.locator('[data-testid="catalog-summary"] tbody tr').count()).toBeGreaterThanOrEqual(30);
   await expect(page.getByTestId('attribution-table')).toContainText('EOX IT Services GmbH');
@@ -72,5 +73,27 @@ test('the About page and the architecture modal (five bilingual diagrams) work i
   await page.keyboard.press('Escape');
   await expect(page.getByTestId('arch-modal')).toHaveCount(0);
   await page.getByTestId('lang-btn').click();
+  expectNoErrors(errors);
+});
+
+test('the Atlas prints the copper production strip from the USGS and Cochilco tables in both languages', async ({ page }) => {
+  const errors = collectErrors(page);
+  await gotoRajo(page, '/atlas');
+  await expect(page.getByTestId('atlas-table')).toBeVisible({ timeout: 60_000 });
+  const strip = page.getByTestId('atlas-production');
+  await expect(strip).toBeVisible();
+  expect(await strip.locator('tbody tr').count()).toBeGreaterThanOrEqual(11); // nine countries, other, world
+  const chile = strip.locator('tbody tr').filter({ hasText: 'CHL' });
+  await expect(chile).toContainText('5,510');
+  await expect(chile).toContainText('5,300');
+  await expect(chile).toContainText('5,415 (Cochilco)');
+  await expect(chile).toContainText('180,000');
+  // the site counts come from the catalog: Chile hosts the copper-chile group
+  const chileSites = Number((await chile.locator('td').nth(1).textContent()) ?? '0');
+  expect(chileSites).toBeGreaterThanOrEqual(10);
+  await expect(strip.locator('tbody tr').last()).toContainText('23,000');
+  await page.getByTestId('lang-btn').click();
+  await expect(strip.locator('thead')).toContainText('Pais');
+  await expect(page.locator('#copper-by-country')).toContainText('Produccion de cobre de mina por pais');
   expectNoErrors(errors);
 });

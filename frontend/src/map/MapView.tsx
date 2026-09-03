@@ -1,6 +1,6 @@
 // The map: MapLibre GL JS with the Rajo style (imagery + hillshade + labels), a globe at low zoom, 3D
 // terrain from the terrarium DEM, and a cursor readout (lon, lat, elevation). The map instance is exposed
-// through a callback so the observatory can drive it (fly to a site, add deck.gl overlays).
+// through a callback so the observatory can drive it (fly to a site, add image and raster overlays).
 import { Map as MLMap, setWorkerUrl } from 'maplibre-gl';
 import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';

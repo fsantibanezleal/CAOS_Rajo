@@ -15,9 +15,6 @@
     "preview": "vite preview --port 4901 --strictPort"
   },
   "dependencies": {
-    "@deck.gl/core": "^9.3.11",
-    "@deck.gl/layers": "^9.3.11",
-    "@deck.gl/mapbox": "^9.3.11",
     "geotiff": "^3.0.5",
     "i18next": "^26.4.1",
     "katex": "^0.18.5",

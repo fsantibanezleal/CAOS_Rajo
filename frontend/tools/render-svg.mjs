@@ -75,7 +75,7 @@ for (const file of files) {
         console.log(`OUT OF VIEWBOX in ${basename(file)} [${theme}/${lang}]: ${report.outOf.slice(0, 6).join(' | ')}`);
         problems++;
       }
-      console.log(`${basename(file)} ${theme}/${lang}: ${report.n} text nodes, ${report.outOf.length} out of viewBox -> ${png}`);
+      console.log(`${basename(file)} ${theme}/${lang}: ${report.n} text nodes, ${report.outOf.length} out of viewBox, png at ${png}`);
     }
   }
 }

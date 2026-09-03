@@ -178,6 +178,11 @@ export function Observatory() {
       const lab = liveLayer.result.labels[i];
       return lab === undefined || lab === 255 ? null : `cluster ${lab + 1}`;
     }
+    if (liveLayer.kind === 'rf' || liveLayer.kind === 'unet') {
+      const p = liveLayer.result.values[i];
+      const inMask = liveLayer.result.mask[i] === 1;
+      return `p(mine) ${p !== undefined && Number.isFinite(p) ? p.toFixed(3) : '-'} ${inMask ? '(in mask)' : ''}`;
+    }
     return null;
   }, [cursor, liveLayer, liveGrid, t]);
 

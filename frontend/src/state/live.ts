@@ -8,14 +8,22 @@ import { liveGrid, type LiveRead, readGroup, type ReadGrid } from '../lib/cog';
 import type { SiteWindow } from '../lib/contract';
 import type { IndexName } from '../lib/indices';
 import { type S2DateGroup, searchSentinel2 } from '../lib/stac';
-import type { IndexResult, KmeansResult, MaskResult, RequestBody, Response } from '../workers/indices.worker';
+import type { IndexResult, KmeansResult, LearnedResult, MaskResult, RequestBody, Response } from '../workers/indices.worker';
 
 export type LiveLayer =
   | { kind: 'composite'; composite: 'tc' | 'fc' | 'swir'; rgba: Uint8ClampedArray; clips: [number, number][] }
   | { kind: 'index'; result: IndexResult; cmap: ColormapName }
   | { kind: 'otsu'; result: MaskResult }
   | { kind: 'sam'; result: MaskResult }
-  | { kind: 'kmeans'; result: KmeansResult };
+  | { kind: 'kmeans'; result: KmeansResult }
+  | { kind: 'rf'; result: LearnedResult }
+  | { kind: 'unet'; result: LearnedResult };
+
+// the shipped models, served from /models/ (copy-data.mjs copies ../models there)
+export const MODEL_URLS = {
+  rf: `${import.meta.env.BASE_URL}models/rf/rf-v1.onnx`,
+  unet: `${import.meta.env.BASE_URL}models/unet/unet-v1.onnx`,
+} as const;
 
 export interface LiveState {
   status: 'idle' | 'searching' | 'reading' | 'ready' | 'error';
@@ -34,6 +42,10 @@ export interface LiveState {
   otsu: (threshold?: number) => Promise<void>;
   kmeans: (k: number) => Promise<void>;
   sam: (angleRad: number, endmemberMask?: Uint8Array) => Promise<void>;
+  learnedProgress: { done: number; total: number; note: string } | null;
+  learnedError: string | null;
+  rf: (threshold: number) => Promise<void>;
+  unet: (threshold: number, scale: 1 | 2, prefer?: 'webgpu' | 'wasm' | 'auto') => Promise<void>;
   clear: () => void;
 }
 
@@ -45,6 +57,10 @@ function getWorker(): Worker {
   if (!worker) {
     worker = new Worker(new URL('../workers/indices.worker.ts', import.meta.url), { type: 'module' });
     worker.onmessage = (ev: MessageEvent<Response>) => {
+      if (ev.data.type === 'progress') {
+        useLive.setState({ learnedProgress: { done: ev.data.done, total: ev.data.total, note: ev.data.note } });
+        return;
+      }
       const p = pending.get(ev.data.reqId);
       if (!p) return;
       pending.delete(ev.data.reqId);
@@ -160,8 +176,33 @@ export const useLive = create<LiveState>((set, get) => ({
     set({ layer: { kind: 'sam', result: r }, busy: false });
   },
 
+  learnedProgress: null,
+  learnedError: null,
+
+  rf: async (threshold) => {
+    if (get().status !== 'ready') return;
+    set({ busy: true, learnedProgress: { done: 0, total: 1, note: 'rf' }, learnedError: null });
+    try {
+      const r = (await ask({ type: 'rf', modelUrl: MODEL_URLS.rf, threshold })) as LearnedResult;
+      set({ layer: { kind: 'rf', result: r }, busy: false, learnedProgress: null });
+    } catch (e) {
+      set({ busy: false, learnedProgress: null, learnedError: e instanceof Error ? e.message : String(e) });
+    }
+  },
+
+  unet: async (threshold, scale, prefer = 'auto') => {
+    if (get().status !== 'ready') return;
+    set({ busy: true, learnedProgress: { done: 0, total: 1, note: 'unet' }, learnedError: null });
+    try {
+      const r = (await ask({ type: 'unet', modelUrl: MODEL_URLS.unet, threshold, scale, prefer })) as LearnedResult;
+      set({ layer: { kind: 'unet', result: r }, busy: false, learnedProgress: null });
+    } catch (e) {
+      set({ busy: false, learnedProgress: null, learnedError: e instanceof Error ? e.message : String(e) });
+    }
+  },
+
   clear: () => {
     abort?.abort();
-    set({ status: 'idle', message: '', groups: [], group: null, read: null, grid: null, layer: null, progress: 0 });
+    set({ status: 'idle', message: '', groups: [], group: null, read: null, grid: null, layer: null, progress: 0, learnedProgress: null, learnedError: null });
   },
 }));

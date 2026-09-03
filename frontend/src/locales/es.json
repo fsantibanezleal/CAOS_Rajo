@@ -166,7 +166,22 @@
       "endmemberRef": "Miembro final: espectro medio de los polígonos mineros de referencia en esta escena.",
       "endmemberBare": "Miembro final: el cuartil más brillante de suelo desnudo de esta escena (sin polígonos de referencia en la grilla)."
     },
-    "findNote": "Estas son delineaciones clásicas de suelo intervenido en una escena, no de mineral. Los modelos aprendidos llegan con la siguiente unidad."
+    "findNote": "Delineaciones clasicas de suelo alterado sobre una escena, y dos aprendidas; ninguna es mineral. Las areas se comparan con los poligonos de referencia cuando el sitio los tiene.",
+    "learned": {
+      "title": "Delineacion aprendida",
+      "text": "Dos modelos entrenados fuera de linea con las teselas de Jasansky et al. 2024 corren aqui sobre la misma escena: un bosque aleatorio sobre dieciseis atributos por pixel y una U-Net sobre las seis bandas. Este sitio nunca estuvo en su conjunto de entrenamiento.",
+      "rf": "Bosque aleatorio",
+      "unet": "U-Net",
+      "grid": "Grilla",
+      "threshold": "Umbral de probabilidad",
+      "running": "Ejecutando",
+      "windows": "ventanas",
+      "coarse": "grilla gruesa",
+      "trained": "entrenado",
+      "heldOut": "Teselas de prueba no vistas",
+      "neverSeen": "Todos los sitios del catalogo quedaron fuera del entrenamiento y la validacion, asi que este numero no es dentro de muestra.",
+      "missing": "Esta compilacion no incluye archivos de modelos."
+    }
   },
   "indices": {
     "groups": {

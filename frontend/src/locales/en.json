@@ -166,7 +166,22 @@
       "endmemberRef": "Endmember: mean spectrum of the reference mining polygons on this scene.",
       "endmemberBare": "Endmember: the brightest bare quartile of this scene (no reference polygons on the grid)."
     },
-    "findNote": "These are classical delineations of disturbed land on one scene, not ore. The learned models arrive with the next unit."
+    "findNote": "Classical delineations of disturbed land on one scene, and two learned ones; none of them is ore. Areas are compared with the reference polygons when the site has them.",
+    "learned": {
+      "title": "Learned delineation",
+      "text": "Two models trained offline on the Jasansky et al. 2024 tiles run here on the same scene: a random forest on sixteen per-pixel features, and a U-Net on the six bands. This site was never in their training set.",
+      "rf": "Random forest",
+      "unet": "U-Net",
+      "grid": "Grid",
+      "threshold": "Probability threshold",
+      "running": "Running",
+      "windows": "windows",
+      "coarse": "coarse grid",
+      "trained": "trained",
+      "heldOut": "Held-out test tiles",
+      "neverSeen": "Every catalog site was held out of training and validation, so this number is not in-sample.",
+      "missing": "No model files are shipped with this build."
+    }
   },
   "indices": {
     "groups": {

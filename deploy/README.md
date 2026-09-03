@@ -2,6 +2,10 @@
 
 Rajo is a static site (`vps-static`): nginx serves the built `frontend/dist` from the web root
 `/var/www/rajo.fasl-work.com/`. There is no backend, no port, no systemd unit and no environment file.
+The build overlays three trees into `dist/`: `data/` (the committed `data/derived`), `models/` (the ONNX
+files and their registry and benchmark JSON from `../models`) and `ort/` (the onnxruntime-web WASM
+runtime, loaded only when a learned method runs). Releases live under `/var/www/rajo.fasl-work.com.releases/`
+and the web root is a symlink swapped atomically; the last three releases are kept.
 
 | File | Purpose |
 |---|---|

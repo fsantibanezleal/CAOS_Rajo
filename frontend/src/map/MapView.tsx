@@ -41,6 +41,9 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     if (!webgl || !el.current) return;
     let cancelled = false;
     let created: MLMap | null = null;
+    // a style.load or load event delivered after the map was removed (a route change while the style
+    // is still arriving) must not touch the painter
+    const alive = () => !cancelled;
     void buildStyle(useUI.getState().theme).then(({ style }) => {
       if (cancelled || !el.current) return;
       const m = new MLMap({
@@ -60,11 +63,14 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
       created = m;
       mapRef.current = m;
       m.on('style.load', () => {
-        m.setProjection({ type: 'globe' });
+        if (!alive()) return;
+        // the globe projection is declared in the style itself (buildStyle); only terrain and labels follow
         if (propsRef.current.terrain) m.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
         setLabelVisibility(m, propsRef.current.labels);
       });
-      m.on('load', () => propsRef.current.onMap?.(m));
+      m.on('load', () => {
+        if (alive()) propsRef.current.onMap?.(m);
+      });
       m.on('dataloading', () => propsRef.current.onStatus?.(true));
       m.on('idle', () => propsRef.current.onStatus?.(false));
       m.on('mousemove', (e) => {

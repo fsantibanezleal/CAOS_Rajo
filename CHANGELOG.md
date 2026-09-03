@@ -34,6 +34,15 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
   surface range, Copernicus coverage, change only where both surfaces answer); tiles that are not PNG
   (a static host answers a missing tile with the SPA page) are treated as missing; the cursor elevation
   readout divides out the terrain exaggeration.
+- Theme swap with terrain on: the terrain is dropped before the style is replaced and restored on the
+  new style's load (MapLibre's depth pass otherwise ran against a style without a projection).
+- Site facts re-sourced: the Chilean copper cards carry Cochilco's by-company tonnages for 2024 and
+  2025 and the first year with reported production; the cards outside Chile cite the operators' pages
+  and filings (Freeport-McMoRan, MMG, Antamina, Rio Tinto, Ivanhoe Mines, PGE GiEK); two cards keep
+  attributed pages where the operator is unreachable; unsourced wordings dropped. The Data page and
+  docs/data/01_sources.md list the production tables and disclosures as a source group.
+- Atlas: copper mine production by country (USGS Mineral Commodity Summaries 2026, 2024 and 2025
+  estimated, reserves) next to Cochilco's reported 2025 total for Chile and the catalog's site counts.
 - Parallel frame workers on disjoint site lists into one sandbox root, and the harvest that moves
   complete sites into the canonical tree and runs export and validate.
 - Signal lane, offline: the masks stage (one mask per baked frame and method on the 30 m grid, scored

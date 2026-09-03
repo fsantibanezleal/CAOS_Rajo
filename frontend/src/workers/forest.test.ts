@@ -37,21 +37,21 @@ describe('the flat-array forest', () => {
     expect(f.offsets[0]).toBe(0);
     expect(f.feature.length).toBe(f.nNodes);
     expect(f.threshold.length).toBe(f.nNodes);
-    // every leaf carries a probability, every inner node a feature index inside the stack
+    // every leaf carries a probability, every inner node a feature index inside the stack (counted in
+    // one pass: 247k nodes with an expect() each ran past the 5 s test budget on a loaded machine)
     let leaves = 0;
+    let badLeaf = 0;
+    let badInner = 0;
     for (let i = 0; i < f.nNodes; i++) {
-      const isLeaf = f.feature[i]! < 0;
-      if (isLeaf) {
+      if (f.feature[i]! < 0) {
         leaves++;
-        expect(f.left[i]).toBe(-1);
-        expect(f.value[i]).toBeGreaterThanOrEqual(0);
-        expect(f.value[i]).toBeLessThanOrEqual(1);
-      } else {
-        expect(f.feature[i]).toBeLessThan(f.nFeatures);
-        expect(f.left[i]).toBeGreaterThan(i);
-        expect(f.right[i]).toBeGreaterThan(i);
+        if (f.left[i] !== -1 || !(f.value[i]! >= 0 && f.value[i]! <= 1)) badLeaf++;
+      } else if (f.feature[i]! >= f.nFeatures || f.left[i]! <= i || f.right[i]! <= i) {
+        badInner++;
       }
     }
+    expect(badLeaf).toBe(0);
+    expect(badInner).toBe(0);
     expect(leaves).toBeGreaterThan(f.nTrees);
   });
 

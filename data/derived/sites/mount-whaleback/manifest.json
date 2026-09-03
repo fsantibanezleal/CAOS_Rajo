@@ -18,7 +18,13 @@
    "start_month": 4,
    "end_month": 9
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Tourism Western Australia describes Mt Whaleback, west of Newman, as the world's largest single open-cut iron ore mine; the deposit was discovered in 1957 by prospector Stan Hilditch (Tourism Western Australia).",
+    "text_es": "Tourism Western Australia describe Mt Whaleback, al oeste de Newman, como la mina de hierro a rajo abierto de un solo tajo mas grande del mundo; el deposito fue descubierto en 1957 por el prospector Stan Hilditch (Tourism Western Australia).",
+    "source": "https://www.westernaustralia.com/en/tour/bhp-mt-whaleback-mine-tour/61c141b7bf193ff117783d99"
+   }
+  ],
   "commodity": "iron ore",
   "operator": "BHP",
   "flags": [],

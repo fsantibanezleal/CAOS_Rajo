@@ -20,9 +20,19 @@
   },
   "facts": [
    {
-    "text_en": "Cerro Verde produced 193,320 tonnes of copper in the first half of 2025.",
-    "text_es": "Cerro Verde produjo 193.320 toneladas de cobre en el primer semestre de 2025.",
-    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+    "text_en": "Cerro Verde is an open-pit copper and molybdenum complex about 20 miles southwest of Arequipa; Freeport-McMoRan holds 55.08%, SMM Cerro Verde Netherlands 21% and Compania de Minas Buenaventura 19.58% (Freeport-McMoRan).",
+    "text_es": "Cerro Verde es un complejo de cobre y molibdeno a rajo abierto a unos 32 km al suroeste de Arequipa; Freeport-McMoRan posee 55,08%, SMM Cerro Verde Netherlands 21% y Compania de Minas Buenaventura 19,58% (Freeport-McMoRan).",
+    "source": "https://www.fcx.com/operations/south-america"
+   },
+   {
+    "text_en": "The large-scale expansion completed in September 2015 took the concentrator from 120,000 to 360,000 tonnes of ore per day; a 2018 permit allows up to 409,500 tonnes per day (Freeport-McMoRan).",
+    "text_es": "La expansion a gran escala completada en septiembre de 2015 llevo el concentrador de 120.000 a 360.000 toneladas de mineral por dia; un permiso de 2018 autoriza hasta 409.500 toneladas por dia (Freeport-McMoRan).",
+    "source": "https://www.fcx.com/operations/south-america"
+   },
+   {
+    "text_en": "Cerro Verde produced 863 million recoverable pounds of copper in 2025 (about 391 thousand tonnes), down from 949 million in 2024, milling 407,900 tonnes of ore per day (Freeport-McMoRan, fourth-quarter and year 2025 results, 22 January 2026).",
+    "text_es": "Cerro Verde produjo 863 millones de libras recuperables de cobre en 2025 (unas 391 mil toneladas), desde 949 millones en 2024, moliendo 407.900 toneladas de mineral por dia (Freeport-McMoRan, resultados del cuarto trimestre y ano 2025, 22 de enero de 2026).",
+    "source": "https://www.sec.gov/Archives/edgar/data/831259/000083125926000006/a4q2025exhibit991.htm"
    }
   ],
   "commodity": "copper",

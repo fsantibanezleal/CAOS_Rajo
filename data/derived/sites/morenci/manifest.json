@@ -18,7 +18,18 @@
    "start_month": 4,
    "end_month": 6
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Morenci is an open-pit copper mining complex in continuous operation since 1939 in Greenlee County, Arizona; the 2015 mill expansion took the concentrator from 50,000 to about 115,000 tonnes of ore per day (Freeport-McMoRan).",
+    "text_es": "Morenci es un complejo minero de cobre a rajo abierto en operacion continua desde 1939 en el condado de Greenlee, Arizona; la expansion de la planta de 2015 llevo el concentrador de 50.000 a cerca de 115.000 toneladas de mineral por dia (Freeport-McMoRan).",
+    "source": "https://www.fcx.com/operations/north-america"
+   },
+   {
+    "text_en": "Ownership: 72% Freeport-McMoRan, 15% Sumitomo Metal Mining Arizona and 13% SMM Morenci; the complex produces copper and molybdenum concentrates and copper cathode from electrowinning (Freeport-McMoRan).",
+    "text_es": "Propiedad: 72% Freeport-McMoRan, 15% Sumitomo Metal Mining Arizona y 13% SMM Morenci; el complejo produce concentrados de cobre y molibdeno y catodos de cobre por electroobtencion (Freeport-McMoRan).",
+    "source": "https://www.fcx.com/operations/north-america"
+   }
+  ],
   "commodity": "copper",
   "operator": "Freeport-McMoRan",
   "flags": [],

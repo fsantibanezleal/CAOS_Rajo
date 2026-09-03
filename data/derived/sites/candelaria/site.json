@@ -15,7 +15,13 @@
    "start_month": 11,
    "end_month": 3
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Candelaria produced 125,182 tonnes of fine copper in 2025 and 142,066 tonnes in 2024; its first year with reported production is 1994 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Candelaria produjo 125.182 toneladas de cobre fino en 2025 y 142.066 toneladas en 2024; su primer ano con produccion reportada es 1994 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
+   }
+  ],
   "commodity": "copper",
   "operator": "Lundin Mining",
   "flags": [],

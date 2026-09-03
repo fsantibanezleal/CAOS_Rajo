@@ -18,7 +18,13 @@
    "start_month": 6,
    "end_month": 8
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Open-pit mining at the Udachnaya pipe ended in 2015 at a depth of 640 m, ALROSA's largest open pit; the underground mine was targeted at 4 million tonnes of ore per year from 2019 (IDEX Online reporting ALROSA's statements, 27 July 2015).",
+    "text_es": "La explotacion a rajo abierto de la chimenea Udachnaya termino en 2015 a 640 m de profundidad, el rajo mas grande de ALROSA; la mina subterranea se proyecto a 4 millones de toneladas de mineral por ano desde 2019 (IDEX Online reportando declaraciones de ALROSA, 27 de julio de 2015).",
+    "source": "https://www.idexonline.com/FullArticle?Id=40952"
+   }
+  ],
   "commodity": "diamonds",
   "operator": "Alrosa",
   "flags": [],

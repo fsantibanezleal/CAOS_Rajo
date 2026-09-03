@@ -20,9 +20,9 @@
   },
   "facts": [
    {
-    "text_en": "Radomiro Tomic and Ministro Hales together lifted their output by 56 thousand tonnes in 2025, while Chuquicamata declined.",
-    "text_es": "Radomiro Tomic y Ministro Hales elevaron su produccion en 56 mil toneladas en 2025, mientras Chuquicamata bajo.",
-    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+    "text_en": "Radomiro Tomic produced 295,298 tonnes of fine copper in 2025 and 270,479 tonnes in 2024; its first year with reported production is 1997 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Radomiro Tomic produjo 295.298 toneladas de cobre fino en 2025 y 270.479 toneladas en 2024; su primer ano con produccion reportada es 1997 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
    }
   ],
   "commodity": "copper",

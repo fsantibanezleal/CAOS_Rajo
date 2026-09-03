@@ -120,7 +120,8 @@
         "imagery": "Satellite imagery",
         "elevation": "Elevation",
         "footprints": "Mining footprints and training data",
-        "basemaps": "Basemaps and labels"
+        "basemaps": "Basemaps and labels",
+        "context": "Production tables and operator disclosures (the site facts)"
       },
       "columns": {
         "source": "Source",

@@ -18,7 +18,13 @@
    "start_month": 12,
    "end_month": 3
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Anglo American Sur, the Cochilco reporting unit that covers Los Bronces and El Soldado, produced 207,207 tonnes of fine copper in 2025 and 220,615 tonnes in 2024 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Anglo American Sur, la unidad de reporte de Cochilco que cubre Los Bronces y El Soldado, produjo 207.207 toneladas de cobre fino en 2025 y 220.615 toneladas en 2024 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
+   }
+  ],
   "commodity": "copper",
   "operator": "Anglo American",
   "flags": [],

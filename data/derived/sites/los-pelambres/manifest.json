@@ -20,9 +20,9 @@
   },
   "facts": [
    {
-    "text_en": "Los Pelambres reported lower production in 2025, one of the operations behind the national decline.",
-    "text_es": "Los Pelambres reporto menor produccion en 2025, una de las faenas detras de la caida nacional.",
-    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+    "text_en": "Los Pelambres produced 305,873 tonnes of fine copper in 2025 and 331,228 tonnes in 2024; its first year with reported production is 1999 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Los Pelambres produjo 305.873 toneladas de cobre fino en 2025 y 331.228 toneladas en 2024; su primer ano con produccion reportada es 1999 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
    }
   ],
   "commodity": "copper",

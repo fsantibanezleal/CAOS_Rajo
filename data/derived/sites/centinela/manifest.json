@@ -18,7 +18,13 @@
    "start_month": 11,
    "end_month": 3
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Centinela produced 174,323 tonnes of fine copper from sulphides and 66,124 tonnes from oxides in 2025 (121,839 and 102,003 tonnes in 2024); the oxide line reports production since 2001 and the sulphide line since 2011 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Centinela produjo 174.323 toneladas de cobre fino desde sulfuros y 66.124 toneladas desde oxidos en 2025 (121.839 y 102.003 toneladas en 2024); la linea de oxidos reporta produccion desde 2001 y la de sulfuros desde 2011 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
+   }
+  ],
   "commodity": "copper",
   "operator": "Antofagasta Minerals",
   "flags": [],

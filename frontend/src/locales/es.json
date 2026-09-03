@@ -120,7 +120,8 @@
         "imagery": "Imagenes satelitales",
         "elevation": "Elevacion",
         "footprints": "Huellas mineras y datos de entrenamiento",
-        "basemaps": "Mapas base y etiquetas"
+        "basemaps": "Mapas base y etiquetas",
+        "context": "Tablas de produccion y divulgaciones de operadores (los hechos de cada sitio)"
       },
       "columns": {
         "source": "Fuente",

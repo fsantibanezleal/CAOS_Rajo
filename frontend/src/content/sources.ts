@@ -3,7 +3,7 @@
 // a static page; "no" means the offline bake reads it. Both languages live here.
 import type { Lang } from './methods';
 
-export type SourceGroup = 'imagery' | 'elevation' | 'footprints' | 'basemaps';
+export type SourceGroup = 'imagery' | 'elevation' | 'footprints' | 'basemaps' | 'context';
 
 export interface SourceRow {
   id: string;
@@ -118,5 +118,46 @@ export const SOURCES: SourceRow[] = [
     access: { en: 'tiles.openfreemap.org, no key, no request limits', es: 'tiles.openfreemap.org, sin clave, sin limites de peticiones' },
     browser: 'yes',
     licence: { en: 'Attribution "OpenFreeMap (c) OpenMapTiles Data from OpenStreetMap"', es: 'Atribucion "OpenFreeMap (c) OpenMapTiles Data from OpenStreetMap"' },
+  },
+  // the site facts: two primary production tables and the operators' own disclosures (research-08)
+  {
+    id: 'usgs-mcs-2026',
+    group: 'context',
+    name: 'U.S. Geological Survey, Mineral Commodity Summaries 2026, Copper (February 2026)',
+    url: 'https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf',
+    role: { en: 'World mine production 2024 and 2025 (estimated) and reserves by country, thousand metric tons of copper content; the country context on the Atlas', es: 'Produccion mundial de mina 2024 y 2025 (estimada) y reservas por pais, miles de toneladas metricas de cobre contenido; el contexto por pais en el Atlas' },
+    access: { en: 'PDF; the server refuses non-browser clients', es: 'PDF; el servidor rechaza clientes que no son navegadores' },
+    browser: 'no',
+    licence: { en: 'Public domain, cite USGS', es: 'Dominio publico, citar USGS' },
+  },
+  {
+    id: 'cochilco-by-company',
+    group: 'context',
+    name: 'Cochilco, Produccion Chilena de Cobre de Mina por Empresa, annual workbook 1960 to 2025',
+    url: 'https://www.cochilco.cl/web/historico-produccion-de-cobre-y-molibdeno/',
+    role: { en: 'Fine copper per operation for 2024 and 2025 and the first year with reported production on the eleven Chilean copper cards (Los Bronces is reported inside Anglo American Sur)', es: 'Cobre fino por operacion para 2024 y 2025 y el primer ano con produccion reportada en las once fichas chilenas de cobre (Los Bronces se reporta dentro de Anglo American Sur)' },
+    access: { en: 'XLSX download, unit "Miles TM" (thousand metric tons)', es: 'Descarga XLSX, unidad "Miles TM" (miles de toneladas metricas)' },
+    browser: 'no',
+    licence: { en: 'Chilean government statistics, cite Cochilco', es: 'Estadisticas del gobierno de Chile, citar Cochilco' },
+  },
+  {
+    id: 'operator-disclosures',
+    group: 'context',
+    name: 'Operator disclosures: Freeport-McMoRan, MMG, Antamina, Rio Tinto (SEC 6-K), Ivanhoe Mines, PGE GiEK',
+    url: 'https://www.sec.gov/Archives/edgar/data/0000863064/000086306426000006/ex1_2025-q4results.htm',
+    role: { en: 'Per-mine facts outside Chile: ownership, mining method, expansions, 2025 production (Las Bambas, Oyu Tolgoi, Kamoa-Kakula), the end of open-pit mining at Grasberg, the Belchatow fields', es: 'Hechos por mina fuera de Chile: propiedad, metodo de explotacion, expansiones, produccion 2025 (Las Bambas, Oyu Tolgoi, Kamoa-Kakula), el fin del rajo en Grasberg, los campos de Belchatow' },
+    access: { en: 'Company pages, listing announcements and SEC filings; each card links the exact page', es: 'Paginas corporativas, anuncios a la bolsa y presentaciones a la SEC; cada ficha enlaza la pagina exacta' },
+    browser: 'no',
+    licence: { en: 'Public disclosures, quoted with attribution', es: 'Divulgaciones publicas, citadas con atribucion' },
+  },
+  {
+    id: 'attributed-press',
+    group: 'context',
+    name: 'Attributed pages where the operator is unreachable: Tourism Western Australia (Mt Whaleback), IDEX Online (Udachnaya)',
+    url: 'https://www.idexonline.com/FullArticle?Id=40952',
+    role: { en: 'Two facts whose operator pages sit behind a bot wall (bhp.com) or no longer resolve (eng.alrosa.ru); the card names the outlet in the text', es: 'Dos hechos cuyas paginas del operador estan tras un muro anti-bots (bhp.com) o ya no resuelven (eng.alrosa.ru); la ficha nombra el medio en el texto' },
+    access: { en: 'Public web pages', es: 'Paginas web publicas' },
+    browser: 'no',
+    licence: { en: 'Quoted with attribution; to be replaced by the operator page when reachable', es: 'Citadas con atribucion; a reemplazar por la pagina del operador cuando sea alcanzable' },
   },
 ];

@@ -17,9 +17,14 @@
   },
   "facts": [
    {
-    "text_en": "Antamina produced 368 thousand tonnes of copper in 2024, ninth among the world's copper mines.",
-    "text_es": "Antamina produjo 368 mil toneladas de cobre en 2024, novena entre las minas de cobre del mundo.",
-    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+    "text_en": "Antamina sits at an average altitude of 4,300 m in the San Marcos district, Huari province, Ancash, 200 km from Huaraz, and produces copper, zinc, molybdenum, silver and lead concentrates; BHP 33.75%, Glencore 33.75%, Teck 22.5%, Mitsubishi 10% (Antamina).",
+    "text_es": "Antamina esta a una altitud promedio de 4.300 m en el distrito de San Marcos, provincia de Huari, Ancash, a 200 km de Huaraz, y produce concentrados de cobre, zinc, molibdeno, plata y plomo; BHP 33,75%, Glencore 33,75%, Teck 22,5%, Mitsubishi 10% (Antamina).",
+    "source": "https://www.antamina.com/quienes-somos/"
+   },
+   {
+    "text_en": "Antamina describes itself as one of the ten largest mines in the world by production volume; in 2025 it led Peruvian exporters with US$ 3,916 million FOB, 5.45% of Peru's exports (Antamina, citing ADEX Data Trade, 16 December 2025).",
+    "text_es": "Antamina se describe como una de las diez minas mas grandes del mundo por volumen de produccion; en 2025 lidero las exportaciones peruanas con US$ 3.916 millones FOB, el 5,45% de las exportaciones del Peru (Antamina, citando ADEX Data Trade, 16 de diciembre de 2025).",
+    "source": "https://www.antamina.com/noticias/antamina-lidera-exportaciones-peruanas-2025-consolida-aporte-anio-record-comercio-exterior/"
    }
   ],
   "commodity": "copper, zinc",

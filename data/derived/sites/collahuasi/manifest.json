@@ -20,9 +20,9 @@
   },
   "facts": [
    {
-    "text_en": "Collahuasi reported lower production in 2025 within a national output of 5,415,271 tonnes, down 1.6% from 2024.",
-    "text_es": "Collahuasi reporto menor produccion en 2025 dentro de una produccion nacional de 5.415.271 toneladas, 1,6% menos que en 2024.",
-    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+    "text_en": "Collahuasi produced 406,016 tonnes of fine copper in 2025 and 558,611 tonnes in 2024; its first year with reported production is 1998 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Collahuasi produjo 406.016 toneladas de cobre fino en 2025 y 558.611 toneladas en 2024; su primer ano con produccion reportada es 1998 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
    }
   ],
   "commodity": "copper",

@@ -1,4 +1,4 @@
-# Rajo: launch the canonical bake DETACHED from the calling shell.
+# Rajo: launch a bake DETACHED from the calling shell.
 #
 # Two launcher defects this avoids, both of which cost full runs in sibling products:
 #   1. running the bake as a child of an interactive session: it dies when that session exits.
@@ -10,7 +10,15 @@
 #
 #   .\scripts\local\run-detached-bake.ps1                       # all stages, all sites, resume, release
 #   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites chuquicamata,escondida -Sandbox
-#   .\scripts\local\run-detached-bake.ps1 -DataRoot X:\rajo-data
+#   .\scripts\local\run-detached-bake.ps1 -DataRoot X:\rajo-data                  # any large disk
+#
+# Parallel workers: the frames stage is embarrassingly parallel per site. Launch several workers on
+# disjoint site lists into ONE sandbox root (they only write their own site directories), then harvest
+# with scripts\local\harvest-frames.ps1, which copies the frames into data\derived and runs the
+# canonical export and validate stages. A single-stage --release run is refused by design.
+#
+#   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites antamina,centinela -Output build\par
+#   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites belchatow,grasberg -Output build\par
 
 [CmdletBinding()]
 param(
@@ -19,6 +27,7 @@ param(
     [string]$Years = "",
     [string]$DataRoot = "",
     [switch]$Sandbox,
+    [string]$Output = "",
     [string]$LogDir = ""
 )
 
@@ -34,13 +43,17 @@ if (-not $LogDir) {
 }
 New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
 $stamp = Get-Date -Format "yyyyMMdd-HHmmss"
-$log = Join-Path $LogDir ("bake-{0}-{1}.log" -f $Stage, $stamp)
-$err = Join-Path $LogDir ("bake-{0}-{1}.err" -f $Stage, $stamp)
+$tag = $Stage
+if ($Sites) { $tag = "{0}-{1}" -f $Stage, (($Sites -split ",")[0]) }
+$log = Join-Path $LogDir ("bake-{0}-{1}.log" -f $tag, $stamp)
+$err = Join-Path $LogDir ("bake-{0}-{1}.err" -f $tag, $stamp)
 
 $argsList = @("data-pipeline\run.py", $Stage, "--resume")
 if ($Sites) { $argsList += @("--sites", $Sites) }
 if ($Years) { $argsList += @("--years", $Years) }
-if ($Sandbox) { $argsList += @("--output", "build\local") } else { $argsList += "--release" }
+if ($Output) { $argsList += @("--output", $Output) }
+elseif ($Sandbox) { $argsList += @("--output", "build\local") }
+else { $argsList += "--release" }
 
 $p = Start-Process -FilePath $py -ArgumentList $argsList -WorkingDirectory $Root `
     -RedirectStandardOutput $log -RedirectStandardError $err -WindowStyle Hidden -PassThru

@@ -91,5 +91,6 @@ def run(*, stage: str, sites: list[str], output: Path, release: bool, resume: bo
 
     report = {"engine_version": ctx.engine_version, "stages": names, "sites": sites or "all",
               "release": release, "output": str(ctx.output)}
-    (ctx.output / "run-report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    (ctx.output / "run-report.json").write_text(json.dumps(report, indent=2) + "\n", encoding="utf-8",
+                                                newline="\n")
     return 0

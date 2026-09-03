@@ -122,7 +122,8 @@
     "title": "Instrument",
     "tabs": {
       "look": "Look",
-      "find": "Find"
+      "find": "Find",
+      "relief": "Relief"
     },
     "fetch": "Load the latest clear scene",
     "refetch": "Reload",
@@ -261,5 +262,43 @@
     "flags": {
       "cross_sensor": "Landsat years are outside the forest training domain (cross-sensor)"
     }
+  },
+  "relief": {
+    "none": "No elevation difference is baked for this site yet.",
+    "epochTitle": "Relief epoch",
+    "epochText": "The 3D relief and hillshade come from the global terrain tiles (the year-2000 radar surface in South America) or from the Copernicus surface of 2011 to 2015 baked for this window.",
+    "epochs": {
+      "global": "Global (SRTM era)",
+      "cop": "Copernicus 2011 to 2015"
+    },
+    "exaggeration": "Vertical exaggeration",
+    "deltaTitle": "Elevation difference 2000 to 2011-2015",
+    "deltaText": "Copernicus minus SRTM on the 30 m grid, geoid-corrected and de-biased on stable ground; blue where the ground went down, red where it went up.",
+    "showDelta": "drape the difference on the map",
+    "deltaAxis": "difference (m)",
+    "cut": "Cut (envelope)",
+    "fill": "Fill (envelope)",
+    "deepest": "Deepest / highest",
+    "floor": "Noise floor",
+    "tau": "threshold",
+    "geoid": "Geoid EGM96 to EGM2008",
+    "geoidNone": "not applied (grids unavailable)",
+    "window": "Whole window cut / fill",
+    "envelopeNote": "Volumes count cells beyond the threshold inside the reference polygons dilated by 1 km; both surfaces are radar surface models and the interval is a single decade.",
+    "flags": {
+      "geoid_uncorrected": "geoid offset not applied",
+      "stable_ground_includes_slopes": "too few flat stable cells: slopes included in the noise floor"
+    },
+    "profileTitle": "Profile",
+    "profileText": "Pick two points on the map: both surfaces are sampled from the terrain tiles in your browser along the line.",
+    "pick": "Pick two points",
+    "picking": "Click on the map ({{n}} of 2)",
+    "clear": "Clear",
+    "sampling": "Sampling both surfaces",
+    "distance": "Distance",
+    "length": "Length",
+    "deepestChange": "Deepest change",
+    "highestChange": "Highest change",
+    "at": "at"
   }
 }

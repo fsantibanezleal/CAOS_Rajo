@@ -5,7 +5,7 @@
 // spectra, spectral angle against the reference polygons), each with its area. Every control drives a
 // computation in the worker; nothing here is decorative.
 import type { FeatureCollection } from 'geojson';
-import { Cpu, Download, Eye, Layers, RefreshCw, Search } from 'lucide-react';
+import { Cpu, Download, Eye, Layers, Mountain, RefreshCw, Search } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -17,8 +17,9 @@ import { useLive } from '../state/live';
 import { useModels } from '../state/models';
 import { useUI } from '../state/ui';
 import { Histogram } from './Histogram';
+import { ReliefPanel } from './ReliefPanel';
 
-export type InstrumentTab = 'look' | 'find';
+export type InstrumentTab = 'look' | 'find' | 'relief';
 
 const INDEX_GROUPS: Array<{ key: string; items: IndexName[] }> = [
   { key: 'vegetationWater', items: ['ndvi', 'ndwi', 'mndwi'] },
@@ -95,7 +96,14 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
           <button role="tab" aria-selected={tab === 'find'} className={`chip${tab === 'find' ? ' on' : ''}`} onClick={() => setTab('find')} data-testid="tab-find">
             <Search size={13} /> {t('instrument.tabs.find')}
           </button>
+          {manifest.dem && (
+            <button role="tab" aria-selected={tab === 'relief'} className={`chip${tab === 'relief' ? ' on' : ''}`} onClick={() => setTab('relief')} data-testid="tab-relief">
+              <Mountain size={13} /> {t('instrument.tabs.relief')}
+            </button>
+          )}
         </div>
+
+        {tab === 'relief' && <ReliefPanel manifest={manifest} />}
 
         {/* the live scene block is shared by both tabs */}
         <section className="inst-scene">

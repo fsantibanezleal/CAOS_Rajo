@@ -12,6 +12,8 @@ import { Instrument } from '../components/Instrument';
 import { SeriesPanel } from '../components/SeriesPanel';
 import { Timeline } from '../components/Timeline';
 import { ensureMaskLayer, maskUrl, removeMaskLayer, tintMask } from '../map/frameOverlay';
+import { ensureCopSource, hideDelta, profile, removeCop, setEpoch, showDelta } from '../map/reliefOverlay';
+import { useRelief } from '../state/relief';
 import type { CatalogEntry, Category, Frame } from '../lib/contract';
 import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
 import { hideLive, setLiveOpacity, showLive } from '../map/liveOverlay';
@@ -165,6 +167,75 @@ export function Observatory() {
       map.off('style.load', apply);
     };
   }, [map, manifest, frame, showMask, showSeries, seriesMethod]);
+
+  // the relief lane: the site's Copernicus terrain as a second DEM source, the epoch of the 3D relief,
+  // the DEM difference draped on demand, and the profile line picked on the map
+  const relief = useRelief();
+  const resetRelief = useRelief((s) => s.reset);
+  useEffect(() => resetRelief(), [siteId, resetRelief]);
+  useEffect(() => {
+    if (!map) return;
+    const apply = () => {
+      if (manifest?.dem?.status === 'ok') ensureCopSource(map, manifest);
+      else removeCop(map);
+    };
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+      if (map.isStyleLoaded()) removeCop(map);
+    };
+  }, [map, manifest]);
+  useEffect(() => {
+    if (!map || !terrain) return;
+    const apply = () => setEpoch(map, relief.epoch, relief.exaggeration);
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, terrain, manifest, relief.epoch, relief.exaggeration]);
+  useEffect(() => {
+    if (!map) return;
+    if (!manifest?.dem?.delta_png || !relief.showDelta) {
+      if (map.isStyleLoaded()) hideDelta(map);
+      return;
+    }
+    const apply = () => showDelta(map, manifest, relief.deltaOpacity);
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, manifest, relief.showDelta, relief.deltaOpacity]);
+  useEffect(() => {
+    if (!map || !relief.picking) return;
+    const onClick = (e: { lngLat: { lng: number; lat: number } }) => useRelief.getState().addPoint([e.lngLat.lng, e.lngLat.lat]);
+    map.on('click', onClick);
+    map.getCanvas().style.cursor = 'crosshair';
+    return () => {
+      map.off('click', onClick);
+      map.getCanvas().style.cursor = '';
+    };
+  }, [map, relief.picking]);
+  useEffect(() => {
+    if (!manifest || relief.points.length !== 2) return;
+    const [a, b] = relief.points as [[number, number], [number, number]];
+    let alive = true;
+    useRelief.getState().setSamples(null, true);
+    void profile(manifest, a, b)
+      .then((s) => alive && useRelief.getState().setSamples(s))
+      .catch((err: unknown) => {
+        console.warn('[rajo] profile failed', err);
+        if (alive) useRelief.getState().setSamples(null);
+      });
+    return () => {
+      alive = false;
+    };
+  }, [manifest, relief.points]);
 
   // the live layer (composite, index, mask) drapes over the frames and survives a style rebuild
   useEffect(() => {

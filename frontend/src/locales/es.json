@@ -122,7 +122,8 @@
     "title": "Instrumento",
     "tabs": {
       "look": "Mirar",
-      "find": "Encontrar"
+      "find": "Encontrar",
+      "relief": "Relieve"
     },
     "fetch": "Cargar la escena reciente sin nubes",
     "refetch": "Recargar",
@@ -261,5 +262,43 @@
     "flags": {
       "cross_sensor": "Los anos Landsat estan fuera del dominio de entrenamiento del bosque (otro sensor)"
     }
+  },
+  "relief": {
+    "none": "Este sitio aun no tiene una diferencia de elevacion cocinada.",
+    "epochTitle": "Epoca del relieve",
+    "epochText": "El relieve 3D y el sombreado vienen de las teselas globales (la superficie radar del ano 2000 en Sudamerica) o de la superficie Copernicus de 2011 a 2015 cocinada para esta ventana.",
+    "epochs": {
+      "global": "Global (era SRTM)",
+      "cop": "Copernicus 2011 a 2015"
+    },
+    "exaggeration": "Exageracion vertical",
+    "deltaTitle": "Diferencia de elevacion 2000 a 2011-2015",
+    "deltaText": "Copernicus menos SRTM en la grilla de 30 m, corregida por geoide y sin sesgo sobre terreno estable; azul donde el terreno bajo, rojo donde subio.",
+    "showDelta": "drapear la diferencia sobre el mapa",
+    "deltaAxis": "diferencia (m)",
+    "cut": "Corte (envolvente)",
+    "fill": "Relleno (envolvente)",
+    "deepest": "Mas profundo / mas alto",
+    "floor": "Piso de ruido",
+    "tau": "umbral",
+    "geoid": "Geoide EGM96 a EGM2008",
+    "geoidNone": "no aplicado (grillas no disponibles)",
+    "window": "Ventana completa corte / relleno",
+    "envelopeNote": "Los volumenes cuentan celdas mas alla del umbral dentro de los poligonos de referencia dilatados 1 km; ambas superficies son modelos radar de superficie y el intervalo es una sola decada.",
+    "flags": {
+      "geoid_uncorrected": "desplazamiento de geoide no aplicado",
+      "stable_ground_includes_slopes": "pocas celdas estables planas: las pendientes entran en el piso de ruido"
+    },
+    "profileTitle": "Perfil",
+    "profileText": "Elija dos puntos en el mapa: ambas superficies se muestrean desde las teselas de terreno en su navegador a lo largo de la linea.",
+    "pick": "Elegir dos puntos",
+    "picking": "Haga clic en el mapa ({{n}} de 2)",
+    "clear": "Limpiar",
+    "sampling": "Muestreando ambas superficies",
+    "distance": "Distancia",
+    "length": "Largo",
+    "deepestChange": "Cambio mas profundo",
+    "highestChange": "Cambio mas alto",
+    "at": "en"
   }
 }

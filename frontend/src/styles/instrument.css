@@ -50,3 +50,9 @@
 .series-foot input[type="range"] { width: 110px; vertical-align: middle; margin-left: 6px; }
 .chk { display: inline-flex; align-items: center; gap: 4px; }
 .tl-right .series-btn.on { border-color: var(--accent); color: var(--accent); }
+
+/* --- the relief lane ------------------------------------------------------------------------------ */
+.profile-plot { height: 170px; min-height: 0; position: relative; margin-top: 6px; }
+.profile-plot .uplot { font-family: var(--font-mono); font-size: 10.5px; color: var(--fg-muted); }
+.delta-legend { height: 10px; border-radius: 3px; margin: 6px 0 2px; background: linear-gradient(90deg, #1e5aa8 0%, #ffffff 50%, #ff3b30 100%); }
+.btn.on { border-color: var(--accent); color: var(--accent); }

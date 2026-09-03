@@ -130,7 +130,19 @@ export interface DenseSeries {
   harmonic: { breaks: string[]; k: number; period_days: number; segments: Array<{ start: string; end: string; coef: number[]; rss: number; n: number }>; bic: number; bic_no_break: number };
 }
 
+export interface DemVolumes {
+  cut_m3: number;
+  fill_m3: number;
+  cut_km2: number;
+  fill_km2: number;
+  min_m: number | null;
+  max_m: number | null;
+}
+
 export interface DemBlock {
+  status: 'ok' | 'insufficient';
+  coverage: number;
+  grid_m?: number;
   epochs: Array<{ id: 'srtm2000' | 'cop2011_2015'; source: string; date_range: string }>;
   delta_png?: string;
   srtm_png?: string;
@@ -138,8 +150,15 @@ export interface DemBlock {
   delta_range_m: [number, number];
   cut_volume_m3: number;
   fill_volume_m3: number;
-  noise_floor_m: number;
-  geoid_offset_m: number;
+  envelope: DemVolumes;
+  window: DemVolumes;
+  noise_floor_m: number | null;
+  tau_m: number;
+  stable_bias_m: number;
+  stable_ground_px: number;
+  stable_rule: string;
+  geoid_offset_m: number | null;
+  flags: string[];
   terrain_tiles: string[];
   terrain_tile_zooms: [number, number];
 }

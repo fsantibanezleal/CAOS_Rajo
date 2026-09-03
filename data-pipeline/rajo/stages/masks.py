@@ -201,18 +201,20 @@ def run_stage(ctx) -> None:
                     extra = {"threshold": round(thr, 4)}
                     flags: list[str] = []
                 elif m == "rf":
+                    thr = float(models.rf[1].get("threshold", 0.5))  # chosen on validation by evaluate.py
                     prob = models.rf_prob(b30)
                     prob[~v30] = np.nan
-                    mask = clean_mask(prob, 0.5)
-                    extra = {"threshold": 0.5, "model": models.rf[1]["id"]}
+                    mask = clean_mask(prob, thr)
+                    extra = {"threshold": thr, "model": models.rf[1]["id"]}
                     flags = [] if is_s2 else ["cross_sensor"]
                 else:
+                    thr = float(models.unet[1].get("threshold", 0.5))
                     prob10 = models.unet_prob(bands)
                     prob10[~valid] = np.nan
                     # score on the 30 m grid like the others: mean probability per 30 m cell
                     p30, _ = _to_30m(prob10[None].astype(np.float32), valid, LANDSAT_FACTOR)
-                    mask = clean_mask(p30[0], 0.5)
-                    extra = {"threshold": 0.5, "model": models.unet[1]["id"]}
+                    mask = clean_mask(p30[0], thr)
+                    extra = {"threshold": thr, "model": models.unet[1]["id"]}
                     flags = []
                 inside = mask & envelope
                 area = float(inside.sum()) * grid30.pixel_m * grid30.pixel_m / 1e6

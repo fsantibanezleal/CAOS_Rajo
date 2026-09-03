@@ -47,6 +47,15 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
   useEffect(() => void models.load(), [models]);
   const rfModel = models.byMethod('M7');
   const unetModel = models.byMethod('M8');
+  // the slider starts at the threshold chosen on validation for the shipped model (the bake uses the same)
+  const [learnedTSeeded, setLearnedTSeeded] = useState(false);
+  useEffect(() => {
+    const seed = unetModel?.threshold ?? rfModel?.threshold;
+    if (!learnedTSeeded && typeof seed === 'number') {
+      setLearnedT(seed);
+      setLearnedTSeeded(true);
+    }
+  }, [rfModel, unetModel, learnedTSeeded]);
 
   const win = manifest.window;
   const bbox = win.bbox_wgs84;

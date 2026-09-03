@@ -83,11 +83,15 @@ export function Observatory() {
   // keep the URL in step with the selection
   useEffect(() => writeSiteParam(siteId), [siteId]);
 
-  // a new site: drop the live read of the previous one
+  // a new site: drop the live read of the previous one. Only the site is a dependency: the map handle
+  // arrives on the map's 'load' event, seconds after the page, and must not wipe a read already in flight.
   useEffect(() => {
     clearLive();
+  }, [siteId, clearLive]);
+  useEffect(() => {
     if (map && map.isStyleLoaded()) hideLive(map);
-  }, [siteId, clearLive, map]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [siteId]);
 
   // draw and fly when the manifest arrives (and again after a style rebuild)
   useEffect(() => {

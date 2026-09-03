@@ -20,6 +20,8 @@ export interface ModelEntry {
   scores?: Record<string, { pooled_iou: number; pooled_f1: number; n_tiles: number }>;
   val_full?: { pooled: { iou: number; f1: number; precision: number; recall: number }; per_tile_mean_iou: number; n_tiles: number };
   parity?: Record<string, unknown>;
+  threshold?: number; // chosen on the validation split by evaluate.py; the bake and the app use the same cut
+  threshold_rule?: string;
   training_data: string;
   split: string;
   license: string;

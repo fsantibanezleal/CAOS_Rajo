@@ -61,3 +61,6 @@ Thumbs.db
 *.log
 .vscode/*
 !.vscode/settings.json
+
+# scikit-learn estimators are not shipped; only the ONNX export is
+models/**/*.joblib

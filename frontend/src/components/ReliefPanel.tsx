@@ -154,7 +154,15 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
             {t('relief.clear')}
           </button>
         </div>
+        <p className="small mono faint" data-testid="profile-state">
+          {r.picking ? `picking ${r.points.length}/2` : r.samples ? `profile ${r.samples.length} samples` : r.sampling ? `sampling ${r.sampled}/200` : 'idle'}
+        </p>
         {r.sampling && <p className="small muted">{t('relief.sampling')}</p>}
+        {r.profileError && (
+          <p className="small bad" data-testid="profile-error">
+            {r.profileError}
+          </p>
+        )}
         {r.samples && (
           <>
             <div className="profile-plot" ref={hostRef} data-testid="profile-plot" />

@@ -12,7 +12,7 @@ import { Instrument } from '../components/Instrument';
 import { SeriesPanel } from '../components/SeriesPanel';
 import { Timeline } from '../components/Timeline';
 import { ensureMaskLayer, maskUrl, removeMaskLayer, tintMask } from '../map/frameOverlay';
-import { ensureCopSource, hideDelta, profile, removeCop, setEpoch, showDelta } from '../map/reliefOverlay';
+import { ensureCopSource, hideDelta, hideProfileLine, profile, removeCop, setEpoch, showDelta, showProfileLine } from '../map/reliefOverlay';
 import { useRelief } from '../state/relief';
 import type { CatalogEntry, Category, Frame } from '../lib/contract';
 import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
@@ -222,15 +222,29 @@ export function Observatory() {
     };
   }, [map, relief.picking]);
   useEffect(() => {
+    if (!map) return;
+    const apply = () => (relief.points.length ? showProfileLine(map, relief.points) : hideProfileLine(map));
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, relief.points]);
+  useEffect(() => {
     if (!manifest || relief.points.length !== 2) return;
     const [a, b] = relief.points as [[number, number], [number, number]];
     let alive = true;
     useRelief.getState().setSamples(null, true);
-    void profile(manifest, a, b)
+    useRelief.getState().setSampled(0);
+    void profile(manifest, a, b, 200, (done) => alive && useRelief.getState().setSampled(done))
       .then((s) => alive && useRelief.getState().setSamples(s))
       .catch((err: unknown) => {
         console.warn('[rajo] profile failed', err);
-        if (alive) useRelief.getState().setSamples(null);
+        if (alive) {
+          useRelief.getState().setSamples(null);
+          useRelief.getState().setProfileError(err instanceof Error ? err.message : String(err));
+        }
       });
     return () => {
       alive = false;

@@ -100,43 +100,60 @@ def build_bank(tiles_dir: Path, bank_dir: Path, splits: dict[str, list[dict]], s
 
 # --- data ----------------------------------------------------------------------------------------------
 
-def make_dataset(bank_dir: Path, name: str, augment: bool, seed: int):
-    import torch
-    from torch.utils.data import Dataset
-    from unet_model import normalise
+class Bank:
+    """A crop bank as a torch Dataset. Module-level (picklable) so DataLoader workers can spawn it on
+    Windows; the memory maps are opened lazily in each worker. Augmentation draws from a generator
+    seeded per worker and epoch through torch's worker seed."""
 
-    class Bank(Dataset):
-        def __init__(self):
-            self.bands = np.load(bank_dir / f"{name}.bands.npy", mmap_mode="r")
-            self.label = np.load(bank_dir / f"{name}.label.npy", mmap_mode="r")
-            self.valid = np.load(bank_dir / f"{name}.valid.npy", mmap_mode="r")
-            self.n = int(json.loads((bank_dir / f"{name}.json").read_text(encoding="utf-8"))["n"])
-            self.rng = np.random.default_rng(seed)
+    def __init__(self, bank_dir: Path, name: str, augment: bool, seed: int):
+        self.bank_dir = bank_dir
+        self.name = name
+        self.augment = augment
+        self.seed = seed
+        self.n = int(json.loads((bank_dir / f"{name}.json").read_text(encoding="utf-8"))["n"])
+        self._bands = self._label = self._valid = None
+        self._rng = None
 
-        def __len__(self):
-            return self.n
+    def _open(self):
+        if self._bands is None:
+            self._bands = np.load(self.bank_dir / f"{self.name}.bands.npy", mmap_mode="r")
+            self._label = np.load(self.bank_dir / f"{self.name}.label.npy", mmap_mode="r")
+            self._valid = np.load(self.bank_dir / f"{self.name}.valid.npy", mmap_mode="r")
+            import torch
 
-        def __getitem__(self, i):
-            b = torch.from_numpy(np.asarray(self.bands[i], dtype=np.float32) / 10000.0)
-            y = torch.from_numpy(np.asarray(self.label[i], dtype=np.float32))
-            v = torch.from_numpy(np.asarray(self.valid[i], dtype=np.float32))
-            if augment:
-                r = self.rng
-                if r.random() < 0.5:
-                    b, y, v = b.flip(-1), y.flip(-1), v.flip(-1)
-                if r.random() < 0.5:
-                    b, y, v = b.flip(-2), y.flip(-2), v.flip(-2)
-                k = int(r.integers(0, 4))
-                if k:
-                    b, y, v = torch.rot90(b, k, (1, 2)), torch.rot90(y, k, (0, 1)), torch.rot90(v, k, (0, 1))
-                gain = float(r.uniform(0.9, 1.1))
-                bias = float(r.uniform(-0.02, 0.02))
-                b = b * gain + bias
-                if r.random() < 0.05:
-                    b[int(r.integers(0, 6))] = 0.0
-            return normalise(b), y.unsqueeze(0), v.unsqueeze(0)
+            info = torch.utils.data.get_worker_info()
+            self._rng = np.random.default_rng(self.seed + (info.id if info else 0) + 1000 * (info.seed % 1000 if info else 0))
 
-    return Bank()
+    def __len__(self):
+        return self.n
+
+    def __getitem__(self, i):
+        import torch
+        from unet_model import normalise
+
+        self._open()
+        b = torch.from_numpy(np.asarray(self._bands[i], dtype=np.float32) / 10000.0)
+        y = torch.from_numpy(np.asarray(self._label[i], dtype=np.float32))
+        v = torch.from_numpy(np.asarray(self._valid[i], dtype=np.float32))
+        if self.augment:
+            r = self._rng
+            if r.random() < 0.5:
+                b, y, v = b.flip(-1), y.flip(-1), v.flip(-1)
+            if r.random() < 0.5:
+                b, y, v = b.flip(-2), y.flip(-2), v.flip(-2)
+            k = int(r.integers(0, 4))
+            if k:
+                b, y, v = torch.rot90(b, k, (1, 2)), torch.rot90(y, k, (0, 1)), torch.rot90(v, k, (0, 1))
+            gain = float(r.uniform(0.9, 1.1))
+            bias = float(r.uniform(-0.02, 0.02))
+            b = b * gain + bias
+            if r.random() < 0.05:
+                b[int(r.integers(0, 6))] = 0.0
+        return normalise(b), y.unsqueeze(0), v.unsqueeze(0)
+
+
+def make_dataset(bank_dir: Path, name: str, augment: bool, seed: int) -> Bank:
+    return Bank(bank_dir, name, augment, seed)
 
 
 # --- validation on full tiles ----------------------------------------------------------------------------

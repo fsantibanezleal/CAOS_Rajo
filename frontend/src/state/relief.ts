@@ -16,6 +16,10 @@ export interface ReliefState {
   points: Array<[number, number]>; // lon, lat
   samples: ProfileSample[] | null;
   sampling: boolean;
+  profileError: string | null;
+  setProfileError: (e: string | null) => void;
+  sampled: number; // samples done while sampling (progress)
+  setSampled: (n: number) => void;
   setEpoch: (e: Epoch) => void;
   setShowDelta: (v: boolean) => void;
   setDeltaOpacity: (v: number) => void;
@@ -36,16 +40,20 @@ export const useRelief = create<ReliefState>((set, get) => ({
   points: [],
   samples: null,
   sampling: false,
+  profileError: null,
+  setProfileError: (profileError) => set({ profileError }),
+  sampled: 0,
+  setSampled: (sampled) => set({ sampled }),
   setEpoch: (epoch) => set({ epoch }),
   setShowDelta: (showDelta) => set({ showDelta }),
   setDeltaOpacity: (deltaOpacity) => set({ deltaOpacity: Math.max(0, Math.min(1, deltaOpacity)) }),
   setExaggeration: (exaggeration) => set({ exaggeration: Math.max(0.5, Math.min(3, exaggeration)) }),
-  setPicking: (picking) => set({ picking, points: picking ? [] : get().points, samples: picking ? null : get().samples }),
+  setPicking: (picking) => set({ picking, points: picking ? [] : get().points, samples: picking ? null : get().samples, profileError: null }),
   addPoint: (p) => {
     const pts = [...get().points, p].slice(-2);
     set({ points: pts, picking: pts.length < 2 });
   },
-  clearProfile: () => set({ points: [], samples: null, picking: false, sampling: false }),
+  clearProfile: () => set({ points: [], samples: null, picking: false, sampling: false, profileError: null }),
   setSamples: (samples, sampling = false) => set({ samples, sampling }),
-  reset: () => set({ epoch: 'global', showDelta: false, picking: false, points: [], samples: null, sampling: false }),
+  reset: () => set({ epoch: 'global', showDelta: false, picking: false, points: [], samples: null, sampling: false, profileError: null }),
 }));

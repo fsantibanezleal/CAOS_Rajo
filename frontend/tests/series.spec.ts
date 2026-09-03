@@ -87,9 +87,12 @@ test('the series drawer charts the mined-area series, its breaks and the yearly 
 
   // a click on the plot moves the timeline
   const yearBefore = await page.getByTestId('tl-year').textContent();
-  await plot.click({ position: { x: Math.round((box?.width ?? 400) * 0.3), y: Math.round((box?.height ?? 200) * 0.5) } });
-  await page.waitForTimeout(300);
-  const yearAfter = await page.getByTestId('tl-year').textContent();
-  expect(yearAfter).not.toBe(yearBefore);
+  const target = { x: Math.round((box?.width ?? 400) * 0.3), y: Math.round((box?.height ?? 200) * 0.5) };
+  await plot.hover({ position: target });
+  await page.waitForTimeout(150); // uPlot sets its cursor index on mousemove
+  await plot.click({ position: target });
+  await expect
+    .poll(() => page.getByTestId('tl-year').textContent(), { message: 'a click on the plot moves the timeline to that year', timeout: 10_000 })
+    .not.toBe(yearBefore);
   expectNoErrors(errors);
 });

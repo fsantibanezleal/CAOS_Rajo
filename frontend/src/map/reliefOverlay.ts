@@ -2,6 +2,7 @@
 // raster-dem source so the 3D relief and the hillshade can switch epoch over the window, the DEM
 // difference draped as an image, and terrarium sampling in the browser for the profile tool (both
 // epochs, tiles fetched and decoded once, bilinear inside a tile).
+import type { Feature, FeatureCollection } from 'geojson';
 import type { ImageSource, Map as MLMap, RasterDEMSourceSpecification } from 'maplibre-gl';
 
 import type { SiteManifest } from '../lib/contract';
@@ -94,6 +95,29 @@ export function hideDelta(map: MLMap): void {
   if (map.getSource(DELTA_SOURCE)) map.removeSource(DELTA_SOURCE);
 }
 
+// --- the profile line on the map --------------------------------------------------------------------
+
+export const PROFILE_SOURCE = 'profile-line';
+
+export function showProfileLine(map: MLMap, points: Array<[number, number]>): void {
+  const features: Feature[] = points.map((p, i) => ({ type: 'Feature', properties: { i }, geometry: { type: 'Point', coordinates: p } }));
+  if (points.length === 2) features.push({ type: 'Feature', properties: {}, geometry: { type: 'LineString', coordinates: points } });
+  const data: FeatureCollection = { type: 'FeatureCollection', features };
+  const src = map.getSource(PROFILE_SOURCE) as { setData: (d: FeatureCollection) => void } | undefined;
+  if (!src) {
+    map.addSource(PROFILE_SOURCE, { type: 'geojson', data });
+    map.addLayer({ id: `${PROFILE_SOURCE}-line`, type: 'line', source: PROFILE_SOURCE, filter: ['==', '$type', 'LineString'], paint: { 'line-color': '#e8a33d', 'line-width': 2.5, 'line-dasharray': [2, 1.5] } });
+    map.addLayer({ id: `${PROFILE_SOURCE}-pts`, type: 'circle', source: PROFILE_SOURCE, filter: ['==', '$type', 'Point'], paint: { 'circle-radius': 5, 'circle-color': '#e8a33d', 'circle-stroke-color': '#1a1208', 'circle-stroke-width': 1.5 } });
+  } else {
+    src.setData(data);
+  }
+}
+
+export function hideProfileLine(map: MLMap): void {
+  for (const id of [`${PROFILE_SOURCE}-line`, `${PROFILE_SOURCE}-pts`]) if (map.getLayer(id)) map.removeLayer(id);
+  if (map.getSource(PROFILE_SOURCE)) map.removeSource(PROFILE_SOURCE);
+}
+
 // --- terrarium sampling in the browser -------------------------------------------------------------
 
 const tileCache = new Map<string, Promise<Float32Array | null>>();
@@ -102,7 +126,8 @@ async function decodeTerrarium(url: string): Promise<Float32Array | null> {
   let p = tileCache.get(url);
   if (!p) {
     p = (async () => {
-      const r = await fetch(url, { mode: 'cors' });
+      // a stalled tile fails loudly after 30 s instead of leaving the profile "sampling" forever
+      const r = await fetch(url, { mode: 'cors', signal: AbortSignal.timeout(30_000) });
       if (!r.ok) return null;
       const blob = await r.blob();
       const bmp = await createImageBitmap(blob);
@@ -161,7 +186,7 @@ export interface ProfileSample {
 }
 
 /** Both epochs along a line (n samples), the global source at z12 and the site's Copernicus tiles at z13. */
-export async function profile(manifest: SiteManifest, a: [number, number], b: [number, number], n = 200): Promise<ProfileSample[]> {
+export async function profile(manifest: SiteManifest, a: [number, number], b: [number, number], n = 200, onProgress?: (done: number, total: number) => void): Promise<ProfileSample[]> {
   const copTemplate = copTilesUrl(manifest);
   const copZoom = manifest.dem ? manifest.dem.terrain_tile_zooms[1] : 13;
   const R = 6371008.8;
@@ -177,6 +202,7 @@ export async function profile(manifest: SiteManifest, a: [number, number], b: [n
     const lat = a[1] + (b[1] - a[1]) * t;
     const [g, c] = await Promise.all([sampleTerrarium(TERRARIUM_GLOBAL, 12, lon, lat), manifest.dem?.terrain_tiles.length ? sampleTerrarium(copTemplate, copZoom, lon, lat) : Promise.resolve(null)]);
     out.push({ d: length * t, lon, lat, global: g, cop: c });
+    if (i % 20 === 0 || i === n - 1) onProgress?.(i + 1, n);
   }
   return out;
 }

@@ -105,7 +105,8 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
 
         {tab === 'relief' && <ReliefPanel manifest={manifest} />}
 
-        {/* the live scene block is shared by both tabs */}
+        {/* the live scene block is shared by the Look and Find tabs; the relief lane is baked */}
+        {tab !== 'relief' && (
         <section className="inst-scene">
           <div className="inst-row">
             <button
@@ -149,6 +150,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
             </p>
           )}
         </section>
+        )}
 
         {tab === 'look' && (
           <section className="inst-body" role="tabpanel">

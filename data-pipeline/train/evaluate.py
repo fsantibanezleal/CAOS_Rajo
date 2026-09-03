@@ -49,13 +49,25 @@ def log(msg: str) -> None:
 
 
 class Runner:
-    def __init__(self, models_dir: Path):
+    def __init__(self, models_dir: Path, unet_torch: Path | None = None):
         import onnxruntime as ort
 
         reg = json.loads((models_dir / "registry.json").read_text(encoding="utf-8"))
         self.models = {m["id"].split("-")[0]: m for m in reg["models"]}
         self.rf = ort.InferenceSession(str(models_dir / self.models["rf"]["file"]), providers=["CPUExecutionProvider"]) if "rf" in self.models else None
         self.unet = ort.InferenceSession(str(models_dir / self.models["unet"]["file"]), providers=["CPUExecutionProvider"]) if "unet" in self.models else None
+        # the U-Net on the GPU through its checkpoint: the exported ONNX is proven equal to it by the parity
+        # gate in export_unet.py, and 300 tiles of sliding-window inference on the CPU would take hours
+        self.torch_model = None
+        if unet_torch is not None and self.unet is not None:
+            import torch
+            from unet_model import UNet
+
+            ck = torch.load(unet_torch, map_location="cpu")
+            self.torch_model = UNet(base=int(ck.get("base", 32)))
+            self.torch_model.load_state_dict(ck["model"])
+            self.torch_device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+            self.torch_model.to(self.torch_device).eval()
 
     def rf_prob(self, bands: np.ndarray) -> np.ndarray:
         feats = rf_features(bands)
@@ -67,6 +79,11 @@ class Runner:
         return np.concatenate(out).reshape(bands.shape[1:]).astype(np.float32)
 
     def unet_prob(self, bands: np.ndarray, window: int = 512, overlap: int = 64) -> np.ndarray:
+        if self.torch_model is not None:
+            import torch
+            from unet_model import predict_tile
+
+            return predict_tile(self.torch_model, torch.from_numpy(bands), window=window, overlap=overlap, device=self.torch_device).numpy().astype(np.float32)
         x = np.clip(bands, 0.0, 0.6) / 0.6
         _, h, w = x.shape
         prob = np.zeros((h, w), dtype=np.float32)
@@ -122,11 +139,14 @@ def main() -> int:
     ap.add_argument("--max-tiles", type=int, default=0)
     ap.add_argument("--sam-angles", default="0.05,0.08,0.10,0.12,0.15,0.20,0.25")
     ap.add_argument("--out", default="")
+    ap.add_argument("--unet-torch", default="", help="run the U-Net from this checkpoint on the GPU (best.pt); the ONNX stays the shipped file")
     a = ap.parse_args()
     root = data_root(REPO)
     tiles_dir = Path(a.tiles) if a.tiles else root / "train" / "tiles"
     models_dir = models_root(REPO)
-    runner = Runner(models_dir)
+    runner = Runner(models_dir, Path(a.unet_torch) if a.unet_torch else None)
+    if runner.torch_model is not None:
+        log(f"U-Net inference through torch on {runner.torch_device} from {a.unet_torch}")
     splits = split_tiles(read_index(tiles_dir))
     for k in splits:
         splits[k] = [m for m in splits[k] if m["data_frac"] >= 0.98 and m["cloud_frac"] <= 0.10]

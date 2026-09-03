@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -61,10 +62,14 @@ def build_catalog(entries: list[dict[str, Any]], engine_version: str) -> dict[st
 
 
 def write_json(path: Path, obj: Any) -> None:
+    """LF on every platform (artifacts are hashed byte for byte and git stores them with LF) and atomic:
+    parallel workers and a running export or series stage may read a side-car while another process
+    writes it, so the bytes land in a temporary file first and are renamed into place."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    # LF on every platform: artifacts are hashed byte for byte and git stores them with LF
-    path.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8",
-                    newline="\n")
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    tmp.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8",
+                   newline="\n")
+    os.replace(tmp, path)
 
 
 def read_json(path: Path) -> Any:

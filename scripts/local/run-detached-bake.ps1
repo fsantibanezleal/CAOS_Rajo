@@ -28,7 +28,8 @@ param(
     [string]$DataRoot = "",
     [switch]$Sandbox,
     [string]$Output = "",
-    [string]$LogDir = ""
+    [string]$LogDir = "",
+    [string]$Redo = ""   # masks stage: recompute these methods even when present, e.g. "rf,unet"
 )
 
 $ErrorActionPreference = "Stop"
@@ -51,6 +52,7 @@ $err = Join-Path $LogDir ("bake-{0}-{1}.err" -f $tag, $stamp)
 $argsList = @("data-pipeline\run.py", $Stage, "--resume")
 if ($Sites) { $argsList += @("--sites", $Sites) }
 if ($Years) { $argsList += @("--years", $Years) }
+if ($Redo) { $argsList += @("--redo", $Redo) }
 if ($Output) { $argsList += @("--output", $Output) }
 elseif ($Sandbox) { $argsList += @("--output", "build\local") }
 else { $argsList += "--release" }

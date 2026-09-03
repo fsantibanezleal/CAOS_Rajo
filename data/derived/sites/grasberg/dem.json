@@ -1,0 +1,90 @@
+{
+ "site_id": "grasberg",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -302.8,
+  302.8
+ ],
+ "geoid_offset_m": -3.348,
+ "stable_bias_m": -1.579,
+ "noise_floor_m": 3.404,
+ "tau_m": 6.808,
+ "stable_ground_px": 22824,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 1575648000,
+ "fill_volume_m3": 1049536768,
+ "envelope": {
+  "cut_m3": 1575648000,
+  "fill_m3": 1049536768,
+  "cut_km2": 27.6507,
+  "fill_km2": 17.9991,
+  "min_m": -430.8,
+  "max_m": 381.7
+ },
+ "window": {
+  "cut_m3": 2335538176,
+  "fill_m3": 1717248128,
+  "cut_km2": 58.0509,
+  "fill_km2": 50.6664,
+  "min_m": -430.8,
+  "max_m": 381.7
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/901/523.png",
+  "terrain/10/902/523.png",
+  "terrain/11/1803/1046.png",
+  "terrain/11/1803/1047.png",
+  "terrain/11/1804/1046.png",
+  "terrain/11/1804/1047.png",
+  "terrain/12/3607/2093.png",
+  "terrain/12/3607/2094.png",
+  "terrain/12/3608/2093.png",
+  "terrain/12/3608/2094.png",
+  "terrain/13/7214/4186.png",
+  "terrain/13/7214/4187.png",
+  "terrain/13/7214/4188.png",
+  "terrain/13/7214/4189.png",
+  "terrain/13/7215/4186.png",
+  "terrain/13/7215/4187.png",
+  "terrain/13/7215/4188.png",
+  "terrain/13/7215/4189.png",
+  "terrain/13/7216/4186.png",
+  "terrain/13/7216/4187.png",
+  "terrain/13/7216/4188.png",
+  "terrain/13/7216/4189.png",
+  "terrain/13/7217/4186.png",
+  "terrain/13/7217/4187.png",
+  "terrain/13/7217/4188.png",
+  "terrain/13/7217/4189.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 1751.0,
+  "max": 4818.0
+ },
+ "cop_stats": {
+  "min": 1773.7,
+  "max": 4794.7
+ }
+}

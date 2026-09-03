@@ -169,7 +169,7 @@
    ],
    "lon": -69.07,
    "lat": -24.27,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/escondida/manifest.json"
   },
@@ -185,7 +185,7 @@
    ],
    "lon": 137.11,
    "lat": -4.05,
-   "n_frames": 0,
+   "n_frames": 40,
    "first_year": 1985,
    "manifest_path": "sites/grasberg/manifest.json"
   },
@@ -199,7 +199,7 @@
    ],
    "lon": 6.5,
    "lat": 50.91,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/hambach/manifest.json"
   },
@@ -270,7 +270,7 @@
    ],
    "lon": 113.99,
    "lat": 62.53,
-   "n_frames": 0,
+   "n_frames": 28,
    "first_year": 1985,
    "manifest_path": "sites/mir/manifest.json"
   },
@@ -284,7 +284,7 @@
    ],
    "lon": -109.36,
    "lat": 33.1,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/morenci/manifest.json"
   },
@@ -298,7 +298,7 @@
    ],
    "lon": 119.67,
    "lat": -23.37,
-   "n_frames": 0,
+   "n_frames": 41,
    "first_year": 1985,
    "manifest_path": "sites/mount-whaleback/manifest.json"
   },
@@ -368,7 +368,7 @@
    ],
    "lon": -68.3,
    "lat": -23.55,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/salar-de-atacama/manifest.json"
   },
@@ -382,7 +382,7 @@
    ],
    "lon": -69.31,
    "lat": -22.9,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/sierra-gorda/manifest.json"
   },
@@ -396,7 +396,7 @@
    ],
    "lon": -69.3,
    "lat": -22.75,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/spence/manifest.json"
   },

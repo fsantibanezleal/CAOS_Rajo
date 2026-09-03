@@ -1,0 +1,108 @@
+{
+ "site_id": "las-bambas",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -10.0,
+  10.0
+ ],
+ "geoid_offset_m": -0.851,
+ "stable_bias_m": 0.809,
+ "noise_floor_m": 2.725,
+ "tau_m": 5.45,
+ "stable_ground_px": 100602,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 36741708,
+ "fill_volume_m3": 47936964,
+ "envelope": {
+  "cut_m3": 36741708,
+  "fill_m3": 47936964,
+  "cut_km2": 4.9572,
+  "fill_km2": 5.8536,
+  "min_m": -22.8,
+  "max_m": 31.5
+ },
+ "window": {
+  "cut_m3": 149394736,
+  "fill_m3": 230434960,
+  "cut_km2": 19.4886,
+  "fill_km2": 28.152,
+  "min_m": -74.1,
+  "max_m": 61.2
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/306/552.png",
+  "terrain/11/612/1104.png",
+  "terrain/11/612/1105.png",
+  "terrain/11/613/1104.png",
+  "terrain/11/613/1105.png",
+  "terrain/12/1224/2208.png",
+  "terrain/12/1224/2209.png",
+  "terrain/12/1224/2210.png",
+  "terrain/12/1225/2208.png",
+  "terrain/12/1225/2209.png",
+  "terrain/12/1225/2210.png",
+  "terrain/12/1226/2208.png",
+  "terrain/12/1226/2209.png",
+  "terrain/12/1226/2210.png",
+  "terrain/13/2448/4416.png",
+  "terrain/13/2448/4417.png",
+  "terrain/13/2448/4418.png",
+  "terrain/13/2448/4419.png",
+  "terrain/13/2448/4420.png",
+  "terrain/13/2448/4421.png",
+  "terrain/13/2449/4416.png",
+  "terrain/13/2449/4417.png",
+  "terrain/13/2449/4418.png",
+  "terrain/13/2449/4419.png",
+  "terrain/13/2449/4420.png",
+  "terrain/13/2449/4421.png",
+  "terrain/13/2450/4416.png",
+  "terrain/13/2450/4417.png",
+  "terrain/13/2450/4418.png",
+  "terrain/13/2450/4419.png",
+  "terrain/13/2450/4420.png",
+  "terrain/13/2450/4421.png",
+  "terrain/13/2451/4416.png",
+  "terrain/13/2451/4417.png",
+  "terrain/13/2451/4418.png",
+  "terrain/13/2451/4419.png",
+  "terrain/13/2451/4420.png",
+  "terrain/13/2451/4421.png",
+  "terrain/13/2452/4416.png",
+  "terrain/13/2452/4417.png",
+  "terrain/13/2452/4418.png",
+  "terrain/13/2452/4419.png",
+  "terrain/13/2452/4420.png",
+  "terrain/13/2452/4421.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 3396.0,
+  "max": 4713.0
+ },
+ "cop_stats": {
+  "min": 3393.2,
+  "max": 4725.5
+ }
+}

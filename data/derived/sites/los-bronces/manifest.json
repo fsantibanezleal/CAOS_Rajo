@@ -115,7 +115,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -169,7 +172,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -223,7 +229,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -277,7 +286,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -331,7 +343,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -384,7 +399,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -437,7 +455,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -490,7 +511,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -544,7 +568,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -598,7 +625,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -652,7 +682,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -705,7 +738,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -759,7 +795,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -813,7 +852,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -864,7 +906,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -918,7 +963,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -972,7 +1020,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -1025,7 +1076,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1079,7 +1133,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1133,7 +1190,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1187,7 +1247,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1244,7 +1307,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1298,7 +1364,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1355,7 +1424,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1413,7 +1485,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1467,7 +1542,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1521,7 +1599,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1578,7 +1659,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1635,7 +1719,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1692,7 +1779,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1746,7 +1836,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1800,7 +1893,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1854,7 +1950,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1907,7 +2006,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1961,7 +2063,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -2014,7 +2119,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -2067,7 +2175,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2120,7 +2231,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2173,7 +2287,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2226,7 +2343,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2279,7 +2399,10 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2332,14 +2455,622 @@
     "snow"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {},
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2c",
+   "sentinel-2b"
+  ],
+  "valid_frac": [
+   0.6675,
+   0.9813,
+   0.8732,
+   0.6596,
+   0.9503,
+   0.9886,
+   0.973,
+   0.9876,
+   0.9831,
+   0.9676,
+   0.9157,
+   0.9549,
+   0.8034,
+   0.7487,
+   1.0,
+   0.9644,
+   0.9677,
+   0.9999,
+   0.8911,
+   0.922,
+   0.9488,
+   0.8839,
+   0.8881,
+   0.9295,
+   0.8855,
+   0.9238,
+   0.9561,
+   0.9503,
+   0.9116,
+   0.9078,
+   0.8739,
+   0.8752,
+   0.9889,
+   0.9997,
+   0.9904,
+   1.0,
+   0.9987,
+   1.0,
+   1.0,
+   1.0,
+   0.9972,
+   0.9985
+  ],
+  "envelope_km2": 104.8734,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    null,
+    88.4286,
+    71.721,
+    null,
+    85.4235,
+    87.3207,
+    89.8137,
+    73.0521,
+    78.4341,
+    87.0453,
+    79.1613,
+    16.1478,
+    79.0164,
+    58.5873,
+    40.3029,
+    88.7868,
+    88.4952,
+    0.0,
+    75.2724,
+    82.3356,
+    88.2972,
+    74.5218,
+    79.6302,
+    86.0508,
+    79.5087,
+    84.6756,
+    91.3761,
+    91.224,
+    84.6252,
+    86.2875,
+    85.0734,
+    81.7056,
+    92.4939,
+    61.9722,
+    92.9565,
+    72.9117,
+    65.4759,
+    68.4108,
+    68.9814,
+    78.7419,
+    75.3435,
+    67.0626
+   ],
+   "rf": [
+    null,
+    83.8845,
+    79.5348,
+    null,
+    83.7873,
+    88.335,
+    85.6134,
+    95.6178,
+    92.8917,
+    90.7641,
+    84.2535,
+    75.3453,
+    70.263,
+    68.0679,
+    78.6339,
+    87.7338,
+    85.4118,
+    91.7982,
+    81.4716,
+    83.8134,
+    90.5436,
+    80.7921,
+    81.243,
+    82.7712,
+    77.382,
+    84.4308,
+    93.8124,
+    83.0358,
+    81.6102,
+    80.4636,
+    68.8257,
+    72.2619,
+    97.9992,
+    98.3241,
+    98.145,
+    100.3266,
+    98.6391,
+    101.2374,
+    92.3049,
+    100.2249,
+    99.7839,
+    98.8641
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    null,
+    0.06331,
+    0.05662,
+    null,
+    0.04615,
+    0.04665,
+    0.0507,
+    0.04122,
+    0.04479,
+    0.04514,
+    0.04241,
+    0.25716,
+    0.06779,
+    0.04431,
+    0.10453,
+    0.06366,
+    0.04614,
+    0.11079,
+    0.04216,
+    0.04407,
+    0.04718,
+    0.03556,
+    0.05216,
+    0.04133,
+    0.04961,
+    0.04775,
+    0.03674,
+    0.04886,
+    0.04723,
+    0.0404,
+    0.06143,
+    0.06636,
+    0.03198,
+    0.116,
+    0.04203,
+    0.08673,
+    0.0917,
+    0.0892,
+    0.09638,
+    0.08603,
+    0.09831,
+    0.10684
+   ],
+   "mndwi": [
+    null,
+    -0.15983,
+    -0.11992,
+    null,
+    -0.14416,
+    -0.12503,
+    -0.16424,
+    -0.04697,
+    -0.09029,
+    -0.15383,
+    -0.1254,
+    -0.28851,
+    -0.2359,
+    -0.07727,
+    -0.24513,
+    -0.19675,
+    -0.1662,
+    -0.33265,
+    -0.13889,
+    -0.15652,
+    -0.18074,
+    -0.13191,
+    -0.15298,
+    -0.17152,
+    -0.16029,
+    -0.16113,
+    -0.17768,
+    -0.19167,
+    -0.18317,
+    -0.17793,
+    -0.23828,
+    -0.22957,
+    -0.16466,
+    -0.4306,
+    -0.2094,
+    -0.41398,
+    -0.41075,
+    -0.46309,
+    -0.33344,
+    -0.33571,
+    -0.40451,
+    -0.40835
+   ],
+   "bsi": [
+    null,
+    0.11829,
+    0.09611,
+    null,
+    0.11607,
+    0.11442,
+    0.13368,
+    0.07776,
+    0.10167,
+    0.12934,
+    0.11148,
+    0.03098,
+    0.14401,
+    0.08802,
+    0.13463,
+    0.13115,
+    0.12651,
+    0.23537,
+    0.11263,
+    0.12787,
+    0.13908,
+    0.11439,
+    0.12321,
+    0.13174,
+    0.12082,
+    0.13186,
+    0.14748,
+    0.13785,
+    0.13351,
+    0.13522,
+    0.18589,
+    0.18066,
+    0.13809,
+    0.27943,
+    0.15655,
+    0.28635,
+    0.2914,
+    0.32683,
+    0.24361,
+    0.23348,
+    0.27795,
+    0.27014
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 40,
+    "pelt": {
+     "breaks": [
+      1996,
+      2003
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 1995,
+       "mean": 82.2667,
+       "slope": -0.3224
+      },
+      {
+       "start": 1996,
+       "end": 2002,
+       "mean": 53.0481,
+       "slope": 0.0255
+      },
+      {
+       "start": 2003,
+       "end": 2026,
+       "mean": 79.7889,
+       "slope": -0.5455
+      }
+     ],
+     "penalty": 1559.330872,
+     "sigma": 11.870289,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1997,
+      2003
+     ],
+     "k": 5.935144,
+     "h": 47.481155,
+     "sigma": 11.870289,
+     "target": 0.5706
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 40,
+    "pelt": {
+     "breaks": [
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 2016,
+       "mean": 82.8131,
+       "slope": -0.2193
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 98.5849,
+       "slope": 0.042
+      }
+     ],
+     "penalty": 524.014122,
+     "sigma": 6.881191,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 3.440596,
+     "h": 27.524766,
+     "sigma": 6.881191,
+     "target": -0.441
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1996,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1559.330872
+   },
+   {
+    "year": 1997,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 47.481155
+   },
+   {
+    "year": 2003,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 47.481155
+   },
+   {
+    "year": 2003,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1559.330872
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 524.014122
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "los-bronces",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -129.3,
+   129.3
+  ],
+  "geoid_offset_m": 0.737,
+  "stable_bias_m": -7.792,
+  "noise_floor_m": 3.219,
+  "tau_m": 6.437,
+  "stable_ground_px": 22679,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 625719744,
+  "fill_volume_m3": 541635840,
+  "envelope": {
+   "cut_m3": 625719744,
+   "fill_m3": 541635840,
+   "cut_km2": 16.605,
+   "fill_km2": 19.6254,
+   "min_m": -361.7,
+   "max_m": 295.5
+  },
+  "window": {
+   "cut_m3": 927844736,
+   "fill_m3": 721858496,
+   "cut_km2": 35.5365,
+   "fill_km2": 35.6877,
+   "min_m": -361.7,
+   "max_m": 295.5
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/311/611.png",
+   "terrain/10/311/612.png",
+   "terrain/10/312/611.png",
+   "terrain/10/312/612.png",
+   "terrain/11/623/1223.png",
+   "terrain/11/623/1224.png",
+   "terrain/11/624/1223.png",
+   "terrain/11/624/1224.png",
+   "terrain/12/1247/2447.png",
+   "terrain/12/1247/2448.png",
+   "terrain/12/1247/2449.png",
+   "terrain/12/1248/2447.png",
+   "terrain/12/1248/2448.png",
+   "terrain/12/1248/2449.png",
+   "terrain/12/1249/2447.png",
+   "terrain/12/1249/2448.png",
+   "terrain/12/1249/2449.png",
+   "terrain/13/2494/4894.png",
+   "terrain/13/2494/4895.png",
+   "terrain/13/2494/4896.png",
+   "terrain/13/2494/4897.png",
+   "terrain/13/2494/4898.png",
+   "terrain/13/2495/4894.png",
+   "terrain/13/2495/4895.png",
+   "terrain/13/2495/4896.png",
+   "terrain/13/2495/4897.png",
+   "terrain/13/2495/4898.png",
+   "terrain/13/2496/4894.png",
+   "terrain/13/2496/4895.png",
+   "terrain/13/2496/4896.png",
+   "terrain/13/2496/4897.png",
+   "terrain/13/2496/4898.png",
+   "terrain/13/2497/4894.png",
+   "terrain/13/2497/4895.png",
+   "terrain/13/2497/4896.png",
+   "terrain/13/2497/4897.png",
+   "terrain/13/2497/4898.png",
+   "terrain/13/2498/4894.png",
+   "terrain/13/2498/4895.png",
+   "terrain/13/2498/4896.png",
+   "terrain/13/2498/4897.png",
+   "terrain/13/2498/4898.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 2432.0,
+   "max": 5371.0
+  },
+  "cop_stats": {
+   "min": 2424.4,
+   "max": 5368.6
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/los-bronces/dem/cop.png",
+   "kind": "dem",
+   "bytes": 294845,
+   "sha256": "7f8575799fb6669309815dbbdd7ed8596d4346c34b6ef557994540b16f0924c3"
+  },
+  {
+   "path": "sites/los-bronces/dem/delta.png",
+   "kind": "dem",
+   "bytes": 466557,
+   "sha256": "971aa5f3fe7bc0ea11776f0fcaee7a36f675d6f9c0c7ee07658568b4b8a98184"
+  },
+  {
+   "path": "sites/los-bronces/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 319081,
+   "sha256": "20e97f7f78d222828161b7288f9e812e8bcaa2398f242969c729a55e8d7fbc83"
+  },
   {
    "path": "sites/los-bronces/frames/1985-swir.webp",
    "kind": "frame",
@@ -2929,10 +3660,934 @@
    "year": 2026
   },
   {
+   "path": "sites/los-bronces/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 2991,
+   "sha256": "99f8bec625c806f67e8dbb3a6dd2c517e91c5536b1e57f38154e2146a39743be",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 3315,
+   "sha256": "e8e1e2a1cd1ca1f151db97858d6fe8dd81eb12f928b984774103d04b3290266a",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 8436,
+   "sha256": "0eb6f2fdfedf618194da097b899c817f62182040765c0ab40c38e432feac92b3",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 11841,
+   "sha256": "7541daa1c4feb742d78fd294c3376d02a16ed8d9ef14b84e43b35c0130bd2c43",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 8899,
+   "sha256": "af618e588030d5d546da00ac6cbd1d3a00658d6c920678560b393274eee96fe2",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 11439,
+   "sha256": "95d139669f251620ce4d374eb950247b7154d97a938b02ce8384b3582988d01f",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 6550,
+   "sha256": "fb8d77751e2fe3804ab0eb203480072060853a02784d4a690cd41ceb6a864f90",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 10329,
+   "sha256": "052e2b8319fa6392747a8a1a1c62d641d47da9e13e13f6eab1cc6f02079cb871",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 8724,
+   "sha256": "306c04b4c59b5773c83bafffff2ae212cd02e8a0e5e5d78e6cde801e854e511c",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 12240,
+   "sha256": "143ad1636fd18e58749f43b6c647ef9902837cf93467dcd03e2ec8f71fcd24b8",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 8674,
+   "sha256": "d7ab2dd710eb50956299e66335a8085f03a8b911ad02c70b914cb95a99c54525",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 11152,
+   "sha256": "6963773d6539c69a8c8f88fa541575ea61de9052e76717ff5222fed6c54fcf0a",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 8006,
+   "sha256": "eac61fee2d019864276e5913ec399728762239b80e2dfee629fc4da4e80433be",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 11684,
+   "sha256": "c435f73ccdb7828c74937066a47e5648ad908591c4e8b21426456396a8c40b88",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 9953,
+   "sha256": "559845733d3e15c10ec46396d6372d6e541e208afb3d3230523aa7cc01cef175",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 9708,
+   "sha256": "2b84e0df511c80e85b816d3597c958218f3046927c9759b50db9c9dc69f63b55",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 10172,
+   "sha256": "660e2953298740cf18baee87764736187770072bcacce5a03851f18681d2a53e",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 10309,
+   "sha256": "59d91da5966087379bfc9945547a77434d1fb2dce7280793beb036b0d2201917",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 8953,
+   "sha256": "6eca602afceee7ed385f07c856851ab876770f01961227bd5c3da7b990e9ec76",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 10342,
+   "sha256": "5bc8fa3bf196ef92dc0951d9252c330a91ca127fd06d83cb2bce4a5d13ac7786",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 9053,
+   "sha256": "950aa593d88d7a48368293b85a4f219f15273a8acadf25154b28bdaaf4f23e2b",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 11913,
+   "sha256": "8f30967924f17a33693ba9d58620c8bf7a0d8ae147cd3c093d4571ce4d2c11e3",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 8140,
+   "sha256": "64a76673a1d2fb6fc63ac82f71c80dbd2d669a5e0c9506d71c18294b1120cbfc",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 13547,
+   "sha256": "04cf91a297a5215d4cfbc765edfde12c24c6eee0f696f468353178d152a75d2f",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 6056,
+   "sha256": "484f76ed2902571fba63a2ecc96925d63dbc2cb0ba0a5800c3bd8c7a9a5001fa",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 9905,
+   "sha256": "858bc518b738ca1aa771d39dd987671dfea971c052c62d3a0ba0e519a885ce76",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 7900,
+   "sha256": "afc2ddff6a4d94194caf5b5e20e75413f8725825ed3151e05af1bfdea11052ca",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 10779,
+   "sha256": "a14a1bde1ff7b4d4b9363c10dd489e929a0c39050f9dab3f9da69ad81ebdd3c3",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 8426,
+   "sha256": "952001d3ac791b22f71e4bc50dee448c5555641c1fdbc630ac34aa9618d998cb",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 11301,
+   "sha256": "4a196d251bd1e18fa42cd3c3dc8692a8a8cc0e0c50f129b8ba59b2c52f81b658",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 9490,
+   "sha256": "566d9966f78e6b57421aa23271ff2d221b35338c8ce905e4b564e62e8b9bf70c",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 10405,
+   "sha256": "e9b694e3eb6bfaa652bf1c41fba35451cbe86fe6d600d9854400544a97d54132",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 9662,
+   "sha256": "b5150aebdc694f787204fa637dd7c518d8450886cb098d4cd984f90c3ac6c109",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 12297,
+   "sha256": "491bc0e50929451155672d934ea2f785da3ed5724afb1b12e3b648565ec93fec",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 115,
+   "sha256": "6bcf24699936b8e89e5a8017b86289fc66b71a5a263358e54629fd917bf71fe2",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 10890,
+   "sha256": "f989d9bb2be98d9d80042570ab925b6e5ed53c6a5fd82390cbba2af729b2901f",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 9991,
+   "sha256": "5d464d48c9a6f57333c504c6221c8f211a16a0ecee288f6fd2fb566b7880aec6",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 12773,
+   "sha256": "b107f677294d936757372e6a87256ba7034da1d10a17e54657d7c8e9ebd81f20",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 8898,
+   "sha256": "e80cfdab925e9c39be509bf3d2cc3a360837208eb77630b16cd5bf5528243214",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 11707,
+   "sha256": "f3c69b066a7104000ecedbc8dd6483058f5ac96b7e0f229ade50c3866272578b",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 8265,
+   "sha256": "02100662862723c31a841d445ccaf2ee0e7b237d7461c4c169ea790e1a3d991e",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 9962,
+   "sha256": "5c9814d542c74d3e1a2091cb290c19dd567de66986f97ef07485283e396c63c6",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 10551,
+   "sha256": "919962bd789ac57a3a4315ba355cfd99c2064489a061a9fdacf5801b1d1620b7",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 13558,
+   "sha256": "8320904295931868de7817aee84fc8645189fc77fc9b8cb4865f184dcfacca0e",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 9222,
+   "sha256": "6a19ab15e1e420f5ca3763483bdf97248214ca6d88f5fedfd3c2f54e33a9e187",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 11808,
+   "sha256": "959d5cc08ede3ebc89987c5f0ac8f78b873cb61c933e5b3c1c17347d055e5785",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 8740,
+   "sha256": "17ea5e6ce38ff345a5f035d293b6e13c4c48689042e760f332303f7fc05d3de8",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 12223,
+   "sha256": "b6a4cb979fdadf8fd2888ba356bb42b933d797b89e2a0cad9f7ac633d3874272",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 10069,
+   "sha256": "179824b6a10a38040bd55e58c7d951c7fedf3a3e11fd529d7974e38862724e24",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 13727,
+   "sha256": "9e83bf2ebdfa1631603c82e3613c94ca10d5ce1b4059c5ac586cc0895157309c",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 8852,
+   "sha256": "3bf7fea0a0258f6f0c1e03b46d2960c14faeb4702468661141eeca6b7dbfa476",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 11916,
+   "sha256": "8dcb9f61155b5cec536b85a33cfa4280d3aad33e9433ef83e5f8553242bb8551",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 7730,
+   "sha256": "01770efa058fbb8f36b7277f88dfc013e5078d090298c097955bda7fb78a984d",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 8435,
+   "sha256": "9f89aa16c981e6567d6aa7b94058d3a2653886407a4f8ebf4561d48e4aca2b0b",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 7920,
+   "sha256": "a4aca8ad8b7d25c33c44bbd22e44d8c102a365de8dada35f96201095d2029fdf",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 12301,
+   "sha256": "e1fece53bb642c03f813c4739d00d384b40a5bd3b8eb85cd00e40349235c02a8",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 9249,
+   "sha256": "d5811fbd51458671e54ca2bd0b339352395b4ca7d4efa789836a2078e1463d58",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 13222,
+   "sha256": "b40e6e43953d07947e760d1d2dbf3670cddacb75f1cc1f29fe7049296c1f1287",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 8629,
+   "sha256": "d6b835f3985e11208f918a36363eec12533924a26775ba6eb8b960ace39ba53a",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 12927,
+   "sha256": "0cb9e7cae0f1a711dc7d8501af20f34be4d963a19202d789f4d324fc15e86a73",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 7458,
+   "sha256": "3fb4b97a11b029020518dd527bd4429046d17255184887cba756126a38457830",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 13910,
+   "sha256": "8da0b55d8199d2e2c112ada417f17954b5014082ea05ed2e6b5f20bf59540ab2",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 9501,
+   "sha256": "3c41463853d523139343f54b98c1faed240eaf5756caee4c6d12cbccc0170785",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 14557,
+   "sha256": "1ec5dfe9b2e25e580af5391ba5a4bcc10d558ae656ae6bf1fadf99d52b89f70e",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 10733,
+   "sha256": "1f24af72e53bce9fc19e3b1eba777a282cd3189d6d19cbeb5218dd182de57196",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 10784,
+   "sha256": "a8eec0e1236011e109934e9f16f58e5dbd68275734f2d3cf882218454779798e",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 12573,
+   "sha256": "f34dbaaa280250eaecc56f2b0a9f95ae91a1df8241ca569df9a517a80a5c88f1",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 8688,
+   "sha256": "cb8965ba3468f1dd9839907a3aae622764e750557daa705427b192d9072820bd",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 10511,
+   "sha256": "3ee19988bb2d7227100c5a32f21fee510a5e2a55e2005d50166b00f19a9e14c4",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 10559,
+   "sha256": "987ce84a3817a70ac5e8c1ee42a9a02ee6eb895a7404f23a36e9055cb4558b63",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 13355,
+   "sha256": "c98ffdfd4e04353a50102a1c918e0d802a7966c330182e4d2146a2983d41bfa8",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 7079,
+   "sha256": "adc85d6e603ad5592003a826b1c2a8d053ccae70e24f21b872a6a83fae06097c",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 12218,
+   "sha256": "3517d441cfff6206558c3b70c17d95ac690a283f1f63bbca034f8dab15e960c3",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 8672,
+   "sha256": "bcfd9244f8e3f849bd90b92888f8281415afc5b8404e1ce9f5b3f4fc14172f06",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 13546,
+   "sha256": "f0899e1e3e32d02b6b875ff97c22fa85ec7071a580b0c7fee49d8c7ac599c9ad",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 6504,
+   "sha256": "7e1dc1cfd1669ea6b0f2fceec61a5310ef9ccdf774594c9185be99de70e02821",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 11893,
+   "sha256": "6e7eb9df002a7ba007f035d23550ef3e64a79a3608cd5a71dd22631f364138ae",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 9106,
+   "sha256": "855eda08cdf1248325d3ae91d1d8be92d73eefc18f187a19727b179e6148934f",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 13152,
+   "sha256": "77ede1d184f837fe9e3dfaa434a0f616e83b0a3aea9bd72e26fc7cfb7d2f3cdb",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 8013,
+   "sha256": "8c2b8dae7b67393ad1fb7a6651446e703af5671ccd4080049381129b32459474",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 13334,
+   "sha256": "ae012f3566a6219adfc1f663bbdafcece565e6a24275aa665bb231a1d279121b",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 7794,
+   "sha256": "fc8e37df85b62c6ccd9f57f7be86d7854d00aa716b95b02e3406115f890e7b73",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 13135,
+   "sha256": "90f0975444d84aefa80997110e286cfac819ff0756fa1865bb7b353a8f8bed92",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 8523,
+   "sha256": "5dddabda874f1f5efd74126d4289bacd09bbcaffc417bb427d895e8360e6b0f7",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/los-bronces/polygons.geojson",
    "kind": "polygons",
    "bytes": 6643,
    "sha256": "a339aeb6ebeeb515649e5ecc8e59342f3d27640f823f34b4f9c7f8a153d8848d"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/311/611.png",
+   "kind": "terrain",
+   "bytes": 71715,
+   "sha256": "cdc168c54793015a93df00d3d5ce90bf9463567d722d8e9926d576d74aa5af58"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/311/612.png",
+   "kind": "terrain",
+   "bytes": 149535,
+   "sha256": "5440ed0de75bc8a5e77ecd4c1e0c54559a6d2b2a6440be076d7cc538891a2b6d"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/312/611.png",
+   "kind": "terrain",
+   "bytes": 66017,
+   "sha256": "9a30b8064bc1d0c2a9f62c0d815483119859c4f7ef6b9ec922c77c8addb4c68a"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/312/612.png",
+   "kind": "terrain",
+   "bytes": 139028,
+   "sha256": "3f4fc2209e136bc15fe03bd8ae38fdaeed0512d74effe32a9e3e920fd73386dc"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/623/1223.png",
+   "kind": "terrain",
+   "bytes": 136320,
+   "sha256": "7a43e96d72db999e9384eab16e4b0bb4a900105848183d9e248c0a4ad099f5ed"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/623/1224.png",
+   "kind": "terrain",
+   "bytes": 147562,
+   "sha256": "4afc13040185ac80d9949f81ed86669cc138a8ed0bcc6119789cbc481b8047b9"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/624/1223.png",
+   "kind": "terrain",
+   "bytes": 138982,
+   "sha256": "15eae21cbb616ce9ba124e51c112f73de341ae9df528f6ae913483add98f6fb1"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/624/1224.png",
+   "kind": "terrain",
+   "bytes": 148390,
+   "sha256": "87804cbd7d3440cd603d95002e5758cb576ec768840a1d37c8be7a9697dcb601"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1247/2447.png",
+   "kind": "terrain",
+   "bytes": 136347,
+   "sha256": "d9e6a84166c646c80f7c2e281665fc15b995ab51007822ab07e19136090230ce"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1247/2448.png",
+   "kind": "terrain",
+   "bytes": 140314,
+   "sha256": "c36ad8151ef1f0466b5b57e3e9943eeca1224cc6d03799b9ad8c1aadb9d6522d"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1247/2449.png",
+   "kind": "terrain",
+   "bytes": 140335,
+   "sha256": "c35b3b595668177e9287516cb96b5aa42ccf1b5093fe603ebb3f0bd5e37c1977"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1248/2447.png",
+   "kind": "terrain",
+   "bytes": 140557,
+   "sha256": "f5a789664902d5f42c75c45a72f9baaf012d8bb12dae52690aa2611790c2a242"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1248/2448.png",
+   "kind": "terrain",
+   "bytes": 140181,
+   "sha256": "5096071b7b07ebb4d4d4b78b18f9542ca0375892d2e66bae5f203aefd11125aa"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1248/2449.png",
+   "kind": "terrain",
+   "bytes": 141833,
+   "sha256": "51ff276a4a34a1d12a5a23196821c96a1e3737bf1b7d88819ce719f8d5b8e3fc"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1249/2447.png",
+   "kind": "terrain",
+   "bytes": 138998,
+   "sha256": "41717ddece7e71e4290936619d896976182be005d2fe124899cf2bea6d9f4ffe"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1249/2448.png",
+   "kind": "terrain",
+   "bytes": 137536,
+   "sha256": "ea3ae4f40aed24af8c61f334f7efb4ec0421d9568f8791a193237d23d1e63099"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1249/2449.png",
+   "kind": "terrain",
+   "bytes": 141667,
+   "sha256": "3ebfc1592775096ffd550cea17b3cce90ff8be9f95c460a464645c622599d8e2"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4894.png",
+   "kind": "terrain",
+   "bytes": 124857,
+   "sha256": "8940c1a77a8e9367495ff6d9684d854e5f777af79344ebb674cffef048519932"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4895.png",
+   "kind": "terrain",
+   "bytes": 126673,
+   "sha256": "0d5012a9cb8060a1ec6cfb13cf849139d275068f6c6d5bd8a453c63d442fe5c7"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4896.png",
+   "kind": "terrain",
+   "bytes": 128050,
+   "sha256": "c94788cf50acd085a7f2b322984bcc78a840b2c846918909db3b1d959c409326"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4897.png",
+   "kind": "terrain",
+   "bytes": 131097,
+   "sha256": "fdb68e961b59e5d8f6232a1ad2b07d77f3c29bdc83ca1d0e4e8e42555e6b1ee7"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4898.png",
+   "kind": "terrain",
+   "bytes": 130635,
+   "sha256": "015e1191bb7e99e7ed6ba11ac91ffb30008b0259b6f20a55f758553163bce168"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4894.png",
+   "kind": "terrain",
+   "bytes": 125186,
+   "sha256": "027004dd593a7e6f525f9351367f4ff4614a6eabf4324839c5d0b3418170454b"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4895.png",
+   "kind": "terrain",
+   "bytes": 127124,
+   "sha256": "146fb34624db7e27eaed61bd9de68a3090c0a0c03526b0595ac302e019b5fe7b"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4896.png",
+   "kind": "terrain",
+   "bytes": 132835,
+   "sha256": "6e849d29164e1fafb94c4284e2249a710683f3e4633b29092835a2ca08f9ce36"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4897.png",
+   "kind": "terrain",
+   "bytes": 132659,
+   "sha256": "f45644754781e2df0935275d5f90916c26ff5e5710f31e1228f9a18325b3bdd2"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4898.png",
+   "kind": "terrain",
+   "bytes": 131710,
+   "sha256": "828623e1adf3af71bb96e3af2fca49a4263f181c9345eb8a7f50743b570b7240"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4894.png",
+   "kind": "terrain",
+   "bytes": 130999,
+   "sha256": "961f97dc3bb0b3d21f9d663bcabf9ca444ee72cfa6e95aecff7b2de2f0863765"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4895.png",
+   "kind": "terrain",
+   "bytes": 128937,
+   "sha256": "ab561ab5823b4c05da593cdd7c0ec434fe4cc64ad6a6ad95523baa92277cea48"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4896.png",
+   "kind": "terrain",
+   "bytes": 131497,
+   "sha256": "8a01648c36836379b5fbe8c82ab3c5a24105f7925c3a817b4abc59931795afec"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4897.png",
+   "kind": "terrain",
+   "bytes": 132934,
+   "sha256": "4885cb905b779bc5563e9847505ca0d89ee06c430f6b7d3ab834b5e1013dc52b"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4898.png",
+   "kind": "terrain",
+   "bytes": 134288,
+   "sha256": "acfab33bf61e748a6e88ed413616963867d68e766b1a248550081970c65825dc"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4894.png",
+   "kind": "terrain",
+   "bytes": 133523,
+   "sha256": "39c348850cf0de2076395979a4e9b2245742a3d009a7bb9113857fdc1e39cfb7"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4895.png",
+   "kind": "terrain",
+   "bytes": 133160,
+   "sha256": "089ea95ff945b71bd8224fa2e26be81fc7a277989db20d22e46d847fbaf2b7fa"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4896.png",
+   "kind": "terrain",
+   "bytes": 130429,
+   "sha256": "985d3975ce1d9075978edea585390db4087241d2ba5f4a55124cfdd1fa7dfcc3"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4897.png",
+   "kind": "terrain",
+   "bytes": 131540,
+   "sha256": "fb2ac6803353fcb11a61d81bc0a83ec8c5bd31833da56d8a37f6933e59e23f53"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4898.png",
+   "kind": "terrain",
+   "bytes": 133091,
+   "sha256": "ea0e92159f1aecc7de6ebb9e2f38ccc55d9726e6317c9ff3d66ad82028c41275"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4894.png",
+   "kind": "terrain",
+   "bytes": 130649,
+   "sha256": "0a1d7c9ec6604132a135392badf19762e4eb05051dbc7e2dc6e1420eca0e00c6"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4895.png",
+   "kind": "terrain",
+   "bytes": 128993,
+   "sha256": "fcc3b0cec00844e22d00cdf193f7dd9fa54da5f1da54fcdc27f61b7721756222"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4896.png",
+   "kind": "terrain",
+   "bytes": 121080,
+   "sha256": "38b6a866b4631c47bb57e9db094860a294eaf100b875bd68522590f3bfc96566"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4897.png",
+   "kind": "terrain",
+   "bytes": 130391,
+   "sha256": "d4127a118098d13e5a9b6298335afb5879ef2b1a94f86011df44ac820a1743da"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4898.png",
+   "kind": "terrain",
+   "bytes": 133720,
+   "sha256": "ac83e22203f87a4c4052bc78d4a161568f142d7cb2bfcf7c04625f646c556439"
   }
  ]
 }

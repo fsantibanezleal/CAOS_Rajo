@@ -121,7 +121,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -172,7 +175,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -223,7 +229,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -277,7 +286,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -328,7 +340,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -379,7 +394,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -430,7 +448,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -484,7 +505,10 @@
     "snow"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -535,7 +559,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -586,7 +613,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -637,7 +667,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -688,7 +721,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -739,7 +775,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -790,7 +829,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -841,7 +883,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -894,7 +939,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -945,7 +993,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -996,7 +1047,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1047,7 +1101,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1102,7 +1159,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1157,7 +1217,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1208,7 +1271,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1259,7 +1325,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1315,7 +1384,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1370,7 +1442,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1426,7 +1501,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1481,7 +1559,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1536,7 +1617,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1592,7 +1676,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1647,7 +1734,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1698,7 +1788,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1751,7 +1844,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1802,7 +1898,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1853,7 +1952,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1904,7 +2006,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1955,7 +2060,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -2006,7 +2114,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2057,7 +2168,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2108,7 +2222,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2159,7 +2276,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2210,7 +2330,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2261,14 +2384,653 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {},
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2c"
+  ],
+  "valid_frac": [
+   0.7028,
+   1.0,
+   1.0,
+   0.9978,
+   0.9999,
+   0.9998,
+   1.0,
+   0.9029,
+   0.9999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9997,
+   1.0,
+   0.999,
+   0.9993,
+   0.9917,
+   0.9997,
+   0.983,
+   0.9752,
+   0.9767,
+   0.9504,
+   0.9226,
+   0.9626,
+   0.9412,
+   0.945,
+   0.9423,
+   0.9357,
+   0.9481,
+   0.9002,
+   0.8237,
+   0.9819,
+   1.0,
+   0.9962,
+   1.0,
+   1.0,
+   0.9993,
+   1.0,
+   0.9994,
+   0.9989,
+   0.9973
+  ],
+  "envelope_km2": 56.3508,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    16.9434,
+    27.7272,
+    34.8597,
+    37.5084,
+    30.7899,
+    39.6,
+    30.0141,
+    35.4708,
+    34.0119,
+    28.4112,
+    28.8234,
+    25.056,
+    30.4605,
+    48.1437,
+    18.9477,
+    50.6178,
+    33.2334,
+    27.5292,
+    49.6449,
+    38.295,
+    26.0829,
+    26.3934,
+    23.6835,
+    28.3824,
+    27.108,
+    31.608,
+    23.733,
+    23.0769,
+    29.0259,
+    25.0587,
+    18.2898,
+    29.6757,
+    9.0612,
+    12.9501,
+    8.5689,
+    10.3689,
+    12.7521,
+    7.8147,
+    10.71,
+    10.6857,
+    10.8486,
+    12.1851
+   ],
+   "rf": [
+    26.6931,
+    47.1213,
+    49.5927,
+    48.7314,
+    46.9719,
+    48.9879,
+    47.4615,
+    45.1998,
+    49.1976,
+    50.2533,
+    48.5658,
+    48.3084,
+    46.3959,
+    49.8924,
+    42.2613,
+    50.4063,
+    46.3518,
+    45.018,
+    48.5991,
+    47.1384,
+    47.4174,
+    50.283,
+    48.1689,
+    45.9162,
+    47.1978,
+    46.8558,
+    46.341,
+    45.4122,
+    43.3044,
+    45.1125,
+    41.9211,
+    38.0079,
+    50.2011,
+    50.8725,
+    51.9579,
+    51.9669,
+    51.1137,
+    51.8823,
+    51.9336,
+    52.1406,
+    51.318,
+    51.1929
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.08158,
+    0.08025,
+    0.08291,
+    0.04889,
+    0.06674,
+    0.07092,
+    0.06278,
+    0.05869,
+    0.07689,
+    0.06473,
+    0.0594,
+    0.1278,
+    0.06435,
+    0.06258,
+    0.10436,
+    0.05569,
+    0.05673,
+    0.06532,
+    0.05242,
+    0.04549,
+    0.04482,
+    0.05617,
+    0.04837,
+    0.0361,
+    0.04931,
+    0.03823,
+    0.05711,
+    0.04743,
+    0.04412,
+    0.04166,
+    0.05746,
+    0.06895,
+    0.03932,
+    0.11913,
+    0.03766,
+    0.09254,
+    0.09445,
+    0.094,
+    0.13129,
+    0.10134,
+    0.11724,
+    0.10862
+   ],
+   "mndwi": [
+    0.12645,
+    -0.22281,
+    -0.2034,
+    -0.06746,
+    -0.20495,
+    -0.19805,
+    -0.20073,
+    -0.14227,
+    -0.18909,
+    -0.20303,
+    -0.1876,
+    -0.23558,
+    -0.20203,
+    -0.17077,
+    -0.23602,
+    -0.18252,
+    -0.19395,
+    -0.20546,
+    -0.17342,
+    -0.17459,
+    -0.17327,
+    -0.19,
+    -0.16656,
+    -0.16298,
+    -0.17782,
+    -0.15464,
+    -0.19568,
+    -0.18478,
+    -0.17914,
+    -0.18065,
+    -0.21606,
+    -0.20105,
+    -0.17259,
+    -0.43486,
+    -0.18731,
+    -0.43098,
+    -0.42852,
+    -0.43139,
+    -0.47671,
+    -0.43226,
+    -0.45159,
+    -0.46611
+   ],
+   "bsi": [
+    -0.10927,
+    0.14138,
+    0.12853,
+    0.05779,
+    0.14098,
+    0.13176,
+    0.13897,
+    0.09945,
+    0.12221,
+    0.13884,
+    0.13319,
+    0.08133,
+    0.13943,
+    0.11939,
+    0.12524,
+    0.13202,
+    0.12933,
+    0.13042,
+    0.12016,
+    0.12393,
+    0.12282,
+    0.13174,
+    0.128,
+    0.11855,
+    0.12009,
+    0.11408,
+    0.11472,
+    0.12519,
+    0.12487,
+    0.12704,
+    0.15857,
+    0.14924,
+    0.12553,
+    0.25305,
+    0.13859,
+    0.26195,
+    0.26994,
+    0.2661,
+    0.278,
+    0.27069,
+    0.25289,
+    0.27897
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2016,
+       "mean": 30.569,
+       "slope": -0.1963
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 10.5945,
+       "slope": 0.1217
+      }
+     ],
+     "penalty": 677.170309,
+     "sigma": 7.771196,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 3.885598,
+     "h": 31.084785,
+     "sigma": 7.771196,
+     "target": 0.1629
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1988,
+      2013,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1987,
+       "mean": 41.1357,
+       "slope": 11.4498
+      },
+      {
+       "start": 1988,
+       "end": 2012,
+       "mean": 47.4933,
+       "slope": -0.0625
+      },
+      {
+       "start": 2013,
+       "end": 2016,
+       "mean": 42.0865,
+       "slope": -1.9081
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 51.4579,
+       "slope": 0.0826
+      }
+     ],
+     "penalty": 55.611915,
+     "sigma": 2.227013,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1986,
+      2017
+     ],
+     "k": 1.113507,
+     "h": 8.908054,
+     "sigma": 2.227013,
+     "target": -0.2574
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1986,
+    "method": "cusum",
+    "series": "rf",
+    "score": 8.908054
+   },
+   {
+    "year": 1988,
+    "method": "pelt",
+    "series": "rf",
+    "score": 55.611915
+   },
+   {
+    "year": 2013,
+    "method": "pelt",
+    "series": "rf",
+    "score": 55.611915
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 677.170309
+   },
+   {
+    "year": 2017,
+    "method": "cusum",
+    "series": "rf",
+    "score": 8.908054
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 55.611915
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "los-pelambres",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -174.3,
+   174.3
+  ],
+  "geoid_offset_m": 0.186,
+  "stable_bias_m": -1.647,
+  "noise_floor_m": 2.454,
+  "tau_m": 4.907,
+  "stable_ground_px": 54842,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 485197536,
+  "fill_volume_m3": 429828480,
+  "envelope": {
+   "cut_m3": 485197536,
+   "fill_m3": 429828480,
+   "cut_km2": 11.3553,
+   "fill_km2": 12.1986,
+   "min_m": -329.3,
+   "max_m": 263.5
+  },
+  "window": {
+   "cut_m3": 869073024,
+   "fill_m3": 794760512,
+   "cut_km2": 54.1584,
+   "fill_km2": 46.7595,
+   "min_m": -329.3,
+   "max_m": 263.5
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/311/606.png",
+   "terrain/10/311/607.png",
+   "terrain/11/622/1213.png",
+   "terrain/11/622/1214.png",
+   "terrain/11/622/1215.png",
+   "terrain/11/623/1213.png",
+   "terrain/11/623/1214.png",
+   "terrain/11/623/1215.png",
+   "terrain/12/1244/2427.png",
+   "terrain/12/1244/2428.png",
+   "terrain/12/1244/2429.png",
+   "terrain/12/1244/2430.png",
+   "terrain/12/1245/2427.png",
+   "terrain/12/1245/2428.png",
+   "terrain/12/1245/2429.png",
+   "terrain/12/1245/2430.png",
+   "terrain/12/1246/2427.png",
+   "terrain/12/1246/2428.png",
+   "terrain/12/1246/2429.png",
+   "terrain/12/1246/2430.png",
+   "terrain/12/1247/2427.png",
+   "terrain/12/1247/2428.png",
+   "terrain/12/1247/2429.png",
+   "terrain/12/1247/2430.png",
+   "terrain/13/2489/4855.png",
+   "terrain/13/2489/4856.png",
+   "terrain/13/2489/4857.png",
+   "terrain/13/2489/4858.png",
+   "terrain/13/2489/4859.png",
+   "terrain/13/2489/4860.png",
+   "terrain/13/2490/4855.png",
+   "terrain/13/2490/4856.png",
+   "terrain/13/2490/4857.png",
+   "terrain/13/2490/4858.png",
+   "terrain/13/2490/4859.png",
+   "terrain/13/2490/4860.png",
+   "terrain/13/2491/4855.png",
+   "terrain/13/2491/4856.png",
+   "terrain/13/2491/4857.png",
+   "terrain/13/2491/4858.png",
+   "terrain/13/2491/4859.png",
+   "terrain/13/2491/4860.png",
+   "terrain/13/2492/4855.png",
+   "terrain/13/2492/4856.png",
+   "terrain/13/2492/4857.png",
+   "terrain/13/2492/4858.png",
+   "terrain/13/2492/4859.png",
+   "terrain/13/2492/4860.png",
+   "terrain/13/2493/4855.png",
+   "terrain/13/2493/4856.png",
+   "terrain/13/2493/4857.png",
+   "terrain/13/2493/4858.png",
+   "terrain/13/2493/4859.png",
+   "terrain/13/2493/4860.png",
+   "terrain/13/2494/4855.png",
+   "terrain/13/2494/4856.png",
+   "terrain/13/2494/4857.png",
+   "terrain/13/2494/4858.png",
+   "terrain/13/2494/4859.png",
+   "terrain/13/2494/4860.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 1588.0,
+   "max": 4680.0
+  },
+  "cop_stats": {
+   "min": 1582.5,
+   "max": 4712.0
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/los-pelambres/dem/cop.png",
+   "kind": "dem",
+   "bytes": 421125,
+   "sha256": "203ad240f885c4b7da2eb096eb66ebc94cef88ee6d4bbd92961ab6910f106b05"
+  },
+  {
+   "path": "sites/los-pelambres/dem/delta.png",
+   "kind": "dem",
+   "bytes": 594580,
+   "sha256": "951e4d01b995c928f2b7d605a3e7ddf119ddea0407b8cc397353c95328244d3a"
+  },
+  {
+   "path": "sites/los-pelambres/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 458070,
+   "sha256": "d33b7f95add6f36b09ec0383edcdb46772a863b91801c4a3ff43c47db10c1a6f"
+  },
   {
    "path": "sites/los-pelambres/frames/1985-swir.webp",
    "kind": "frame",
@@ -2858,10 +3620,1042 @@
    "year": 2026
   },
   {
+   "path": "sites/los-pelambres/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 9820,
+   "sha256": "b9aa5bd00427c42aabcfe3595f17572189ba32a710c0301e7d99d7662a9cbfce",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 9344,
+   "sha256": "c454e4a0dc2c7fa1fc9894e9bfd7c7cbfefeb5346f5f0a3fff7bcaab23490320",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 14546,
+   "sha256": "12cc30dcf659cdc67c32eba04b240dcb2a96dd833c5bc86668cedbd233050ead",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 20430,
+   "sha256": "bf0caf1a4072bf24c8a6314cadb170c3b916792b357d618170b1fafb8200071d",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 17472,
+   "sha256": "d8c22356a59984c452e3597bdb5ab9fa1d34eb24673ed6dfc9d6a8270993867b",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 19219,
+   "sha256": "93327662b33b4dce3bcf1afa76c4a83cdc91b5a1e7c11f2ac8e6eae870cf546f",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 19876,
+   "sha256": "1117becf425083042b33745f0fb17a475a740959ed4bd51c7d652b689851dd8b",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 22461,
+   "sha256": "64e2f0de6cb862d0047d981e6f48824779ee62b241b3909e126f3d7d9cf1c65f",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 15403,
+   "sha256": "63fe55ec8a63db387c6b8c19eb4599098679ab9838a338840c2d919e86acf3b0",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 20483,
+   "sha256": "c75c25c621575d27e30c8b93045730c0e2e7e83b74a81773a0849745aa0c349b",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 17489,
+   "sha256": "3e6c59a9a2ca05dd46006c03bec3f1a5ac5584b07a0f36d55079fd1e4a3e3ed5",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 18878,
+   "sha256": "1c4005c95c6da9adbb6fd98e8f46d1c38d0aa208c260583761996fcfdc878d8b",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 16069,
+   "sha256": "ae86767e381ec3fa3083d33f450a7b435067744478f168666e82cf50505ce125",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 19623,
+   "sha256": "e7e237e0a43c27743786b6d235811acd75d26b72f2835e5745bd7ef5c38f0702",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 18433,
+   "sha256": "6ec17f3fb7d469aa14407c24e8b8773eb6f30962cf1ebe6a11f3ca57f6de2f81",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 15621,
+   "sha256": "830112355c67db7af8992db2d23c4485b3b2d91ca81a69ae11d7b1f76ce0e371",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 17223,
+   "sha256": "01a9f7bed5e65aa08892e78b8c94b18f115f0ef3846e685edc28b8c25a1c0ebf",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 18683,
+   "sha256": "0229a985041c981b1bacd12bb1eda3550ce1feb0eb7232e0dd1ba10baad4ace1",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 15510,
+   "sha256": "ddea0d6bf767b2635611cb699398a65d45f4d44282a396f6237164db2d753be3",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 18388,
+   "sha256": "f6a23803a6388e45af37d67c510391c282efe5f05ff25fb8a9fde7adcbc87536",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 15303,
+   "sha256": "7344a4423e00d91befcc5f48c76ceeaec18c32e3989945d5229055500ea2097b",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 19070,
+   "sha256": "181f212040b6cfe4a5318419137a59577e08687ccadcc5c3c583cd836b342915",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 19905,
+   "sha256": "c663b769aa6800ddcf14b3ba58eccbe3a3c7decd8c15525b66fdeb229e1ef70d",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 18767,
+   "sha256": "143350da33cb0ab75b8996a0532b43ebe4ba7d3080c075fd962b802b3c681a36",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 15666,
+   "sha256": "bd3321fb16e7101b3e87946d7ea37cfbb323d09389c857b9ea2e526ba86c7fe1",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 19795,
+   "sha256": "38f032448c72d783d7d629713c4df600391964d5d19bf45f2fd5598793695b6f",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 19385,
+   "sha256": "07967582aded293d26a913d6160c942e60020f34f120f3f2cd47909234cb3c1a",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 19341,
+   "sha256": "4698e246af8cec8e1ed0a5edb03e42041cfc6abe297fc37b74818316fe13d65c",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 16273,
+   "sha256": "d003e8317cf8d4cd30ce7bdc93877008a7b4bec12ab39dce5217de80b4572be7",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 22309,
+   "sha256": "2f74f4a7be36e4860199a39bacbef191bae93b669f24fa12415d2e8df8d0be8a",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 16382,
+   "sha256": "8824a088a718d7fb2542c3fea02731c7f09d959a109b0e2d650f41e5685c5dfb",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 18317,
+   "sha256": "11e620672493ec647734a3b4301cfb2cbfd52666020349c8054fade99da62601",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 16831,
+   "sha256": "a48aff211a33040fe23db4aeaa87a9983a1c091f1a0033891ac82a8bdb4a2f2f",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 19599,
+   "sha256": "9f0e57319a6dba6053ca4c1ccae93899637dcaa8984741e9e7839a4cc68e0779",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 15510,
+   "sha256": "5965a39e305e2af6257f067f09959e770b6747259ca926ac81bf053b24733cc5",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 19776,
+   "sha256": "36f7b26b4632da16ac2e660e2273474c1591921879f6049904222174f6bccec6",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 19278,
+   "sha256": "3466fa9a30552733ba58bf8d2e510695f4a510399f7420d1b84cc0b3530921fb",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 18867,
+   "sha256": "aedac99230775b92e9092ba4914585cec82cbaeb7b7a0399db83e938a4f7f601",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 17890,
+   "sha256": "3bf29b5c36d4cafb393fe44c4235b4fe87ddc4c74d387433d2663268845594e7",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 18670,
+   "sha256": "24c286d7c6629590ab6db78d1c899513b182ffe5ab66f7a16196c2977acdcbbc",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 15664,
+   "sha256": "b91317c81d2b163f7b01d06d6100ffc36ad4e7a5b4fd759a8a7da1f2c08847ad",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 19109,
+   "sha256": "cbe7817a19d4e944a20e2f22f29d8322d99ddd0da0f25fe08452f7594d2b7372",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 15751,
+   "sha256": "7b7eb119b8a39e6e511afa45d6d5b198a26ed8f111c90c1dfea9a3f32fcccc71",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 17390,
+   "sha256": "8531b58e9f412508f02aefe162f0be1967573e161b377cb19ef6f7cd4bd3935e",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 15635,
+   "sha256": "db2acb4c84d8051dab924c6974923d95fff5219b9124350f45b8dec61d122e23",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 17908,
+   "sha256": "130646b9e0b6a32cb8d43cba2326ee163dfcb587d7b5f0245c34829840c90b61",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 17937,
+   "sha256": "e73aa2d2924403b137a2daaba5fdd4e2daba8e2f525f0180fd794954678f79b0",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 19056,
+   "sha256": "ee9e112b5bc9307bb10ec18b5987407c0c700a92a5e577e79f8c368dd6baac7c",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 16310,
+   "sha256": "fc477e9b08b20757b68f22833fe8aab0656df0b431545025cddcca8b56451a9a",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 18352,
+   "sha256": "2fb7a857c8b7800537abec7f30ab67c0b7de4bdde6d8efa1bfbd50c80d1679b7",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 17910,
+   "sha256": "b8d2d373f774ab85453c6d74684f1a48012a0f2666c587109e2ec0d636e9fbd4",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 18269,
+   "sha256": "918e8d308b583958e2372a970906df7ba67a9fe03f8e3fcf538fc2415d86477f",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 15826,
+   "sha256": "c46e9582a1ac65dbe168e06b57d0d73495e666ba1d824a00b95649c3ba36fcff",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 18308,
+   "sha256": "04e8deb2639b9ab31be510adaf507012775380099435bb22d5ce16eb733ebcda",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 15754,
+   "sha256": "838252bd99f93373100122949d088197e0803fa12b6227cfffab702b06ebc276",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 19460,
+   "sha256": "3465ad133ed544d9160d597e48c296ef57ccdf6adef041fd8a82e41d2a298577",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 17354,
+   "sha256": "f59ce77728075d68f1cea14a320789a6cc5b4e23112a4bc38b099d58e7e55f72",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 19811,
+   "sha256": "5e63a227324c1904ae30533f77e4fd36a97f2dcbfb683231103c21452354394e",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 16224,
+   "sha256": "91624af6a29cc333db8b74d01cf4c14cc6af6a5ed1975aef1b21fe5021d1648a",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 19051,
+   "sha256": "f1b7726557a43a49aeabb9a12acba1332cf50db7826bf0d988259d2c0c2c2aad",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 13128,
+   "sha256": "a9e1f15acc460f4e224dbe9fbc3994819a296070bf61c867ef722d7e2599ae5a",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 19478,
+   "sha256": "7963c34e9da0d4968615ce2a88cb51fd3d62b0f3008798cb65028f42bf58f8e0",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 17916,
+   "sha256": "586741bc99740dabb884003716a2161235ec3b59d8c328e8ed3a396b166bdd6f",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 20550,
+   "sha256": "557158128641a5bc7a1ea719915d185d0b29f9fe0c3280559443fec64496d7e2",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 13788,
+   "sha256": "f16c2bc5de54143e0e1c22dcb996eb4a77dde08f43ed50aa0db3b3b9823ffd2d",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 22029,
+   "sha256": "61bb0de3603e68ea19998b61859e80af414f06cce61d873038033ae82bdda70b",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 13501,
+   "sha256": "f6ab860430495633566ea72dd62eed39f0284fc46afb25eaf902d7a0d2b6d9f6",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 18534,
+   "sha256": "f5d4ddf36f664955d4b0022052ea98b9027d92b1283758ba84ee20f8b9e15cc1",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 12850,
+   "sha256": "aa2a28c5f14bd5ea444181795a7f7088fbeb6fe256e4333a2db50b1a021c292f",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 20866,
+   "sha256": "341dfc21bbb163a9d1c7f206b56e5651633b25fc706a0723ec6d857f22e61801",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 13059,
+   "sha256": "41708a419a7f111f9c2f87c5b38eac899c488b6bed3b1fbfa1e70d425bc583d1",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 18576,
+   "sha256": "266706708e6a1549599e76598989d4b70ef92a1ae464942952030a475d86c8ca",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 14423,
+   "sha256": "5f0c05e86c42b3fde3308f9a60dcae13353751ddc4775d7ac28de148e9f8c067",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 18461,
+   "sha256": "77fefacec6d24eab156f6ccd4afe168f84460298d35963740dee7fc3b6e4d416",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 11782,
+   "sha256": "f0f02d34067bf48d68de3e68bfd08e464cbc92447a335f37d5c3c1a182f3f2f3",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 17735,
+   "sha256": "e725bfcc189a9e8b583a153e5306b238818a637b0fedf4a9be03481cbf76e9d9",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 11043,
+   "sha256": "d1dc02de8c0410714c787a43baff696320900308727c82a35b53dfc61d514ef7",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 18192,
+   "sha256": "6cc1965fbcbde698d5ed5e9bbf251fe1011b7373acf5400e1cdc04e332ba2a55",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 13302,
+   "sha256": "1b2ca30f2ac338ec377e5ff3f3bc5e1a1847f66d0da881a54ea881f48aa9f8b6",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 17886,
+   "sha256": "841b8e2385cf888f3c7b98afa92f701d7512599616190eba4f0a7450e0f555e4",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 12042,
+   "sha256": "ad2167b4beaa95f440c826ca915006af1a854645407a6b81b4d5ace0f5722635",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 18275,
+   "sha256": "7de7f7a253b99b5f5896f1de4bc89c4fcf12d7f6f4bdb98422d30419b261fa33",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 12889,
+   "sha256": "cbb24886b3f875bac4f39154ad63e531b35465f7e889cd08e33fa8145eca630f",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 18142,
+   "sha256": "8aadf460744cf6d0632e369cca7edfbc262654ba9eeff5ee0bd812043c4cf845",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/los-pelambres/polygons.geojson",
    "kind": "polygons",
    "bytes": 12203,
    "sha256": "af408e8fdf41671979ba09108ea78741df86ac50b6b5c3cdc7dbb9608779af39"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/10/311/606.png",
+   "kind": "terrain",
+   "bytes": 152728,
+   "sha256": "7f1c2bd6e838675ab43351bc3e4df3e4648f95abda0419638f5fc1a12c74fa40"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/10/311/607.png",
+   "kind": "terrain",
+   "bytes": 153911,
+   "sha256": "39feb07ce30744134905355a5e298612503584907159d1d8a8d2361a75e9dc2e"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/11/622/1213.png",
+   "kind": "terrain",
+   "bytes": 144442,
+   "sha256": "a8c5611326c71ecb5ac6f0265017f16d9e0fe3d4c30fa6335cf7781377184a37"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/11/622/1214.png",
+   "kind": "terrain",
+   "bytes": 146236,
+   "sha256": "0d6cad0e7057c058caa89c311481a64931ec0e07c1a980c245a2f0290267f4cc"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/11/622/1215.png",
+   "kind": "terrain",
+   "bytes": 146519,
+   "sha256": "224dd3b87680b1ec6e52f1b63c858d69820248d7d9f907a0643e03d545c0f04d"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/11/623/1213.png",
+   "kind": "terrain",
+   "bytes": 146191,
+   "sha256": "03af52936905e3cde5d6844350f77967fc5c68bfde34d01d5d1c71783f6274ba"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/11/623/1214.png",
+   "kind": "terrain",
+   "bytes": 146490,
+   "sha256": "967d80545e76220be0a3fb14fe8c6d9d986631f14c9d4600e8aac4d6079f80c5"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/11/623/1215.png",
+   "kind": "terrain",
+   "bytes": 146613,
+   "sha256": "75f8985bd5f1db7fb0f94df7a116bcb2de59e14001e09e6e1a633e2d72d01e56"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1244/2427.png",
+   "kind": "terrain",
+   "bytes": 138613,
+   "sha256": "36eafb248fdbbf1c66bbc933aad8e023496afc4a2a8624771117771666d056b6"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1244/2428.png",
+   "kind": "terrain",
+   "bytes": 139184,
+   "sha256": "f70080c816554bf1ed28d09a091bfe51b0380d4e66133e4c74487a434e297209"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1244/2429.png",
+   "kind": "terrain",
+   "bytes": 139060,
+   "sha256": "c08469914afd49c6ed2675596371af38666b3607622bca7629c794ab0b83b0d6"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1244/2430.png",
+   "kind": "terrain",
+   "bytes": 138324,
+   "sha256": "5b8f189de95c7d0d57f9541f8d78e503710e251261486d32393b0cea13131c1b"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1245/2427.png",
+   "kind": "terrain",
+   "bytes": 136864,
+   "sha256": "d46e0c85371b06fd967f52bebbd1403df0394841d30c3ce7e47c61c6c717321c"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1245/2428.png",
+   "kind": "terrain",
+   "bytes": 135627,
+   "sha256": "51ae9c5ffc0d6912145c6e3bc6b92f2d77fa212361a0f287760a6f505478058c"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1245/2429.png",
+   "kind": "terrain",
+   "bytes": 140029,
+   "sha256": "e53e5f525b0ba9d357761047b72c4fd0501d5101e00811ed39f8c833d02c51c2"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1245/2430.png",
+   "kind": "terrain",
+   "bytes": 139606,
+   "sha256": "3fa0ae9bbf1ab4ac7c39e7909ac7da2d33ff6ad2f35aa67964cb0c654ed2ef9b"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1246/2427.png",
+   "kind": "terrain",
+   "bytes": 138621,
+   "sha256": "5eafab8622923255903c1ae7866caa9eb1bda77ec503559a89700b9c23a96163"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1246/2428.png",
+   "kind": "terrain",
+   "bytes": 135423,
+   "sha256": "ae2e87d78c1e397be1aa428da809536c5df90a5c0cab7c817da5410674d9cb66"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1246/2429.png",
+   "kind": "terrain",
+   "bytes": 139132,
+   "sha256": "207ad3714825e03c8b1fb273ac956e55945d6a4466956309905b5d0df202fd58"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1246/2430.png",
+   "kind": "terrain",
+   "bytes": 137725,
+   "sha256": "cedf1fd13436688041aee2daa83a80eb924f71939c97b54fb89ecba17a71cba3"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1247/2427.png",
+   "kind": "terrain",
+   "bytes": 139598,
+   "sha256": "bc33e77e2089a36194d3b3383b4954cc637e2e45b2f208b69e90cf129c1609aa"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1247/2428.png",
+   "kind": "terrain",
+   "bytes": 138346,
+   "sha256": "59d46343ac6d0c9db9a9c286e783202311605cace874a51e8ee2e8767e3a1a78"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1247/2429.png",
+   "kind": "terrain",
+   "bytes": 140230,
+   "sha256": "e310826e371200e77d580a2985b3ac0cc566f3d2cfac517f0dcd2255479120b3"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/12/1247/2430.png",
+   "kind": "terrain",
+   "bytes": 137823,
+   "sha256": "d6faafbe3cc31e8fe4232d78aa43b6073734cd023878077a62e643843ade31e8"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2489/4855.png",
+   "kind": "terrain",
+   "bytes": 128551,
+   "sha256": "d34b6116cc60b77b35fad93b92dfc32441b8d72b3600d34fcaf41db0c19046a2"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2489/4856.png",
+   "kind": "terrain",
+   "bytes": 128264,
+   "sha256": "47a82ec752325ea06ea2c71bf245b11172fa070d521964910320d28d08f7dd63"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2489/4857.png",
+   "kind": "terrain",
+   "bytes": 125004,
+   "sha256": "c1df510bd1e8c29d95aedac5430fae5c2a5fa28723a75305aa519e908dbf4a76"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2489/4858.png",
+   "kind": "terrain",
+   "bytes": 129399,
+   "sha256": "c6e41bee0bce4be3d89332fbe37e4977029bb46afceced66ed43942abe64b084"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2489/4859.png",
+   "kind": "terrain",
+   "bytes": 130288,
+   "sha256": "bab06f6a138a400086b02203bd9f16227f5e6b58c8e7d55d74e243f2f55da9a8"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2489/4860.png",
+   "kind": "terrain",
+   "bytes": 127151,
+   "sha256": "d572fd6260a6e24d9dd6cff23aa65c02715088d46d427425303f7f80d57e8dec"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2490/4855.png",
+   "kind": "terrain",
+   "bytes": 123020,
+   "sha256": "55c412fa44bc06dd6a83136ec2eba8ad5803a708775b2e7659d5bacae8143547"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2490/4856.png",
+   "kind": "terrain",
+   "bytes": 122182,
+   "sha256": "cacf9380e7c2e8e970522e286ce949edd59502d7b954956f6d88298880a1c073"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2490/4857.png",
+   "kind": "terrain",
+   "bytes": 124471,
+   "sha256": "0c0b8e32ab33c4672a1c754b866558d4c7eb1ed8c31b3b853d9c90d53af7c1f0"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2490/4858.png",
+   "kind": "terrain",
+   "bytes": 125709,
+   "sha256": "d891a8c26269fe898dedf382c21c869fd1dd96a31bec1e0c69a555f556947111"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2490/4859.png",
+   "kind": "terrain",
+   "bytes": 131785,
+   "sha256": "e3a1dfe6ffa7dfc4a928dadc7eeac99fe25e4b36a142e2ed6b4c23459d48ba8b"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2490/4860.png",
+   "kind": "terrain",
+   "bytes": 131248,
+   "sha256": "5b69700edb3c3adc3c362b2259ecbf0ffbf5d076ce370bec657a76daf33bb074"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2491/4855.png",
+   "kind": "terrain",
+   "bytes": 126595,
+   "sha256": "73e93d9f0f2592fc6810d74c12d6e25d39b6b7c193c9703776b55d443af1b113"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2491/4856.png",
+   "kind": "terrain",
+   "bytes": 125500,
+   "sha256": "2cb7274a9ddf0a891a06799314f7679a7b3073a6e9e651ea01e67891907eb9c0"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2491/4857.png",
+   "kind": "terrain",
+   "bytes": 126025,
+   "sha256": "44a69ee82bc8f556528f4a28e2f67feeb34b802ed13ecbeda5ab95c924bf2964"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2491/4858.png",
+   "kind": "terrain",
+   "bytes": 130215,
+   "sha256": "acafb73516e94675cc0a58c4dd7e0d816a7e409108609c07ad6dd2daebd29013"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2491/4859.png",
+   "kind": "terrain",
+   "bytes": 132952,
+   "sha256": "30bab79054e860214f7877c8b8acfd548a767f2443aaafe1ea5a6e5ebba4f60e"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2491/4860.png",
+   "kind": "terrain",
+   "bytes": 130076,
+   "sha256": "b70e594ca1f2cffdff93f27d540704e761a97d5c33c369673bcba5c8f1005de3"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2492/4855.png",
+   "kind": "terrain",
+   "bytes": 127058,
+   "sha256": "4140699458c94d5f1ef8c6935df0777a6d7648d31d0b3d13356c8ac92e79211d"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2492/4856.png",
+   "kind": "terrain",
+   "bytes": 121248,
+   "sha256": "ef27bef40cefb700f189c31d804f40c02a1dc27c9aa164e9ce837f854c77aed4"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2492/4857.png",
+   "kind": "terrain",
+   "bytes": 127880,
+   "sha256": "4fd1c6dc8d6ac06d88d1bc2bd4aa6c59519e63245cc5b628b9b4a2e70fd16061"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2492/4858.png",
+   "kind": "terrain",
+   "bytes": 132092,
+   "sha256": "d8188285ecc3f9d3462c9881233e59201bd0d277b2c8d2c4786d103471e5baa0"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2492/4859.png",
+   "kind": "terrain",
+   "bytes": 131156,
+   "sha256": "c8fedcc4e3cf0976e31b33d01e389a45a22fc2e75205295d1e752f48bd6b1f2b"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2492/4860.png",
+   "kind": "terrain",
+   "bytes": 131545,
+   "sha256": "1fe2d77498b88829dda32fe2fb8f4e07a2458596be71e6493e3b0847f23f7651"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2493/4855.png",
+   "kind": "terrain",
+   "bytes": 131036,
+   "sha256": "bb1492974d05d4305bb90c00837bc0d1abc5a73f3b78459d89532a7699d76ae5"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2493/4856.png",
+   "kind": "terrain",
+   "bytes": 128561,
+   "sha256": "68cf6b0dd560cc98d3dc3542759076e649218e2a8507e811195c46aa070528d3"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2493/4857.png",
+   "kind": "terrain",
+   "bytes": 121030,
+   "sha256": "2e829abd39b8dcc8188f5809cb395dc4ea37071e6965dd13336e9086ad22af83"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2493/4858.png",
+   "kind": "terrain",
+   "bytes": 125950,
+   "sha256": "a4a7562beb6b5ece0633529bdcd4f4fc84ec8ca0588f10fcb7616dfe83f36fe2"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2493/4859.png",
+   "kind": "terrain",
+   "bytes": 128009,
+   "sha256": "78d774505ba7a3c0be2a590b9694fadc5ba227b6a1e022383544bb8a6b0db0af"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2493/4860.png",
+   "kind": "terrain",
+   "bytes": 123058,
+   "sha256": "0a0cf58c3a8aa44a2e41dd5747b7ac9f55c15f740b41f385de00283a6dfb0377"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2494/4855.png",
+   "kind": "terrain",
+   "bytes": 132921,
+   "sha256": "8f375ea8963f02e99e47dc273039d0c0efa930036d8efb3e6dabb18f78db6e63"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2494/4856.png",
+   "kind": "terrain",
+   "bytes": 132413,
+   "sha256": "bd028dbc68ac8457619db48d2994568347addcf34d92a7885f060719c46721f7"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2494/4857.png",
+   "kind": "terrain",
+   "bytes": 127592,
+   "sha256": "b53a7c5db708d1c7d767bf5fa19c02f9295269f360263a6097fc0a7db8099907"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2494/4858.png",
+   "kind": "terrain",
+   "bytes": 131109,
+   "sha256": "98d92e0ba12973a6c185b95ad67fa04c89c7d4a908a2b48ecd1e12aac5ea0f13"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2494/4859.png",
+   "kind": "terrain",
+   "bytes": 130913,
+   "sha256": "005813709f4f4ffd2c5581cd39222d4ea84875693495a3caea908e3ae13d5283"
+  },
+  {
+   "path": "sites/los-pelambres/terrain/13/2494/4860.png",
+   "kind": "terrain",
+   "bytes": 128416,
+   "sha256": "577c9711cd359a1189df024a948077d910d6286690f4ffc8c5d302dbdcd6d302"
   }
  ]
 }

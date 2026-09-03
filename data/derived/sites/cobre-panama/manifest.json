@@ -125,7 +125,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -178,7 +181,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -231,7 +237,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -284,7 +293,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -337,7 +349,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -390,7 +405,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -443,7 +461,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -496,7 +517,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -549,7 +573,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -602,7 +629,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -655,7 +685,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -712,7 +745,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -767,7 +803,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -825,7 +864,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -882,7 +924,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -938,7 +983,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -994,7 +1042,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1047,7 +1098,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1105,7 +1159,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1161,7 +1218,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1218,7 +1278,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1276,7 +1339,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1329,7 +1395,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1382,7 +1451,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1435,7 +1507,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1488,7 +1563,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1541,7 +1619,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1594,7 +1675,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -1647,7 +1731,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -1700,7 +1787,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -1751,7 +1841,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -1804,7 +1897,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -1857,7 +1953,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -1910,7 +2009,10 @@
     "qa_flagged"
    ],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {
@@ -1923,10 +2025,523 @@
   "1995": "no scene under 60% cloud inside the season window in either archive",
   "1996": "no scene under 60% cloud inside the season window in either archive"
  },
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1986,
+   1987,
+   1990,
+   1991,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2c",
+   "sentinel-2c"
+  ],
+  "valid_frac": [
+   0.7756,
+   0.4066,
+   0.4516,
+   0.5133,
+   0.2563,
+   0.4785,
+   0.7614,
+   0.3525,
+   0.5408,
+   0.2939,
+   0.5335,
+   0.3547,
+   0.2864,
+   0.4449,
+   0.4146,
+   0.3145,
+   0.1294,
+   0.2863,
+   0.3597,
+   0.3193,
+   0.2879,
+   0.5001,
+   0.3868,
+   0.3642,
+   0.7252,
+   0.8719,
+   0.7853,
+   0.5256,
+   0.5114,
+   0.6993,
+   0.9807,
+   0.4147,
+   0.6621,
+   0.6904
+  ],
+  "envelope_km2": 53.8146,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    0.126,
+    null,
+    null,
+    null,
+    null,
+    null,
+    0.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    1.3896,
+    1.593,
+    2.6703,
+    null,
+    null,
+    null,
+    10.854,
+    null,
+    null,
+    null
+   ],
+   "rf": [
+    6.5268,
+    null,
+    null,
+    null,
+    null,
+    null,
+    0.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    8.2629,
+    11.8782,
+    15.3027,
+    null,
+    null,
+    null,
+    24.0084,
+    null,
+    null,
+    null
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.60523,
+    null,
+    null,
+    null,
+    null,
+    null,
+    0.72293,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    0.62723,
+    0.65253,
+    0.5942,
+    null,
+    null,
+    null,
+    0.6523,
+    null,
+    null,
+    null
+   ],
+   "mndwi": [
+    -0.29372,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -0.39319,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -0.35878,
+    -0.39619,
+    -0.38947,
+    null,
+    null,
+    null,
+    -0.62926,
+    null,
+    null,
+    null
+   ],
+   "bsi": [
+    -0.27271,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -0.31039,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    -0.21434,
+    -0.20884,
+    -0.16715,
+    null,
+    null,
+    null,
+    -0.30519,
+    null,
+    null,
+    null
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 6,
+    "pelt": {
+     "breaks": [
+      2018
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 2017,
+       "mean": 0.5052,
+       "slope": 0.6318
+      },
+      {
+       "start": 2018,
+       "end": 2023,
+       "mean": 5.0391,
+       "slope": 4.6305
+      }
+     ],
+     "penalty": 9.023446,
+     "sigma": 1.295644,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2023
+     ],
+     "k": 0.647822,
+     "h": 5.182577,
+     "sigma": 1.295644,
+     "target": 1.0773
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 6,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 2023,
+       "mean": 10.9965,
+       "slope": 3.9123
+      }
+     ],
+     "penalty": 255.215144,
+     "sigma": 6.890532,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 3.445266,
+     "h": 27.562127,
+     "sigma": 6.890532,
+     "target": 3.6153
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 2018,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 9.023446
+   },
+   {
+    "year": 2023,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 5.182577
+   }
+  ],
+  "gaps": {
+   "1985": "no scene under 60% cloud inside the season window in either archive",
+   "1988": "no scene under 60% cloud inside the season window in either archive",
+   "1989": "no scene under 60% cloud inside the season window in either archive",
+   "1992": "no scene under 60% cloud inside the season window in either archive",
+   "1993": "no scene under 60% cloud inside the season window in either archive",
+   "1994": "no scene under 60% cloud inside the season window in either archive",
+   "1995": "no scene under 60% cloud inside the season window in either archive",
+   "1996": "no scene under 60% cloud inside the season window in either archive"
+  },
+  "dense": null
+ },
+ "dem": {
+  "site_id": "cobre-panama",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -22.2,
+   22.2
+  ],
+  "geoid_offset_m": -0.399,
+  "stable_bias_m": -1.284,
+  "noise_floor_m": 3.921,
+  "tau_m": 7.843,
+  "stable_ground_px": 175677,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 152467728,
+  "fill_volume_m3": 15873043,
+  "envelope": {
+   "cut_m3": 152467728,
+   "fill_m3": 15873043,
+   "cut_km2": 10.2168,
+   "fill_km2": 1.584,
+   "min_m": -73.9,
+   "max_m": 29.1
+  },
+  "window": {
+   "cut_m3": 549014720,
+   "fill_m3": 137362192,
+   "cut_km2": 40.6755,
+   "fill_km2": 13.9068,
+   "min_m": -73.9,
+   "max_m": 32.2
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/282/486.png",
+   "terrain/11/564/972.png",
+   "terrain/11/564/973.png",
+   "terrain/11/565/972.png",
+   "terrain/11/565/973.png",
+   "terrain/12/1129/1945.png",
+   "terrain/12/1129/1946.png",
+   "terrain/12/1129/1947.png",
+   "terrain/12/1130/1945.png",
+   "terrain/12/1130/1946.png",
+   "terrain/12/1130/1947.png",
+   "terrain/12/1131/1945.png",
+   "terrain/12/1131/1946.png",
+   "terrain/12/1131/1947.png",
+   "terrain/13/2258/3891.png",
+   "terrain/13/2258/3892.png",
+   "terrain/13/2258/3893.png",
+   "terrain/13/2258/3894.png",
+   "terrain/13/2258/3895.png",
+   "terrain/13/2259/3891.png",
+   "terrain/13/2259/3892.png",
+   "terrain/13/2259/3893.png",
+   "terrain/13/2259/3894.png",
+   "terrain/13/2259/3895.png",
+   "terrain/13/2260/3891.png",
+   "terrain/13/2260/3892.png",
+   "terrain/13/2260/3893.png",
+   "terrain/13/2260/3894.png",
+   "terrain/13/2260/3895.png",
+   "terrain/13/2261/3891.png",
+   "terrain/13/2261/3892.png",
+   "terrain/13/2261/3893.png",
+   "terrain/13/2261/3894.png",
+   "terrain/13/2261/3895.png",
+   "terrain/13/2262/3891.png",
+   "terrain/13/2262/3892.png",
+   "terrain/13/2262/3893.png",
+   "terrain/13/2262/3894.png",
+   "terrain/13/2262/3895.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 9.0,
+   "max": 421.0
+  },
+  "cop_stats": {
+   "min": 4.4,
+   "max": 424.5
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/cobre-panama/dem/cop.png",
+   "kind": "dem",
+   "bytes": 503639,
+   "sha256": "2fe5a4dc3fec48739545fd8699c4d64e9b7a2df5d6730c5d9072c7ac3c25ab7f"
+  },
+  {
+   "path": "sites/cobre-panama/dem/delta.png",
+   "kind": "dem",
+   "bytes": 1256871,
+   "sha256": "087ab880f8d09e1cf5e1c6e7b282564fb33e9e7fdcfbfb3e9b45f447f946e54f"
+  },
+  {
+   "path": "sites/cobre-panama/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 426288,
+   "sha256": "76e9437aafcdf87607960d43aa13a04a465fa4610b69333e61f525aebb1799d4"
+  },
   {
    "path": "sites/cobre-panama/frames/1986-swir.webp",
    "kind": "frame",
@@ -2404,10 +3019,788 @@
    "year": 2026
   },
   {
+   "path": "sites/cobre-panama/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 506,
+   "sha256": "3b7394145200894ef6c70137aabfee877efe9b487231cf22109c2502f852f129",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 7651,
+   "sha256": "aece9228c7323638e148670d107914b642fad50a8042d3978d658c2a34b14b9b",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 522,
+   "sha256": "442696d95e24b0196bd5b5288dde4f2c0c8188cbb2d76d698e98cf52b5c90fa4",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 688,
+   "sha256": "4ae67465f6d82d33f02149674187da25b90df078ba2e4504819999b6764c5832",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 356,
+   "sha256": "df8710126b8f9bc8229a5f91f9093c7b6d442c603eae285c70e7de91284d5882",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 942,
+   "sha256": "99e9c78b71514c7a56080f3e8b8cc4e3c78d5fa2a4b013f899c939d4252544a1",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 156,
+   "sha256": "b2761e36e6f8e295d498052be13449b71e80e59f7cb9d0b021a47c9def1ca795",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 177,
+   "sha256": "7d22125cead8dd51702c5c70f497ffb311192e5a8e7c514a4f807c01abaa6410",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 178,
+   "sha256": "d7711323577f000112938af38407e007d7fbd1173eb3501f1c2277fd38354007",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 514,
+   "sha256": "61fa10d0d27e7cfd4d339d35239e526e5ee8f08ac5acb4804aefd589aa51cb92",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 309,
+   "sha256": "bdeb0e1c516f719b86878f617f67e8900e1c285c800dc3438bb67b0711316dd0",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 268,
+   "sha256": "87f510d8794e16d4554882fb5546377e757a351d6f76d5b301d12bf948fde1f3",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 191,
+   "sha256": "66b1367a20b39caa44e5ba8ba1db764bb855868e33cd429170d99aa32e2d18a9",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 178,
+   "sha256": "6983536312fd2face79af2194e884bee50f59804d4175e3ab7eeedf85c3f4ea3",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 243,
+   "sha256": "b33489ebf2093056d50cbd088b9433ed7ddbce194f52e5f202550eb8ffe9a870",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 214,
+   "sha256": "83070c1a94b5f1186416b43df1b6ad830b51a0b6a6a91969bde57f3a30e8335b",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 497,
+   "sha256": "97bc006d2dd0494cee74b185f433ee17e292df98c9af76c71904bbf5dd925dd8",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 162,
+   "sha256": "9192394993975c1be1c881121a2d2d0dc30a425a03e0e1b1b52d05481b2081c9",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 582,
+   "sha256": "818923ed17be7ec2ac5db176f07d639cee197e1b1c1eb3ea9f90366ad092c2f5",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 201,
+   "sha256": "3db54dcaaf062fd6b3646ae9560f1beabc856a326028210375797dc76e5a521b",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 1200,
+   "sha256": "d9ba8789f737ad0966ff350e3dd8f367e7cedb05e7f2e0194dd97a0047985886",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 135,
+   "sha256": "9b1c173120e3b66423528369dee70ad174ab4ec745ba91e799e5c52ac0bf2eda",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 445,
+   "sha256": "c284e33291fae51f11f0b976d606373d6eda41a0299fa57be25243c04787621f",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 165,
+   "sha256": "e3e3f70935ff79f45ff8cd3e7812b813d25e7495e0ac80ed08b73bf905705ada",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 969,
+   "sha256": "32e277c5e712055124dce74789afdaf78568b1b1dcced90500a66ea8b0308a13",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 701,
+   "sha256": "e0bc61f9cdc86cd49bdbe5dadd7d097d863d842bcc066d545664540f77a4d477",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 5074,
+   "sha256": "66c1b478d2ce4e1f7b5025ff5fada127eccf248430c3d6ba793c9b953665bb7a",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 773,
+   "sha256": "597e693bfacf5fcdb78e1db5b7f662de6e3f7f40b2cdb902d8da399a7fe5d0a7",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 4365,
+   "sha256": "139cd2e3cce11afef0a89ba84d83013a5517bef1eff1c831e816e141a6845917",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 1119,
+   "sha256": "43f9838f0b7aab2649c845c6b446399dc6c6fbdfa15d66968956bd024f0c28db",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 5300,
+   "sha256": "bd0764536dc10c5fb90b3622eefdba6a17acd575a35589fe9531680a5c12153d",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 1039,
+   "sha256": "e6fed82787ab5b730dd7140b6160c305e691b7702689891ce62dd22d1144e274",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 2477,
+   "sha256": "3be66620375eefd827adb2bca6090e0c3702519c35dcf26e39d40b09faf05a2d",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 476,
+   "sha256": "50b288ea10eccbe7e3f6eaf840540e7ae6845e549930ac4f9bd1091d84b601f4",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 1449,
+   "sha256": "c9d38bdd0ab24a9fcf39377cf0a9b3fdc24a6138ee2db89577f1f7f48701a13b",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 1170,
+   "sha256": "042cc3e0454e6bea286012f388a00026cc59782f0636078544222e74586b050d",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 5016,
+   "sha256": "a9ef59026f0190ff9de7f2a1a60a00d257d0bcb26b8986b1f4d3d546e898c8f8",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 2111,
+   "sha256": "0431ece15a86134c9849e71d57458fc6a390e1593d9c3c9d558027f8b1332097",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 3228,
+   "sha256": "c1021124bc123caace6709074f1a424fd4895c77d52728a7a188a42ec5e00aa3",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 1378,
+   "sha256": "1f685e5c179fb622be757a1d6fc3f03f0ddd77acd0819000c4da66b32d1bba42",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 5812,
+   "sha256": "50cfd5cc7f00112679ea4484c67a8a335c9a8d1f884090b385271c0b319fe386",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 1685,
+   "sha256": "0a404f8830a60e579babf6d7ee86ab012d2982cd3da08eb538c6e9b17b924ae0",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 3861,
+   "sha256": "a3ddee36ccfff9276345ecb683b61ca819eeab834942d645d804fb10b1a8e62a",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 1225,
+   "sha256": "f01c8b8f6cea63125cad899d4e27b853bd1f81f50cc5ba6a8061646a6a4e9530",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cobre-panama/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 2382,
+   "sha256": "af9d24f53a54af9aa683baf0d3a49a3329db51a49573b79448eff1e171595a93",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/cobre-panama/polygons.geojson",
    "kind": "polygons",
    "bytes": 7090,
    "sha256": "1c1d4a0c9aefdcee22af37f21c6fef3494b5f33452facde04a8544327ce183ef"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/10/282/486.png",
+   "kind": "terrain",
+   "bytes": 91401,
+   "sha256": "fe670f0f3e0657409cbda6cd0ecffeacd844d7ffa039abe4d53286f647ba2e6f"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/11/564/972.png",
+   "kind": "terrain",
+   "bytes": 27401,
+   "sha256": "5940a28aa9474cc3fd1ff786a91f90f52f6a8a18368ea51ac432051bb8f541c3"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/11/564/973.png",
+   "kind": "terrain",
+   "bytes": 131432,
+   "sha256": "087f15ba2766493b9de53332d116c7c5ac97e7a4e69103f9c8957a692ea77b09"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/11/565/972.png",
+   "kind": "terrain",
+   "bytes": 58531,
+   "sha256": "5ec518a4f31abf42ba18e5393804e763564054b9b24f5fc6fc05f309661d2356"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/11/565/973.png",
+   "kind": "terrain",
+   "bytes": 139065,
+   "sha256": "213cbd74ebf1191c69dcb8b58a821f413351b642d0f8e2fc6ec6ca0d0c934c4a"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1129/1945.png",
+   "kind": "terrain",
+   "bytes": 94411,
+   "sha256": "88c55c7602e9ad4e01baddd5adeb2c9a29146b221b36b60ce4356990c5a8534d"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1129/1946.png",
+   "kind": "terrain",
+   "bytes": 134725,
+   "sha256": "5a38fd5b94e678e43a61e8a256709e009f36e08efe1f3861cd9d43212f27399c"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1129/1947.png",
+   "kind": "terrain",
+   "bytes": 135640,
+   "sha256": "0e36556c114d8fee24b8832bf12686ba63ac26d076c44267af54a1827d2fcebe"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1130/1945.png",
+   "kind": "terrain",
+   "bytes": 110178,
+   "sha256": "c3fc92ff33ae4b0acf5a0b918922480e823efa84bd41f6f7b145db42e62474ea"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1130/1946.png",
+   "kind": "terrain",
+   "bytes": 133208,
+   "sha256": "d42213ea0cb77ec5ab9f0d36e78613c9b346e156a7e302ef8137da791b3e27a9"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1130/1947.png",
+   "kind": "terrain",
+   "bytes": 135665,
+   "sha256": "b7ed90e56c804a960deda76b40af60dafd2bed1ff43eb1cac3a7c719a38739ab"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1131/1945.png",
+   "kind": "terrain",
+   "bytes": 111767,
+   "sha256": "6baa23cef4e57b7c27ac091e8b76a38f7045f9224024f6fdb5fc678166aeefb7"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1131/1946.png",
+   "kind": "terrain",
+   "bytes": 134065,
+   "sha256": "4b6a92d7e4a1d933a219e83f657b361960383131b41cd5c7742a4b769d92d00d"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/12/1131/1947.png",
+   "kind": "terrain",
+   "bytes": 134181,
+   "sha256": "631d48bf550e5ba59acd84d27753f4811773c0f87ce1c4f45fc021f18b263a9b"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2258/3891.png",
+   "kind": "terrain",
+   "bytes": 114061,
+   "sha256": "df7899079e9ccf9b2753b752eda0e029030731a05e3a1966ac4af3657f52ba10"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2258/3892.png",
+   "kind": "terrain",
+   "bytes": 127073,
+   "sha256": "30400d7ca2c58fc7c84b59ae2360a7b905fac2110e99de429c88dc37a97e75eb"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2258/3893.png",
+   "kind": "terrain",
+   "bytes": 125527,
+   "sha256": "1ee7261b973eb15cf05edae58ff8ac4c166e4262a7d5d24b18362280e47ddcab"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2258/3894.png",
+   "kind": "terrain",
+   "bytes": 126865,
+   "sha256": "c5ebb0a1c580fa5022bf4804407b082240a374fd05f89865297fccf62c8044ae"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2258/3895.png",
+   "kind": "terrain",
+   "bytes": 128526,
+   "sha256": "ce19417b407780b586caf5f39d556abe0938655c8ddaa38d498c82a85a4252e6"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2259/3891.png",
+   "kind": "terrain",
+   "bytes": 124042,
+   "sha256": "bff448439261e3287daa497b1525c00ba17c53a3108d809bfdf8a058046bc0e6"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2259/3892.png",
+   "kind": "terrain",
+   "bytes": 125217,
+   "sha256": "0e48f242e5a4c3846abdbfa8de2661768e826b6ac4438729a81714b07105bbe6"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2259/3893.png",
+   "kind": "terrain",
+   "bytes": 127554,
+   "sha256": "b11c4474a510ec2281a5b58895c8ef1a24b98d2dd1c761c61ee00681312b521c"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2259/3894.png",
+   "kind": "terrain",
+   "bytes": 128639,
+   "sha256": "944c422a9424a4e0e9c243650edfed0bf2bf843830fc6eed98e1eab7981cc7b5"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2259/3895.png",
+   "kind": "terrain",
+   "bytes": 126093,
+   "sha256": "ab83e3de0080af3fb892e949e970912fd0e2b8829736ede518f3cf174fef78b1"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2260/3891.png",
+   "kind": "terrain",
+   "bytes": 124342,
+   "sha256": "b79b7f7ab07240606edd5bb3e84c75f6b57eb6c03c60e6f5babe958c0f3735a5"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2260/3892.png",
+   "kind": "terrain",
+   "bytes": 123971,
+   "sha256": "063c91cdb4a4031fb0b9159c024658bdac8f8fb0dd85cbfd994ea1871f572aa9"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2260/3893.png",
+   "kind": "terrain",
+   "bytes": 125985,
+   "sha256": "8583345a5a595fa2b02743676d48a1970f21a7d73b6eca0208c3eac100c44808"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2260/3894.png",
+   "kind": "terrain",
+   "bytes": 129790,
+   "sha256": "441bf5e70159ed10b9675cf99edbd8e915b9e5f06db2500d5fd7853541d98828"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2260/3895.png",
+   "kind": "terrain",
+   "bytes": 125856,
+   "sha256": "fe97113a3bbe5d0cfc8135609296fd3053f9efd828e4c0fb88cc96f9efd2e7fd"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2261/3891.png",
+   "kind": "terrain",
+   "bytes": 124760,
+   "sha256": "529458f698bc30b9ef35cdb66d26e7fe59224a8e34bb13953f204551726db23d"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2261/3892.png",
+   "kind": "terrain",
+   "bytes": 124299,
+   "sha256": "ad398c21ad8cb7ad5907df1690bce53c8970354799268d032ae9cba383688e32"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2261/3893.png",
+   "kind": "terrain",
+   "bytes": 124211,
+   "sha256": "d3c5a4be4b6450fc817d11531e91a17dad8c8632525baf1522c9c32af40ab7bb"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2261/3894.png",
+   "kind": "terrain",
+   "bytes": 128159,
+   "sha256": "f080e86eb8b7fae5b2157e9f8c7e66280b80eb730271c73fbd5cb5fb10820279"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2261/3895.png",
+   "kind": "terrain",
+   "bytes": 125893,
+   "sha256": "6f94103e02e48bb9f3a2a0d1f311347e3c6c5554abe5d27bce104e54e5d472bc"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2262/3891.png",
+   "kind": "terrain",
+   "bytes": 127512,
+   "sha256": "f4376f345f7ec7a0b9a0f97b3085c2f4ad983c5fd3ef59ffef1c045f83f0f104"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2262/3892.png",
+   "kind": "terrain",
+   "bytes": 125486,
+   "sha256": "7b3b82499e049f429d6db3d127810a63aa846d0444aa21b5c887a7b993f4dc6e"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2262/3893.png",
+   "kind": "terrain",
+   "bytes": 126369,
+   "sha256": "e662f87bff686900de66a50b6f7574efa87b37eea140f3a5eb3e70598d22d949"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2262/3894.png",
+   "kind": "terrain",
+   "bytes": 125062,
+   "sha256": "c87beb565d4055681c8fc034ef044dbc850d78f8108014584cb0d363c8bbe8e9"
+  },
+  {
+   "path": "sites/cobre-panama/terrain/13/2262/3895.png",
+   "kind": "terrain",
+   "bytes": 126989,
+   "sha256": "8578c488c36da25718f9972144fe056532af38edf2544d70908168f12b5a1981"
   }
  ]
 }

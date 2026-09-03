@@ -135,7 +135,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -186,7 +189,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -237,7 +243,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -288,7 +297,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -339,7 +351,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -392,7 +407,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -443,7 +461,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -494,7 +515,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -547,7 +571,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -598,7 +625,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -651,7 +681,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -704,7 +737,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -757,7 +793,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -808,7 +847,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -861,7 +903,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -912,7 +957,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -965,7 +1013,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1016,7 +1067,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1067,7 +1121,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1120,7 +1177,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1171,7 +1231,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1222,7 +1285,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1276,7 +1342,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1329,7 +1398,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1382,7 +1454,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1435,7 +1510,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1488,7 +1566,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1541,7 +1622,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1594,7 +1678,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1647,7 +1734,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1700,7 +1790,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1751,7 +1844,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1802,7 +1898,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1853,7 +1952,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1904,7 +2006,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -1955,7 +2060,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2006,7 +2114,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2057,7 +2168,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2108,7 +2222,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2159,7 +2276,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2210,16 +2330,588 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {
   "1985": "no scene under 60% cloud inside the season window in either archive"
  },
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2c",
+   "sentinel-2c"
+  ],
+  "valid_frac": [
+   0.9885,
+   0.9989,
+   0.9805,
+   0.996,
+   0.999,
+   0.9492,
+   0.9999,
+   0.9577,
+   0.9092,
+   0.981,
+   0.9317,
+   0.8854,
+   0.9077,
+   0.9789,
+   0.9151,
+   0.9998,
+   0.9023,
+   0.9995,
+   0.9965,
+   0.9138,
+   0.9481,
+   0.9869,
+   0.9386,
+   0.9303,
+   0.999,
+   0.908,
+   0.9998,
+   0.9992,
+   0.9762,
+   0.9969,
+   0.9991,
+   0.9972,
+   1.0,
+   0.9987,
+   0.9894,
+   0.9998,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "envelope_km2": 122.5782,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    23.5143,
+    29.7738,
+    36.9324,
+    33.6708,
+    41.5629,
+    35.5167,
+    26.7525,
+    28.8621,
+    24.8211,
+    25.6563,
+    28.1763,
+    18.0927,
+    28.0638,
+    29.6595,
+    24.9138,
+    38.8539,
+    33.426,
+    38.1114,
+    34.4421,
+    37.9467,
+    30.8178,
+    40.2336,
+    38.9034,
+    32.7141,
+    42.8859,
+    31.7178,
+    37.7028,
+    35.4213,
+    30.7134,
+    35.2332,
+    34.7454,
+    23.2344,
+    10.6929,
+    36.4149,
+    20.2527,
+    28.125,
+    13.86,
+    11.7738,
+    15.7941,
+    9.2655,
+    11.907
+   ],
+   "rf": [
+    26.2584,
+    33.9273,
+    36.5067,
+    33.9507,
+    39.0789,
+    40.0383,
+    73.7883,
+    38.9187,
+    35.9703,
+    47.2212,
+    38.0826,
+    28.7586,
+    35.9658,
+    51.1281,
+    43.4214,
+    55.5831,
+    47.2905,
+    52.0965,
+    49.6665,
+    40.995,
+    44.1,
+    46.4814,
+    47.961,
+    46.2384,
+    49.6881,
+    42.5988,
+    54.9018,
+    55.233,
+    49.4217,
+    52.5411,
+    53.1918,
+    88.2702,
+    63.3519,
+    80.7165,
+    76.4082,
+    93.3282,
+    67.1652,
+    76.0077,
+    71.7255,
+    76.0068,
+    76.653
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.27305,
+    0.24366,
+    0.20359,
+    0.2286,
+    0.20645,
+    0.20894,
+    0.33658,
+    0.25015,
+    0.23422,
+    0.39881,
+    0.24749,
+    0.32096,
+    0.27087,
+    0.34801,
+    0.33203,
+    0.23829,
+    0.23053,
+    0.21979,
+    0.22169,
+    0.19239,
+    0.19985,
+    0.18296,
+    0.19652,
+    0.19641,
+    0.16626,
+    0.18855,
+    0.24144,
+    0.2553,
+    0.21755,
+    0.23458,
+    0.22481,
+    0.25527,
+    0.57776,
+    0.31518,
+    0.24266,
+    0.27652,
+    0.58985,
+    0.62287,
+    0.64933,
+    0.69341,
+    0.6356
+   ],
+   "mndwi": [
+    -0.49839,
+    -0.49891,
+    -0.51079,
+    -0.50603,
+    -0.5025,
+    -0.4992,
+    -0.39165,
+    -0.46746,
+    -0.48564,
+    -0.48669,
+    -0.52726,
+    -0.5612,
+    -0.49385,
+    -0.46545,
+    -0.48821,
+    -0.48767,
+    -0.51291,
+    -0.49126,
+    -0.47048,
+    -0.50226,
+    -0.48081,
+    -0.46625,
+    -0.50065,
+    -0.46793,
+    -0.48887,
+    -0.47643,
+    -0.48564,
+    -0.47694,
+    -0.46911,
+    -0.48438,
+    -0.47646,
+    -0.52553,
+    -0.90287,
+    -0.56324,
+    -0.58791,
+    -0.63217,
+    -0.92186,
+    -0.92663,
+    -0.91964,
+    -0.93279,
+    -0.91853
+   ],
+   "bsi": [
+    0.17443,
+    0.20627,
+    0.23713,
+    0.21709,
+    0.23032,
+    0.22613,
+    0.05094,
+    0.17466,
+    0.20567,
+    0.03522,
+    0.20759,
+    0.16411,
+    0.18577,
+    0.09051,
+    0.1125,
+    0.18725,
+    0.2079,
+    0.20175,
+    0.19538,
+    0.23458,
+    0.21603,
+    0.22357,
+    0.22006,
+    0.21587,
+    0.23127,
+    0.22535,
+    0.1782,
+    0.16397,
+    0.18525,
+    0.18661,
+    0.18861,
+    0.19146,
+    0.32864,
+    0.17129,
+    0.25371,
+    0.25063,
+    0.35905,
+    0.35392,
+    0.30038,
+    0.27294,
+    0.32498
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 41,
+    "pelt": {
+     "breaks": [
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 2016,
+       "mean": 32.5754,
+       "slope": 0.2435
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 18.132,
+       "slope": -1.5439
+      }
+     ],
+     "penalty": 743.903301,
+     "sigma": 8.171498,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 4.085749,
+     "h": 32.685993,
+     "sigma": 8.171498,
+     "target": -0.909
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 41,
+    "pelt": {
+     "breaks": [
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 2016,
+       "mean": 44.8711,
+       "slope": 0.5382
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 76.9633,
+       "slope": -0.5351
+      }
+     ],
+     "penalty": 946.976854,
+     "sigma": 9.219622,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 4.609811,
+     "h": 36.878489,
+     "sigma": 9.219622,
+     "target": 1.2195
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 743.903301
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 946.976854
+   }
+  ],
+  "gaps": {
+   "1985": "no scene under 60% cloud inside the season window in either archive"
+  },
+  "dense": null
+ },
+ "dem": {
+  "site_id": "super-pit",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -57.7,
+   57.7
+  ],
+  "geoid_offset_m": -0.428,
+  "stable_bias_m": -4.093,
+  "noise_floor_m": 1.565,
+  "tau_m": 3.13,
+  "stable_ground_px": 147658,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 98562320,
+  "fill_volume_m3": 483160288,
+  "envelope": {
+   "cut_m3": 98562320,
+   "fill_m3": 483160288,
+   "cut_km2": 6.1731,
+   "fill_km2": 20.3607,
+   "min_m": -129.9,
+   "max_m": 87.5
+  },
+  "window": {
+   "cut_m3": 111287272,
+   "fill_m3": 494746752,
+   "cut_km2": 9.4572,
+   "fill_km2": 23.3019,
+   "min_m": -129.9,
+   "max_m": 87.5
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/857/603.png",
+   "terrain/10/857/604.png",
+   "terrain/11/1714/1207.png",
+   "terrain/11/1714/1208.png",
+   "terrain/11/1715/1207.png",
+   "terrain/11/1715/1208.png",
+   "terrain/12/3429/2415.png",
+   "terrain/12/3429/2416.png",
+   "terrain/12/3429/2417.png",
+   "terrain/12/3430/2415.png",
+   "terrain/12/3430/2416.png",
+   "terrain/12/3430/2417.png",
+   "terrain/12/3431/2415.png",
+   "terrain/12/3431/2416.png",
+   "terrain/12/3431/2417.png",
+   "terrain/13/6858/4830.png",
+   "terrain/13/6858/4831.png",
+   "terrain/13/6858/4832.png",
+   "terrain/13/6858/4833.png",
+   "terrain/13/6858/4834.png",
+   "terrain/13/6859/4830.png",
+   "terrain/13/6859/4831.png",
+   "terrain/13/6859/4832.png",
+   "terrain/13/6859/4833.png",
+   "terrain/13/6859/4834.png",
+   "terrain/13/6860/4830.png",
+   "terrain/13/6860/4831.png",
+   "terrain/13/6860/4832.png",
+   "terrain/13/6860/4833.png",
+   "terrain/13/6860/4834.png",
+   "terrain/13/6861/4830.png",
+   "terrain/13/6861/4831.png",
+   "terrain/13/6861/4832.png",
+   "terrain/13/6861/4833.png",
+   "terrain/13/6861/4834.png",
+   "terrain/13/6862/4830.png",
+   "terrain/13/6862/4831.png",
+   "terrain/13/6862/4832.png",
+   "terrain/13/6862/4833.png",
+   "terrain/13/6862/4834.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 144.0,
+   "max": 453.0
+  },
+  "cop_stats": {
+   "min": 111.5,
+   "max": 464.0
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/super-pit/dem/cop.png",
+   "kind": "dem",
+   "bytes": 178999,
+   "sha256": "5c730520fda1cbbe26e8c4128f9c2d3afedb58d8d579b29c5630e44c4ec62d87"
+  },
+  {
+   "path": "sites/super-pit/dem/delta.png",
+   "kind": "dem",
+   "bytes": 411679,
+   "sha256": "35a8ea0bb52857d181bf96b19623b534e105a64ac08c1641b725fb82e2da1ada"
+  },
+  {
+   "path": "sites/super-pit/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 189441,
+   "sha256": "3c4f17d425901902d7a13a5537e9905d5d8c653daf03e1cad31ad3ca8cfee35f"
+  },
   {
    "path": "sites/super-pit/frames/1986-swir.webp",
    "kind": "frame",
@@ -2795,10 +3487,906 @@
    "year": 2026
   },
   {
+   "path": "sites/super-pit/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 4804,
+   "sha256": "a9f9c38f29d4c9d5578888b722fc8e99f1cb5d5000a47eb0b540a28b91255a70",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 6979,
+   "sha256": "457014cdb2a41b32e9d31bd7ce8808f73fc5302c56d7d90b416a3a4839835198",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 6275,
+   "sha256": "2df3b9364bcc8f6b132ae69b730f95ef6af5024728c89105e19e5409f653e2e5",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 9909,
+   "sha256": "f07a99fd2206082f5d8a1166ffe89a3c84f1321dcfbef38b5300ce4bc73da5ad",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 8883,
+   "sha256": "f4f7180172b4f0d545b2631c1eba094f76fd3720fce04cc81ce4a932502d33df",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 9081,
+   "sha256": "f2c03a8c755fabc5fc00fefcda2590611c9b487c621b34a443b95fcccb2c7a98",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 6805,
+   "sha256": "2d0ba86d4e821f8d9f8637d74d02dca8c1e931ffd3e9e3b1775b50253f0e5338",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 9025,
+   "sha256": "cc49fd113a60a3347d690d15a47848b01ad66d389b189c5a4b40b19587ecf40d",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 8505,
+   "sha256": "92ef595934797af1c1d60b10b853bcecbced4496198bf3fe98a3bbbe21bdc76f",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 9453,
+   "sha256": "ba7e5802c9f2503144b684d427f2cb4d98855cb612450f07048b3b8ab469d437",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 8138,
+   "sha256": "7fdfb693067d750252a3fe1ba0e9d16365b20240c907d6380c138b0476032e2c",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 10104,
+   "sha256": "89b43c2d7bd9daf7d0f1f3f09049f7d92f1881b5f15ec7e69d9c8cf468354582",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 4147,
+   "sha256": "e3a05a53ae894dc68dfb1d0e4f8f2bbc0a0820230d662eb1a25c3037a688c3cc",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 14783,
+   "sha256": "f31189cd4ee88d1279488b75b14f7890d44d357b519bcbdc3969318f3b626d59",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 5573,
+   "sha256": "55d6dce44c65889e1a444e4cd67ba95837b09e8a599d8502d7cebb3250831a8c",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 8695,
+   "sha256": "88bc777cccc108dd09a9017bd8cbc87dca9e54ea6086a9e12d4830979db07f58",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 5858,
+   "sha256": "fca64453aa06ffbcdd6831bae78e56c7b182484202d507300cd120ffb78b14e1",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 9056,
+   "sha256": "a82953e1626b4b2b8e70475e68e2c77fa4be9a62f98d34d1c370465b844ae5ef",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 3722,
+   "sha256": "7bb79e0520bd08b96b7a6d7e9655a82ade3746d4333b004b2247395e4b17dd90",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 9742,
+   "sha256": "ae8f1918a9c4bef95086c61a5b3746f6e4b14a1ed3e030f20ee7ed5c09f17949",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 6497,
+   "sha256": "b68dcfdfcf7455bb5154b0865b428e1bf8a54db97f37620eb0c0273bfbeabf15",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 10539,
+   "sha256": "25e6bf5fce1f365709816507ff2a6e38e3f3c68d77baf8ffc126cfb52e96e253",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 4489,
+   "sha256": "9b55f02987ad1e187bc6a8a0254284544c48249ffc4118bd05cab6dbdea6dbfe",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 6756,
+   "sha256": "39c09be67f987a4f004baaf619540636b7daa25d208e5c06ef85215a80b31482",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 5383,
+   "sha256": "a6a9bad24186e7d82663e37f44578e6032680cd76846b3787a859f64d21990f7",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 8324,
+   "sha256": "c572b3c838204b1015874741815d0914a046a44beae3e376c164c277362be625",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 4455,
+   "sha256": "038733fcc5e66be77b68dc96416c66dc8155cb52b94eb60f07846b1a2086a57b",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 9160,
+   "sha256": "3c08381bd59c1321de8da64fd39e85ff04bb9fd52aa06b9f0f2b4a432e40f042",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 4795,
+   "sha256": "312ca4de84f1cf95f89aeca18fcadb5715454a9841489f32e1f98b755f9cba7a",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 8634,
+   "sha256": "81ea4f586371a27f6bdadb90cda636e3f49b87628a096828a820931229c1983c",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 6799,
+   "sha256": "cc5f3a30afa697272630c0f691ba6b7360f6ae235a677c2b4e4ce33738089351",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 10834,
+   "sha256": "d008d473db6379c16a6ec436ba20bb4e2375df3075c60914d5f4c3703b5ac53c",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 7425,
+   "sha256": "d688d918731feb65ae4d6b8decf393870e1812ab114f56a8aa2251754a7e9683",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 12844,
+   "sha256": "491a70dfe742c5cfd48c490e97a736862cb705dc5f7d85b11f39f352b1c08dff",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 6982,
+   "sha256": "a56f521c386ea8569b813d1587419b14429e3c3f457333a21b6da5d14a7b6331",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 10325,
+   "sha256": "1f507cffedca37afdeb09e64ace1036e2d5dbb1c2555c2b21047bd6e877ec983",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 6256,
+   "sha256": "80caf8da8571c5220b187031369cd1077acabc8348531d38b68f1d41303c2007",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 9985,
+   "sha256": "6ceeb67be5e7bd9009566a20eb2e2fcce0e8b1bd315aab7ef7d7bfe758c0ba57",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 8454,
+   "sha256": "a7f531217a7b373919f0f141af57188adad5074b17718a56dc702151d0d3ecfc",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 9904,
+   "sha256": "fdfed1286a338928acc32b5280144c0752d0dd4d332edf74f544c440f0b522d8",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 7140,
+   "sha256": "2a1e3d26f68097a558745002fc418472c62c273d278e08f6ee6e065fd5d9bbfd",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 8348,
+   "sha256": "57c97834cdecf32d8160ccca30043e1d4a9d72eac61c769015a28183a955de5e",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 8333,
+   "sha256": "24ed23466a64b06b18ec60f1542ceb9dd0c859dee57406e55996bd2e85e5cc12",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 8989,
+   "sha256": "5bce609510c3fe333a8ee6eac0f40ac732cdaecdb5b5ae6ef56348aec265cd48",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 7970,
+   "sha256": "7e45edcac1d87649a25ee5a6d75d4e04765010e7be0dd1157bc5395c14dc42e5",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 11407,
+   "sha256": "0b4d9e1c372b9bfd0247f713b9156e77571304dd3bc1cb9ec18623510a54fa63",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 7949,
+   "sha256": "5056f8524e6186c3ff2548a912fe76ea59a5e47a3c0980adfa0ebf9e635b8f4c",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 10116,
+   "sha256": "1cdaa5dcad871feb8b99ce7193476532d2adca28f430a9b72a53aeadef57d1e6",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 8679,
+   "sha256": "96799aabceca0ef02fd60969f655a8ccfad9bdcc780d044a26c613120663b6ec",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 8975,
+   "sha256": "80eb3cf1c6ccdfa7a43556a1f4c0649c8872fd928c439ece770ac875f540e395",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 7214,
+   "sha256": "dbdc1e6d9ce9dea9ac1d444de23c8e6ecff42d111edffca30c7eec5d58516a36",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 9012,
+   "sha256": "d00b09afcf2dbbe6d0603f40639eead538f57cc219baccb9686ab982c64c2f4c",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 5967,
+   "sha256": "1bc04de75c0b8e005494430178dc6890f876153014c7658a97218807c5b79b23",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 10192,
+   "sha256": "46cbd23c6f99f981c905512a85c6b966ab2be21bcdc198b1eb984dc83c9e16d4",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 5762,
+   "sha256": "1d3d6edb1461f4aceaf330ab361e7fbecce28df4a7f696d5fc7afbdd76835816",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 9757,
+   "sha256": "5731d8a48e87490cac35ee19e97a72b7493fb9c43cac98d2176b1d6548391262",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 6539,
+   "sha256": "07db6ef032368468b20b88b2973e0424f21fe08aa649d049f1cade1809dac352",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 8857,
+   "sha256": "b9c4ff813edc7d65de6210182509376b853d218b0c1ec3ad71f5c23e89f8e245",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 6546,
+   "sha256": "7cc874ee5fdb4747d202c2826b2c828e365d16ff20c96067fd567e551c191869",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 10119,
+   "sha256": "411fdccfb5b5d8292312c385f1467ba882008faba46c4bea5371a78d96bece7f",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 6855,
+   "sha256": "f306fba04f01406ec7037a13102c1f4da51e49b04122144236e0a68ce4576cf2",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 10399,
+   "sha256": "71d6947339cb59ac87be54cf49a5301d4ea5bf10d826c7ea7da1dc7da3ec6417",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 6212,
+   "sha256": "60b2fb744a54d840e17af5dbaa7cee59715407db9d18d0a37a088291a7a60c66",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 17541,
+   "sha256": "8c4914699ac598bdcd6af53ead259be4e8d7dfa1c3478790077346164adb26ec",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 3222,
+   "sha256": "e45ce77cf19ae4c3b38aa3fcb27b798534a65cab17b2db8341d00be0178ef12f",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 9988,
+   "sha256": "703ff20a54ef1f4b8825ac4033f30c85287e47fb526cafcbce7b4dc01382bef7",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 5787,
+   "sha256": "b0b75ce4ff6aa729aa8da8f274ac95e1b1346bf249d0dad3ff749a99163c706f",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 16776,
+   "sha256": "a0c4e17698e2f4f52031b8bd7325ab83fee6a420929631e16a926cd2417b4811",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 7147,
+   "sha256": "dcce60da3f5ac40a27c4484aadc43409f0b58da74154570086590b2cd1af73a9",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 14497,
+   "sha256": "5c9c1a269c0560b045e2983695607a494acecfb47787327f20594f53d76fc247",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 5893,
+   "sha256": "a7276151173ccf17d754fe1ab4dd02c1b296e1bfe3417aeca3d067a539fddf72",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 16939,
+   "sha256": "6029ae9ef6775731d4df5c26c0ea36547e1d07171ba32d8dca47f8d037aae2b9",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 3816,
+   "sha256": "3f39f938c5cbc7f9b4de376653771fe49109941de2cc29cb3f6248f89c24e2e2",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 10732,
+   "sha256": "afbe27af709c58f093e4df732749806923cbfd86275b2c81ad314a95c79c40dd",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 3094,
+   "sha256": "835de0dcc9260787f0e218e3a61e08443370999555365e30d22e6113f0a141ff",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 13969,
+   "sha256": "2e5c48c7d11123dc5cee4f97c526f0bbeb59ed3f191ca5285cdf2d23766afcb1",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 3261,
+   "sha256": "d167b3f1c10d56ef81d1e8c89b853e57cc779b4aa773e7784556496e964b419d",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 11749,
+   "sha256": "d9b56a218ba88a2c9efa6f8c2405ec439c04ca3e944911d1ca254e55376fc6bd",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 2290,
+   "sha256": "852ade02788230140cb4f656cd8547eb0d0850450a85f4a84812d48c2e0024d4",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 13952,
+   "sha256": "0517103daff6fb215cdff658c35861615baf5595aca759539ccf0ef3d65b5924",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 3116,
+   "sha256": "331288b25a8402c0b916564227e3ebd085985a87dd3a277ceb613441c09b0346",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/super-pit/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 12451,
+   "sha256": "0fc74aefda3554ec99b22ff2c5e41f45916922d8dc7e2e9edf4fb1862a8d5ee1",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/super-pit/polygons.geojson",
    "kind": "polygons",
    "bytes": 32725,
    "sha256": "263bc98f034269cb5b607aaf957eb2a384242c36cad91f79d154f47b0fc54991"
+  },
+  {
+   "path": "sites/super-pit/terrain/10/857/603.png",
+   "kind": "terrain",
+   "bytes": 110445,
+   "sha256": "732dd72213c0d4f89d52f8d05f389bf38d6060fd0ea4b26c06cbce9eb9a3da6c"
+  },
+  {
+   "path": "sites/super-pit/terrain/10/857/604.png",
+   "kind": "terrain",
+   "bytes": 94241,
+   "sha256": "1dfb74e648a186262fd3cdfe2fa1b146f84d22d6322e6ffcbd2e20444c5d724c"
+  },
+  {
+   "path": "sites/super-pit/terrain/11/1714/1207.png",
+   "kind": "terrain",
+   "bytes": 105490,
+   "sha256": "f5c67bb22aec5409cac62093a978c3bdd16439fe7f384ed631b7405c60653207"
+  },
+  {
+   "path": "sites/super-pit/terrain/11/1714/1208.png",
+   "kind": "terrain",
+   "bytes": 109168,
+   "sha256": "a8677f9ad86e12348995782df9b8b98d16f262e13705578fcd64b4d3117f1a5b"
+  },
+  {
+   "path": "sites/super-pit/terrain/11/1715/1207.png",
+   "kind": "terrain",
+   "bytes": 106380,
+   "sha256": "4ff933680b265f1eceaf153aee4a9461ab95b5b0319d01b209e8df6e029c9e87"
+  },
+  {
+   "path": "sites/super-pit/terrain/11/1715/1208.png",
+   "kind": "terrain",
+   "bytes": 108552,
+   "sha256": "7e09e6bee04129bb8ca574a75c591cead3efa78172ce170bd8b2741cb7948472"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3429/2415.png",
+   "kind": "terrain",
+   "bytes": 105835,
+   "sha256": "14e80db7d98fc6c763dd9a4761a192b7081c18973afb3a6792b83f12a5eebeec"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3429/2416.png",
+   "kind": "terrain",
+   "bytes": 106943,
+   "sha256": "d56dbef093d92ccccceafd0d48debba5b122f194000190f652e6ccd658090219"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3429/2417.png",
+   "kind": "terrain",
+   "bytes": 104817,
+   "sha256": "127ce405619da3aac7dbb07cbeb515accae4b65ff003d645b047728caec1459e"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3430/2415.png",
+   "kind": "terrain",
+   "bytes": 104407,
+   "sha256": "5211d2f294213e79168d19fa826990659508729e8b37005c624e54bcb8c38d50"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3430/2416.png",
+   "kind": "terrain",
+   "bytes": 109085,
+   "sha256": "55abe48dc76e961ca5a8922ff541f9722f96a564fb555a066480ddc30ccf7e46"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3430/2417.png",
+   "kind": "terrain",
+   "bytes": 104162,
+   "sha256": "ab569d813c2d5e5344b007094dbdd98d1c33d80516d0e320c5f196e510571861"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3431/2415.png",
+   "kind": "terrain",
+   "bytes": 104109,
+   "sha256": "af3a42a31d2c8ccfcbcf68cc8a782e3f781a62ea3ba3481be393db61d5fd3774"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3431/2416.png",
+   "kind": "terrain",
+   "bytes": 104177,
+   "sha256": "1c7f5f3c0a4daba8601372a4544e0f4c47880b44b2363fba88474bc6cd6492be"
+  },
+  {
+   "path": "sites/super-pit/terrain/12/3431/2417.png",
+   "kind": "terrain",
+   "bytes": 100239,
+   "sha256": "78b58071dd7b8027e85e87a7e4e9d7cf541f078ec4b07cb0d65a74cb23af98df"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6858/4830.png",
+   "kind": "terrain",
+   "bytes": 98614,
+   "sha256": "7e4978b7f86def960ba10df51d5ecbf1e3adbb37eaf07f878bb239e8c7996e7b"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6858/4831.png",
+   "kind": "terrain",
+   "bytes": 98001,
+   "sha256": "60a29b6182675894a61c454a6a0888d41b5510b5426d4ea726420e83d13b8a31"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6858/4832.png",
+   "kind": "terrain",
+   "bytes": 99873,
+   "sha256": "f47260d420a529014f284042a70def5f1db337f1a2f465510c2b4c5e07315309"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6858/4833.png",
+   "kind": "terrain",
+   "bytes": 101377,
+   "sha256": "0dcf2dac7bb22ffe7b0053073121e63c3defb36edb815b5cc23807f6ba306b82"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6858/4834.png",
+   "kind": "terrain",
+   "bytes": 99424,
+   "sha256": "11f80bbbfeaf750d0b912b73cbe3aa2d3336636cb56874c036fd3c8f758ffcfa"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6859/4830.png",
+   "kind": "terrain",
+   "bytes": 99473,
+   "sha256": "8e1514c2a162991e3f507768ceb52cde548b550d8ce9c63c664af92f7a8d005f"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6859/4831.png",
+   "kind": "terrain",
+   "bytes": 100424,
+   "sha256": "3d9f0da8eb7379494625c094de2177c380d4a40ada87272bc30b31b30a21dd59"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6859/4832.png",
+   "kind": "terrain",
+   "bytes": 98814,
+   "sha256": "acec0b3b9f0d4aaa602cc9cb5b99d01df01660eccbd979e772393def603ead42"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6859/4833.png",
+   "kind": "terrain",
+   "bytes": 99941,
+   "sha256": "3094dfde1dcbee8c3dea5bb436fd6f927bce71552f8384f344c3f6d144e9b6a1"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6859/4834.png",
+   "kind": "terrain",
+   "bytes": 95723,
+   "sha256": "e6f7b52ed0153800ff26dc9e9bfcdd58e85f04394bae77fe089370702e290a21"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6860/4830.png",
+   "kind": "terrain",
+   "bytes": 98446,
+   "sha256": "609d91e6c2fff4a33154ccaf44c25d3253640a4681066d65a805aabdcac58d2f"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6860/4831.png",
+   "kind": "terrain",
+   "bytes": 100191,
+   "sha256": "46a3bcfbacdf8d2030e5fef0c25172383485aec5a1d8940d4674a85a831a62ba"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6860/4832.png",
+   "kind": "terrain",
+   "bytes": 106493,
+   "sha256": "46043fa974abbafd7e4bc88845f01c3e44292d616532f9cc9f85ab8599e9f604"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6860/4833.png",
+   "kind": "terrain",
+   "bytes": 98266,
+   "sha256": "2cfa1df9303c471230c02d6a1e4a9d2ee64e57b2f9a0207e880df33bd4c00e50"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6860/4834.png",
+   "kind": "terrain",
+   "bytes": 99354,
+   "sha256": "671da6f00b513a4545bb1017f1321ce7c062fd6636862cd005b5a70af0d0b8cf"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6861/4830.png",
+   "kind": "terrain",
+   "bytes": 98305,
+   "sha256": "3e7e3bbc71dfbca7fa6cf2dd9e6a28d87391dca4d612d821d7aedeeb88d9c223"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6861/4831.png",
+   "kind": "terrain",
+   "bytes": 90020,
+   "sha256": "5f709708ff98eeddc2570995da5d1ade773ac562d144b75bdb25b6487e258076"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6861/4832.png",
+   "kind": "terrain",
+   "bytes": 101928,
+   "sha256": "645825bb478463f65372fe5aff1755d3b564e6ae5cbf0955c26353e64e716666"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6861/4833.png",
+   "kind": "terrain",
+   "bytes": 93663,
+   "sha256": "c32be765b065c085c9edc8362c6a559adeda58ec078a12a9b0fecde09087659b"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6861/4834.png",
+   "kind": "terrain",
+   "bytes": 91458,
+   "sha256": "1235bcf64e610b0de35e2ae6f59b6f5018fbb6ba7a03147a43e4251c6bf99b76"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6862/4830.png",
+   "kind": "terrain",
+   "bytes": 96963,
+   "sha256": "be90050901e960d450a5631e29f44368716a6e25db4103151116932d040c2def"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6862/4831.png",
+   "kind": "terrain",
+   "bytes": 98446,
+   "sha256": "c371cf96a5fa7787360c7520c6349099116e57a6e08dc9e2001db65f1f8c519a"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6862/4832.png",
+   "kind": "terrain",
+   "bytes": 97519,
+   "sha256": "af55ef943596d92ac65d85a93d3c8930ba40c0913f50211a0f23312f36995550"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6862/4833.png",
+   "kind": "terrain",
+   "bytes": 90544,
+   "sha256": "54f5564b0fafa62e13594fae3b12181e596c8420d905b85f8215d93d294b6f08"
+  },
+  {
+   "path": "sites/super-pit/terrain/13/6862/4834.png",
+   "kind": "terrain",
+   "bytes": 90661,
+   "sha256": "e86cd710b8d815e3930e7b1645f7f11fe46239a2ab4d3dbebb4cab0960c034d8"
   }
  ]
 }

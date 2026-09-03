@@ -1,0 +1,103 @@
+{
+ "site_id": "cerro-verde",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -111.1,
+  111.1
+ ],
+ "geoid_offset_m": 1.419,
+ "stable_bias_m": -6.455,
+ "noise_floor_m": 2.488,
+ "tau_m": 4.977,
+ "stable_ground_px": 109811,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 493757728,
+ "fill_volume_m3": 644214272,
+ "envelope": {
+  "cut_m3": 493757728,
+  "fill_m3": 644214272,
+  "cut_km2": 14.9886,
+  "fill_km2": 22.2066,
+  "min_m": -386.0,
+  "max_m": 180.3
+ },
+ "window": {
+  "cut_m3": 661697344,
+  "fill_m3": 806579904,
+  "cut_km2": 38.8296,
+  "fill_km2": 44.9919,
+  "min_m": -386.0,
+  "max_m": 180.3
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/308/559.png",
+  "terrain/11/616/1118.png",
+  "terrain/11/616/1119.png",
+  "terrain/11/617/1118.png",
+  "terrain/11/617/1119.png",
+  "terrain/12/1232/2237.png",
+  "terrain/12/1232/2238.png",
+  "terrain/12/1232/2239.png",
+  "terrain/12/1233/2237.png",
+  "terrain/12/1233/2238.png",
+  "terrain/12/1233/2239.png",
+  "terrain/12/1234/2237.png",
+  "terrain/12/1234/2238.png",
+  "terrain/12/1234/2239.png",
+  "terrain/13/2464/4475.png",
+  "terrain/13/2464/4476.png",
+  "terrain/13/2464/4477.png",
+  "terrain/13/2464/4478.png",
+  "terrain/13/2464/4479.png",
+  "terrain/13/2465/4475.png",
+  "terrain/13/2465/4476.png",
+  "terrain/13/2465/4477.png",
+  "terrain/13/2465/4478.png",
+  "terrain/13/2465/4479.png",
+  "terrain/13/2466/4475.png",
+  "terrain/13/2466/4476.png",
+  "terrain/13/2466/4477.png",
+  "terrain/13/2466/4478.png",
+  "terrain/13/2466/4479.png",
+  "terrain/13/2467/4475.png",
+  "terrain/13/2467/4476.png",
+  "terrain/13/2467/4477.png",
+  "terrain/13/2467/4478.png",
+  "terrain/13/2467/4479.png",
+  "terrain/13/2468/4475.png",
+  "terrain/13/2468/4476.png",
+  "terrain/13/2468/4477.png",
+  "terrain/13/2468/4478.png",
+  "terrain/13/2468/4479.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 1993.0,
+  "max": 3205.0
+ },
+ "cop_stats": {
+  "min": 1988.6,
+  "max": 3205.0
+ }
+}

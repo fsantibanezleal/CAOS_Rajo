@@ -1,0 +1,138 @@
+{
+ "schema": "rajo.models/v1",
+ "models": [
+  {
+   "id": "rf-v1",
+   "method": "M7",
+   "name": "Random forest pixel classifier",
+   "file": "rf/rf-v1.onnx",
+   "bytes": 9621452,
+   "sha256": "f6c2cdd7a8b8e4871012d5c034ea36128be471967bb10ccf2525137f47ddc2b9",
+   "opset": 17,
+   "input": "features[N,16] float32",
+   "output": "probabilities[N,2]",
+   "features": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir16",
+    "swir22",
+    "ndvi",
+    "mndwi",
+    "bsi",
+    "ndbi",
+    "iron",
+    "clay",
+    "ferrous",
+    "bsi_mean3",
+    "bsi_std3",
+    "ndvi_mean3"
+   ],
+   "training_data": "Jasansky et al. 2024, doi:10.5281/zenodo.14195737, CC BY-SA 4.0",
+   "pixels": "Sentinel-2 L2A, Earth Search v1 (Element 84, AWS Open Data)",
+   "split": "published train/val/test; catalog sites held out",
+   "params": {
+    "trees": 64,
+    "max_depth": 12,
+    "min_samples_leaf": 50,
+    "seed": 7,
+    "n_pixels": 1999782,
+    "positive_share": 0.5,
+    "min_clear": 0.9,
+    "class_weight": "balanced"
+   },
+   "engine_version": "0.01.000",
+   "scores": {
+    "val": {
+     "pooled_iou": 0.17271552905772772,
+     "pooled_f1": 0.29455656513136474,
+     "n_tiles": 175
+    },
+    "test": {
+     "pooled_iou": 0.16173556915957382,
+     "pooled_f1": 0.27843783637713193,
+     "n_tiles": 106
+    },
+    "catalog": {
+     "pooled_iou": 0.23507047414827004,
+     "pooled_f1": 0.38065920782436236,
+     "n_tiles": 24
+    }
+   },
+   "parity": {
+    "n": 100000,
+    "max_abs_diff": 3.741528851186615e-07,
+    "mean_abs_diff": 5.074231190479804e-08,
+    "threshold": 1e-05,
+    "pass": true
+   },
+   "license": "MIT (weights); training data CC BY-SA 4.0 (Jasansky et al. 2024)",
+   "trained": "2026-09-03"
+  },
+  {
+   "id": "unet-v1",
+   "method": "M8",
+   "name": "U-Net semantic segmentation",
+   "file": "unet/unet-v1.onnx",
+   "file_fp16": "unet/unet-v1-fp16.onnx",
+   "bytes": 31400207,
+   "sha256": "31e6fa29fa6ea296338b70239c7875f7874aa0ab8fa97435409a22a29b1a1efa",
+   "bytes_fp16": 15711371,
+   "sha256_fp16": "0b5cfbd5040241cd3686de80ab70b303bb5243764aed5541452e0095505f99dd",
+   "opset": 17,
+   "input": "image[1,6,H,W] float32, reflectance clipped at 0.6 and scaled to [0,1]",
+   "output": "logits[1,1,H,W]; probability = sigmoid",
+   "channels": [
+    "blue",
+    "green",
+    "red",
+    "nir",
+    "swir16",
+    "swir22"
+   ],
+   "parameters": 7850465,
+   "base_width": 32,
+   "training": {
+    "seed": 7,
+    "crop": 256,
+    "batch": 16,
+    "lr": 0.0003,
+    "wd": 0.0001,
+    "epochs_planned": 40,
+    "patience": 8,
+    "amp": true,
+    "train_crops": 9396,
+    "val_tiles": 175,
+    "best_epoch": null,
+    "best_val_pooled_iou": 0.40238300321519005
+   },
+   "val_full": null,
+   "parity": {
+    "fp32": {
+     "tile_id": 1030,
+     "window": 512,
+     "max_abs_diff": 4.6062103947752675e-07,
+     "mean_abs_diff": 1.089228543207701e-08,
+     "threshold": 0.001,
+     "pass": true,
+     "ort_cpu_ms": 201
+    },
+    "fp16": {
+     "tile_id": 1030,
+     "window": 512,
+     "max_abs_diff": 0.0037531291388674393,
+     "mean_abs_diff": 9.753688166874803e-05,
+     "threshold": 0.01,
+     "pass": true,
+     "ort_cpu_ms": 250
+    }
+   },
+   "training_data": "Jasansky et al. 2024, doi:10.5281/zenodo.14195737, CC BY-SA 4.0; pixels from Earth Search",
+   "split": "published train/val/test; catalog sites held out",
+   "engine_version": "0.01.000",
+   "license": "MIT (weights); training data CC BY-SA 4.0",
+   "trained": "2026-09-03"
+  }
+ ]
+}

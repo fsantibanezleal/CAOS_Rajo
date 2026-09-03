@@ -1,0 +1,120 @@
+{
+ "site_id": "chuquicamata",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -130.3,
+  130.3
+ ],
+ "geoid_offset_m": -0.291,
+ "stable_bias_m": -3.124,
+ "noise_floor_m": 1.507,
+ "tau_m": 3.014,
+ "stable_ground_px": 201780,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 1784654976,
+ "fill_volume_m3": 1611136768,
+ "envelope": {
+  "cut_m3": 1784654976,
+  "fill_m3": 1611136768,
+  "cut_km2": 28.4517,
+  "fill_km2": 65.07,
+  "min_m": -398.7,
+  "max_m": 198.7
+ },
+ "window": {
+  "cut_m3": 1854755712,
+  "fill_m3": 1825337728,
+  "cut_km2": 44.8974,
+  "fill_km2": 104.4162,
+  "min_m": -398.7,
+  "max_m": 198.7
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/315/576.png",
+  "terrain/10/315/577.png",
+  "terrain/10/316/576.png",
+  "terrain/10/316/577.png",
+  "terrain/11/631/1153.png",
+  "terrain/11/631/1154.png",
+  "terrain/11/632/1153.png",
+  "terrain/11/632/1154.png",
+  "terrain/12/1262/2307.png",
+  "terrain/12/1262/2308.png",
+  "terrain/12/1262/2309.png",
+  "terrain/12/1263/2307.png",
+  "terrain/12/1263/2308.png",
+  "terrain/12/1263/2309.png",
+  "terrain/12/1264/2307.png",
+  "terrain/12/1264/2308.png",
+  "terrain/12/1264/2309.png",
+  "terrain/12/1265/2307.png",
+  "terrain/12/1265/2308.png",
+  "terrain/12/1265/2309.png",
+  "terrain/13/2525/4614.png",
+  "terrain/13/2525/4615.png",
+  "terrain/13/2525/4616.png",
+  "terrain/13/2525/4617.png",
+  "terrain/13/2525/4618.png",
+  "terrain/13/2525/4619.png",
+  "terrain/13/2526/4614.png",
+  "terrain/13/2526/4615.png",
+  "terrain/13/2526/4616.png",
+  "terrain/13/2526/4617.png",
+  "terrain/13/2526/4618.png",
+  "terrain/13/2526/4619.png",
+  "terrain/13/2527/4614.png",
+  "terrain/13/2527/4615.png",
+  "terrain/13/2527/4616.png",
+  "terrain/13/2527/4617.png",
+  "terrain/13/2527/4618.png",
+  "terrain/13/2527/4619.png",
+  "terrain/13/2528/4614.png",
+  "terrain/13/2528/4615.png",
+  "terrain/13/2528/4616.png",
+  "terrain/13/2528/4617.png",
+  "terrain/13/2528/4618.png",
+  "terrain/13/2528/4619.png",
+  "terrain/13/2529/4614.png",
+  "terrain/13/2529/4615.png",
+  "terrain/13/2529/4616.png",
+  "terrain/13/2529/4617.png",
+  "terrain/13/2529/4618.png",
+  "terrain/13/2529/4619.png",
+  "terrain/13/2530/4614.png",
+  "terrain/13/2530/4615.png",
+  "terrain/13/2530/4616.png",
+  "terrain/13/2530/4617.png",
+  "terrain/13/2530/4618.png",
+  "terrain/13/2530/4619.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 2220.0,
+  "max": 3688.0
+ },
+ "cop_stats": {
+  "min": 2091.6,
+  "max": 3688.8
+ }
+}

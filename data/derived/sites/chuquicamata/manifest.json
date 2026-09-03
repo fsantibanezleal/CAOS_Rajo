@@ -132,7 +132,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -185,7 +188,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -238,7 +244,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -291,7 +300,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -344,7 +356,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -397,7 +412,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -450,7 +468,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -503,7 +524,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -556,7 +580,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -609,7 +636,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -662,7 +692,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -715,7 +748,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -768,7 +804,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -821,7 +860,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -874,7 +916,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -927,7 +972,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -980,7 +1028,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -1033,7 +1084,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1086,7 +1140,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1142,7 +1199,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1195,7 +1255,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1248,7 +1311,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1305,7 +1371,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1362,7 +1431,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1415,7 +1487,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1468,7 +1543,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1525,7 +1603,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1582,7 +1663,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1637,7 +1721,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1693,7 +1780,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1749,7 +1839,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1805,7 +1898,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1856,7 +1952,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1907,7 +2006,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1958,7 +2060,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -2009,7 +2114,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -2060,7 +2168,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2111,7 +2222,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2162,7 +2276,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2213,7 +2330,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2264,7 +2384,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2315,14 +2438,636 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {},
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a"
+  ],
+  "valid_frac": [
+   0.8627,
+   0.8754,
+   0.8323,
+   0.9329,
+   0.9048,
+   0.8498,
+   0.8563,
+   0.8714,
+   0.8847,
+   0.8319,
+   0.8918,
+   0.8493,
+   0.8465,
+   0.7774,
+   0.8861,
+   0.8844,
+   0.8581,
+   0.9069,
+   0.8555,
+   0.8787,
+   0.9074,
+   0.8289,
+   0.8991,
+   0.8392,
+   0.8655,
+   0.8766,
+   0.842,
+   0.8924,
+   0.9468,
+   0.8531,
+   0.8968,
+   0.9227,
+   0.9999,
+   0.9988,
+   0.9992,
+   0.9976,
+   0.9969,
+   0.9964,
+   0.9947,
+   0.9903,
+   0.9913,
+   0.991
+  ],
+  "envelope_km2": 272.871,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    135.8982,
+    150.3459,
+    124.8912,
+    242.6049,
+    204.3729,
+    148.8969,
+    131.3613,
+    145.9944,
+    145.9845,
+    126.2556,
+    148.5045,
+    134.4681,
+    145.3662,
+    118.9917,
+    147.7971,
+    19.8846,
+    134.9361,
+    141.4584,
+    139.7358,
+    134.1261,
+    138.2733,
+    128.9718,
+    142.1595,
+    135.6417,
+    149.8509,
+    232.6446,
+    138.4758,
+    137.5884,
+    152.8884,
+    137.9727,
+    137.9007,
+    137.3049,
+    106.2459,
+    37.8108,
+    102.4956,
+    38.3625,
+    61.695,
+    40.0824,
+    45.1476,
+    55.1682,
+    58.0104,
+    25.0236
+   ],
+   "rf": [
+    190.1097,
+    194.6214,
+    194.706,
+    217.1205,
+    210.7908,
+    203.5188,
+    199.0287,
+    201.7575,
+    219.6387,
+    199.6506,
+    213.3135,
+    195.7554,
+    216.6714,
+    188.8029,
+    229.3947,
+    219.4434,
+    230.8941,
+    220.0698,
+    227.9547,
+    230.4666,
+    243.8559,
+    221.7456,
+    240.7167,
+    219.8763,
+    234.0792,
+    234.3663,
+    226.0071,
+    235.0629,
+    246.6765,
+    221.4846,
+    240.372,
+    242.6715,
+    272.5047,
+    251.8686,
+    272.2554,
+    252.2853,
+    270.8568,
+    247.3434,
+    265.9905,
+    266.2632,
+    267.9714,
+    268.569
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.05104,
+    0.03919,
+    0.03268,
+    0.02574,
+    0.03453,
+    0.02561,
+    0.0292,
+    0.035,
+    0.02645,
+    0.02316,
+    0.02701,
+    0.0505,
+    0.02514,
+    0.04306,
+    0.03261,
+    -0.05352,
+    0.02394,
+    0.04967,
+    0.01879,
+    0.02286,
+    0.02212,
+    0.02252,
+    0.03501,
+    0.02686,
+    0.01191,
+    0.03443,
+    0.02401,
+    0.02691,
+    0.02973,
+    0.02416,
+    0.02237,
+    0.02422,
+    0.00565,
+    0.02797,
+    0.00494,
+    0.02455,
+    0.00589,
+    0.03052,
+    0.03376,
+    0.02598,
+    0.02043,
+    0.01617
+   ],
+   "mndwi": [
+    -0.18734,
+    -0.17147,
+    -0.1692,
+    -0.15531,
+    -0.17213,
+    -0.15752,
+    -0.16829,
+    -0.17167,
+    -0.15802,
+    -0.16238,
+    -0.16072,
+    -0.18708,
+    -0.15061,
+    -0.17805,
+    -0.16252,
+    -0.17388,
+    -0.16715,
+    -0.18179,
+    -0.16768,
+    -0.16668,
+    -0.16536,
+    -0.18021,
+    -0.18586,
+    -0.18129,
+    -0.14417,
+    -0.18915,
+    -0.17965,
+    -0.17962,
+    -0.18072,
+    -0.18049,
+    -0.17391,
+    -0.18014,
+    -0.15674,
+    -0.23138,
+    -0.16224,
+    -0.24017,
+    -0.23238,
+    -0.24079,
+    -0.24329,
+    -0.2293,
+    -0.22981,
+    -0.22885
+   ],
+   "bsi": [
+    0.12628,
+    0.12327,
+    0.12764,
+    0.11689,
+    0.12221,
+    0.12458,
+    0.13116,
+    0.13122,
+    0.12675,
+    0.13399,
+    0.12878,
+    0.11855,
+    0.12273,
+    0.1301,
+    0.12149,
+    0.17364,
+    0.12892,
+    0.11547,
+    0.12847,
+    0.12389,
+    0.13268,
+    0.14,
+    0.12673,
+    0.1323,
+    0.12643,
+    0.12353,
+    0.13186,
+    0.13128,
+    0.13153,
+    0.13347,
+    0.13182,
+    0.13442,
+    0.12771,
+    0.16125,
+    0.12949,
+    0.17069,
+    0.18023,
+    0.1648,
+    0.16995,
+    0.16313,
+    0.17219,
+    0.17195
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      2018
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2017,
+       "mean": 142.3574,
+       "slope": -0.53
+      },
+      {
+       "start": 2018,
+       "end": 2026,
+       "mean": 51.5329,
+       "slope": -2.7923
+      }
+     ],
+     "penalty": 6227.804005,
+     "sigma": 23.567113,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1988,
+      2001
+     ],
+     "k": 11.783557,
+     "h": 94.268452,
+     "sigma": 23.567113,
+     "target": -0.5958
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1999,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1998,
+       "mean": 203.249,
+       "slope": 0.4478
+      },
+      {
+       "start": 1999,
+       "end": 2016,
+       "mean": 231.3965,
+       "slope": 0.7342
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 263.5908,
+       "slope": 0.3936
+      }
+     ],
+     "penalty": 3699.12542,
+     "sigma": 18.163036,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 9.081518,
+     "h": 72.652144,
+     "sigma": 18.163036,
+     "target": 2.2995
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1988,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 94.268452
+   },
+   {
+    "year": 1999,
+    "method": "pelt",
+    "series": "rf",
+    "score": 3699.12542
+   },
+   {
+    "year": 2001,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 94.268452
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 3699.12542
+   },
+   {
+    "year": 2018,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 6227.804005
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "chuquicamata",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -130.3,
+   130.3
+  ],
+  "geoid_offset_m": -0.291,
+  "stable_bias_m": -3.124,
+  "noise_floor_m": 1.507,
+  "tau_m": 3.014,
+  "stable_ground_px": 201780,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 1784654976,
+  "fill_volume_m3": 1611136768,
+  "envelope": {
+   "cut_m3": 1784654976,
+   "fill_m3": 1611136768,
+   "cut_km2": 28.4517,
+   "fill_km2": 65.07,
+   "min_m": -398.7,
+   "max_m": 198.7
+  },
+  "window": {
+   "cut_m3": 1854755712,
+   "fill_m3": 1825337728,
+   "cut_km2": 44.8974,
+   "fill_km2": 104.4162,
+   "min_m": -398.7,
+   "max_m": 198.7
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/315/576.png",
+   "terrain/10/315/577.png",
+   "terrain/10/316/576.png",
+   "terrain/10/316/577.png",
+   "terrain/11/631/1153.png",
+   "terrain/11/631/1154.png",
+   "terrain/11/632/1153.png",
+   "terrain/11/632/1154.png",
+   "terrain/12/1262/2307.png",
+   "terrain/12/1262/2308.png",
+   "terrain/12/1262/2309.png",
+   "terrain/12/1263/2307.png",
+   "terrain/12/1263/2308.png",
+   "terrain/12/1263/2309.png",
+   "terrain/12/1264/2307.png",
+   "terrain/12/1264/2308.png",
+   "terrain/12/1264/2309.png",
+   "terrain/12/1265/2307.png",
+   "terrain/12/1265/2308.png",
+   "terrain/12/1265/2309.png",
+   "terrain/13/2525/4614.png",
+   "terrain/13/2525/4615.png",
+   "terrain/13/2525/4616.png",
+   "terrain/13/2525/4617.png",
+   "terrain/13/2525/4618.png",
+   "terrain/13/2525/4619.png",
+   "terrain/13/2526/4614.png",
+   "terrain/13/2526/4615.png",
+   "terrain/13/2526/4616.png",
+   "terrain/13/2526/4617.png",
+   "terrain/13/2526/4618.png",
+   "terrain/13/2526/4619.png",
+   "terrain/13/2527/4614.png",
+   "terrain/13/2527/4615.png",
+   "terrain/13/2527/4616.png",
+   "terrain/13/2527/4617.png",
+   "terrain/13/2527/4618.png",
+   "terrain/13/2527/4619.png",
+   "terrain/13/2528/4614.png",
+   "terrain/13/2528/4615.png",
+   "terrain/13/2528/4616.png",
+   "terrain/13/2528/4617.png",
+   "terrain/13/2528/4618.png",
+   "terrain/13/2528/4619.png",
+   "terrain/13/2529/4614.png",
+   "terrain/13/2529/4615.png",
+   "terrain/13/2529/4616.png",
+   "terrain/13/2529/4617.png",
+   "terrain/13/2529/4618.png",
+   "terrain/13/2529/4619.png",
+   "terrain/13/2530/4614.png",
+   "terrain/13/2530/4615.png",
+   "terrain/13/2530/4616.png",
+   "terrain/13/2530/4617.png",
+   "terrain/13/2530/4618.png",
+   "terrain/13/2530/4619.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 2220.0,
+   "max": 3688.0
+  },
+  "cop_stats": {
+   "min": 2091.6,
+   "max": 3688.8
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/chuquicamata/dem/cop.png",
+   "kind": "dem",
+   "bytes": 531007,
+   "sha256": "0ddb0e10e1d5c580f15e27f452f6dc972b9e0f494477dc8cd362c6b20ae9bec9"
+  },
+  {
+   "path": "sites/chuquicamata/dem/delta.png",
+   "kind": "dem",
+   "bytes": 804481,
+   "sha256": "9f5a37b679577f45ff39f99d9094a1edfd8302d8b192ff01887b1e41389cab23"
+  },
+  {
+   "path": "sites/chuquicamata/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 546366,
+   "sha256": "071d8b5801d59034f9819ed2245e1606b30db9eaf9b7aa1d14582fcc8abe90fd"
+  },
   {
    "path": "sites/chuquicamata/frames/1985-swir.webp",
    "kind": "frame",
@@ -2912,10 +3657,1018 @@
    "year": 2026
   },
   {
+   "path": "sites/chuquicamata/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 22209,
+   "sha256": "409a1f1253a34cd765000ca0d1b577c6afa8bcedd39981c9f90b5b1c849d76ff",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 22582,
+   "sha256": "9ad1290a5bece2bfc8379e5c45dbbe77df925054e61fe25fb16b1428afc46038",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 17824,
+   "sha256": "a4e8738ba73d778531f7f9f7a8b8ab410f5a71aae8f9fe3eb5499452fe508dd3",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 21385,
+   "sha256": "6a2e60bef8de6ac69ee411140f934be27f0679cc317d096d9d150a1325a844a6",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 19056,
+   "sha256": "56150ee6b54a1778a0bfeb8a79f46c1005265eef29896fee7a9a8e842a924db9",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 20784,
+   "sha256": "19f13d876e38a1de71f69754cd737e16618ea64024796ed43846130aa3fe51d0",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 5778,
+   "sha256": "59f4ebe83b5cd03f389859bd78bebbf23091b99bb40032f5cbda31fbfde4e34b",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 21606,
+   "sha256": "ddf72d2c5c9bef5102a784f30c652d2a38f81769e86b5ca6142de84987b6edd2",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 11102,
+   "sha256": "14043ec0db8d7b586b0527ce482be1b2091c96437da2a5848901a4e9ccf75214",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 21256,
+   "sha256": "da2e5d8ef004dd9143eac103a7d8207e41fec69c379a8fc765f67d1673522043",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 18348,
+   "sha256": "da303ebb0f38e3c695f4abe094788789284ed16a7f7e3f91083f98b1bfbe3028",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 18727,
+   "sha256": "8f15d20ce74a22be0e5dfe819c3ade5920b295d379e0ae1b818753a6df034124",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 18975,
+   "sha256": "b5d1d17b16838704bb42d21d992de4e286d6bf6214453a7f697864e8efbd1b61",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 20356,
+   "sha256": "07b09c97ef36af79d950525244f797ecc3207e4c6f208ff88599a6222b56a82c",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 19464,
+   "sha256": "0332f05223a8bcaba4d90593ce6cc0cad67007c7d0569f132696bddd4824f378",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 21488,
+   "sha256": "afa70c2f2c81a77bf0787866630f4e8c2b2c977665834593b4a72bd7fc2504d3",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 20113,
+   "sha256": "d7e273b0143313d76cdf683e8f67498e01f53596c868030fc03932b9d0f41c22",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 18081,
+   "sha256": "20a66b9b3d211738ff1ac1c03db5b90d972bbf2a5a5aabd970de8f4d07e875e8",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 19883,
+   "sha256": "7fe98231738209918e5f164a4f490a49d10a9347af1baac712973ba45d48f9c3",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 17227,
+   "sha256": "afa0704008315c5c2b2266943981d3a15160cbfd5c275a7a262f7e0f86259d9c",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 20107,
+   "sha256": "a110437fcbbeca9cf297eaef39c365c065e36d755bebe1fc319cbcc4925732c8",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 18438,
+   "sha256": "90d5132724a00151151cbb820503332aab120443a7bf51d2c56d5053f7be6238",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 20319,
+   "sha256": "e7d640d6a1d301e91bb24943561510d70cc9e763a4a9e02471c5b7205cd79aee",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 22079,
+   "sha256": "6c0ab10bc20c5a697f7c100198282ef08e15ba5d7ff4a6e4eeefcdae4462986d",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 19009,
+   "sha256": "e03966d8f9b9d7c340b854df68631119440b80d13e07a754101b8a7c86319204",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 15694,
+   "sha256": "31c70d548ff3d3f5c892cb807afed834d8d6e392bbb7921351c9fad471fb9c25",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 21114,
+   "sha256": "22f3285803b6ac460a08488b1d2e7b806021dabfe358b9af89054bb0e8bf0a7d",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 22950,
+   "sha256": "6bd624f35cba712c0ea8ad2fa49431a31527169714a3c1fb5e988bc57021ecb1",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 20035,
+   "sha256": "a9d1c558af6e98f526cc8b79e84af991c931c8979c3950e15a6f97e64276fa96",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 16800,
+   "sha256": "09fe740a1e4ddca08d16173a70e7b2fb2884fe549645c51caaa236d30f9925d3",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 5142,
+   "sha256": "d71b3e4a7b3174df79c9a8862873deb5b3d801f8ddc145b6eaea152236b7c0fc",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 18391,
+   "sha256": "24d9e10a85321acd2e43b1a53e5a2be6f2d74dc773b542432b83d59b53b56fb6",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 19584,
+   "sha256": "97eb26f57fde3e2ad692643ca9c0675d26ba9e09c0742b6dd53a730d6a419f5c",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 12221,
+   "sha256": "e71332269720bfb471a6a503cc3db84f36d09ab2066fa4c53b42cf38c0441c53",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 18816,
+   "sha256": "20268c97c070a973bbac4c18fc16ec35c6d5554656fdcb269f6e92a569d38f0b",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 20473,
+   "sha256": "79e03a97ee64d7f1bb27d8bdd778bdb752c986a34204a4f95166bd1bae167130",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 20304,
+   "sha256": "9e8c5d49e7658ec3473e5a17cd47f064666c6fb80101f0189197d9817a5bac78",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 13738,
+   "sha256": "921a28108c8b08d9861c8007a56d3cc763d27803540ad6f5ce257b0a0889e6e9",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 21778,
+   "sha256": "89e65832799dc4c59345a937c51b54c55124fc7f640cf1c771a6adf68fc75447",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 19743,
+   "sha256": "0ca8f27da7b430362bc8758756ddb5b6d5d9b2cd0bfb94793861227738bdaac5",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 19827,
+   "sha256": "a7f76708f9d9d3c8363d7bd95a85711acf2bdfbffee080578521f7c4a342ab5b",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 12300,
+   "sha256": "ff72735cce9cbb9e170721eb93b1ee41e74075a0d4d18425353d89a8d75b9542",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 20068,
+   "sha256": "99fca5651156b4ac368fc5fe0757e8c3fccc35a57722300191acc72001276cae",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 12838,
+   "sha256": "fbd34d500c23edef61fc8b978fc11d02e264ce91e5427a6e4bf1289ec948fd46",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 22182,
+   "sha256": "4ee9af9fab949c88d2a0f9a080f1625012b593091c738d3891fa5e505fe61f2c",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 17225,
+   "sha256": "49bc8ee71e8523baa233dbfee368618e3a70e06a6af83baf5c72fbe87ebf742b",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 19505,
+   "sha256": "3fabdd1f00835e583c983d7eded9f59feb19c00c88099ebb02a55f2a60d7beac",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 16317,
+   "sha256": "2f6c0b8b2938ccf9126b03574b605bdb0b98ea619bb4f4aa26c58aa2ce454730",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 17424,
+   "sha256": "985aae26c99adbcca810769c16f8f1310f48c171cebaeb0860be075a51940ed8",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 9703,
+   "sha256": "6acbcb2b9def94149a06cb5ab4a81e6eeab7b10dd7f713ee7ab578ccb407046c",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 4472,
+   "sha256": "df98fa4956871ec75b7693e214d6de9e0bbae4dced332ad76af5bc5611540f4d",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 11860,
+   "sha256": "edf93e37487a97f28caa1d3695850c1b16ccd4616244f5b55df6f0c6cd71b65f",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 17312,
+   "sha256": "728af4a6bb27332635ce3ac5ac33d381b071167a87bf4711af220bafc29047d9",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 11998,
+   "sha256": "9eee3fe4a278d7419a9cc3eb2ee9c443e9a6e50bbe564ed49d1bdccd2d1c725c",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 20029,
+   "sha256": "89a3afbea53ad7420e2c9cfa72cd284dcca463eaf605a7187e9df26b33f6e26f",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 18652,
+   "sha256": "a2617b53d58ec57a6075352e8e9188fb1ecfce645d60053eab975fdb05a83851",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 22023,
+   "sha256": "91ba12bde615695106410b60bfbbac90081494d51b3881b86a75004de017c812",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 18924,
+   "sha256": "a8cdf9d3c342cc03b348370295691270fe6975377ebdab2902ed6c0861564362",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 21110,
+   "sha256": "cdcacbd34c71e4beab0265783b4f4594ab25c8be224f84ae7dce5afc9b4456d7",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 18460,
+   "sha256": "773e99975f7fc20c1ecf290da2cc6d2ab51e9116eb21f1911f91482619f56280",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 20970,
+   "sha256": "1eed626a2444e61a9a02b6caf0c09d460132789db0356785f3b013a9432087b6",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 14546,
+   "sha256": "8466549aae28563e1e9f9580820153e97e3421cd32dd8a3c130e18390393e61b",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 21662,
+   "sha256": "6008188edbe04b4b76ee17fbfb41c9a5b775ea690332a764812722f16efe0a0a",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 15476,
+   "sha256": "fa622c7760df3c4c4acc4fd3a68bf9455104e90b0eaa13dc2b90df2c78f72d11",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 24048,
+   "sha256": "04d6b84a17c41ab6081019595bd9f36db4e2c8bbb2a1acc50a432d69675eceb1",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 7801,
+   "sha256": "395c539a4a094e82ca81412bb5923f844c244e6ec3d9b54fafed9c94d593942f",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 17043,
+   "sha256": "4ea4b4e541f90af73da97f7a9560080e615af8c12665adaf5e5682851c5dbb0d",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 21541,
+   "sha256": "1e30263c68cc8fcb4509fca7116a5c3e61f3b6a8a3ac0d9ba2cd51387a9ef8bc",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 26642,
+   "sha256": "4b900c758d8b7b11e3dc5dfbdc2489542d1a54cd77e9f4158cd8f633873d7978",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 6399,
+   "sha256": "fcbf32b2e81c9a216d9c8931c4a56552027bc801c457489e6cf28846d45350a4",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 18527,
+   "sha256": "3f84687635770355cd8cc5ec8bc139e3dbe4e9187d4c885ee6bb5c09f9bffae2",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 20986,
+   "sha256": "0e091ebbf56e9f76bf2a9a72a7881e6d856965b15890120b6010ef96d016b53f",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 21641,
+   "sha256": "1a1c781899678c5a9185eb7b2d1fdd02874e3c9e94ba17069ba0ee22b3ab060f",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 5338,
+   "sha256": "bf89263120ba0363a93bb9545c8abab65bd735dc6aaa3c24338eec8ef3f00a23",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 20657,
+   "sha256": "40a7f7e3119aa010216c2168d25336fb40b92afb1e288f9e931e2501bf4623e0",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 22560,
+   "sha256": "43d35a09680a6ec85223fac27cc86121c9cbc656e2582a8a131301c1a18db325",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 21337,
+   "sha256": "6ba03c2bb0dd0d51aefccf048934f22f86fca0cac4f580dd04f3310a4381d278",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 12800,
+   "sha256": "c0761d59957edb7daf7e5d1c225d63a0057954a69fe50043b7209ae29ad0fa08",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 22890,
+   "sha256": "97a04bb30f58737df276ed5ae8fe4b18c8847665baf3e6744f3c4f3682dfc419",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 12271,
+   "sha256": "06ff5796aa9e49dfc141fdc5a19b0c5031ff6618cc97fb8d77822e3bf97acd3b",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 20505,
+   "sha256": "9bccb959a402a09e5db9426e7e915bf0f39887bc3309f47b5adc14b3738cf79a",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 10088,
+   "sha256": "d8c5945ba9e3c7d074e07020cf890908a176328bf1240ccea20102e1aee53a11",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 16186,
+   "sha256": "9e6cb578628e28c5d8fe0b1d5f0fe3beb5f62e6d13b128b0f5b2eafaa7536b2e",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 8666,
+   "sha256": "ad2b657d167ab520722ae62c0216b6ba7f5ccef2b4bbe5814610a8354d64e2db",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/chuquicamata/polygons.geojson",
    "kind": "polygons",
    "bytes": 21127,
    "sha256": "1faa0802612c30cfc0919543f6c2aba4447fc778c08f9c77ba7014f5180a6a12"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/10/315/576.png",
+   "kind": "terrain",
+   "bytes": 113838,
+   "sha256": "641e8e30dd552a500105bacde6394e80c824fab93bea35425e5b2bed2350ecd8"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/10/315/577.png",
+   "kind": "terrain",
+   "bytes": 137241,
+   "sha256": "a656c43cb44662ffdc224e70ab900e5d66e4dc507a8af22b529c07609cf5bff1"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/10/316/576.png",
+   "kind": "terrain",
+   "bytes": 109280,
+   "sha256": "ee36daed47c29e0c3be0897cae7a7954f6fdf3d107b72b8ac29124232bdd3737"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/10/316/577.png",
+   "kind": "terrain",
+   "bytes": 120796,
+   "sha256": "ae6e16e2f9ec99c10cbc4106ee271bbaf9db08b4fe5098aedfc14f2da0f771b5"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/11/631/1153.png",
+   "kind": "terrain",
+   "bytes": 133639,
+   "sha256": "2fae0af54933a2768c1ddd7cfd1fcca657e05364bd57ce2453fdf696e0935a62"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/11/631/1154.png",
+   "kind": "terrain",
+   "bytes": 136124,
+   "sha256": "750738cf98f5c0d2dc117ee18ca4d1202b129b53392e81033ea3448efacf339f"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/11/632/1153.png",
+   "kind": "terrain",
+   "bytes": 125459,
+   "sha256": "5db367365ebca37e4e620cde04aa8d0a6ea04cae1dcd72dcbe0f49f1d52686cb"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/11/632/1154.png",
+   "kind": "terrain",
+   "bytes": 115046,
+   "sha256": "10d08e06078a6eed417acde826be7f00753e9c0b877a7ce64e7bd6790b4062a8"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1262/2307.png",
+   "kind": "terrain",
+   "bytes": 125432,
+   "sha256": "aa11a0ad433b2ec998dbed7ab078bbe5a097c3ee72de398e55383916b837448f"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1262/2308.png",
+   "kind": "terrain",
+   "bytes": 130180,
+   "sha256": "c677b5b8b20eae11bce41217790e8372365573ba2365666919166d2843963060"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1262/2309.png",
+   "kind": "terrain",
+   "bytes": 129682,
+   "sha256": "c4b8d4fb3e5056b25d3d4297d974ad42c68ee340d2bbd963bc4565f03c1572a3"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1263/2307.png",
+   "kind": "terrain",
+   "bytes": 130182,
+   "sha256": "d49755fc5b79fd8384f97f0f67495353ecc23a90832a10002055fab7bce60d4e"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1263/2308.png",
+   "kind": "terrain",
+   "bytes": 132009,
+   "sha256": "82a46907da21bbcd27dd65eb0462f1ca0a9bc1f76b3a502c33d2609403522a52"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1263/2309.png",
+   "kind": "terrain",
+   "bytes": 121962,
+   "sha256": "848f86c2d1b71e4baa948e3fefd1c055f6195c2ca887f22a8d001564f4bafeea"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1264/2307.png",
+   "kind": "terrain",
+   "bytes": 125475,
+   "sha256": "eb9323a9839b6ac396dbbd330dd324375a3766ade9f0b0fb9bec7d6fd2b7bc7f"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1264/2308.png",
+   "kind": "terrain",
+   "bytes": 123579,
+   "sha256": "c8542a1d0702209d63a5243705cad587459819cb9233f05d43a9fe41c562f97c"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1264/2309.png",
+   "kind": "terrain",
+   "bytes": 109139,
+   "sha256": "615be09bde5efb572a4ffac8c8cbc4f9e384ceac0bef5d59cac289c8008661b8"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1265/2307.png",
+   "kind": "terrain",
+   "bytes": 106555,
+   "sha256": "127777680980beeeb759c8981730c56a720121d310c4665104c4abeba7a88a97"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1265/2308.png",
+   "kind": "terrain",
+   "bytes": 104563,
+   "sha256": "c5f6315d3f09fa30b870242b28c13b505221cbe20c4ca8df0f40d713814b8f36"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/12/1265/2309.png",
+   "kind": "terrain",
+   "bytes": 93923,
+   "sha256": "3f40731194ed18f6208960a3a8126e6134b45d6a4521ca33f7e529ac64ba2dd2"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2525/4614.png",
+   "kind": "terrain",
+   "bytes": 109774,
+   "sha256": "6fd39be701f20fb52d29d3c6ab183cb3b999d50d11be78420b8ecb66e3520022"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2525/4615.png",
+   "kind": "terrain",
+   "bytes": 117837,
+   "sha256": "407a052282b1b1d437f1b4fc28acb9d51bd4bcc818dcab78d6d312fb8e576f93"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2525/4616.png",
+   "kind": "terrain",
+   "bytes": 125676,
+   "sha256": "c2cc6a0b432b96da6689d49ed8e506b94bd9098ea3245ce99c161c361498da76"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2525/4617.png",
+   "kind": "terrain",
+   "bytes": 117596,
+   "sha256": "e2c14c2edca8b50bb5c8b0b180f083ecc26b197bb30d2fb37b9a3baed7429c85"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2525/4618.png",
+   "kind": "terrain",
+   "bytes": 119504,
+   "sha256": "076bd177359f4dfba50f3b6d42b420f233df7b1d1b657b3b60b31a86aee21101"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2525/4619.png",
+   "kind": "terrain",
+   "bytes": 120710,
+   "sha256": "cc07880d164fa40ad0dcfc66aaa0e2ac567f6cb1ec3d39707658fe1527f5e799"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2526/4614.png",
+   "kind": "terrain",
+   "bytes": 111569,
+   "sha256": "4c37d50c6b537fa7d31993735e380e309c2e59b2ca9b5837bbdbc2dd721a4adf"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2526/4615.png",
+   "kind": "terrain",
+   "bytes": 122977,
+   "sha256": "ddb29896897ba350bb66362a1461cfac95ec39cc3e7bd096ddf325889227ccd3"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2526/4616.png",
+   "kind": "terrain",
+   "bytes": 127713,
+   "sha256": "2d175f6477d1ff5dbda28967f9145fc114b589a102e0fc94274d36daa26320c3"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2526/4617.png",
+   "kind": "terrain",
+   "bytes": 120274,
+   "sha256": "f16fc549a3724a2e3c06df56eda69e657e4eeb826cf120c69d662cfaa0fb259b"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2526/4618.png",
+   "kind": "terrain",
+   "bytes": 117333,
+   "sha256": "80bfe6cf9a7f7fd78b47d280d8f78b40332c47b80ba7b8bc92dbbf2a4026659d"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2526/4619.png",
+   "kind": "terrain",
+   "bytes": 114095,
+   "sha256": "34194e53cd038a706b9c41ccca6d18191934fa3469f622e9aa6730f3a7545c65"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2527/4614.png",
+   "kind": "terrain",
+   "bytes": 123908,
+   "sha256": "f17b57196e1061cea25bcf7cdc587b8d4c23708140a5cb5b6cfbd38f3bc2b9ad"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2527/4615.png",
+   "kind": "terrain",
+   "bytes": 114800,
+   "sha256": "09b453759255c2f6d6f3189c21b2ab83a7b84f32bf8c38015d1048d3330a0e61"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2527/4616.png",
+   "kind": "terrain",
+   "bytes": 122506,
+   "sha256": "9800d3165d2be3ff7d5616a21411c98b33848379f6302b93b6d9f70af72879fc"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2527/4617.png",
+   "kind": "terrain",
+   "bytes": 114702,
+   "sha256": "cf9e290dc5334ce6e8ab59a3ba09748db55d659c7941bfc16e5b5d7546adcd13"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2527/4618.png",
+   "kind": "terrain",
+   "bytes": 111853,
+   "sha256": "8553034560174898bd933bc48f00068564149590109a3cf76efab71e65140775"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2527/4619.png",
+   "kind": "terrain",
+   "bytes": 103560,
+   "sha256": "6ba2fbf61ea5ee76c83b160a04cde5debcbfda95725f01a09a4ca4bb1a33bc05"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2528/4614.png",
+   "kind": "terrain",
+   "bytes": 113896,
+   "sha256": "d6467af0117bd8d9d915a66c8f79ec88b02644191a00c068af91a86fdc76495c"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2528/4615.png",
+   "kind": "terrain",
+   "bytes": 118142,
+   "sha256": "488cef6cd3aa5b6ca5ef05185c1adf006ebf1f964a14e3c0063b8ba959d388fb"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2528/4616.png",
+   "kind": "terrain",
+   "bytes": 125608,
+   "sha256": "d4796f67b0c5ef2724a5733e04dbc9f57b2b1ef96066a726c6f203de6ace6334"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2528/4617.png",
+   "kind": "terrain",
+   "bytes": 112358,
+   "sha256": "4794494cb3ad7cdbbf1ca3ad56a762aeb23b5e99da43e962f2ef4b33f5c7742b"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2528/4618.png",
+   "kind": "terrain",
+   "bytes": 98936,
+   "sha256": "54c1b1673a47dbbdf16bba9a7a1365b6cd28315d14f44fe58f8cecf8f33812aa"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2528/4619.png",
+   "kind": "terrain",
+   "bytes": 99925,
+   "sha256": "eb5d92961f41b28af16d654dfe86fe60a2071c855a81c1ee13abebd32a1677c6"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2529/4614.png",
+   "kind": "terrain",
+   "bytes": 109387,
+   "sha256": "44daa8c789c4b7e29f3c717965e5df4f49b95a9f1bd344d4aca83e61d485eed8"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2529/4615.png",
+   "kind": "terrain",
+   "bytes": 115567,
+   "sha256": "a6e701b5afb6c79a4b8766a778d69f848c3994715a45c4d22b02e466006c720e"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2529/4616.png",
+   "kind": "terrain",
+   "bytes": 107096,
+   "sha256": "09b43ab8f5340d5b8bc1edd75774c5e47fab3e66692eba3ec3600a4f2f720073"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2529/4617.png",
+   "kind": "terrain",
+   "bytes": 105905,
+   "sha256": "7f20c58fe34ae4b539c0a4ac62e9deda26b76253cadaa1209576f4c2468cefc9"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2529/4618.png",
+   "kind": "terrain",
+   "bytes": 99257,
+   "sha256": "4acc76276764a8444bbb9e2d7320516f2865f4a202ce33a97c1496384158a00e"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2529/4619.png",
+   "kind": "terrain",
+   "bytes": 102613,
+   "sha256": "600a583ec49a1cfc2febe17af6a679fa553dd2b12fa08290bf62290e6fdef9d4"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2530/4614.png",
+   "kind": "terrain",
+   "bytes": 93307,
+   "sha256": "792e12fb8c82d6c307e82271fa6d4855e66df154379a3812f1472f8e52292e0f"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2530/4615.png",
+   "kind": "terrain",
+   "bytes": 107366,
+   "sha256": "1c66f7473fe7e85f08a1da2925a3ce3eadd6b0f5a7927af19053a958771b1219"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2530/4616.png",
+   "kind": "terrain",
+   "bytes": 98323,
+   "sha256": "91b297254acfe4195bb6f92afbf09f94d0dd551bcca97978e4cc4da28faef335"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2530/4617.png",
+   "kind": "terrain",
+   "bytes": 92928,
+   "sha256": "d1e163ff37cf5ffc85b5544b11e3db0ed02d01a2ae5b4674788c50bffde3f8d9"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2530/4618.png",
+   "kind": "terrain",
+   "bytes": 77375,
+   "sha256": "634c7916f16c6b23d6d9afd8285181594c7e4d246a4bac7e4ed847da9ec8e98b"
+  },
+  {
+   "path": "sites/chuquicamata/terrain/13/2530/4619.png",
+   "kind": "terrain",
+   "bytes": 85555,
+   "sha256": "0fb6f25316da3d370ec825f883b6cc0d82235375bcedc5e3b47bf0f630bbaf3f"
   }
  ]
 }

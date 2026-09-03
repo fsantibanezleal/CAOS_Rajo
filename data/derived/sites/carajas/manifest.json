@@ -124,7 +124,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -177,7 +180,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -228,7 +234,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -279,7 +288,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -330,7 +342,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -381,7 +396,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -434,7 +452,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -485,7 +506,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -538,7 +562,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -589,7 +616,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -642,7 +672,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -693,7 +726,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -744,7 +780,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -795,7 +834,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -846,7 +888,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -897,7 +942,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -948,7 +996,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -999,7 +1050,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1050,7 +1104,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1106,7 +1163,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1161,7 +1221,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1217,7 +1280,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1268,7 +1334,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1319,7 +1388,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1376,7 +1448,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1432,7 +1507,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1483,7 +1561,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1538,7 +1619,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1589,7 +1673,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1646,7 +1733,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1701,7 +1791,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1756,7 +1849,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1807,7 +1903,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1858,7 +1957,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1909,7 +2011,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1960,7 +2065,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -2011,7 +2119,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2062,7 +2173,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2113,7 +2227,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2164,7 +2281,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2215,7 +2335,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2266,14 +2389,682 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {},
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-8",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2c",
+   "sentinel-2a"
+  ],
+  "valid_frac": [
+   0.8382,
+   0.9641,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.8457,
+   1.0,
+   0.9723,
+   1.0,
+   0.8298,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9991,
+   1.0,
+   0.9628,
+   0.9986,
+   0.9279,
+   1.0,
+   1.0,
+   0.9967,
+   0.9991,
+   1.0,
+   1.0,
+   1.0,
+   0.8914,
+   0.9996,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.996,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "envelope_km2": 181.1133,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    0.1539,
+    1.3347,
+    1.9584,
+    1.7145,
+    1.8261,
+    1.8036,
+    0.0,
+    0.0,
+    0.198,
+    3.5586,
+    4.0275,
+    3.3408,
+    5.2722,
+    5.9157,
+    5.8059,
+    6.3009,
+    5.7015,
+    9.4176,
+    8.2206,
+    9.5625,
+    12.033,
+    12.8277,
+    13.0032,
+    15.1911,
+    14.9778,
+    18.4572,
+    16.7994,
+    18.954,
+    18.2034,
+    16.317,
+    17.2539,
+    16.1253,
+    19.53,
+    1.7226,
+    4.3479,
+    1.5597,
+    4.6197,
+    5.1795,
+    5.7141,
+    5.1876,
+    5.7366,
+    7.7472
+   ],
+   "rf": [
+    2.592,
+    10.6722,
+    12.7836,
+    8.8821,
+    9.8325,
+    9.5031,
+    13.7376,
+    8.685,
+    6.939,
+    11.0565,
+    10.8351,
+    11.8755,
+    15.5637,
+    12.0015,
+    12.9087,
+    14.517,
+    13.3983,
+    18.5598,
+    16.7319,
+    18.936,
+    22.4613,
+    22.6764,
+    18.0522,
+    26.7795,
+    24.7536,
+    30.1221,
+    27.3798,
+    27.7263,
+    33.1839,
+    25.2873,
+    28.89,
+    28.1457,
+    47.0673,
+    32.7681,
+    36.4176,
+    33.8256,
+    38.7486,
+    37.7127,
+    38.2734,
+    37.9188,
+    40.8969,
+    40.3749
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.71331,
+    0.7591,
+    0.75258,
+    0.78174,
+    0.74645,
+    0.77407,
+    0.6417,
+    0.71447,
+    0.7739,
+    0.74614,
+    0.74328,
+    0.75407,
+    0.74485,
+    0.73263,
+    0.75875,
+    0.74966,
+    0.74813,
+    0.72852,
+    0.73709,
+    0.75261,
+    0.72739,
+    0.7134,
+    0.70721,
+    0.67295,
+    0.69961,
+    0.67247,
+    0.67878,
+    0.69504,
+    0.71986,
+    0.67086,
+    0.70266,
+    0.71777,
+    0.69714,
+    0.93501,
+    0.91594,
+    0.94491,
+    0.91448,
+    0.90433,
+    0.90338,
+    0.90253,
+    0.88733,
+    0.88679
+   ],
+   "mndwi": [
+    -0.47699,
+    -0.56136,
+    -0.57027,
+    -0.58814,
+    -0.53564,
+    -0.60008,
+    -0.34643,
+    -0.52286,
+    -0.61796,
+    -0.56216,
+    -0.58817,
+    -0.62865,
+    -0.57483,
+    -0.57268,
+    -0.61288,
+    -0.60332,
+    -0.58602,
+    -0.60588,
+    -0.5847,
+    -0.6287,
+    -0.63204,
+    -0.63385,
+    -0.60003,
+    -0.60037,
+    -0.59568,
+    -0.59734,
+    -0.59051,
+    -0.62883,
+    -0.66173,
+    -0.61053,
+    -0.62519,
+    -0.64047,
+    -0.65433,
+    -0.99781,
+    -0.99603,
+    -0.99751,
+    -0.99596,
+    -0.99415,
+    -0.99453,
+    -0.99455,
+    -0.99495,
+    -0.99208
+   ],
+   "bsi": [
+    -0.22609,
+    -0.24706,
+    -0.23351,
+    -0.23054,
+    -0.23786,
+    -0.21946,
+    -0.24723,
+    -0.21628,
+    -0.22604,
+    -0.23219,
+    -0.2095,
+    -0.21554,
+    -0.21303,
+    -0.20093,
+    -0.19527,
+    -0.19508,
+    -0.21004,
+    -0.18461,
+    -0.206,
+    -0.19679,
+    -0.16347,
+    -0.13611,
+    -0.14411,
+    -0.10488,
+    -0.15826,
+    -0.13356,
+    -0.13837,
+    -0.1302,
+    -0.14352,
+    -0.12139,
+    -0.1439,
+    -0.14365,
+    -0.09244,
+    -0.2082,
+    -0.22104,
+    -0.27742,
+    -0.22809,
+    -0.21568,
+    -0.2259,
+    -0.2363,
+    -0.20206,
+    -0.21909
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1994,
+      2002,
+      2008,
+      2018
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1993,
+       "mean": 0.9988,
+       "slope": -0.1276
+      },
+      {
+       "start": 1994,
+       "end": 2001,
+       "mean": 4.9904,
+       "slope": 0.4096
+      },
+      {
+       "start": 2002,
+       "end": 2007,
+       "mean": 10.8441,
+       "slope": 0.9777
+      },
+      {
+       "start": 2008,
+       "end": 2017,
+       "mean": 17.1809,
+       "slope": 0.2356
+      },
+      {
+       "start": 2018,
+       "end": 2026,
+       "mean": 4.6461,
+       "slope": 0.6102
+      }
+     ],
+     "penalty": 29.520406,
+     "sigma": 1.622557,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 0.811279,
+     "h": 6.49023,
+     "sigma": 1.622557,
+     "target": 0.495
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      2002,
+      2008,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2001,
+       "mean": 10.9284,
+       "slope": 0.3831
+      },
+      {
+       "start": 2002,
+       "end": 2007,
+       "mean": 19.5696,
+       "slope": 0.5377
+      },
+      {
+       "start": 2008,
+       "end": 2016,
+       "mean": 28.0298,
+       "slope": 0.2335
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 38.4004,
+       "slope": 0.0999
+      }
+     ],
+     "penalty": 216.621902,
+     "sigma": 4.395316,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 2.197658,
+     "h": 17.581264,
+     "sigma": 4.395316,
+     "target": 0.5607
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1994,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 29.520406
+   },
+   {
+    "year": 2002,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 29.520406
+   },
+   {
+    "year": 2002,
+    "method": "pelt",
+    "series": "rf",
+    "score": 216.621902
+   },
+   {
+    "year": 2008,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 29.520406
+   },
+   {
+    "year": 2008,
+    "method": "pelt",
+    "series": "rf",
+    "score": 216.621902
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 216.621902
+   },
+   {
+    "year": 2018,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 29.520406
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "carajas",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -78.3,
+   78.3
+  ],
+  "geoid_offset_m": -3.17,
+  "stable_bias_m": -2.005,
+  "noise_floor_m": 3.396,
+  "tau_m": 6.791,
+  "stable_ground_px": 254862,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 782667328,
+  "fill_volume_m3": 328853152,
+  "envelope": {
+   "cut_m3": 782667328,
+   "fill_m3": 328853152,
+   "cut_km2": 25.1001,
+   "fill_km2": 14.4603,
+   "min_m": -202.8,
+   "max_m": 146.2
+  },
+  "window": {
+   "cut_m3": 1094280064,
+   "fill_m3": 493144320,
+   "cut_km2": 53.8119,
+   "fill_km2": 32.5665,
+   "min_m": -202.8,
+   "max_m": 146.2
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/368/528.png",
+   "terrain/10/368/529.png",
+   "terrain/10/369/528.png",
+   "terrain/10/369/529.png",
+   "terrain/11/737/1057.png",
+   "terrain/11/737/1058.png",
+   "terrain/11/737/1059.png",
+   "terrain/11/738/1057.png",
+   "terrain/11/738/1058.png",
+   "terrain/11/738/1059.png",
+   "terrain/11/739/1057.png",
+   "terrain/11/739/1058.png",
+   "terrain/11/739/1059.png",
+   "terrain/12/1475/2115.png",
+   "terrain/12/1475/2116.png",
+   "terrain/12/1475/2117.png",
+   "terrain/12/1475/2118.png",
+   "terrain/12/1476/2115.png",
+   "terrain/12/1476/2116.png",
+   "terrain/12/1476/2117.png",
+   "terrain/12/1476/2118.png",
+   "terrain/12/1477/2115.png",
+   "terrain/12/1477/2116.png",
+   "terrain/12/1477/2117.png",
+   "terrain/12/1477/2118.png",
+   "terrain/12/1478/2115.png",
+   "terrain/12/1478/2116.png",
+   "terrain/12/1478/2117.png",
+   "terrain/12/1478/2118.png",
+   "terrain/13/2951/4231.png",
+   "terrain/13/2951/4232.png",
+   "terrain/13/2951/4233.png",
+   "terrain/13/2951/4234.png",
+   "terrain/13/2951/4235.png",
+   "terrain/13/2951/4236.png",
+   "terrain/13/2952/4231.png",
+   "terrain/13/2952/4232.png",
+   "terrain/13/2952/4233.png",
+   "terrain/13/2952/4234.png",
+   "terrain/13/2952/4235.png",
+   "terrain/13/2952/4236.png",
+   "terrain/13/2953/4231.png",
+   "terrain/13/2953/4232.png",
+   "terrain/13/2953/4233.png",
+   "terrain/13/2953/4234.png",
+   "terrain/13/2953/4235.png",
+   "terrain/13/2953/4236.png",
+   "terrain/13/2954/4231.png",
+   "terrain/13/2954/4232.png",
+   "terrain/13/2954/4233.png",
+   "terrain/13/2954/4234.png",
+   "terrain/13/2954/4235.png",
+   "terrain/13/2954/4236.png",
+   "terrain/13/2955/4231.png",
+   "terrain/13/2955/4232.png",
+   "terrain/13/2955/4233.png",
+   "terrain/13/2955/4234.png",
+   "terrain/13/2955/4235.png",
+   "terrain/13/2955/4236.png",
+   "terrain/13/2956/4231.png",
+   "terrain/13/2956/4232.png",
+   "terrain/13/2956/4233.png",
+   "terrain/13/2956/4234.png",
+   "terrain/13/2956/4235.png",
+   "terrain/13/2956/4236.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 166.0,
+   "max": 813.0
+  },
+  "cop_stats": {
+   "min": 170.1,
+   "max": 837.9
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/carajas/dem/cop.png",
+   "kind": "dem",
+   "bytes": 614037,
+   "sha256": "2910aac74de14ee439b2de4a889e720bde02fbfc491970e5e09b8d18164e5073"
+  },
+  {
+   "path": "sites/carajas/dem/delta.png",
+   "kind": "dem",
+   "bytes": 1095341,
+   "sha256": "d44a0300d0f66b295b4e7a16401f5e811a43243af4edb27d53b96747c6266398"
+  },
+  {
+   "path": "sites/carajas/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 606155,
+   "sha256": "0e53e675f658096b951b6602a2edff25bf8a07c1c3e395b8d669e03a44398514"
+  },
   {
    "path": "sites/carajas/frames/1985-swir.webp",
    "kind": "frame",
@@ -2863,10 +3654,1072 @@
    "year": 2026
   },
   {
+   "path": "sites/carajas/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 276,
+   "sha256": "631a768c0a873eef9f08945153c4ec4cabd36178c2c7b1380744280e9961452e",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 2159,
+   "sha256": "695c4bf09cd77cf464a063783db21f6ea0c7d736a49632fb30982e52d617c187",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 730,
+   "sha256": "6a5833afd63bc46f70c68168ea1d19c7197ba707a1a5e880beeb4312073dda7b",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 4369,
+   "sha256": "f6baded3e77b07f90145e4c3d023601825e650fc72685e9e52c16bdcd3d482a9",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 888,
+   "sha256": "d2f7adee01b47a11e824e85fb26d03e767a2d44cce40e423d8907cbb014e75dd",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 5220,
+   "sha256": "9a7b8e3a3dd57ebaa0451d57d297136e2dffa5be8a5169590125596e02134801",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 727,
+   "sha256": "85ee4a1c3377777b1319c5a6ad9e10f2f986accfbffe148ab62e7544579fb4c2",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 3670,
+   "sha256": "be9a647faa4cc6255603cfbf5e0085bb17528234e74f6f67b9b38e1bf6d88bc4",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 668,
+   "sha256": "b68f30e3c15949b832766b2c69ffa87af200ae2871159b84b1ed5fd814f3d80b",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 4971,
+   "sha256": "6a803c3479be5decedfbb2c10254f58cb11744cb1831671034e126d0d4c12924",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 802,
+   "sha256": "fc845f2204dda5cc659a08c9fbabb797e3ab1a6f5c5a9a8664506247e3554996",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 3808,
+   "sha256": "7f4f0d72f607b5600bf9d899620a5164f2a315a088fbb94f3a465e628e265bfc",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 158,
+   "sha256": "d7759081b2ca603db32d1b118e3c6db263a40fe5db20682904745253b9fee803",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 7038,
+   "sha256": "07c8adc8d362287185861a1752e5f833c35cfe9743067908a9b4d3128e20b8a9",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 158,
+   "sha256": "d7759081b2ca603db32d1b118e3c6db263a40fe5db20682904745253b9fee803",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 4461,
+   "sha256": "f4eeac29d60f9a2cec7d65b0cf83c7e8354c3b47580116b7239776deff6aeea2",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 274,
+   "sha256": "12d4d81f85fe8ab10a6ad32346d6bcdc85acbebfd86e0406b40f5d4affaa8f52",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 3261,
+   "sha256": "ab2b8a34eebec1b2d3d014ac84ca4eb84eb74a85a52383621b8772a00b766855",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 1101,
+   "sha256": "026cd4fd664c49ad06e26cc502850f5d767d1f2c860e98e9fcedef19ccf6fb44",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 5379,
+   "sha256": "0a2d4dbbe8deccf8e4472022684851521ca53f8ee239c944438422565731ba4c",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 1202,
+   "sha256": "f54fe5a4c466fdb3c119cbb2328da1e54499b0f32d58e95674b30f2d0e2f23ef",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 4383,
+   "sha256": "b9eac35cd0b3ecbaf48d1ed731185482e3347f9e7b2934290da0af562fc0d17c",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 1131,
+   "sha256": "39bf0a3365f1f00f62ec8d44ac47fbdcf61c3ddf6f86f3b9a9c44cb781f92944",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 5355,
+   "sha256": "4d929d9c3df730068041a2d59ce98b9aa5e4f054653795b92f622d24c041a223",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 1305,
+   "sha256": "97a9e8e7e81cd95760c00b9cc2f1d7d910e5c83c4212f49862bee7f0c5f70d2d",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 6346,
+   "sha256": "726b96feb42d4cb8d6deddc8ec6136035d8e3206621a7c10bc8221e2d22495ff",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 1284,
+   "sha256": "ec6334356be2bfae80a172eeff26dc28db4695d236d7bb37824408f2724f9a06",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 5113,
+   "sha256": "42fac16cafd60c1e9d7720d50903e9af3b2792cfa6c4ba491a28baff2fa8c96c",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 1379,
+   "sha256": "0cef647a52fc1f2776bc688c158164bd5aa815e02280a62ebe42f430af834cba",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 4495,
+   "sha256": "7a056c9a7a8f5de9e090e54d4260c362d39d7ee436445d189de984fa6e14235c",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 1480,
+   "sha256": "49f0de40069dfb8119ffb1459fbac006dd8c8df711acf6981a9c0c796fb589b0",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 5101,
+   "sha256": "f33157fa78dd5a06f20282519b8f1250e35423b7e549269d4b14f820bca77f50",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 1374,
+   "sha256": "a6f216127140c034a7b2e9a9e49bb405f15ef20a6af6a52f5de6a6860999ce4b",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 4972,
+   "sha256": "2c68538db5afcc84bf7fd5794b1313e32dc7b29aa922af5b603f07e1fa54a3ef",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 1945,
+   "sha256": "da25250a3c95e62b312d4c76d0102ad802d84a5da03dbc198dc2addeefbfa78e",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 7254,
+   "sha256": "dab96c181d1abafe35963e0253d0c6e688046d6821cc8d4df0284ed51d3f33c8",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 1726,
+   "sha256": "07792f62c793649c6cdd7d6b1084b9f6b446947803a5cbc80e660a4bd7ff36ba",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 5432,
+   "sha256": "0a5650a9b5af32f846df39fe3bcc2877768c1588d80dc777941d5369f14505f4",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 1886,
+   "sha256": "60303aa755aa5fec00aa8aece08423545c033186f41727a2577d4eedf81a4a7a",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 5796,
+   "sha256": "8afe3a27d0e6ad0f46e0ead80f2508bb30d97f9756233cc773e4e13cc619d3bb",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 2018,
+   "sha256": "a3ed1074f07d9fa73ed7cd8b52b0f7543252411664f5e783d8daffa3bf43a03a",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 7455,
+   "sha256": "50de0ba537aeaf69d371e05632d5e39698c837ebff5d734dd0c45a4f038f7056",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 2008,
+   "sha256": "bbe0e9e74e92eaabb68b1abe3aa365d42c60298e6ef465212f6331930249e400",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 6344,
+   "sha256": "3d1f6af95a6e641efc09c9a929b7d582eec4678b3c567a5618d9b8d4e7030c15",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 1888,
+   "sha256": "25cc0ea698a7f7fa14dadd2ca02869bb434e812173e7cbafe76d7190821f2560",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 6358,
+   "sha256": "e39904e9b119b308d98a0cefd51312cb40d7c50ce1e9c7bfe8ef732b6e53653f",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 2109,
+   "sha256": "ff145cfbcd120146c4b24fab7854725b96d989752ee19ab7e554d2fa5397a93f",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 8913,
+   "sha256": "c5f60d19bbe0109e14c6acd4c7c876681163f0f7d3c2eedf9fcfb3db24071302",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 2191,
+   "sha256": "20131255aea8d7d975e2a9cc55bd62c55156085196fe6df5f0deb40f79255f40",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 6858,
+   "sha256": "44a96a5f1e499fa13ad6a19bd1b0a218de50a8e5e38e45c25213a98d4651fe30",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 2412,
+   "sha256": "99635676d415df5868bc73a2f6c99f43c156076fb0072901d6436bfb8758f5ce",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 9737,
+   "sha256": "0dd267b80e51ea161d18c2ff7647b1aef534b2e2784081ca53b8f7a0b113b18b",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 2448,
+   "sha256": "bec0b32e7406222b732182226343bce9649f187bf241f9c86396f035f752d8e6",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 9074,
+   "sha256": "a6785ee966722452ffad546bd3234511d02a8f07fb9637031e482bd51cd8255c",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 2630,
+   "sha256": "3b00fa32b6b1bc5ff942413d4960977eed50241b1f576032f04248d8ad6f9710",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 7119,
+   "sha256": "4cd7264a3acd0d814822d743ea569adb7e48162b4e8674280047f56e78cbe0a8",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 2768,
+   "sha256": "18bafc2a067f66e7e633e85bc1e1cd94456210409fe1c6b9e8d098b2b8514da5",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 7458,
+   "sha256": "be8eb8a4ee97bdb4d2fa6257acebf1eefeb42492ad8b607a8f0639b7afedfcea",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 2802,
+   "sha256": "b63f0c4d13a95a407cf2cc5d342e2dbf1f2c5e86f124388aee08507853055fb6",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 9473,
+   "sha256": "accadb3410f1350275847d42c29870cfeb9437a3c4cf1a99d884f47aaca21a8e",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 2861,
+   "sha256": "11b01839bef9cae91df2368f8dbdff264db53f688bee28450cb996fccda49b56",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 7492,
+   "sha256": "14f53b5b2ee3f647660a11e75caca0778fe8a5fda00b4ccd1d963459b78e963f",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 2834,
+   "sha256": "132b7ed6e36b61ba0c9ec7c01a668aade60b87cba17131a56fd1ea45a3300d1c",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 7143,
+   "sha256": "662f5c6f7720ced8ff83143f078f89948430cd515379f347395640aa892d1a92",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 3383,
+   "sha256": "e3170bc284d691b8f3906d7a734c80872025e8b03ccc71e8ffffc61f5bc94a38",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 11206,
+   "sha256": "4193e96368a88236e7e1cd6ba3598cd23cbfd34fa5187f206652ca701012eac0",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 945,
+   "sha256": "0f1aa6ce2be625ca694186a0860d58f74d1e5a92a3c2530362c7aaceeb29462c",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 7189,
+   "sha256": "a08d7dc7e214a954eaeb66890be5e9ce15c6d9328d6e3a6fdb2be74d392dd943",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 1686,
+   "sha256": "aa06f528f3bc0452f1a3811a60b53c2f4ec96e0b6d9b7c92a196edd1b4cd5e6f",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 8186,
+   "sha256": "1d527a80999fb60f58c59e8635a2c7b44f3a99a11d19f5c61e45a6aa4885db2a",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 893,
+   "sha256": "d0ae8265dcc967bf9310298b70f81eaa4a9276c1851cc01027354e2957ab9703",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 7327,
+   "sha256": "a4fc9ae9e81a8ee212a2444913edfbf684c3518d58918c148e6835c41a2d32c0",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 1833,
+   "sha256": "1f867090e1b2787568f806da1d9144a38c79b3183a7988efd33294efe434e9d4",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 8150,
+   "sha256": "c68a4eeaa87f80f1f3908c0b5d94b4979b6705c91e053e2fc428e2dfad2f316f",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 1744,
+   "sha256": "60133948cef5d7335d9456fe5de334f353753fb86cf0ba4aecf2ad7d9cb12d1e",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 8554,
+   "sha256": "779bbc1d77de78121d243f169f5151d368601973418519f2fda736cbebd76ffd",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 2000,
+   "sha256": "5c2880214abe4e810e4af638250b76e332e1a07b5dc3d7192febb45fb7cdea70",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 8163,
+   "sha256": "551cfd658daeb0a7d6b2433548e307377d80607a20cfaf6413e84cc70c223e92",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 1791,
+   "sha256": "82c188890c53af22a90f4de43f29eea240d51932e9bc80c0c5086377e9c409de",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 7865,
+   "sha256": "99c21ee72e8692efbf35eaf93b79746a7c9088150b34cb29bdfd7981daad9dca",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 1978,
+   "sha256": "e3e0267a9d9cba50ecbca83b67e271ed89aa7aae5d2956dd77edfb6950436b93",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 9001,
+   "sha256": "d484fca763209a1ff002cdce45dd67073a96c5c6d89054ab75b6f627ce7bee09",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 2376,
+   "sha256": "c9f804919f6afc1b96700c2de0c7d54917e5d89f4b54113f76212b43a6381390",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/carajas/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 8135,
+   "sha256": "12d5a914f0b52b0581f5c2b6c4edcecaff4e9d12566898b65cd381ab3725c5d9",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/carajas/polygons.geojson",
    "kind": "polygons",
    "bytes": 18979,
    "sha256": "a75e2a442767d9f7c3ed8e4d58b9e9e8d52c8388d00a1e91b8e177edd8640f06"
+  },
+  {
+   "path": "sites/carajas/terrain/10/368/528.png",
+   "kind": "terrain",
+   "bytes": 143166,
+   "sha256": "19c3b78be629a9169c710152b54ada02f6aba81cb60439df885e95baa3dbc3f1"
+  },
+  {
+   "path": "sites/carajas/terrain/10/368/529.png",
+   "kind": "terrain",
+   "bytes": 147411,
+   "sha256": "7009b7c8f226c0ebac01053156d47efca2fa1644779c4d2d0a0a0d6680587d72"
+  },
+  {
+   "path": "sites/carajas/terrain/10/369/528.png",
+   "kind": "terrain",
+   "bytes": 110228,
+   "sha256": "c5fde7f66a681f3355610ffbaa96c6c6b343976d126236227ea520cf6f7889e4"
+  },
+  {
+   "path": "sites/carajas/terrain/10/369/529.png",
+   "kind": "terrain",
+   "bytes": 114281,
+   "sha256": "7558060be16d7d0a7f9baf1d846c167503f719d61871d4ccd63d58158053b454"
+  },
+  {
+   "path": "sites/carajas/terrain/11/737/1057.png",
+   "kind": "terrain",
+   "bytes": 139390,
+   "sha256": "28106bab46052a96aa39146f5e41bf0169dc19ede0d57e2842ac187829d7d1d2"
+  },
+  {
+   "path": "sites/carajas/terrain/11/737/1058.png",
+   "kind": "terrain",
+   "bytes": 141098,
+   "sha256": "296669feb44b051d1fb6464282476b8b39360ddcf1ef2075a4dd6f333c790a43"
+  },
+  {
+   "path": "sites/carajas/terrain/11/737/1059.png",
+   "kind": "terrain",
+   "bytes": 139027,
+   "sha256": "d73eba6661326c89ad74b0fdb56473859ef3b6ce4e011344264f7ce82d04d5f0"
+  },
+  {
+   "path": "sites/carajas/terrain/11/738/1057.png",
+   "kind": "terrain",
+   "bytes": 136600,
+   "sha256": "7b3ca9fe70ddccaabd088166634c7f4cef8e997ee10c46c8030e10691dfac5aa"
+  },
+  {
+   "path": "sites/carajas/terrain/11/738/1058.png",
+   "kind": "terrain",
+   "bytes": 138708,
+   "sha256": "c17c377fd404542ca0f5e4f1e71acdfb5c910d745a125f4285cca77fab072efd"
+  },
+  {
+   "path": "sites/carajas/terrain/11/738/1059.png",
+   "kind": "terrain",
+   "bytes": 140309,
+   "sha256": "8fd31b4a7fceee5bf6b7980a3b851b4e00af90e229ce11c49ef57d073c94eac3"
+  },
+  {
+   "path": "sites/carajas/terrain/11/739/1057.png",
+   "kind": "terrain",
+   "bytes": 79727,
+   "sha256": "b4bd3d4299c8bcd00e51914bcfaaa4e0a356e0b181619d4bf51fac76260c1915"
+  },
+  {
+   "path": "sites/carajas/terrain/11/739/1058.png",
+   "kind": "terrain",
+   "bytes": 79977,
+   "sha256": "6e84bbd146d8f4d5c32f8ab22b1c25656cf3e9254343423bd1d4a83012285f8f"
+  },
+  {
+   "path": "sites/carajas/terrain/11/739/1059.png",
+   "kind": "terrain",
+   "bytes": 79037,
+   "sha256": "c7231e005d58c9100a2bf4d117410a8854f55becd047f70352fdb227445a5de1"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1475/2115.png",
+   "kind": "terrain",
+   "bytes": 128348,
+   "sha256": "46cd24bf25e2234f64f502c9411d00151737e550adf8ba2e64840370dd34da70"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1475/2116.png",
+   "kind": "terrain",
+   "bytes": 133051,
+   "sha256": "8537c64b7008e8dcefb7d84d65bbb677fd362ad3eb11d9fb458c9bd6af254d89"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1475/2117.png",
+   "kind": "terrain",
+   "bytes": 132527,
+   "sha256": "11160d5b1714d509b23298db072c4b60ee0f15e42ee7eab78c3c77c46d64d5cf"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1475/2118.png",
+   "kind": "terrain",
+   "bytes": 133355,
+   "sha256": "d4f1eaf89abccd3b2c09ee825ebfe8f780d2acd88659d809f7f8b4ac3efbc399"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1476/2115.png",
+   "kind": "terrain",
+   "bytes": 129819,
+   "sha256": "a09018821d2528825aeb7f92ff37ce8545b25fcf0c0feb23319bec4b5f67111f"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1476/2116.png",
+   "kind": "terrain",
+   "bytes": 132022,
+   "sha256": "2c7fe9f1d2036bbfa2bfbbb6673cfd01b3e21c498489cc00944077a869ee20bf"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1476/2117.png",
+   "kind": "terrain",
+   "bytes": 134464,
+   "sha256": "ce29f7fdcc64dfbc79e1731fca1cb6c2c0c194630d28d1a49f8ab0adf89352ec"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1476/2118.png",
+   "kind": "terrain",
+   "bytes": 131935,
+   "sha256": "748d65841a9581028026ba345602c5e0339d29d5c4e3eec82fe77bbf874c8421"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1477/2115.png",
+   "kind": "terrain",
+   "bytes": 128159,
+   "sha256": "69050da5cac654bfdca205125563d4d11ebc7611cd99de0867ccd5443f77614e"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1477/2116.png",
+   "kind": "terrain",
+   "bytes": 126648,
+   "sha256": "d52fd75cacea139cdc22174c12ae1af7c5377fcd80971b797514e978d4e9835a"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1477/2117.png",
+   "kind": "terrain",
+   "bytes": 133431,
+   "sha256": "add5b0d28c4160fcfe8e7686e6f567e48439a0100990a8e12355533b474a84bb"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1477/2118.png",
+   "kind": "terrain",
+   "bytes": 135036,
+   "sha256": "ac966aa3a29687affa6e180c49646921f081092e4d597bf74695a06c2ddd21ba"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1478/2115.png",
+   "kind": "terrain",
+   "bytes": 133622,
+   "sha256": "45fad8a6902f502a8a141f60b40f50f8fbf71dc003705df4ecc4c9a6a0e9ff6f"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1478/2116.png",
+   "kind": "terrain",
+   "bytes": 134166,
+   "sha256": "ea1e2c87a22022760c5281f9b3f92d668581688da349022ee993c27f7b82c681"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1478/2117.png",
+   "kind": "terrain",
+   "bytes": 134633,
+   "sha256": "2bc1320e297d557e133d49b882ac8bccdfc4547f788484a1bc7e9ad4d91225e8"
+  },
+  {
+   "path": "sites/carajas/terrain/12/1478/2118.png",
+   "kind": "terrain",
+   "bytes": 130216,
+   "sha256": "ad929ae2d38e36a62ea2b4678a0075978e01284fd639d2b0307e967bf058f5ba"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2951/4231.png",
+   "kind": "terrain",
+   "bytes": 111609,
+   "sha256": "c54d6cadbe4dccc34d371db6b77cc7b589f3bc26d865d3da9264d13299be38c5"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2951/4232.png",
+   "kind": "terrain",
+   "bytes": 123167,
+   "sha256": "7ea412a9d44b458975e9a139d784f0c49d9ab1675639a174083031bb60d960d6"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2951/4233.png",
+   "kind": "terrain",
+   "bytes": 119870,
+   "sha256": "94f759a579ee5b9e234503d820583c77399fad66c3a9c6aa0764ad5aefdfb4bc"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2951/4234.png",
+   "kind": "terrain",
+   "bytes": 120782,
+   "sha256": "d41a301f83ec0c7ef3dae17d9cb28133faba212dc514b62d4a913fad8a579b0f"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2951/4235.png",
+   "kind": "terrain",
+   "bytes": 121388,
+   "sha256": "26fad2e5d438d104f1b814cf3f0064921842cffaeb45c979ee99eecfb6be30fc"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2951/4236.png",
+   "kind": "terrain",
+   "bytes": 124297,
+   "sha256": "8573d9346e2334f526d5526066ccf0a7983e9828fa0f2b69e6b737018eb53ecf"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2952/4231.png",
+   "kind": "terrain",
+   "bytes": 112553,
+   "sha256": "9432ab51228b862360ed5957529a3f6c51dbfbf7b5d8e169adf0bfe41322c5d6"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2952/4232.png",
+   "kind": "terrain",
+   "bytes": 120948,
+   "sha256": "b9214091af4b2e1cf062c1ea740668fd88c371a5e18064560f18193fbd6906f1"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2952/4233.png",
+   "kind": "terrain",
+   "bytes": 126457,
+   "sha256": "38ef254fc774b260ddd4a4351244f9b0d19e6271f0457267b2911f4132b1253f"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2952/4234.png",
+   "kind": "terrain",
+   "bytes": 126820,
+   "sha256": "2a8588dbe3a1438368744be5af5cb823ca799f3674f51811cbcddce0d05404ea"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2952/4235.png",
+   "kind": "terrain",
+   "bytes": 126301,
+   "sha256": "f236788bc1b57e10746d09ca411ef4467094691373e5198c4951156db87ef05e"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2952/4236.png",
+   "kind": "terrain",
+   "bytes": 122088,
+   "sha256": "9a2e7e59fe0eb55a138d035980ce8eac1ce51bd4c9ee46964abd06d3242cebd2"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2953/4231.png",
+   "kind": "terrain",
+   "bytes": 113403,
+   "sha256": "d4a52ef68ec4e37f36ac391faa2e289a3698f26461f9b3db13b9b4432b406d69"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2953/4232.png",
+   "kind": "terrain",
+   "bytes": 116220,
+   "sha256": "0fa0e1acb925ecfc1b604a6bc19f561f97b0dac83d2c35bcdd6eab2967c23669"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2953/4233.png",
+   "kind": "terrain",
+   "bytes": 126671,
+   "sha256": "fa0bd77141e5f16f7cc626b9cae628aab88677e763dc3e1788359cedd727fbd9"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2953/4234.png",
+   "kind": "terrain",
+   "bytes": 126297,
+   "sha256": "340b885a834df1dd7652986bb58156a83618b998ea9429faaef5d7e4f7984f1d"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2953/4235.png",
+   "kind": "terrain",
+   "bytes": 123608,
+   "sha256": "17cf12489fb8cd9db5124320204035a3026d525905df25891675c7989ea99a1b"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2953/4236.png",
+   "kind": "terrain",
+   "bytes": 120938,
+   "sha256": "4a6a20713846f4f1471534be402fd029ed1e47bd4fe352d496aa455d1a7006c4"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2954/4231.png",
+   "kind": "terrain",
+   "bytes": 111996,
+   "sha256": "3cc3f9d2d724d23a77e04415e6144f636ce35b514b3be4c93afd29fe5eb7a413"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2954/4232.png",
+   "kind": "terrain",
+   "bytes": 95072,
+   "sha256": "f202177905e193879edd68d7d1fd9ef6b0b21b714e4a2a8c5cbd58ad403d9b23"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2954/4233.png",
+   "kind": "terrain",
+   "bytes": 127146,
+   "sha256": "7efe177b52eff42bb6514035038315e8d86d8b66fc1ceea949206a620b2f9a72"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2954/4234.png",
+   "kind": "terrain",
+   "bytes": 125857,
+   "sha256": "26640df4ce2f4d128126250e0f4ab375fa17f546fb50c2cb837499a8c7b1e9b1"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2954/4235.png",
+   "kind": "terrain",
+   "bytes": 124585,
+   "sha256": "7b0fe4efac0c3143b6937d0b8ba07bf23f821370f444db2962dc5d7fffd20487"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2954/4236.png",
+   "kind": "terrain",
+   "bytes": 126573,
+   "sha256": "3e8314473c64648b0bf6141691762b21a1764e3b33ac215b0a94e0a177372f64"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2955/4231.png",
+   "kind": "terrain",
+   "bytes": 113347,
+   "sha256": "1397daa74846bf8c0b1ecf71d1fcd773b8eeb57fc467b4c72210ccb707a22f03"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2955/4232.png",
+   "kind": "terrain",
+   "bytes": 117076,
+   "sha256": "a7bbec905e3511726066e53c656f00663d5d30e9bb58067cb43388658932290b"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2955/4233.png",
+   "kind": "terrain",
+   "bytes": 128106,
+   "sha256": "b66d1851c9e653ec7be8e0e6eddf3eec340bb2c2d026fcc4211bd8669822ecf0"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2955/4234.png",
+   "kind": "terrain",
+   "bytes": 125779,
+   "sha256": "ed49b55aeb88683383c5c2840a23a0cd0c94da2fb8cf911595b7539b5d9876f7"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2955/4235.png",
+   "kind": "terrain",
+   "bytes": 124928,
+   "sha256": "87eea745aafac730d469c7a55f2be322e56648486173849e8393c20cb5d825e9"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2955/4236.png",
+   "kind": "terrain",
+   "bytes": 124619,
+   "sha256": "84547ef3e7b5afeb2f77f73ddff99e7449c890660f37f4ca5642b1fc7ebd834d"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2956/4231.png",
+   "kind": "terrain",
+   "bytes": 121295,
+   "sha256": "bf840b611f43f8f4ff70a716431ca216a6679f55c4bbbaa03c9607e7f0945d76"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2956/4232.png",
+   "kind": "terrain",
+   "bytes": 123576,
+   "sha256": "1552a113199fa1ec9dfed9c654ded053ff348bd079b9692cd8e07909caf80429"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2956/4233.png",
+   "kind": "terrain",
+   "bytes": 128854,
+   "sha256": "bb29d97023b65e2dda0fd71ddd256e3549581ea8de3338bf6ddaa7788ab97416"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2956/4234.png",
+   "kind": "terrain",
+   "bytes": 127460,
+   "sha256": "8c7dbb652ff7bed6247956ae0babfdf5020648b9d3246a6534d0d3da7d85c1f2"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2956/4235.png",
+   "kind": "terrain",
+   "bytes": 124847,
+   "sha256": "da0f974cc95685a3dd4093c6e3bddb87568250fffc6cec2dd0cc678af4fe6a14"
+  },
+  {
+   "path": "sites/carajas/terrain/13/2956/4236.png",
+   "kind": "terrain",
+   "bytes": 123329,
+   "sha256": "55ded3ccf7548f208e8d4dbbb5fc07b49e59ed46149d3d111e3d7c5a5b65325d"
   }
  ]
 }

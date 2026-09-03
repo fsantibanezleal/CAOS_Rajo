@@ -1,0 +1,104 @@
+{
+ "site_id": "collahuasi",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -134.5,
+  134.5
+ ],
+ "geoid_offset_m": -0.685,
+ "stable_bias_m": -4.643,
+ "noise_floor_m": 1.536,
+ "tau_m": 3.072,
+ "stable_ground_px": 162044,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 849388032,
+ "fill_volume_m3": 1143669632,
+ "envelope": {
+  "cut_m3": 849388032,
+  "fill_m3": 1143669632,
+  "cut_km2": 12.2706,
+  "fill_km2": 35.7678,
+  "min_m": -459.7,
+  "max_m": 166.5
+ },
+ "window": {
+  "cut_m3": 903460032,
+  "fill_m3": 1194161920,
+  "cut_km2": 25.0254,
+  "fill_km2": 47.7639,
+  "min_m": -459.7,
+  "max_m": 166.5
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/316/572.png",
+  "terrain/10/316/573.png",
+  "terrain/11/632/1145.png",
+  "terrain/11/632/1146.png",
+  "terrain/11/633/1145.png",
+  "terrain/11/633/1146.png",
+  "terrain/12/1265/2291.png",
+  "terrain/12/1265/2292.png",
+  "terrain/12/1265/2293.png",
+  "terrain/12/1266/2291.png",
+  "terrain/12/1266/2292.png",
+  "terrain/12/1266/2293.png",
+  "terrain/12/1267/2291.png",
+  "terrain/12/1267/2292.png",
+  "terrain/12/1267/2293.png",
+  "terrain/13/2531/4582.png",
+  "terrain/13/2531/4583.png",
+  "terrain/13/2531/4584.png",
+  "terrain/13/2531/4585.png",
+  "terrain/13/2531/4586.png",
+  "terrain/13/2532/4582.png",
+  "terrain/13/2532/4583.png",
+  "terrain/13/2532/4584.png",
+  "terrain/13/2532/4585.png",
+  "terrain/13/2532/4586.png",
+  "terrain/13/2533/4582.png",
+  "terrain/13/2533/4583.png",
+  "terrain/13/2533/4584.png",
+  "terrain/13/2533/4585.png",
+  "terrain/13/2533/4586.png",
+  "terrain/13/2534/4582.png",
+  "terrain/13/2534/4583.png",
+  "terrain/13/2534/4584.png",
+  "terrain/13/2534/4585.png",
+  "terrain/13/2534/4586.png",
+  "terrain/13/2535/4582.png",
+  "terrain/13/2535/4583.png",
+  "terrain/13/2535/4584.png",
+  "terrain/13/2535/4585.png",
+  "terrain/13/2535/4586.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 4009.0,
+  "max": 5112.0
+ },
+ "cop_stats": {
+  "min": 4002.9,
+  "max": 5111.3
+ }
+}

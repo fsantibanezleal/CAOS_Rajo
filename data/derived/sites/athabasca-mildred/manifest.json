@@ -117,7 +117,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -168,7 +171,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -221,7 +227,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -272,7 +281,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -323,7 +335,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -374,7 +389,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -425,7 +443,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -476,7 +497,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -529,7 +553,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -580,7 +607,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -634,7 +664,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -685,7 +718,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -736,7 +772,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -787,7 +826,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -838,7 +880,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -891,7 +936,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -942,7 +990,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -993,7 +1044,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1044,7 +1098,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1100,7 +1157,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1151,7 +1211,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1207,7 +1270,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1260,7 +1326,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1311,7 +1380,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1362,7 +1434,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1417,7 +1492,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1468,7 +1546,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1523,7 +1604,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1576,7 +1660,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1632,7 +1719,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1683,7 +1773,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1736,7 +1829,10 @@
     "qa_flagged"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1787,7 +1883,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1838,7 +1937,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1889,7 +1991,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1940,7 +2045,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -1991,7 +2099,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2042,7 +2153,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2093,7 +2207,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2144,7 +2261,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2195,7 +2315,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2246,14 +2369,978 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {},
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-8",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b"
+  ],
+  "valid_frac": [
+   0.9959,
+   0.9991,
+   0.6766,
+   0.9957,
+   1.0,
+   0.9545,
+   0.9998,
+   1.0,
+   0.8884,
+   0.9909,
+   0.9133,
+   0.9748,
+   0.9845,
+   0.9967,
+   0.9944,
+   0.9496,
+   1.0,
+   0.9996,
+   0.9758,
+   0.9914,
+   0.9988,
+   0.9865,
+   0.797,
+   0.9922,
+   0.9996,
+   0.9968,
+   0.9822,
+   0.9609,
+   0.9541,
+   0.9853,
+   1.0,
+   0.9434,
+   0.9886,
+   0.9927,
+   1.0,
+   1.0,
+   0.999,
+   0.9915,
+   1.0,
+   0.9702,
+   0.9826,
+   0.9961
+  ],
+  "envelope_km2": 754.5726,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    44.5275,
+    42.5169,
+    null,
+    48.1491,
+    46.8441,
+    50.5224,
+    51.7833,
+    54.765,
+    52.3089,
+    58.3749,
+    81.5679,
+    62.1045,
+    58.0833,
+    69.165,
+    73.9665,
+    69.1992,
+    84.6765,
+    98.0469,
+    94.8006,
+    92.034,
+    94.7196,
+    101.1303,
+    84.2733,
+    126.891,
+    153.0756,
+    152.5986,
+    162.5337,
+    175.7727,
+    187.3431,
+    193.6485,
+    204.4125,
+    167.2893,
+    193.5675,
+    184.5333,
+    35.3241,
+    77.0364,
+    63.7848,
+    67.2633,
+    64.5327,
+    64.431,
+    43.1847,
+    55.7514
+   ],
+   "rf": [
+    104.0886,
+    99.2493,
+    null,
+    108.3843,
+    111.5046,
+    130.3578,
+    122.4783,
+    154.5363,
+    132.8823,
+    132.039,
+    313.1487,
+    147.9546,
+    149.6385,
+    156.5631,
+    182.3049,
+    153.8262,
+    173.6082,
+    202.0473,
+    210.5865,
+    207.5589,
+    235.2096,
+    209.1051,
+    203.7861,
+    265.5774,
+    284.0409,
+    252.7812,
+    298.3536,
+    308.088,
+    310.0842,
+    325.0827,
+    304.5771,
+    291.5748,
+    352.4481,
+    414.1197,
+    372.0177,
+    389.2869,
+    376.7841,
+    369.0909,
+    342.0099,
+    361.782,
+    339.2946,
+    356.5314
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.62494,
+    0.66226,
+    null,
+    0.68187,
+    0.68824,
+    0.62822,
+    0.65423,
+    0.56888,
+    0.59938,
+    0.59943,
+    0.26127,
+    0.6092,
+    0.58331,
+    0.59525,
+    0.54136,
+    0.61601,
+    0.59749,
+    0.50345,
+    0.5506,
+    0.54227,
+    0.48444,
+    0.53975,
+    0.48738,
+    0.45823,
+    0.31179,
+    0.46474,
+    0.43536,
+    0.42812,
+    0.42241,
+    0.44067,
+    0.35903,
+    0.42427,
+    0.42172,
+    0.36367,
+    0.79811,
+    0.71906,
+    0.7043,
+    0.74608,
+    0.6668,
+    0.75292,
+    0.77964,
+    0.77009
+   ],
+   "mndwi": [
+    -0.34895,
+    -0.41686,
+    null,
+    -0.40348,
+    -0.41562,
+    -0.35621,
+    -0.38671,
+    -0.32178,
+    -0.31503,
+    -0.28877,
+    0.05424,
+    -0.35293,
+    -0.35675,
+    -0.37673,
+    -0.37003,
+    -0.41719,
+    -0.39742,
+    -0.37615,
+    -0.35516,
+    -0.34082,
+    -0.26184,
+    -0.37219,
+    -0.2933,
+    -0.32654,
+    -0.31628,
+    -0.35936,
+    -0.31782,
+    -0.32198,
+    -0.30043,
+    -0.31921,
+    -0.30254,
+    -0.29792,
+    -0.34795,
+    -0.21454,
+    -0.91611,
+    -0.84646,
+    -0.81604,
+    -0.83909,
+    -0.73099,
+    -0.84074,
+    -0.8663,
+    -0.87444
+   ],
+   "bsi": [
+    -0.20703,
+    -0.20006,
+    null,
+    -0.23793,
+    -0.24003,
+    -0.20937,
+    -0.21514,
+    -0.15855,
+    -0.19586,
+    -0.20908,
+    -0.13902,
+    -0.18789,
+    -0.14078,
+    -0.15854,
+    -0.10075,
+    -0.15822,
+    -0.15005,
+    -0.07631,
+    -0.12598,
+    -0.12858,
+    -0.12157,
+    -0.11067,
+    -0.10111,
+    -0.04541,
+    0.0735,
+    -0.04696,
+    -0.04191,
+    -0.05386,
+    -0.05184,
+    -0.06937,
+    0.00532,
+    -0.05853,
+    -0.02886,
+    -0.07458,
+    -0.21053,
+    -0.16732,
+    -0.15427,
+    -0.18167,
+    -0.169,
+    -0.20809,
+    -0.27772,
+    -0.25736
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 41,
+    "pelt": {
+     "breaks": [
+      2001,
+      2008,
+      2012,
+      2019
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2000,
+       "mean": 57.5919,
+       "slope": 2.1763
+      },
+      {
+       "start": 2001,
+       "end": 2007,
+       "mean": 92.8116,
+       "slope": 0.1742
+      },
+      {
+       "start": 2008,
+       "end": 2011,
+       "mean": 148.7747,
+       "slope": 10.6451
+      },
+      {
+       "start": 2012,
+       "end": 2018,
+       "mean": 186.6524,
+       "slope": 0.4418
+      },
+      {
+       "start": 2019,
+       "end": 2026,
+       "mean": 58.9136,
+       "slope": -0.3221
+      }
+     ],
+     "penalty": 1338.306288,
+     "sigma": 10.960269,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2009
+     ],
+     "k": 5.480134,
+     "h": 43.841075,
+     "sigma": 10.960269,
+     "target": 3.2301
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 41,
+    "pelt": {
+     "breaks": [
+      1995,
+      2008,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1994,
+       "mean": 121.7245,
+       "slope": 5.2663
+      },
+      {
+       "start": 1995,
+       "end": 2007,
+       "mean": 195.7952,
+       "slope": 1.3716
+      },
+      {
+       "start": 2008,
+       "end": 2016,
+       "mean": 293.3511,
+       "slope": 5.3655
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 367.3365,
+       "slope": -4.1681
+      }
+     ],
+     "penalty": 6381.125881,
+     "sigma": 23.932722,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1995
+     ],
+     "k": 11.966361,
+     "h": 95.730889,
+     "sigma": 23.932722,
+     "target": 5.02245
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1995,
+    "method": "cusum",
+    "series": "rf",
+    "score": 95.730889
+   },
+   {
+    "year": 1995,
+    "method": "pelt",
+    "series": "rf",
+    "score": 6381.125881
+   },
+   {
+    "year": 2001,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1338.306288
+   },
+   {
+    "year": 2008,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1338.306288
+   },
+   {
+    "year": 2008,
+    "method": "pelt",
+    "series": "rf",
+    "score": 6381.125881
+   },
+   {
+    "year": 2009,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 43.841075
+   },
+   {
+    "year": 2012,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1338.306288
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 6381.125881
+   },
+   {
+    "year": 2019,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1338.306288
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "athabasca-mildred",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -59.4,
+   59.4
+  ],
+  "geoid_offset_m": -0.208,
+  "stable_bias_m": 3.162,
+  "noise_floor_m": 1.706,
+  "tau_m": 3.411,
+  "stable_ground_px": 908185,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 2418209792,
+  "fill_volume_m3": 2392315392,
+  "envelope": {
+   "cut_m3": 2418209792,
+   "fill_m3": 2392315392,
+   "cut_km2": 127.5597,
+   "fill_km2": 147.5838,
+   "min_m": -108.2,
+   "max_m": 99.5
+  },
+  "window": {
+   "cut_m3": 2740669184,
+   "fill_m3": 2787191552,
+   "cut_km2": 185.6052,
+   "fill_km2": 217.341,
+   "min_m": -108.2,
+   "max_m": 99.5
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/193/312.png",
+   "terrain/10/193/313.png",
+   "terrain/10/193/314.png",
+   "terrain/10/194/312.png",
+   "terrain/10/194/313.png",
+   "terrain/10/194/314.png",
+   "terrain/10/195/312.png",
+   "terrain/10/195/313.png",
+   "terrain/10/195/314.png",
+   "terrain/11/387/625.png",
+   "terrain/11/387/626.png",
+   "terrain/11/387/627.png",
+   "terrain/11/387/628.png",
+   "terrain/11/388/625.png",
+   "terrain/11/388/626.png",
+   "terrain/11/388/627.png",
+   "terrain/11/388/628.png",
+   "terrain/11/389/625.png",
+   "terrain/11/389/626.png",
+   "terrain/11/389/627.png",
+   "terrain/11/389/628.png",
+   "terrain/11/390/625.png",
+   "terrain/11/390/626.png",
+   "terrain/11/390/627.png",
+   "terrain/11/390/628.png",
+   "terrain/12/774/1250.png",
+   "terrain/12/774/1251.png",
+   "terrain/12/774/1252.png",
+   "terrain/12/774/1253.png",
+   "terrain/12/774/1254.png",
+   "terrain/12/774/1255.png",
+   "terrain/12/774/1256.png",
+   "terrain/12/774/1257.png",
+   "terrain/12/775/1250.png",
+   "terrain/12/775/1251.png",
+   "terrain/12/775/1252.png",
+   "terrain/12/775/1253.png",
+   "terrain/12/775/1254.png",
+   "terrain/12/775/1255.png",
+   "terrain/12/775/1256.png",
+   "terrain/12/775/1257.png",
+   "terrain/12/776/1250.png",
+   "terrain/12/776/1251.png",
+   "terrain/12/776/1252.png",
+   "terrain/12/776/1253.png",
+   "terrain/12/776/1254.png",
+   "terrain/12/776/1255.png",
+   "terrain/12/776/1256.png",
+   "terrain/12/776/1257.png",
+   "terrain/12/777/1250.png",
+   "terrain/12/777/1251.png",
+   "terrain/12/777/1252.png",
+   "terrain/12/777/1253.png",
+   "terrain/12/777/1254.png",
+   "terrain/12/777/1255.png",
+   "terrain/12/777/1256.png",
+   "terrain/12/777/1257.png",
+   "terrain/12/778/1250.png",
+   "terrain/12/778/1251.png",
+   "terrain/12/778/1252.png",
+   "terrain/12/778/1253.png",
+   "terrain/12/778/1254.png",
+   "terrain/12/778/1255.png",
+   "terrain/12/778/1256.png",
+   "terrain/12/778/1257.png",
+   "terrain/12/779/1250.png",
+   "terrain/12/779/1251.png",
+   "terrain/12/779/1252.png",
+   "terrain/12/779/1253.png",
+   "terrain/12/779/1254.png",
+   "terrain/12/779/1255.png",
+   "terrain/12/779/1256.png",
+   "terrain/12/779/1257.png",
+   "terrain/12/780/1250.png",
+   "terrain/12/780/1251.png",
+   "terrain/12/780/1252.png",
+   "terrain/12/780/1253.png",
+   "terrain/12/780/1254.png",
+   "terrain/12/780/1255.png",
+   "terrain/12/780/1256.png",
+   "terrain/12/780/1257.png",
+   "terrain/12/781/1250.png",
+   "terrain/12/781/1251.png",
+   "terrain/12/781/1252.png",
+   "terrain/12/781/1253.png",
+   "terrain/12/781/1254.png",
+   "terrain/12/781/1255.png",
+   "terrain/12/781/1256.png",
+   "terrain/12/781/1257.png",
+   "terrain/13/1548/2500.png",
+   "terrain/13/1548/2501.png",
+   "terrain/13/1548/2502.png",
+   "terrain/13/1548/2503.png",
+   "terrain/13/1548/2504.png",
+   "terrain/13/1548/2505.png",
+   "terrain/13/1548/2506.png",
+   "terrain/13/1548/2507.png",
+   "terrain/13/1548/2508.png",
+   "terrain/13/1548/2509.png",
+   "terrain/13/1548/2510.png",
+   "terrain/13/1548/2511.png",
+   "terrain/13/1548/2512.png",
+   "terrain/13/1548/2513.png",
+   "terrain/13/1548/2514.png",
+   "terrain/13/1548/2515.png",
+   "terrain/13/1549/2500.png",
+   "terrain/13/1549/2501.png",
+   "terrain/13/1549/2502.png",
+   "terrain/13/1549/2503.png",
+   "terrain/13/1549/2504.png",
+   "terrain/13/1549/2505.png",
+   "terrain/13/1549/2506.png",
+   "terrain/13/1549/2507.png",
+   "terrain/13/1549/2508.png",
+   "terrain/13/1549/2509.png",
+   "terrain/13/1549/2510.png",
+   "terrain/13/1549/2511.png",
+   "terrain/13/1549/2512.png",
+   "terrain/13/1549/2513.png",
+   "terrain/13/1549/2514.png",
+   "terrain/13/1549/2515.png",
+   "terrain/13/1550/2500.png",
+   "terrain/13/1550/2501.png",
+   "terrain/13/1550/2502.png",
+   "terrain/13/1550/2503.png",
+   "terrain/13/1550/2504.png",
+   "terrain/13/1550/2505.png",
+   "terrain/13/1550/2506.png",
+   "terrain/13/1550/2507.png",
+   "terrain/13/1550/2508.png",
+   "terrain/13/1550/2509.png",
+   "terrain/13/1550/2510.png",
+   "terrain/13/1550/2511.png",
+   "terrain/13/1550/2512.png",
+   "terrain/13/1550/2513.png",
+   "terrain/13/1550/2514.png",
+   "terrain/13/1550/2515.png",
+   "terrain/13/1551/2500.png",
+   "terrain/13/1551/2501.png",
+   "terrain/13/1551/2502.png",
+   "terrain/13/1551/2503.png",
+   "terrain/13/1551/2504.png",
+   "terrain/13/1551/2505.png",
+   "terrain/13/1551/2506.png",
+   "terrain/13/1551/2507.png",
+   "terrain/13/1551/2508.png",
+   "terrain/13/1551/2509.png",
+   "terrain/13/1551/2510.png",
+   "terrain/13/1551/2511.png",
+   "terrain/13/1551/2512.png",
+   "terrain/13/1551/2513.png",
+   "terrain/13/1551/2514.png",
+   "terrain/13/1551/2515.png",
+   "terrain/13/1552/2500.png",
+   "terrain/13/1552/2501.png",
+   "terrain/13/1552/2502.png",
+   "terrain/13/1552/2503.png",
+   "terrain/13/1552/2504.png",
+   "terrain/13/1552/2505.png",
+   "terrain/13/1552/2506.png",
+   "terrain/13/1552/2507.png",
+   "terrain/13/1552/2508.png",
+   "terrain/13/1552/2509.png",
+   "terrain/13/1552/2510.png",
+   "terrain/13/1552/2511.png",
+   "terrain/13/1552/2512.png",
+   "terrain/13/1552/2513.png",
+   "terrain/13/1552/2514.png",
+   "terrain/13/1552/2515.png",
+   "terrain/13/1553/2500.png",
+   "terrain/13/1553/2501.png",
+   "terrain/13/1553/2502.png",
+   "terrain/13/1553/2503.png",
+   "terrain/13/1553/2504.png",
+   "terrain/13/1553/2505.png",
+   "terrain/13/1553/2506.png",
+   "terrain/13/1553/2507.png",
+   "terrain/13/1553/2508.png",
+   "terrain/13/1553/2509.png",
+   "terrain/13/1553/2510.png",
+   "terrain/13/1553/2511.png",
+   "terrain/13/1553/2512.png",
+   "terrain/13/1553/2513.png",
+   "terrain/13/1553/2514.png",
+   "terrain/13/1553/2515.png",
+   "terrain/13/1554/2500.png",
+   "terrain/13/1554/2501.png",
+   "terrain/13/1554/2502.png",
+   "terrain/13/1554/2503.png",
+   "terrain/13/1554/2504.png",
+   "terrain/13/1554/2505.png",
+   "terrain/13/1554/2506.png",
+   "terrain/13/1554/2507.png",
+   "terrain/13/1554/2508.png",
+   "terrain/13/1554/2509.png",
+   "terrain/13/1554/2510.png",
+   "terrain/13/1554/2511.png",
+   "terrain/13/1554/2512.png",
+   "terrain/13/1554/2513.png",
+   "terrain/13/1554/2514.png",
+   "terrain/13/1554/2515.png",
+   "terrain/13/1555/2500.png",
+   "terrain/13/1555/2501.png",
+   "terrain/13/1555/2502.png",
+   "terrain/13/1555/2503.png",
+   "terrain/13/1555/2504.png",
+   "terrain/13/1555/2505.png",
+   "terrain/13/1555/2506.png",
+   "terrain/13/1555/2507.png",
+   "terrain/13/1555/2508.png",
+   "terrain/13/1555/2509.png",
+   "terrain/13/1555/2510.png",
+   "terrain/13/1555/2511.png",
+   "terrain/13/1555/2512.png",
+   "terrain/13/1555/2513.png",
+   "terrain/13/1555/2514.png",
+   "terrain/13/1555/2515.png",
+   "terrain/13/1556/2500.png",
+   "terrain/13/1556/2501.png",
+   "terrain/13/1556/2502.png",
+   "terrain/13/1556/2503.png",
+   "terrain/13/1556/2504.png",
+   "terrain/13/1556/2505.png",
+   "terrain/13/1556/2506.png",
+   "terrain/13/1556/2507.png",
+   "terrain/13/1556/2508.png",
+   "terrain/13/1556/2509.png",
+   "terrain/13/1556/2510.png",
+   "terrain/13/1556/2511.png",
+   "terrain/13/1556/2512.png",
+   "terrain/13/1556/2513.png",
+   "terrain/13/1556/2514.png",
+   "terrain/13/1556/2515.png",
+   "terrain/13/1557/2500.png",
+   "terrain/13/1557/2501.png",
+   "terrain/13/1557/2502.png",
+   "terrain/13/1557/2503.png",
+   "terrain/13/1557/2504.png",
+   "terrain/13/1557/2505.png",
+   "terrain/13/1557/2506.png",
+   "terrain/13/1557/2507.png",
+   "terrain/13/1557/2508.png",
+   "terrain/13/1557/2509.png",
+   "terrain/13/1557/2510.png",
+   "terrain/13/1557/2511.png",
+   "terrain/13/1557/2512.png",
+   "terrain/13/1557/2513.png",
+   "terrain/13/1557/2514.png",
+   "terrain/13/1557/2515.png",
+   "terrain/13/1558/2500.png",
+   "terrain/13/1558/2501.png",
+   "terrain/13/1558/2502.png",
+   "terrain/13/1558/2503.png",
+   "terrain/13/1558/2504.png",
+   "terrain/13/1558/2505.png",
+   "terrain/13/1558/2506.png",
+   "terrain/13/1558/2507.png",
+   "terrain/13/1558/2508.png",
+   "terrain/13/1558/2509.png",
+   "terrain/13/1558/2510.png",
+   "terrain/13/1558/2511.png",
+   "terrain/13/1558/2512.png",
+   "terrain/13/1558/2513.png",
+   "terrain/13/1558/2514.png",
+   "terrain/13/1558/2515.png",
+   "terrain/13/1559/2500.png",
+   "terrain/13/1559/2501.png",
+   "terrain/13/1559/2502.png",
+   "terrain/13/1559/2503.png",
+   "terrain/13/1559/2504.png",
+   "terrain/13/1559/2505.png",
+   "terrain/13/1559/2506.png",
+   "terrain/13/1559/2507.png",
+   "terrain/13/1559/2508.png",
+   "terrain/13/1559/2509.png",
+   "terrain/13/1559/2510.png",
+   "terrain/13/1559/2511.png",
+   "terrain/13/1559/2512.png",
+   "terrain/13/1559/2513.png",
+   "terrain/13/1559/2514.png",
+   "terrain/13/1559/2515.png",
+   "terrain/13/1560/2500.png",
+   "terrain/13/1560/2501.png",
+   "terrain/13/1560/2502.png",
+   "terrain/13/1560/2503.png",
+   "terrain/13/1560/2504.png",
+   "terrain/13/1560/2505.png",
+   "terrain/13/1560/2506.png",
+   "terrain/13/1560/2507.png",
+   "terrain/13/1560/2508.png",
+   "terrain/13/1560/2509.png",
+   "terrain/13/1560/2510.png",
+   "terrain/13/1560/2511.png",
+   "terrain/13/1560/2512.png",
+   "terrain/13/1560/2513.png",
+   "terrain/13/1560/2514.png",
+   "terrain/13/1560/2515.png",
+   "terrain/13/1561/2500.png",
+   "terrain/13/1561/2501.png",
+   "terrain/13/1561/2502.png",
+   "terrain/13/1561/2503.png",
+   "terrain/13/1561/2504.png",
+   "terrain/13/1561/2505.png",
+   "terrain/13/1561/2506.png",
+   "terrain/13/1561/2507.png",
+   "terrain/13/1561/2508.png",
+   "terrain/13/1561/2509.png",
+   "terrain/13/1561/2510.png",
+   "terrain/13/1561/2511.png",
+   "terrain/13/1561/2512.png",
+   "terrain/13/1561/2513.png",
+   "terrain/13/1561/2514.png",
+   "terrain/13/1561/2515.png",
+   "terrain/13/1562/2500.png",
+   "terrain/13/1562/2501.png",
+   "terrain/13/1562/2502.png",
+   "terrain/13/1562/2503.png",
+   "terrain/13/1562/2504.png",
+   "terrain/13/1562/2505.png",
+   "terrain/13/1562/2506.png",
+   "terrain/13/1562/2507.png",
+   "terrain/13/1562/2508.png",
+   "terrain/13/1562/2509.png",
+   "terrain/13/1562/2510.png",
+   "terrain/13/1562/2511.png",
+   "terrain/13/1562/2512.png",
+   "terrain/13/1562/2513.png",
+   "terrain/13/1562/2514.png",
+   "terrain/13/1562/2515.png",
+   "terrain/13/1563/2500.png",
+   "terrain/13/1563/2501.png",
+   "terrain/13/1563/2502.png",
+   "terrain/13/1563/2503.png",
+   "terrain/13/1563/2504.png",
+   "terrain/13/1563/2505.png",
+   "terrain/13/1563/2506.png",
+   "terrain/13/1563/2507.png",
+   "terrain/13/1563/2508.png",
+   "terrain/13/1563/2509.png",
+   "terrain/13/1563/2510.png",
+   "terrain/13/1563/2511.png",
+   "terrain/13/1563/2512.png",
+   "terrain/13/1563/2513.png",
+   "terrain/13/1563/2514.png",
+   "terrain/13/1563/2515.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 228.0,
+   "max": 501.0
+  },
+  "cop_stats": {
+   "min": 230.0,
+   "max": 506.7
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/athabasca-mildred/dem/cop.png",
+   "kind": "dem",
+   "bytes": 1258416,
+   "sha256": "80c3c678f14d385eb2bb929da2001c42e76cdab1d73f09460df6c90b3c10b843"
+  },
+  {
+   "path": "sites/athabasca-mildred/dem/delta.png",
+   "kind": "dem",
+   "bytes": 2389979,
+   "sha256": "cc724a2584a5d4dbcb54a81436af928feb3a459cc38e5d292f338f29e6daff5f"
+  },
+  {
+   "path": "sites/athabasca-mildred/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 964998,
+   "sha256": "399cb4e582133e2e07730bf76f7848dad8909be9cb9667cda121bf2f3d149c43"
+  },
   {
    "path": "sites/athabasca-mildred/frames/1985-swir.webp",
    "kind": "frame",
@@ -2843,10 +3930,2752 @@
    "year": 2026
   },
   {
+   "path": "sites/athabasca-mildred/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 5747,
+   "sha256": "aeebc6e643d9e91fc255de64b5f1bcde1452209bba89cd69a6f7d16e0592431c",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 16745,
+   "sha256": "b91737c6abf737aee010b549b0ee094a22ade5687f447c7f9920811976c282ee",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 5742,
+   "sha256": "90dcbd69f5b885c9217eddc65706e4a8752046b05d95fb2fdeabc5a6a4a6fbbf",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 14239,
+   "sha256": "508cc475024f82a662af1d8bb31455e93ebdd678ea6ae4f78db37bb0f98ef860",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 5518,
+   "sha256": "1bc7c773fa668fceac3614d0dfc75dabcd179774606a5bbf28a3996be6d360ad",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 13368,
+   "sha256": "18a42b87a3a3bc7876a324250b590dfc052ce70a2a29dec46296d0b172a4f061",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 5898,
+   "sha256": "e1ff3443e3de44337ecba168c288f5b490e16cdfaa033e7471c221b77ff0789a",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 14302,
+   "sha256": "ae6fd0135c443d6221c2e1685d103bd11b6c69e33443bbf060bba1cc034d6de9",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 5656,
+   "sha256": "3ef331d7d0d372197c3269a1ef86787dec834d88c442cfc8265e9d1a425227c5",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 14386,
+   "sha256": "379ee21c0ab8dd10f9fd73134c93c3655ea5d425021dc79f2b6e41f47ec19298",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 5686,
+   "sha256": "15c082174203b7fe50059cc5fa42d59a75a867f8314a8560075c33b299c381d8",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 16141,
+   "sha256": "a16fd48d860a4df5c2a15548a127ad865d831d2feee5ac65f0ed76ced1a09edd",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 5861,
+   "sha256": "d83605f70549d22cd24cdb542c32d5b68ebc3df7b568ff3e6c81dc9b49b16f96",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 15128,
+   "sha256": "d1830281630be96747e61118e6f081902b3f9640abdbb4911a521ccedb7bc349",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 6922,
+   "sha256": "d466a116afdbaa63cdaaeb58a0ab9e1d728f56404fda3074ef484ee352282ab6",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 24151,
+   "sha256": "0f49d6f70cfa1b570879e5fd25152a72e291d59eebd6c3d9a765222c782c92b9",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 6012,
+   "sha256": "e671b13f51c28c86c5d3f71efc3311588ed006e691c90bb4ddbaf6ab8a72e45c",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 14989,
+   "sha256": "d48524256faaea13c7c806e9703463241a9ccc521423a8e0a3aca881401715ff",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 5658,
+   "sha256": "acb4976762e54d2590882cede9549f275f41860f9f5fb8fbafdda2b0e715ccae",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 15338,
+   "sha256": "10539d8434cf1d6389459213314e186f1bf2a3665cbc02b2ab65aa9393a70465",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 8802,
+   "sha256": "c7fdad91bb913b71c9ba900a5ce6bed7a3bf415c461db9eaa522f0f4cbd06bf0",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 52979,
+   "sha256": "0433e352bac06971d16214f83cddc339c1d0d6f29ca3717feb58088e22111866",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 6992,
+   "sha256": "11e61165c248c8622b461d71be252c66651fb9f330b7e2d84c7a76bb6081befd",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 16286,
+   "sha256": "763d6dcf4dc0e03465f4cb8fc05f62cb8aa4f3cbc927709758cc36f48aca30a6",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 7421,
+   "sha256": "2c023bb5adf82d522f0c564229e350e6163b8895869c5be4a63b87c8bf469c4e",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 20363,
+   "sha256": "5418038faf770ae5d2bb4c181cb17e3a2533772d12466c000aa36201ce8ba7a1",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 8060,
+   "sha256": "09beccf78ed49f166691e955527b956b5866b42f0bda21fdf58fd0c1cbaaa5c9",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 18469,
+   "sha256": "9265531b1f952c956bad453a91564884e96ff862edd7a497067f55ddffe02d29",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 8547,
+   "sha256": "906a3dfff94c7114968a8ba6d3ad466bb2ad0d9cf05229178b5c1d013b3ac4f7",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 28461,
+   "sha256": "cb3e3606f90f505b30162ab5cfef29cf407034596e1424aaa58d41f92e8ff6ad",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 8765,
+   "sha256": "73248cbbda5034f10dd6a5c1ab062e99daa5e8ace1e578f825e5e8d0f3c5a0f0",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 19429,
+   "sha256": "aecbcee1cbf8d98e2e2aca7bdc227495e5d0139e444eb55134fb76cc3a14e701",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 9961,
+   "sha256": "b616da999e144ad88ea37444a7377a94d0f6f16b08ce25d0ad7e0bcc7b957d4f",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 19352,
+   "sha256": "844193c577245977c73ef0b215768fb38619235c0165b5743eb41ef9bab4d678",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 10508,
+   "sha256": "858dc8b7de0ffd69381c41272ca2d3f2294fc85793ecb4a04c0ac769b0f0b79f",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 27020,
+   "sha256": "ec4c03fd70541538052622610b22bfd1931a7574cbb555039f093f10982c3863",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 10280,
+   "sha256": "3976d15aa80ad4c06a5d7e19cf4c137365b5b36f5523ff08f05658f4eec4e76e",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 21637,
+   "sha256": "d4455fe2b7452ad64b04e752c19e9f9b923d1183eab0b6905da91a362bab9a2d",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 10472,
+   "sha256": "6b9f96c3ab15b446c62518a0f0362c6180315159532934adad795f4901170480",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 23443,
+   "sha256": "4fb4f159164c9713ee96e9c1aab1a723c09de03cd48a6b206072835681a0b86a",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 10084,
+   "sha256": "05062ba15d1f885b490215fc5c5acf2aa0db092bbbb21706bda2f3f787ba40b3",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 21668,
+   "sha256": "4567a068e0111fd7563055c6708e3eaedddff42d058fab68fa40fa3d259e8849",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 11282,
+   "sha256": "89713d91a26f19f9765b1fe39d717c5766d3abdf0481be5bcc48803fa03a6375",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 23981,
+   "sha256": "4c676aa01f61b6f1ab7097043d379430fa44b7f578ede712b70428b0939531d0",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 10627,
+   "sha256": "6adeb1328af96f1697ba5613769e6953025fbb8aedbe28c4f47cfc593703f065",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 24729,
+   "sha256": "2ba4d3e62f33e2e4e30f8b85d063509bda04d02b01cc9d7296f1d9ae3627e0f6",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 13233,
+   "sha256": "6be1c39aa328dffedafbe1ceee944cf49e4218d7b04ece8d5ca2ac8b46c09a6f",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 29989,
+   "sha256": "96384d40b42fd1fd955dd5e5a413c27d7ff21119cfbaba1a44aa5beb33c4d90a",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 15896,
+   "sha256": "ac1c6c99652e184cbcf4b5cb01545f8932397d31fe8f695457f4259c5807624b",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 37997,
+   "sha256": "83f8218a240d68962066c0f4a151da9c6c61b2deca7e3b768fa114e5a8c6cdb7",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 15554,
+   "sha256": "46d62312f06218435fae7b4007b2a91c7269f9e6c9ef95fd8d2e0289893aafa5",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 28440,
+   "sha256": "23928bfdab029bc4dc4b8c8fb038efaf8de550e5f0f2125d06514f0c0258b446",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 15683,
+   "sha256": "9d046d9c528d483197891389cf16a1433877aff8f4bf8234f9479f5e9fbd9765",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 32596,
+   "sha256": "ba9a09cf4d8ea1e81e55bbec7e1cdf52ce314d408bda999499c55043a33ff05a",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 16648,
+   "sha256": "f4142a0012293f28a9e4a718872006e13a1b2a9ea74221b59c494ca613d86a2d",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 30916,
+   "sha256": "c4c5daf98c547be38aeb2a2d26f25cb6a40e67217ac19c099462f48bfd6df784",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 17501,
+   "sha256": "24aa38a04fac0373ba7d8bb35e81ff06a098ac615345f740ce5400bb6d11307b",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 33273,
+   "sha256": "14bc554ddbed157446d39246189711418c26e7176c5b7d153ea8f382166996b8",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 17506,
+   "sha256": "61afaa01f3ccf098ae5b2a398ce735850fcd5bfb6a48a6db6eb54dddfcdb3c8d",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 32292,
+   "sha256": "2e96770b4c0ac5baee11af2f915e4207306536e55de41818f76de140dd60b97b",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 17124,
+   "sha256": "cbdba6829414a32bf1d55011384d0e842e974fd958b150d10e66c7c24c307d39",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 38509,
+   "sha256": "555479ff14e0ebde45473ec9438c14be2480da2ff4be21df804673a165fc53b3",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 16036,
+   "sha256": "8e6e83c90fc1fdc437da605e245030d800fa7ab98abecf7050d1f805f0386ca3",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 42361,
+   "sha256": "7bbba8335588a403c9cbeefc6b802bc37b905f39c1811404b6eed088c2cf3fb0",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 17749,
+   "sha256": "d0270a0c3ceaf8bb4ac59403a5ecab56773a8f275c57cc5e9301613059e30607",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 32053,
+   "sha256": "53587806e4d78931c9c0c1149df9c7109ca0ca60a66f59b4b7fff66031617da9",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 18842,
+   "sha256": "6b5e9785f6db1258757e4a851d555398b3888f2698362fb48dbec3bfdf636859",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 33820,
+   "sha256": "56a7caa82dd113603f4bbe0fa89ac33e3f802f7f08fbb70e999a75e57d5e8bd7",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 7875,
+   "sha256": "1006dbe485e60b943a55a65bfb0f3f9e849920622d512e917a738d9985f03b4a",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 31620,
+   "sha256": "a2c74c7fb117acd518ea1c483b0072f54269aec3d57c41b8b93cc0fbb5736a92",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 14594,
+   "sha256": "42cdb35df3bcaf65701bb7f0c4dae19bea05bd1d527fbbe796c90426d3cd2a2d",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 35585,
+   "sha256": "ea636aa87bbc32940505845879f4465f6ecb638538f6e4266c43d4653f430c4b",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 12854,
+   "sha256": "39677ad19bd0f124a1d8be5e2969f69e332fceb08e643ae9a106f39292c1def1",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 35022,
+   "sha256": "0bc288b0cbaeef5d54ac21c013fbf99039e8c83474ae739a7adf758b8e7f9c9d",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 12759,
+   "sha256": "bd0bf2b3749417bdbddbdb69651e0aa74a309fe137e38fdfce5dea02fb7171e9",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 34217,
+   "sha256": "c9ca5ed63ef0c166f26f79b291f2658099f2af851aa31a6ecc56563d06c5070c",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 11864,
+   "sha256": "83ab009bc2148c7406d0035f9db27e6128dc6ac6d250b8a65e33179194a7810b",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 36639,
+   "sha256": "8d1467bc37df869d642d41932c90047aa3b33685bae012e18604292c52c4d910",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 13279,
+   "sha256": "f553fe540d0a1c480ed395cc6530f078065a5a3fec32849d6226ded1f6595327",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 35233,
+   "sha256": "e0370794507a492256d73190419d81cb7a76607fe3c235d9700bfa02910d8c74",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 9567,
+   "sha256": "9c5071e50b3f7de76174684354df4bbe74941eb19a7bf926fc73e3cdda23b778",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 31124,
+   "sha256": "b32fe08d5eba154507c52c584eb14faca669b185163faaa4624357adc36752f1",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 10372,
+   "sha256": "63e97b0a0796c6b6cba80e8a0557fbbc22c5118d7c85e8ff6296fd70af0fe24f",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/athabasca-mildred/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 30372,
+   "sha256": "b3248b6c080109307abae6f45e718c2b0383f088b376468974a13b88dcb8742c",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/athabasca-mildred/polygons.geojson",
    "kind": "polygons",
    "bytes": 5357,
    "sha256": "ded2d7f3e8cb05a05e2afad3477c12a6b5c848c06e9fb5f792a6f02f42176ae3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/193/312.png",
+   "kind": "terrain",
+   "bytes": 71862,
+   "sha256": "e686e27c3bed2164a2fad860acfb8ad2eb67899aba9bf0784629a6347be6f5be"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/193/313.png",
+   "kind": "terrain",
+   "bytes": 71892,
+   "sha256": "86e4cbcc53c648749666ee681100dd87d7a9e4fc2812e508143bb78909818ca9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/193/314.png",
+   "kind": "terrain",
+   "bytes": 69768,
+   "sha256": "45d125dbc03556b258b702e6f76611752c25ade06071843c026def1bd771819b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/194/312.png",
+   "kind": "terrain",
+   "bytes": 118283,
+   "sha256": "ec185ee8a0d89ae221100633f8bd6d6eb4ba3205302b42c08a3fcc0a1230504f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/194/313.png",
+   "kind": "terrain",
+   "bytes": 112722,
+   "sha256": "5d08da5937a380dafb7d090619ed131526536f66eda727f577e821239355b994"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/194/314.png",
+   "kind": "terrain",
+   "bytes": 117515,
+   "sha256": "0adc0f4bf773b746e7b118b1dab59c095fe89c54aca1df798b8a2f67c6784f24"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/195/312.png",
+   "kind": "terrain",
+   "bytes": 110242,
+   "sha256": "91e4ba6754eae0fe2311c1ce39c7ed26dc4e85c6e97347adecc87e47d180214f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/195/313.png",
+   "kind": "terrain",
+   "bytes": 114883,
+   "sha256": "8d4e6947c3acadd05792d3e4910a380975ac1b3a8e1ce1ca586595e1332b1aba"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/10/195/314.png",
+   "kind": "terrain",
+   "bytes": 113678,
+   "sha256": "327dc866e89979fc2a7bedf92797210e9234483554558babf99704c8ed2dc1cd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/387/625.png",
+   "kind": "terrain",
+   "bytes": 118014,
+   "sha256": "ea1ba3b2f05312caa5856b01f18cacce9d6f806944a44d32ef5827b3b86680c9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/387/626.png",
+   "kind": "terrain",
+   "bytes": 116944,
+   "sha256": "4f88de919dfb0302eeccb8e25319d7c9b68b985d136aa1f98ef5f5129a60ce36"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/387/627.png",
+   "kind": "terrain",
+   "bytes": 116490,
+   "sha256": "9f228b1263f9060afed5919bfba2c24dea30db06c946dc90845347e283f75286"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/387/628.png",
+   "kind": "terrain",
+   "bytes": 111540,
+   "sha256": "cf6d3f358e164c4c382584c2112bcd61ea8bd1d966a5a5968d3eb96148e7a5e9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/388/625.png",
+   "kind": "terrain",
+   "bytes": 118291,
+   "sha256": "93eaeaab90fc5f673f8859e16dc0662ced25d2a97ffd1477b57923e6f1a43719"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/388/626.png",
+   "kind": "terrain",
+   "bytes": 105033,
+   "sha256": "0e81eabb683e78074b6a4eb855c384ee42554088891cd9c9e38c30df4385a34a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/388/627.png",
+   "kind": "terrain",
+   "bytes": 102245,
+   "sha256": "977d72c9a0eea74c88f7fe807e9c889620f2fc1437b225eddb0f4042c81d333f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/388/628.png",
+   "kind": "terrain",
+   "bytes": 113842,
+   "sha256": "d305f176f8cf8b7b33d33fb157c1a7824eed92285f138abf5563220e9153d605"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/389/625.png",
+   "kind": "terrain",
+   "bytes": 108896,
+   "sha256": "2ca01a7e98098d40181e42bedea034e470aad77632872d3b8a0dd1cfa190ed07"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/389/626.png",
+   "kind": "terrain",
+   "bytes": 110359,
+   "sha256": "32396562bd6eee38c0d54f9687dbdb0b3e44b397869f3723e17a57e30713ad94"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/389/627.png",
+   "kind": "terrain",
+   "bytes": 102830,
+   "sha256": "cb058b1ea94c6b6d5f16ccffa35581fa8b97f9e7719e2031b05475e5b00ac2c9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/389/628.png",
+   "kind": "terrain",
+   "bytes": 114113,
+   "sha256": "a3b8a7a36fc100b657577d2ab93dbb791475b8e62414d586c73b1f1b4f3538bb"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/390/625.png",
+   "kind": "terrain",
+   "bytes": 103442,
+   "sha256": "cf3e027afeac5baf8f884a3fa862c181e749bca74de067e142f3b2d9fcbc4c68"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/390/626.png",
+   "kind": "terrain",
+   "bytes": 106972,
+   "sha256": "2597661c1da5fa51ab73f8bcbd9f678d5be1832dbc58c78d29b17a8f9227adcd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/390/627.png",
+   "kind": "terrain",
+   "bytes": 111826,
+   "sha256": "41ff5a74bfe81792b80369246b20a7c4d52f7fc4f06575e718250b7d2fea3f79"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/11/390/628.png",
+   "kind": "terrain",
+   "bytes": 95051,
+   "sha256": "979b60dbc26afce2324ca26c218ae5226f14c4869dba0f856d8c434b545814c8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1250.png",
+   "kind": "terrain",
+   "bytes": 112479,
+   "sha256": "e58bebd59497e345e1e55e844611ee150fea49e1289380f500a04f086b8d9a10"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1251.png",
+   "kind": "terrain",
+   "bytes": 111544,
+   "sha256": "741f72ed394f10b2219c0a0969cae5cdd023a4cb8396b6a921409918f20d166a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1252.png",
+   "kind": "terrain",
+   "bytes": 111340,
+   "sha256": "fd2c1e055976bb1521ec76cec6e4eda53c3876575f7328550be0bf8fc7ee5427"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1253.png",
+   "kind": "terrain",
+   "bytes": 113510,
+   "sha256": "c12b804269e8d4f13b69d025a8548c28d2609858a7c8f4d63608c82d4196789b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1254.png",
+   "kind": "terrain",
+   "bytes": 111639,
+   "sha256": "d1000dad895bbbb3ed4fdff407859c41d39b877b33e1d4608bfbba9eb82bc7ce"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1255.png",
+   "kind": "terrain",
+   "bytes": 105510,
+   "sha256": "623cdc3af1c6f2ec654ece53764fa7695e855b5f7af82263f0f42a74efee2e7e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1256.png",
+   "kind": "terrain",
+   "bytes": 98336,
+   "sha256": "37836d12842a2b8ca88811a3d4e7248cd41277a37ce8664007a67236d788912b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/774/1257.png",
+   "kind": "terrain",
+   "bytes": 105676,
+   "sha256": "586d41723f5a9fc66221726e8ff34acf4cd3d19987cb83545a5b6256b00d7a4c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1250.png",
+   "kind": "terrain",
+   "bytes": 108617,
+   "sha256": "3ee74d193beca57ba31105a142de7356873ffb8fcdb45b85f4edcad874a81d70"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1251.png",
+   "kind": "terrain",
+   "bytes": 108680,
+   "sha256": "98fbb541f640cb44f3d65441b2151a5a7382e00e7188e9b280afce0b8a20f040"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1252.png",
+   "kind": "terrain",
+   "bytes": 105863,
+   "sha256": "04d9da495d4faa63d594f9b72b3e0e84a24d32e80eee31360409e00b718252f1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1253.png",
+   "kind": "terrain",
+   "bytes": 106391,
+   "sha256": "15d8226450dbb0e9679353e3f6366867b2d0b1099b9f009141dc91884bf555ac"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1254.png",
+   "kind": "terrain",
+   "bytes": 111665,
+   "sha256": "86900cde82b1d6a1cd315ec56e073555d66fed8214668a8d88c81fe1d6080ae4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1255.png",
+   "kind": "terrain",
+   "bytes": 103966,
+   "sha256": "8afe7bb41a610396efc79db6c1743789dbed02056a38031dffbf693a8e536d3f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1256.png",
+   "kind": "terrain",
+   "bytes": 106617,
+   "sha256": "040d902edc21f275380c47fd1f8c209fec5ef2250344e87f809c2d825f58c506"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/775/1257.png",
+   "kind": "terrain",
+   "bytes": 104960,
+   "sha256": "cdc16a60c95d31cfd1e21a7d66d5ff7c545dfb69cc1878282f85822ceb475ebc"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1250.png",
+   "kind": "terrain",
+   "bytes": 112273,
+   "sha256": "798ead697e834452712e1fb2beff650fca5d93ca7c8a82b45b9ada20c8420404"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1251.png",
+   "kind": "terrain",
+   "bytes": 113455,
+   "sha256": "4e975232aafe03656befcf39306a095ba73a81005f1326f1f0b8d791249520a9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1252.png",
+   "kind": "terrain",
+   "bytes": 103101,
+   "sha256": "210db4fa944f857e75c761fc89d98d04e75cc62bc2b1778ec7958405b5b9f39b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1253.png",
+   "kind": "terrain",
+   "bytes": 106431,
+   "sha256": "186e4c6d7caaecd0bdd826873cf41a21c5d62c68e8950eeb14912818b15f4005"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1254.png",
+   "kind": "terrain",
+   "bytes": 106751,
+   "sha256": "a09bad886447e3cd59c9defef6503b113972fc774d56b4086a0ed30a26c158fe"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1255.png",
+   "kind": "terrain",
+   "bytes": 74025,
+   "sha256": "feb57d04c987b9d87542981c889cc4f99856d6006d8a20f272d4502a31ed5254"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1256.png",
+   "kind": "terrain",
+   "bytes": 106162,
+   "sha256": "abf039bb11cfd5e282b3c7bc25b45e2093cd96de554ecbafafa75ec5f4190af6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/776/1257.png",
+   "kind": "terrain",
+   "bytes": 107931,
+   "sha256": "ec4bd348e57aa7003b7c4675122674026c16999c8077b4532ca8c8d8b1dd0bb3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1250.png",
+   "kind": "terrain",
+   "bytes": 110395,
+   "sha256": "9560ddd7897b6a92afa9835c9b1e4fe83fb4009a752de0e6e731974da3f1287d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1251.png",
+   "kind": "terrain",
+   "bytes": 104324,
+   "sha256": "0ba8c19ac317a6eeede34c5be6e51e73367a0e7fe60bc582fe797a0ec379eb17"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1252.png",
+   "kind": "terrain",
+   "bytes": 98583,
+   "sha256": "cbc80559d666b09c928cdfa9e82979e5644f30c34ab63d101e7167771f7f0643"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1253.png",
+   "kind": "terrain",
+   "bytes": 81726,
+   "sha256": "241229b3b9557d05bd2c355fef1ac050e4af53c43f32059b254e89c23167b124"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1254.png",
+   "kind": "terrain",
+   "bytes": 86572,
+   "sha256": "934db960cb10c7385a8e1e158a177b86ae0bd4e26f8332236fbeec8333e72169"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1255.png",
+   "kind": "terrain",
+   "bytes": 107509,
+   "sha256": "1370bcba2617efeeae1049f81f395c188c2358bca815e76cba3ab785ee3daf00"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1256.png",
+   "kind": "terrain",
+   "bytes": 108367,
+   "sha256": "15da99b43a5401a95ccc89133f2c5f0b1ee8f27eecb86a82991bd63966e137df"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/777/1257.png",
+   "kind": "terrain",
+   "bytes": 104552,
+   "sha256": "163a715193f5429c209389d4b4b99787f5363e6cf0215ec4de7ad7d5916275b2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1250.png",
+   "kind": "terrain",
+   "bytes": 92907,
+   "sha256": "9c6d9d2db2fc74c10e6491fae15e9da8786823c1af7cdbbb6b0ba6e20688a961"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1251.png",
+   "kind": "terrain",
+   "bytes": 107410,
+   "sha256": "f6394ca41194898f0e96b2e9c6b6756d09fc6163a1868e7071701a04ebb43462"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1252.png",
+   "kind": "terrain",
+   "bytes": 103946,
+   "sha256": "a2ff77eb4476d9c1090e8c1ffeb0049702397a6f73084a10375308d5f67badce"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1253.png",
+   "kind": "terrain",
+   "bytes": 101106,
+   "sha256": "69cc986ffbbecd2ee72e839d91999a6245bd534db823f42a6ea173ab8515629f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1254.png",
+   "kind": "terrain",
+   "bytes": 81064,
+   "sha256": "6d806f245c1d56f9958b040c5dc28f2b7f526008014438c72f381ccf4c6a336a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1255.png",
+   "kind": "terrain",
+   "bytes": 97040,
+   "sha256": "380aaabed44b1799a9f9bbd171fa774dbd9944acf5ee5fba985a1d0be433ef8b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1256.png",
+   "kind": "terrain",
+   "bytes": 107757,
+   "sha256": "0435eccad0e0cc5ac22dc4a9d11f7ec8ff9141c69299541d40685cd6c9d3e048"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/778/1257.png",
+   "kind": "terrain",
+   "bytes": 108139,
+   "sha256": "9577ede7526ddab11b41de3aa894080343291b609fcba160f83ea6d1597d775c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1250.png",
+   "kind": "terrain",
+   "bytes": 101417,
+   "sha256": "803efbcd2eeef45b42304fea113551ba1fb488f6706113c5a126290ae481f1c9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1251.png",
+   "kind": "terrain",
+   "bytes": 101533,
+   "sha256": "770b526c0b6c2b1979be6b976b3c8ae9d9cc301f3ba20871390596ee3ec7d105"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1252.png",
+   "kind": "terrain",
+   "bytes": 102639,
+   "sha256": "ab96011cc81251c57397fead711f1fcc696417851573badce49260639f623c75"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1253.png",
+   "kind": "terrain",
+   "bytes": 97169,
+   "sha256": "42128254024b5ae06190d68ca4fe5156bda069770d12622c855810fe12519c75"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1254.png",
+   "kind": "terrain",
+   "bytes": 100943,
+   "sha256": "549bff5a7dfbca04e03665230c968b523df8eaf108b9ac3111866ee279f3c193"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1255.png",
+   "kind": "terrain",
+   "bytes": 94178,
+   "sha256": "f230498b59e4fdcfc15951b57811c9ff40a1eaeebb7cd9fddc43b7126dad14bc"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1256.png",
+   "kind": "terrain",
+   "bytes": 107438,
+   "sha256": "e50129a0a42b9a951d1090fec1b8743ee9cab38690b8ead0fa8e3a4571359edd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/779/1257.png",
+   "kind": "terrain",
+   "bytes": 105097,
+   "sha256": "4cfb1c12f657c7b62d17d5caf700be1023d4643fadb50014df9f1fbad896f303"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1250.png",
+   "kind": "terrain",
+   "bytes": 100135,
+   "sha256": "3728f6e3a0d9674f19f37baa3933577840668dd9634482f66754a6454e796243"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1251.png",
+   "kind": "terrain",
+   "bytes": 100490,
+   "sha256": "1bd65ea58b1174805b0c63453b582dea0e3ddea65856652d29b4b1c85a9c59e9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1252.png",
+   "kind": "terrain",
+   "bytes": 101870,
+   "sha256": "d030d2e8dba0b3e1ccbdfb66e0f74ae0d4482839f270e516f28b23907d736f9a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1253.png",
+   "kind": "terrain",
+   "bytes": 97776,
+   "sha256": "1d3f714e45f458b05100f3683ad9ca7659170720504285f114e303571a406f13"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1254.png",
+   "kind": "terrain",
+   "bytes": 103680,
+   "sha256": "cf8fcc87f0ab86213c07c9eca1f5579c8a6d635df0a7ef3287565363209ba914"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1255.png",
+   "kind": "terrain",
+   "bytes": 94978,
+   "sha256": "8e149f5fc51aa29e1fa457a4d23dd0e7584d8a63fa0fa0f30378834a4eef95fd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1256.png",
+   "kind": "terrain",
+   "bytes": 81749,
+   "sha256": "b4ede8d87e0aabef1b87e9f6de0c7dc0a6e3a7eec7919fc97718cca5899807f8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/780/1257.png",
+   "kind": "terrain",
+   "bytes": 97718,
+   "sha256": "5ffeb6180a35b6c7341f2920dc4247692b66f512b42ad426548cbd1ae46e22f8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1250.png",
+   "kind": "terrain",
+   "bytes": 89933,
+   "sha256": "eaa8b7456e106f2559840709b808ee7b4584dbf17d16dc34b19d5ff545999a43"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1251.png",
+   "kind": "terrain",
+   "bytes": 99247,
+   "sha256": "caa17223dec24d786e1bc4275b0459a71a329daeb414150bc4f20eddc79246cc"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1252.png",
+   "kind": "terrain",
+   "bytes": 101048,
+   "sha256": "5ab4f8242c3bed2fea072503a9d48482e1f110135565bdd93bb87a77bca4e20a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1253.png",
+   "kind": "terrain",
+   "bytes": 103261,
+   "sha256": "ea7235291ba93db87aa6653e9b39680db967f368aa16b2996c17e33d5a982067"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1254.png",
+   "kind": "terrain",
+   "bytes": 103121,
+   "sha256": "52c00a4ca3e43c1c83d2116a587fb56c8573532ce2f47a90ff099fe5a437d1ee"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1255.png",
+   "kind": "terrain",
+   "bytes": 110352,
+   "sha256": "75a42acc5d933ccaa98664ac92406ae960c358db981b34f8422c5793da1b1066"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1256.png",
+   "kind": "terrain",
+   "bytes": 91585,
+   "sha256": "105d129ecbb5140146ec5fe5befc0c959e3c48c174d5aeca81e182c4d6f177f5"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/12/781/1257.png",
+   "kind": "terrain",
+   "bytes": 75059,
+   "sha256": "758452497da1f737a4c47931e4e203d1fc33728ed7e0630a83b384d370e73996"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2500.png",
+   "kind": "terrain",
+   "bytes": 102220,
+   "sha256": "5f5f62834e7565d74fd9700f226eba75c99de77664fe49eb5ff44efd91de1c19"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2501.png",
+   "kind": "terrain",
+   "bytes": 100632,
+   "sha256": "59db3da82cbf5645db93a76bfca9c383a070f59d1f1f4fc614930d26f73724ed"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2502.png",
+   "kind": "terrain",
+   "bytes": 99679,
+   "sha256": "9933ae9d9a4613ba29c26ea8c30e2c7c4b16e448ffccd87b6dd87ef7e75b9ec2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2503.png",
+   "kind": "terrain",
+   "bytes": 99482,
+   "sha256": "4222f42ab93097e52817dfab173ff08953a2f8cd57f2eaba514c257b7e6b68a0"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2504.png",
+   "kind": "terrain",
+   "bytes": 99310,
+   "sha256": "bd46d1101cbf9a7aac176759680e9e02e0b12b8f5909bc21588acba4abf145bf"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2505.png",
+   "kind": "terrain",
+   "bytes": 99328,
+   "sha256": "c8592e41f1b03b3fc306e954cb8f33c63f527998ba86523b55b9b06e385ecc57"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2506.png",
+   "kind": "terrain",
+   "bytes": 99467,
+   "sha256": "084f418eb02379960a40478128a58d498bc400d0fba052a71c32886d0b129bbb"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2507.png",
+   "kind": "terrain",
+   "bytes": 100277,
+   "sha256": "8d139ae5abf5ec223864326f54a6f75e9fe426ab5ff313ce4eb39b118b625dfa"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2508.png",
+   "kind": "terrain",
+   "bytes": 98798,
+   "sha256": "55a16e266403f4d75f5c18d4f77f533b605d9b07d676709928b3f140be46c693"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2509.png",
+   "kind": "terrain",
+   "bytes": 99847,
+   "sha256": "98877440e47015d06634fa60a841764712c715e67b663af16f30abe3731dfe9d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2510.png",
+   "kind": "terrain",
+   "bytes": 93784,
+   "sha256": "8d89e7cc10cbe11c7827fecb3eb1d59ce2039bccc62b6b218caec124eada50f4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2511.png",
+   "kind": "terrain",
+   "bytes": 97465,
+   "sha256": "d12da8fbdf3ce73c55d615da43cabab44f98b691864ee71724057af3d474a58f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2512.png",
+   "kind": "terrain",
+   "bytes": 84489,
+   "sha256": "699d7f0fa29b50d9f06b193d4dd03589571f4b7ee30854e3880549c5fc1411f8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2513.png",
+   "kind": "terrain",
+   "bytes": 86103,
+   "sha256": "61897b2fad8b48166b2319d0e891f06aaddcdcc64885494d00ac162d15e2ea3a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2514.png",
+   "kind": "terrain",
+   "bytes": 93282,
+   "sha256": "122146ef7a9ab0600e233f21f489a5d3ff879c8a640ca1721b17d5b67e9e8f2b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1548/2515.png",
+   "kind": "terrain",
+   "bytes": 96900,
+   "sha256": "ee7ea18af9c8af30473e9da5c57da18dafe184255ddba31955c180e2cdd49ff9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2500.png",
+   "kind": "terrain",
+   "bytes": 102951,
+   "sha256": "c0e8e0527e200d5c72b3f5c693dbe2a3efa40121d192f53eb3b806c07b6dbe3e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2501.png",
+   "kind": "terrain",
+   "bytes": 95089,
+   "sha256": "153cd0ab727b8b8a6881acbe801deee7e239ec4124020d40b98eeafdd575b801"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2502.png",
+   "kind": "terrain",
+   "bytes": 97417,
+   "sha256": "ca7e5f4cd57a4aaed4a03242e166beb2730176fd08988e66f174c4b5b115dc9f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2503.png",
+   "kind": "terrain",
+   "bytes": 100543,
+   "sha256": "01cb81df658a7e4cb48583cfa50f76c01ce00f490a750617495d1f4c12b3c3b6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2504.png",
+   "kind": "terrain",
+   "bytes": 97158,
+   "sha256": "f9d5a6796d323473227b3862647197cc2e491b9e345772860e2d78dd738eb030"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2505.png",
+   "kind": "terrain",
+   "bytes": 102254,
+   "sha256": "a49fd7d241b5a7d6b9442da17423cd642ef5a77a51e416f29fd72ba0aacbdd60"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2506.png",
+   "kind": "terrain",
+   "bytes": 102042,
+   "sha256": "64be5485799b9c44f79690ece3075e5395a27e460c65c8bd274fab3dd5cbab3c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2507.png",
+   "kind": "terrain",
+   "bytes": 101867,
+   "sha256": "89dfc6605045e8f7459a36043a623ade4f4431f19fea0ff559b86018cf8c7065"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2508.png",
+   "kind": "terrain",
+   "bytes": 103401,
+   "sha256": "e591e35c532f936bf80cb1c28a2f6de336af9d3fbc38d94926703e6c2422c2eb"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2509.png",
+   "kind": "terrain",
+   "bytes": 95847,
+   "sha256": "8fc40e33c9a68152a6c243b8aeef75e111f3583a9e2fd47ab80d8234b8b7e533"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2510.png",
+   "kind": "terrain",
+   "bytes": 91915,
+   "sha256": "7c6630edb7fec479ba164f8ff3ead807d9216cfeec12eed4c9b7a6b98588ea4b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2511.png",
+   "kind": "terrain",
+   "bytes": 90392,
+   "sha256": "4977169e93195b470864a35b789d28afb08960c52ac158306f0584e5fa11c3c6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2512.png",
+   "kind": "terrain",
+   "bytes": 81138,
+   "sha256": "cb79ced16e4671397c48aa155b6b4b892162745cdb57e6e11587ecf97021dd62"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2513.png",
+   "kind": "terrain",
+   "bytes": 90540,
+   "sha256": "bc7114b58580884abd4804facc693838293e831cf461a3d5d3b7c3b56e0eb047"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2514.png",
+   "kind": "terrain",
+   "bytes": 93255,
+   "sha256": "141cd32d5f797cb1a27be203e86775a7d44e01468d686bc0694497bb4e3033a6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1549/2515.png",
+   "kind": "terrain",
+   "bytes": 92350,
+   "sha256": "cc00e9728c5285a08f20356b5c4f34a269749206e82e3bc21d02ecc53a143885"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2500.png",
+   "kind": "terrain",
+   "bytes": 103327,
+   "sha256": "23a7644f42919d609d5e6dfea0c3d9f52c323cc163840630f4e9c9cb0a36218d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2501.png",
+   "kind": "terrain",
+   "bytes": 95320,
+   "sha256": "a6774514b63d1baf931992675a9ed738af8a1bb7cec94c4ff29ebd1c7e07e6f8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2502.png",
+   "kind": "terrain",
+   "bytes": 98848,
+   "sha256": "be3c16f496b7927539f85a0d29b0f8ef30c297137c6534e02107314756384d29"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2503.png",
+   "kind": "terrain",
+   "bytes": 95527,
+   "sha256": "03f8f004c4eb4691ec16d1375848c4a505dd0ffda3af319cd3c214767537dd70"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2504.png",
+   "kind": "terrain",
+   "bytes": 93604,
+   "sha256": "15c4da87a89a20308fa16cf9c65136463c9bc4be36358d128c2721c861c57094"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2505.png",
+   "kind": "terrain",
+   "bytes": 98892,
+   "sha256": "e75cc4af9551c5a0517f7b650897dc1b1e5ca100f4097b2e39d8dd061ab389ca"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2506.png",
+   "kind": "terrain",
+   "bytes": 100891,
+   "sha256": "8563640775429e85d37e8772081ec6af2f1a918ae555e6774811c4958ee98c29"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2507.png",
+   "kind": "terrain",
+   "bytes": 98783,
+   "sha256": "8e3171bd74983e8317ec08a20662680ec24b10626e0b4d79217a8aafbf0b88fa"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2508.png",
+   "kind": "terrain",
+   "bytes": 101381,
+   "sha256": "7a08359afd56e3fa7ecc8e1f9d96c3112cdf0163c25e49b52537252c963bda76"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2509.png",
+   "kind": "terrain",
+   "bytes": 101330,
+   "sha256": "9d2cb2917f07961110badd666ed2a87fceeb6d4648851d6e2339ee5f878bb4d3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2510.png",
+   "kind": "terrain",
+   "bytes": 94393,
+   "sha256": "aa92af4bf71324e5d0decc80a82c604d5ebb640f0efb0b3386cf07522f4330a1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2511.png",
+   "kind": "terrain",
+   "bytes": 87231,
+   "sha256": "0e0776eadc19a5d6d0b395689efe0e3e4ca176cbce0802a7654dd6c0060127e8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2512.png",
+   "kind": "terrain",
+   "bytes": 89031,
+   "sha256": "9afff30d4637a2d49bc37f60237cc8a9fcd51f55efb235d5024de7a189e89148"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2513.png",
+   "kind": "terrain",
+   "bytes": 97454,
+   "sha256": "09048fd9cd5f086dbdf54c4d359a74e2a20c16b10f35ea211ad9397dcb9d886f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2514.png",
+   "kind": "terrain",
+   "bytes": 93214,
+   "sha256": "4b573bebc86317cf81e3e950b8cbecfe2d8894d9d8b53c56ae0cd543c4748bcd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1550/2515.png",
+   "kind": "terrain",
+   "bytes": 94985,
+   "sha256": "9747147a69005c23141319aac063e54304c90f1f3c62f7f2c7a12fd507d4eb8c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2500.png",
+   "kind": "terrain",
+   "bytes": 93461,
+   "sha256": "c53377fdfb5ddb38fcd8f783978b80c95e508add48f99549fa391660b4f28a9f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2501.png",
+   "kind": "terrain",
+   "bytes": 95918,
+   "sha256": "92febadb44d678cab225aa79c6b86e43add2a9175783592dd92d607df308b880"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2502.png",
+   "kind": "terrain",
+   "bytes": 103382,
+   "sha256": "eb70d97514bb08b02b396c34feeb2154e3ec744d23714ee499c59115c5ee2e30"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2503.png",
+   "kind": "terrain",
+   "bytes": 90500,
+   "sha256": "b9c5c1f5a7cb985f21859f801c26a11b0cf759b3f22f840bbbf37f95b886c130"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2504.png",
+   "kind": "terrain",
+   "bytes": 93233,
+   "sha256": "2e0754dd103c58b7ff6a3d987027c3ba99d93118620b1aa9a83ec916149c501b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2505.png",
+   "kind": "terrain",
+   "bytes": 92506,
+   "sha256": "aeba69e663b2924bc04f072484cda44dfa40315b5fd42a9211d518850fdc1b5e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2506.png",
+   "kind": "terrain",
+   "bytes": 88500,
+   "sha256": "dfdb91f5d7a19c070f18e197fa030d06f525305a6884ece2fec632d9e9633c7c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2507.png",
+   "kind": "terrain",
+   "bytes": 90105,
+   "sha256": "7007fbee44636cf3ae17ad0f88d4aaeb49abc4735b053ac1307ab863224b13e2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2508.png",
+   "kind": "terrain",
+   "bytes": 100631,
+   "sha256": "fce1308f69d5b8e9e9933f06d638ca54e5318264342ae07612d02df70a34aa9e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2509.png",
+   "kind": "terrain",
+   "bytes": 94439,
+   "sha256": "9cc3e64ac893a8a53bfbe50ae587e28be9de4f14cb69847d463198d2c0be5c91"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2510.png",
+   "kind": "terrain",
+   "bytes": 94544,
+   "sha256": "3440f07401894bc72a0f5fdd923a251fdbd4feb63bb66e6ef052208708f1d468"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2511.png",
+   "kind": "terrain",
+   "bytes": 93957,
+   "sha256": "2e77af626db0bfef222146f3fe2d537e7b4b203ff41196f937fd07103d5471ca"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2512.png",
+   "kind": "terrain",
+   "bytes": 96797,
+   "sha256": "1e8573cf1ce0fc17ecc5a38e31f4df72a75482c58ea5bf4bcd6fa1e54091cf97"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2513.png",
+   "kind": "terrain",
+   "bytes": 97666,
+   "sha256": "8c9638d8c3021abbcbeecdfd951415a6b22bd68c65c9298f28adf5e1b7c6a124"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2514.png",
+   "kind": "terrain",
+   "bytes": 92334,
+   "sha256": "6995f231c10c53af445375688926b740bcb9c3215815fadcb70a53a8c7275b40"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1551/2515.png",
+   "kind": "terrain",
+   "bytes": 93837,
+   "sha256": "84f9322ef089b1e19231791ed55e3880fe2f99008e85c8cbb8ef4cc551249b33"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2500.png",
+   "kind": "terrain",
+   "bytes": 97797,
+   "sha256": "a2aef976d0bf07f3dc43016e4882f8a85d4a43311ceef6dc6d29bfd697709092"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2501.png",
+   "kind": "terrain",
+   "bytes": 97710,
+   "sha256": "8919b8106f9741a347804b51af193f6612731286c8a4fa1898c3756d3a9b63b3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2502.png",
+   "kind": "terrain",
+   "bytes": 105651,
+   "sha256": "d3b6ef7cea704fdb43fa9e1496470504fde9c3f480a8c9a7340b609ab747ed5f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2503.png",
+   "kind": "terrain",
+   "bytes": 103971,
+   "sha256": "37b9452110f9640ff63da0716a4335619c905ae3045fe349adfb4a0efc377193"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2504.png",
+   "kind": "terrain",
+   "bytes": 99824,
+   "sha256": "53627a5e5036cf33b836cfebcebbed8067b951988369a680f3fe553a16e2f9b6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2505.png",
+   "kind": "terrain",
+   "bytes": 101829,
+   "sha256": "90e3496c8a85b3a24c14b1a1bb7d2236f5def7cdfdca0fde08bb5c587876b518"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2506.png",
+   "kind": "terrain",
+   "bytes": 99543,
+   "sha256": "96da05540c9f710fee015af021e45f0f06a3175046bf0f5446c8b4bff5962669"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2507.png",
+   "kind": "terrain",
+   "bytes": 99666,
+   "sha256": "a2ad8a9e624079ecf55ba56189646c4e789d2dceacdf9dd86658d49c7c24f005"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2508.png",
+   "kind": "terrain",
+   "bytes": 100357,
+   "sha256": "dd70dd1bedfad0486cb7c81b597e7706555e02bd9a4eac7084a728137cd382d8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2509.png",
+   "kind": "terrain",
+   "bytes": 91049,
+   "sha256": "2d5352d475c5a61ba4b9535eeb3ed99961df392812815e47928c948148907782"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2510.png",
+   "kind": "terrain",
+   "bytes": 28921,
+   "sha256": "68c52d61a89dc8461e402686023dfaaa1dc9d74509bfc71b057ba746670a92a1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2511.png",
+   "kind": "terrain",
+   "bytes": 71096,
+   "sha256": "2050074f9e8ffa7709198259f53c1b2cf30edfc8fabd168173bd9080aefc8af6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2512.png",
+   "kind": "terrain",
+   "bytes": 93992,
+   "sha256": "cdb25ca273b804ddbe909940e4fefc98d869099e86c7fdbb39ac7f4cbc10e06e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2513.png",
+   "kind": "terrain",
+   "bytes": 96466,
+   "sha256": "2d8843c7a56cb9c3be92d7c28d2f59121269fc85d3e74837dd7f1f084330222b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2514.png",
+   "kind": "terrain",
+   "bytes": 96490,
+   "sha256": "add36acb47875bf5a7ab76573023ec8581a2b852498b9b6c985ebe3dd195aef9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1552/2515.png",
+   "kind": "terrain",
+   "bytes": 91301,
+   "sha256": "1db9103fd670a42a0413d6f173925b1c5e755b17f2b7fc548a6abad1451c11e3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2500.png",
+   "kind": "terrain",
+   "bytes": 97764,
+   "sha256": "d91a19831e1391064f20e3ee353ef8d7ba9b85f6d0b950bec72a6c97a229f958"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2501.png",
+   "kind": "terrain",
+   "bytes": 107336,
+   "sha256": "10b87944a75e9cf070d30011702d93f17a90ecccfe0e1eb056b59a240784e38b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2502.png",
+   "kind": "terrain",
+   "bytes": 102499,
+   "sha256": "0bcc9f50be649c0ad7bfba85a0e2c32a2e205f4ee7f9de668b06142968d995f4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2503.png",
+   "kind": "terrain",
+   "bytes": 92913,
+   "sha256": "0acbcaf1f423a93d21fd5698357fd74cef04497f4f6e5163d9ab5ca76b909faf"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2504.png",
+   "kind": "terrain",
+   "bytes": 73962,
+   "sha256": "056fd516d99707d8c2c2017b3cc59557948926df7ae946a6a16dd89a327e0ce7"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2505.png",
+   "kind": "terrain",
+   "bytes": 81065,
+   "sha256": "e4dafc3238dc9847fa6f2d10f09538485f2c2ae8a8bb03fe13d73b30c796ce52"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2506.png",
+   "kind": "terrain",
+   "bytes": 80042,
+   "sha256": "ef12a2ddf0515839f8f4e3cc5690e4e03ed9bf071ba27cd9c0f8825ab42d5577"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2507.png",
+   "kind": "terrain",
+   "bytes": 94390,
+   "sha256": "165db9a72a39bf94e2a835dbeeb72c7abc4cf0e040e3795e4e41f0430ae8ec62"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2508.png",
+   "kind": "terrain",
+   "bytes": 96205,
+   "sha256": "587377954a7892a7a1889158a5b01940ad9f9fa25f9020fdbd6529d02d0a7b6b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2509.png",
+   "kind": "terrain",
+   "bytes": 92455,
+   "sha256": "2bd299ffba3079ad5b3eb2f827da8a0aac0ac2e24179b5ba2a36af2a5c128d02"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2510.png",
+   "kind": "terrain",
+   "bytes": 78389,
+   "sha256": "0713f9c3cf52f19e175ed365b80803786606963913c906641db9cfa3d73c4c4c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2511.png",
+   "kind": "terrain",
+   "bytes": 84421,
+   "sha256": "126696e5770f5230617cd072584efd495da1e57002f33706a25e227f0e3bc7f4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2512.png",
+   "kind": "terrain",
+   "bytes": 95602,
+   "sha256": "26fbd85028512fcdfc8f58dee62150a0176599b312c61185c6035001337f24c5"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2513.png",
+   "kind": "terrain",
+   "bytes": 94611,
+   "sha256": "152e514fd4a02ac8da0a1f05a76bd15fb39a8822732da63d14d7ec74f8d2bed0"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2514.png",
+   "kind": "terrain",
+   "bytes": 100788,
+   "sha256": "90bc45a4a9b358a0ca35db778a57667e08acd62b3ace0388945aa7a8d2eedbad"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1553/2515.png",
+   "kind": "terrain",
+   "bytes": 96740,
+   "sha256": "eaef8595ab22971f21310f4d8091586fe2d539e342d99e06dfe640c3382c2e27"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2500.png",
+   "kind": "terrain",
+   "bytes": 99602,
+   "sha256": "25279af098388eadc9b536854247274f61261ab2d3f19a01856b51db27446024"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2501.png",
+   "kind": "terrain",
+   "bytes": 102610,
+   "sha256": "c46c65a80afd77d8cade53f18f92a0be3fde0bea7e6cbdc8f805640a111602e5"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2502.png",
+   "kind": "terrain",
+   "bytes": 94844,
+   "sha256": "e0620245856db1be32d96e0267c6d146780c0b7015f3b52b742e30128ed601cb"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2503.png",
+   "kind": "terrain",
+   "bytes": 95494,
+   "sha256": "973a04f2046b2ef31a931679e6ea4d410f4b709cfd3aeca32c3dfc42245d20b3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2504.png",
+   "kind": "terrain",
+   "bytes": 77221,
+   "sha256": "6de14881fbe8e8047f47a933490f172727d76ed1a2882a14fb209b40e8a757f9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2505.png",
+   "kind": "terrain",
+   "bytes": 82676,
+   "sha256": "5024654fc5ad96aa406e0b243dc09a092f761910b764e5170b8e074a3570314f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2506.png",
+   "kind": "terrain",
+   "bytes": 84549,
+   "sha256": "f519aa4c30f6a3164b74c00b7e21fd76cb18feb40c657f50b5b3f57704486583"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2507.png",
+   "kind": "terrain",
+   "bytes": 96571,
+   "sha256": "2a371d80e045cedb3557710e85682828c4175d270ec2ba9f35e002e20a9c47c9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2508.png",
+   "kind": "terrain",
+   "bytes": 97379,
+   "sha256": "e36ddcd01b307189e91392a63f859f4c70ed1b04abbf5d41aa43a8ce8b4e232e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2509.png",
+   "kind": "terrain",
+   "bytes": 72524,
+   "sha256": "c6c3137b3edd43372113d7e3249ec372e96c16b4fe7e6b3067bc0cb52ae68536"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2510.png",
+   "kind": "terrain",
+   "bytes": 92289,
+   "sha256": "2e7270b349cc56a0d5d02f5fc769e561e2c432cd94a39b3e840e58269771a972"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2511.png",
+   "kind": "terrain",
+   "bytes": 99385,
+   "sha256": "f53decd8d53a4949b038f70e466bcaf5f8a0deabca27e190d7deec0fde8a4bf5"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2512.png",
+   "kind": "terrain",
+   "bytes": 98289,
+   "sha256": "ff166d91a26f9185d8d96cfa18ca27697d777cdb5e36af93164165dc18e96ad1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2513.png",
+   "kind": "terrain",
+   "bytes": 94330,
+   "sha256": "100d8cf21f390cf6f31b1a57ef027f9eb9354404e5571641c10a255133f87185"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2514.png",
+   "kind": "terrain",
+   "bytes": 92859,
+   "sha256": "fae904878834108f0a504e329d84e5fc2ef83906d04229947276eb2d09924362"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1554/2515.png",
+   "kind": "terrain",
+   "bytes": 94608,
+   "sha256": "2d4746d1c4b01eedc6298eeaef7fe5308d394fb40ed26d525dd58bcc453ab7ea"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2500.png",
+   "kind": "terrain",
+   "bytes": 95390,
+   "sha256": "e3b84a21f0541e1d8d39ba40bf55384d7182d3b2236c01b52d69c72e6aa4dff4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2501.png",
+   "kind": "terrain",
+   "bytes": 94141,
+   "sha256": "e3351b9f35cad50ba40b3209b1073e3fd7e03dadcb9e4011377a6d61e4cbe8ec"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2502.png",
+   "kind": "terrain",
+   "bytes": 88166,
+   "sha256": "7f409e9f16d8fe642587b9cc285c2e3e3c998ad4600e38a568f25eb3a2def7a9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2503.png",
+   "kind": "terrain",
+   "bytes": 92668,
+   "sha256": "fa86ddfa4455fc8b1c6631aa4718b7895a4424ad356f9aaa662373e3cfd44244"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2504.png",
+   "kind": "terrain",
+   "bytes": 98076,
+   "sha256": "07f1478f48ae2df5b0bd06b63c4579926420f2f14fa86941afb6cd59e057e9e2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2505.png",
+   "kind": "terrain",
+   "bytes": 86340,
+   "sha256": "d708525441d5545aefd2ada79c89067fdda0dbba009cb8bbf78999153fd7e7aa"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2506.png",
+   "kind": "terrain",
+   "bytes": 29458,
+   "sha256": "f263abb23232d907cdf57fed3b9a9c8f2e204d87c9bd8036227734f86efa61c2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2507.png",
+   "kind": "terrain",
+   "bytes": 74461,
+   "sha256": "20bff4468cceb86c97ed24feb36667bce0684d20fea21c43d075b12e0746c423"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2508.png",
+   "kind": "terrain",
+   "bytes": 90582,
+   "sha256": "c38734d8664ccd615a6f7879a88d67022628c3c2fffe09a2b7e006c82e3c0633"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2509.png",
+   "kind": "terrain",
+   "bytes": 46888,
+   "sha256": "5066139c1b6a143fa788ae652f2ee276a5dc0520eb9c672f5e4ce649dcc6c01a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2510.png",
+   "kind": "terrain",
+   "bytes": 95302,
+   "sha256": "9b7a0fe264d5cd63b44f4770d63d3cf2918c695b060db49f372759eb14b6e6c0"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2511.png",
+   "kind": "terrain",
+   "bytes": 98094,
+   "sha256": "2cbf169d031788df983f0a66f476fd2fad2d1c9988d5166f7aa7025974356ef1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2512.png",
+   "kind": "terrain",
+   "bytes": 97130,
+   "sha256": "e67f2500de5ae140bc3975f19e4dbff0390a29975c4521cb4a3f8d305529f6bf"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2513.png",
+   "kind": "terrain",
+   "bytes": 99524,
+   "sha256": "9bc2e8110905372215b0fbb25f4c286942d55991ce233f737108cc8b5b276f13"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2514.png",
+   "kind": "terrain",
+   "bytes": 94097,
+   "sha256": "d95e3877e881f8f3d225e1e38859d86636f0ec621c7ed7cb9ba574fbf5cf0d40"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1555/2515.png",
+   "kind": "terrain",
+   "bytes": 93479,
+   "sha256": "5e11e98063490ee33b408a0ccb9147d85aaabd6ed15cf79096233ccd8fbf65cd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2500.png",
+   "kind": "terrain",
+   "bytes": 76478,
+   "sha256": "d6b1511329c862cabe4d9382a2beaccef5079c3f2ae619d031a0245e37eb99bc"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2501.png",
+   "kind": "terrain",
+   "bytes": 86792,
+   "sha256": "ff5ebe2ae90b426db88b6b509a76159da490f4424d015c5b85f4feea0ebddf3a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2502.png",
+   "kind": "terrain",
+   "bytes": 96131,
+   "sha256": "80776f2a3d0df757127ac3734ec07418d93b522d7395aba3bcb99941ad04592e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2503.png",
+   "kind": "terrain",
+   "bytes": 92028,
+   "sha256": "311e9da5a18351409fd2a0e1e6ef44a6f8bb7e493964fe30f0b4334baa57819a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2504.png",
+   "kind": "terrain",
+   "bytes": 86266,
+   "sha256": "5c946baa9adb2417a5a4fb245ade464765fa72afb5331d7247acdf2b7f09ef62"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2505.png",
+   "kind": "terrain",
+   "bytes": 92859,
+   "sha256": "39573d84a3fb31dbcf4b999b0a700d15aa1e1c35ff8c1a566cb4aa41479d6cb5"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2506.png",
+   "kind": "terrain",
+   "bytes": 93423,
+   "sha256": "32117c8bf7498ff8391f78150b84ab69e33a3be491bb50cb6bf473149f9c5c5c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2507.png",
+   "kind": "terrain",
+   "bytes": 82744,
+   "sha256": "86b02a11817042fe857b1ed4503d053c6dd0ad9a7144c35cb0e76b73620f3a3e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2508.png",
+   "kind": "terrain",
+   "bytes": 79778,
+   "sha256": "bd4b4a0b5073f8996edbe6b00e02a5073490c4a2ab5a02621e07761973c6b580"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2509.png",
+   "kind": "terrain",
+   "bytes": 61428,
+   "sha256": "b32a345032d44183ead463d51e6286dadad8ae3c7a968890a3a6aac261588a77"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2510.png",
+   "kind": "terrain",
+   "bytes": 73097,
+   "sha256": "4d67ae4b4d69956a9caa8f24fe2e57492a1e558bc763ae4ca1da2245582c65df"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2511.png",
+   "kind": "terrain",
+   "bytes": 95819,
+   "sha256": "f30558190bcaee74f8d93360b9de293f381f16c905a4634e68a6a2cf6e0fb2d4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2512.png",
+   "kind": "terrain",
+   "bytes": 97056,
+   "sha256": "232d01ace74b8c868c47431c16a48fc999b8596cc9785bcf6227a9518b491c81"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2513.png",
+   "kind": "terrain",
+   "bytes": 99266,
+   "sha256": "8547682beda2581682b2c5fac1494f34dc455f9407326b4dd20145b8aed11f64"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2514.png",
+   "kind": "terrain",
+   "bytes": 99700,
+   "sha256": "5ecdbccc49f82d717d6cd449238f8cf97fbd8f1ab654845844bdcaebfb4a78d7"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1556/2515.png",
+   "kind": "terrain",
+   "bytes": 98911,
+   "sha256": "5875124524239f4db4f41785a28fbd375c978bd128a21537501d2eae2cc383cd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2500.png",
+   "kind": "terrain",
+   "bytes": 70883,
+   "sha256": "0e67d0352a3684ee2e809e9554a6c10d47ce4709a5b96766bfc0273d1c79a248"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2501.png",
+   "kind": "terrain",
+   "bytes": 95894,
+   "sha256": "09e6d5164b4cd76ec8955e6a28b38c9ca3f2be95f9eb5adc80d3125048c4fd63"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2502.png",
+   "kind": "terrain",
+   "bytes": 96096,
+   "sha256": "9cc364f03497b49568575e06804ca51b351387049c011101e293bc0c7568d179"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2503.png",
+   "kind": "terrain",
+   "bytes": 98905,
+   "sha256": "67b3167b9f47993d624fe3fbe5dff6fd5502d4f87cd28adcf7adb36eaa9894af"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2504.png",
+   "kind": "terrain",
+   "bytes": 97943,
+   "sha256": "9e441f0625673247371fa2a1f030cfdd48b7da6bfd450096afad79893df0de4b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2505.png",
+   "kind": "terrain",
+   "bytes": 90396,
+   "sha256": "e38f8aca89873b3cd36b760458a24a1ef2cbd7baa9e47d11fd3e2b9943545eac"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2506.png",
+   "kind": "terrain",
+   "bytes": 88359,
+   "sha256": "943b1ea968eab918614f737e2fd52a0af0937efd2d8262b863b7a3158e840677"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2507.png",
+   "kind": "terrain",
+   "bytes": 92010,
+   "sha256": "77f826cdd444c44e3a2f496b3e525e534899dcd8a61b2bac49ba2feabb7ae204"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2508.png",
+   "kind": "terrain",
+   "bytes": 59936,
+   "sha256": "94eb1f2e308f13061421c4852fb43002173f56f0466647b010f29f0977a9bdec"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2509.png",
+   "kind": "terrain",
+   "bytes": 82603,
+   "sha256": "dd55c43ab0aac5263af3203f77a205b0f79d4872a39faa60c42596b19bccecbf"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2510.png",
+   "kind": "terrain",
+   "bytes": 83469,
+   "sha256": "b41f6cb3ea5cc17c4aa6595b581a73943ee48968753982e654b59ced143867b1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2511.png",
+   "kind": "terrain",
+   "bytes": 92604,
+   "sha256": "f1568cbbdfb42c743c2a512cbd51ce5d610c6730bd94940db4f95cbeb4978a5c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2512.png",
+   "kind": "terrain",
+   "bytes": 94100,
+   "sha256": "d9a00dcc8d3890f01937f015270b867dc74610c10709b5bf78585ffc8307d556"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2513.png",
+   "kind": "terrain",
+   "bytes": 95601,
+   "sha256": "27b000452c2f8c0b15b43b26dc987539a25862d81bcce83740165df585acea2c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2514.png",
+   "kind": "terrain",
+   "bytes": 97226,
+   "sha256": "69667ce4145a0fbcf104a537680f83dd809e6762122489da90249d743af6b853"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1557/2515.png",
+   "kind": "terrain",
+   "bytes": 94111,
+   "sha256": "b854319523eb37c71d413dbd6d1764e098ef01333c9af291b18f9db74a86d405"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2500.png",
+   "kind": "terrain",
+   "bytes": 88421,
+   "sha256": "74cd516b196d67b16e62f09edddc6756bbf93ef1344ff86a0001f6e275e2138a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2501.png",
+   "kind": "terrain",
+   "bytes": 93445,
+   "sha256": "e783054921cf4529cb538e96be794483b2d6a89259dedb6cc4dd7463225077ee"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2502.png",
+   "kind": "terrain",
+   "bytes": 91570,
+   "sha256": "9c3901ad177b1f3acf66d1c54221be9e54702d23dcf195458643ece6fa7afae2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2503.png",
+   "kind": "terrain",
+   "bytes": 86990,
+   "sha256": "5c691bc81ac6e3e791f02d080c1e3d82dd85b61e56597fb777008282b6be590a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2504.png",
+   "kind": "terrain",
+   "bytes": 88567,
+   "sha256": "2e2a27f1f01dab85fd87b3761df88ab08007a6580e403ee048d1d76408eb6e78"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2505.png",
+   "kind": "terrain",
+   "bytes": 90918,
+   "sha256": "fee2fc232c1837de29c27eb26e266b906c8cf6a383a6b66e6b04e570b0e9fa18"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2506.png",
+   "kind": "terrain",
+   "bytes": 81564,
+   "sha256": "f7e5b9a171312ca871bd7d61abade3270de5f051b20ae1b41ed6c085a102b5a1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2507.png",
+   "kind": "terrain",
+   "bytes": 77831,
+   "sha256": "7e93ccbbb0b779b0faca0d5d468e3ef74c8bf7a928c64e3871b4626129dd63d1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2508.png",
+   "kind": "terrain",
+   "bytes": 83889,
+   "sha256": "7c382f26276e22f6e4d9b759d48da79a26c2dfdd42e209e7cf9bbc1af789cb6f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2509.png",
+   "kind": "terrain",
+   "bytes": 86798,
+   "sha256": "6e6ff662c0ff944e35b393944544511e0ab9c1867cd28d720550f0a0eed838c2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2510.png",
+   "kind": "terrain",
+   "bytes": 69418,
+   "sha256": "0b2612773baa24f9afaa101f91b423552cb30545282473e6ec97fde4c2c01d02"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2511.png",
+   "kind": "terrain",
+   "bytes": 92863,
+   "sha256": "a077a7cae1dabef413e430ae8af2f7715bf31af1223af2183fa8e71b7329c575"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2512.png",
+   "kind": "terrain",
+   "bytes": 86288,
+   "sha256": "6f68758737e6d5ee1e7bd35397a887b47c4b5d7d5adfb4911f08367ce321baee"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2513.png",
+   "kind": "terrain",
+   "bytes": 99113,
+   "sha256": "284988141e291585bc2f0c12827aa348dc525a1783f382573bd9aeb74d079975"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2514.png",
+   "kind": "terrain",
+   "bytes": 92852,
+   "sha256": "ed33aed5fb66d55beab3df08e25c91b4eae57d50d164ba43c8dfdc8ee6e31a56"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1558/2515.png",
+   "kind": "terrain",
+   "bytes": 93401,
+   "sha256": "3cde4f3a7404b3d3910cadd9ca8b0587403dc1caab816ba5a0675354ffdc4345"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2500.png",
+   "kind": "terrain",
+   "bytes": 85631,
+   "sha256": "96ece8379a69de5dfda02d39bb90c2d314cc1c9d6058d651928466789971b249"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2501.png",
+   "kind": "terrain",
+   "bytes": 91480,
+   "sha256": "64852daa27fc25e97442b044cc19a816a41f7ea16df1f42288347fe26fb02c3c"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2502.png",
+   "kind": "terrain",
+   "bytes": 94313,
+   "sha256": "912aa28d90cc8df1f5eb15dd695edc83fca13ff09a0364b25b472bda43fb1640"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2503.png",
+   "kind": "terrain",
+   "bytes": 88819,
+   "sha256": "c4c596e41bf2fa02b933949848f3618f095ff4f26c1383856fcf549561b03221"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2504.png",
+   "kind": "terrain",
+   "bytes": 95647,
+   "sha256": "1d6f17b76f02c2a9e333a756040eac8838c2d589d7432ba4ac6d26637ea48be0"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2505.png",
+   "kind": "terrain",
+   "bytes": 92070,
+   "sha256": "e3b378b95d5900c8c01b0182dbec723d14394b3b2d9a5250e74094afbcde367d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2506.png",
+   "kind": "terrain",
+   "bytes": 89161,
+   "sha256": "12e94390f856de864712b7a9ba341da2cbbd3faf7896f329982a1d52500d7767"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2507.png",
+   "kind": "terrain",
+   "bytes": 93824,
+   "sha256": "ac443a87127f91ae2da072458377c7f722427a6b23f3a0544d30f3b4efefa36f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2508.png",
+   "kind": "terrain",
+   "bytes": 99176,
+   "sha256": "f4ba0defa3fbd0a2c2788d7b57003922283d4ae0f9fd935d24225676e4a5ffa9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2509.png",
+   "kind": "terrain",
+   "bytes": 84180,
+   "sha256": "853a10308680cacd40481438e028111d145129dbdd6194f702eadb422390047b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2510.png",
+   "kind": "terrain",
+   "bytes": 86350,
+   "sha256": "7ad7c525d242df7914c06c9d859955f2ca6c8ba42105c0821bf689d309db281f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2511.png",
+   "kind": "terrain",
+   "bytes": 85194,
+   "sha256": "b01d9d04c5ffc87549fc956aac81f75b3c40e5e708e8454497d91835c3483eb0"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2512.png",
+   "kind": "terrain",
+   "bytes": 94160,
+   "sha256": "de8250c1a8a2f9dabd6bcc83fe9a97c6e369492e2a41e7636bbab244d85bc862"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2513.png",
+   "kind": "terrain",
+   "bytes": 102165,
+   "sha256": "1fc7fff09afc895eccde6a11feb0ba526b46bb3f58e6afa0801dd96cf6682952"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2514.png",
+   "kind": "terrain",
+   "bytes": 96725,
+   "sha256": "f2b76cb14cad88fa18389887e88f43daf510f7e8afb29622523469d0b88648c9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1559/2515.png",
+   "kind": "terrain",
+   "bytes": 93275,
+   "sha256": "709168c0154684910c824d0b54601f31fb5fcd846bc998789b68457960eb818f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2500.png",
+   "kind": "terrain",
+   "bytes": 91902,
+   "sha256": "2eb57f9981a9598d74a8539f739f02e95d89929594fa2dc32b789b10b8b4f1e6"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2501.png",
+   "kind": "terrain",
+   "bytes": 92597,
+   "sha256": "e3b6513f939c9ed08270708b3f9c22d557857216d0bb566721c47c787129f867"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2502.png",
+   "kind": "terrain",
+   "bytes": 90780,
+   "sha256": "860642d72549e45dad1e0a043e9bdb319c99857a6b9d742f93532da311c490c3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2503.png",
+   "kind": "terrain",
+   "bytes": 86851,
+   "sha256": "d38b2350ed731f6532bfd5aa2e44a5e7b269bc103ddb67e4fb39111c0b9927a0"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2504.png",
+   "kind": "terrain",
+   "bytes": 93797,
+   "sha256": "4a1baaf28993f9f9d30f320e14966b57e0748fdd02eb645e5a47e7300429616d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2505.png",
+   "kind": "terrain",
+   "bytes": 93586,
+   "sha256": "f6d1915379f8473bfb1be779e532432dd8ecf3bd791841ab7adefc392d35d5ce"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2506.png",
+   "kind": "terrain",
+   "bytes": 89482,
+   "sha256": "64b760915613ac9fe78677f3cc0947df5b30a2a1ae0bcfbfda6877d098ed6a51"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2507.png",
+   "kind": "terrain",
+   "bytes": 87067,
+   "sha256": "d69fd3e0bba78ed4c85c794f8c3b462f893ae9a346c1d6f3ff0e3d7cda6397d2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2508.png",
+   "kind": "terrain",
+   "bytes": 88172,
+   "sha256": "8cd92eef94c0d86ddd474877f94a9f437a4ff7ea158671df33444f86959c8e62"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2509.png",
+   "kind": "terrain",
+   "bytes": 96526,
+   "sha256": "5ffe47047ccaaf0d6c7840f0b476e08289d93770a3d6028b218d8a16d9525ac8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2510.png",
+   "kind": "terrain",
+   "bytes": 56911,
+   "sha256": "99da602cdbd47c44e6938b641cb63c93d84fff12d16f2b90d71ea8e8a92a5419"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2511.png",
+   "kind": "terrain",
+   "bytes": 93692,
+   "sha256": "e294e338999d1b2fe3bdfb70f4436b73c577c59434d0c86250ed530eed9cb057"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2512.png",
+   "kind": "terrain",
+   "bytes": 80629,
+   "sha256": "98b2d478b88a87716f596be003facb3fb3ff1325cd0c377425dde688cca964d3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2513.png",
+   "kind": "terrain",
+   "bytes": 85013,
+   "sha256": "d196e1aeb7aa6443743f84ebba6bf478cf079827903717304cbfecb1464610db"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2514.png",
+   "kind": "terrain",
+   "bytes": 87933,
+   "sha256": "9ee9864607ba03af71e7010acbe7d29afda70eae77927bef1e5e3a494b9c7e42"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1560/2515.png",
+   "kind": "terrain",
+   "bytes": 82939,
+   "sha256": "15a09312bff40e3d72687a614e5b15f0db4d68d00a99dda1e3bc7bf6b7fabd82"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2500.png",
+   "kind": "terrain",
+   "bytes": 81504,
+   "sha256": "64341454fc8f75c84ceeafa2b1c8ac8f56ef84062ff5e570410b5d320c25128d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2501.png",
+   "kind": "terrain",
+   "bytes": 89805,
+   "sha256": "8da20d7c6d5099bb075886611b4781e973880180cad91a02602a1cf7a72d6ca9"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2502.png",
+   "kind": "terrain",
+   "bytes": 90121,
+   "sha256": "cd7396453de7561853e66bcd5c4a70fe092ce29631779bd6c8d50f48e06c50ed"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2503.png",
+   "kind": "terrain",
+   "bytes": 89756,
+   "sha256": "47d1dafaddf24bbb22fd1f7d8a23ccc50d65c511f41e2599d7c027a6fc41feb3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2504.png",
+   "kind": "terrain",
+   "bytes": 88559,
+   "sha256": "9d5b4859c96c7677d951e965603112208668af65924abae2318a9f83cb67a682"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2505.png",
+   "kind": "terrain",
+   "bytes": 87897,
+   "sha256": "00b8764b96fb9b60534b4a26417bb927164886ef002b1f75385ffe1973bbb4cd"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2506.png",
+   "kind": "terrain",
+   "bytes": 85124,
+   "sha256": "95c93176569bc8446a7a3055b4340a362b0599190e75a8df684c505c3fcad583"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2507.png",
+   "kind": "terrain",
+   "bytes": 79832,
+   "sha256": "96d155f6d33213575abef87b5a3e7316af8efa9a2a683d527c3ab582eac5e2dc"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2508.png",
+   "kind": "terrain",
+   "bytes": 82782,
+   "sha256": "f78018f54015115f437c0d135a1775e325dab4c70395d478c41c1ab0e3758e10"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2509.png",
+   "kind": "terrain",
+   "bytes": 94570,
+   "sha256": "d111b1b4373c31276e9f808d50d44bddef5c8f854155371fe5b6b545abfbae4a"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2510.png",
+   "kind": "terrain",
+   "bytes": 84937,
+   "sha256": "053a186920c4de2d3bf9f8ebf47895a1bcea61f9ee17afbaf865e349d2f32817"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2511.png",
+   "kind": "terrain",
+   "bytes": 100340,
+   "sha256": "3a5026c1d795ff8b8dd8d73c25d8cf41b36b40cbd83a82edde34ca6b95633b91"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2512.png",
+   "kind": "terrain",
+   "bytes": 82767,
+   "sha256": "54255d6fd62252c3332ca39b97c2f523030f60ce6214cdee89d8112e906cda04"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2513.png",
+   "kind": "terrain",
+   "bytes": 39617,
+   "sha256": "caa66867600b7d2100d5606bd0839720a7a136bda2fd742fab2e89acbbc77bdc"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2514.png",
+   "kind": "terrain",
+   "bytes": 87695,
+   "sha256": "73e7bab72015406d4762f3b569b641e53abfc6f4a2814d276dfa09f09c567699"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1561/2515.png",
+   "kind": "terrain",
+   "bytes": 86185,
+   "sha256": "e7bfe22c32dd9a3d9e1f002ca1a992e122891659ab4e61b63b33b773146cf7f2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2500.png",
+   "kind": "terrain",
+   "bytes": 63103,
+   "sha256": "aa4be8714156d5dc9c45ce25d63bf5049e35629e0ed1e4b46f62e13ac6097a51"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2501.png",
+   "kind": "terrain",
+   "bytes": 80923,
+   "sha256": "cba23a83e428b4fa4831240aba05f2f5e98c29ae6bcc5ace8f669310f5f6f066"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2502.png",
+   "kind": "terrain",
+   "bytes": 86747,
+   "sha256": "4f149a3cbf4a94a983d29e8cdb7fd68141cc7a3c1c6ae8f046e58b0d4a213487"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2503.png",
+   "kind": "terrain",
+   "bytes": 89366,
+   "sha256": "67376548fc6c3f2b475d0bf34b078b426c30ee9bab0cb4fbf089e2eaa9ffed25"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2504.png",
+   "kind": "terrain",
+   "bytes": 90060,
+   "sha256": "d6bc8ca55492605e22341be8b10e9f7cf93dbb162abe918437202f9185d440e1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2505.png",
+   "kind": "terrain",
+   "bytes": 88575,
+   "sha256": "9725543ca89e5ca7a9cf8955a49f46ee5440e51cb7299e32ef80ba06e5157645"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2506.png",
+   "kind": "terrain",
+   "bytes": 89937,
+   "sha256": "e905f3235753c0cbd75bd87ac4593679a5ec9ecee7583483459b837deeea7f40"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2507.png",
+   "kind": "terrain",
+   "bytes": 89955,
+   "sha256": "9447bc2b85eb3bc79e736309623678c95548567d619a645d21af02fb52eacb43"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2508.png",
+   "kind": "terrain",
+   "bytes": 90756,
+   "sha256": "de98e5da0de7379cc31d0ccf17c6c12dda1a237460a1a64d12c6df4a17cb3275"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2509.png",
+   "kind": "terrain",
+   "bytes": 89434,
+   "sha256": "fb1474558ddab31c70bdae47be5c6ca69b8ee5a69689e4287093e4a1925bb8f4"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2510.png",
+   "kind": "terrain",
+   "bytes": 99439,
+   "sha256": "c64871e5a7ff01966c94aad93ccfeddbd6c008575a5ed92b42afdca722894c18"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2511.png",
+   "kind": "terrain",
+   "bytes": 99828,
+   "sha256": "7195bc48daa50c0abd62e987a80795a13ded24edf2b5577aa83caaf66627d60b"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2512.png",
+   "kind": "terrain",
+   "bytes": 85601,
+   "sha256": "01732651095efdfb76c7c189cdb976dc0b693ef76ffa7f23e5d33cf1c3fdcd9d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2513.png",
+   "kind": "terrain",
+   "bytes": 57342,
+   "sha256": "4673958a4bc70c47d441908266d0dcb4ff125a40a70180d54baed98c35562490"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2514.png",
+   "kind": "terrain",
+   "bytes": 58556,
+   "sha256": "8d66d4cb5baac2e6727f0d73fa6f4080e95bcf99748876063b5ca7da25b48e7f"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1562/2515.png",
+   "kind": "terrain",
+   "bytes": 32750,
+   "sha256": "d47948884ac8a60499859cbd34b6cdca1b1add787d2866dea89224db8b778fa5"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2500.png",
+   "kind": "terrain",
+   "bytes": 81138,
+   "sha256": "975479360b2061f42c4917cf1b1e4d3333fa0099d55cfd11913f5ae1803751e2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2501.png",
+   "kind": "terrain",
+   "bytes": 84565,
+   "sha256": "cf78043fe361afc0f2ad4a9d682a3b3dbb8d5b7a0d1425766fda4b9c536eb405"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2502.png",
+   "kind": "terrain",
+   "bytes": 85659,
+   "sha256": "c74bb62ede482bb1a08b37cac06053e92081ab486c92c3eb6628cfe2b19efce2"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2503.png",
+   "kind": "terrain",
+   "bytes": 87692,
+   "sha256": "ac2a9c54c249e0f16caba58b417cf78c331d2af3dff7276460c5ea866af08295"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2504.png",
+   "kind": "terrain",
+   "bytes": 86028,
+   "sha256": "b73f63bf0072fc37c1030aef3ca804f64a656f1c0cec23a931385a051dfb1c8e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2505.png",
+   "kind": "terrain",
+   "bytes": 93963,
+   "sha256": "866b520b31363bf1ec7f6dd9229e16045752b228dc758ed320c968523ab96c82"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2506.png",
+   "kind": "terrain",
+   "bytes": 92618,
+   "sha256": "fcc0c795e136f83363922fadb2350d35e56702bc02baba8520d07535671ab7d3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2507.png",
+   "kind": "terrain",
+   "bytes": 96608,
+   "sha256": "363c3a3cd1ea317c8d3013ee2e13e4b9cd0ba8e18363bbd4e24baf0fd7ca8e8e"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2508.png",
+   "kind": "terrain",
+   "bytes": 98392,
+   "sha256": "0b89db323e8ff3b8ff0858a510cb02b9b8ecd16ed7af9eaaf5f9661ce3520f8d"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2509.png",
+   "kind": "terrain",
+   "bytes": 86658,
+   "sha256": "fe75c295572cd64135f91a3fc7c10b0a492d20fd30dc79b0a28ceadd1b452195"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2510.png",
+   "kind": "terrain",
+   "bytes": 99969,
+   "sha256": "ce0daee2b75299545199f4ff6d4eee71a0a4bcaa2378144a9a227a71ec9ec2c8"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2511.png",
+   "kind": "terrain",
+   "bytes": 92487,
+   "sha256": "3e9dcaf503ba5f4386ab9dee524628cc0c4a67401179d197763b4af855efeee1"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2512.png",
+   "kind": "terrain",
+   "bytes": 88922,
+   "sha256": "1e53f18ae2ee12a24c29c6bafefb988aa1d108037da868e4c860919453a3f777"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2513.png",
+   "kind": "terrain",
+   "bytes": 90825,
+   "sha256": "a39bf892d3b6d8499e4cf22520b5a89465dc473d01d02e326297f5fcba1af4ad"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2514.png",
+   "kind": "terrain",
+   "bytes": 86357,
+   "sha256": "48a0374c06f4907ec7a11a2a6e14f2a52528bed8b6251c41cb75d06f7da09bb3"
+  },
+  {
+   "path": "sites/athabasca-mildred/terrain/13/1563/2515.png",
+   "kind": "terrain",
+   "bytes": 89968,
+   "sha256": "5ed151075d1f47f09d0573e7e32ba379c5a4aeeaa28dae53710802509a3df1e1"
   }
  ]
 }

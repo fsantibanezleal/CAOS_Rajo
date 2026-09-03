@@ -120,7 +120,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -171,7 +174,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -222,7 +228,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -273,7 +282,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -324,7 +336,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -375,7 +390,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -426,7 +444,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -477,7 +498,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -528,7 +552,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -579,7 +606,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -630,7 +660,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -681,7 +714,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -732,7 +768,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -783,7 +822,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -834,7 +876,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -885,7 +930,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -936,7 +984,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -991,7 +1042,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1046,7 +1100,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1097,7 +1154,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1152,7 +1212,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1207,7 +1270,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1258,7 +1324,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1313,7 +1382,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1368,7 +1440,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1424,7 +1499,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1479,7 +1557,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1530,7 +1611,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1581,7 +1665,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1637,7 +1724,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1688,7 +1778,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1739,7 +1832,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1790,7 +1886,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1841,7 +1940,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1892,7 +1994,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -1943,7 +2048,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -1994,7 +2102,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2045,7 +2156,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2096,7 +2210,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2147,7 +2264,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2198,16 +2318,654 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {
   "1987": "no scene under 60% cloud inside the season window in either archive"
  },
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "landsat-7",
+   "landsat-8",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a"
+  ],
+  "valid_frac": [
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9999,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9967,
+   0.9983,
+   1.0,
+   1.0,
+   0.9998,
+   0.9984,
+   0.9999,
+   1.0,
+   1.0,
+   0.9998,
+   1.0,
+   0.9963,
+   1.0,
+   1.0,
+   0.9991,
+   0.9985,
+   0.9981,
+   0.9281,
+   0.9835,
+   0.9801,
+   0.9973,
+   0.997,
+   0.9888,
+   0.9981,
+   0.9911,
+   0.9995,
+   1.0,
+   0.9989
+  ],
+  "envelope_km2": 112.2804,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    111.5829,
+    111.7116,
+    111.6252,
+    111.4038,
+    111.5271,
+    111.5127,
+    111.1743,
+    111.2832,
+    108.8253,
+    107.6094,
+    110.8782,
+    110.3778,
+    110.5839,
+    110.5722,
+    110.1438,
+    110.8602,
+    110.745,
+    111.1671,
+    110.4966,
+    110.3931,
+    110.3211,
+    110.1708,
+    109.215,
+    109.3086,
+    108.7452,
+    108.4032,
+    107.4429,
+    107.7192,
+    107.9397,
+    107.8245,
+    99.8073,
+    102.4362,
+    104.0607,
+    103.4514,
+    102.1428,
+    100.9701,
+    98.0163,
+    99.4923,
+    98.0388,
+    90.9189,
+    92.1186
+   ],
+   "rf": [
+    90.4455,
+    83.1042,
+    92.3544,
+    80.6931,
+    80.4321,
+    89.3547,
+    106.8003,
+    95.6241,
+    96.0273,
+    96.8625,
+    98.2917,
+    101.2122,
+    89.4024,
+    59.8725,
+    89.4015,
+    81.4014,
+    77.5998,
+    70.4412,
+    82.3383,
+    91.746,
+    97.8291,
+    93.5469,
+    83.0322,
+    75.5559,
+    86.4297,
+    77.5224,
+    84.2382,
+    77.733,
+    79.704,
+    72.1566,
+    48.9105,
+    93.6549,
+    103.2372,
+    94.9329,
+    95.1849,
+    97.3503,
+    107.136,
+    99.6273,
+    106.9164,
+    104.7438,
+    104.7888
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.04247,
+    0.03689,
+    0.03488,
+    0.04112,
+    0.03642,
+    0.03668,
+    0.02279,
+    0.03075,
+    0.03457,
+    0.05233,
+    0.04165,
+    0.06587,
+    0.0396,
+    0.02811,
+    0.02667,
+    0.05267,
+    0.03651,
+    0.02375,
+    0.01889,
+    0.02399,
+    0.01467,
+    0.01461,
+    0.03156,
+    0.02829,
+    0.02002,
+    0.03124,
+    0.08171,
+    0.06542,
+    0.04777,
+    0.06005,
+    0.04296,
+    0.06523,
+    0.03898,
+    0.03198,
+    0.05692,
+    0.01719,
+    0.04118,
+    0.04315,
+    0.03555,
+    0.06296,
+    0.05645
+   ],
+   "mndwi": [
+    -0.22224,
+    -0.21354,
+    -0.21066,
+    -0.21954,
+    -0.21954,
+    -0.21228,
+    -0.16562,
+    -0.18473,
+    -0.19613,
+    -0.21364,
+    -0.21761,
+    -0.25653,
+    -0.21487,
+    -0.25316,
+    -0.21173,
+    -0.22089,
+    -0.2435,
+    -0.2174,
+    -0.21506,
+    -0.19967,
+    -0.19971,
+    -0.19952,
+    -0.1951,
+    -0.21329,
+    -0.20847,
+    -0.21251,
+    -0.23092,
+    -0.25087,
+    -0.22826,
+    -0.2327,
+    -0.23276,
+    -0.22472,
+    -0.23813,
+    -0.27447,
+    -0.31268,
+    -0.25552,
+    -0.33224,
+    -0.26786,
+    -0.2736,
+    -0.28388,
+    -0.29259
+   ],
+   "bsi": [
+    0.14571,
+    0.14364,
+    0.14307,
+    0.14567,
+    0.14819,
+    0.14304,
+    0.12167,
+    0.1286,
+    0.1328,
+    0.13468,
+    0.12815,
+    0.13741,
+    0.14117,
+    0.15187,
+    0.14817,
+    0.13008,
+    0.14897,
+    0.14619,
+    0.14785,
+    0.14316,
+    0.13979,
+    0.14064,
+    0.14324,
+    0.14213,
+    0.14365,
+    0.14146,
+    0.12364,
+    0.17264,
+    0.17455,
+    0.1425,
+    0.1704,
+    0.14329,
+    0.17003,
+    0.20188,
+    0.2073,
+    0.20047,
+    0.25218,
+    0.19871,
+    0.21371,
+    0.21551,
+    0.22546
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 41,
+    "pelt": {
+     "breaks": [
+      1994,
+      2010,
+      2016,
+      2021,
+      2024
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1993,
+       "mean": 111.4776,
+       "slope": -0.0595
+      },
+      {
+       "start": 1994,
+       "end": 2009,
+       "mean": 110.1043,
+       "slope": 0.031
+      },
+      {
+       "start": 2010,
+       "end": 2015,
+       "mean": 108.0124,
+       "slope": -0.1634
+      },
+      {
+       "start": 2016,
+       "end": 2020,
+       "mean": 102.3797,
+       "slope": 0.5686
+      },
+      {
+       "start": 2021,
+       "end": 2023,
+       "mean": 99.4929,
+       "slope": -0.7389
+      },
+      {
+       "start": 2024,
+       "end": 2026,
+       "mean": 93.6921,
+       "slope": -2.9601
+      }
+     ],
+     "penalty": 4.316676,
+     "sigma": 0.62247,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1996,
+      2018
+     ],
+     "k": 0.311235,
+     "h": 2.489878,
+     "sigma": 0.62247,
+     "target": -0.1152
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 41,
+    "pelt": {
+     "breaks": [
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2016,
+       "mean": 84.8408,
+       "slope": -0.6288
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 100.7572,
+       "slope": 1.1744
+      }
+     ],
+     "penalty": 1443.089506,
+     "sigma": 11.381253,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 5.690627,
+     "h": 45.525012,
+     "sigma": 11.381253,
+     "target": 0.1485
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1994,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 4.316676
+   },
+   {
+    "year": 1996,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 2.489878
+   },
+   {
+    "year": 2010,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 4.316676
+   },
+   {
+    "year": 2016,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 4.316676
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 1443.089506
+   },
+   {
+    "year": 2018,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 2.489878
+   },
+   {
+    "year": 2021,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 4.316676
+   },
+   {
+    "year": 2024,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 4.316676
+   }
+  ],
+  "gaps": {
+   "1987": "no scene under 60% cloud inside the season window in either archive"
+  },
+  "dense": null
+ },
+ "dem": {
+  "site_id": "cerro-verde",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -111.1,
+   111.1
+  ],
+  "geoid_offset_m": 1.419,
+  "stable_bias_m": -6.455,
+  "noise_floor_m": 2.488,
+  "tau_m": 4.977,
+  "stable_ground_px": 109811,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 493757728,
+  "fill_volume_m3": 644214272,
+  "envelope": {
+   "cut_m3": 493757728,
+   "fill_m3": 644214272,
+   "cut_km2": 14.9886,
+   "fill_km2": 22.2066,
+   "min_m": -386.0,
+   "max_m": 180.3
+  },
+  "window": {
+   "cut_m3": 661697344,
+   "fill_m3": 806579904,
+   "cut_km2": 38.8296,
+   "fill_km2": 44.9919,
+   "min_m": -386.0,
+   "max_m": 180.3
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/308/559.png",
+   "terrain/11/616/1118.png",
+   "terrain/11/616/1119.png",
+   "terrain/11/617/1118.png",
+   "terrain/11/617/1119.png",
+   "terrain/12/1232/2237.png",
+   "terrain/12/1232/2238.png",
+   "terrain/12/1232/2239.png",
+   "terrain/12/1233/2237.png",
+   "terrain/12/1233/2238.png",
+   "terrain/12/1233/2239.png",
+   "terrain/12/1234/2237.png",
+   "terrain/12/1234/2238.png",
+   "terrain/12/1234/2239.png",
+   "terrain/13/2464/4475.png",
+   "terrain/13/2464/4476.png",
+   "terrain/13/2464/4477.png",
+   "terrain/13/2464/4478.png",
+   "terrain/13/2464/4479.png",
+   "terrain/13/2465/4475.png",
+   "terrain/13/2465/4476.png",
+   "terrain/13/2465/4477.png",
+   "terrain/13/2465/4478.png",
+   "terrain/13/2465/4479.png",
+   "terrain/13/2466/4475.png",
+   "terrain/13/2466/4476.png",
+   "terrain/13/2466/4477.png",
+   "terrain/13/2466/4478.png",
+   "terrain/13/2466/4479.png",
+   "terrain/13/2467/4475.png",
+   "terrain/13/2467/4476.png",
+   "terrain/13/2467/4477.png",
+   "terrain/13/2467/4478.png",
+   "terrain/13/2467/4479.png",
+   "terrain/13/2468/4475.png",
+   "terrain/13/2468/4476.png",
+   "terrain/13/2468/4477.png",
+   "terrain/13/2468/4478.png",
+   "terrain/13/2468/4479.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 1993.0,
+   "max": 3205.0
+  },
+  "cop_stats": {
+   "min": 1988.6,
+   "max": 3205.0
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/cerro-verde/dem/cop.png",
+   "kind": "dem",
+   "bytes": 460751,
+   "sha256": "780a7584bf2b46a179cf8bd79a97025ed40cee89d0b9677777d0ed4682afeb7b"
+  },
+  {
+   "path": "sites/cerro-verde/dem/delta.png",
+   "kind": "dem",
+   "bytes": 697791,
+   "sha256": "f28b7ba5b9071f7f8ef506557b9f7e6326efd28539f6aeedca91a034a19a3ef2"
+  },
+  {
+   "path": "sites/cerro-verde/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 444309,
+   "sha256": "8dacb79a3a24e3ed6bef4218150b6f311543f9615aa45f6dfd6ee4197094644e"
+  },
   {
    "path": "sites/cerro-verde/frames/1985-swir.webp",
    "kind": "frame",
@@ -2783,10 +3541,900 @@
    "year": 2026
   },
   {
+   "path": "sites/cerro-verde/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 3910,
+   "sha256": "5cc1d97e0def9f3abb0e912836cdb3aa7f60f4e10f999ed73eca2cdfd5f0f2a7",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 20749,
+   "sha256": "f70d62467011be8cd5630f2915abb51db1ba93887a31b358660fdc0830d17165",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 2902,
+   "sha256": "ac37d9f08be4770287dfeb37150f3de9c7752a734a71a3563585d1a2ae807d82",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 20891,
+   "sha256": "be7cf7d37b0c1ecbb939e3e13925461b6a480a6aade3cf31cb63826836d971c1",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 3350,
+   "sha256": "c988d1ecc88fb356fd69a720d211279dedba6a655996f02201a684ab75669e72",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 19931,
+   "sha256": "377a044ad289a6bee5aecc2bd019e415cdcc3c795aa799622e62b1cf4df7f474",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 3039,
+   "sha256": "7b109d4835cea7b99f00329b1aaac652c1030b42312dc3db2e3b7c750e84322c",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 21837,
+   "sha256": "b2a9e901e45c2e9290e48c2baba7bf7351b10ae5c4a73bcd9ca42c6313137262",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 3073,
+   "sha256": "5678da15ff45f260664e1fc7d33acf7a5a350bfa52ce7330a592aec47cdbd3f9",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 20901,
+   "sha256": "65547edaa10277443f812c9ed2b2e1a153865a6aedea4c77cc496beec9384794",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 3369,
+   "sha256": "aca079339d02c48e4c6ed8481e419eede68d29fd89a9f09f2257f012dc429d33",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 20197,
+   "sha256": "9cce19b01a3d1d8d1c220c82f48b0647865e99eca4e0d60beea6ee11f0cfcbf2",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 4277,
+   "sha256": "9c2990d04552d63c2189f96ec1db93a1800becc47a953e64ce6c46bc3abab905",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 10758,
+   "sha256": "f9044af62f31a6675734627d56cc5a70653c876d5847975c426508e039568fb6",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 4029,
+   "sha256": "cb2724894c8ad11f359f8bc59ee038e64b1dfbca4b1c2ada531169bc297c0266",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 16491,
+   "sha256": "a93e7212623004fa86aa272f32ed12e1c07002a23e33fc78f08579c1b2891e5c",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 8170,
+   "sha256": "2021c7552d033f98dca25418460d0e014c0e248f2278ae97f9c7ce5ba3035940",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 18099,
+   "sha256": "5d4c5bde9f36699fef39b5fd82ef856c3beca0293bb2297a15e5b7d0a5d7aca8",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 10043,
+   "sha256": "7bdc520da2307518db05f535269c3d9d080b5550f559baa2c414c84e4993d6b6",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 19391,
+   "sha256": "a11a12c3b958ab510df3cfc1858d09683b1b77d24fec7a28be8ea658609d484d",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 4972,
+   "sha256": "ec9a422d327a40ce770c129f683b01f6090e4abb382e6a375725ac90a8303144",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 16692,
+   "sha256": "dfc27a6a1bc69f63830a9d0ce4cd45cb78220d6511eb3d03f74b47e34832040f",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 5259,
+   "sha256": "4837a7a9a1d1ee52517129e9f4b48d24a8e2c796c4a2530e48a8bb8dee18e7f1",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 17001,
+   "sha256": "0495c3596ce42a9568878ff0f1b47761cab657e4097a94c69fae8ae9833a4c61",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 3336,
+   "sha256": "9949347ce6f30799ad795d847bda6caaa5e96853aff1ecf3f0f7f86d2c6e8d3f",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 19650,
+   "sha256": "56540c31a38a1b30f1f60611bd84d825806b6d00ec601c35f3342863c9aa46e5",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 3090,
+   "sha256": "6644cd889887541d8a76d4493bc4250cac2631a87bc7af4a270ff580e7b6cc77",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 19735,
+   "sha256": "83fa19aa77f0d5d8dc77da5e940b6f48ccb95ff50cb950efac2a6d2a3b2ba430",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 3872,
+   "sha256": "e7ff195f6567f5dfc1c54e049b7cf8816cee145b3b357fafc695df691143a1cc",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 18737,
+   "sha256": "f48c18ede3a5561b30dc2da9d15a513c378934d15434fb3dbfa5f1740c0880ae",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 3798,
+   "sha256": "2bf44119fddfa58d53a90b68de73e21c2f917ee84781900221905baddb2caaee",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 20158,
+   "sha256": "4867402ef5717cea54a78800b2bdff147ddbaeeb43599335780fa45f9b93c79d",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 3334,
+   "sha256": "9910deb2befd9fbd197a8a35b48a5a6dcf01e22f1f7248582f4e855e7ce152f5",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 23090,
+   "sha256": "9bbdffc8e0d54440c6cd858936d3ca44884ea99a34b7dce1bd4a4853a8c19cf1",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 2942,
+   "sha256": "74aabe23f74797567726a8d41a8a5e6372b28c6d92779c936c812cd46405f727",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 18463,
+   "sha256": "ca12375882821e6912e33dadc6f798d0ec586df695c96e9600b6231c80d6dad8",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 3873,
+   "sha256": "7a123e27d7a6a267ad8f4c38cad5f695f2f0cb8e22d2a6c138421e473f8a726a",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 19161,
+   "sha256": "ed494febfe014b7e734485f96c55eebd0f11bc17da47423e4490b188b7285717",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 3890,
+   "sha256": "2d97d403d2643a0ff71fe78006b8c6d732d822cd9a6a8027a2062ee1bcb18d8f",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 16479,
+   "sha256": "c05375f4077acdc8db63ccb488b49fac1d2aa89bebe028134872e73c8954de83",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 4088,
+   "sha256": "1b194fb7995f174eb55ae667acf2800191dd401539a0ac1552ff8614b183c433",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 15935,
+   "sha256": "8a57393ee21eb01d5c1c206ef7a8ff53f0bfda8ff8c676ea4d321990db29c09b",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 3682,
+   "sha256": "cc1d83af0f413e62339183b9b77b55608e67fdb90bf3ba22b88b01514679c5ad",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 17735,
+   "sha256": "82559010d39bd6b5804251a878c5ffd1d9e27f809033f993290e19a3eb11987d",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 3666,
+   "sha256": "f716747bb85ad55dc213f407c4ba20353f2588648e7d766b18d4c8db1093b28d",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 20812,
+   "sha256": "22cecccd8ce76a0493eae86eaa2b3ab64e91750f116d2b5a63208b5ed377572d",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 3456,
+   "sha256": "14a12b538d91b88d7e07a92ef9b9d8e8a7167ce5fe7406bc7864101d34e8ed94",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 21802,
+   "sha256": "9bd45239ce21496de7731daeca9aeebb3ee067ccb20ce56b18740a26a7a172e3",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 4170,
+   "sha256": "1b8f6fdf30ad7c0a068cc45d66a7ec5af80537a34c24a48590d2d5af1bf5c558",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 18959,
+   "sha256": "5faa5d47740bf306dc234ab8e40fd822490f4a6f6ef005fc579960a169afba22",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 3686,
+   "sha256": "eba7d717e307dfc3d36101cbac5aa6e74654d7f3624858963064f84bf4208a29",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 21726,
+   "sha256": "b986d8f402857995d49bbb0bf79a331bd2c926c021c04451bf0a298661299f5c",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 7703,
+   "sha256": "e69610014a069cb3cd44ea64d6f688c1e5cf88360d6c56d3971f326bcb67c071",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 21457,
+   "sha256": "58165bf0a643580eb3ac7035cd90eeb676d2b992f3288e5c38bde3bf274de843",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 6046,
+   "sha256": "d48a5bf0304fc07fc8297fddd826c51b387bb90329d7456a21908a7a88cc4d50",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 22623,
+   "sha256": "e992da5dc0ade0b459ad389aca5b4c27a7ad3b46824dabfe8e8f386f930586a2",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 4242,
+   "sha256": "8263a55384399273b77428230d6cfbeafa9e7debdb46db4079b7b52b4935cdd2",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 22204,
+   "sha256": "a12434a9358ba853458218258b2a9108dd609550cb302e2171149bc5e4c71bf1",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 4893,
+   "sha256": "e3bbc0df3ed78899d8900cac3003d25e5a4d108fac73ec176d876848ceb9d13a",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 23661,
+   "sha256": "0b57909259c48495f1a2e99d48409f7c536962ff22c7ba596dc7fd50095925ab",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 4917,
+   "sha256": "85494efe8c1734615fd686b87368bb5e475a11b0e7300746100b05fbee00fdb3",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 20602,
+   "sha256": "7390b50f8883f358ba368479185472413feea70f7d3a809de2bff6b18d282579",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 12558,
+   "sha256": "ad66962d8ec54cd0f1e4fb9fe28391f94dc0cdaec8a47c41a54048ff74bdae59",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 21076,
+   "sha256": "3e18918bf3a47b6d39012c01980d1fdf1e00706bf9bbc9d3ab647d10f5ac8c5b",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 6567,
+   "sha256": "b05f3eb14f091f5fdb8779ab3ea46b33acfa4d5d0e2a9b391a8cf71328cc9a77",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 20465,
+   "sha256": "e8d3639bfd07fd73e3801a79a5a68ce2630d2ecb9d2dfb1c491b1e2f0a785532",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 6101,
+   "sha256": "5560acbb81fe7fa2aec5ba4120e0b3cfcec42d9b93711ff9499d6c7cfd241dd3",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 21544,
+   "sha256": "5978b68d1eb001ed27a4142da828ca1dd3b0cf3bc927a1287e322e0b57a24268",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 9775,
+   "sha256": "738eff934f85e5d01aa21901c1ffdef1962b163767c065e7f2928bf826d05c46",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 21035,
+   "sha256": "5b661d61e08def5fc78c989cc44150489085a3786ed0786a3cf518c1c56dfa5d",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 5306,
+   "sha256": "ceed619b3cb61193e5eff0c9607df4cac0169e5b66d4403388219adc579ce5af",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 21712,
+   "sha256": "8da56c8c49904f5335c374fa4792c3429a7c83c480ae05637404407f81f9e83f",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 13351,
+   "sha256": "1f8ce6dc36cbe41535e209ba3492c15ca08a8cccaa0394f68bcf66acb5a292cd",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 15837,
+   "sha256": "aef091ddc72d3370610bcd39a43bd593a150d3f95f4173a381dfeb69c39db750",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 7925,
+   "sha256": "d006ee5d7077e0527b71cd8870b555e4b3a4a54cfed3f61a88adccd97de04321",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 20734,
+   "sha256": "eee5b46ea529b8954f851e7282d7cbf4a1eeb6386634ffc1cc8d71fae7e48afb",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 10033,
+   "sha256": "99aaedb223dcc30601a3747705c87bd9e9e75e9667b5397d62d941a39f754d31",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 17338,
+   "sha256": "0be43d56ecfd67802424ba20cea7e946afbb58ebb3bf9db50451290295a0de9b",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 13355,
+   "sha256": "c5caa7ccb330497697b71c7732ba1339f39992f3677c35cb0b5c280648be762f",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 18369,
+   "sha256": "64ff5910a49e79be2a5835aefbadebecfa10f92157c0a2a88a5e201dc8bdf443",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 14810,
+   "sha256": "cc4ad053c8aed034f5c55acb60b9c03d30cf25dce4da3ac80aebc1b92b548273",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 19345,
+   "sha256": "cddb9813127feb800a25377387029b5561ea9b385ad6f4a5e60f2a95f804bba7",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/cerro-verde/polygons.geojson",
    "kind": "polygons",
    "bytes": 25355,
    "sha256": "3fc718257437d76d215987ee67a97a350e78c6e835c0e568a0010061359937f1"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/10/308/559.png",
+   "kind": "terrain",
+   "bytes": 145831,
+   "sha256": "215979c44aee4fe94bafc18742540ef3e480fb2102caf31725b945171ae5c9fb"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/11/616/1118.png",
+   "kind": "terrain",
+   "bytes": 135983,
+   "sha256": "c5617fd904b0a13dc2c556df868d435ec6cf15dc700ee38ddca2ee8c2912bab2"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/11/616/1119.png",
+   "kind": "terrain",
+   "bytes": 143574,
+   "sha256": "9dffe7b8b6e013c82e25973c344d48d82594ebdfb4cc1048542a03c6969e87f2"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/11/617/1118.png",
+   "kind": "terrain",
+   "bytes": 139614,
+   "sha256": "fbc0a3bf406b81c9a5276c79a123914574d1b6151bd82540eb9272651902515f"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/11/617/1119.png",
+   "kind": "terrain",
+   "bytes": 139716,
+   "sha256": "c71ecdf731d6359359c4019467b082269bcf8c865ddc5198c05d1d5554cc9f7d"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1232/2237.png",
+   "kind": "terrain",
+   "bytes": 132139,
+   "sha256": "0b95ac026b61b1257a9370f2b3c80b7b71277ace79ebebce756081dc7214494c"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1232/2238.png",
+   "kind": "terrain",
+   "bytes": 135567,
+   "sha256": "89cf5c1e31463df29758739e1953d86e28cb9f28587560bcfa428a1fd4be2d47"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1232/2239.png",
+   "kind": "terrain",
+   "bytes": 136951,
+   "sha256": "7e02de0fb8f8bda324d03e16259114a8d4f78d7975035742f086b43428f7912f"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1233/2237.png",
+   "kind": "terrain",
+   "bytes": 123006,
+   "sha256": "e3ae889b6a3703bbd14488f17c114ee7a2de826e219f032b2ba35743be448062"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1233/2238.png",
+   "kind": "terrain",
+   "bytes": 134195,
+   "sha256": "dca61a7ccd62936a613bf8e09159f00784313327997e4cddf7066c2a4530156a"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1233/2239.png",
+   "kind": "terrain",
+   "bytes": 139116,
+   "sha256": "7ec3d12f0bb68c42ce0ae25caac9a5bc2f7fdfe993a47c387a6c9e22f700ce8b"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1234/2237.png",
+   "kind": "terrain",
+   "bytes": 127030,
+   "sha256": "cd847a1a2b0826acee4cf30a2efedc826f297e35a7b22c8fe85c87c01d000147"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1234/2238.png",
+   "kind": "terrain",
+   "bytes": 127218,
+   "sha256": "ec785f89eb101f03a10ff296bf1aaad28e666dc032629f1eaafe27ca8a19bdc4"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/12/1234/2239.png",
+   "kind": "terrain",
+   "bytes": 133321,
+   "sha256": "82c33c5b66ef50dfccb79f2492fdcb1dc8d4e02b13827532bdcfea1e2c46c5ad"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2464/4475.png",
+   "kind": "terrain",
+   "bytes": 123933,
+   "sha256": "872a89d45230eba80be8bbda8a74db11e313f4546147202f4ad061c2c4b1a50b"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2464/4476.png",
+   "kind": "terrain",
+   "bytes": 124848,
+   "sha256": "4f2a735aef7a276aded86383e7c0d4555417b107b5c515d16c5eea4aafeec558"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2464/4477.png",
+   "kind": "terrain",
+   "bytes": 120005,
+   "sha256": "92b43ba50538f0fadbb235e5107ed5323cf416deaea0fc780cd7c3236eae0fbe"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2464/4478.png",
+   "kind": "terrain",
+   "bytes": 128009,
+   "sha256": "93adc7e33ce956e56779b1bc537e54fe0bc04af61dca0c7d98e583e3338fdc46"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2464/4479.png",
+   "kind": "terrain",
+   "bytes": 129420,
+   "sha256": "533699b702de8b5ca952005b2a9732ed4f30ba82f6479988c898c52be10c00c6"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2465/4475.png",
+   "kind": "terrain",
+   "bytes": 127689,
+   "sha256": "87a0a17572ad1f1f74e0b52fe1883cfbd3469b40146ca3711f5f78f314c2daef"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2465/4476.png",
+   "kind": "terrain",
+   "bytes": 130072,
+   "sha256": "4745a7597569c36ab3ea03251da20a2b705d3774c950aa314bfcc6287be26337"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2465/4477.png",
+   "kind": "terrain",
+   "bytes": 129180,
+   "sha256": "f08bcfb91b1f4ce1808c6d545f892ce6eabc1d1136773e812f8d329e365fd94f"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2465/4478.png",
+   "kind": "terrain",
+   "bytes": 125958,
+   "sha256": "a835b527aa1ac9a75bea8c775fb833a8507186c34f9321ee3ad4e9a4fd4cc656"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2465/4479.png",
+   "kind": "terrain",
+   "bytes": 130913,
+   "sha256": "3b9651f132492244b655cf1eaf73711947ef152c78b8e7581621c4eeb6407237"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2466/4475.png",
+   "kind": "terrain",
+   "bytes": 117962,
+   "sha256": "7290fafafeb3c1c56a1b23e3fc53a36b7813b97e18d11d035e83cd1ce212655c"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2466/4476.png",
+   "kind": "terrain",
+   "bytes": 117903,
+   "sha256": "912f23658465db7faebb2ff297b2098209ccb68a351091ec737295cb02352701"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2466/4477.png",
+   "kind": "terrain",
+   "bytes": 126776,
+   "sha256": "3ac4de21daf73e983d4e02c0490af2f0ada91f868122760514b76bc213b6463a"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2466/4478.png",
+   "kind": "terrain",
+   "bytes": 129532,
+   "sha256": "ca1db1c7f038c158acd4329509011e68284b58d03de83a867711c3ea5eafced1"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2466/4479.png",
+   "kind": "terrain",
+   "bytes": 132754,
+   "sha256": "d4be86728f405cbcc06cac1b9968472cd4ea3bf12aec9c62298219697962fa57"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2467/4475.png",
+   "kind": "terrain",
+   "bytes": 112559,
+   "sha256": "3c1f9d9f8a2742b6c4700c59f89ad65d43cf6a03b10f03d298d7c363222ce8f7"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2467/4476.png",
+   "kind": "terrain",
+   "bytes": 129619,
+   "sha256": "8daec5ae6e78177943a7fda0864fbee2717e83dd21ab3cf8a56e6a1a08641f70"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2467/4477.png",
+   "kind": "terrain",
+   "bytes": 127452,
+   "sha256": "d774bfd69f019f6581d1111449a74b5bfe01bf09585c205fdafb434197a27eaf"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2467/4478.png",
+   "kind": "terrain",
+   "bytes": 131011,
+   "sha256": "a725164d2aca0982110f1fcdab339d256e2ac38bf9948b545ec853653c13c7a4"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2467/4479.png",
+   "kind": "terrain",
+   "bytes": 132408,
+   "sha256": "e2407e5034320f2bb69546dad5f2d72c0d047982a6fcd1ae686a8e2c4e4e4fa3"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2468/4475.png",
+   "kind": "terrain",
+   "bytes": 107768,
+   "sha256": "8e9f8ab89dced1839c21ad9dc6e1baad8945604983957fd85311611c574155ba"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2468/4476.png",
+   "kind": "terrain",
+   "bytes": 111703,
+   "sha256": "4c249f49c92f3c1b65faf7b5e0788bac70cf72a33f117eafee6c4d972bc12b39"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2468/4477.png",
+   "kind": "terrain",
+   "bytes": 119634,
+   "sha256": "bacf4bceea6410d7ac44aa9ae1f01f0a34da5dfca32d2385d7a1b52e64e65430"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2468/4478.png",
+   "kind": "terrain",
+   "bytes": 120802,
+   "sha256": "c5d858a29b2a3acd08479b75adbfdb4a7665938e6239fbf2c1358fa2fea7b723"
+  },
+  {
+   "path": "sites/cerro-verde/terrain/13/2468/4479.png",
+   "kind": "terrain",
+   "bytes": 128960,
+   "sha256": "058fdb94ec4230a9a914e02519799c1475e916fa9b878f72afc34a315ffe2163"
   }
  ]
 }

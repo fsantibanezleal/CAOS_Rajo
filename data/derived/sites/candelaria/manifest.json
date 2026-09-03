@@ -121,7 +121,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
   },
   {
    "year": 1986,
@@ -172,7 +175,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
   },
   {
    "year": 1987,
@@ -223,7 +229,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
   },
   {
    "year": 1988,
@@ -274,7 +283,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
   },
   {
    "year": 1989,
@@ -325,7 +337,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
   },
   {
    "year": 1990,
@@ -376,7 +391,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
   },
   {
    "year": 1991,
@@ -427,7 +445,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
   },
   {
    "year": 1992,
@@ -478,7 +499,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
   },
   {
    "year": 1993,
@@ -529,7 +553,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
   },
   {
    "year": 1994,
@@ -580,7 +607,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
   },
   {
    "year": 1995,
@@ -631,7 +661,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
   },
   {
    "year": 1996,
@@ -682,7 +715,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
   },
   {
    "year": 1997,
@@ -733,7 +769,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
   },
   {
    "year": 1998,
@@ -784,7 +823,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
   },
   {
    "year": 1999,
@@ -835,7 +877,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
   },
   {
    "year": 2000,
@@ -886,7 +931,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
   },
   {
    "year": 2001,
@@ -937,7 +985,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
   },
   {
    "year": 2002,
@@ -988,7 +1039,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
   },
   {
    "year": 2003,
@@ -1039,7 +1093,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
   },
   {
    "year": 2004,
@@ -1090,7 +1147,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
   },
   {
    "year": 2005,
@@ -1141,7 +1201,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
   },
   {
    "year": 2006,
@@ -1196,7 +1259,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
   },
   {
    "year": 2007,
@@ -1251,7 +1317,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
   },
   {
    "year": 2008,
@@ -1307,7 +1376,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
   },
   {
    "year": 2009,
@@ -1358,7 +1430,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
   },
   {
    "year": 2010,
@@ -1409,7 +1484,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
   },
   {
    "year": 2011,
@@ -1460,7 +1538,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
   },
   {
    "year": 2012,
@@ -1515,7 +1596,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
   },
   {
    "year": 2013,
@@ -1570,7 +1654,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
   },
   {
    "year": 2014,
@@ -1621,7 +1708,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
   },
   {
    "year": 2015,
@@ -1672,7 +1762,10 @@
    },
    "flags": [],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
   },
   {
    "year": 2016,
@@ -1727,7 +1820,10 @@
     "slc_off"
    ],
    "collection": "landsat-c2-l2",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
   },
   {
    "year": 2017,
@@ -1778,7 +1874,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png"
+   }
   },
   {
    "year": 2018,
@@ -1829,7 +1928,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png"
+   }
   },
   {
    "year": 2019,
@@ -1880,7 +1982,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png"
+   }
   },
   {
    "year": 2020,
@@ -1931,7 +2036,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png"
+   }
   },
   {
    "year": 2021,
@@ -1982,7 +2090,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png"
+   }
   },
   {
    "year": 2022,
@@ -2033,7 +2144,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png"
+   }
   },
   {
    "year": 2023,
@@ -2084,7 +2198,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png"
+   }
   },
   {
    "year": 2024,
@@ -2135,7 +2252,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png"
+   }
   },
   {
    "year": 2025,
@@ -2186,7 +2306,10 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png"
+   }
   },
   {
    "year": 2026,
@@ -2237,14 +2360,672 @@
    },
    "flags": [],
    "collection": "sentinel-2-l2a",
-   "masks": {}
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png"
+   }
   }
  ],
  "gaps": {},
- "series": null,
- "dem": null,
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "landsat-7",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b"
+  ],
+  "valid_frac": [
+   0.9998,
+   0.9957,
+   0.9975,
+   1.0,
+   0.9971,
+   0.9954,
+   0.9832,
+   1.0,
+   1.0,
+   0.9952,
+   0.9804,
+   0.9963,
+   1.0,
+   0.998,
+   0.997,
+   1.0,
+   1.0,
+   0.9881,
+   1.0,
+   0.9962,
+   0.9998,
+   1.0,
+   0.9909,
+   0.9943,
+   0.981,
+   1.0,
+   0.9864,
+   0.98,
+   0.9914,
+   0.9953,
+   0.9978,
+   0.9939,
+   0.9985,
+   0.9972,
+   0.9979,
+   0.9983,
+   0.9983,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "envelope_km2": 99.7866,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    84.9879,
+    93.9906,
+    84.5829,
+    92.7351,
+    94.2948,
+    93.6819,
+    92.5569,
+    94.4802,
+    94.6494,
+    92.7846,
+    92.5839,
+    91.4076,
+    94.4091,
+    92.0223,
+    91.3977,
+    92.8224,
+    50.7978,
+    91.4157,
+    91.566,
+    92.0952,
+    91.9368,
+    92.1807,
+    92.0169,
+    91.5183,
+    90.351,
+    18.7821,
+    90.4626,
+    90.3546,
+    92.1987,
+    92.2437,
+    92.2887,
+    93.0384,
+    93.3471,
+    93.5136,
+    93.2661,
+    93.8907,
+    93.1464,
+    87.6339,
+    87.3333,
+    90.0324,
+    88.4682,
+    89.4213
+   ],
+   "rf": [
+    82.1853,
+    70.9632,
+    47.205,
+    54.8856,
+    79.6482,
+    58.2255,
+    66.5262,
+    59.1759,
+    43.299,
+    73.9665,
+    52.3197,
+    52.1451,
+    60.5538,
+    57.1851,
+    69.5313,
+    36.2277,
+    91.494,
+    54.6624,
+    41.5512,
+    60.0111,
+    72.5859,
+    57.708,
+    43.4601,
+    60.8895,
+    54.6507,
+    87.0111,
+    84.726,
+    41.8149,
+    66.9681,
+    34.7904,
+    40.7961,
+    45.3123,
+    85.9446,
+    72.1998,
+    77.1984,
+    68.2173,
+    80.55,
+    91.4031,
+    89.3925,
+    78.759,
+    79.4934,
+    79.4097
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.05962,
+    0.05044,
+    0.05402,
+    0.07755,
+    0.05367,
+    0.06318,
+    0.04497,
+    0.06771,
+    0.06196,
+    0.04397,
+    0.04667,
+    0.07055,
+    0.04268,
+    0.0739,
+    0.04385,
+    0.06608,
+    0.05395,
+    0.05419,
+    0.07487,
+    0.04147,
+    0.04281,
+    0.0441,
+    0.04337,
+    0.03682,
+    0.03778,
+    0.02233,
+    0.04421,
+    0.05366,
+    0.03476,
+    0.0621,
+    0.06391,
+    0.05537,
+    0.03406,
+    0.03892,
+    0.04659,
+    0.05128,
+    0.03714,
+    0.08044,
+    0.09079,
+    0.08385,
+    0.09895,
+    0.08828
+   ],
+   "mndwi": [
+    -0.19256,
+    -0.20758,
+    -0.22025,
+    -0.22493,
+    -0.20214,
+    -0.20199,
+    -0.18555,
+    -0.2145,
+    -0.22291,
+    -0.18651,
+    -0.16676,
+    -0.22743,
+    -0.17814,
+    -0.20945,
+    -0.19062,
+    -0.24528,
+    -0.11576,
+    -0.19045,
+    -0.27767,
+    -0.17282,
+    -0.19211,
+    -0.21097,
+    -0.20604,
+    -0.18751,
+    -0.16525,
+    -0.113,
+    -0.17844,
+    -0.20784,
+    -0.19225,
+    -0.20449,
+    -0.20768,
+    -0.21264,
+    -0.21756,
+    -0.209,
+    -0.19268,
+    -0.1984,
+    -0.20113,
+    -0.43972,
+    -0.44903,
+    -0.35565,
+    -0.37652,
+    -0.36276
+   ],
+   "bsi": [
+    0.12934,
+    0.1453,
+    0.15328,
+    0.14257,
+    0.13782,
+    0.13611,
+    0.13291,
+    0.14021,
+    0.14953,
+    0.13476,
+    0.12794,
+    0.13022,
+    0.13149,
+    0.13725,
+    0.14085,
+    0.14976,
+    0.08728,
+    0.13915,
+    0.1635,
+    0.12686,
+    0.14206,
+    0.13929,
+    0.13747,
+    0.1317,
+    0.13174,
+    0.10557,
+    0.13157,
+    0.13311,
+    0.1343,
+    0.13292,
+    0.13313,
+    0.13591,
+    0.15337,
+    0.13361,
+    0.12031,
+    0.11904,
+    0.14088,
+    0.29443,
+    0.29315,
+    0.21508,
+    0.22316,
+    0.21698
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1988,
+      2001,
+      2004,
+      2010,
+      2013,
+      2022
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1987,
+       "mean": 87.8538,
+       "slope": -0.2025
+      },
+      {
+       "start": 1988,
+       "end": 2000,
+       "mean": 93.0635,
+       "slope": -0.1278
+      },
+      {
+       "start": 2001,
+       "end": 2003,
+       "mean": 77.9265,
+       "slope": 20.3841
+      },
+      {
+       "start": 2004,
+       "end": 2009,
+       "mean": 91.6832,
+       "slope": -0.2897
+      },
+      {
+       "start": 2010,
+       "end": 2012,
+       "mean": 66.5331,
+       "slope": 35.7863
+      },
+      {
+       "start": 2013,
+       "end": 2021,
+       "mean": 92.9926,
+       "slope": 0.186
+      },
+      {
+       "start": 2022,
+       "end": 2026,
+       "mean": 88.5778,
+       "slope": 0.471
+      }
+     ],
+     "penalty": 20.325325,
+     "sigma": 1.346349,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1986,
+      1988,
+      2002,
+      2011
+     ],
+     "k": 0.673175,
+     "h": 5.385396,
+     "sigma": 1.346349,
+     "target": 0.045
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 42,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2026,
+       "mean": 64.4058,
+       "slope": 0.3824
+      }
+     ],
+     "penalty": 4006.357042,
+     "sigma": 18.90226,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 9.45113,
+     "h": 75.609042,
+     "sigma": 18.90226,
+     "target": -0.1746
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1986,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 5.385396
+   },
+   {
+    "year": 1988,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 5.385396
+   },
+   {
+    "year": 1988,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 20.325325
+   },
+   {
+    "year": 2001,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 20.325325
+   },
+   {
+    "year": 2002,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 5.385396
+   },
+   {
+    "year": 2004,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 20.325325
+   },
+   {
+    "year": 2010,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 20.325325
+   },
+   {
+    "year": 2011,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 5.385396
+   },
+   {
+    "year": 2013,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 20.325325
+   },
+   {
+    "year": 2022,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 20.325325
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "candelaria",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -135.7,
+   135.7
+  ],
+  "geoid_offset_m": -0.311,
+  "stable_bias_m": -2.213,
+  "noise_floor_m": 2.115,
+  "tau_m": 4.23,
+  "stable_ground_px": 47247,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 406196256,
+  "fill_volume_m3": 684672384,
+  "envelope": {
+   "cut_m3": 406196256,
+   "fill_m3": 684672384,
+   "cut_km2": 9.5562,
+   "fill_km2": 22.9779,
+   "min_m": -384.3,
+   "max_m": 245.1
+  },
+  "window": {
+   "cut_m3": 492220224,
+   "fill_m3": 866948288,
+   "cut_km2": 22.7601,
+   "fill_km2": 49.2138,
+   "min_m": -384.3,
+   "max_m": 245.1
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/311/593.png",
+   "terrain/10/312/593.png",
+   "terrain/11/623/1186.png",
+   "terrain/11/623/1187.png",
+   "terrain/11/624/1186.png",
+   "terrain/11/624/1187.png",
+   "terrain/12/1247/2372.png",
+   "terrain/12/1247/2373.png",
+   "terrain/12/1247/2374.png",
+   "terrain/12/1248/2372.png",
+   "terrain/12/1248/2373.png",
+   "terrain/12/1248/2374.png",
+   "terrain/12/1249/2372.png",
+   "terrain/12/1249/2373.png",
+   "terrain/12/1249/2374.png",
+   "terrain/13/2494/4745.png",
+   "terrain/13/2494/4746.png",
+   "terrain/13/2494/4747.png",
+   "terrain/13/2494/4748.png",
+   "terrain/13/2494/4749.png",
+   "terrain/13/2495/4745.png",
+   "terrain/13/2495/4746.png",
+   "terrain/13/2495/4747.png",
+   "terrain/13/2495/4748.png",
+   "terrain/13/2495/4749.png",
+   "terrain/13/2496/4745.png",
+   "terrain/13/2496/4746.png",
+   "terrain/13/2496/4747.png",
+   "terrain/13/2496/4748.png",
+   "terrain/13/2496/4749.png",
+   "terrain/13/2497/4745.png",
+   "terrain/13/2497/4746.png",
+   "terrain/13/2497/4747.png",
+   "terrain/13/2497/4748.png",
+   "terrain/13/2497/4749.png",
+   "terrain/13/2498/4745.png",
+   "terrain/13/2498/4746.png",
+   "terrain/13/2498/4747.png",
+   "terrain/13/2498/4748.png",
+   "terrain/13/2498/4749.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 336.0,
+   "max": 1504.0
+  },
+  "cop_stats": {
+   "min": 72.7,
+   "max": 1509.7
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/candelaria/dem/cop.png",
+   "kind": "dem",
+   "bytes": 307999,
+   "sha256": "d1abc27e5bd60e9b48038a0d0b36f3fcb2e2e28c4762bda96b51d6e89a300949"
+  },
+  {
+   "path": "sites/candelaria/dem/delta.png",
+   "kind": "dem",
+   "bytes": 423565,
+   "sha256": "a648737a52a9b41f8bcf4ef5dbbfb8d0914dcd0310e4e4511ce677accde052bd"
+  },
+  {
+   "path": "sites/candelaria/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 284669,
+   "sha256": "5e56cdb4e08ada0511c3811ca7cd35e15125f4c1736305434671578ed9cb8c29"
+  },
   {
    "path": "sites/candelaria/frames/1985-swir.webp",
    "kind": "frame",
@@ -2834,10 +3615,922 @@
    "year": 2026
   },
   {
+   "path": "sites/candelaria/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 7022,
+   "sha256": "e345e05747a6f75bdb081d39b63135104be9b19fc67ef58cc569ba8c1a1ebc5f",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 13903,
+   "sha256": "c40a497240698016e3addade089392b721ed20b4fcd4d4f4aa53161e3cbc9a48",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 2768,
+   "sha256": "6af161879b1cf7032e23e3d285d558ea1f474b7c0717a2c41abbbf854c6f830c",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 14618,
+   "sha256": "42f9a0c1f5b3b35358c34ba688597b8775a1deb3c485dcf6800cc6186cbdb502",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 4226,
+   "sha256": "8659280cb88cd8fa5cb6530ef1b1b91162cb0e9b377958bac815f20fce5412d6",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 14899,
+   "sha256": "7ae64fd2e78759c8364131ab105bd59181524a0e2c8831bdf563a8ee8d784ee0",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 2772,
+   "sha256": "d7ec2e33f5f2139159f47d8d811773bb8e9393f1cb133dbdbda0c65653207806",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 16084,
+   "sha256": "608959276b767064356f22614e0225f575a9e0869dbca8eba2eae118042c2531",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 2174,
+   "sha256": "7ebd15ff756753e2c14283b4f8d793b2f8cf152962af64a3ad550953602c1592",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 14004,
+   "sha256": "c5d4a85298099deba7c66eaca9e183075f123dac3cc82abfef25a2259a03e6d9",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 1950,
+   "sha256": "1de0c312598b7a4fea578c157a330a4dbf38a1b4a9a834743b95527f1054df62",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 14882,
+   "sha256": "d34307650bd32d215d3b0eb86c6beb8e187b7a3a76f7eff1004bb9739a1e4877",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 3049,
+   "sha256": "5d2dcd18260367dfd5d6fc4f3fbcb1f75c81a87185fc181d3fc3bfc4486dd18b",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 15759,
+   "sha256": "6ff6dbe62bb25041522e23e32819c794ef6ae75a367c0c9543fb15998eed82c3",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 2171,
+   "sha256": "32e454a40fbdbb411847b60a2cb1137d00092986dfa2a0419b4a414b41f71752",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 15844,
+   "sha256": "7dc3a402656cbdb397ecb1e5454264b3d6a66a16a38e648709ecbedbdace81e9",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 2215,
+   "sha256": "3a11d12e83329bc3c1332a13cb5af8123a6a3fc0b4a549c5399791ba37ce1e2d",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 14860,
+   "sha256": "94bdaebac430317098a05dc5c6f1e0f9453f27932dc2b487d2982286deb5e475",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 3864,
+   "sha256": "2245e5556054b3409a6aca995d3244725d198f03c9b544e7a320750cdda1fa1f",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 14456,
+   "sha256": "0cdfb3a98273e5d67a4459d3fe65394e1365703b9a43e09681f2cf9ccd3a4e06",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 2634,
+   "sha256": "d8fae7b9e4da2e5a46d3a5f9e39bb63508b3f8853f0a301d0110deec8b0d10bb",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 14892,
+   "sha256": "52566406afd61dc86d8afa8058fd8bde95bf3db5706e704f58a5de4e9b17701f",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 4617,
+   "sha256": "b03f7e0e6bef9f940f5e5f4d7eca266e794475bc4a1e114f68ac159aa086b80a",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 14855,
+   "sha256": "b865789cd2a73d0e3a987bdf274d24f1dfb339da6b95423267d9d8852f204439",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 2490,
+   "sha256": "997b47a0a23bb6fe370d8a56751bf013c0507a9a67beffc57588919bced0fed3",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 14598,
+   "sha256": "c6c4e2c893a1ab731829b233ad7818fc30196af645ab295d2afe336c574be988",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 2733,
+   "sha256": "68e0e3da3baadff0e7417647608037fe2d8e90fcdba413aa7875db86478361fd",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 16465,
+   "sha256": "2a8ea164ed084c29a3c0976f199c86b54b273c9aff94dda96d950de0c807ab1c",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 3697,
+   "sha256": "02f49459a805e9dadd7fc51e35bc2451b13e78aaf91d291df94b93f864e697ba",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 15266,
+   "sha256": "166a8a6b6c66884867dfbe8c6f88217d7d27e633882032d2e52c6a077695052c",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 2516,
+   "sha256": "777458d330bcc94428e17ef8afa139a1460438a29d2b96371f5a4dd30bb862d5",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 12959,
+   "sha256": "e7abfa73a712a21a9da9398ba0b1a79a83d3be64b8e9685b9a329065b031b5b5",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 9346,
+   "sha256": "5216a03bbac2b61e990999db0820b0288f253760fb834ea2d1a423ec48e2b9e0",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 7771,
+   "sha256": "3ca685f4df260198af7729191c95a917c34405452b3bab1e2acfd581df397840",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 3264,
+   "sha256": "d87c67bb72f5120c8cc285a35ce8a4c2e1fc397dd4e14532fb8a9f5e7c8162ed",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 16147,
+   "sha256": "9ebaee5b46fd43db8ee88407d5d400c24003295e772ec3fa9dac6082c4c58a7f",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 2749,
+   "sha256": "233cb2a38e74379e38bee6b716676f6a5813dddfec4d40f073bb0436d177de1d",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 15950,
+   "sha256": "9742089cbb652200a0dd8850ae0e1bb290ffce3ae3cf601bb4c2cdd2cd313d74",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 3551,
+   "sha256": "23d34285634fc32530257b5fa65092ea37b1fb90b4aba392c7e3c856c9e91874",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 14915,
+   "sha256": "00b8878bc873b46ee7c2f4603249cc593a6f6bb97d9625678950c0d6693e7011",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 3300,
+   "sha256": "a435e4010a62d0dc6c93f2640a38946426089c9f110041bcf4886eec0f71ccf2",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 15543,
+   "sha256": "c4908b97dc04e9340fc7c2b1807f93f3562eb13b797c97bbffb838275e424738",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 2940,
+   "sha256": "00294f47fad9b9e874c3d21c0f861c5b19ceea5c2f4d0581f7f728b51276a43a",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 13954,
+   "sha256": "b7d06656669ef77e86c159d2c09bbe704ec3415dc2f283c94c8f8849d97bdb45",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 3043,
+   "sha256": "4619bf7cd752807d5b24de5755e24878dc75422078b500a2c2bdd273d3be852f",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 11986,
+   "sha256": "d06ea5a9c98c2fb24b21625cf07cc5846e52f4269f81b2da1a3cafebd631f79d",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 3242,
+   "sha256": "ab664b6d1ddcedf5f1f55fee4c6627b502ad8cc433efc0d7dd36ffb7d695abb2",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 14351,
+   "sha256": "a29bd65fc2b01197ad521f442fbd37dbe9711101c0014ae21e61ffec14ec5dc5",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 3403,
+   "sha256": "aef3e47df1e98993ac212239a36b0b8b700c315683e72151a33dcd043c716d40",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 13709,
+   "sha256": "f780c46f1a73b0ca4e5e720f4566fddb3411326c581a9350b9657d6f37840d68",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 5609,
+   "sha256": "72a2e8e5a21e604e76661093bfb020ced6907b96b30b1c84fc943a1c973f3657",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 9734,
+   "sha256": "e1d72d77e9074becd5a2e4593e25bee369feaad28ea676185453a41585972605",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 3532,
+   "sha256": "30f6a3242a5bb9128a71f5723de63942e52968ae41ccc7a68040f9aa61cea86a",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 12684,
+   "sha256": "a9d2679baf92cbc60bc3a77646ac40c480de55b88eed27b22afdb00cc0fe3146",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 3285,
+   "sha256": "b7107439cde92114e982269a12f14bb4bf8c23f458bc0586bfcf7ae7c292da20",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 11761,
+   "sha256": "afa89bd03d274f543b9b896a18080dad6e0e9b503427eec78b9f811ba1ff4a0a",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 3822,
+   "sha256": "9980e0f9abdcd1d10446829b89b980a30ebfc048b0d8e9e5221b9cf95c001e48",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 14168,
+   "sha256": "a55b07d7c5f91527d2d19d7ee3f45e69dbe03f8a42c0d668bfd36704cdbbe266",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 3283,
+   "sha256": "cfbffbadcbb0518f23dcb59f1d10797825e8d4fbb4ff940992207845cb483651",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 9654,
+   "sha256": "776ee74971ed8407daa09dce24fba56015ea8fa6691f51ab8190f48e856ca537",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 3304,
+   "sha256": "066e40cac835f3354d87e3728ef83dd4f0f345f63387e9353d35432e451a82a2",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 11612,
+   "sha256": "083cf52f78b87510235d8c7638846cae82f3445b39e6f56cf67aaa273dce2db1",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 3301,
+   "sha256": "fa5a529eccfbd346680ac948e5e8ce6525fa8a3db559ce9f350b7807bd5587aa",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 12259,
+   "sha256": "9eeaf062da0d1170dd2736d5a40605105ae1a640e791cb63ddb797593c8c2f6a",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 3725,
+   "sha256": "736ca7298e6849ff9604f2f9e81284966ab1c8ce3c8acc5044c125944f18f2d8",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 14835,
+   "sha256": "52a1fe38867a2aab625b7f52da3f45bb1b87fee8fd052c3eff912c5f8af98b12",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 3804,
+   "sha256": "2b73683dc2a1e6ef0198af8b0a0adafb93d4ff9ac2954cb56f8d26607d33b8da",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 15159,
+   "sha256": "8dc5fb3cf1b251ddd0f9276f850e1495e292f8a8024cff2a5e9158646a16dfe5",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 3531,
+   "sha256": "6e0c5231e4ae53eae16f123d747ad41f1edbe737b8298076921167f9e70ba150",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 13760,
+   "sha256": "5232c944c77cc60cd54d7612d0a5c0da7964a62586024284a5a432e8a6f07a9f",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 3504,
+   "sha256": "6847b9f5945b6f3f4cafcc45836474d2bd84a48b8b8e6c4ecb0af6e3d98cfc34",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 12427,
+   "sha256": "f340609c00aa307d4108d2bf5e7dcd7d8805d320eae36d63a55683b3a0863e77",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 3894,
+   "sha256": "fc98723ca5ab3f9aec538aadc657d2f882d0cabb9d1e6da5194cfa9e20add45b",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 15349,
+   "sha256": "49dadf8c483fe12590c1faf632d44ebf84f97f28ddd25dfc95ee4cb7450e9bd0",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 4962,
+   "sha256": "0805c4c46fd24de2a4096a001dc1cde4d4bc7974d81b2bb3d41f32ada6e06595",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 12124,
+   "sha256": "834c520e311f69373ce24e1dd4ca5075a86bca327bd89b1b6623bf3da36ed9fc",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 5812,
+   "sha256": "52c8c64e9473d8ef7fcd83faaeae55f3f84dd2a319dc9186c83a87bb62990fd8",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 12686,
+   "sha256": "0bfaf949f37ecee63c3020ff9a84612b362a2ea3f39df4a4743bffe9456a293c",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 3660,
+   "sha256": "595513dbe0a62333101adee7baf6024591514bbfe9aa235e8ed4e5f0c6deb7b4",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 16133,
+   "sha256": "2f4698b9238b49367ab5cb319afc6ea0ab83ab941406682faf6157dd84c1bad0",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 4020,
+   "sha256": "e1c15d3fcad40a7b7035cc226f063df37b42f2060e99d1c67bfb9dc90afa4377",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 16016,
+   "sha256": "f5a2d5b8ea0927d1dd8ee68b63852e5b88542cd05acf5b379763c9bf91b9919b",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/candelaria/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 3872,
+   "sha256": "9f0c597d6b0cac31139d041dde8782a32308de465086753112ac58f92c185741",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/candelaria/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 16482,
+   "sha256": "3ceba8520a148c6f7f0eb815fd340b51f215cb95ded63eadf6dde032699d7f99",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
    "path": "sites/candelaria/polygons.geojson",
    "kind": "polygons",
    "bytes": 41198,
    "sha256": "1d9e39197835b89fb2c50af23fda96ff1c7fb45041736d9961be58d5f62b396f"
+  },
+  {
+   "path": "sites/candelaria/terrain/10/311/593.png",
+   "kind": "terrain",
+   "bytes": 141226,
+   "sha256": "daa072a4fff1ed30c71cf63a32cd87eab2e9f846ccd35a225002461ca5881031"
+  },
+  {
+   "path": "sites/candelaria/terrain/10/312/593.png",
+   "kind": "terrain",
+   "bytes": 131667,
+   "sha256": "9e19c6364759325a9d74b50b46b89cea8cbab633b902869b7002c3485740d60e"
+  },
+  {
+   "path": "sites/candelaria/terrain/11/623/1186.png",
+   "kind": "terrain",
+   "bytes": 136875,
+   "sha256": "52386b5751ece56e689a73cb2c521c6b375259d7d0ad87ef1f77b45abd4eec0d"
+  },
+  {
+   "path": "sites/candelaria/terrain/11/623/1187.png",
+   "kind": "terrain",
+   "bytes": 139854,
+   "sha256": "4967e21b74dd8ee887e805d91311bd5b08874ba0a70c53bf088bf5c30109e3cc"
+  },
+  {
+   "path": "sites/candelaria/terrain/11/624/1186.png",
+   "kind": "terrain",
+   "bytes": 138932,
+   "sha256": "1bb2e939a815e298a8f5ed1ad4af8448be6f58e31c83a0645898b7c92ee70ca6"
+  },
+  {
+   "path": "sites/candelaria/terrain/11/624/1187.png",
+   "kind": "terrain",
+   "bytes": 142160,
+   "sha256": "9064f9786fcf057b893f91a465445c600be22f2f76fa3b9411a6f227f671580a"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1247/2372.png",
+   "kind": "terrain",
+   "bytes": 132231,
+   "sha256": "877365b8829d01b8f9468c0d234080b3c972d7d42a57f52d18670466e8b3984a"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1247/2373.png",
+   "kind": "terrain",
+   "bytes": 131852,
+   "sha256": "c1dda7ded473a04d321760e59abd5ee59f95e3b5a348b0e77b440ec01d4fd904"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1247/2374.png",
+   "kind": "terrain",
+   "bytes": 135006,
+   "sha256": "0057c1b62f0bd4927bd095cffea14ded15236a9c019d4940f35611239aa95bed"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1248/2372.png",
+   "kind": "terrain",
+   "bytes": 128932,
+   "sha256": "a28004a86144c9d8ef5b8200c983b7c3f0e9fc78514781a7b7ada134f31d3e94"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1248/2373.png",
+   "kind": "terrain",
+   "bytes": 131416,
+   "sha256": "2fd230b151a6e5e2513a6f6ee98e73051a2a8071ee233230f44ef21ef1656ecd"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1248/2374.png",
+   "kind": "terrain",
+   "bytes": 132746,
+   "sha256": "60e57741dd4ee6de46b3ac29784fd277cdf124d7d3617df9186820fb1ad9af1f"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1249/2372.png",
+   "kind": "terrain",
+   "bytes": 133886,
+   "sha256": "5f8beb4d61d2e9409cdf5273f9f0990ad7cebe5b4e3167cd532ba05299130a00"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1249/2373.png",
+   "kind": "terrain",
+   "bytes": 134452,
+   "sha256": "f2f60b67cc320f5e3dfe893630835768c5290fd6e9db6f774ce38de8e838f64a"
+  },
+  {
+   "path": "sites/candelaria/terrain/12/1249/2374.png",
+   "kind": "terrain",
+   "bytes": 136385,
+   "sha256": "8c7964209d825e523ef61484c8dd3000730eda9a12ed4e78f0c333ea23d35a5a"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2494/4745.png",
+   "kind": "terrain",
+   "bytes": 121162,
+   "sha256": "deb51f3d06f6c8037b98b576dda233bb6a15d90b8914d1746749dd7dd90aa405"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2494/4746.png",
+   "kind": "terrain",
+   "bytes": 122299,
+   "sha256": "4fb222230044c908c8f115b01bd1d8f3a2a752dd02d802ab02def75002a9a8d1"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2494/4747.png",
+   "kind": "terrain",
+   "bytes": 124167,
+   "sha256": "14933f780d03a1ca22281b13b5bed780f62093c99cd343ae64bd4d33661519c7"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2494/4748.png",
+   "kind": "terrain",
+   "bytes": 129466,
+   "sha256": "f5c0579a4d5d1fa8951c5c255126d17e8778feaa18f1ba5fdba99cdc0140d5d7"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2494/4749.png",
+   "kind": "terrain",
+   "bytes": 128720,
+   "sha256": "9c3bf1434e73450bf337b0d251c60a343f7ec8494cc457c95003fd0a5cd02211"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2495/4745.png",
+   "kind": "terrain",
+   "bytes": 118822,
+   "sha256": "29964587e30f9696e38cf6768ad716a34dc5960e0f7bda266613c25281bc791a"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2495/4746.png",
+   "kind": "terrain",
+   "bytes": 122818,
+   "sha256": "24b64bdf4ff2b449c6db4c20ef53668a4dad0e14e6a0f8e269dcd5289c76ef75"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2495/4747.png",
+   "kind": "terrain",
+   "bytes": 115310,
+   "sha256": "2353fbebd2bb749a1751dae0324c41c1c562f6ccf0bc65f371ef850f7b9f746a"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2495/4748.png",
+   "kind": "terrain",
+   "bytes": 121538,
+   "sha256": "3bb04a2bdd9697c6bc633b014d2d4210515ea2537b90ae6a11db2addd1a77e78"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2495/4749.png",
+   "kind": "terrain",
+   "bytes": 120334,
+   "sha256": "9a80da2ad1e3ed55a97f184e8e0cbc3b29bb0b3fa40d4913e8fd1888612b5397"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2496/4745.png",
+   "kind": "terrain",
+   "bytes": 119767,
+   "sha256": "e2a7458fb088db05abe130eff1609dcf606b02269588ea1cb18c41d791557124"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2496/4746.png",
+   "kind": "terrain",
+   "bytes": 120510,
+   "sha256": "c78df6218afd6582dce8d4698079a65cab69d47a19bf16a1dabbfa48373b91be"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2496/4747.png",
+   "kind": "terrain",
+   "bytes": 112009,
+   "sha256": "4f26cc01789e172e87d15615f943b46b906fb67283f21bf27851eef67c7b8793"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2496/4748.png",
+   "kind": "terrain",
+   "bytes": 122527,
+   "sha256": "806402435374d0c772d5015f92fc4676435b93dccae89d8eb2ba71fc7900458f"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2496/4749.png",
+   "kind": "terrain",
+   "bytes": 130299,
+   "sha256": "294edf6938ff1d748937fce422f5545ce40cbfc39b7bffe3122d72d746a1364d"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2497/4745.png",
+   "kind": "terrain",
+   "bytes": 125341,
+   "sha256": "d50d4b1fd57d666090ceb40fa46f20207527edb1dcfba62c53172358603c29f4"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2497/4746.png",
+   "kind": "terrain",
+   "bytes": 127431,
+   "sha256": "abad124681adc2358493340fd87a8ed637a73f85ff1e73eb54cd727de2296315"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2497/4747.png",
+   "kind": "terrain",
+   "bytes": 126897,
+   "sha256": "c5788e4c64bcd52b3005e6a475ff2cc9fed1eb88d497d5d44c2f65d06169f5f8"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2497/4748.png",
+   "kind": "terrain",
+   "bytes": 122921,
+   "sha256": "781aa9c20a0b1802ddefca7e93ac147b26cad7d6a53beaf16823306d51900a38"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2497/4749.png",
+   "kind": "terrain",
+   "bytes": 118724,
+   "sha256": "3823c4bdf4a4d668ae010f37e554fbde1b8be0feedb530335cba57436b625155"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2498/4745.png",
+   "kind": "terrain",
+   "bytes": 127536,
+   "sha256": "bf3924ab64f1182dc2bb1d1a38cb3305f706558351e7438d657ae01d7b27285a"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2498/4746.png",
+   "kind": "terrain",
+   "bytes": 126000,
+   "sha256": "4a3d817ef4beda378ab830e1cf0acaa25f30f8e9eb2ede81c1f268a690bd004a"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2498/4747.png",
+   "kind": "terrain",
+   "bytes": 128451,
+   "sha256": "8a0a3438c9af0d389614aed5ab7abe771559cbc4c0a780417ce9f6229fac3b02"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2498/4748.png",
+   "kind": "terrain",
+   "bytes": 129133,
+   "sha256": "568b0a653c2165ffaac33d07f2198a47a6a8853ebea88798cdb2decb8adc29b7"
+  },
+  {
+   "path": "sites/candelaria/terrain/13/2498/4749.png",
+   "kind": "terrain",
+   "bytes": 125194,
+   "sha256": "c2527b1c456716b8ff4114161e3f6ba3b74edd003d1fa1e35f9281a083d3b46e"
   }
  ]
 }

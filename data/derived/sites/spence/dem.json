@@ -1,0 +1,92 @@
+{
+ "site_id": "spence",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -42.2,
+  42.2
+ ],
+ "geoid_offset_m": 0.056,
+ "stable_bias_m": -3.377,
+ "noise_floor_m": 1.327,
+ "tau_m": 2.654,
+ "stable_ground_px": 111378,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 206689648,
+ "fill_volume_m3": 289279776,
+ "envelope": {
+  "cut_m3": 206689648,
+  "fill_m3": 289279776,
+  "cut_km2": 8.244,
+  "fill_km2": 19.4598,
+  "min_m": -162.9,
+  "max_m": 77.2
+ },
+ "window": {
+  "cut_m3": 216779056,
+  "fill_m3": 303222976,
+  "cut_km2": 11.259,
+  "fill_km2": 23.4495,
+  "min_m": -162.9,
+  "max_m": 77.2
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/314/578.png",
+  "terrain/10/315/578.png",
+  "terrain/11/629/1156.png",
+  "terrain/11/629/1157.png",
+  "terrain/11/630/1156.png",
+  "terrain/11/630/1157.png",
+  "terrain/12/1258/2313.png",
+  "terrain/12/1258/2314.png",
+  "terrain/12/1259/2313.png",
+  "terrain/12/1259/2314.png",
+  "terrain/12/1260/2313.png",
+  "terrain/12/1260/2314.png",
+  "terrain/13/2517/4626.png",
+  "terrain/13/2517/4627.png",
+  "terrain/13/2517/4628.png",
+  "terrain/13/2517/4629.png",
+  "terrain/13/2518/4626.png",
+  "terrain/13/2518/4627.png",
+  "terrain/13/2518/4628.png",
+  "terrain/13/2518/4629.png",
+  "terrain/13/2519/4626.png",
+  "terrain/13/2519/4627.png",
+  "terrain/13/2519/4628.png",
+  "terrain/13/2519/4629.png",
+  "terrain/13/2520/4626.png",
+  "terrain/13/2520/4627.png",
+  "terrain/13/2520/4628.png",
+  "terrain/13/2520/4629.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 1493.0,
+  "max": 1938.0
+ },
+ "cop_stats": {
+  "min": 1490.2,
+  "max": 1940.3
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "engine_version": "0.01.000",
+  "stages": [
+    "validate"
+  ],
+  "sites": "all",
+  "release": true,
+  "output": "D:\\_Repos\\_FASL_Projects\\CAOS_Rajo\\data\\derived"
+}

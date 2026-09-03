@@ -1,0 +1,82 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "athabasca-mildred",
+ "site": {
+  "id": "athabasca-mildred",
+  "name_en": "Athabasca oil sands (Mildred Lake)",
+  "name_es": "Arenas bituminosas de Athabasca (Mildred Lake)",
+  "country": "CAN",
+  "categories": [
+   "oil-sands"
+  ],
+  "lon": -111.6,
+  "lat": 57.05,
+  "window_km": 40.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 6,
+   "end_month": 8
+  },
+  "facts": [
+   {
+    "text_en": "The Mildred Lake mine began production in 1978 and expanded in 1996; Landsat shows slow growth from 1984 to 2000 and a decade of rapid development after oil prices climbed.",
+    "text_es": "La mina Mildred Lake comenzo a producir en 1978 y se amplio en 1996; Landsat muestra un crecimiento lento entre 1984 y 2000 y una decada de desarrollo rapido tras la subida del precio del petroleo.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/world-of-change/athabasca-oil-sands/"
+   }
+  ],
+  "commodity": "bitumen",
+  "operator": "Syncrude (Suncor)",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32612,
+  "pixel_m": 10.0,
+  "width": 3999,
+  "height": 3999,
+  "left": 443580.0,
+  "top": 6343110.0,
+  "right": 483570.0,
+  "bottom": 6303120.0,
+  "transform": [
+   10.0,
+   0.0,
+   443580.0,
+   0.0,
+   -10.0,
+   6343110.0
+  ],
+  "bbox_wgs84": [
+   -111.93448629281572,
+   56.868412694733486,
+   -111.26953459121553,
+   57.23079293646458
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 2,
+  "area_km2": 992.11,
+  "fids": [
+   26458,
+   26460
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/athabasca-mildred/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 5710,
+   "sha256": "b546f8ac589af3ed31ef3b5a94888793260e71f7acece0a1bb9bebd2f6b7bb52"
+  }
+ ]
+}

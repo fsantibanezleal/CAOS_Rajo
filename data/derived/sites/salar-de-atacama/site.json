@@ -1,0 +1,71 @@
+{
+ "site": {
+  "id": "salar-de-atacama",
+  "name_en": "Salar de Atacama lithium ponds",
+  "name_es": "Pozas de litio del Salar de Atacama",
+  "country": "CHL",
+  "categories": [
+   "lithium-brine"
+  ],
+  "lon": -68.3,
+  "lat": -23.55,
+  "window_km": 40.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 11,
+   "end_month": 3
+  },
+  "facts": [
+   {
+    "text_en": "Lithium-rich brine is pumped from up to 30 m below the saline crust into evaporation ponds; the lithium concentration here is the highest in the world.",
+    "text_es": "La salmuera rica en litio se bombea desde hasta 30 m bajo la costra salina hacia pozas de evaporacion; la concentracion de litio aqui es la mas alta del mundo.",
+    "source": "https://eros.usgs.gov/earthshots/ponds"
+   },
+   {
+    "text_en": "Potassium chloride, potassium sulphate, boric acid, magnesium chloride and lithium chloride are extracted; the lithium chloride is converted to lithium carbonate for batteries.",
+    "text_es": "Se extraen cloruro de potasio, sulfato de potasio, acido borico, cloruro de magnesio y cloruro de litio; el cloruro de litio se convierte en carbonato de litio para baterias.",
+    "source": "https://eros.usgs.gov/earthshots/ponds"
+   }
+  ],
+  "commodity": "lithium",
+  "operator": "SQM, Albemarle",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 3999,
+  "height": 3999,
+  "left": 551430.0,
+  "top": 7415430.0,
+  "right": 591420.0,
+  "bottom": 7375440.0,
+  "transform": [
+   10.0,
+   0.0,
+   551430.0,
+   0.0,
+   -10.0,
+   7415430.0
+  ],
+  "bbox_wgs84": [
+   -68.49677585130858,
+   -23.73121533861557,
+   -68.1030697109734,
+   -23.368259530981273
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 1,
+  "area_km2": 1357.946,
+  "fids": [
+   2438
+  ]
+ }
+}

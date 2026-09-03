@@ -1,0 +1,68 @@
+{
+ "site": {
+  "id": "antamina",
+  "name_en": "Antamina",
+  "name_es": "Antamina",
+  "country": "PER",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": -77.05,
+  "lat": -9.53,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "Antamina produced 368 thousand tonnes of copper in 2024, ninth among the world's copper mines.",
+    "text_es": "Antamina produjo 368 mil toneladas de cobre en 2024, novena entre las minas de cobre del mundo.",
+    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+   }
+  ],
+  "commodity": "copper, zinc",
+  "operator": "BHP, Glencore, Teck, Mitsubishi",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32718,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 266970.0,
+  "top": 8953890.0,
+  "right": 282960.0,
+  "bottom": 8937900.0,
+  "transform": [
+   10.0,
+   0.0,
+   266970.0,
+   0.0,
+   -10.0,
+   8953890.0
+  ],
+  "bbox_wgs84": [
+   -77.12327605107382,
+   -9.60259921925409,
+   -76.97681131986987,
+   -9.457209205865722
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 3,
+  "area_km2": 40.306,
+  "fids": [
+   3972,
+   3977,
+   3978
+  ]
+ }
+}

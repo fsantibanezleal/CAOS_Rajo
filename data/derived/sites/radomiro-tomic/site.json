@@ -1,0 +1,68 @@
+{
+ "site": {
+  "id": "radomiro-tomic",
+  "name_en": "Radomiro Tomic",
+  "name_es": "Radomiro Tomic",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -68.905,
+  "lat": -22.225,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 11,
+   "end_month": 3
+  },
+  "facts": [
+   {
+    "text_en": "Radomiro Tomic and Ministro Hales together lifted their output by 56 thousand tonnes in 2025, while Chuquicamata declined.",
+    "text_es": "Radomiro Tomic y Ministro Hales elevaron su produccion en 56 mil toneladas en 2025, mientras Chuquicamata bajo.",
+    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Codelco",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 501780.0,
+  "top": 7550280.0,
+  "right": 517770.0,
+  "bottom": 7534290.0,
+  "transform": [
+   10.0,
+   0.0,
+   501780.0,
+   0.0,
+   -10.0,
+   7550280.0
+  ],
+  "bbox_wgs84": [
+   -68.98273688857185,
+   -22.297077759576,
+   -68.82748351907419,
+   -22.152528872207824
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 3,
+  "area_km2": 178.716,
+  "fids": [
+   2718,
+   2719,
+   3634
+  ]
+ }
+}

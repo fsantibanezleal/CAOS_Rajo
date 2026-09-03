@@ -1,0 +1,86 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "las-bambas",
+ "site": {
+  "id": "las-bambas",
+  "name_en": "Las Bambas",
+  "name_es": "Las Bambas",
+  "country": "PER",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": -72.3,
+  "lat": -14.05,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "Las Bambas produced 210,637 tonnes of copper in the first half of 2025.",
+    "text_es": "Las Bambas produjo 210.637 toneladas de cobre en el primer semestre de 2025.",
+    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "MMG",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32718,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 781590.0,
+  "top": 8455110.0,
+  "right": 801600.0,
+  "bottom": 8435100.0,
+  "transform": [
+   10.0,
+   0.0,
+   781590.0,
+   0.0,
+   -10.0,
+   8455110.0
+  ],
+  "bbox_wgs84": [
+   -72.39370850847298,
+   -14.141117405755928,
+   -72.2064624303529,
+   -13.958321070750157
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 6,
+  "area_km2": 38.722,
+  "fids": [
+   3702,
+   38282,
+   38283,
+   38284,
+   38285,
+   38286
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/las-bambas/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 9687,
+   "sha256": "aba040d21f9e5aed94e2a51d217038e00e03f5703c3731e3e81986af1b37d874"
+  }
+ ]
+}

@@ -1,0 +1,449 @@
+{
+  "schema": "rajo.sites/v1",
+  "note": "The site catalog. Every fact carries a source URL; facts without one are rejected by Contract 1. Seeds are checked against the Maus 2022 reference polygons at bake time.",
+  "sites": [
+    {
+      "id": "chuquicamata",
+      "name": {"en": "Chuquicamata", "es": "Chuquicamata"},
+      "country": "CHL",
+      "categories": ["copper-chile", "transition"],
+      "commodity": "copper",
+      "operator": "Codelco",
+      "seed": {"lon": -68.905, "lat": -22.305},
+      "window_km": 24,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "transition_year": 2019,
+      "facts": [
+        {"text": {"en": "The pit is about 1 km deep, 3 km wide and 5 km long, and has been in operation since 1910.", "es": "El rajo tiene cerca de 1 km de profundidad, 3 km de ancho y 5 km de largo, y opera desde 1910."}, "source": "https://eros.usgs.gov/earthshots/chuquicamata-mine-chile"},
+        {"text": {"en": "Underground block-cave mining commenced in 2019, expected to extend the site's life by at least 40 years.", "es": "La explotacion subterranea por hundimiento comenzo en 2019 y se espera que extienda la vida de la faena al menos 40 anos."}, "source": "https://science.nasa.gov/earth/earth-observatory/copper-mining-at-chuquicamata-152368"},
+        {"text": {"en": "The town of Chuquicamata was relocated to Calama from 2004 and fully abandoned by 2007.", "es": "El campamento de Chuquicamata fue trasladado a Calama desde 2004 y quedo abandonado en 2007."}, "source": "https://science.nasa.gov/earth/earth-observatory/copper-mining-at-chuquicamata-152368"}
+      ],
+      "tailings": {"en": "Tailings are deposited at the Talabre facility east of the pit, visible as the pale field in the eastern part of the window.", "es": "Los relaves se depositan en el tranque Talabre al este del rajo, visible como el campo palido en la parte oriental de la ventana."}
+    },
+    {
+      "id": "radomiro-tomic",
+      "name": {"en": "Radomiro Tomic", "es": "Radomiro Tomic"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Codelco",
+      "seed": {"lon": -68.905, "lat": -22.225},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": [
+        {"text": {"en": "Radomiro Tomic and Ministro Hales together lifted their output by 56 thousand tonnes in 2025, while Chuquicamata declined.", "es": "Radomiro Tomic y Ministro Hales elevaron su produccion en 56 mil toneladas en 2025, mientras Chuquicamata bajo."}, "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"}
+      ]
+    },
+    {
+      "id": "escondida",
+      "name": {"en": "Escondida", "es": "Escondida"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "BHP (57.5%), Rio Tinto (30%), JECO (12.5%)",
+      "seed": {"lon": -69.07, "lat": -24.27},
+      "window_km": 24,
+      "first_year": 1985,
+      "season": {"start_month": 10, "end_month": 3},
+      "facts": [
+        {"text": {"en": "Production began in 1990; through 2014 the mine had produced 22 million tonnes of copper, 21% of all copper mined in Chile.", "es": "La produccion comenzo en 1990; hasta 2014 la mina habia producido 22 millones de toneladas de cobre, el 21% de todo el cobre extraido en Chile."}, "source": "https://eros.usgs.gov/earthshots/pit-production"},
+        {"text": {"en": "The main pit is 645 m deep, the height of two Eiffel Towers stacked.", "es": "El rajo principal tiene 645 m de profundidad, la altura de dos torres Eiffel apiladas."}, "source": "https://eros.usgs.gov/earthshots/pit-production"},
+        {"text": {"en": "In 2025 Escondida produced 1,345,100 tonnes of fine copper, its highest level since 2007.", "es": "En 2025 Escondida produjo 1.345.100 toneladas de cobre fino, su nivel mas alto desde 2007."}, "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"}
+      ]
+    },
+    {
+      "id": "collahuasi",
+      "name": {"en": "Collahuasi", "es": "Collahuasi"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Anglo American, Glencore, Mitsui",
+      "seed": {"lon": -68.66, "lat": -20.98},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 10, "end_month": 4},
+      "facts": [
+        {"text": {"en": "Collahuasi reported lower production in 2025 within a national output of 5,415,271 tonnes, down 1.6% from 2024.", "es": "Collahuasi reporto menor produccion en 2025 dentro de una produccion nacional de 5.415.271 toneladas, 1,6% menos que en 2024."}, "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"}
+      ]
+    },
+    {
+      "id": "los-pelambres",
+      "name": {"en": "Los Pelambres", "es": "Los Pelambres"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Antofagasta Minerals",
+      "seed": {"lon": -70.49, "lat": -31.72},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": [
+        {"text": {"en": "Los Pelambres reported lower production in 2025, one of the operations behind the national decline.", "es": "Los Pelambres reporto menor produccion en 2025, una de las faenas detras de la caida nacional."}, "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"}
+      ]
+    },
+    {
+      "id": "los-bronces",
+      "name": {"en": "Los Bronces", "es": "Los Bronces"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Anglo American",
+      "seed": {"lon": -70.28, "lat": -33.15},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 12, "end_month": 3},
+      "facts": []
+    },
+    {
+      "id": "quebrada-blanca",
+      "name": {"en": "Quebrada Blanca", "es": "Quebrada Blanca"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Teck (60%), Sumitomo (30%), Codelco (10%)",
+      "seed": {"lon": -68.81, "lat": -21.0},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 10, "end_month": 4},
+      "facts": [
+        {"text": {"en": "The Quebrada Blanca Phase 2 project produced its first bulk copper concentrate in March 2023 and ramped up through the year.", "es": "El proyecto Quebrada Blanca Fase 2 produjo su primer concentrado de cobre a granel en marzo de 2023 y aumento su produccion durante el ano."}, "source": "https://www.teck.com/news/news-releases/2023/teck-announces-first-copper-at-qb2-project-in-northern-chile"},
+        {"text": {"en": "The concentrator was built for 140,000 tonnes per day, with an initial mine life of 27 years.", "es": "La planta concentradora se construyo para 140.000 toneladas por dia, con una vida util inicial de 27 anos."}, "source": "https://www.teck.com/operations/chile/operations/quebrada-blanca/"}
+      ]
+    },
+    {
+      "id": "centinela",
+      "name": {"en": "Centinela", "es": "Centinela"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Antofagasta Minerals",
+      "seed": {"lon": -69.05, "lat": -22.98},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": []
+    },
+    {
+      "id": "spence",
+      "name": {"en": "Spence", "es": "Spence"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "BHP",
+      "seed": {"lon": -69.30, "lat": -22.75},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": []
+    },
+    {
+      "id": "candelaria",
+      "name": {"en": "Candelaria", "es": "Candelaria"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "Lundin Mining",
+      "seed": {"lon": -70.30, "lat": -27.52},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": []
+    },
+    {
+      "id": "sierra-gorda",
+      "name": {"en": "Sierra Gorda", "es": "Sierra Gorda"},
+      "country": "CHL",
+      "categories": ["copper-chile"],
+      "commodity": "copper",
+      "operator": "KGHM, South32",
+      "seed": {"lon": -69.31, "lat": -22.90},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": []
+    },
+    {
+      "id": "salar-de-atacama",
+      "name": {"en": "Salar de Atacama lithium ponds", "es": "Pozas de litio del Salar de Atacama"},
+      "country": "CHL",
+      "categories": ["lithium-brine"],
+      "commodity": "lithium",
+      "operator": "SQM, Albemarle",
+      "seed": {"lon": -68.30, "lat": -23.55},
+      "window_km": 40,
+      "first_year": 1985,
+      "season": {"start_month": 11, "end_month": 3},
+      "facts": [
+        {"text": {"en": "Lithium-rich brine is pumped from up to 30 m below the saline crust into evaporation ponds; the lithium concentration here is the highest in the world.", "es": "La salmuera rica en litio se bombea desde hasta 30 m bajo la costra salina hacia pozas de evaporacion; la concentracion de litio aqui es la mas alta del mundo."}, "source": "https://eros.usgs.gov/earthshots/ponds"},
+        {"text": {"en": "Potassium chloride, potassium sulphate, boric acid, magnesium chloride and lithium chloride are extracted; the lithium chloride is converted to lithium carbonate for batteries.", "es": "Se extraen cloruro de potasio, sulfato de potasio, acido borico, cloruro de magnesio y cloruro de litio; el cloruro de litio se convierte en carbonato de litio para baterias."}, "source": "https://eros.usgs.gov/earthshots/ponds"}
+      ]
+    },
+    {
+      "id": "bingham-canyon",
+      "name": {"en": "Bingham Canyon", "es": "Bingham Canyon"},
+      "country": "USA",
+      "categories": ["copper-world"],
+      "commodity": "copper",
+      "operator": "Rio Tinto Kennecott",
+      "seed": {"lon": -112.15, "lat": 40.52},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 6, "end_month": 9},
+      "facts": [
+        {"text": {"en": "The pit is over 4 km wide and 1,200 m deep; open-pit mining began in 1899 and more than 17 million tonnes of copper have been removed.", "es": "El rajo tiene mas de 4 km de ancho y 1.200 m de profundidad; la mineria a rajo abierto comenzo en 1899 y se han extraido mas de 17 millones de toneladas de cobre."}, "source": "https://science.nasa.gov/earth/earth-observatory/bingham-canyon-mine-utah-8144"},
+        {"text": {"en": "Bench heights are 16 to 25 m and about half a million tonnes of material are removed daily.", "es": "Los bancos miden entre 16 y 25 m y se retiran cerca de medio millon de toneladas de material al dia."}, "source": "https://science.nasa.gov/earth/earth-observatory/bingham-canyon-mine-utah-8144"}
+      ]
+    },
+    {
+      "id": "morenci",
+      "name": {"en": "Morenci", "es": "Morenci"},
+      "country": "USA",
+      "categories": ["copper-world"],
+      "commodity": "copper",
+      "operator": "Freeport-McMoRan",
+      "seed": {"lon": -109.36, "lat": 33.10},
+      "window_km": 24,
+      "first_year": 1985,
+      "season": {"start_month": 4, "end_month": 6},
+      "facts": []
+    },
+    {
+      "id": "cerro-verde",
+      "name": {"en": "Cerro Verde", "es": "Cerro Verde"},
+      "country": "PER",
+      "categories": ["copper-world"],
+      "commodity": "copper",
+      "operator": "Freeport-McMoRan, Sumitomo, Buenaventura",
+      "seed": {"lon": -71.60, "lat": -16.53},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 10},
+      "facts": [
+        {"text": {"en": "Cerro Verde produced 193,320 tonnes of copper in the first half of 2025.", "es": "Cerro Verde produjo 193.320 toneladas de cobre en el primer semestre de 2025."}, "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"}
+      ]
+    },
+    {
+      "id": "las-bambas",
+      "name": {"en": "Las Bambas", "es": "Las Bambas"},
+      "country": "PER",
+      "categories": ["copper-world"],
+      "commodity": "copper",
+      "operator": "MMG",
+      "seed": {"lon": -72.30, "lat": -14.05},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 9},
+      "facts": [
+        {"text": {"en": "Las Bambas produced 210,637 tonnes of copper in the first half of 2025.", "es": "Las Bambas produjo 210.637 toneladas de cobre en el primer semestre de 2025."}, "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"}
+      ]
+    },
+    {
+      "id": "antamina",
+      "name": {"en": "Antamina", "es": "Antamina"},
+      "country": "PER",
+      "categories": ["copper-world"],
+      "commodity": "copper, zinc",
+      "operator": "BHP, Glencore, Teck, Mitsubishi",
+      "seed": {"lon": -77.05, "lat": -9.53},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 9},
+      "facts": [
+        {"text": {"en": "Antamina produced 368 thousand tonnes of copper in 2024, ninth among the world's copper mines.", "es": "Antamina produjo 368 mil toneladas de cobre en 2024, novena entre las minas de cobre del mundo."}, "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"}
+      ]
+    },
+    {
+      "id": "grasberg",
+      "name": {"en": "Grasberg", "es": "Grasberg"},
+      "country": "IDN",
+      "categories": ["copper-world", "gold", "transition"],
+      "commodity": "copper, gold",
+      "operator": "Freeport Indonesia",
+      "seed": {"lon": 137.11, "lat": -4.05},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 1, "end_month": 12},
+      "facts": [
+        {"text": {"en": "The open pit is about 4 km wide, at roughly 4,100 m above sea level in the Sudirman Mountains; copper ore was discovered in 1936 and the Grasberg gold-bearing ore in 1988.", "es": "El rajo tiene cerca de 4 km de ancho, a unos 4.100 m sobre el nivel del mar en los montes Sudirman; el mineral de cobre se descubrio en 1936 y el mineral aurifero de Grasberg en 1988."}, "source": "https://science.nasa.gov/earth/earth-observatory/grasberg-mine-indonesia-5718/"}
+      ]
+    },
+    {
+      "id": "oyu-tolgoi",
+      "name": {"en": "Oyu Tolgoi", "es": "Oyu Tolgoi"},
+      "country": "MNG",
+      "categories": ["copper-world"],
+      "commodity": "copper, gold",
+      "operator": "Rio Tinto, Government of Mongolia",
+      "seed": {"lon": 106.85, "lat": 43.0},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 6, "end_month": 9},
+      "facts": [
+        {"text": {"en": "Oyu Tolgoi produced 152 thousand tonnes of copper to 30 June 2025 and is expected to average about 500 thousand tonnes a year from 2028 to 2036.", "es": "Oyu Tolgoi produjo 152 mil toneladas de cobre al 30 de junio de 2025 y se espera que promedie unas 500 mil toneladas al ano entre 2028 y 2036."}, "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"}
+      ]
+    },
+    {
+      "id": "kamoa-kakula",
+      "name": {"en": "Kamoa-Kakula", "es": "Kamoa-Kakula"},
+      "country": "COD",
+      "categories": ["copper-world"],
+      "commodity": "copper",
+      "operator": "Ivanhoe Mines, Zijin Mining, Crystal River, DRC",
+      "seed": {"lon": 25.40, "lat": -10.70},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 9},
+      "facts": [
+        {"text": {"en": "Kamoa-Kakula produced 245,129 tonnes of copper in the first half of 2025; the mine is underground, so the surface footprint is plants, dumps and tailings.", "es": "Kamoa-Kakula produjo 245.129 toneladas de cobre en el primer semestre de 2025; la mina es subterranea, por lo que la huella en superficie son plantas, botaderos y relaves."}, "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"}
+      ]
+    },
+    {
+      "id": "cobre-panama",
+      "name": {"en": "Cobre Panama", "es": "Cobre Panama"},
+      "country": "PAN",
+      "categories": ["copper-world", "closure"],
+      "commodity": "copper",
+      "operator": "First Quantum Minerals",
+      "seed": {"lon": -80.68, "lat": 8.85},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 1, "end_month": 4},
+      "closure_year": 2023,
+      "facts": [
+        {"text": {"en": "In production since 2019, the mine produced 112,734 tonnes of copper in the third quarter of 2023 and was halted after Panama's Supreme Court declared its contract unconstitutional on 28 November 2023.", "es": "En produccion desde 2019, la mina produjo 112.734 toneladas de cobre en el tercer trimestre de 2023 y fue detenida despues de que la Corte Suprema de Panama declarara inconstitucional su contrato el 28 de noviembre de 2023."}, "source": "https://www.cbc.ca/news/business/first-quantum-panama-1.7041954"}
+      ]
+    },
+    {
+      "id": "carajas",
+      "name": {"en": "Carajas N4 and N5", "es": "Carajas N4 y N5"},
+      "country": "BRA",
+      "categories": ["iron"],
+      "commodity": "iron ore",
+      "operator": "Vale",
+      "seed": {"lon": -50.17, "lat": -6.05},
+      "window_km": 24,
+      "first_year": 1985,
+      "season": {"start_month": 6, "end_month": 9},
+      "facts": [
+        {"text": {"en": "The largest open-pit iron ore mine in the world: iron was recognised on a hilltop in 1967 when a geologists' helicopter stopped to refuel; ore is railed more than 250 km to the port of Sao Luis.", "es": "La mina de hierro a rajo abierto mas grande del mundo: el hierro se reconocio en una cima en 1967 cuando el helicoptero de unos geologos se detuvo a recargar; el mineral viaja en tren mas de 250 km al puerto de Sao Luis."}, "source": "https://science.nasa.gov/earth/earth-observatory/carajas-mine-brazil-39581/"}
+      ]
+    },
+    {
+      "id": "mount-whaleback",
+      "name": {"en": "Mount Whaleback", "es": "Mount Whaleback"},
+      "country": "AUS",
+      "categories": ["iron"],
+      "commodity": "iron ore",
+      "operator": "BHP",
+      "seed": {"lon": 119.67, "lat": -23.37},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 4, "end_month": 9},
+      "facts": []
+    },
+    {
+      "id": "super-pit",
+      "name": {"en": "Fimiston Super Pit", "es": "Super Pit de Fimiston"},
+      "country": "AUS",
+      "categories": ["gold"],
+      "commodity": "gold",
+      "operator": "Northern Star Resources",
+      "seed": {"lon": 121.50, "lat": -30.78},
+      "window_km": 16,
+      "first_year": 1985,
+      "season": {"start_month": 4, "end_month": 9},
+      "facts": [
+        {"text": {"en": "The pit is about 3.5 km long, 1.6 km wide and over 675 m deep; waste dumps and grey-white tailings ponds sprawl around it.", "es": "El rajo mide cerca de 3,5 km de largo, 1,6 km de ancho y mas de 675 m de profundidad; botaderos y pozas de relaves gris-blancas se extienden a su alrededor."}, "source": "https://science.nasa.gov/earth/earth-observatory/super-pit-mine-kalgoorlie-western-australia-42763/"}
+      ]
+    },
+    {
+      "id": "muruntau",
+      "name": {"en": "Muruntau", "es": "Muruntau"},
+      "country": "UZB",
+      "categories": ["gold"],
+      "commodity": "gold",
+      "operator": "Navoi Mining and Metallurgical Combinat",
+      "seed": {"lon": 64.57, "lat": 41.50},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 9},
+      "facts": [
+        {"text": {"en": "The world's largest open-pit gold mine: about 3.5 km by 3 km and 565 m deep, with surface mining since 1967.", "es": "La mina de oro a rajo abierto mas grande del mundo: cerca de 3,5 km por 3 km y 565 m de profundidad, con explotacion a rajo abierto desde 1967."}, "source": "https://www.nsenergybusiness.com/projects/muruntau-gold-mine/"}
+      ]
+    },
+    {
+      "id": "hambach",
+      "name": {"en": "Hambach", "es": "Hambach"},
+      "country": "DEU",
+      "categories": ["lignite"],
+      "commodity": "lignite",
+      "operator": "RWE",
+      "seed": {"lon": 6.50, "lat": 50.91},
+      "window_km": 20,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 9},
+      "facts": [
+        {"text": {"en": "Germany's largest open-pit coal mine covers about 44 km2, reaches almost 300 m below sea level and produces 40 million tonnes of lignite a year; the hollow is planned to become a lake.", "es": "La mayor mina de carbon a rajo abierto de Alemania cubre unos 44 km2, llega a casi 300 m bajo el nivel del mar y produce 40 millones de toneladas de lignito al ano; se planea convertir el hueco en un lago."}, "source": "https://science.nasa.gov/earth/earth-observatory/hambach-coal-mine-150294"}
+      ]
+    },
+    {
+      "id": "belchatow",
+      "name": {"en": "Belchatow", "es": "Belchatow"},
+      "country": "POL",
+      "categories": ["lignite"],
+      "commodity": "lignite",
+      "operator": "PGE",
+      "seed": {"lon": 19.33, "lat": 51.26},
+      "window_km": 24,
+      "first_year": 1985,
+      "season": {"start_month": 5, "end_month": 9},
+      "facts": []
+    },
+    {
+      "id": "mir",
+      "name": {"en": "Mir", "es": "Mir"},
+      "country": "RUS",
+      "categories": ["diamonds", "closure"],
+      "commodity": "diamonds",
+      "operator": "Alrosa",
+      "seed": {"lon": 113.99, "lat": 62.53},
+      "window_km": 12,
+      "first_year": 1985,
+      "season": {"start_month": 6, "end_month": 8},
+      "closure_year": 2001,
+      "facts": [
+        {"text": {"en": "The Mir pit is more than 525 m deep and 1,200 m across; open-pit mining ran from 1957 to 2001.", "es": "El rajo de Mir tiene mas de 525 m de profundidad y 1.200 m de diametro; la explotacion a rajo abierto se extendio de 1957 a 2001."}, "source": "https://www.jpl.nasa.gov/images/pia25856-mir-diamond-mine-siberia/"}
+      ]
+    },
+    {
+      "id": "udachnaya",
+      "name": {"en": "Udachnaya", "es": "Udachnaya"},
+      "country": "RUS",
+      "categories": ["diamonds"],
+      "commodity": "diamonds",
+      "operator": "Alrosa",
+      "seed": {"lon": 112.32, "lat": 66.43},
+      "window_km": 12,
+      "first_year": 1985,
+      "season": {"start_month": 6, "end_month": 8},
+      "facts": []
+    },
+    {
+      "id": "athabasca-mildred",
+      "name": {"en": "Athabasca oil sands (Mildred Lake)", "es": "Arenas bituminosas de Athabasca (Mildred Lake)"},
+      "country": "CAN",
+      "categories": ["oil-sands"],
+      "commodity": "bitumen",
+      "operator": "Syncrude (Suncor)",
+      "seed": {"lon": -111.60, "lat": 57.05},
+      "window_km": 40,
+      "first_year": 1985,
+      "season": {"start_month": 6, "end_month": 8},
+      "facts": [
+        {"text": {"en": "The Mildred Lake mine began production in 1978 and expanded in 1996; Landsat shows slow growth from 1984 to 2000 and a decade of rapid development after oil prices climbed.", "es": "La mina Mildred Lake comenzo a producir en 1978 y se amplio en 1996; Landsat muestra un crecimiento lento entre 1984 y 2000 y una decada de desarrollo rapido tras la subida del precio del petroleo."}, "source": "https://science.nasa.gov/earth/earth-observatory/world-of-change/athabasca-oil-sands/"}
+      ]
+    }
+  ]
+}

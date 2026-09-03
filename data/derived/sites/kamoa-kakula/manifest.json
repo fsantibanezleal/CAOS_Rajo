@@ -1,0 +1,91 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "kamoa-kakula",
+ "site": {
+  "id": "kamoa-kakula",
+  "name_en": "Kamoa-Kakula",
+  "name_es": "Kamoa-Kakula",
+  "country": "COD",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": 25.4,
+  "lat": -10.7,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "Kamoa-Kakula produced 245,129 tonnes of copper in the first half of 2025; the mine is underground, so the surface footprint is plants, dumps and tailings.",
+    "text_es": "Kamoa-Kakula produjo 245.129 toneladas de cobre en el primer semestre de 2025; la mina es subterranea, por lo que la huella en superficie son plantas, botaderos y relaves.",
+    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Ivanhoe Mines, Zijin Mining, Crystal River, DRC",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32735,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 315000.0,
+  "top": 8826750.0,
+  "right": 335010.0,
+  "bottom": 8806740.0,
+  "transform": [
+   10.0,
+   0.0,
+   315000.0,
+   0.0,
+   -10.0,
+   8826750.0
+  ],
+  "bbox_wgs84": [
+   25.30795813202595,
+   -10.790844167236589,
+   25.491820792344257,
+   -10.609003088807587
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 11,
+  "area_km2": 91.709,
+  "fids": [
+   4071,
+   4073,
+   4074,
+   4075,
+   4077,
+   4100,
+   4103,
+   4112,
+   4114,
+   4125,
+   4127
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/kamoa-kakula/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 18951,
+   "sha256": "6bb5ab5a02e5fcc6c6a25d111e2015c47ca7b6a0b1ef4e7bf4fcfcfc5de1940f"
+  }
+ ]
+}

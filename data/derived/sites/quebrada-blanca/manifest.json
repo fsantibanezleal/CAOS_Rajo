@@ -1,0 +1,89 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "quebrada-blanca",
+ "site": {
+  "id": "quebrada-blanca",
+  "name_en": "Quebrada Blanca",
+  "name_es": "Quebrada Blanca",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -68.81,
+  "lat": -21.0,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 10,
+   "end_month": 4
+  },
+  "facts": [
+   {
+    "text_en": "The Quebrada Blanca Phase 2 project produced its first bulk copper concentrate in March 2023 and ramped up through the year.",
+    "text_es": "El proyecto Quebrada Blanca Fase 2 produjo su primer concentrado de cobre a granel en marzo de 2023 y aumento su produccion durante el ano.",
+    "source": "https://www.teck.com/news/news-releases/2023/teck-announces-first-copper-at-qb2-project-in-northern-chile"
+   },
+   {
+    "text_en": "The concentrator was built for 140,000 tonnes per day, with an initial mine life of 27 years.",
+    "text_es": "La planta concentradora se construyo para 140.000 toneladas por dia, con una vida util inicial de 27 anos.",
+    "source": "https://www.teck.com/operations/chile/operations/quebrada-blanca/"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Teck (60%), Sumitomo (30%), Codelco (10%)",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 509730.0,
+  "top": 7687860.0,
+  "right": 529740.0,
+  "bottom": 7667850.0,
+  "transform": [
+   10.0,
+   0.0,
+   509730.0,
+   0.0,
+   -10.0,
+   7687860.0
+  ],
+  "bbox_wgs84": [
+   -68.9064345089026,
+   -21.09035148359223,
+   -68.71367122637972,
+   -20.90933466775926
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 4,
+  "area_km2": 52.06,
+  "fids": [
+   3001,
+   3025,
+   3036,
+   3038
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/quebrada-blanca/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 32556,
+   "sha256": "7cc37a397eb505d5d34a6e99ef6afecba26d2e326cb4f3ab3b6f8852633c72e7"
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "site": {
+  "id": "muruntau",
+  "name_en": "Muruntau",
+  "name_es": "Muruntau",
+  "country": "UZB",
+  "categories": [
+   "gold"
+  ],
+  "lon": 64.57,
+  "lat": 41.5,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "The world's largest open-pit gold mine: about 3.5 km by 3 km and 565 m deep, with surface mining since 1967.",
+    "text_es": "La mina de oro a rajo abierto mas grande del mundo: cerca de 3,5 km por 3 km y 565 m de profundidad, con explotacion a rajo abierto desde 1967.",
+    "source": "https://www.nsenergybusiness.com/projects/muruntau-gold-mine/"
+   }
+  ],
+  "commodity": "gold",
+  "operator": "Navoi Mining and Metallurgical Combinat",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32641,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 621030.0,
+  "top": 4605480.0,
+  "right": 641040.0,
+  "bottom": 4585470.0,
+  "transform": [
+   10.0,
+   0.0,
+   621030.0,
+   0.0,
+   -10.0,
+   4605480.0
+  ],
+  "bbox_wgs84": [
+   64.448122092933,
+   41.408410059282,
+   64.6921331396392,
+   41.59185313139782
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 4,
+  "area_km2": 64.687,
+  "fids": [
+   9214,
+   9215,
+   9256,
+   9276
+  ]
+ }
+}

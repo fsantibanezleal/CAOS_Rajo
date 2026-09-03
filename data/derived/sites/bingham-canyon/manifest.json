@@ -1,0 +1,95 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "bingham-canyon",
+ "site": {
+  "id": "bingham-canyon",
+  "name_en": "Bingham Canyon",
+  "name_es": "Bingham Canyon",
+  "country": "USA",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": -112.15,
+  "lat": 40.52,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 6,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "The pit is over 4 km wide and 1,200 m deep; open-pit mining began in 1899 and more than 17 million tonnes of copper have been removed.",
+    "text_es": "El rajo tiene mas de 4 km de ancho y 1.200 m de profundidad; la mineria a rajo abierto comenzo en 1899 y se han extraido mas de 17 millones de toneladas de cobre.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/bingham-canyon-mine-utah-8144"
+   },
+   {
+    "text_en": "Bench heights are 16 to 25 m and about half a million tonnes of material are removed daily.",
+    "text_es": "Los bancos miden entre 16 y 25 m y se retiran cerca de medio millon de toneladas de material al dia.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/bingham-canyon-mine-utah-8144"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Rio Tinto Kennecott",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32612,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 392550.0,
+  "top": 4496130.0,
+  "right": 412560.0,
+  "bottom": 4476120.0,
+  "transform": [
+   10.0,
+   0.0,
+   392550.0,
+   0.0,
+   -10.0,
+   4496130.0
+  ],
+  "bbox_wgs84": [
+   -112.27013024891856,
+   40.42878248983715,
+   -112.03087450969085,
+   40.6113669778717
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 10,
+  "area_km2": 49.554,
+  "fids": [
+   16043,
+   16045,
+   16146,
+   16149,
+   16160,
+   16169,
+   40496,
+   40499,
+   40500,
+   40504
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/bingham-canyon/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 13949,
+   "sha256": "6072e0e077925c1387140b839d22453a1f6050b04ca4ba5865b05462e543f211"
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rajo: open pits seen from orbit. Forty years of satellite imagery over the world's great mines, computed in your browser from open data." />
+    <meta property="og:title" content="Rajo, open pits seen from orbit" />
+    <meta property="og:description" content="A 40-year satellite observatory of the world's great open-pit mines and lithium ponds, computed in your browser from open data." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b1020" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Rajo, open pits seen from orbit</title>
+    <script>
+      // Theme before first paint (no flash): saved choice, else the system preference.
+      (function () {
+        try {
+          var saved = localStorage.getItem('rajo.theme');
+          var sys = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+          var theme = saved === 'light' || saved === 'dark' ? saved : sys;
+          document.documentElement.setAttribute('data-theme', theme);
+          var lang = localStorage.getItem('rajo.lang');
+          if (lang === 'es') document.documentElement.setAttribute('lang', 'es');
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

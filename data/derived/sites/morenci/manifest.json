@@ -1,0 +1,75 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "morenci",
+ "site": {
+  "id": "morenci",
+  "name_en": "Morenci",
+  "name_es": "Morenci",
+  "country": "USA",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": -109.36,
+  "lat": 33.1,
+  "window_km": 24.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 4,
+   "end_month": 6
+  },
+  "facts": [],
+  "commodity": "copper",
+  "operator": "Freeport-McMoRan",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32612,
+  "pixel_m": 10.0,
+  "width": 2400,
+  "height": 2400,
+  "left": 641010.0,
+  "top": 3675570.0,
+  "right": 665010.0,
+  "bottom": 3651570.0,
+  "transform": [
+   10.0,
+   0.0,
+   641010.0,
+   0.0,
+   -10.0,
+   3675570.0
+  ],
+  "bbox_wgs84": [
+   -109.49069633397937,
+   32.9900601259056,
+   -109.22957593932,
+   33.209839137555186
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 1,
+  "area_km2": 90.371,
+  "fids": [
+   12049
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/morenci/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 2565,
+   "sha256": "6e7bd94a63d7477adbe1b3fc484959617ca4ca647059e589c1c81469fbba7afc"
+  }
+ ]
+}

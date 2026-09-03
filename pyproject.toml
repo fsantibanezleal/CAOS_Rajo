@@ -1,0 +1,15 @@
+# Tool configuration only. This repository declares NO package of its own: the offline pipeline is a set of
+# plain scripts under data-pipeline/, invoked by path (python data-pipeline/run.py ...).
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"
+extend-exclude = ["frontend", "data", ".venv", "models"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "W"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

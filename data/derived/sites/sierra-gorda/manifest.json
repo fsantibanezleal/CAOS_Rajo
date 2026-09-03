@@ -1,0 +1,75 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "sierra-gorda",
+ "site": {
+  "id": "sierra-gorda",
+  "name_en": "Sierra Gorda",
+  "name_es": "Sierra Gorda",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -69.31,
+  "lat": -22.9,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 11,
+   "end_month": 3
+  },
+  "facts": [],
+  "commodity": "copper",
+  "operator": "KGHM, South32",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 460200.0,
+  "top": 7475520.0,
+  "right": 476190.0,
+  "bottom": 7459530.0,
+  "transform": [
+   10.0,
+   0.0,
+   460200.0,
+   0.0,
+   -10.0,
+   7475520.0
+  ],
+  "bbox_wgs84": [
+   -69.38828048174243,
+   -22.972279908561866,
+   -69.23204086968047,
+   -22.827531299621107
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 1,
+  "area_km2": 287.261,
+  "fids": [
+   44073
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/sierra-gorda/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 3749,
+   "sha256": "061dd4f81fdaac9c6bebc46357308220350e193f1a0677d9b051b23d87645b4c"
+  }
+ ]
+}

@@ -1,0 +1,85 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "cerro-verde",
+ "site": {
+  "id": "cerro-verde",
+  "name_en": "Cerro Verde",
+  "name_es": "Cerro Verde",
+  "country": "PER",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": -71.6,
+  "lat": -16.53,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 10
+  },
+  "facts": [
+   {
+    "text_en": "Cerro Verde produced 193,320 tonnes of copper in the first half of 2025.",
+    "text_es": "Cerro Verde produjo 193.320 toneladas de cobre en el primer semestre de 2025.",
+    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Freeport-McMoRan, Sumitomo, Buenaventura",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 212460.0,
+  "top": 8180670.0,
+  "right": 232470.0,
+  "bottom": 8160660.0,
+  "transform": [
+   10.0,
+   0.0,
+   212460.0,
+   0.0,
+   -10.0,
+   8180670.0
+  ],
+  "bbox_wgs84": [
+   -71.69512029297906,
+   -16.62132199234406,
+   -71.50536759521115,
+   -16.438285094975377
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 5,
+  "area_km2": 49.622,
+  "fids": [
+   3397,
+   3422,
+   38271,
+   38272,
+   38273
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/cerro-verde/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 27109,
+   "sha256": "33f9abee7b2edd80feb5a37822c949c3d11656ce7c23e01fdcffded7b0049dfc"
+  }
+ ]
+}

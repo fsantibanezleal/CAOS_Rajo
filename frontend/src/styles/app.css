@@ -1,0 +1,136 @@
+/* Rajo application styles. The page IS the viewport: the document never scrolls; the one container that
+   owns long content scrolls inside itself. Every flex or grid ancestor of a scrollable row carries
+   min-width: 0. */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+button { font: inherit; color: inherit; }
+code, .mono { font-family: var(--font-mono); font-size: 0.92em; }
+
+.app {
+  display: grid;
+  grid-template-rows: var(--header-h) minmax(0, 1fr) var(--footer-h);
+  height: 100vh;
+  height: 100dvh;
+  min-width: 0;
+}
+
+/* --- header: one row, never wraps ------------------------------------------------------------ */
+.hdr {
+  display: flex; align-items: center; gap: 14px; padding: 0 14px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface-2);
+  backdrop-filter: blur(10px);
+  min-width: 0; white-space: nowrap; overflow: hidden;
+}
+.hdr .brand { display: flex; align-items: center; gap: 9px; color: var(--fg); font-weight: 700; letter-spacing: 0.02em; }
+.hdr .brand .mark { width: 26px; height: 26px; }
+.hdr .brand .tag { color: var(--fg-muted); font-weight: 400; font-size: 12.5px; margin-left: 2px; }
+.hdr nav { display: flex; gap: 2px; margin-left: 8px; min-width: 0; overflow: hidden; }
+.hdr nav a {
+  padding: 6px 10px; border-radius: var(--radius-sm); color: var(--fg-muted); font-weight: 500; font-size: 13px;
+}
+.hdr nav a:hover { color: var(--fg); background: var(--accent-soft); text-decoration: none; }
+.hdr nav a.on { color: var(--accent-2); background: var(--accent-soft); }
+.hdr .spacer { flex: 1; }
+.hdr .actions { display: flex; align-items: center; gap: 4px; }
+.iconbtn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  height: 32px; min-width: 32px; padding: 0 8px; border-radius: var(--radius-sm);
+  border: 1px solid transparent; background: transparent; cursor: pointer; color: var(--fg-muted);
+}
+.iconbtn:hover { color: var(--fg); background: var(--accent-soft); border-color: var(--border); }
+.iconbtn .lbl { font-size: 12px; font-weight: 600; }
+.sep { width: 1px; height: 20px; background: var(--border-strong); margin: 0 4px; }
+
+/* --- footer: compact and informative ----------------------------------------------------------- */
+.ftr {
+  display: flex; align-items: center; gap: 10px; padding: 0 14px; font-size: 11.5px;
+  color: var(--fg-muted); border-top: 1px solid var(--border); background: var(--surface-2);
+  min-width: 0; white-space: nowrap; overflow: hidden;
+}
+.ftr .dot { color: var(--fg-faint); }
+.ftr .honest { overflow: hidden; text-overflow: ellipsis; }
+
+/* --- main surfaces ----------------------------------------------------------------------------- */
+.main { position: relative; min-height: 0; min-width: 0; overflow: hidden; }
+
+/* the observatory: a full-bleed map with floating instruments */
+.obs { position: absolute; inset: 0; min-width: 0; }
+.obs .map { position: absolute; inset: 0; }
+.obs .map .maplibregl-canvas { outline: none; }
+.overlay { position: absolute; z-index: 5; pointer-events: none; }
+.overlay > * { pointer-events: auto; }
+.panel {
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow); backdrop-filter: blur(12px); color: var(--fg);
+}
+.rail { top: 14px; left: 14px; width: var(--rail-w); display: flex; flex-direction: column; gap: 10px; }
+.rail .panel { padding: 12px; }
+.rail label { display: block; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--fg-faint); margin-bottom: 6px; }
+.rail select, .rail input {
+  width: 100%; height: 34px; padding: 0 10px; border-radius: var(--radius-sm); border: 1px solid var(--border-strong);
+  background: var(--surface-solid); color: var(--fg); font: inherit;
+}
+.mapstatus {
+  bottom: 14px; left: 14px; display: flex; gap: 8px; align-items: center; font-family: var(--font-mono); font-size: 11.5px;
+}
+.mapstatus .panel { padding: 6px 10px; }
+.mapctl { top: 14px; right: 14px; display: flex; flex-direction: column; gap: 6px; }
+.mapctl .panel { padding: 4px; display: flex; flex-direction: column; gap: 2px; }
+.mapctl .iconbtn { color: var(--fg); }
+.mapctl .iconbtn.on { color: var(--accent-2); background: var(--accent-soft); }
+.attrib {
+  bottom: 14px; right: 14px; max-width: 46vw; font-size: 10.5px; color: var(--fg-muted);
+}
+.attrib .panel { padding: 6px 10px; line-height: 1.35; }
+.attrib a { color: var(--fg-muted); }
+.nowebgl { position: absolute; inset: 0; display: grid; place-items: center; padding: 24px; text-align: center; color: var(--fg); }
+.nowebgl .panel { max-width: 520px; padding: 24px; }
+
+/* reading pages: the prose measure inside a scrolling container that owns the overflow */
+.page { position: absolute; inset: 0; overflow-y: auto; overflow-x: hidden; min-width: 0; }
+.page .inner { max-width: 1100px; margin: 0 auto; padding: 28px 24px 48px; }
+.page h1 { font-size: 26px; margin: 0 0 6px; letter-spacing: -0.01em; }
+.page .lede { font-size: 15.5px; color: var(--fg-muted); max-width: 70ch; margin: 0 0 22px; }
+.page h2 { font-size: 18px; margin: 28px 0 8px; }
+.page p { max-width: 74ch; }
+.page table { border-collapse: collapse; width: 100%; font-size: 13px; }
+.page th, .page td { text-align: left; padding: 7px 8px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.page th { color: var(--fg-muted); font-weight: 600; }
+.chip {
+  display: inline-flex; align-items: center; height: 22px; padding: 0 9px; border-radius: 999px; font-size: 11.5px;
+  border: 1px solid var(--border-strong); color: var(--fg-muted); background: transparent; cursor: pointer;
+}
+.chip.on { background: var(--accent); color: #1a1206; border-color: var(--accent); }
+.muted { color: var(--fg-muted); }
+.faint { color: var(--fg-faint); }
+
+/* MapLibre chrome re-themed */
+.maplibregl-ctrl-attrib { display: none; }
+.maplibregl-popup-content { background: var(--surface-solid); color: var(--fg); border: 1px solid var(--border); border-radius: var(--radius-sm); }
+
+@media (max-width: 900px) {
+  :root { --rail-w: 240px; --panel-w: 300px; }
+  .hdr .tag { display: none; }
+}
+
+/* the site card inside the rail: sized, sections scroll inside the card never the page */
+.sitecard { margin-top: 12px; border-top: 1px solid var(--border); padding-top: 10px; max-height: calc(100vh - var(--header-h) - var(--footer-h) - 140px); overflow-y: auto; }
+.sitecard h2 { font-size: 16px; margin: 0 0 2px; }
+.sitecard p { margin: 0 0 8px; font-size: 12.5px; }
+.sitecard dl { display: grid; grid-template-columns: auto 1fr; gap: 3px 10px; margin: 0 0 8px; font-size: 12px; }
+.sitecard dt { color: var(--fg-faint); }
+.sitecard dd { margin: 0; }
+.sitecard .facts { margin: 0; padding-left: 16px; font-size: 12.5px; }
+.sitecard .facts li { margin-bottom: 6px; }

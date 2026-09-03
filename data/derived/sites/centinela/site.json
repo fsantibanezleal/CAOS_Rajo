@@ -1,0 +1,62 @@
+{
+ "site": {
+  "id": "centinela",
+  "name_en": "Centinela",
+  "name_es": "Centinela",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -69.05,
+  "lat": -22.98,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 11,
+   "end_month": 3
+  },
+  "facts": [],
+  "commodity": "copper",
+  "operator": "Antofagasta Minerals",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 484860.0,
+  "top": 7468710.0,
+  "right": 504870.0,
+  "bottom": 7448700.0,
+  "transform": [
+   10.0,
+   0.0,
+   484860.0,
+   0.0,
+   -10.0,
+   7468710.0
+  ],
+  "bbox_wgs84": [
+   -69.14781038906244,
+   -23.070274890293025,
+   -68.95245459551212,
+   -22.88945378027893
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 3,
+  "area_km2": 90.084,
+  "fids": [
+   2359,
+   2362,
+   2629
+  ]
+ }
+}

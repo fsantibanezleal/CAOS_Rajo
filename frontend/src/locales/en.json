@@ -1,0 +1,97 @@
+{
+  "brand": "Rajo",
+  "tagline": "open pits seen from orbit",
+  "nav": {
+    "observatory": "Observatory",
+    "atlas": "Atlas",
+    "methods": "Methods",
+    "data": "Data",
+    "about": "About"
+  },
+  "header": {
+    "github": "Source code on GitHub",
+    "theme": "Toggle light or dark theme",
+    "lang": "Switch language",
+    "architecture": "How it is built"
+  },
+  "footer": {
+    "developed": "Developed by Felipe Santibanez-Leal",
+    "project": "an open CAOS project",
+    "version": "Version",
+    "license": "MIT code; data under their own licenses",
+    "honest": "Every number on screen is computed in your browser from open data or read from a baked, checksummed artifact; nothing is uploaded anywhere."
+  },
+  "attribution": {
+    "sentinel": "Contains modified Copernicus Sentinel data 2017 to 2026",
+    "landsat": "Landsat Collection 2 courtesy of the U.S. Geological Survey, via Microsoft Planetary Computer",
+    "terrain": "Terrain Tiles by Mapzen (Tilezen) via AWS Open Data: SRTM, GMTED2010, ETOPO1 and regional sources",
+    "copdem": "Copernicus DEM GLO-30 (c) DLR e.V. 2010-2014 and (c) Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA",
+    "srtm": "SRTM GL1 (Farr et al. 2007) via OpenTopography",
+    "polygons": "Mining polygons: Maus et al. 2022 (CC BY-SA 4.0), Tang and Werner 2023 (CC BY 4.0), Jasansky et al. 2024 (CC BY-SA 4.0)",
+    "eox": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)",
+    "ofm": "OpenFreeMap (c) OpenMapTiles Data from OpenStreetMap"
+  },
+  "map": {
+    "loading": "Loading the map",
+    "webglMissing": "Your browser could not create a WebGL context. Rajo draws satellite imagery and 3D terrain on the GPU and needs WebGL to run.",
+    "terrain": "3D terrain",
+    "labels": "Labels",
+    "imagery": "Satellite imagery (Sentinel-2 cloudless 2024)",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "resetNorth": "Reset bearing to north",
+    "coords": "Cursor",
+    "elevation": "Elevation",
+    "globe": "Globe",
+    "status": {
+      "ready": "Ready",
+      "tiles": "Loading tiles"
+    }
+  },
+  "observatory": {
+    "title": "Observatory",
+    "pickSite": "Site",
+    "search": "Search a site",
+    "noSites": "No baked sites yet: the catalog ships with the first bake.",
+    "world": "World view",
+    "window": "Window",
+    "polygons": "Reference polygons",
+    "source": "source",
+    "polygonsCredit": "Reference footprints: Maus et al. 2022, global-scale mining polygons v2 (CC BY-SA 4.0); they include pits, dumps, tailings, ponds and plants."
+  },
+  "atlas": {
+    "title": "Atlas",
+    "lede": "Every site in the catalog with its category, country and time-lapse coverage.",
+    "columns": {
+      "site": "Site",
+      "country": "Country",
+      "categories": "Categories",
+      "seed": "Seed (lon, lat)",
+      "frames": "Frames"
+    }
+  },
+  "methods": {
+    "title": "Methods",
+    "lede": "The twelve computations Rajo performs on real pixels, with their equations, sources and caveats."
+  },
+  "data": {
+    "title": "Data",
+    "lede": "Every source Rajo reads, its license, and the two data contracts between the offline bake and this page."
+  },
+  "about": {
+    "title": "About",
+    "lede": "What Rajo is, what it is not, who built it and why."
+  },
+  "categories": {
+    "copper-chile": "Copper, Chile",
+    "copper-world": "Copper, world",
+    "lithium-brine": "Lithium brine",
+    "iron": "Iron ore",
+    "gold": "Gold",
+    "lignite": "Coal and lignite",
+    "diamonds": "Diamonds",
+    "oil-sands": "Oil sands",
+    "transition": "Transition to underground",
+    "closure": "Closed or halted"
+  }
+}

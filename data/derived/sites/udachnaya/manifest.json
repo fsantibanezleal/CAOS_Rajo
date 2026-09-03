@@ -1,0 +1,78 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "udachnaya",
+ "site": {
+  "id": "udachnaya",
+  "name_en": "Udachnaya",
+  "name_es": "Udachnaya",
+  "country": "RUS",
+  "categories": [
+   "diamonds"
+  ],
+  "lon": 112.32,
+  "lat": 66.43,
+  "window_km": 12.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 6,
+   "end_month": 8
+  },
+  "facts": [],
+  "commodity": "diamonds",
+  "operator": "Alrosa",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32649,
+  "pixel_m": 10.0,
+  "width": 1200,
+  "height": 1200,
+  "left": 552870.0,
+  "top": 7374480.0,
+  "right": 564870.0,
+  "bottom": 7362480.0,
+  "transform": [
+   10.0,
+   0.0,
+   552870.0,
+   0.0,
+   -10.0,
+   7374480.0
+  ],
+  "bbox_wgs84": [
+   112.1824393420959,
+   66.37516053407728,
+   112.45697771042623,
+   66.4850569135558
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 4,
+  "area_km2": 50.915,
+  "fids": [
+   19103,
+   19104,
+   19106,
+   44620
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/udachnaya/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 16235,
+   "sha256": "48da07a3f20279789977645efa54887aadf80d9f3d15ca3267c836f1cc9fe0bd"
+  }
+ ]
+}

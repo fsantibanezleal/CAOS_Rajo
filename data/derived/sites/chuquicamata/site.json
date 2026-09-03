@@ -1,0 +1,80 @@
+{
+ "site": {
+  "id": "chuquicamata",
+  "name_en": "Chuquicamata",
+  "name_es": "Chuquicamata",
+  "country": "CHL",
+  "categories": [
+   "copper-chile",
+   "transition"
+  ],
+  "lon": -68.905,
+  "lat": -22.305,
+  "window_km": 24.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 11,
+   "end_month": 3
+  },
+  "facts": [
+   {
+    "text_en": "The pit is about 1 km deep, 3 km wide and 5 km long, and has been in operation since 1910.",
+    "text_es": "El rajo tiene cerca de 1 km de profundidad, 3 km de ancho y 5 km de largo, y opera desde 1910.",
+    "source": "https://eros.usgs.gov/earthshots/chuquicamata-mine-chile"
+   },
+   {
+    "text_en": "Underground block-cave mining commenced in 2019, expected to extend the site's life by at least 40 years.",
+    "text_es": "La explotacion subterranea por hundimiento comenzo en 2019 y se espera que extienda la vida de la faena al menos 40 anos.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/copper-mining-at-chuquicamata-152368"
+   },
+   {
+    "text_en": "The town of Chuquicamata was relocated to Calama from 2004 and fully abandoned by 2007.",
+    "text_es": "El campamento de Chuquicamata fue trasladado a Calama desde 2004 y quedo abandonado en 2007.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/copper-mining-at-chuquicamata-152368"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Codelco",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "Tailings are deposited at the Talabre facility east of the pit, visible as the pale field in the eastern part of the window.",
+  "tailings_note_es": "Los relaves se depositan en el tranque Talabre al este del rajo, visible como el campo palido en la parte oriental de la ventana.",
+  "transition_year": 2019,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 2400,
+  "height": 2400,
+  "left": 497760.0,
+  "top": 7545420.0,
+  "right": 521760.0,
+  "bottom": 7521420.0,
+  "transform": [
+   10.0,
+   0.0,
+   497760.0,
+   0.0,
+   -10.0,
+   7545420.0
+  ],
+  "bbox_wgs84": [
+   -69.02176468018642,
+   -22.413347036356374,
+   -68.78857222429359,
+   -22.19639016141799
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 4,
+  "area_km2": 261.728,
+  "fids": [
+   3562,
+   3621,
+   3623,
+   3634
+  ]
+ }
+}

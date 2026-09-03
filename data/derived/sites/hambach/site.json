@@ -1,0 +1,67 @@
+{
+ "site": {
+  "id": "hambach",
+  "name_en": "Hambach",
+  "name_es": "Hambach",
+  "country": "DEU",
+  "categories": [
+   "lignite"
+  ],
+  "lon": 6.5,
+  "lat": 50.91,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "Germany's largest open-pit coal mine covers about 44 km2, reaches almost 300 m below sea level and produces 40 million tonnes of lignite a year; the hollow is planned to become a lake.",
+    "text_es": "La mayor mina de carbon a rajo abierto de Alemania cubre unos 44 km2, llega a casi 300 m bajo el nivel del mar y produce 40 millones de toneladas de lignito al ano; se planea convertir el hueco en un lago.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/hambach-coal-mine-150294"
+   }
+  ],
+  "commodity": "lignite",
+  "operator": "RWE",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32632,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 314220.0,
+  "top": 5652810.0,
+  "right": 334230.0,
+  "bottom": 5632800.0,
+  "transform": [
+   10.0,
+   0.0,
+   314220.0,
+   0.0,
+   -10.0,
+   5652810.0
+  ],
+  "bbox_wgs84": [
+   6.352399476844753,
+   50.81708680559099,
+   6.646382739745173,
+   51.002950367776165
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 2,
+  "area_km2": 83.307,
+  "fids": [
+   11181,
+   11202
+  ]
+ }
+}

@@ -1,0 +1,77 @@
+{
+ "site": {
+  "id": "oyu-tolgoi",
+  "name_en": "Oyu Tolgoi",
+  "name_es": "Oyu Tolgoi",
+  "country": "MNG",
+  "categories": [
+   "copper-world"
+  ],
+  "lon": 106.85,
+  "lat": 43.0,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 6,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "Oyu Tolgoi produced 152 thousand tonnes of copper to 30 June 2025 and is expected to average about 500 thousand tonnes a year from 2028 to 2036.",
+    "text_es": "Oyu Tolgoi produjo 152 mil toneladas de cobre al 30 de junio de 2025 y se espera que promedie unas 500 mil toneladas al ano entre 2028 y 2036.",
+    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+   }
+  ],
+  "commodity": "copper, gold",
+  "operator": "Rio Tinto, Government of Mongolia",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32648,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 640770.0,
+  "top": 4772490.0,
+  "right": 660780.0,
+  "bottom": 4752480.0,
+  "transform": [
+   10.0,
+   0.0,
+   640770.0,
+   0.0,
+   -10.0,
+   4772490.0
+  ],
+  "bbox_wgs84": [
+   106.72458239186679,
+   42.90799764704288,
+   106.97535587936768,
+   43.092061855356235
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 12,
+  "area_km2": 30.751,
+  "fids": [
+   15980,
+   15981,
+   15982,
+   15983,
+   15985,
+   16011,
+   16012,
+   16015,
+   16021,
+   16029,
+   16030,
+   32363
+  ]
+ }
+}

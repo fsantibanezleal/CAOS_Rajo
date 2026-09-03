@@ -1,0 +1,100 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "super-pit",
+ "site": {
+  "id": "super-pit",
+  "name_en": "Fimiston Super Pit",
+  "name_es": "Super Pit de Fimiston",
+  "country": "AUS",
+  "categories": [
+   "gold"
+  ],
+  "lon": 121.5,
+  "lat": -30.78,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 4,
+   "end_month": 9
+  },
+  "facts": [
+   {
+    "text_en": "The pit is about 3.5 km long, 1.6 km wide and over 675 m deep; waste dumps and grey-white tailings ponds sprawl around it.",
+    "text_es": "El rajo mide cerca de 3,5 km de largo, 1,6 km de ancho y mas de 675 m de profundidad; botaderos y pozas de relaves gris-blancas se extienden a su alrededor.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/super-pit-mine-kalgoorlie-western-australia-42763/"
+   }
+  ],
+  "commodity": "gold",
+  "operator": "Northern Star Resources",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32751,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 348450.0,
+  "top": 6601830.0,
+  "right": 364440.0,
+  "bottom": 6585840.0,
+  "transform": [
+   10.0,
+   0.0,
+   348450.0,
+   0.0,
+   -10.0,
+   6601830.0
+  ],
+  "bbox_wgs84": [
+   121.4150811420727,
+   -30.852900322072134,
+   121.58437408698315,
+   -30.706730721554994
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 20,
+  "area_km2": 56.778,
+  "fids": [
+   1027,
+   1028,
+   1030,
+   1032,
+   1041,
+   1045,
+   1052,
+   1053,
+   1054,
+   1057,
+   1059,
+   1060,
+   1153,
+   1154,
+   1155,
+   1156,
+   1157,
+   1158,
+   1159,
+   1166
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/super-pit/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 34880,
+   "sha256": "753f78889d4f93a88f097118cbaa0fd4d34e2ae6723476ef53125f728406f6b7"
+  }
+ ]
+}

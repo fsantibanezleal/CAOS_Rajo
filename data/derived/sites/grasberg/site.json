@@ -1,0 +1,73 @@
+{
+ "site": {
+  "id": "grasberg",
+  "name_en": "Grasberg",
+  "name_es": "Grasberg",
+  "country": "IDN",
+  "categories": [
+   "copper-world",
+   "gold",
+   "transition"
+  ],
+  "lon": 137.11,
+  "lat": -4.05,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 1,
+   "end_month": 12
+  },
+  "facts": [
+   {
+    "text_en": "The open pit is about 4 km wide, at roughly 4,100 m above sea level in the Sudirman Mountains; copper ore was discovered in 1936 and the Grasberg gold-bearing ore in 1988.",
+    "text_es": "El rajo tiene cerca de 4 km de ancho, a unos 4.100 m sobre el nivel del mar en los montes Sudirman; el mineral de cobre se descubrio en 1936 y el mineral aurifero de Grasberg en 1988.",
+    "source": "https://science.nasa.gov/earth/earth-observatory/grasberg-mine-indonesia-5718/"
+   }
+  ],
+  "commodity": "copper, gold",
+  "operator": "Freeport Indonesia",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32753,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 726240.0,
+  "top": 9560040.0,
+  "right": 742230.0,
+  "bottom": 9544050.0,
+  "transform": [
+   10.0,
+   0.0,
+   726240.0,
+   0.0,
+   -10.0,
+   9560040.0
+  ],
+  "bbox_wgs84": [
+   137.03761043413684,
+   -4.122433558113769,
+   137.1819421832707,
+   -3.9774969653899066
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 6,
+  "area_km2": 24.148,
+  "fids": [
+   4028,
+   4032,
+   4046,
+   4057,
+   4059,
+   4067
+  ]
+ }
+}

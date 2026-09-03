@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install the offline bake lane and dev tooling
+        run: pip install -r requirements-precompute.txt -r requirements-dev.txt
+      - name: Lint
+        run: ruff check data-pipeline tests scripts
+      - name: Tests (sandboxed, never write data/derived)
+        run: pytest
+      - name: Contract 2, manifests and artifacts consistent
+        run: python scripts/check_artifacts.py
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Unit tests
+        run: npm run test
+      - name: Build
+        run: npm run build
+
+  guards:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: No em-dash or emoji in product content (ADR-0067)
+        run: python scripts/check_content_standards.py
+      - name: Repository standards (version sync, sh mode, no leaked paths, no heavy data)
+        run: python scripts/check_repo_standards.py

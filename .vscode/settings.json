@@ -1,0 +1,6 @@
+{
+  "files.exclude": { "**/node_modules": true, "**/.venv": true, "**/__pycache__": true, "**/data/cache": true },
+  "search.exclude": { "**/node_modules": true, "**/.venv": true, "**/frontend/dist": true, "**/data/derived": true },
+  "python.analysis.exclude": ["**/node_modules", "**/.venv", "**/data", "**/frontend"],
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe"
+}

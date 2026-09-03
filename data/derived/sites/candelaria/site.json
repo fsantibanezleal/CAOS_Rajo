@@ -1,0 +1,71 @@
+{
+ "site": {
+  "id": "candelaria",
+  "name_en": "Candelaria",
+  "name_es": "Candelaria",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -70.3,
+  "lat": -27.52,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 11,
+   "end_month": 3
+  },
+  "facts": [],
+  "commodity": "copper",
+  "operator": "Lundin Mining",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 363600.0,
+  "top": 6963300.0,
+  "right": 379590.0,
+  "bottom": 6947310.0,
+  "transform": [
+   10.0,
+   0.0,
+   363600.0,
+   0.0,
+   -10.0,
+   6963300.0
+  ],
+  "bbox_wgs84": [
+   -70.38201447811494,
+   -27.592800671890778,
+   -70.21844252341602,
+   -27.446968149999527
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 12,
+  "area_km2": 35.084,
+  "fids": [
+   2051,
+   2053,
+   2060,
+   2063,
+   2064,
+   2065,
+   2066,
+   2096,
+   25973,
+   25974,
+   25975,
+   25976
+  ]
+ }
+}

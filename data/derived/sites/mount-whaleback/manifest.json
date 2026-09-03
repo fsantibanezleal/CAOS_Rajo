@@ -1,0 +1,76 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "mount-whaleback",
+ "site": {
+  "id": "mount-whaleback",
+  "name_en": "Mount Whaleback",
+  "name_es": "Mount Whaleback",
+  "country": "AUS",
+  "categories": [
+   "iron"
+  ],
+  "lon": 119.67,
+  "lat": -23.37,
+  "window_km": 16.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 4,
+   "end_month": 9
+  },
+  "facts": [],
+  "commodity": "iron ore",
+  "operator": "BHP",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32750,
+  "pixel_m": 10.0,
+  "width": 1599,
+  "height": 1599,
+  "left": 764940.0,
+  "top": 7421010.0,
+  "right": 780930.0,
+  "bottom": 7405020.0,
+  "transform": [
+   10.0,
+   0.0,
+   764940.0,
+   0.0,
+   -10.0,
+   7421010.0
+  ],
+  "bbox_wgs84": [
+   119.59037777387069,
+   -23.443293629821458,
+   119.74955579487538,
+   -23.296344404776793
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 2,
+  "area_km2": 50.706,
+  "fids": [
+   1738,
+   1742
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/mount-whaleback/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 4211,
+   "sha256": "30422facc9cc8ef0f1bdf100316e4d5b81f6f284046fb6f22d5f896b20d02455"
+  }
+ ]
+}

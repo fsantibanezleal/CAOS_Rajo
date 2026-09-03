@@ -1,0 +1,98 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "mir",
+ "site": {
+  "id": "mir",
+  "name_en": "Mir",
+  "name_es": "Mir",
+  "country": "RUS",
+  "categories": [
+   "diamonds",
+   "closure"
+  ],
+  "lon": 113.99,
+  "lat": 62.53,
+  "window_km": 12.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 6,
+   "end_month": 8
+  },
+  "facts": [
+   {
+    "text_en": "The Mir pit is more than 525 m deep and 1,200 m across; open-pit mining ran from 1957 to 2001.",
+    "text_es": "El rajo de Mir tiene mas de 525 m de profundidad y 1.200 m de diametro; la explotacion a rajo abierto se extendio de 1957 a 2001.",
+    "source": "https://www.jpl.nasa.gov/images/pia25856-mir-diamond-mine-siberia/"
+   }
+  ],
+  "commodity": "diamonds",
+  "operator": "Alrosa",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": 2001
+ },
+ "window": {
+  "epsg": 32649,
+  "pixel_m": 10.0,
+  "width": 1200,
+  "height": 1200,
+  "left": 647820.0,
+  "top": 6942810.0,
+  "right": 659820.0,
+  "bottom": 6930810.0,
+  "transform": [
+   10.0,
+   0.0,
+   647820.0,
+   0.0,
+   -10.0,
+   6942810.0
+  ],
+  "bbox_wgs84": [
+   113.86800660099344,
+   62.473891874492665,
+   114.11164856823426,
+   62.58643998643962
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 17,
+  "area_km2": 49.068,
+  "fids": [
+   19018,
+   19027,
+   19028,
+   19034,
+   19045,
+   19047,
+   19048,
+   19049,
+   19065,
+   19066,
+   19084,
+   19085,
+   19089,
+   19090,
+   19091,
+   19092,
+   34392
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/mir/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 40730,
+   "sha256": "1cf942d8c744c316bc526f4c23373ff4bbaed76c3af24ccf6b4adc3f73bdb025"
+  }
+ ]
+}

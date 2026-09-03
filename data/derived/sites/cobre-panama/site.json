@@ -1,0 +1,73 @@
+{
+ "site": {
+  "id": "cobre-panama",
+  "name_en": "Cobre Panama",
+  "name_es": "Cobre Panama",
+  "country": "PAN",
+  "categories": [
+   "copper-world",
+   "closure"
+  ],
+  "lon": -80.68,
+  "lat": 8.85,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 1,
+   "end_month": 4
+  },
+  "facts": [
+   {
+    "text_en": "In production since 2019, the mine produced 112,734 tonnes of copper in the third quarter of 2023 and was halted after Panama's Supreme Court declared its contract unconstitutional on 28 November 2023.",
+    "text_es": "En produccion desde 2019, la mina produjo 112.734 toneladas de cobre en el tercer trimestre de 2023 y fue detenida despues de que la Corte Suprema de Panama declarara inconstitucional su contrato el 28 de noviembre de 2023.",
+    "source": "https://www.cbc.ca/news/business/first-quantum-panama-1.7041954"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "First Quantum Minerals",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": 2023
+ },
+ "window": {
+  "epsg": 32617,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 525180.0,
+  "top": 988290.0,
+  "right": 545190.0,
+  "bottom": 968280.0,
+  "transform": [
+   10.0,
+   0.0,
+   525180.0,
+   0.0,
+   -10.0,
+   988290.0
+  ],
+  "bbox_wgs84": [
+   -80.7710615163896,
+   8.759427508392358,
+   -80.58893075645386,
+   8.940573666633831
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 7,
+  "area_km2": 11.479,
+  "fids": [
+   5456,
+   5457,
+   5459,
+   5466,
+   5468,
+   5469,
+   5526
+  ]
+ }
+}

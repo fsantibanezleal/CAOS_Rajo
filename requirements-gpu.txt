@@ -1,0 +1,4 @@
+# GPU training lane (the U-Net). Installed on top of requirements-precompute.txt when a CUDA GPU exists.
+# Install with:  python -m pip install -r requirements-gpu.txt --index-url https://download.pytorch.org/whl/cu124
+torch==2.14.0
+torchvision==0.29.0

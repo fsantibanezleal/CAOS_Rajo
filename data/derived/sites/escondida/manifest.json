@@ -1,0 +1,92 @@
+{
+ "schema": "rajo.site/v1",
+ "engine_version": "0.01.000",
+ "site_id": "escondida",
+ "site": {
+  "id": "escondida",
+  "name_en": "Escondida",
+  "name_es": "Escondida",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -69.07,
+  "lat": -24.27,
+  "window_km": 24.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 10,
+   "end_month": 3
+  },
+  "facts": [
+   {
+    "text_en": "Production began in 1990; through 2014 the mine had produced 22 million tonnes of copper, 21% of all copper mined in Chile.",
+    "text_es": "La produccion comenzo en 1990; hasta 2014 la mina habia producido 22 millones de toneladas de cobre, el 21% de todo el cobre extraido en Chile.",
+    "source": "https://eros.usgs.gov/earthshots/pit-production"
+   },
+   {
+    "text_en": "The main pit is 645 m deep, the height of two Eiffel Towers stacked.",
+    "text_es": "El rajo principal tiene 645 m de profundidad, la altura de dos torres Eiffel apiladas.",
+    "source": "https://eros.usgs.gov/earthshots/pit-production"
+   },
+   {
+    "text_en": "In 2025 Escondida produced 1,345,100 tonnes of fine copper, its highest level since 2007.",
+    "text_es": "En 2025 Escondida produjo 1.345.100 toneladas de cobre fino, su nivel mas alto desde 2007.",
+    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "BHP (57.5%), Rio Tinto (30%), JECO (12.5%)",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 2400,
+  "height": 2400,
+  "left": 480870.0,
+  "top": 7327890.0,
+  "right": 504870.0,
+  "bottom": 7303890.0,
+  "transform": [
+   10.0,
+   0.0,
+   480870.0,
+   0.0,
+   -10.0,
+   7327890.0
+  ],
+  "bbox_wgs84": [
+   -69.18863689817168,
+   -24.3782865223431,
+   -68.95197786106614,
+   -24.161410652518615
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 2,
+  "area_km2": 312.962,
+  "fids": [
+   2258,
+   2266
+  ]
+ },
+ "frames": [],
+ "series": null,
+ "dem": null,
+ "models": [],
+ "files": [
+  {
+   "path": "sites/escondida/polygons.geojson",
+   "kind": "polygons",
+   "bytes": 4030,
+   "sha256": "ea8cda38243919e7f23869b56e1489f73c0e957428ee2e4c756fe85819c9c1e8"
+  }
+ ]
+}

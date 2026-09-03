@@ -1,0 +1,72 @@
+{
+ "site": {
+  "id": "collahuasi",
+  "name_en": "Collahuasi",
+  "name_es": "Collahuasi",
+  "country": "CHL",
+  "categories": [
+   "copper-chile"
+  ],
+  "lon": -68.66,
+  "lat": -20.98,
+  "window_km": 20.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 10,
+   "end_month": 4
+  },
+  "facts": [
+   {
+    "text_en": "Collahuasi reported lower production in 2025 within a national output of 5,415,271 tonnes, down 1.6% from 2024.",
+    "text_es": "Collahuasi reporto menor produccion en 2025 dentro de una produccion nacional de 5.415.271 toneladas, 1,6% menos que en 2024.",
+    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+   }
+  ],
+  "commodity": "copper",
+  "operator": "Anglo American, Glencore, Mitsui",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32719,
+  "pixel_m": 10.0,
+  "width": 2001,
+  "height": 2001,
+  "left": 525330.0,
+  "top": 7690050.0,
+  "right": 545340.0,
+  "bottom": 7670040.0,
+  "transform": [
+   10.0,
+   0.0,
+   525330.0,
+   0.0,
+   -10.0,
+   7690050.0
+  ],
+  "bbox_wgs84": [
+   -68.75645464667963,
+   -21.070414373068317,
+   -68.56353909299283,
+   -20.889229990872625
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 7,
+  "area_km2": 78.463,
+  "fids": [
+   3009,
+   3036,
+   3037,
+   3038,
+   3039,
+   25345,
+   25346
+  ]
+ }
+}

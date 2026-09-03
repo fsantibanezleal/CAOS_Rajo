@@ -1,0 +1,67 @@
+{
+ "site": {
+  "id": "belchatow",
+  "name_en": "Belchatow",
+  "name_es": "Belchatow",
+  "country": "POL",
+  "categories": [
+   "lignite"
+  ],
+  "lon": 19.33,
+  "lat": 51.26,
+  "window_km": 24.0,
+  "first_year": 1985,
+  "season": {
+   "start_month": 5,
+   "end_month": 9
+  },
+  "facts": [],
+  "commodity": "lignite",
+  "operator": "PGE",
+  "flags": [],
+  "no_reference_polygon": false,
+  "tailings_note_en": "",
+  "tailings_note_es": "",
+  "transition_year": null,
+  "closure_year": null
+ },
+ "window": {
+  "epsg": 32634,
+  "pixel_m": 10.0,
+  "width": 2400,
+  "height": 2400,
+  "left": 371460.0,
+  "top": 5692080.0,
+  "right": 395460.0,
+  "bottom": 5668080.0,
+  "transform": [
+   10.0,
+   0.0,
+   371460.0,
+   0.0,
+   -10.0,
+   5692080.0
+  ],
+  "bbox_wgs84": [
+   19.153541465470735,
+   51.14971745466033,
+   19.505171840426147,
+   51.370341433149164
+  ]
+ },
+ "polygons": {
+  "source": "Maus et al. 2022, Global-scale mining polygons v2, doi:10.1594/PANGAEA.942325, CC BY-SA 4.0",
+  "n_features": 8,
+  "area_km2": 85.319,
+  "fids": [
+   11558,
+   11569,
+   11572,
+   11576,
+   11577,
+   11578,
+   11579,
+   11580
+  ]
+ }
+}

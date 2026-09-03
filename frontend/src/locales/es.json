@@ -1,0 +1,97 @@
+{
+  "brand": "Rajo",
+  "tagline": "rajos vistos desde la órbita",
+  "nav": {
+    "observatory": "Observatorio",
+    "atlas": "Atlas",
+    "methods": "Métodos",
+    "data": "Datos",
+    "about": "Acerca de"
+  },
+  "header": {
+    "github": "Código fuente en GitHub",
+    "theme": "Cambiar entre tema claro y oscuro",
+    "lang": "Cambiar idioma",
+    "architecture": "Cómo está construido"
+  },
+  "footer": {
+    "developed": "Desarrollado por Felipe Santibáñez-Leal",
+    "project": "un proyecto abierto de CAOS",
+    "version": "Versión",
+    "license": "Código MIT; los datos bajo sus propias licencias",
+    "honest": "Cada número en pantalla se calcula en su navegador a partir de datos abiertos o se lee de un artefacto horneado y verificado; nada se sube a ningún servidor."
+  },
+  "attribution": {
+    "sentinel": "Contiene datos modificados de Copernicus Sentinel 2017 a 2026",
+    "landsat": "Landsat Collection 2 cortesía del U.S. Geological Survey, vía Microsoft Planetary Computer",
+    "terrain": "Terrain Tiles de Mapzen (Tilezen) vía AWS Open Data: SRTM, GMTED2010, ETOPO1 y fuentes regionales",
+    "copdem": "Copernicus DEM GLO-30 (c) DLR e.V. 2010-2014 y (c) Airbus Defence and Space GmbH 2014-2018, provisto bajo COPERNICUS por la Unión Europea y la ESA",
+    "srtm": "SRTM GL1 (Farr et al. 2007) vía OpenTopography",
+    "polygons": "Polígonos mineros: Maus et al. 2022 (CC BY-SA 4.0), Tang y Werner 2023 (CC BY 4.0), Jasansky et al. 2024 (CC BY-SA 4.0)",
+    "eox": "Sentinel-2 cloudless - https://s2maps.eu by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)",
+    "ofm": "OpenFreeMap (c) OpenMapTiles Data from OpenStreetMap"
+  },
+  "map": {
+    "loading": "Cargando el mapa",
+    "webglMissing": "Su navegador no pudo crear un contexto WebGL. Rajo dibuja imágenes satelitales y relieve 3D en la GPU y necesita WebGL para funcionar.",
+    "terrain": "Relieve 3D",
+    "labels": "Etiquetas",
+    "imagery": "Imagen satelital (Sentinel-2 cloudless 2024)",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "resetNorth": "Orientar al norte",
+    "coords": "Cursor",
+    "elevation": "Elevación",
+    "globe": "Globo",
+    "status": {
+      "ready": "Listo",
+      "tiles": "Cargando teselas"
+    }
+  },
+  "observatory": {
+    "title": "Observatorio",
+    "pickSite": "Sitio",
+    "search": "Buscar un sitio",
+    "noSites": "Aún no hay sitios horneados: el catálogo llega con el primer horneado.",
+    "world": "Vista mundial",
+    "window": "Ventana",
+    "polygons": "Polígonos de referencia",
+    "source": "fuente",
+    "polygonsCredit": "Huellas de referencia: Maus et al. 2022, polígonos mineros globales v2 (CC BY-SA 4.0); incluyen rajos, botaderos, relaves, pozas y plantas."
+  },
+  "atlas": {
+    "title": "Atlas",
+    "lede": "Cada sitio del catálogo con su categoría, país y cobertura del time-lapse.",
+    "columns": {
+      "site": "Sitio",
+      "country": "País",
+      "categories": "Categorías",
+      "seed": "Semilla (lon, lat)",
+      "frames": "Cuadros"
+    }
+  },
+  "methods": {
+    "title": "Métodos",
+    "lede": "Los doce cálculos que Rajo realiza sobre píxeles reales, con sus ecuaciones, fuentes y advertencias."
+  },
+  "data": {
+    "title": "Datos",
+    "lede": "Cada fuente que Rajo lee, su licencia, y los dos contratos de datos entre el horneado fuera de línea y esta página."
+  },
+  "about": {
+    "title": "Acerca de",
+    "lede": "Qué es Rajo, qué no es, quién lo construyó y por qué."
+  },
+  "categories": {
+    "copper-chile": "Cobre, Chile",
+    "copper-world": "Cobre, mundo",
+    "lithium-brine": "Salmuera de litio",
+    "iron": "Hierro",
+    "gold": "Oro",
+    "lignite": "Carbón y lignito",
+    "diamonds": "Diamantes",
+    "oil-sands": "Arenas bituminosas",
+    "transition": "Transición a subterránea",
+    "closure": "Cerrada o detenida"
+  }
+}

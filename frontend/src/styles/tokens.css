@@ -1,0 +1,65 @@
+/* Rajo design tokens. Two themes on one variable set; every colour a token so canvases, SVGs and the map
+   chrome repaint with the theme. Dark is the "orbit" theme; light is the "paper map" theme. */
+:root {
+  --font-sans: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', Consolas, 'Liberation Mono', monospace;
+  --radius: 10px;
+  --radius-sm: 6px;
+  --header-h: 52px;
+  --footer-h: 34px;
+  --rail-w: 300px;
+  --panel-w: 380px;
+  --timeline-h: 88px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+:root[data-theme='dark'] {
+  --bg: #0b1020;
+  --bg-2: #101731;
+  --surface: rgba(16, 23, 49, 0.82);
+  --surface-2: rgba(24, 33, 66, 0.92);
+  --surface-solid: #141c3a;
+  --border: rgba(148, 163, 208, 0.22);
+  --border-strong: rgba(148, 163, 208, 0.45);
+  --fg: #e8ecf8;
+  --fg-muted: #a7b0cf;
+  --fg-faint: #6f7aa3;
+  --accent: #e8a33d;
+  --accent-2: #f3c26b;
+  --accent-soft: rgba(232, 163, 61, 0.16);
+  --cyan: #7dd3fc;
+  --good: #4ade80;
+  --warn: #fbbf24;
+  --bad: #f87171;
+  --magenta: #e879f9;
+  --chart-axis: #8b95bf;
+  --chart-grid: rgba(148, 163, 208, 0.16);
+  --scrim: rgba(4, 7, 18, 0.72);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f4f1ea;
+  --bg-2: #ebe6da;
+  --surface: rgba(255, 253, 248, 0.86);
+  --surface-2: rgba(255, 253, 248, 0.96);
+  --surface-solid: #fffdf8;
+  --border: rgba(60, 50, 30, 0.16);
+  --border-strong: rgba(60, 50, 30, 0.36);
+  --fg: #1f1b14;
+  --fg-muted: #5c5445;
+  --fg-faint: #8c8271;
+  --accent: #b86e0c;
+  --accent-2: #8f5305;
+  --accent-soft: rgba(184, 110, 12, 0.14);
+  --cyan: #0369a1;
+  --good: #15803d;
+  --warn: #b45309;
+  --bad: #b91c1c;
+  --magenta: #a21caf;
+  --chart-axis: #6b6353;
+  --chart-grid: rgba(60, 50, 30, 0.14);
+  --scrim: rgba(40, 30, 10, 0.5);
+  color-scheme: light;
+}

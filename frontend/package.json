@@ -1,0 +1,47 @@
+{
+  "name": "rajo-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Rajo: open pits seen from orbit. A static web observatory over committed satellite artifacts plus browser-side computation on open cloud-optimized data.",
+  "scripts": {
+    "predev": "node copy-data.mjs",
+    "dev": "vite",
+    "prebuild": "node copy-data.mjs",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "e2e": "playwright test",
+    "preview": "vite preview --port 4173 --strictPort"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^9.3.11",
+    "@deck.gl/layers": "^9.3.11",
+    "@deck.gl/mapbox": "^9.3.11",
+    "geotiff": "^3.0.5",
+    "i18next": "^26.4.1",
+    "katex": "^0.18.5",
+    "lucide-react": "^1.39.0",
+    "maplibre-gl": "^6.7.0",
+    "onnxruntime-web": "^1.29.0",
+    "proj4": "^2.22.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-i18next": "^17.0.13",
+    "react-router-dom": "^7.18.2",
+    "uplot": "^1.6.32",
+    "zustand": "^5.0.15"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/geojson": "^7946.0.16",
+    "@types/katex": "^0.16.8",
+    "@types/node": "^22.20.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.3",
+    "vitest": "^4.1.11"
+  }
+}

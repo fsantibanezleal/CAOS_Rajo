@@ -117,9 +117,16 @@ def fetch_one(tile: dict, gpkg: str, out_dir: str) -> dict:
         mgrs = parts[4][1:]
         day = f"{date[:4]}-{date[4:6]}-{date[6:]}"
         client = Client.open(EARTH_SEARCH)
-        search = client.search(collections=["sentinel-2-l2a"], datetime=f"{day}T00:00:00Z/{day}T23:59:59Z",
-                               query={"grid:code": {"eq": f"MGRS-{mgrs}"}}, max_items=6)
-        items = list(search.items())
+        items = []
+        collection = ""
+        # the Level-2A collection first; the Collection-1 reprocessing holds scenes the first lacks
+        # (2016 to 2017 acquisitions and some later gaps)
+        for collection in ("sentinel-2-l2a", "sentinel-2-c1-l2a"):
+            search = client.search(collections=[collection], datetime=f"{day}T00:00:00Z/{day}T23:59:59Z",
+                                   query={"grid:code": {"eq": f"MGRS-{mgrs}"}}, max_items=6)
+            items = list(search.items())
+            if items:
+                break
         if not items:
             raise RuntimeError(f"no Earth Search item for {mgrs} on {day}")
         items.sort(key=lambda it: str(it.properties.get("s2:processing_baseline", "")), reverse=True)
@@ -138,10 +145,11 @@ def fetch_one(tile: dict, gpkg: str, out_dir: str) -> dict:
         top = round(maxy / PIXEL_M) * PIXEL_M
         width = int(round((maxx - minx) / PIXEL_M))
         height = int(round((maxy - miny) / PIXEL_M))
-        if abs(width - TILE_PX) > 2 or abs(height - TILE_PX) > 2:
-            raise RuntimeError(f"footprint is {width}x{height} px, expected {TILE_PX}")
-        grid = Grid(epsg=epsg, left=left, top=top, pixel_m=PIXEL_M, width=TILE_PX, height=TILE_PX)
-        bands = np.zeros((len(CHANNELS), TILE_PX, TILE_PX), dtype=np.uint16)
+        # a footprint drawn in a neighbouring zone lands a few pixels wider here; keep its real size
+        if not (TILE_PX - 128 <= width <= TILE_PX + 128 and TILE_PX - 128 <= height <= TILE_PX + 128):
+            raise RuntimeError(f"footprint is {width}x{height} px, expected about {TILE_PX}")
+        grid = Grid(epsg=epsg, left=left, top=top, pixel_m=PIXEL_M, width=width, height=height)
+        bands = np.zeros((len(CHANNELS), height, width), dtype=np.uint16)
         with rasterio.Env(**GDAL_ENV):
             scl = read_onto_grid(assets["scl"].href, grid, Resampling.nearest, dtype="uint8")
             for i, ch in enumerate(CHANNELS):
@@ -151,14 +159,14 @@ def fetch_one(tile: dict, gpkg: str, out_dir: str) -> dict:
                 refl[dn <= 0] = 0.0
                 bands[i] = pack_reflectance(refl)
         polys = [shp_transform(fwd, g) for g in _label_polygons(Path(gpkg), tid)]
-        label = rasterize([(g, 1) for g in polys], out_shape=(TILE_PX, TILE_PX), transform=grid.transform,
-                          fill=0, dtype="uint8") if polys else np.zeros((TILE_PX, TILE_PX), dtype=np.uint8)
+        label = rasterize([(g, 1) for g in polys], out_shape=(height, width), transform=grid.transform,
+                          fill=0, dtype="uint8") if polys else np.zeros((height, width), dtype=np.uint8)
         data = scl > 0
         cloud = float(np.isin(scl, CLOUD_SCL).mean())
-        meta = {"tile_id": tid, "product": tile["product"], "item": it.id,
+        meta = {"tile_id": tid, "product": tile["product"], "item": it.id, "collection": collection,
                 "baseline": it.properties.get("s2:processing_baseline"),
                 "offset_applied": it.properties.get("earthsearch:boa_offset_applied"),
-                "epsg": epsg, "grid": {"left": left, "top": top, "pixel_m": PIXEL_M, "width": TILE_PX, "height": TILE_PX},
+                "epsg": epsg, "grid": {"left": left, "top": top, "pixel_m": PIXEL_M, "width": width, "height": height},
                 "split": tile["split"], "minetype": tile["minetype"], "scale": tile["scale"],
                 "source": tile["source"], "preferred": tile["preferred"], "holdout": tile["holdout"],
                 "bbox_wgs84": tile["bbox"], "cloud_frac": round(cloud, 4), "data_frac": round(float(data.mean()), 4),

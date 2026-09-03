@@ -422,6 +422,10 @@
     "sampling": "Muestreando ambas superficies",
     "distance": "Distancia",
     "length": "Largo",
+    "globalRange": "Superficie global",
+    "coverage": "Muestras Copernicus",
+    "noSamples": "ningun tile respondio",
+    "outsideWindow": "la linea queda fuera de la ventana Copernicus horneada",
     "deepestChange": "Cambio mas profundo",
     "highestChange": "Cambio mas alto",
     "at": "en"

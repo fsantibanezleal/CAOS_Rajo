@@ -24,9 +24,16 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
   the classical methods, and the held-out benchmark (validation, test, catalog tiles; per mine type; haze
   degradation); the model registry; the method page for M7 and M8.
 - Learned lane, browser: the feature stack mirrored in the worker (golden fixture pins it to Python),
-  onnxruntime-web with the WebGPU provider and a WASM fallback, the forest and the U-Net (sliding
-  windows with overlap blending, coarse or full grid) as instrument methods with progress, backend,
-  timing, area against the reference polygons, the model card, and the cursor probability readout.
+  the forest exported as flat node arrays (`rf-v1.forest.bin`, float64 thresholds) and traversed in
+  TypeScript because onnxruntime-web has no tree-ensemble kernel (Python and TypeScript walks both
+  parity-checked), onnxruntime-web with the WebGPU provider and a WASM fallback for the U-Net (sliding
+  windows with overlap blending, coarse or full grid), both as instrument methods with progress,
+  backend, timing, area against the reference polygons, the model card, and the cursor probability
+  readout.
+- Relief profile: the stats survive a line that leaves the baked Copernicus window (length, global
+  surface range, Copernicus coverage, change only where both surfaces answer); tiles that are not PNG
+  (a static host answers a missing tile with the SPA page) are treated as missing; the cursor elevation
+  readout divides out the terrain exaggeration.
 - Parallel frame workers on disjoint site lists into one sandbox root, and the harvest that moves
   complete sites into the canonical tree and runs export and validate.
 - Signal lane, offline: the masks stage (one mask per baked frame and method on the 30 m grid, scored

@@ -186,7 +186,7 @@ export const METHODS: MethodEntry[] = [
       en: ['Trained on Sentinel-2 at 10 m: the Landsat years of the baked series are a domain shift and carry the flag cross_sensor.', 'The forest sees 3 x 3 neighbourhoods and nothing larger.'],
       es: ['Entrenado con Sentinel-2 a 10 m: los anos Landsat de la serie cocinada son un cambio de dominio y llevan la bandera cross_sensor.', 'El bosque ve vecindarios 3 x 3 y nada mayor.'],
     },
-    where: { en: 'Live in the Find view (onnxruntime-web, CPU provider); baked on every frame as the rf series.', es: 'En vivo en la vista Encontrar (onnxruntime-web, proveedor CPU); cocinado sobre cada cuadro como la serie rf.' },
+    where: { en: 'Live in the Find view (the forest traversed in the worker from flat node arrays); baked on every frame as the rf series.', es: 'En vivo en la vista Encontrar (el bosque recorrido en el worker desde arreglos planos de nodos); cocinado sobre cada cuadro como la serie rf.' },
   },
   {
     id: 'M8',

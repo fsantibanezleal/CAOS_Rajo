@@ -26,15 +26,29 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
   const dem = manifest.dem;
   const hostRef = useRef<HTMLDivElement | null>(null);
 
+  // the stats never vanish: the length and the global surface come from any sampled line; the change
+  // needs both surfaces, and the Copernicus coverage says how much of the line the baked window holds
   const stats = useMemo(() => {
-    if (!r.samples) return null;
-    const both = r.samples.filter((s) => s.global !== null && s.cop !== null);
-    if (!both.length) return null;
-    const deltas = both.map((s) => s.cop! - s.global!);
-    const minI = deltas.indexOf(Math.min(...deltas));
-    const maxI = deltas.indexOf(Math.max(...deltas));
+    if (!r.samples || !r.samples.length) return null;
     const last = r.samples[r.samples.length - 1]!;
-    return { lengthM: last.d, minDelta: deltas[minI]!, minAt: both[minI]!.d, maxDelta: deltas[maxI]!, maxAt: both[maxI]!.d, n: both.length };
+    const globals = r.samples.filter((s) => s.global !== null).map((s) => s.global!);
+    const both = r.samples.filter((s) => s.global !== null && s.cop !== null);
+    let change: { minDelta: number; minAt: number; maxDelta: number; maxAt: number } | null = null;
+    if (both.length) {
+      const deltas = both.map((s) => s.cop! - s.global!);
+      const minI = deltas.indexOf(Math.min(...deltas));
+      const maxI = deltas.indexOf(Math.max(...deltas));
+      change = { minDelta: deltas[minI]!, minAt: both[minI]!.d, maxDelta: deltas[maxI]!, maxAt: both[maxI]!.d };
+    }
+    return {
+      lengthM: last.d,
+      n: r.samples.length,
+      nGlobal: globals.length,
+      nCop: r.samples.filter((s) => s.cop !== null).length,
+      globalMin: globals.length ? Math.min(...globals) : null,
+      globalMax: globals.length ? Math.max(...globals) : null,
+      change,
+    };
   }, [r.samples]);
 
   useEffect(() => {
@@ -170,14 +184,29 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
               <dl className="stats mono small" data-testid="profile-stats">
                 <dt>{t('relief.length')}</dt>
                 <dd>{(stats.lengthM / 1000).toFixed(2)} km</dd>
-                <dt>{t('relief.deepestChange')}</dt>
-                <dd>
-                  {stats.minDelta.toFixed(0)} m {t('relief.at')} {(stats.minAt / 1000).toFixed(2)} km
+                <dt>{t('relief.globalRange')}</dt>
+                <dd>{stats.globalMin !== null && stats.globalMax !== null ? `${stats.globalMin.toFixed(0)} to ${stats.globalMax.toFixed(0)} m` : t('relief.noSamples')}</dd>
+                <dt>{t('relief.coverage')}</dt>
+                <dd data-testid="profile-coverage">
+                  {stats.nCop}/{stats.n}
                 </dd>
-                <dt>{t('relief.highestChange')}</dt>
-                <dd>
-                  +{stats.maxDelta.toFixed(0)} m {t('relief.at')} {(stats.maxAt / 1000).toFixed(2)} km
-                </dd>
+                {stats.change ? (
+                  <>
+                    <dt>{t('relief.deepestChange')}</dt>
+                    <dd>
+                      {stats.change.minDelta.toFixed(0)} m {t('relief.at')} {(stats.change.minAt / 1000).toFixed(2)} km
+                    </dd>
+                    <dt>{t('relief.highestChange')}</dt>
+                    <dd>
+                      +{stats.change.maxDelta.toFixed(0)} m {t('relief.at')} {(stats.change.maxAt / 1000).toFixed(2)} km
+                    </dd>
+                  </>
+                ) : (
+                  <>
+                    <dt>{t('relief.deepestChange')}</dt>
+                    <dd className="muted">{t('relief.outsideWindow')}</dd>
+                  </>
+                )}
               </dl>
             )}
           </>

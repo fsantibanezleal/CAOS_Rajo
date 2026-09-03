@@ -23,7 +23,7 @@ if (existsSync(join(derived, 'catalog.json'))) {
   console.warn('[copy-data] no data/derived/catalog.json: the app runs the browser lanes only (no baked sites)');
 }
 
-// models: every .onnx and .json under ../models, tree preserved (models/rf/rf-v1.onnx -> /models/rf/rf-v1.onnx)
+// models: every .onnx, .json and .forest.bin under ../models, tree preserved (models/rf/rf-v1.onnx -> /models/rf/rf-v1.onnx)
 const models = join(ROOT, 'models');
 const pubModels = join(PUB, 'models');
 rmSync(pubModels, { recursive: true, force: true });
@@ -36,7 +36,7 @@ function copyModels(src, dst) {
     if (statSync(s).isDirectory()) {
       mkdirSync(d, { recursive: true });
       copyModels(s, d);
-    } else if (f.endsWith('.onnx') || f.endsWith('.json')) {
+    } else if (f.endsWith('.onnx') || f.endsWith('.json') || f.endsWith('.forest.bin')) {
       cpSync(s, d);
       nModels++;
     }
@@ -56,7 +56,8 @@ const pubOrt = join(PUB, 'ort');
 rmSync(pubOrt, { recursive: true, force: true });
 mkdirSync(pubOrt, { recursive: true });
 if (existsSync(ortDist)) {
-  const files = readdirSync(ortDist).filter((f) => /^ort-wasm-simd-threaded(\.jsep)?\.(wasm|mjs)$/.test(f));
+  // every variant the runtime may pick (plain, jsep for WebGPU, asyncify and jspi for the async WASM paths)
+  const files = readdirSync(ortDist).filter((f) => /^ort-wasm-simd-threaded(\.[a-z]+)?\.(wasm|mjs)$/.test(f));
   for (const f of files) cpSync(join(ortDist, f), join(pubOrt, f));
   console.log(`[copy-data] ${files.length} onnxruntime-web runtime file(s) -> public/ort`);
 } else {

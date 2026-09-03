@@ -15,7 +15,8 @@ import {
   removeSmall,
 } from '../lib/indices';
 import { rfFeatures } from './features';
-import { runForest, runUnet } from './onnx';
+import { forestProb, loadForest } from './forest';
+import { runUnet } from './onnx';
 
 export interface LoadMsg {
   type: 'load';
@@ -51,8 +52,9 @@ export interface SamMsg {
 }
 export interface RfMsg {
   type: 'rf';
-  modelUrl: string;
+  modelUrl: string; // the flat-array forest file (models/rf/rf-<version>.forest.bin)
   threshold: number;
+  scale: 1 | 2; // 2 = run on a 2x coarser grid (mean pooled), the default for speed
 }
 export interface UnetMsg {
   type: 'unet';
@@ -71,7 +73,7 @@ export interface LearnedResult {
   rgba: Uint8ClampedArray;
   areaKm2: number;
   values: Float32Array; // the probability map on the live grid
-  backend: 'webgpu' | 'wasm';
+  backend: 'webgpu' | 'wasm' | 'js'; // js: the forest traversed in the worker
   ms: number;
   windows?: number;
   scale?: number;
@@ -508,11 +510,23 @@ async function rf(msg: RfMsg, progress: (done: number, total: number, note: stri
   if (!data) throw new Error('no data loaded');
   const d0 = data;
   const n = d0.width * d0.height;
-  const planes = rfFeatures(d0);
-  const { prob, backend, ms } = await runForest(msg.modelUrl, planes, n, (done, total) => progress(done, total, 'rf'));
+  const t0 = performance.now();
+  const forest = await loadForest(msg.modelUrl);
+  let w = d0.width;
+  let h = d0.height;
+  let bands: Parameters<typeof rfFeatures>[0] = d0;
+  if (msg.scale === 2) {
+    w = Math.floor(d0.width / 2);
+    h = Math.floor(d0.height / 2);
+    const [blue, green, red, nir, swir16, swir22] = [d0.blue, d0.green, d0.red, d0.nir, d0.swir16, d0.swir22].map((c) => pool2(c, d0.width, d0.height));
+    bands = { width: w, height: h, blue: blue!, green: green!, red: red!, nir: nir!, swir16: swir16!, swir22: swir22! };
+  }
+  const planes = rfFeatures(bands);
+  const coarse = forestProb(forest, planes, w * h, (done, total) => progress(done, total, 'rf'));
+  const prob = msg.scale === 2 ? unpool2(coarse, w, h, d0.width, d0.height) : coarse;
   for (let i = 0; i < n; i++) if (!d0.valid[i]) prob[i] = NaN;
   const mask = cleanMask(prob, d0.valid, d0.width, d0.height, msg.threshold);
-  return { type: 'rf', threshold: msg.threshold, mask, rgba: maskRgba(mask, n, [244, 114, 182]), areaKm2: maskArea(mask, d0.pixelM), values: prob, backend, ms };
+  return { type: 'rf', threshold: msg.threshold, mask, rgba: maskRgba(mask, n, [244, 114, 182]), areaKm2: maskArea(mask, d0.pixelM), values: prob, backend: 'js', ms: performance.now() - t0, scale: msg.scale };
 }
 
 async function unet(msg: UnetMsg, progress: (done: number, total: number, note: string) => void): Promise<LearnedResult> {

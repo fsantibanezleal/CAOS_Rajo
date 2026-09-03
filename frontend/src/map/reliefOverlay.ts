@@ -129,7 +129,13 @@ async function decodeTerrarium(url: string): Promise<Float32Array | null> {
       // a stalled tile fails loudly after 30 s instead of leaving the profile "sampling" forever
       const r = await fetch(url, { mode: 'cors', signal: AbortSignal.timeout(30_000) });
       if (!r.ok) return null;
-      const blob = await r.blob();
+      const bytes = new Uint8Array(await r.arrayBuffer());
+      // a static host answers a missing tile with the SPA page and a 200 (measured on the vps-static
+      // class, 2026-09-03), so only bytes that carry the PNG signature are decoded
+      const png = bytes.length > 8 && bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47 && bytes[4] === 0x0d && bytes[5] === 0x0a && bytes[6] === 0x1a && bytes[7] === 0x0a;
+      if (!png) return null;
+      // the tile hosts may label the PNG as octet-stream, and createImageBitmap refuses an untyped blob
+      const blob = new Blob([bytes], { type: 'image/png' });
       const bmp = await createImageBitmap(blob);
       const canvas = document.createElement('canvas');
       canvas.width = bmp.width;

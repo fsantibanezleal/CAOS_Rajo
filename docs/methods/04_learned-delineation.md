@@ -2,9 +2,10 @@
 
 Question 2 again, where is the mine, answered by two models trained offline on labelled tiles and run
 in the browser on the live scene. The classical methods of [03](03_classical-delineation.md) use one
-scene's statistics; these two carry what 1,200 mines look like from orbit. Both ship as ONNX files and
-run through onnxruntime-web inside the band-math worker, so the same pixels the classical masks see are
-the pixels the models see.
+scene's statistics; these two carry what 1,200 mines look like from orbit. Both run inside the band-math
+worker, so the same pixels the classical masks see are the pixels the models see: the U-Net through
+onnxruntime-web, the forest as a flat-array traversal written in TypeScript (the web runtime ships no
+tree-ensemble kernel; see below).
 
 ## Training and evaluation data
 
@@ -45,10 +46,21 @@ recorded in `models/registry.json` next to the held-out scores. Export uses skl2
 3), and the parity gate requires scikit-learn and onnxruntime to agree to $10^{-5}$ in probability on
 100,000 held-out pixels.
 
-In the browser the worker builds the feature planes, streams them through the forest in chunks of
-65,536 rows on the WASM provider (tree ensembles are a CPU operator), and turns the probability map
-into a mask with the same clean-up as every other method: threshold, a 3 x 3 binary opening, blobs
-below 25 pixels dropped.
+The ONNX file is the archival export; the browser does not run it. onnxruntime-web ships no kernel for
+`ai.onnx.ml.TreeEnsembleClassifier` (measured 2026-09-03: "No Op registered for TreeEnsembleClassifier"),
+so `train/export_forest.py` writes the same forest as flat node arrays, `models/rf/rf-v1.forest.bin`
+(header, then per node the split feature, the float64 threshold, the two child indices and the leaf
+probability; 64 trees, 247,202 nodes, 5.9 MB), and the worker walks it in TypeScript
+(`workers/forest.ts`). Thresholds stay float64 because scikit-learn compares float32 features against
+float64 thresholds; a float32 copy re-routes borderline pixels and broke parity at $10^{-2}$. The
+traversal is checked twice: the Python walk against `predict_proba` on 50,000 held-out pixels
+(max $8 \times 10^{-9}$, recorded in the registry as `forest_parity`), and the TypeScript walk against
+the Python walk on the golden chip (`forest.test.ts`, $10^{-6}$).
+
+In the browser the worker builds the feature planes, walks the forest per pixel on the coarse grid by
+default (2 x 2 mean pooling, then nearest upsampling of the probability map) or on the full grid, and
+turns the probability map into a mask with the same clean-up as every other method: threshold, a 3 x 3
+binary opening, blobs below 25 pixels dropped. The instrument reports the backend as `js`.
 
 ## M8 U-Net semantic segmentation
 

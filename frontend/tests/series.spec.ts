@@ -87,10 +87,15 @@ test('the series drawer charts the mined-area series, its breaks and the yearly 
 
   // a click on the plot moves the timeline
   const yearBefore = await page.getByTestId('tl-year').textContent();
-  const target = { x: Math.round((box?.width ?? 400) * 0.3), y: Math.round((box?.height ?? 200) * 0.5) };
-  await plot.hover({ position: target });
+  // uPlot listens on its .u-over element (the legend sits below it inside the host), so the pointer
+  // events target the overlay itself, not the host
+  const over = plot.locator('.u-over');
+  await expect(over).toBeVisible();
+  const ob = await over.boundingBox();
+  const target = { x: Math.round((ob?.width ?? 400) * 0.3), y: Math.round((ob?.height ?? 200) * 0.5) };
+  await over.hover({ position: target });
   await page.waitForTimeout(150); // uPlot sets its cursor index on mousemove
-  await plot.click({ position: target });
+  await over.click({ position: target });
   await expect
     .poll(() => page.getByTestId('tl-year').textContent(), { message: 'a click on the plot moves the timeline to that year', timeout: 10_000 })
     .not.toBe(yearBefore);

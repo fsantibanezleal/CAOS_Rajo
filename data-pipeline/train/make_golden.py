@@ -19,6 +19,7 @@ REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "data-pipeline" / "train"))
 
 from common import RF_FEATURES, rf_features  # noqa: E402
+from forest_format import forest_prob, load_forest  # noqa: E402
 
 
 def main() -> int:
@@ -36,11 +37,19 @@ def main() -> int:
     # the fixture carries six-decimal bands; the planes are computed from exactly those values
     bands = np.round(bands, 6).astype(np.float32)
     feats = rf_features(bands)
+    # the forest traversal on the same chip (forest.test.ts replays it from the fixture planes): the rows
+    # are the seven-decimal planes the fixture carries, in float32, so both sides walk identical inputs
+    forest_path = REPO / "models" / "rf" / "rf-v1.forest.bin"
+    rows = np.stack([feats[i].reshape(-1).astype(float).round(7) for i in range(len(RF_FEATURES))], axis=1).astype(np.float32)
+    forest = load_forest(forest_path)
+    prob = forest_prob(forest, rows)
     out = {
         "width": w, "height": h, "features": list(RF_FEATURES),
         "bands": {k: bands[i].reshape(-1).round(6).tolist() for i, k in enumerate(("blue", "green", "red", "nir", "swir16", "swir22"))},
         "nodata": [[y, x] for y in range(2) for x in range(2)],
         "planes": {k: feats[i].reshape(-1).astype(float).round(7).tolist() for i, k in enumerate(RF_FEATURES)},
+        "forest": {"file": "models/rf/rf-v1.forest.bin", "n_trees": forest["header"]["n_trees"], "n_nodes": forest["header"]["n_nodes"]},
+        "rf_prob": prob.round(7).tolist(),
     }
     p = REPO / "frontend" / "src" / "workers" / "__fixtures__" / "rf_features_golden.json"
     p.parent.mkdir(parents=True, exist_ok=True)

@@ -68,7 +68,17 @@
     "pass": true
    },
    "license": "MIT (weights); training data CC BY-SA 4.0 (Jasansky et al. 2024)",
-   "trained": "2026-09-03"
+   "trained": "2026-09-03",
+   "file_forest": "rf/rf-v1.forest.bin",
+   "bytes_forest": 5933629,
+   "sha256_forest": "ad1d3d815f4fce5f035fbb15420b6aadc2468b7a80849f213eb86d6c6b4f8d1c",
+   "forest_parity": {
+    "n": 50000,
+    "max_abs_diff": 8.139484530822472e-09,
+    "threshold": 1e-06,
+    "pass": true
+   },
+   "browser_runtime": "flat-array traversal in the worker (onnxruntime-web has no TreeEnsembleClassifier kernel)"
   },
   {
    "id": "unet-v1",

@@ -30,7 +30,7 @@ test('the random forest and the U-Net delineate the mine in the browser', async 
   await page.getByTestId('rf-run').click();
   await expect(page.getByTestId('learned-run')).toBeVisible({ timeout: 180_000 });
   const rfRun = await page.getByTestId('learned-run').textContent();
-  expect(rfRun).toMatch(/M7 \/ wasm/);
+  expect(rfRun).toMatch(/M7 \/ js \/ [\d.]+ s/); // the forest traversed in the worker, no ONNX runtime
   const readout = await page.getByTestId('mask-readout').textContent();
   expect(readout).toMatch(/km2/);
   await expect(page.getByTestId('learned-card')).toContainText(/IoU \d\.\d\d/);

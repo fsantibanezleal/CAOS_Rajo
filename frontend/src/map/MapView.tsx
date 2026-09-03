@@ -95,11 +95,14 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
       m.on('dataloading', () => propsRef.current.onStatus?.(true));
       m.on('idle', () => propsRef.current.onStatus?.(false));
       m.on('mousemove', (e) => {
-        const elev = m.queryTerrainElevation(e.lngLat);
+        // queryTerrainElevation returns metres multiplied by the terrain exaggeration (MapLibre docs);
+        // the readout prints the surface itself
+        const raw = m.queryTerrainElevation(e.lngLat);
+        const ex = m.getTerrain()?.exaggeration ?? 1;
         propsRef.current.onCursor?.({
           lon: e.lngLat.lng,
           lat: e.lngLat.lat,
-          elev: elev === null || elev === undefined ? null : Math.round(elev),
+          elev: raw === null || raw === undefined ? null : Math.round(raw / (ex || 1)),
         });
       });
       m.on('mouseout', () => propsRef.current.onCursor?.(null));

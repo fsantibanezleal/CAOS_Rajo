@@ -14,12 +14,14 @@ test('the relief lane drapes the DEM difference, switches the terrain epoch and 
   test.skip(!cat.ok(), 'no catalog in this build');
   const catalog = (await cat.json()) as { sites: Array<{ site_id: string; manifest_path: string }> };
   let site: string | null = null;
+  let bbox: [number, number, number, number] | null = null;
   for (const s of catalog.sites) {
     const m = await request.get(`/data/${s.manifest_path}`);
     if (!m.ok()) continue;
-    const doc = (await m.json()) as { dem: { status?: string; terrain_tiles?: string[] } | null };
+    const doc = (await m.json()) as { dem: { status?: string; terrain_tiles?: string[] } | null; window: { bbox_wgs84: [number, number, number, number] } };
     if (doc.dem && doc.dem.status === 'ok' && (doc.dem.terrain_tiles?.length ?? 0) > 0) {
       site = s.site_id;
+      bbox = doc.window.bbox_wgs84;
       break;
     }
   }
@@ -57,18 +59,31 @@ test('the relief lane drapes the DEM difference, switches the terrain epoch and 
   // the profile: two clicks on the map canvas, then a painted chart and stats
   await page.getByTestId('profile-pick').click();
   await expect(page.getByTestId('profile-state')).toHaveText(/picking 0\/2/, { timeout: 10_000 });
+  // the two points sit inside the baked window (projected through the live camera), so both surfaces
+  // answer along the whole line; a click at an arbitrary screen position can land outside the
+  // Copernicus tiles on a pitched view (measured on Antamina, 2026-09-03)
   const canvas = page.locator('[data-testid="map"] canvas').first();
   const box = await canvas.boundingBox();
   expect(box).not.toBeNull();
-  const cx = box!.x + box!.width * 0.5;
-  const cy = box!.y + box!.height * 0.5;
-  await page.mouse.click(cx - 80, cy);
+  const [w, s, e, n] = bbox!;
+  const pts: [number, number][] = [
+    [w + (e - w) * 0.4, s + (n - s) * 0.5],
+    [w + (e - w) * 0.6, s + (n - s) * 0.55],
+  ];
+  const screen = await page.evaluate(
+    (p) => p.map((q) => (window as unknown as { __rajoMap: { project: (l: [number, number]) => { x: number; y: number } } }).__rajoMap.project(q)),
+    pts,
+  );
+  await page.mouse.click(box!.x + screen[0]!.x, box!.y + screen[0]!.y);
   await expect(page.getByTestId('profile-state')).toHaveText(/picking 1\/2/, { timeout: 10_000 });
-  await page.mouse.click(cx + 80, cy + 20);
+  await page.mouse.click(box!.x + screen[1]!.x, box!.y + screen[1]!.y);
   await expect(page.getByTestId('profile-state')).toHaveText(/sampling|profile \d+ samples/, { timeout: 10_000 });
   await expect(page.getByTestId('profile-error')).toHaveCount(0);
   await expect(page.getByTestId('profile-plot')).toBeVisible({ timeout: 60_000 });
   await expect(page.getByTestId('profile-stats')).toBeVisible({ timeout: 60_000 });
+  // every sample found a Copernicus tile, so the change statistics are printed
+  await expect(page.getByTestId('profile-coverage')).toHaveText(/^200\/200$/);
+  await expect(page.getByTestId('profile-stats')).toContainText(/Deepest change/);
   const painted = await page.getByTestId('profile-plot').locator('canvas').first().evaluate((c) => {
     const canvasEl = c as HTMLCanvasElement;
     const ctx = canvasEl.getContext('2d');

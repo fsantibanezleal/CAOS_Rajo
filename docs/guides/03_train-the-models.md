@@ -42,6 +42,20 @@ leaf, balanced class weights), exports it with skl2onnx, checks scikit-learn aga
 `models/rf/rf-v1.onnx`, `models/rf/rf-v1.metrics.json` and the registry entry. About 25 minutes of
 sampling on a busy machine, a minute of fitting, ten minutes of scoring.
 
+```powershell
+.\.venv\Scripts\python data-pipeline\train\export_forest.py --version v1
+```
+
+Writes the file the browser actually runs, `models/rf/rf-v1.forest.bin` (flat node arrays, float64
+thresholds), checks the Python traversal against scikit-learn on 50,000 held-out pixels (1e-6) and
+records `file_forest`, `sha256_forest` and `forest_parity` in the registry. onnxruntime-web has no
+tree-ensemble kernel, so the ONNX file is archival and the worker traverses this file in TypeScript.
+Then regenerate the golden fixture so `forest.test.ts` pins the TypeScript walk to the Python one:
+
+```powershell
+.\.venv\Scripts\python data-pipeline\train\make_golden.py
+```
+
 ## 3 The U-Net
 
 ```powershell
@@ -85,9 +99,9 @@ the app's Methods page) and `models/benchmark.per-tile.json`.
 .\.venv\Scripts\python data-pipeline\run.py validate --release
 ```
 
-`copy-data.mjs` copies `models/**/*.onnx` and the JSON side-cars into the site at build time; the
-instrument reads `models/registry.json` for the model cards and `models/benchmark.json` for the held-out
-scores.
+`copy-data.mjs` copies `models/**/*.onnx`, `models/**/*.forest.bin` and the JSON side-cars into the site
+at build time; the instrument reads `models/registry.json` for the model cards and
+`models/benchmark.json` for the held-out scores.
 
 ## Parity, the contract with the browser
 

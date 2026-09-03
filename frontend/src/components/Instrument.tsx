@@ -391,7 +391,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                   className="btn"
                   type="button"
                   disabled={live.status !== 'ready' || live.busy || !rfModel}
-                  onClick={() => void live.rf(learnedT)}
+                  onClick={() => void live.rf(learnedT, unetScale)}
                   data-testid="rf-run"
                   title={rfModel ? `${rfModel.id} / ${(rfModel.bytes / 1e6).toFixed(1)} MB` : ''}
                 >

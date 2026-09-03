@@ -21,7 +21,7 @@ export type LiveLayer =
 
 // the shipped models, served from /models/ (copy-data.mjs copies ../models there)
 export const MODEL_URLS = {
-  rf: `${import.meta.env.BASE_URL}models/rf/rf-v1.onnx`,
+  rf: `${import.meta.env.BASE_URL}models/rf/rf-v1.forest.bin`, // flat-array forest, traversed in the worker
   unet: `${import.meta.env.BASE_URL}models/unet/unet-v1.onnx`,
 } as const;
 
@@ -44,7 +44,7 @@ export interface LiveState {
   sam: (angleRad: number, endmemberMask?: Uint8Array) => Promise<void>;
   learnedProgress: { done: number; total: number; note: string } | null;
   learnedError: string | null;
-  rf: (threshold: number) => Promise<void>;
+  rf: (threshold: number, scale: 1 | 2) => Promise<void>;
   unet: (threshold: number, scale: 1 | 2, prefer?: 'webgpu' | 'wasm' | 'auto') => Promise<void>;
   clear: () => void;
 }
@@ -179,11 +179,11 @@ export const useLive = create<LiveState>((set, get) => ({
   learnedProgress: null,
   learnedError: null,
 
-  rf: async (threshold) => {
+  rf: async (threshold, scale) => {
     if (get().status !== 'ready') return;
     set({ busy: true, learnedProgress: { done: 0, total: 1, note: 'rf' }, learnedError: null });
     try {
-      const r = (await ask({ type: 'rf', modelUrl: MODEL_URLS.rf, threshold })) as LearnedResult;
+      const r = (await ask({ type: 'rf', modelUrl: MODEL_URLS.rf, threshold, scale })) as LearnedResult;
       set({ layer: { kind: 'rf', result: r }, busy: false, learnedProgress: null });
     } catch (e) {
       set({ busy: false, learnedProgress: null, learnedError: e instanceof Error ? e.message : String(e) });

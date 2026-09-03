@@ -422,6 +422,10 @@
     "sampling": "Sampling both surfaces",
     "distance": "Distance",
     "length": "Length",
+    "globalRange": "Global surface",
+    "coverage": "Copernicus samples",
+    "noSamples": "no tile answered",
+    "outsideWindow": "the line lies outside the baked Copernicus window",
     "deepestChange": "Deepest change",
     "highestChange": "Highest change",
     "at": "at"

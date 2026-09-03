@@ -42,7 +42,7 @@ The offline bake (`02_generate-data`) is not needed to run the app: the committe
 
 | Path | What |
 |---|---|
-| `frontend/` | React 19 + Vite + TypeScript SPA: MapLibre GL JS (globe, 3D terrain), deck.gl overlays, geotiff.js range reads, onnxruntime-web inference, uPlot charts, KaTeX, EN/ES |
+| `frontend/` | React 19 + Vite + TypeScript SPA: MapLibre GL JS (globe, 3D terrain, image overlays), geotiff.js range reads, a band-math Web Worker (indices, classical masks, the random forest traversed from flat arrays), onnxruntime-web for the U-Net, uPlot charts, KaTeX, EN/ES |
 | `data-pipeline/` | the offline bake, plain Python scripts invoked by path (no package): catalog, scenes, frames, masks, series, dem, export, validate |
 | `data/` | the site catalog (`examples/sites.json`), the two data contracts (`README.md`), the committed derived artifacts |
 | `models/` | exported ONNX models with their registry (checkpoints stay out of git) |

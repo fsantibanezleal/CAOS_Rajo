@@ -171,7 +171,9 @@ def run_stage(ctx) -> None:
             if not ctx.wants_year(year):
                 continue
             rec = doc["years"].get(str(year), {})
-            wanted = [m for m in METHODS if m not in rec and (m == "otsu" or (m == "rf" and models.rf) or (m == "unet" and models.unet and fr["collection"] == "sentinel-2-l2a"))]
+            redo = set(ctx.redo or ())
+            wanted = [m for m in METHODS if (m not in rec or m in redo)
+                      and (m == "otsu" or (m == "rf" and models.rf) or (m == "unet" and models.unet and fr["collection"] == "sentinel-2-l2a"))]
             if not wanted:
                 continue
             chip = root / "chips" / d.name / f"{d.name}_{year}.npz"

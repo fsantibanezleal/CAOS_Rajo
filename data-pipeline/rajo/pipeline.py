@@ -33,6 +33,7 @@ class Context:
     sites: list[str]
     limit_years: int
     years: set[int] = field(default_factory=set)
+    redo: list[str] = field(default_factory=list)  # masks stage: methods recomputed even when present
     engine_version: str = field(default_factory=engine_version)
 
     def wants_year(self, year: int) -> bool:
@@ -69,9 +70,9 @@ def _stage_fn(name: str):
 
 
 def run(*, stage: str, sites: list[str], output: Path, release: bool, resume: bool,
-        limit_years: int, repo_root: Path, years: set[int] | None = None) -> int:
+        limit_years: int, repo_root: Path, years: set[int] | None = None, redo: list[str] | None = None) -> int:
     ctx = Context(repo_root=repo_root, output=output, release=release, resume=resume,
-                  sites=sites, limit_years=limit_years, years=set(years or ()))
+                  sites=sites, limit_years=limit_years, years=set(years or ()), redo=list(redo or ()))
     ctx.output.mkdir(parents=True, exist_ok=True)
     names = list(STAGES) if stage == "all" else [stage]
     ctx.log(f"engine {ctx.engine_version} | output {ctx.output} | release={release} | sites={sites or 'all'}")

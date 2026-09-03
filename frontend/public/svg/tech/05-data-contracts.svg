@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" class="a" role="img" aria-label="The two data contracts: ingestion (the site catalog) and artifact (the manifests), and the gates that enforce them">
+  <!-- Hand-authored (ADR-0058). CSS variables only; both languages in one file (l-en / l-es), identifiers l-neutral. -->
+  <style>
+    .a text { font-family: var(--font-sans, system-ui, sans-serif); font-size: 11px; fill: var(--fg); }
+    .a .mono { font-family: var(--font-mono, ui-monospace, monospace); font-size: 10px; }
+    .a .ttl { font-size: 13.5px; font-weight: 700; }
+    .a .h { font-size: 11.5px; font-weight: 700; }
+    .a .sub { fill: var(--fg-muted); font-size: 10px; }
+    .a .bx { fill: var(--surface-2); stroke: var(--border-strong); stroke-width: 1.2; }
+    .a .c1 { stroke: var(--cyan); } .a .c2 { stroke: var(--accent); } .a .gate { stroke: var(--good); }
+    .a .t1 { fill: var(--cyan); font-weight: 700; font-size: 12px; } .a .t2 { fill: var(--accent); font-weight: 700; font-size: 12px; } .a .tg { fill: var(--good); font-weight: 700; font-size: 11px; }
+    .a .ln { fill: none; stroke: var(--border-strong); stroke-width: 1.4; marker-end: url(#arr5); }
+  </style>
+  <defs>
+    <marker id="arr5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--border-strong)" />
+    </marker>
+  </defs>
+
+  <text x="20" y="26" class="ttl l-en">Two data contracts and the gates that enforce them (bring your own site: edit one file, run the bake, every page follows)</text>
+  <text x="20" y="26" class="ttl l-es">Dos contratos de datos y las compuertas que los aplican (traiga su sitio: edite un archivo, corra la cocina, cada pagina lo sigue)</text>
+
+  <!-- Contract 1 -->
+  <rect x="20" y="44" width="400" height="236" rx="8" class="bx c1" />
+  <text x="32" y="63" class="t1 l-en">Contract 1: ingestion (what a site must declare)</text>
+  <text x="32" y="63" class="t1 l-es">Contrato 1: ingesta (lo que un sitio debe declarar)</text>
+  <text x="32" y="82" class="mono l-neutral">data/examples/sites.json  (schema rajo.site/v1)</text>
+  <text x="32" y="100" class="mono l-neutral">id ^[a-z0-9-]+$   name_en name_es   country ISO3</text>
+  <text x="32" y="114" class="mono l-neutral">categories: copper-chile copper-world lithium iron coal ...</text>
+  <text x="32" y="128" class="mono l-neutral">lon lat (seed)   window_km 4..40   first_year 1984..2026</text>
+  <text x="32" y="142" class="mono l-neutral">season {start_month end_month}   facts [{text_en text_es source}]</text>
+  <text x="32" y="156" class="mono l-neutral">commodity operator flags transition_year closure_year</text>
+  <text x="32" y="178" class="h l-en">The catalog stage refuses</text>
+  <text x="32" y="178" class="h l-es">La etapa catalog rechaza</text>
+  <text x="32" y="194" class="sub l-en">a seed farther than 3 km from a Maus 2022 polygon (unless flagged)</text>
+  <text x="32" y="194" class="sub l-es">una semilla a mas de 3 km de un poligono Maus 2022 (salvo bandera)</text>
+  <text x="32" y="207" class="sub l-en">a window outside 4 to 40 km, a first year outside 1984 to 2026</text>
+  <text x="32" y="207" class="sub l-es">una ventana fuera de 4 a 40 km, un primer ano fuera de 1984 a 2026</text>
+  <text x="32" y="220" class="sub l-en">a fact without a source URL, a category outside the vocabulary</text>
+  <text x="32" y="220" class="sub l-es">un hecho sin URL de fuente, una categoria fuera del vocabulario</text>
+  <text x="32" y="242" class="h l-en">and writes per site</text>
+  <text x="32" y="242" class="h l-es">y escribe por sitio</text>
+  <text x="32" y="258" class="mono l-neutral">site.json (the UTM grid, width a multiple of 3 px)</text>
+  <text x="32" y="272" class="mono l-neutral">polygons.geojson (CC BY-SA 4.0, from Maus 2022)</text>
+
+  <!-- Contract 2 -->
+  <rect x="440" y="44" width="440" height="236" rx="8" class="bx c2" />
+  <text x="452" y="63" class="t2 l-en">Contract 2: artifact (what the web may read)</text>
+  <text x="452" y="63" class="t2 l-es">Contrato 2: artefacto (lo que la web puede leer)</text>
+  <text x="452" y="82" class="mono l-neutral">data/derived/catalog.json  (schema rajo.catalog/v1)</text>
+  <text x="452" y="96" class="mono l-neutral">sites/&lt;id&gt;/manifest.json:</text>
+  <text x="452" y="110" class="mono l-neutral">  site  window  polygons  engine_version</text>
+  <text x="452" y="124" class="mono l-neutral">  frames[] {year sensor scene_ids date clear_pct data_pct</text>
+  <text x="452" y="138" class="mono l-neutral">           image swir_image stretch flags collection masks{}}</text>
+  <text x="452" y="152" class="mono l-neutral">  gaps {year: reason}</text>
+  <text x="452" y="166" class="mono l-neutral">  series {years sensor valid_frac area_km2 index_mean</text>
+  <text x="452" y="180" class="mono l-neutral">          methods{pelt cusum} change_points dense}</text>
+  <text x="452" y="194" class="mono l-neutral">  dem {epochs delta_png cut fill noise_floor_m geoid terrain_tiles}</text>
+  <text x="452" y="208" class="mono l-neutral">  files[] {path kind bytes sha256}</text>
+  <text x="452" y="228" class="h l-en">Each stage writes a side-car; export assembles; validate refuses</text>
+  <text x="452" y="228" class="h l-es">Cada etapa escribe un lateral; export arma; validate rechaza</text>
+  <text x="452" y="244" class="sub l-en">a missing file, a byte or sha256 drift, a year with neither a frame nor</text>
+  <text x="452" y="244" class="sub l-es">un archivo faltante, una deriva de bytes o sha256, un ano sin cuadro ni</text>
+  <text x="452" y="257" class="sub l-en">a reason, a series naming a year without a frame, two engine versions,</text>
+  <text x="452" y="257" class="sub l-es">razon, una serie con un ano sin cuadro, dos versiones del motor,</text>
+  <text x="452" y="270" class="sub l-en">a CR byte in a text artifact (LF everywhere, hashed as stored).</text>
+  <text x="452" y="270" class="sub l-es">un byte CR en un artefacto de texto (LF en todo, hasheado tal cual).</text>
+
+  <!-- the flow: sites.json -> bake -> derived -> web -->
+  <text x="20" y="308" class="h l-en">The flow, and where the gates sit</text>
+  <text x="20" y="308" class="h l-es">El flujo, y donde estan las compuertas</text>
+  <rect x="20" y="320" width="150" height="64" rx="7" class="bx" />
+  <text x="30" y="338" class="mono l-neutral">sites.json</text>
+  <text x="30" y="354" class="sub l-en">30 sites, 12 in Chile,</text>
+  <text x="30" y="354" class="sub l-es">30 sitios, 12 en Chile,</text>
+  <text x="30" y="367" class="sub l-en">hand-declared, sourced facts</text>
+  <text x="30" y="367" class="sub l-es">declarados a mano, con fuente</text>
+  <path d="M170,352 L192,352" class="ln" />
+  <rect x="192" y="320" width="150" height="64" rx="7" class="bx gate" />
+  <text x="202" y="338" class="tg l-en">gate: contracts.py</text>
+  <text x="202" y="338" class="tg l-es">compuerta: contracts.py</text>
+  <text x="202" y="354" class="sub l-en">validate_sites against</text>
+  <text x="202" y="354" class="sub l-es">validate_sites contra</text>
+  <text x="202" y="367" class="sub l-en">44,929 reference polygons</text>
+  <text x="202" y="367" class="sub l-es">44.929 poligonos de referencia</text>
+  <path d="M342,352 L364,352" class="ln" />
+  <rect x="364" y="320" width="170" height="64" rx="7" class="bx" />
+  <text x="374" y="338" class="mono l-neutral">the bake (9 stages)</text>
+  <text x="374" y="354" class="sub l-en">resumable, parallel per site,</text>
+  <text x="374" y="354" class="sub l-es">reanudable, paralela por sitio,</text>
+  <text x="374" y="367" class="sub l-en">sandbox by default</text>
+  <text x="374" y="367" class="sub l-es">sandbox por defecto</text>
+  <path d="M534,352 L556,352" class="ln" />
+  <rect x="556" y="320" width="160" height="64" rx="7" class="bx gate" />
+  <text x="566" y="338" class="tg l-en">gate: validate +</text>
+  <text x="566" y="338" class="tg l-es">compuerta: validate +</text>
+  <text x="566" y="354" class="mono l-neutral">check_artifacts.py</text>
+  <text x="566" y="367" class="sub l-en">in CI and before every deploy</text>
+  <text x="566" y="367" class="sub l-es">en CI y antes de cada despliegue</text>
+  <path d="M716,352 L738,352" class="ln" />
+  <rect x="738" y="320" width="142" height="64" rx="7" class="bx" />
+  <text x="748" y="338" class="mono l-neutral">the web (replay)</text>
+  <text x="748" y="354" class="sub l-en">copy-data overlay,</text>
+  <text x="748" y="354" class="sub l-es">superposicion copy-data,</text>
+  <text x="748" y="367" class="mono l-neutral">contract.ts mirror</text>
+
+  <!-- models registry -->
+  <rect x="20" y="402" width="420" height="82" rx="8" class="bx" />
+  <text x="32" y="421" class="h l-en">The models carry their own registry</text>
+  <text x="32" y="421" class="h l-es">Los modelos llevan su propio registro</text>
+  <text x="32" y="439" class="mono l-neutral">models/registry.json: id method file bytes sha256 opset</text>
+  <text x="32" y="453" class="mono l-neutral">input output training_data split params scores parity</text>
+  <text x="32" y="471" class="sub l-en">Each model card in the app reads this file; the browser session opens the same ONNX.</text>
+  <text x="32" y="471" class="sub l-es">Cada ficha de modelo en la app lee este archivo; el navegador abre el mismo ONNX.</text>
+
+  <!-- the sandbox / release rule -->
+  <rect x="460" y="402" width="420" height="82" rx="8" class="bx" />
+  <text x="472" y="421" class="h l-en">Sandbox versus release</text>
+  <text x="472" y="421" class="h l-es">Sandbox versus release</text>
+  <text x="472" y="439" class="sub l-en">Without --release everything goes to build/; --release writes data/derived and</text>
+  <text x="472" y="439" class="sub l-es">Sin --release todo va a build/; --release escribe data/derived y se acepta</text>
+  <text x="472" y="452" class="sub l-en">is accepted for all, export, validate and the derived stages only: one frames</text>
+  <text x="472" y="452" class="sub l-es">solo para all, export, validate y las etapas derivadas: una sola etapa</text>
+  <text x="472" y="465" class="sub l-en">stage into the canonical tree is how a partial bake happens. Parallel workers</text>
+  <text x="472" y="465" class="sub l-es">frames en el arbol canonico es como ocurre una cocina parcial. Los workers</text>
+  <text x="472" y="478" class="sub l-en">bake into one sandbox; harvest.py moves only complete sites.</text>
+  <text x="472" y="478" class="sub l-es">paralelos cocinan en un sandbox; harvest.py mueve solo sitios completos.</text>
+
+  <text x="20" y="508" class="sub l-en">Licences travel with the data: the per-site polygons stay CC BY-SA 4.0 (Maus 2022 share-alike); the Copernicus, USGS, EOX and OpenFreeMap</text>
+  <text x="20" y="508" class="sub l-es">Las licencias viajan con los datos: los poligonos por sitio siguen CC BY-SA 4.0 (Maus 2022); las cadenas de Copernicus, USGS, EOX y</text>
+  <text x="20" y="522" class="sub l-en">strings are rendered verbatim on the Data page and in the map attribution.</text>
+  <text x="20" y="522" class="sub l-es">OpenFreeMap se muestran textuales en la pagina Datos y en la atribucion del mapa.</text>
+  <text x="20" y="544" class="mono l-neutral">data-pipeline/rajo/contracts.py  manifest.py  stages/export.py  stages/validate.py  scripts/check_artifacts.py  frontend/src/lib/contract.ts</text>
+</svg>

@@ -43,6 +43,17 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
   browser alike, so a dark pixel can no longer blow up an envelope mean.
 - Deploy scripts (PowerShell and bash): guards, tests, build, tar over ssh into a release directory with
   an atomic swap, then a live check of the title, the catalog and a deep link.
+- Relief lane: the dem stage (SRTM 2000 and Copernicus 2011 to 2015 on the site grid, geoid-corrected
+  difference, stable-ground noise floor, cut and fill volumes, hillshades, terrarium tiles per site) and
+  the Relief tab (epoch toggle, exaggeration, the difference draped, the profile tool sampling both
+  surfaces from the tiles in the browser); the method page for M12.
+- Documentation depth in the app: the Methods page (twelve methods with KaTeX equations, lane badges,
+  sources with DOIs, caveats, and the held-out benchmark table when the models ship), the Data page
+  (every source probed and licensed, the facts the bake relies on, the two contracts, the catalog as
+  baked, the attribution block verbatim), the About page (lifecycle, rules, versioning, licences, how to
+  cite), and the architecture modal behind the header's info button: five hand-authored, theme-aware,
+  bilingual SVG diagrams (the app, the lanes, the web flow, the science, the data contracts) with a render
+  harness that refuses hex colours and text crossing a box edge; a Playwright gate for all of it.
 
 ### Changed
 

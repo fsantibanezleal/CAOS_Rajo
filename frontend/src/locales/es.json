@@ -57,7 +57,8 @@
     "window": "Ventana",
     "polygons": "Polígonos de referencia",
     "source": "fuente",
-    "polygonsCredit": "Huellas de referencia: Maus et al. 2022, polígonos mineros globales v2 (CC BY-SA 4.0); incluyen rajos, botaderos, relaves, pozas y plantas."
+    "polygonsCredit": "Huellas de referencia: Maus et al. 2022, polígonos mineros globales v2 (CC BY-SA 4.0); incluyen rajos, botaderos, relaves, pozas y plantas.",
+    "frames": "Cuadros"
   },
   "atlas": {
     "title": "Atlas",
@@ -93,5 +94,25 @@
     "oil-sands": "Arenas bituminosas",
     "transition": "Transición a subterránea",
     "closure": "Cerrada o detenida"
+  },
+  "timeline": {
+    "noFrames": "Aún no hay cuadros de time-lapse para este sitio.",
+    "prev": "Año anterior",
+    "next": "Año siguiente",
+    "play": "Reproducir el time-lapse",
+    "pause": "Pausa",
+    "scrub": "Año",
+    "valid": "sin nubes",
+    "validHelp": "Fracción de la ventana libre de nubes, sombras y sin datos en este cuadro, medida desde la clasificación de escena",
+    "mode": "Compuesto",
+    "trueColour": "Color real",
+    "swir": "SWIR",
+    "opacity": "Opacidad",
+    "flags": {
+      "low_valid": "parcialmente nublado",
+      "composite": "compuesto de dos fechas",
+      "slc_off": "franjas Landsat 7 rellenadas",
+      "snow": "nieve"
+    }
   }
 }

@@ -1,17 +1,20 @@
 // The observatory: a full-bleed map with floating instruments. The map takes the whole surface; the rail,
-// the controls, the status line and the attribution float over it. The site selector is one grouped
-// select (categories as optgroups); choosing a site flies the camera, draws the reference polygons and
-// the site window, and writes ?site= into the URL so the view is shareable.
+// the controls, the status line, the timeline and the attribution float over it. The site selector is one
+// grouped select (categories as optgroups); choosing a site flies the camera, draws the reference polygons
+// and the site window, shows the time-lapse and writes ?site= into the URL so the view is shareable.
 import type { Map as MLMap } from 'maplibre-gl';
 import { Compass, Mountain, Tag, ZoomIn, ZoomOut } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import type { CatalogEntry, Category } from '../lib/contract';
+import { Timeline } from '../components/Timeline';
+import type { CatalogEntry, Category, Frame } from '../lib/contract';
+import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
 import { MapView, TERRAIN_EXAGGERATION } from '../map/MapView';
 import { clearSite, flyToSite, showSite } from '../map/siteLayers';
 import { useCatalog } from '../state/catalog';
 import { readSiteParam, useManifest, writeSiteParam } from '../state/site';
+import { useTimeline } from '../state/timeline';
 import { useUI } from '../state/ui';
 
 const CATEGORY_ORDER: Category[] = [
@@ -35,6 +38,9 @@ export function Observatory() {
   const [terrain, setTerrain] = useState(true);
   const [labels, setLabels] = useState(true);
   const [siteId, setSiteId] = useState<string>(readSiteParam);
+  const [frame, setFrame] = useState<Frame | null>(null);
+  const mode = useTimeline((s) => s.mode);
+  const opacity = useTimeline((s) => s.opacity);
 
   const entry: CatalogEntry | undefined = useMemo(() => catalog?.sites.find((s) => s.site_id === siteId), [catalog, siteId]);
   const { manifest } = useManifest(entry ? siteId : '', entry?.manifest_path);
@@ -62,11 +68,15 @@ export function Observatory() {
   // keep the URL in step with the selection
   useEffect(() => writeSiteParam(siteId), [siteId]);
 
-  // draw and fly when the manifest arrives (and after a style rebuild)
+  // draw and fly when the manifest arrives (and again after a style rebuild)
   useEffect(() => {
     if (!map) return;
     if (!manifest) {
-      if (map.isStyleLoaded()) clearSite(map);
+      setFrame(null);
+      if (map.isStyleLoaded()) {
+        clearSite(map);
+        removeFrameLayer(map);
+      }
       return;
     }
     const draw = () => {
@@ -81,8 +91,38 @@ export function Observatory() {
     };
   }, [map, manifest]);
 
+  // the frame overlay follows the timeline (and survives a style rebuild)
+  useEffect(() => {
+    if (!map || !manifest || !frame) return;
+    const url = frameUrl(manifest, frame, mode);
+    const apply = () => {
+      ensureFrameLayer(map, manifest, url);
+      setFrameOpacity(map, opacity);
+    };
+    let cancelled = false;
+    void preload(url).then(() => {
+      if (cancelled) return;
+      if (map.isStyleLoaded()) apply();
+      else map.once('style.load', apply);
+    });
+    // warm the neighbours so scrubbing never waits
+    const i = manifest.frames.indexOf(frame);
+    for (const j of [i + 1, i - 1, i + 2]) {
+      const f = manifest.frames[j];
+      if (f) void preload(frameUrl(manifest, f, mode));
+    }
+    map.on('style.load', apply);
+    return () => {
+      cancelled = true;
+      map.off('style.load', apply);
+    };
+  }, [map, manifest, frame, mode, opacity]);
+
+  const onFrame = useCallback((f: Frame) => setFrame(f), []);
+  const hasFrames = !!manifest && manifest.frames.length > 0;
+
   return (
-    <section className="obs" aria-label={t('observatory.title')}>
+    <section className={`obs${manifest ? ' with-timeline' : ''}`} aria-label={t('observatory.title')}>
       <MapView onMap={onMap} onCursor={setCursor} onStatus={setLoading} terrain={terrain} labels={labels} />
 
       <div className="overlay rail">
@@ -121,6 +161,14 @@ export function Observatory() {
                 <dd className="mono">
                   {manifest.polygons.n_features} / {manifest.polygons.area_km2.toFixed(1)} km2
                 </dd>
+                {hasFrames && (
+                  <>
+                    <dt>{t('observatory.frames')}</dt>
+                    <dd className="mono">
+                      {manifest.frames.length} / {manifest.frames[0]!.year} to {manifest.frames[manifest.frames.length - 1]!.year}
+                    </dd>
+                  </>
+                )}
               </dl>
               {manifest.site.facts.length > 0 && (
                 <ul className="facts">
@@ -204,20 +252,30 @@ export function Observatory() {
         </div>
       </div>
 
+      {manifest && <Timeline manifest={manifest} onFrame={onFrame} />}
+
       <div className="overlay attrib">
         <div className="panel">
-          <span dangerouslySetInnerHTML={{ __html: attributionHtml() }} />
+          <span dangerouslySetInnerHTML={{ __html: attributionHtml(frame) }} />
         </div>
       </div>
     </section>
   );
 }
 
-function attributionHtml(): string {
-  return [
+function attributionHtml(frame: Frame | null): string {
+  const parts = [
     'Sentinel-2 cloudless - <a href="https://s2maps.eu" target="_blank" rel="noreferrer">s2maps.eu</a> by EOX IT Services GmbH (Contains modified Copernicus Sentinel data 2024)',
     '<a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noreferrer">Terrain Tiles</a> by Mapzen',
     '<a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a> &copy; OpenMapTiles, data from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a>',
     'Mining polygons: <a href="https://doi.org/10.1594/PANGAEA.942325" target="_blank" rel="noreferrer">Maus et al. 2022</a> (CC BY-SA 4.0)',
-  ].join(' &middot; ');
+  ];
+  if (frame) {
+    parts.push(
+      frame.collection === 'sentinel-2-l2a'
+        ? `Frame: Contains modified Copernicus Sentinel data ${frame.date.slice(0, 4)} (Earth Search, AWS Open Data)`
+        : `Frame: Landsat Collection 2 courtesy of the U.S. Geological Survey (Microsoft Planetary Computer), ${frame.date.slice(0, 4)}`,
+    );
+  }
+  return parts.join(' &middot; ');
 }

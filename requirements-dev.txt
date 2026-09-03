@@ -1,3 +1,4 @@
 # Developer tooling: lint + tests. Installed into .venv alongside the bake lane.
 ruff==0.15.4
 pytest==9.1.1
+matplotlib==3.10.8

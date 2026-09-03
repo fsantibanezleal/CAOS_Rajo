@@ -71,15 +71,19 @@ export interface Frame {
   year: number;
   sensor: Sensor;
   scene_id: string;
+  scene_ids: string[];
   date: string;
   cloud_pct: number;
   valid_pct: number;
+  snow_pct: number;
+  pixel_m: number;
   image: string;
   image_px: number;
-  chip_preview?: string;
+  swir_image: string;
+  stretch: { true_colour: [number, number][]; swir: [number, number][] };
+  flags: string[];
+  collection: 'sentinel-2-l2a' | 'landsat-c2-l2';
   masks?: Record<string, string>;
-  slc_off?: boolean;
-  notes?: string;
 }
 
 export interface ChangePoint {

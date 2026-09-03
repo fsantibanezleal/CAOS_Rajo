@@ -21,6 +21,7 @@ for (const theme of ['dark', 'light'] as const) {
       });
       await page.addInitScript((t) => localStorage.setItem('rajo.theme', t), theme);
       await page.goto('/');
+      await expect(page).toHaveTitle(/Rajo/);
       await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
       await page.waitForTimeout(2500);
 
@@ -46,7 +47,9 @@ for (const theme of ['dark', 'light'] as const) {
       expect(r.navRows, 'one navigation row').toBe(1);
       expect(r.navCount).toBe(5);
       expect(r.vizPct, 'the map takes at least half the viewport').toBeGreaterThan(0.5);
-      expect(errors, 'no console or page errors').toEqual([]);
+      expect(errors, `no console or page errors:
+${errors.join('
+')}`).toEqual([]);
       await ctx.close();
     });
   }

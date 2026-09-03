@@ -8,6 +8,7 @@ test('language and theme toggles change what is on screen; every route is reacha
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('/');
+  await expect(page).toHaveTitle(/Rajo/);
   await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
 
   const navBefore = await page.locator('.hdr nav a').allTextContents();
@@ -39,13 +40,16 @@ test('language and theme toggles change what is on screen; every route is reacha
   await expect(page.getByTestId('terrain-btn')).toHaveAttribute('aria-pressed', 'false');
   await page.getByTestId('labels-btn').click();
   await expect(page.getByTestId('labels-btn')).toHaveAttribute('aria-pressed', 'false');
-  expect(errors).toEqual([]);
+  expect(errors, `page errors:
+${errors.join('
+')}`).toEqual([]);
 });
 
 test('the atlas lists the catalog and a picked site shows its card, polygons and deep link', async ({ page }) => {
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
   await page.goto('/atlas');
+  await expect(page).toHaveTitle(/Rajo/);
   const rows = page.locator('[data-testid="atlas-table"] tbody tr');
   await expect(rows.first()).toBeVisible({ timeout: 30_000 });
   expect(await rows.count()).toBeGreaterThanOrEqual(24);
@@ -71,6 +75,9 @@ test('the atlas lists the catalog and a picked site shows its card, polygons and
   expect(drawn).toBeGreaterThan(0);
 
   await page.goto('/?site=escondida');
+  await expect(page).toHaveTitle(/Rajo/);
   await expect(page.getByTestId('site-card').locator('h2')).toHaveText('Escondida', { timeout: 30_000 });
-  expect(errors).toEqual([]);
+  expect(errors, `page errors:
+${errors.join('
+')}`).toEqual([]);
 });

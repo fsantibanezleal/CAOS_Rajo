@@ -19,11 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-Data and imagery rendered by this software carry their own licenses (see
-docs/data/ and the in-app attribution): Copernicus Sentinel data, USGS Landsat,
-Mapzen Terrain Tiles, Copernicus DEM, SRTM, the mining polygon datasets of
-Maus et al. 2022 (CC BY-SA 4.0), Tang and Werner 2023 (CC BY 4.0) and
-Jasansky et al. 2024 (CC BY-SA 4.0), EOX Sentinel-2 cloudless (CC BY-NC-SA 4.0)
-and OpenFreeMap / OpenStreetMap. Derived polygon layers published by this
-project are CC BY-SA 4.0.

@@ -12,7 +12,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "e2e": "playwright test",
-    "preview": "vite preview --port 4173 --strictPort"
+    "preview": "vite preview --port 4901 --strictPort"
   },
   "dependencies": {
     "@deck.gl/core": "^9.3.11",

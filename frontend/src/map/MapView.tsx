@@ -130,6 +130,10 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     let cancelled = false;
     void buildStyle(theme).then(({ style }) => {
       if (cancelled || mapRef.current !== m) return;
+      // with terrain on, the painter's depth pass runs against the incoming style before it owns a
+      // projection ('shaderPreludeCode' of undefined in useProgram, MapLibre 6.7); the style.load
+      // handler restores globe + terrain once the new style is in place
+      m.setTerrain(null);
       m.setStyle(style, { diff: false });
     });
     return () => {

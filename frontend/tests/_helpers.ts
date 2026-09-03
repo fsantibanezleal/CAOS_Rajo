@@ -9,7 +9,8 @@ const THIRD_PARTY_TILE = /AJAXError: .*\((0|429|5\d\d)\): https:\/\/(tiles\.maps
 export function collectErrors(page: Page): string[] {
   const errors: string[] = [];
   const tileFailures: string[] = [];
-  page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}`));
+  // the stack names the frame that threw (a MapLibre render after a style swap looks like a route bug otherwise)
+  page.on('pageerror', (e) => errors.push(`pageerror: ${e.message}\n${(e.stack ?? '').split('\n').slice(0, 6).join('\n')}`));
   page.on('console', (m) => {
     if (m.type() !== 'error') return;
     const text = m.text();

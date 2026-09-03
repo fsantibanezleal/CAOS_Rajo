@@ -80,8 +80,8 @@
   {
    "path": "sites/collahuasi/polygons.geojson",
    "kind": "polygons",
-   "bytes": 15180,
-   "sha256": "39a40048b80f6b6058eb7e5b1755d948f22e3ff1155766f3ba045fed639ad221"
+   "bytes": 14196,
+   "sha256": "e18ab8292e0fff9c07d76cfe8e0cd179e9c12a20e300508116f65a055cef2afa"
   }
  ]
 }

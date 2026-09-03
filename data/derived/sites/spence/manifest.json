@@ -68,8 +68,8 @@
   {
    "path": "sites/spence/polygons.geojson",
    "kind": "polygons",
-   "bytes": 3749,
-   "sha256": "061dd4f81fdaac9c6bebc46357308220350e193f1a0677d9b051b23d87645b4c"
+   "bytes": 3523,
+   "sha256": "dc9311e3e1abcdfaff3390a1bcb03ff8303e97e3b9d0baf31a1e0ea567785499"
   }
  ]
 }

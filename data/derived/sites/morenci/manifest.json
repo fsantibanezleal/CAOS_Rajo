@@ -68,8 +68,8 @@
   {
    "path": "sites/morenci/polygons.geojson",
    "kind": "polygons",
-   "bytes": 2565,
-   "sha256": "6e7bd94a63d7477adbe1b3fc484959617ca4ca647059e589c1c81469fbba7afc"
+   "bytes": 2395,
+   "sha256": "4933e2869ccc36105200d49262c15ed96aaf072760d0a1c629f837b2ab537948"
   }
  ]
 }

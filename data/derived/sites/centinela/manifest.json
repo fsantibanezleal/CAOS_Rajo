@@ -70,8 +70,8 @@
   {
    "path": "sites/centinela/polygons.geojson",
    "kind": "polygons",
-   "bytes": 3069,
-   "sha256": "edbce028cca975e208211e4131e090284f0c049e2272f84dcff17df78103db30"
+   "bytes": 2869,
+   "sha256": "176c295655c1bf2218418a512abd61f097593113da30a10a12ec5d472841a1e2"
   }
  ]
 }

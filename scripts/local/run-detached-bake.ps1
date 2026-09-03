@@ -10,7 +10,7 @@
 #
 #   .\scripts\local\run-detached-bake.ps1                       # all stages, all sites, resume, release
 #   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites chuquicamata,escondida -Sandbox
-#   .\scripts\local\run-detached-bake.ps1 -DataRoot E:\_Datos\rajo
+#   .\scripts\local\run-detached-bake.ps1 -DataRoot X:\rajo-data
 
 [CmdletBinding()]
 param(

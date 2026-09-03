@@ -75,8 +75,8 @@
   {
    "path": "sites/athabasca-mildred/polygons.geojson",
    "kind": "polygons",
-   "bytes": 5710,
-   "sha256": "b546f8ac589af3ed31ef3b5a94888793260e71f7acece0a1bb9bebd2f6b7bb52"
+   "bytes": 5357,
+   "sha256": "ded2d7f3e8cb05a05e2afad3477c12a6b5c848c06e9fb5f792a6f02f42176ae3"
   }
  ]
 }

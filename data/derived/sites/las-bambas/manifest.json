@@ -79,8 +79,8 @@
   {
    "path": "sites/las-bambas/polygons.geojson",
    "kind": "polygons",
-   "bytes": 9687,
-   "sha256": "aba040d21f9e5aed94e2a51d217038e00e03f5703c3731e3e81986af1b37d874"
+   "bytes": 9078,
+   "sha256": "abc4286567b058d33634bcf3190c8fd89e33299d389c2a61d4e271825346cc61"
   }
  ]
 }

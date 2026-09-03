@@ -76,8 +76,8 @@
   {
    "path": "sites/los-pelambres/polygons.geojson",
    "kind": "polygons",
-   "bytes": 13011,
-   "sha256": "5ab0f9b26c294acdb7a5b81ce4e9c95e0fae4a8dd66cb9afa6293f6a3a5ffe94"
+   "bytes": 12203,
+   "sha256": "af408e8fdf41671979ba09108ea78741df86ac50b6b5c3cdc7dbb9608779af39"
   }
  ]
 }

@@ -75,8 +75,8 @@
   {
    "path": "sites/belchatow/polygons.geojson",
    "kind": "polygons",
-   "bytes": 9316,
-   "sha256": "87db20004f699119a629ec037c8e168d760a998d25caa5a8011a1f3bac85300f"
+   "bytes": 8713,
+   "sha256": "b2dd0da003473627534ffc989f62077ac7a442c8794efba31a0ab1eaa2ff1e0a"
   }
  ]
 }

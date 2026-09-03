@@ -76,8 +76,8 @@
   {
    "path": "sites/antamina/polygons.geojson",
    "kind": "polygons",
-   "bytes": 3051,
-   "sha256": "b6913c363233a2983e796d02aedf496f81d5b38cc4d8dfcfd45cd35e0d151edb"
+   "bytes": 2851,
+   "sha256": "d1f6e3fd8b68e45b1a3973fa1bea1b99ff9dbd48855d403f2d96955306ef1170"
   }
  ]
 }

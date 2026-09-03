@@ -85,8 +85,8 @@
   {
    "path": "sites/escondida/polygons.geojson",
    "kind": "polygons",
-   "bytes": 4030,
-   "sha256": "ea8cda38243919e7f23869b56e1489f73c0e957428ee2e4c756fe85819c9c1e8"
+   "bytes": 3769,
+   "sha256": "78ad2bb0a6d0b275717419b41ecf961eb65e8cb12eeea7657d1fe9bc79bdcaaf"
   }
  ]
 }

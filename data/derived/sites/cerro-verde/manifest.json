@@ -78,8 +78,8 @@
   {
    "path": "sites/cerro-verde/polygons.geojson",
    "kind": "polygons",
-   "bytes": 27109,
-   "sha256": "33f9abee7b2edd80feb5a37822c949c3d11656ce7c23e01fdcffded7b0049dfc"
+   "bytes": 25355,
+   "sha256": "3fc718257437d76d215987ee67a97a350e78c6e835c0e568a0010061359937f1"
   }
  ]
 }

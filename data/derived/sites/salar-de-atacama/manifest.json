@@ -79,8 +79,8 @@
   {
    "path": "sites/salar-de-atacama/polygons.geojson",
    "kind": "polygons",
-   "bytes": 7491,
-   "sha256": "78be81f44d589c5cfabbfe226e8ebca8c817e798bca3f2e4fb6a6da269f290f1"
+   "bytes": 7001,
+   "sha256": "d44cac46d171073ecae66b4444401658fe7580569cd383428a039714172993c1"
   }
  ]
 }

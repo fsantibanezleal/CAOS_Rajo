@@ -71,8 +71,8 @@
   {
    "path": "sites/udachnaya/polygons.geojson",
    "kind": "polygons",
-   "bytes": 16235,
-   "sha256": "48da07a3f20279789977645efa54887aadf80d9f3d15ca3267c836f1cc9fe0bd"
+   "bytes": 15152,
+   "sha256": "e7ce4af90a49ce2c2eeec70801b6cac64ae341b35c568bfb3d860fa3adb93c00"
   }
  ]
 }

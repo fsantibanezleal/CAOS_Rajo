@@ -81,8 +81,8 @@
   {
    "path": "sites/grasberg/polygons.geojson",
    "kind": "polygons",
-   "bytes": 15869,
-   "sha256": "ee3169f99ba77a9a6c83b531bb98b65ae54d79d6fab5a102ac610bbd1dbdf7bf"
+   "bytes": 14812,
+   "sha256": "eb35b42338f6b06abd6449f47ac1c165bdb9bbd2a68da3bfa9e0d48a0d5b5a02"
   }
  ]
 }

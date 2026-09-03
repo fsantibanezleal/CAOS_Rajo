@@ -46,7 +46,8 @@
     "status": {
       "ready": "Ready",
       "tiles": "Loading tiles"
-    }
+    },
+    "liveValue": "live"
   },
   "observatory": {
     "title": "Observatory",
@@ -57,7 +58,8 @@
     "window": "Window",
     "polygons": "Reference polygons",
     "source": "source",
-    "polygonsCredit": "Reference footprints: Maus et al. 2022, global-scale mining polygons v2 (CC BY-SA 4.0); they include pits, dumps, tailings, ponds and plants."
+    "polygonsCredit": "Reference footprints: Maus et al. 2022, global-scale mining polygons v2 (CC BY-SA 4.0); they include pits, dumps, tailings, ponds and plants.",
+    "frames": "Frames"
   },
   "atlas": {
     "title": "Atlas",
@@ -93,5 +95,129 @@
     "oil-sands": "Oil sands",
     "transition": "Transition to underground",
     "closure": "Closed or halted"
+  },
+  "timeline": {
+    "noFrames": "No time-lapse frames for this site yet.",
+    "prev": "Previous year",
+    "next": "Next year",
+    "play": "Play the time-lapse",
+    "pause": "Pause",
+    "scrub": "Year",
+    "valid": "cloud-free",
+    "validHelp": "Fraction of the window free of cloud, shadow and no-data in this frame, measured from the scene classification",
+    "mode": "Composite",
+    "trueColour": "True colour",
+    "swir": "SWIR",
+    "opacity": "Opacity",
+    "flags": {
+      "low_valid": "partly cloudy",
+      "composite": "two-date composite",
+      "slc_off": "Landsat 7 stripes filled",
+      "snow": "snow"
+    }
+  },
+  "instrument": {
+    "title": "Instrument",
+    "tabs": {
+      "look": "Look",
+      "find": "Find"
+    },
+    "fetch": "Load the latest clear scene",
+    "refetch": "Reload",
+    "scene": "Scene",
+    "cloud": "cloud",
+    "idle": "Loads the newest Sentinel-2 scene over this window (last 150 days, under 25% cloud) straight from the cloud-optimized GeoTIFFs into your browser. Nothing is uploaded.",
+    "searching": "Searching Earth Search",
+    "reading": "Reading tiles",
+    "tiles": "tiles",
+    "skipped": "skipped",
+    "composite": "Composite",
+    "composites": {
+      "tc": "True colour",
+      "fc": "False colour (NIR)",
+      "swir": "SWIR geology"
+    },
+    "index": "Index",
+    "compute": "Compute",
+    "colormap": "Colormap",
+    "rangeLo": "Low",
+    "rangeHi": "High",
+    "mean": "mean",
+    "validPx": "clear pixels",
+    "stretch": "Stretch (p2 to p98)",
+    "opacity": "Layer opacity",
+    "area": "Masked area",
+    "refArea": "Reference polygons",
+    "otsu": {
+      "title": "Otsu on the bare-soil index",
+      "text": "The threshold that maximises the between-class variance of the BSI histogram, then not-vegetation, not-water, a 3 x 3 opening and small-component removal.",
+      "threshold": "Threshold"
+    },
+    "kmeans": {
+      "title": "k-means on the spectra",
+      "text": "Standardised six bands plus NDVI and MNDWI, k-means++ seeding, Lloyd iterations, deterministic seed; clusters ordered from dark to bright.",
+      "cluster": "Cluster",
+      "spectrum": "Centroid spectrum (B, G, R, NIR, SWIR1, SWIR2)"
+    },
+    "sam": {
+      "title": "Spectral angle mapper",
+      "text": "The angle between each pixel spectrum and an endmember; illumination-invariant, so pit walls in shadow still match.",
+      "angle": "Max angle",
+      "endmemberRef": "Endmember: mean spectrum of the reference mining polygons on this scene.",
+      "endmemberBare": "Endmember: the brightest bare quartile of this scene (no reference polygons on the grid)."
+    },
+    "findNote": "These are classical delineations of disturbed land on one scene, not ore. The learned models arrive with the next unit."
+  },
+  "indices": {
+    "groups": {
+      "vegetationWater": "Vegetation and water",
+      "soilBuilt": "Bare ground, built-up, burn",
+      "mineral": "Mineral group indicators"
+    },
+    "ndvi": {
+      "name": "NDVI, vegetation",
+      "formula": "NDVI = (NIR - red) / (NIR + red)",
+      "caveat": "Bare pits and dumps sit near zero; irrigated fields and riparian strips light up."
+    },
+    "ndwi": {
+      "name": "NDWI, open water",
+      "formula": "NDWI = (green - NIR) / (green + NIR)",
+      "caveat": "Bright salt crusts can mimic water in NDWI; compare with MNDWI."
+    },
+    "mndwi": {
+      "name": "MNDWI, water vs bright crust",
+      "formula": "MNDWI = (green - SWIR1) / (green + SWIR1)",
+      "caveat": "Separates ponds and brine from bright salt and tailings better than NDWI."
+    },
+    "ndbi": {
+      "name": "NDBI, built-up and bare",
+      "formula": "NDBI = (SWIR1 - NIR) / (SWIR1 + NIR)",
+      "caveat": "Bare rock, dumps and plants all score high: built-up is not mine."
+    },
+    "bsi": {
+      "name": "BSI, bare soil",
+      "formula": "BSI = ((SWIR1 + red) - (NIR + blue)) / ((SWIR1 + red) + (NIR + blue))",
+      "caveat": "The workhorse of the classical masks; deserts are bare everywhere, so the threshold matters."
+    },
+    "nbr": {
+      "name": "NBR, burn and moisture",
+      "formula": "NBR = (NIR - SWIR2) / (NIR + SWIR2)",
+      "caveat": "Low over dry bare rock; used here as a dryness contrast, not as a burn index."
+    },
+    "iron": {
+      "name": "Iron oxide ratio",
+      "formula": "red / blue",
+      "caveat": "Ferric oxides (hematite, goethite) raise the ratio; oxidised dumps and leach pads too. A group indicator, not a mineral map."
+    },
+    "clay": {
+      "name": "Clay and hydroxyl ratio",
+      "formula": "SWIR1 / SWIR2",
+      "caveat": "Al-OH and Mg-OH minerals absorb near 2.2 um and raise the ratio; Sentinel-2 has two SWIR bands, so this is coarse."
+    },
+    "ferrous": {
+      "name": "Ferrous minerals ratio",
+      "formula": "SWIR2 / NIR",
+      "caveat": "Ferrous iron lowers the NIR; responds to fresh rock and dark dumps."
+    }
   }
 }

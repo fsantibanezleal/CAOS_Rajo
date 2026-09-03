@@ -10,13 +10,14 @@ const HERE = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(HERE, '..');
 const PUB = join(HERE, 'public');
 
-const derived = join(ROOT, 'data', 'derived');
+// RAJO_DERIVED points the build at a sandbox tree (build/local) for local gates; the default is the committed tree.
+const derived = process.env.RAJO_DERIVED ? join(ROOT, process.env.RAJO_DERIVED) : join(ROOT, 'data', 'derived');
 const pubData = join(PUB, 'data');
 rmSync(pubData, { recursive: true, force: true });
 mkdirSync(pubData, { recursive: true });
 if (existsSync(join(derived, 'catalog.json'))) {
   cpSync(derived, pubData, { recursive: true });
-  console.log('[copy-data] data/derived -> public/data');
+  console.log(`[copy-data] ${derived} -> public/data`);
 } else {
   console.warn('[copy-data] no data/derived/catalog.json: the app runs the browser lanes only (no baked sites)');
 }

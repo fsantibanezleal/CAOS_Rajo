@@ -88,8 +88,8 @@
   {
    "path": "sites/chuquicamata/polygons.geojson",
    "kind": "polygons",
-   "bytes": 22574,
-   "sha256": "5c3e4004428898691e0cc4f0436d83c5a3d564256ce98f01e958986f1e027253"
+   "bytes": 21127,
+   "sha256": "1faa0802612c30cfc0919543f6c2aba4447fc778c08f9c77ba7014f5180a6a12"
   }
  ]
 }

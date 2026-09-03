@@ -70,8 +70,8 @@
   {
    "path": "sites/los-bronces/polygons.geojson",
    "kind": "polygons",
-   "bytes": 7119,
-   "sha256": "cf67716965337ba1e0a64f21598bfcf793c04e517a964619eeb1da4ee05c7939"
+   "bytes": 6643,
+   "sha256": "a339aeb6ebeeb515649e5ecc8e59342f3d27640f823f34b4f9c7f8a153d8848d"
   }
  ]
 }

@@ -82,8 +82,8 @@
   {
    "path": "sites/quebrada-blanca/polygons.geojson",
    "kind": "polygons",
-   "bytes": 32556,
-   "sha256": "7cc37a397eb505d5d34a6e99ef6afecba26d2e326cb4f3ab3b6f8852633c72e7"
+   "bytes": 30457,
+   "sha256": "0533ac513b29ab70948f506623f9dfaff5e5f0e7120ea36b8d9c954f758a3305"
   }
  ]
 }

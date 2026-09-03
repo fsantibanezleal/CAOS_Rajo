@@ -59,7 +59,9 @@ def build_catalog(entries: list[dict[str, Any]], engine_version: str) -> dict[st
 
 def write_json(path: Path, obj: Any) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8")
+    # LF on every platform: artifacts are hashed byte for byte and git stores them with LF
+    path.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8",
+                    newline="\n")
 
 
 def read_json(path: Path) -> Any:

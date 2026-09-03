@@ -77,8 +77,8 @@
   {
    "path": "sites/muruntau/polygons.geojson",
    "kind": "polygons",
-   "bytes": 4614,
-   "sha256": "bb01c3db5c8be9b52980f77466e3ccf1c50ea4fab300ebc48aac67ddf3adc472"
+   "bytes": 4295,
+   "sha256": "8e4cc3f8419e660b9de5dc1ca9a6af31f065ef42359148c4a02e501d5a1273e8"
   }
  ]
 }

@@ -1,6 +1,7 @@
 import 'maplibre-gl/dist/maplibre-gl.css';
 import './styles/tokens.css';
 import './styles/app.css';
+import './styles/instrument.css';
 import './i18n';
 
 import { StrictMode } from 'react';

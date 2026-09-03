@@ -32,7 +32,7 @@ Numbered scripts in [`scripts/local/`](scripts/local/README.md), PowerShell firs
 ```powershell
 .\scripts\local\00_install-prereqs.ps1     # checks Python 3.12+, Node 22+, git
 .\scripts\local\01_init.ps1                # .venv (bake lane) + frontend packages
-.\scripts\local\03_dev.ps1                 # http://localhost:5173
+.\scripts\local\03_dev.ps1                 # http://localhost:5901
 ```
 
 The offline bake (`02_generate-data`) is not needed to run the app: the committed artifacts under

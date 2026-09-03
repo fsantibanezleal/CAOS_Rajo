@@ -88,8 +88,8 @@
   {
    "path": "sites/bingham-canyon/polygons.geojson",
    "kind": "polygons",
-   "bytes": 13949,
-   "sha256": "6072e0e077925c1387140b839d22453a1f6050b04ca4ba5865b05462e543f211"
+   "bytes": 13048,
+   "sha256": "30301e6e53da0fb12ca8de67feab6bc2b21c56ad0eccc6efd5233720fbeb33ab"
   }
  ]
 }

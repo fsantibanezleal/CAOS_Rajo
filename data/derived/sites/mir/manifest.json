@@ -91,8 +91,8 @@
   {
    "path": "sites/mir/polygons.geojson",
    "kind": "polygons",
-   "bytes": 40730,
-   "sha256": "1cf942d8c744c316bc526f4c23373ff4bbaed76c3af24ccf6b4adc3f73bdb025"
+   "bytes": 38124,
+   "sha256": "774fa55cba48cecbb58f759cbe93fb0332c4e896052b3710eaa02215a1defaa0"
   }
  ]
 }

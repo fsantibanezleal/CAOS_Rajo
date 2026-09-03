@@ -80,8 +80,8 @@
   {
    "path": "sites/carajas/polygons.geojson",
    "kind": "polygons",
-   "bytes": 20179,
-   "sha256": "d5b847f6fda795f618d34bc1ee5a32dfb8098934263c3a9fbe502c7217e309d2"
+   "bytes": 18979,
+   "sha256": "a75e2a442767d9f7c3ed8e4d58b9e9e8d52c8388d00a1e91b8e177edd8640f06"
   }
  ]
 }

@@ -66,6 +66,8 @@ def main(argv: list[str]) -> int:
                 errors.append(f"byte drift {p}: manifest={f['bytes']} disk={size}")
             if f.get("sha256") and sha256_of(p) != f["sha256"]:
                 errors.append(f"sha256 drift {p}")
+            if p.suffix in (".json", ".geojson") and b"\r" in p.read_bytes():
+                errors.append(f"CR bytes in text artifact {p}: text artifacts are LF")
 
     if len(versions) != 1:
         errors.append(f"mixed engine versions across the tree: {sorted(versions)} (partial bake)")

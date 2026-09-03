@@ -75,8 +75,8 @@
   {
    "path": "sites/hambach/polygons.geojson",
    "kind": "polygons",
-   "bytes": 4639,
-   "sha256": "bc101febda9bc85d2fcc0f4930393a8f5cbab332c0f74b8fc2458f8d8e784cbf"
+   "bytes": 4342,
+   "sha256": "2df04eb1c54d6057afb5e5120330ac08d454ea9d5c3c71d3578abd01cfeda455"
   }
  ]
 }

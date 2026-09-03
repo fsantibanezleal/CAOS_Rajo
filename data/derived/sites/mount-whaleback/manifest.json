@@ -69,8 +69,8 @@
   {
    "path": "sites/mount-whaleback/polygons.geojson",
    "kind": "polygons",
-   "bytes": 4211,
-   "sha256": "30422facc9cc8ef0f1bdf100316e4d5b81f6f284046fb6f22d5f896b20d02455"
+   "bytes": 3950,
+   "sha256": "418f7f12696aae15a9a3216e2788400f3260625b72e9b1265b70b8b4bd4e6e00"
   }
  ]
 }

@@ -93,8 +93,8 @@
   {
    "path": "sites/super-pit/polygons.geojson",
    "kind": "polygons",
-   "bytes": 34880,
-   "sha256": "753f78889d4f93a88f097118cbaa0fd4d34e2ae6723476ef53125f728406f6b7"
+   "bytes": 32725,
+   "sha256": "263bc98f034269cb5b607aaf957eb2a384242c36cad91f79d154f47b0fc54991"
   }
  ]
 }

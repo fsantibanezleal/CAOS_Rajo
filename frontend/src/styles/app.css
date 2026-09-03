@@ -134,3 +134,28 @@ code, .mono { font-family: var(--font-mono); font-size: 0.92em; }
 .sitecard dd { margin: 0; }
 .sitecard .facts { margin: 0; padding-left: 16px; font-size: 12.5px; }
 .sitecard .facts li { margin-bottom: 6px; }
+
+/* --- the timeline bar ------------------------------------------------------------------------- */
+.timeline { left: calc(var(--rail-w) + 28px); right: 14px; bottom: 14px; height: var(--timeline-h); outline: none; }
+.timeline .tl { height: 100%; display: grid; grid-template-columns: auto minmax(0, 1fr) auto auto; align-items: center; gap: 14px; padding: 8px 12px; min-width: 0; }
+.timeline .tl-empty { height: 100%; display: flex; align-items: center; padding: 0 14px; color: var(--fg-muted); }
+.tl-left { display: flex; align-items: center; gap: 4px; }
+.tl-left .play { width: 38px; height: 38px; border: 1px solid var(--border-strong); background: var(--surface-solid); color: var(--fg); }
+.tl-left .play.on { color: var(--accent-2); border-color: var(--accent); }
+.tl-year { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; min-width: 68px; text-align: right; color: var(--accent-2); font-variant-numeric: tabular-nums; }
+.tl-track { position: relative; min-width: 0; padding: 4px 6px 18px; }
+.tl-track input[type=range] { width: 100%; margin: 0; accent-color: var(--accent); }
+.tl-ticks { position: absolute; left: 6px; right: 6px; bottom: 0; height: 14px; font-size: 10px; color: var(--fg-faint); font-family: var(--font-mono); }
+.tl-ticks span { position: absolute; transform: translateX(-50%); }
+.tl-ticks .tl-cursor { width: 1px; height: 0; }
+.tl-meta { display: flex; gap: 6px; align-items: center; font-size: 12px; color: var(--fg-muted); white-space: nowrap; }
+.tl-meta .tl-sensor { color: var(--fg); font-weight: 600; }
+.tl-meta .tl-flags { color: var(--warn); }
+.tl-right { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+.tl-right .seg { display: flex; gap: 4px; }
+.tl-opacity { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+.tl-opacity input[type=range] { width: 80px; accent-color: var(--accent); }
+.tl-count { font-size: 11px; }
+.obs.with-timeline .attrib { bottom: calc(var(--timeline-h) + 24px); }
+.obs.with-timeline .mapstatus { bottom: calc(var(--timeline-h) + 24px); }
+@media (max-width: 1100px) { .tl-count { display: none; } .tl-meta { font-size: 11px; } }

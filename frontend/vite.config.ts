@@ -5,6 +5,10 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   plugins: [react()],
   base: '/',
+  // Rajo's registered local ports (CAOS_MANAGE repos/registry.yaml dev_ports): strict, never fall through
+  // to a neighbour's port.
+  server: { port: 5901, strictPort: true },
+  preview: { port: 4901, strictPort: true },
   build: {
     target: 'es2022',
     sourcemap: false,

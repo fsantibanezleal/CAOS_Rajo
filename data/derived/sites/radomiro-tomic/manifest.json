@@ -76,8 +76,8 @@
   {
    "path": "sites/radomiro-tomic/polygons.geojson",
    "kind": "polygons",
-   "bytes": 22084,
-   "sha256": "1855349f4c23da98a28ae2a2630ead1aa70f0786a80b606635ed8eaea143bef9"
+   "bytes": 20664,
+   "sha256": "bdc2e0c83df0e9f0177c879ea2e0aafecc90ca7273df61d122c4bb683a3ce00c"
   }
  ]
 }

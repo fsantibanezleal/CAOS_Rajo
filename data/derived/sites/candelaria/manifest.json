@@ -79,8 +79,8 @@
   {
    "path": "sites/candelaria/polygons.geojson",
    "kind": "polygons",
-   "bytes": 44037,
-   "sha256": "12ffcabc33b4e513c9f82e357cb688dcf281deeafe060adf38d64d55d73960a3"
+   "bytes": 41198,
+   "sha256": "1d9e39197835b89fb2c50af23fda96ff1c7fb45041736d9961be58d5f62b396f"
   }
  ]
 }

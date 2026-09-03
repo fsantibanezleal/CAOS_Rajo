@@ -85,8 +85,8 @@
   {
    "path": "sites/oyu-tolgoi/polygons.geojson",
    "kind": "polygons",
-   "bytes": 11289,
-   "sha256": "bf62a6dbd82a16ee277b66beb2944b90a8124f0156cc1644ae1c484dab7d5fb5"
+   "bytes": 10546,
+   "sha256": "e65582ba9f8c0673d89542750ad0038758efe79f4d7bf3f0f71ff09230030123"
   }
  ]
 }

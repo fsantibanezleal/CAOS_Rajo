@@ -81,8 +81,8 @@
   {
    "path": "sites/cobre-panama/polygons.geojson",
    "kind": "polygons",
-   "bytes": 7602,
-   "sha256": "11336bce8d487d3fcf209394f202bd462d5fb923cf3accbc3bc761248deef0f7"
+   "bytes": 7090,
+   "sha256": "1c1d4a0c9aefdcee22af37f21c6fef3494b5f33452facde04a8544327ce183ef"
   }
  ]
 }

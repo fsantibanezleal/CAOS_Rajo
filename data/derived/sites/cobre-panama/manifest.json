@@ -73,11 +73,2336 @@
    5526
   ]
  },
- "frames": [],
+ "frames": [
+  {
+   "year": 1986,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19860224_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19860224_02_T1"
+   ],
+   "date": "1986-02-24",
+   "cloud_pct": 28.22,
+   "valid_pct": 71.78,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 59.0,
+   "snow_pct": 0.01,
+   "pixel_m": 30.0,
+   "image": "frames/1986.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1986-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.021980002522468567,
+      0.70016411781311
+     ],
+     [
+      0.028634995222091675,
+      0.6939216184616086
+     ],
+     [
+      0.01947750151157379,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.01777249574661255,
+      0.45425254106521606
+     ],
+     [
+      0.11536999046802521,
+      0.7986900210380554
+     ],
+     [
+      0.021980002522468567,
+      0.70016411781311
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 1987,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19870315_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19870315_02_T1"
+   ],
+   "date": "1987-03-15",
+   "cloud_pct": 60.26,
+   "valid_pct": 39.74,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 10.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1987.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1987-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.011254996061325073,
+      1.1801006650924677
+     ],
+     [
+      0.018515005707740784,
+      0.7959741139411923
+     ],
+     [
+      0.012244999408721924,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.007817491888999939,
+      0.5275741147994992
+     ],
+     [
+      0.07304750382900238,
+      0.8760749697685242
+     ],
+     [
+      0.011254996061325073,
+      1.1801006650924677
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 1990,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19900118_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19900118_02_T1"
+   ],
+   "date": "1990-01-18",
+   "cloud_pct": 69.37,
+   "valid_pct": 30.63,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 34.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1990.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1990-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.018240004777908325,
+      1.6022124290466309
+     ],
+     [
+      0.02638000249862671,
+      1.6022124290466309
+     ],
+     [
+      0.0181024968624115,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006029993295669556,
+      0.4529874920845032
+     ],
+     [
+      0.07205750048160553,
+      1.6022124290466309
+     ],
+     [
+      0.018240004777908325,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 1991,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19910427_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19910427_02_T1"
+   ],
+   "date": "1991-04-27",
+   "cloud_pct": 58.9,
+   "valid_pct": 41.1,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 41.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1991.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1991-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.038314998149871826,
+      1.382369766235351
+     ],
+     [
+      0.046812504529953,
+      0.7600250244140625
+     ],
+     [
+      0.032567501068115234,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.024647504091262817,
+      0.4283750057220459
+     ],
+     [
+      0.12125499546527863,
+      0.8475091385841367
+     ],
+     [
+      0.038314998149871826,
+      1.382369766235351
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 1997,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19970326_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19970326_02_T1"
+   ],
+   "date": "1997-03-26",
+   "cloud_pct": 75.54,
+   "valid_pct": 24.46,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 12.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1997.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1997-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01612250506877899,
+      1.6022124290466309
+     ],
+     [
+      0.022337496280670166,
+      1.6022124290466309
+     ],
+     [
+      0.015957504510879517,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.008642494678497314,
+      0.4702025055885315
+     ],
+     [
+      0.08954750001430511,
+      1.6022124290466309
+     ],
+     [
+      0.01612250506877899,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 1998,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19980108_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19980108_02_T1"
+   ],
+   "date": "1998-01-08",
+   "cloud_pct": 52.79,
+   "valid_pct": 47.21,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 20.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1998.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1998-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.010099992156028748,
+      1.4016549587249756
+     ],
+     [
+      0.016369998455047607,
+      0.8384825587272644
+     ],
+     [
+      0.011199995875358582,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006909996271133423,
+      0.5153300166130066
+     ],
+     [
+      0.07370750606060028,
+      0.9358182120323176
+     ],
+     [
+      0.010099992156028748,
+      1.4016549587249756
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 1999,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_19990228_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_19990228_02_T1"
+   ],
+   "date": "1999-02-28",
+   "cloud_pct": 54.27,
+   "valid_pct": 45.73,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 30.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1999.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1999-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03168749809265137,
+      0.63041752576828
+     ],
+     [
+      0.038507506251335144,
+      0.6242850422859192
+     ],
+     [
+      0.026077494025230408,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.035977497696876526,
+      0.4201800227165222
+     ],
+     [
+      0.17389000952243805,
+      0.7261725068092346
+     ],
+     [
+      0.03168749809265137,
+      0.63041752576828
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2000,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_20000114_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_20000114_02_T1"
+   ],
+   "date": "2000-01-14",
+   "cloud_pct": 55.75,
+   "valid_pct": 44.25,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 40.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2000.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2000-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.007377505302429199,
+      1.6022124290466309
+     ],
+     [
+      0.011227503418922424,
+      1.6022124290466309
+     ],
+     [
+      0.006469994783401489,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.003554999828338623,
+      0.3628150224685669
+     ],
+     [
+      0.04202750325202942,
+      1.6022124290466309
+     ],
+     [
+      0.007377505302429199,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2001,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_20010116_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_20010116_02_T1"
+   ],
+   "date": "2001-01-16",
+   "cloud_pct": 67.3,
+   "valid_pct": 32.7,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 15.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2001.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2001-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0019325017929077148,
+      1.3656674051284499
+     ],
+     [
+      0.0023175030946731567,
+      0.7781475186347961
+     ],
+     [
+      0.0012999922037124634,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.0028949975967407227,
+      0.439567506313324
+     ],
+     [
+      0.051377490162849426,
+      0.9141691565513608
+     ],
+     [
+      0.0019325017929077148,
+      1.3656674051284499
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2002,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20020212_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20020212_02_T1"
+   ],
+   "date": "2002-02-12",
+   "cloud_pct": 68.74,
+   "valid_pct": 31.26,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 45.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2002.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2002-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0025099962949752808,
+      1.6022124290466309
+     ],
+     [
+      0.006854996085166931,
+      1.6022124290466309
+     ],
+     [
+      0.006607502698898315,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006552502512931824,
+      0.42914503812789917
+     ],
+     [
+      0.05462248623371124,
+      0.8462374806404114
+     ],
+     [
+      0.0025099962949752808,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2003,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20030404_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20030404_02_T1"
+   ],
+   "date": "2003-04-04",
+   "cloud_pct": 65.15,
+   "valid_pct": 34.85,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 27.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2003.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2003-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.010567501187324524,
+      1.6022124290466309
+     ],
+     [
+      0.018377497792243958,
+      1.6022124290466309
+     ],
+     [
+      0.014719992876052856,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.009742498397827148,
+      0.45386749505996704
+     ],
+     [
+      0.08272750675678253,
+      1.6022124290466309
+     ],
+     [
+      0.010567501187324524,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2004,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20040101_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20040101_02_T1",
+    "LE07_L2SP_013054_20040321_02_T1",
+    "LE07_L2SP_013054_20040117_02_T1"
+   ],
+   "date": "2004-01-01",
+   "cloud_pct": 64.94,
+   "valid_pct": 35.06,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 29.0,
+   "snow_pct": 0.01,
+   "pixel_m": 30.0,
+   "image": "frames/2004.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2004-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.0014774948358535767,
+      1.6022124290466309
+     ],
+     [
+      0.0007224977016448975,
+      1.6022124290466309
+     ],
+     [
+      -0.0030175000429153442,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.004875004291534424,
+      0.41666001081466675
+     ],
+     [
+      0.05412749946117401,
+      1.6022124290466309
+     ],
+     [
+      -0.0014774948358535767,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2005,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20050103_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20050103_02_T1"
+   ],
+   "date": "2005-01-03",
+   "cloud_pct": 82.42,
+   "valid_pct": 17.58,
+   "data_pct": 68.88,
+   "scene_cloud_pct": 30.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2005.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2005-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.005740001797676086,
+      1.6022124290466309
+     ],
+     [
+      -0.003072500228881836,
+      1.6022124290466309
+     ],
+     [
+      -0.004034996032714844,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.0031149983406066895,
+      0.4504739999771112
+     ],
+     [
+      0.049617499113082886,
+      1.331837964057921
+     ],
+     [
+      -0.005740001797676086,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "low_data",
+    "qa_flagged",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2006,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20060122_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20060122_02_T1",
+    "LE07_L2SP_012054_20060216_02_T1",
+    "LE07_L2SP_012054_20060304_02_T1"
+   ],
+   "date": "2006-01-22",
+   "cloud_pct": 70.73,
+   "valid_pct": 29.27,
+   "data_pct": 68.96,
+   "scene_cloud_pct": 46.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2006.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2006-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.008505001664161682,
+      1.6022124290466309
+     ],
+     [
+      0.01548999547958374,
+      1.6022124290466309
+     ],
+     [
+      0.01015499234199524,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.01579250395298004,
+      0.41682499647140503
+     ],
+     [
+      0.11083249747753143,
+      0.722692661285401
+     ],
+     [
+      0.008505001664161682,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "low_data",
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2007,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20070330_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20070330_02_T1",
+    "LE07_L2SP_013054_20070210_02_T1",
+    "LE07_L2SP_013054_20070226_02_T1"
+   ],
+   "date": "2007-03-30",
+   "cloud_pct": 67.43,
+   "valid_pct": 32.57,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 30.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2007.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2007-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0038024932146072388,
+      1.6022124290466309
+     ],
+     [
+      0.009495005011558533,
+      1.6022124290466309
+     ],
+     [
+      0.006717503070831299,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.00812000036239624,
+      0.4291999936103821
+     ],
+     [
+      0.0729924887418747,
+      0.8645591378211972
+     ],
+     [
+      0.0038024932146072388,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2008,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20080112_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20080112_02_T1",
+    "LE07_L2SP_013054_20080128_02_T1"
+   ],
+   "date": "2008-01-12",
+   "cloud_pct": 65.76,
+   "valid_pct": 34.24,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 11.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2008.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2008-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.0003225058317184448,
+      1.6022124290466309
+     ],
+     [
+      0.003912493586540222,
+      1.6022124290466309
+     ],
+     [
+      0.0012174993753433228,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.005260005593299866,
+      0.4375874996185303
+     ],
+     [
+      0.058417484164237976,
+      1.4532175064086914
+     ],
+     [
+      -0.0003225058317184448,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2009,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20090404_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20090404_02_T1",
+    "LE07_L2SP_013054_20090420_02_T1"
+   ],
+   "date": "2009-04-04",
+   "cloud_pct": 89.59,
+   "valid_pct": 10.41,
+   "data_pct": 99.57,
+   "scene_cloud_pct": 24.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2009.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2009-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01581999659538269,
+      1.6022124290466309
+     ],
+     [
+      0.0237949937582016,
+      1.6022124290466309
+     ],
+     [
+      0.022062495350837708,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.016947492957115173,
+      0.5152750015258789
+     ],
+     [
+      0.13057748973369598,
+      1.6022124290466309
+     ],
+     [
+      0.01581999659538269,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2010,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_013054_20100125_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_013054_20100125_02_T1"
+   ],
+   "date": "2010-01-25",
+   "cloud_pct": 72.9,
+   "valid_pct": 27.1,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 47.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2010.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2010-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03551000356674194,
+      1.6022124290466309
+     ],
+     [
+      0.04532749950885773,
+      0.8983225226402283
+     ],
+     [
+      0.042522504925727844,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.01802000403404236,
+      0.5190491008758542
+     ],
+     [
+      0.11470998823642731,
+      0.9518506979942316
+     ],
+     [
+      0.03551000356674194,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2011,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20110221_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20110221_02_T1",
+    "LE07_L2SP_013054_20110325_02_T1",
+    "LE07_L2SP_012054_20110113_02_T1"
+   ],
+   "date": "2011-02-21",
+   "cloud_pct": 62.71,
+   "valid_pct": 37.29,
+   "data_pct": 86.74,
+   "scene_cloud_pct": 41.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2011.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2011-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0019875019788742065,
+      1.6022124290466309
+     ],
+     [
+      0.003747493028640747,
+      1.6022124290466309
+     ],
+     [
+      0.0034999996423721313,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.00787249207496643,
+      0.4165775179862976
+     ],
+     [
+      0.057207509875297546,
+      0.8711810994148265
+     ],
+     [
+      0.0019875019788742065,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "low_data",
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2012,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20120311_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20120311_02_T1",
+    "LE07_L2SP_013054_20120123_02_T1"
+   ],
+   "date": "2012-03-11",
+   "cloud_pct": 67.35,
+   "valid_pct": 32.65,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 34.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2012.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2012-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.00012999773025512695,
+      1.6022124290466309
+     ],
+     [
+      0.0014099925756454468,
+      1.6022124290466309
+     ],
+     [
+      0.0013824999332427979,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006194993853569031,
+      0.4645650386810303
+     ],
+     [
+      0.060232505202293396,
+      1.4336649179458618
+     ],
+     [
+      -0.00012999773025512695,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2013,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20130210_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20130210_02_T1",
+    "LE07_L2SP_013054_20130109_02_T1",
+    "LE07_L2SP_013054_20130226_02_T1"
+   ],
+   "date": "2013-02-10",
+   "cloud_pct": 65.03,
+   "valid_pct": 34.97,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 28.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2013.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2013-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0056724995374679565,
+      1.6022124290466309
+     ],
+     [
+      0.007844999432563782,
+      1.6022124290466309
+     ],
+     [
+      0.006882503628730774,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.011832505464553833,
+      0.517316617965698
+     ],
+     [
+      0.07114998996257782,
+      1.6022124290466309
+     ],
+     [
+      0.0056724995374679565,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2014,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_013054_20140317_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_013054_20140317_02_T1",
+    "LE07_L2SP_013054_20140128_02_T1",
+    "LE07_L2SP_013054_20140112_02_T1"
+   ],
+   "date": "2014-03-17",
+   "cloud_pct": 53.17,
+   "valid_pct": 46.83,
+   "data_pct": 89.61,
+   "scene_cloud_pct": 15.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2014.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2014-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.011364996433258057,
+      1.6022124290466309
+     ],
+     [
+      0.015352502465248108,
+      1.6022124290466309
+     ],
+     [
+      0.012712493538856506,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.01647999882698059,
+      0.4472399950027466
+     ],
+     [
+      0.09149999916553497,
+      1.1352366018295303
+     ],
+     [
+      0.011364996433258057,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "low_data",
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2015,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_013054_20150107_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_013054_20150107_02_T1"
+   ],
+   "date": "2015-01-07",
+   "cloud_pct": 58.32,
+   "valid_pct": 41.68,
+   "data_pct": 99.96,
+   "scene_cloud_pct": 23.93,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2015.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2015-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.010080602765083317,
+      0.8509400486946106
+     ],
+     [
+      -0.002907499670982361,
+      0.8284406113624564
+     ],
+     [
+      -0.031094998121261597,
+      0.8342936921119672
+     ]
+    ],
+    "swir": [
+     [
+      0.009742498397827148,
+      0.42356252670288086
+     ],
+     [
+      0.0705450028181076,
+      0.8987900614738464
+     ],
+     [
+      -0.010080602765083317,
+      0.8509400486946106
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2016,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_013054_20160415_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_013054_20160415_02_T1"
+   ],
+   "date": "2016-04-15",
+   "cloud_pct": 60.05,
+   "valid_pct": 39.95,
+   "data_pct": 99.97,
+   "scene_cloud_pct": 31.49,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2016.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2016-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.006317496299743652,
+      0.7513058948516846
+     ],
+     [
+      0.001712501049041748,
+      0.735385000705719
+     ],
+     [
+      -0.026144996285438538,
+      0.7332675457000732
+     ]
+    ],
+    "swir": [
+     [
+      0.011007502675056458,
+      0.44033753871917725
+     ],
+     [
+      0.07472498714923859,
+      0.7977533543109895
+     ],
+     [
+      -0.006317496299743652,
+      0.7513058948516846
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {}
+  },
+  {
+   "year": 2017,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_17PNK_20170123_0_L2A",
+   "scene_ids": [
+    "S2A_17PNK_20170123_0_L2A"
+   ],
+   "date": "2017-01-23",
+   "cloud_pct": 27.87,
+   "valid_pct": 72.13,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 12.25,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2017.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2017-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.009399999864399433,
+      0.7411999702453613
+     ],
+     [
+      0.01730000041425228,
+      0.7559999823570251
+     ],
+     [
+      0.014800000004470348,
+      0.7587999701499939
+     ]
+    ],
+    "swir": [
+     [
+      0.012899999506771564,
+      0.6310999989509583
+     ],
+     [
+      0.06419999897480011,
+      0.7815999984741211
+     ],
+     [
+      0.009399999864399433,
+      0.7411999702453613
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2018,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_17PNK_20180403_0_L2A",
+   "scene_ids": [
+    "S2B_17PNK_20180403_0_L2A"
+   ],
+   "date": "2018-04-03",
+   "cloud_pct": 24.47,
+   "valid_pct": 75.53,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 32.5,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2018.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2018-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.012799999676644802,
+      0.6675999760627747
+     ],
+     [
+      0.022199999541044235,
+      0.6899999976158142
+     ],
+     [
+      0.020899999886751175,
+      0.7116000056266785
+     ]
+    ],
+    "swir": [
+     [
+      0.018199998885393143,
+      0.4341000020503998
+     ],
+     [
+      0.07589999586343765,
+      0.7139999866485596
+     ],
+     [
+      0.012799999676644802,
+      0.6675999760627747
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2019,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_17PNK_20190314_0_L2A",
+   "scene_ids": [
+    "S2A_17PNK_20190314_0_L2A"
+   ],
+   "date": "2019-03-14",
+   "cloud_pct": 22.71,
+   "valid_pct": 77.29,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 14.57,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2019.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2019-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.007599999662488699,
+      0.699999988079071
+     ],
+     [
+      0.013599999248981476,
+      0.7271999716758728
+     ],
+     [
+      0.011099999770522118,
+      0.7543999552726746
+     ]
+    ],
+    "swir": [
+     [
+      0.012199999764561653,
+      0.4300999939441681
+     ],
+     [
+      0.05739999935030937,
+      0.7459999918937683
+     ],
+     [
+      0.007599999662488699,
+      0.699999988079071
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2020,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_17PNK_20200308_1_L2A+S2A_17PNK_20200308_0_L2A",
+   "scene_ids": [
+    "S2A_17PNK_20200308_1_L2A+S2A_17PNK_20200308_0_L2A"
+   ],
+   "date": "2020-03-08",
+   "cloud_pct": 47.82,
+   "valid_pct": 52.18,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 20.3,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2020.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2020-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.09050000458955765,
+      0.7623999714851379
+     ],
+     [
+      -0.08370000123977661,
+      0.7927999496459961
+     ],
+     [
+      -0.0843999981880188,
+      0.855199933052063
+     ]
+    ],
+    "swir": [
+     [
+      -0.08789999783039093,
+      0.35420000553131104
+     ],
+     [
+      -0.040800001472234726,
+      0.7942999601364136
+     ],
+     [
+      -0.09050000458955765,
+      0.7623999714851379
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2021,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_17PNK_20210107_1_L2A+S2B_17PNK_20210107_0_L2A",
+   "scene_ids": [
+    "S2B_17PNK_20210107_1_L2A+S2B_17PNK_20210107_0_L2A"
+   ],
+   "date": "2021-01-07",
+   "cloud_pct": 25.62,
+   "valid_pct": 74.38,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 22.62,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2021.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2021-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08750000596046448,
+      0.6407999396324158
+     ],
+     [
+      -0.07890000194311142,
+      0.6591999530792236
+     ],
+     [
+      -0.08240000158548355,
+      0.6943999528884888
+     ]
+    ],
+    "swir": [
+     [
+      -0.07980000227689743,
+      0.3511999845504761
+     ],
+     [
+      -0.020500004291534424,
+      0.6791999340057373
+     ],
+     [
+      -0.08750000596046448,
+      0.6407999396324158
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2022,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_17PNK_20220221_0_L2A",
+   "scene_ids": [
+    "S2B_17PNK_20220221_0_L2A"
+   ],
+   "date": "2022-02-21",
+   "cloud_pct": 34.12,
+   "valid_pct": 65.88,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 21.64,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2022.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2022-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.009599998593330383,
+      0.7783999443054199
+     ],
+     [
+      0.01629999279975891,
+      0.7967999577522278
+     ],
+     [
+      0.016099996864795685,
+      0.8399999737739563
+     ]
+    ],
+    "swir": [
+     [
+      0.015499994158744812,
+      0.4428999722003937
+     ],
+     [
+      0.06359999626874924,
+      0.8303999304771423
+     ],
+     [
+      0.009599998593330383,
+      0.7783999443054199
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2023,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_17PNK_20230427_0_L2A",
+   "scene_ids": [
+    "S2B_17PNK_20230427_0_L2A"
+   ],
+   "date": "2023-04-27",
+   "cloud_pct": 1.95,
+   "valid_pct": 98.05,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 7.45,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2023.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2023-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08480000495910645,
+      0.14899998903274536
+     ],
+     [
+      -0.06960000097751617,
+      0.14579999446868896
+     ],
+     [
+      -0.08139999955892563,
+      0.12520000338554382
+     ]
+    ],
+    "swir": [
+     [
+      -0.06240000203251839,
+      0.1638999879360199
+     ],
+     [
+      0.0299999937415123,
+      0.30799999833106995
+     ],
+     [
+      -0.08480000495910645,
+      0.14899998903274536
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2024,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_17PNK_20240107_0_L2A",
+   "scene_ids": [
+    "S2A_17PNK_20240107_0_L2A"
+   ],
+   "date": "2024-01-07",
+   "cloud_pct": 51.72,
+   "valid_pct": 48.28,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 29.77,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2024.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2024-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.0835999995470047,
+      1.059999942779541
+     ],
+     [
+      -0.07430000603199005,
+      1.1047999858856201
+     ],
+     [
+      -0.07640000432729721,
+      1.1863999366760254
+     ]
+    ],
+    "swir": [
+     [
+      -0.08070000261068344,
+      0.45419999957084656
+     ],
+     [
+      -0.028000004589557648,
+      1.0167999267578125
+     ],
+     [
+      -0.0835999995470047,
+      1.059999942779541
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2025,
+   "sensor": "sentinel-2c",
+   "scene_id": "S2C_17PNK_20250121_0_L2A",
+   "scene_ids": [
+    "S2C_17PNK_20250121_0_L2A"
+   ],
+   "date": "2025-01-21",
+   "cloud_pct": 53.5,
+   "valid_pct": 46.5,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 27.9,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2025.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2025-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.07479999959468842,
+      0.8687999248504639
+     ],
+     [
+      -0.0601000040769577,
+      0.8975999355316162
+     ],
+     [
+      -0.0640999972820282,
+      0.9591999053955078
+     ]
+    ],
+    "swir": [
+     [
+      -0.06859999895095825,
+      0.43549999594688416
+     ],
+     [
+      0.0053999945521354675,
+      0.8655999302864075
+     ],
+     [
+      -0.07479999959468842,
+      0.8687999248504639
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  },
+  {
+   "year": 2026,
+   "sensor": "sentinel-2c",
+   "scene_id": "S2C_17PNK_20260317_0_L2A",
+   "scene_ids": [
+    "S2C_17PNK_20260317_0_L2A"
+   ],
+   "date": "2026-03-17",
+   "cloud_pct": 35.03,
+   "valid_pct": 64.97,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 24.59,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2026.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2026-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.0852000042796135,
+      0.8730999231338501
+     ],
+     [
+      -0.07490000128746033,
+      0.9136999845504761
+     ],
+     [
+      -0.08130000531673431,
+      0.9907999038696289
+     ]
+    ],
+    "swir": [
+     [
+      -0.07050000131130219,
+      0.3303999900817871
+     ],
+     [
+      -0.0122000053524971,
+      0.8311999440193176
+     ],
+     [
+      -0.0852000042796135,
+      0.8730999231338501
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {}
+  }
+ ],
+ "gaps": {
+  "1985": "no scene under 60% cloud inside the season window in either archive",
+  "1988": "no scene under 60% cloud inside the season window in either archive",
+  "1989": "no scene under 60% cloud inside the season window in either archive",
+  "1992": "no scene under 60% cloud inside the season window in either archive",
+  "1993": "no scene under 60% cloud inside the season window in either archive",
+  "1994": "no scene under 60% cloud inside the season window in either archive",
+  "1995": "no scene under 60% cloud inside the season window in either archive",
+  "1996": "no scene under 60% cloud inside the season window in either archive"
+ },
  "series": null,
  "dem": null,
  "models": [],
  "files": [
+  {
+   "path": "sites/cobre-panama/frames/1986-swir.webp",
+   "kind": "frame",
+   "bytes": 46178,
+   "sha256": "eb33002762b56480db70824d6425e81805575388554b5783917a7ca7ecdefecb",
+   "year": 1986
+  },
+  {
+   "path": "sites/cobre-panama/frames/1986.webp",
+   "kind": "frame",
+   "bytes": 97528,
+   "sha256": "60129bc2170b6adbfc8b09854f3132499bcf7409c1899f621bc15a71324e6811",
+   "year": 1986
+  },
+  {
+   "path": "sites/cobre-panama/frames/1987-swir.webp",
+   "kind": "frame",
+   "bytes": 41736,
+   "sha256": "71cfef59b7b9c2c7f46d2e96a73d1818a01c5a999ceb9582ed5510a07c0610be",
+   "year": 1987
+  },
+  {
+   "path": "sites/cobre-panama/frames/1987.webp",
+   "kind": "frame",
+   "bytes": 80954,
+   "sha256": "ccd6bff4259c858981f882c1438b7c6c43b8091d7f5274ace5b9bd289d0bf77d",
+   "year": 1987
+  },
+  {
+   "path": "sites/cobre-panama/frames/1990-swir.webp",
+   "kind": "frame",
+   "bytes": 33602,
+   "sha256": "1c431af87a6d32dfac0b635a80f3126ac5a5b08ad6e9907f210e9829231e7b61",
+   "year": 1990
+  },
+  {
+   "path": "sites/cobre-panama/frames/1990.webp",
+   "kind": "frame",
+   "bytes": 66336,
+   "sha256": "58849e94c7100836901fda4024eee1f326ad76892a0e1e98e18b130efc7c9307",
+   "year": 1990
+  },
+  {
+   "path": "sites/cobre-panama/frames/1991-swir.webp",
+   "kind": "frame",
+   "bytes": 36914,
+   "sha256": "0e698c1ea13ff7fa8ddc9681c184dede61b0c821dfca0b1f39db1293c97bf807",
+   "year": 1991
+  },
+  {
+   "path": "sites/cobre-panama/frames/1991.webp",
+   "kind": "frame",
+   "bytes": 78350,
+   "sha256": "ea745ecd5bd6bf23195004333655df068583043036ad9c2ee27fe75688dfe3c7",
+   "year": 1991
+  },
+  {
+   "path": "sites/cobre-panama/frames/1997-swir.webp",
+   "kind": "frame",
+   "bytes": 40068,
+   "sha256": "903c662d03f1418972bd8eb15840a854762f07b1a0add0c2d86825903f2d0c06",
+   "year": 1997
+  },
+  {
+   "path": "sites/cobre-panama/frames/1997.webp",
+   "kind": "frame",
+   "bytes": 81484,
+   "sha256": "e932a98883d7dfec0163b5f997e1e69d104cdd2c9bf593abee919c3566e4203c",
+   "year": 1997
+  },
+  {
+   "path": "sites/cobre-panama/frames/1998-swir.webp",
+   "kind": "frame",
+   "bytes": 41360,
+   "sha256": "993681ed2d028d3a0d91877587c0f9ce7fd26d8e61bf19764776c1a8f1765a30",
+   "year": 1998
+  },
+  {
+   "path": "sites/cobre-panama/frames/1998.webp",
+   "kind": "frame",
+   "bytes": 75934,
+   "sha256": "7ae6d0003974b975eb9030fd2d619eb0634b57bd48d6bbf858ff948fbcb2c212",
+   "year": 1998
+  },
+  {
+   "path": "sites/cobre-panama/frames/1999-swir.webp",
+   "kind": "frame",
+   "bytes": 40752,
+   "sha256": "3f7c9c15fcd5906ea6dd3c3e21aa4abbfad2855686202d8c589f7f780c154ce8",
+   "year": 1999
+  },
+  {
+   "path": "sites/cobre-panama/frames/1999.webp",
+   "kind": "frame",
+   "bytes": 78412,
+   "sha256": "714b218c24b14b84f2fd004a8c69d71d84d50e91035b23f3020183ce3c250c2d",
+   "year": 1999
+  },
+  {
+   "path": "sites/cobre-panama/frames/2000-swir.webp",
+   "kind": "frame",
+   "bytes": 28556,
+   "sha256": "3517219de604773211683d66177f4d01566569d577b0fe570f0d1737c2a55161",
+   "year": 2000
+  },
+  {
+   "path": "sites/cobre-panama/frames/2000.webp",
+   "kind": "frame",
+   "bytes": 44074,
+   "sha256": "c3c3e5c81e3fb68a80a30deabd0ec3f3b20c7aee21ab529e33de0be4e46a54cd",
+   "year": 2000
+  },
+  {
+   "path": "sites/cobre-panama/frames/2001-swir.webp",
+   "kind": "frame",
+   "bytes": 39480,
+   "sha256": "d5293015a88f43575300abbdb1067d67c64e94786a7a0ef139c30fa9bd883116",
+   "year": 2001
+  },
+  {
+   "path": "sites/cobre-panama/frames/2001.webp",
+   "kind": "frame",
+   "bytes": 72224,
+   "sha256": "bb61ac1bb1ef705bddb3b4a99cca8871e16b181695a3e2588deaa79ce5ce45e0",
+   "year": 2001
+  },
+  {
+   "path": "sites/cobre-panama/frames/2002-swir.webp",
+   "kind": "frame",
+   "bytes": 46406,
+   "sha256": "9ec499081b3b9fcc45fee0cdeed096f9cc299ae86f0d07531c8f000b9761a0af",
+   "year": 2002
+  },
+  {
+   "path": "sites/cobre-panama/frames/2002.webp",
+   "kind": "frame",
+   "bytes": 85474,
+   "sha256": "afd67f8cfda4649fcc8427c6c8afb87ffdde91fc6b2733629d92893d7432d5a8",
+   "year": 2002
+  },
+  {
+   "path": "sites/cobre-panama/frames/2003-swir.webp",
+   "kind": "frame",
+   "bytes": 39884,
+   "sha256": "841f7b5aca2781fda3d8ddd25389473ec7c08fa2bcc07c631bd27e5d0ed79f78",
+   "year": 2003
+  },
+  {
+   "path": "sites/cobre-panama/frames/2003.webp",
+   "kind": "frame",
+   "bytes": 74344,
+   "sha256": "e769474daa68f9d9e205af5ef817865593c8215ae4a9c2d7eb914be3402eac3d",
+   "year": 2003
+  },
+  {
+   "path": "sites/cobre-panama/frames/2004-swir.webp",
+   "kind": "frame",
+   "bytes": 59808,
+   "sha256": "233b3b473e2f4ea569dac2935d44ce5485255d889c3c07dffc03a056eb7c563b",
+   "year": 2004
+  },
+  {
+   "path": "sites/cobre-panama/frames/2004.webp",
+   "kind": "frame",
+   "bytes": 119302,
+   "sha256": "06d1748d32a8f20353e0efe508b909549d41caac4fccaa01ae3b3ea6bbe8beef",
+   "year": 2004
+  },
+  {
+   "path": "sites/cobre-panama/frames/2005-swir.webp",
+   "kind": "frame",
+   "bytes": 48126,
+   "sha256": "297ece70c83da423060d9dbe85931415c9d00243e8a1df164d08366a5b0d7797",
+   "year": 2005
+  },
+  {
+   "path": "sites/cobre-panama/frames/2005.webp",
+   "kind": "frame",
+   "bytes": 82768,
+   "sha256": "07ca8e5580948fba477cff95e21560ebfbcd30fefa1b82098b6f856faf017efa",
+   "year": 2005
+  },
+  {
+   "path": "sites/cobre-panama/frames/2006-swir.webp",
+   "kind": "frame",
+   "bytes": 55310,
+   "sha256": "53b174cdb545b20a19ef5b86c5683b3e2c127f65970902278c6794dc8533111d",
+   "year": 2006
+  },
+  {
+   "path": "sites/cobre-panama/frames/2006.webp",
+   "kind": "frame",
+   "bytes": 62760,
+   "sha256": "a8a651ae7366881a98ab76908f85e3ae210dce8e594aae0f46ac076c4027d291",
+   "year": 2006
+  },
+  {
+   "path": "sites/cobre-panama/frames/2007-swir.webp",
+   "kind": "frame",
+   "bytes": 60832,
+   "sha256": "b99929f05022b306b1dcdbc77e3770fa0870c41a190017856c2296c301583286",
+   "year": 2007
+  },
+  {
+   "path": "sites/cobre-panama/frames/2007.webp",
+   "kind": "frame",
+   "bytes": 112890,
+   "sha256": "412f38ff6b1810999415a6df93898c338aa39c2eb479d3faf9fbd2efc21787ed",
+   "year": 2007
+  },
+  {
+   "path": "sites/cobre-panama/frames/2008-swir.webp",
+   "kind": "frame",
+   "bytes": 55692,
+   "sha256": "870144dfc8165fe9fa310dd6be2beee974c6db130485778abcefe5c7c791a1df",
+   "year": 2008
+  },
+  {
+   "path": "sites/cobre-panama/frames/2008.webp",
+   "kind": "frame",
+   "bytes": 107498,
+   "sha256": "2232d8488b2799cc21dc2ac83e7bba1b751bd3399fda0b61f09b7803e9c90edc",
+   "year": 2008
+  },
+  {
+   "path": "sites/cobre-panama/frames/2009-swir.webp",
+   "kind": "frame",
+   "bytes": 69350,
+   "sha256": "662358d0f1a0979e911754c90bde9abaa2b0d5dc4a15ba7018278a5d13a0e124",
+   "year": 2009
+  },
+  {
+   "path": "sites/cobre-panama/frames/2009.webp",
+   "kind": "frame",
+   "bytes": 137824,
+   "sha256": "3df634600fe5d81dd7b145f47d8b255a0e7182f506615763aa49982eb41db794",
+   "year": 2009
+  },
+  {
+   "path": "sites/cobre-panama/frames/2010-swir.webp",
+   "kind": "frame",
+   "bytes": 39802,
+   "sha256": "0176d5d1f9f7c52dd67f03a10f75aadfb6d3b63ba714aeb308127aad6134b1a2",
+   "year": 2010
+  },
+  {
+   "path": "sites/cobre-panama/frames/2010.webp",
+   "kind": "frame",
+   "bytes": 87132,
+   "sha256": "b189b352116cb51070aa12f7daac655e88712d344c07028e2bc073835361109a",
+   "year": 2010
+  },
+  {
+   "path": "sites/cobre-panama/frames/2011-swir.webp",
+   "kind": "frame",
+   "bytes": 61548,
+   "sha256": "85288e8da5696b19627289a1b03b7b7cdc163e2a90764fc6686a7b555d15c7da",
+   "year": 2011
+  },
+  {
+   "path": "sites/cobre-panama/frames/2011.webp",
+   "kind": "frame",
+   "bytes": 101592,
+   "sha256": "7ba194956661e32f99a17703abdf150b82d6978d991dbc62a453de9272028fd0",
+   "year": 2011
+  },
+  {
+   "path": "sites/cobre-panama/frames/2012-swir.webp",
+   "kind": "frame",
+   "bytes": 54556,
+   "sha256": "2277159c9f3738ce88aa81cbf9168e9b7c8644b31c27f6efa3dd69e5b16d7904",
+   "year": 2012
+  },
+  {
+   "path": "sites/cobre-panama/frames/2012.webp",
+   "kind": "frame",
+   "bytes": 111996,
+   "sha256": "549893cb453789a480f5f05a9caddc349f5092238a9a8efc3877c7388768b878",
+   "year": 2012
+  },
+  {
+   "path": "sites/cobre-panama/frames/2013-swir.webp",
+   "kind": "frame",
+   "bytes": 59324,
+   "sha256": "2c840e300ca0323bcf74d1af35befe22e86d292e06fe260497d29fad3e7f76e3",
+   "year": 2013
+  },
+  {
+   "path": "sites/cobre-panama/frames/2013.webp",
+   "kind": "frame",
+   "bytes": 131290,
+   "sha256": "6fb08c412b6935933b60d9690c9bfb3f66139b1deb8f68db16e9d4802dc78282",
+   "year": 2013
+  },
+  {
+   "path": "sites/cobre-panama/frames/2014-swir.webp",
+   "kind": "frame",
+   "bytes": 61254,
+   "sha256": "7e88873e54bf4bac9f3c8a5f8572f950ef12d6bbb97dd2f53781396af1dd22e3",
+   "year": 2014
+  },
+  {
+   "path": "sites/cobre-panama/frames/2014.webp",
+   "kind": "frame",
+   "bytes": 105666,
+   "sha256": "c0cec3150bc08883918a5cf367cff78a803af69485fd183b736558b1412435da",
+   "year": 2014
+  },
+  {
+   "path": "sites/cobre-panama/frames/2015-swir.webp",
+   "kind": "frame",
+   "bytes": 38258,
+   "sha256": "34916bb0c992c278e2cc8a8a66692b51687a24a2ef0e73717e5e16b3391c9028",
+   "year": 2015
+  },
+  {
+   "path": "sites/cobre-panama/frames/2015.webp",
+   "kind": "frame",
+   "bytes": 55624,
+   "sha256": "6a893b549f91c2b05c7f86066dd05476c8bdcf52865a4cbe8528be47548009db",
+   "year": 2015
+  },
+  {
+   "path": "sites/cobre-panama/frames/2016-swir.webp",
+   "kind": "frame",
+   "bytes": 46764,
+   "sha256": "dfd27afa92b9c67b467d9aa0188bc60a64a3664fe953b14b33d16bb5046c08f5",
+   "year": 2016
+  },
+  {
+   "path": "sites/cobre-panama/frames/2016.webp",
+   "kind": "frame",
+   "bytes": 73812,
+   "sha256": "ab1088eb68a377a4d0c162ede4fa7c3cd4e95ec16c75b89f8af96ac12d8bc224",
+   "year": 2016
+  },
+  {
+   "path": "sites/cobre-panama/frames/2017-swir.webp",
+   "kind": "frame",
+   "bytes": 65148,
+   "sha256": "f5656af44da864f19c656e2d1f33aeb33848d67a38ea23c7a54aff707beb8527",
+   "year": 2017
+  },
+  {
+   "path": "sites/cobre-panama/frames/2017.webp",
+   "kind": "frame",
+   "bytes": 135230,
+   "sha256": "bd028af7eef886e795cf5ee67096f0ef9c5587f14357796b08714ffe0d3ea9c2",
+   "year": 2017
+  },
+  {
+   "path": "sites/cobre-panama/frames/2018-swir.webp",
+   "kind": "frame",
+   "bytes": 46562,
+   "sha256": "dbe2f2ca181b24a422299856c19d3bd317eeb89c3f409804826c04cf1686c359",
+   "year": 2018
+  },
+  {
+   "path": "sites/cobre-panama/frames/2018.webp",
+   "kind": "frame",
+   "bytes": 74868,
+   "sha256": "3ea6261dd063f3480167b59c4a756870031f6a48a0df651375e224e3df3a84a5",
+   "year": 2018
+  },
+  {
+   "path": "sites/cobre-panama/frames/2019-swir.webp",
+   "kind": "frame",
+   "bytes": 53762,
+   "sha256": "1e9f286288afaf9c2c8cd529230599478da5df46cb618e4704aed3b89051550d",
+   "year": 2019
+  },
+  {
+   "path": "sites/cobre-panama/frames/2019.webp",
+   "kind": "frame",
+   "bytes": 97802,
+   "sha256": "cef1bd0d4cd06a757a2f4422cac698e85778775e6123859aecd573700d9e065d",
+   "year": 2019
+  },
+  {
+   "path": "sites/cobre-panama/frames/2020-swir.webp",
+   "kind": "frame",
+   "bytes": 47344,
+   "sha256": "68c843a836a38a73e32dea46843cabedaac91bafa5ba57bb16dd42844c61e094",
+   "year": 2020
+  },
+  {
+   "path": "sites/cobre-panama/frames/2020.webp",
+   "kind": "frame",
+   "bytes": 90584,
+   "sha256": "c3b72bd2a151bf6afcf205d97984f57ff558f706c5fc3809ed789e7d0df0afde",
+   "year": 2020
+  },
+  {
+   "path": "sites/cobre-panama/frames/2021-swir.webp",
+   "kind": "frame",
+   "bytes": 49454,
+   "sha256": "5065d8f13c7e0b48fa0cdba3853564f2e6f6eb64dfd7fad19b006914b4ce051d",
+   "year": 2021
+  },
+  {
+   "path": "sites/cobre-panama/frames/2021.webp",
+   "kind": "frame",
+   "bytes": 79946,
+   "sha256": "42ca354636ef9893ab4fcf3f3743364e771272c588ac2c7a53dd905879a17703",
+   "year": 2021
+  },
+  {
+   "path": "sites/cobre-panama/frames/2022-swir.webp",
+   "kind": "frame",
+   "bytes": 55516,
+   "sha256": "0f279842b570191e796343a5a3236439f326cc8173b9b94ea7ee50902005a270",
+   "year": 2022
+  },
+  {
+   "path": "sites/cobre-panama/frames/2022.webp",
+   "kind": "frame",
+   "bytes": 114838,
+   "sha256": "21221f4364c443b8573a7b19e9a5ebec0db90b3291589d052c14edd46062789d",
+   "year": 2022
+  },
+  {
+   "path": "sites/cobre-panama/frames/2023-swir.webp",
+   "kind": "frame",
+   "bytes": 71250,
+   "sha256": "9b4817ef61bcff4b47e3c7ddf89935085fce8f4c6bf5ea82bf78fdd1f4e8ab1b",
+   "year": 2023
+  },
+  {
+   "path": "sites/cobre-panama/frames/2023.webp",
+   "kind": "frame",
+   "bytes": 155076,
+   "sha256": "fdc057595d1f981c4e3e8b48dbf7a00d288f47fd48103b6c773089b7c647c272",
+   "year": 2023
+  },
+  {
+   "path": "sites/cobre-panama/frames/2024-swir.webp",
+   "kind": "frame",
+   "bytes": 50530,
+   "sha256": "7f46fa7a02d5676f830c8f1160c38175031d7fb23e4addfc83e43e0e1e0b302f",
+   "year": 2024
+  },
+  {
+   "path": "sites/cobre-panama/frames/2024.webp",
+   "kind": "frame",
+   "bytes": 106470,
+   "sha256": "4d338b7981d7403ef09b3853fd74d1f53d45af91ea18b1b14ed296cab620dcbf",
+   "year": 2024
+  },
+  {
+   "path": "sites/cobre-panama/frames/2025-swir.webp",
+   "kind": "frame",
+   "bytes": 55152,
+   "sha256": "d64c25a6ca2386cbbd61c5f8d330b2d765173c78dec090105dcc6c2753151359",
+   "year": 2025
+  },
+  {
+   "path": "sites/cobre-panama/frames/2025.webp",
+   "kind": "frame",
+   "bytes": 123588,
+   "sha256": "49c450a57a1bbe09816a6f35d897649c82e6a88a223ef26b36f61fbb89999a3e",
+   "year": 2025
+  },
+  {
+   "path": "sites/cobre-panama/frames/2026-swir.webp",
+   "kind": "frame",
+   "bytes": 42380,
+   "sha256": "ce433425a1d5df0cfad773fc8fb8e29be32018ffda9d71c251d741dff587c22b",
+   "year": 2026
+  },
+  {
+   "path": "sites/cobre-panama/frames/2026.webp",
+   "kind": "frame",
+   "bytes": 74694,
+   "sha256": "933dfa277c751d760a971889b02d7869fbabdf02a952fc5ac9753a0188deec8b",
+   "year": 2026
+  },
   {
    "path": "sites/cobre-panama/polygons.geojson",
    "kind": "polygons",

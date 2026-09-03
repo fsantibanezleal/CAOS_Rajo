@@ -1,21 +1,26 @@
 // The observatory: a full-bleed map with floating instruments. The map takes the whole surface; the rail,
-// the controls, the status line, the timeline and the attribution float over it. The site selector is one
-// grouped select (categories as optgroups); choosing a site flies the camera, draws the reference polygons
-// and the site window, shows the time-lapse and writes ?site= into the URL so the view is shareable.
+// the controls, the status line, the timeline, the instrument panel and the attribution float over it.
+// The site selector is one grouped select (categories as optgroups); choosing a site flies the camera,
+// draws the reference polygons and the site window, shows the time-lapse and the instrument panel, and
+// writes ?site= into the URL so the view is shareable.
 import type { Map as MLMap } from 'maplibre-gl';
 import { Compass, Mountain, Tag, ZoomIn, ZoomOut } from 'lucide-react';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { Instrument } from '../components/Instrument';
 import { Timeline } from '../components/Timeline';
 import type { CatalogEntry, Category, Frame } from '../lib/contract';
 import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
+import { hideLive, setLiveOpacity, showLive } from '../map/liveOverlay';
 import { MapView, TERRAIN_EXAGGERATION } from '../map/MapView';
 import { clearSite, flyToSite, showSite } from '../map/siteLayers';
 import { useCatalog } from '../state/catalog';
+import { useLive } from '../state/live';
 import { readSiteParam, useManifest, writeSiteParam } from '../state/site';
 import { useTimeline } from '../state/timeline';
 import { useUI } from '../state/ui';
+import { lonLatToUtm } from '../lib/utm';
 
 const CATEGORY_ORDER: Category[] = [
   'copper-chile',
@@ -39,8 +44,12 @@ export function Observatory() {
   const [labels, setLabels] = useState(true);
   const [siteId, setSiteId] = useState<string>(readSiteParam);
   const [frame, setFrame] = useState<Frame | null>(null);
+  const [liveOpacity, setLiveOpacityState] = useState(1);
   const mode = useTimeline((s) => s.mode);
   const opacity = useTimeline((s) => s.opacity);
+  const liveLayer = useLive((s) => s.layer);
+  const liveGrid = useLive((s) => s.grid);
+  const clearLive = useLive((s) => s.clear);
 
   const entry: CatalogEntry | undefined = useMemo(() => catalog?.sites.find((s) => s.site_id === siteId), [catalog, siteId]);
   const { manifest } = useManifest(entry ? siteId : '', entry?.manifest_path);
@@ -67,6 +76,12 @@ export function Observatory() {
 
   // keep the URL in step with the selection
   useEffect(() => writeSiteParam(siteId), [siteId]);
+
+  // a new site: drop the live read of the previous one
+  useEffect(() => {
+    clearLive();
+    if (map && map.isStyleLoaded()) hideLive(map);
+  }, [siteId, clearLive, map]);
 
   // draw and fly when the manifest arrives (and again after a style rebuild)
   useEffect(() => {
@@ -105,7 +120,6 @@ export function Observatory() {
       if (map.isStyleLoaded()) apply();
       else map.once('style.load', apply);
     });
-    // warm the neighbours so scrubbing never waits
     const i = manifest.frames.indexOf(frame);
     for (const j of [i + 1, i - 1, i + 2]) {
       const f = manifest.frames[j];
@@ -118,8 +132,54 @@ export function Observatory() {
     };
   }, [map, manifest, frame, mode, opacity]);
 
+  // the live layer (composite, index, mask) drapes over the frames and survives a style rebuild
+  useEffect(() => {
+    if (!map) return;
+    if (!liveLayer || !liveGrid) {
+      if (map.isStyleLoaded()) hideLive(map);
+      return;
+    }
+    const rgba = liveLayer.kind === 'composite' ? liveLayer.rgba : liveLayer.result.rgba;
+    const apply = () => void showLive(map, liveGrid, rgba, liveOpacity);
+    if (map.isStyleLoaded()) apply();
+    else map.once('style.load', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, liveLayer, liveGrid, liveOpacity]);
+
+  useEffect(() => {
+    if (map && map.isStyleLoaded()) setLiveOpacity(map, liveOpacity);
+  }, [map, liveOpacity]);
+
   const onFrame = useCallback((f: Frame) => setFrame(f), []);
+  const onOpacity = useCallback((o: number) => setLiveOpacityState(o), []);
   const hasFrames = !!manifest && manifest.frames.length > 0;
+
+  // the value under the cursor on the live layer
+  const liveValue = useMemo(() => {
+    if (!cursor || !liveLayer || !liveGrid) return null;
+    const [x, y] = lonLatToUtm(liveGrid.epsg, cursor.lon, cursor.lat);
+    const col = Math.floor((x - liveGrid.left) / liveGrid.pixelM);
+    const row = Math.floor((liveGrid.top - y) / liveGrid.pixelM);
+    if (col < 0 || row < 0 || col >= liveGrid.width || row >= liveGrid.height) return null;
+    const i = row * liveGrid.width + col;
+    if (liveLayer.kind === 'index') {
+      const v = liveLayer.result.values[i];
+      return v === undefined || !Number.isFinite(v) ? null : `${t(`indices.${liveLayer.result.name}.name`).split(',')[0]} ${v.toFixed(3)}`;
+    }
+    if (liveLayer.kind === 'otsu' || liveLayer.kind === 'sam') {
+      const v = liveLayer.result.values?.[i];
+      const inMask = liveLayer.result.mask[i] === 1;
+      return `${liveLayer.kind === 'otsu' ? 'BSI' : 'angle'} ${v !== undefined && Number.isFinite(v) ? v.toFixed(3) : '-'} ${inMask ? '(in mask)' : ''}`;
+    }
+    if (liveLayer.kind === 'kmeans') {
+      const lab = liveLayer.result.labels[i];
+      return lab === undefined || lab === 255 ? null : `cluster ${lab + 1}`;
+    }
+    return null;
+  }, [cursor, liveLayer, liveGrid, t]);
 
   return (
     <section className={`obs${manifest ? ' with-timeline' : ''}`} aria-label={t('observatory.title')}>
@@ -234,6 +294,8 @@ export function Observatory() {
         </div>
       </div>
 
+      {manifest && <Instrument manifest={manifest} onOpacity={onOpacity} />}
+
       <div className="overlay mapstatus" data-testid="map-status">
         <div className="panel">
           {loading ? t('map.status.tiles') : t('map.status.ready')}
@@ -245,6 +307,12 @@ export function Observatory() {
                 <>
                   <span className="dot"> &middot; </span>
                   {cursor.elev} m
+                </>
+              )}
+              {liveValue && (
+                <>
+                  <span className="dot"> &middot; </span>
+                  <span data-testid="live-value">{liveValue}</span>
                 </>
               )}
             </>

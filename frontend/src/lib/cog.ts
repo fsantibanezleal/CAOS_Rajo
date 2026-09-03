@@ -137,10 +137,14 @@ interface WindowRead {
 /** Reads the raster's overlap with the grid at the grid's resolution, placed into a full-grid array
  *  (zeros outside the overlap). Returns null when the raster does not overlap the grid. */
 async function readWindow(href: string, grid: ReadGrid, method: 'nearest' | 'bilinear', signal?: AbortSignal): Promise<WindowRead | null> {
-  const tiff = await fromUrl(href, { allowFullFile: false, fetchOptions: signal ? { signal } : undefined });
+  const tiff = await fromUrl(href, { allowFullFile: false }, signal);
   const image = await tiff.getImage(0);
-  const [ox, oy] = image.getOrigin();
-  const [rx, ry] = image.getResolution();
+  const origin = image.getOrigin();
+  const resolution = image.getResolution();
+  const ox = origin[0] ?? 0;
+  const oy = origin[1] ?? 0;
+  const rx = resolution[0] ?? 1;
+  const ry = resolution[1] ?? -1;
   const iw = image.getWidth();
   const ih = image.getHeight();
   const ires = Math.abs(rx);

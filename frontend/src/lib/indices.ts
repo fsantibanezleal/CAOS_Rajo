@@ -144,10 +144,14 @@ export function otsuThreshold(h: Histogram): number {
     sumAll += k * h.counts[k]!;
   }
   if (total === 0) return NaN;
+  // The between-class variance is constant across the empty bins between two modes, so every bin of
+  // that plateau is optimal; the middle of the plateau is returned (the first bin would sit on the
+  // shoulder of the lower mode).
   let w0 = 0;
   let sum0 = 0;
   let best = -1;
-  let bestK = 0;
+  let firstK = 0;
+  let lastK = 0;
   for (let k = 0; k < bins; k++) {
     w0 += h.counts[k]!;
     if (w0 === 0) continue;
@@ -157,12 +161,16 @@ export function otsuThreshold(h: Histogram): number {
     const m0 = sum0 / w0;
     const m1 = (sumAll - sum0) / w1;
     const between = w0 * w1 * (m0 - m1) * (m0 - m1);
-    if (between > best) {
+    if (between > best * (1 + 1e-12)) {
       best = between;
-      bestK = k;
+      firstK = k;
+      lastK = k;
+    } else if (between >= best * (1 - 1e-12)) {
+      lastK = k;
     }
   }
-  return h.lo + ((bestK + 0.5) / bins) * (h.hi - h.lo);
+  const bestK = (firstK + lastK) / 2;
+  return h.lo + ((bestK + 1) / bins) * (h.hi - h.lo);
 }
 
 /** Bare-ground mask: BSI above the threshold, not vegetation, not water; 3x3 opening; small-component removal. */

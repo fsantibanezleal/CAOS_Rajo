@@ -3,6 +3,8 @@
 // both themes, at three viewport sizes. A page that fails any of these is broken, not nearly done.
 import { expect, test } from '@playwright/test';
 
+import { collectErrors, expectNoErrors, gotoRajo } from './_helpers';
+
 const SIZES: Array<[number, number]> = [
   [1280, 800],
   [1600, 900],
@@ -14,14 +16,9 @@ for (const theme of ['dark', 'light'] as const) {
     test(`fit ${theme} ${w}x${h}`, async ({ browser }) => {
       const ctx = await browser.newContext({ viewport: { width: w, height: h } });
       const page = await ctx.newPage();
-      const errors: string[] = [];
-      page.on('pageerror', (e) => errors.push(e.message));
-      page.on('console', (m) => {
-        if (m.type() === 'error') errors.push(m.text());
-      });
+      const errors = collectErrors(page);
       await page.addInitScript((t) => localStorage.setItem('rajo.theme', t), theme);
-      await page.goto('/');
-      await expect(page).toHaveTitle(/Rajo/);
+      await gotoRajo(page, '/');
       await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
       await page.waitForTimeout(2500);
 
@@ -47,9 +44,7 @@ for (const theme of ['dark', 'light'] as const) {
       expect(r.navRows, 'one navigation row').toBe(1);
       expect(r.navCount).toBe(5);
       expect(r.vizPct, 'the map takes at least half the viewport').toBeGreaterThan(0.5);
-      expect(errors, `no console or page errors:
-${errors.join('
-')}`).toEqual([]);
+      expectNoErrors(errors);
       await ctx.close();
     });
   }

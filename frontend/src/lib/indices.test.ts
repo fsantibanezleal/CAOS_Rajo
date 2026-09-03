@@ -75,7 +75,8 @@ describe('indices', () => {
     const m = bareMask(b, bsi, t, 6);
     expect(m[w * 5 + 5]).toBe(1);
     expect(m[w * 10 + 10]).toBe(0);
-    expect(maskArea(m, 10)).toBeCloseTo(((7 - 2) * (7 - 2) * 100) / 1e6, 6);
+    // the 7 x 7 block survives the 3 x 3 opening intact: 49 pixels of 100 m2
+    expect(maskArea(m, 10)).toBeCloseTo((49 * 100) / 1e6, 6);
   });
   it('removeSmall drops components below the minimum', () => {
     const m = new Uint8Array(25);

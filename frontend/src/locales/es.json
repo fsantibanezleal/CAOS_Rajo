@@ -46,7 +46,8 @@
     "status": {
       "ready": "Listo",
       "tiles": "Cargando teselas"
-    }
+    },
+    "liveValue": "en vivo"
   },
   "observatory": {
     "title": "Observatorio",
@@ -113,6 +114,110 @@
       "composite": "compuesto de dos fechas",
       "slc_off": "franjas Landsat 7 rellenadas",
       "snow": "nieve"
+    }
+  },
+  "instrument": {
+    "title": "Instrumento",
+    "tabs": {
+      "look": "Mirar",
+      "find": "Encontrar"
+    },
+    "fetch": "Cargar la escena reciente sin nubes",
+    "refetch": "Recargar",
+    "scene": "Escena",
+    "cloud": "nubes",
+    "idle": "Carga la escena Sentinel-2 más reciente sobre esta ventana (últimos 150 días, menos de 25% de nubes) directamente desde los GeoTIFF optimizados para la nube a su navegador. Nada se sube.",
+    "searching": "Buscando en Earth Search",
+    "reading": "Leyendo teselas",
+    "tiles": "teselas",
+    "skipped": "omitidas",
+    "composite": "Compuesto",
+    "composites": {
+      "tc": "Color real",
+      "fc": "Falso color (NIR)",
+      "swir": "Geología SWIR"
+    },
+    "index": "Índice",
+    "compute": "Calcular",
+    "colormap": "Paleta",
+    "rangeLo": "Mínimo",
+    "rangeHi": "Máximo",
+    "mean": "media",
+    "validPx": "píxeles despejados",
+    "stretch": "Estiramiento (p2 a p98)",
+    "opacity": "Opacidad de la capa",
+    "area": "Área enmascarada",
+    "refArea": "Polígonos de referencia",
+    "otsu": {
+      "title": "Otsu sobre el índice de suelo desnudo",
+      "text": "El umbral que maximiza la varianza entre clases del histograma de BSI, luego no-vegetación, no-agua, una apertura 3 x 3 y eliminación de componentes pequeños.",
+      "threshold": "Umbral"
+    },
+    "kmeans": {
+      "title": "k-means sobre los espectros",
+      "text": "Seis bandas estandarizadas más NDVI y MNDWI, semilla k-means++, iteraciones de Lloyd, semilla determinista; los grupos se ordenan de oscuro a brillante.",
+      "cluster": "Grupo",
+      "spectrum": "Espectro del centroide (B, G, R, NIR, SWIR1, SWIR2)"
+    },
+    "sam": {
+      "title": "Mapeador de ángulo espectral",
+      "text": "El ángulo entre el espectro de cada píxel y un miembro final; invariante a la iluminación, así que las paredes del rajo en sombra también coinciden.",
+      "angle": "Ángulo máximo",
+      "endmemberRef": "Miembro final: espectro medio de los polígonos mineros de referencia en esta escena.",
+      "endmemberBare": "Miembro final: el cuartil más brillante de suelo desnudo de esta escena (sin polígonos de referencia en la grilla)."
+    },
+    "findNote": "Estas son delineaciones clásicas de suelo intervenido en una escena, no de mineral. Los modelos aprendidos llegan con la siguiente unidad."
+  },
+  "indices": {
+    "groups": {
+      "vegetationWater": "Vegetación y agua",
+      "soilBuilt": "Suelo desnudo, construido, quema",
+      "mineral": "Indicadores de grupos minerales"
+    },
+    "ndvi": {
+      "name": "NDVI, vegetación",
+      "formula": "NDVI = (NIR - rojo) / (NIR + rojo)",
+      "caveat": "Rajos y botaderos quedan cerca de cero; los campos regados y las franjas ribereñas se encienden."
+    },
+    "ndwi": {
+      "name": "NDWI, agua abierta",
+      "formula": "NDWI = (verde - NIR) / (verde + NIR)",
+      "caveat": "Las costras salinas brillantes pueden imitar agua en NDWI; compare con MNDWI."
+    },
+    "mndwi": {
+      "name": "MNDWI, agua frente a costra brillante",
+      "formula": "MNDWI = (verde - SWIR1) / (verde + SWIR1)",
+      "caveat": "Separa pozas y salmuera de la sal brillante y los relaves mejor que NDWI."
+    },
+    "ndbi": {
+      "name": "NDBI, construido y desnudo",
+      "formula": "NDBI = (SWIR1 - NIR) / (SWIR1 + NIR)",
+      "caveat": "Roca desnuda, botaderos y plantas puntúan alto: construido no es mina."
+    },
+    "bsi": {
+      "name": "BSI, suelo desnudo",
+      "formula": "BSI = ((SWIR1 + rojo) - (NIR + azul)) / ((SWIR1 + rojo) + (NIR + azul))",
+      "caveat": "El caballo de batalla de las máscaras clásicas; los desiertos son desnudos en todas partes, así que el umbral importa."
+    },
+    "nbr": {
+      "name": "NBR, quema y humedad",
+      "formula": "NBR = (NIR - SWIR2) / (NIR + SWIR2)",
+      "caveat": "Bajo sobre roca seca desnuda; aquí se usa como contraste de sequedad, no como índice de quema."
+    },
+    "iron": {
+      "name": "Razón de óxidos de hierro",
+      "formula": "rojo / azul",
+      "caveat": "Los óxidos férricos (hematita, goethita) elevan la razón; también los botaderos oxidados y las pilas de lixiviación. Un indicador de grupo, no un mapa mineral."
+    },
+    "clay": {
+      "name": "Razón de arcillas e hidroxilos",
+      "formula": "SWIR1 / SWIR2",
+      "caveat": "Los minerales Al-OH y Mg-OH absorben cerca de 2,2 um y elevan la razón; Sentinel-2 tiene dos bandas SWIR, así que es gruesa."
+    },
+    "ferrous": {
+      "name": "Razón de minerales ferrosos",
+      "formula": "SWIR2 / NIR",
+      "caveat": "El hierro ferroso baja el NIR; responde a roca fresca y botaderos oscuros."
     }
   }
 }

@@ -114,7 +114,9 @@
       "composite": "compuesto de dos fechas",
       "slc_off": "franjas Landsat 7 rellenadas",
       "snow": "nieve"
-    }
+    },
+    "series": "Series",
+    "seriesTitle": "La serie de area minada, sus puntos de cambio y las mascaras anuales"
   },
   "instrument": {
     "title": "Instrumento",
@@ -233,6 +235,31 @@
       "name": "Razón de minerales ferrosos",
       "formula": "SWIR2 / NIR",
       "caveat": "El hierro ferroso baja el NIR; responde a roca fresca y botaderos oscuros."
+    }
+  },
+  "series": {
+    "title": "Carril de senal",
+    "view": "Vista",
+    "views": {
+      "area": "Area minada",
+      "index": "Indices de la envolvente",
+      "dense": "Sentinel-2 denso"
+    },
+    "method": "Metodo",
+    "showMask": "mostrar la mascara del ano",
+    "date": "Fecha",
+    "year": "Ano",
+    "envelopeMean": "media de la envolvente",
+    "indexAxis": "indice",
+    "hoverHint": "Pase el cursor para ver valores; clic en un ano mueve la linea de tiempo",
+    "envelope": "Envolvente",
+    "penalty": "Penalizacion PELT",
+    "noBreak": "sin quiebre",
+    "noAlarm": "sin alarma",
+    "harmonic": "Quiebres armonicos",
+    "indexNote": "Medias anuales de NDVI, MNDWI y BSI en la envolvente, de los mismos cuadros; anos Landsat sombreados.",
+    "flags": {
+      "cross_sensor": "Los anos Landsat estan fuera del dominio de entrenamiento del bosque (otro sensor)"
     }
   }
 }

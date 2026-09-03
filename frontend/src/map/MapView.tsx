@@ -1,7 +1,8 @@
 // The map: MapLibre GL JS with the Rajo style (imagery + hillshade + labels), a globe at low zoom, 3D
 // terrain from the terrarium DEM, and a cursor readout (lon, lat, elevation). The map instance is exposed
 // through a callback so the observatory can drive it (fly to a site, add deck.gl overlays).
-import { Map as MLMap } from 'maplibre-gl';
+import { Map as MLMap, setWorkerUrl } from 'maplibre-gl';
+import maplibreWorkerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -26,6 +27,19 @@ export function hasWebGL(): boolean {
     return false;
   }
 }
+
+// The renderer declares its lifecycle: the gates read window.__rajoMapLifecycle to WAIT for the map's
+// load instead of assuming it, and a stalled load shows up as a list that never reaches 'load'.
+function lifecycle(event: string): void {
+  const w = window as unknown as { __rajoMapLifecycle?: string[] };
+  (w.__rajoMapLifecycle ??= []).push(`${Math.round(performance.now())}ms ${event}`);
+}
+
+// MapLibre 6 resolves its worker as ./maplibre-gl-worker.mjs next to its own chunk and that file imports
+// the main bundle by its dist name, which a bundler renames: without a bundled worker the vector tiles
+// and the terrain never decode and the map never fires 'load' (measured 2026-09-03). Vite builds the
+// worker with its dependencies; MapLibre is told where it is before the first map is created.
+setWorkerUrl(maplibreWorkerUrl);
 
 export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewProps) {
   const { t } = useTranslation();
@@ -62,15 +76,22 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
       });
       created = m;
       mapRef.current = m;
+      (window as unknown as { __rajoMapInstance?: MLMap }).__rajoMapInstance = m; // for the gates' diagnostics
+      lifecycle('created');
       m.on('style.load', () => {
+        lifecycle(alive() ? 'style.load' : 'style.load (after removal, ignored)');
         if (!alive()) return;
-        // the globe projection is declared in the style itself (buildStyle); only terrain and labels follow
+        // the globe is set after every style load (a projection declared inside the style object keeps
+        // MapLibre 5 from ever firing 'load' with terrain on, measured 2026-09-03)
+        m.setProjection({ type: 'globe' });
         if (propsRef.current.terrain) m.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
         setLabelVisibility(m, propsRef.current.labels);
       });
       m.on('load', () => {
+        lifecycle(alive() ? 'load' : 'load (after removal, ignored)');
         if (alive()) propsRef.current.onMap?.(m);
       });
+      m.on('error', (e) => lifecycle(`error: ${(e as { error?: { message?: string } }).error?.message ?? 'unknown'}`));
       m.on('dataloading', () => propsRef.current.onStatus?.(true));
       m.on('idle', () => propsRef.current.onStatus?.(false));
       m.on('mousemove', (e) => {
@@ -85,9 +106,17 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     });
     return () => {
       cancelled = true;
+      lifecycle('cleanup');
       propsRef.current.onMap?.(null);
-      created?.remove();
+      const m = created;
+      created = null;
       mapRef.current = null;
+      if (m) {
+        // a frame already scheduled by MapLibre runs after remove() and reads the painter's style
+        // ('shaderPreludeCode' of undefined, globe + terrain, MapLibre 6.7): let that frame finish first
+        m.stop();
+        requestAnimationFrame(() => setTimeout(() => m.remove(), 0));
+      }
     };
   }, [webgl]);
 

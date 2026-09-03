@@ -16,22 +16,29 @@ import numpy as np
 from common import clean_mask
 
 EPS = 1e-6
+# denominator floors shared with the browser (frontend/src/lib/indices.ts): a normalised difference of
+# near-zero reflectances (deep shadow, dark water) is noise, not a value
+ND_FLOOR = 0.02
+BSI_FLOOR = 0.04
 
 
 def norm_diff(a: np.ndarray, b: np.ndarray, valid: np.ndarray) -> np.ndarray:
+    a = np.maximum(a, 0.0)
+    b = np.maximum(b, 0.0)
     out = np.full(a.shape, np.nan, dtype=np.float32)
     den = a + b
-    ok = valid & (np.abs(den) > 1e-6)
+    ok = valid & (den > ND_FLOOR)
     out[ok] = (a[ok] - b[ok]) / den[ok]
     return out
 
 
 def bsi_index(bands: np.ndarray, valid: np.ndarray) -> np.ndarray:
+    bands = np.maximum(bands, 0.0)
     blue, red, nir, swir16 = bands[0], bands[2], bands[3], bands[4]
     a = swir16 + red
     b = nir + blue
     out = np.full(red.shape, np.nan, dtype=np.float32)
-    ok = valid & (a + b > 1e-6)
+    ok = valid & (a + b > BSI_FLOOR)
     out[ok] = (a[ok] - b[ok]) / (a[ok] + b[ok])
     return out
 

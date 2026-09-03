@@ -89,14 +89,45 @@ export interface Frame {
 export interface ChangePoint {
   year: number;
   method: 'cusum' | 'pelt' | 'harmonic';
+  series: string; // which area series (otsu, rf, unet) or index the point belongs to
   score: number;
+}
+
+export interface SeriesSegment {
+  start: number; // year
+  end: number; // year, inclusive
+  mean: number;
+  slope: number; // km2 per year
+}
+
+export interface SeriesMethod {
+  label: string;
+  domain: string; // e.g. "all sensors" or "Sentinel-2 only"
+  flags: string[];
+  pelt: { breaks: number[]; segments: SeriesSegment[]; penalty: number; sigma: number; cost: string; min_size: number };
+  cusum: { alarms: number[]; k: number; h: number; sigma: number; target: number };
 }
 
 export interface SeriesBlock {
   years: number[];
+  sensor: string[];
+  valid_frac: number[]; // envelope fraction with clear data, per year
+  envelope_km2: number;
+  envelope: string;
   area_km2: Record<string, (number | null)[]>;
+  index_mean: Record<string, (number | null)[]>; // ndvi, mndwi, bsi over the envelope
+  methods: Record<string, SeriesMethod>;
   change_points: ChangePoint[];
   gaps: Record<string, string>;
+  dense?: DenseSeries | null;
+}
+
+export interface DenseSeries {
+  index: string;
+  dates: string[];
+  values: number[];
+  clear_frac: number[];
+  harmonic: { breaks: string[]; k: number; period_days: number; segments: Array<{ start: string; end: string; coef: number[]; rss: number; n: number }>; bic: number; bic_no_break: number };
 }
 
 export interface DemBlock {
@@ -137,6 +168,7 @@ export interface SiteManifest {
   window: SiteWindow;
   polygons: PolygonSummary;
   frames: Frame[];
+  gaps?: Record<string, string>; // year -> why there is no frame
   series: SeriesBlock | null;
   dem: DemBlock | null;
   models: ModelRef[];

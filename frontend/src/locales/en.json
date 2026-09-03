@@ -114,7 +114,9 @@
       "composite": "two-date composite",
       "slc_off": "Landsat 7 stripes filled",
       "snow": "snow"
-    }
+    },
+    "series": "Series",
+    "seriesTitle": "The mined-area series, its change points and the yearly masks"
   },
   "instrument": {
     "title": "Instrument",
@@ -233,6 +235,31 @@
       "name": "Ferrous minerals ratio",
       "formula": "SWIR2 / NIR",
       "caveat": "Ferrous iron lowers the NIR; responds to fresh rock and dark dumps."
+    }
+  },
+  "series": {
+    "title": "Signal lane",
+    "view": "View",
+    "views": {
+      "area": "Mined area",
+      "index": "Envelope indices",
+      "dense": "Dense Sentinel-2"
+    },
+    "method": "Method",
+    "showMask": "show the mask of the year",
+    "date": "Date",
+    "year": "Year",
+    "envelopeMean": "envelope mean",
+    "indexAxis": "index",
+    "hoverHint": "Hover for values; click a year to move the timeline",
+    "envelope": "Envelope",
+    "penalty": "PELT penalty",
+    "noBreak": "no break",
+    "noAlarm": "no alarm",
+    "harmonic": "Harmonic breaks",
+    "indexNote": "Yearly envelope means of NDVI, MNDWI and BSI from the same frames; Landsat years shaded.",
+    "flags": {
+      "cross_sensor": "Landsat years are outside the forest training domain (cross-sensor)"
     }
   }
 }

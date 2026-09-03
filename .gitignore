@@ -24,6 +24,7 @@ frontend/.vite/
 frontend/public/data/
 frontend/public/models/
 frontend/public/ort/
+frontend/public/assets/
 *.tsbuildinfo
 frontend/test-results/
 frontend/playwright-report/

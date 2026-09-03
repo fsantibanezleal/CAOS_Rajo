@@ -53,7 +53,9 @@ def box_std(x: np.ndarray, k: int = 3) -> np.ndarray:
 
 
 def rf_features(bands: np.ndarray) -> np.ndarray:
-    """bands (6, H, W) reflectance -> (16, H, W) float32 in RF_FEATURES order."""
+    """bands (6, H, W) reflectance -> (16, H, W) float32 in RF_FEATURES order. Negative reflectance (a
+    calibration artefact after the BOA offset) is clamped at zero; the browser mirror does the same."""
+    bands = np.maximum(bands, 0.0).astype(np.float32)
     blue, green, red, nir, swir16, swir22 = (bands[i] for i in range(6))
     ndvi = norm_diff(nir, red)
     mndwi = norm_diff(green, swir16)

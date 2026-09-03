@@ -18,7 +18,10 @@ from .paths import data_root, models_root
 
 # The stages that exist today, in run order. The bake grows unit by unit (scenes and frames, masks, series,
 # dem); a name enters this tuple only when its module is real, never before.
-STAGES: tuple[str, ...] = ("catalog", "scenes", "frames", "export", "validate")
+STAGES: tuple[str, ...] = ("catalog", "scenes", "frames", "masks", "series", "dense", "export", "validate")
+# Stages that only ADD per-site side-cars on top of complete frames (resumable, never a partial frames
+# tree) may run alone into the canonical tree; validate still enforces completeness afterwards.
+DERIVED_STAGES: tuple[str, ...] = ("masks", "series", "dense")
 
 
 @dataclass
@@ -73,10 +76,12 @@ def run(*, stage: str, sites: list[str], output: Path, release: bool, resume: bo
     names = list(STAGES) if stage == "all" else [stage]
     ctx.log(f"engine {ctx.engine_version} | output {ctx.output} | release={release} | sites={sites or 'all'}")
 
-    if release and stage != "all" and stage not in ("export", "validate"):
+    if release and stage != "all" and stage not in ("export", "validate", *DERIVED_STAGES):
         # A single stage into the canonical tree is how a partial bake happens; allow it only for the
-        # final assembly stages that re-read everything and re-validate.
-        ctx.log("refusing: --release accepts only 'all', 'export' or 'validate' (a partial canonical bake is a defect)")
+        # final assembly stages that re-read everything and re-validate, and for the derived stages that
+        # add side-cars on top of complete frames.
+        ctx.log("refusing: --release accepts only 'all', 'export', 'validate' or a derived stage (masks, series, dense); "
+                "a partial canonical bake of frames is a defect")
         return 2
 
     for name in names:

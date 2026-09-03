@@ -9,7 +9,9 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Instrument } from '../components/Instrument';
+import { SeriesPanel } from '../components/SeriesPanel';
 import { Timeline } from '../components/Timeline';
+import { ensureMaskLayer, maskUrl, removeMaskLayer, tintMask } from '../map/frameOverlay';
 import type { CatalogEntry, Category, Frame } from '../lib/contract';
 import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
 import { hideLive, setLiveOpacity, showLive } from '../map/liveOverlay';
@@ -71,6 +73,8 @@ export function Observatory() {
 
   const onMap = useCallback((m: MLMap | null) => {
     setMap(m);
+    // the renderer declares what it holds: the gates read layers and sources from here
+    (window as unknown as { __rajoMap?: MLMap | null }).__rajoMap = m;
     if (m) m.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
   }, []);
 
@@ -132,6 +136,36 @@ export function Observatory() {
     };
   }, [map, manifest, frame, mode, opacity]);
 
+  // the baked mask of the year (signal lane) drapes over the frame when the user asks for it
+  const showMask = useTimeline((s) => s.showMask);
+  const seriesMethod = useTimeline((s) => s.seriesMethod);
+  const showSeries = useTimeline((s) => s.showSeries);
+  useEffect(() => {
+    if (!map) return;
+    const url = manifest && frame && showMask && showSeries ? maskUrl(manifest, frame, seriesMethod) : null;
+    if (!url || !manifest) {
+      if (map.isStyleLoaded()) removeMaskLayer(map);
+      return;
+    }
+    let cancelled = false;
+    const apply = () => {
+      void tintMask(url, seriesMethod)
+        .then((tintedUrl) => {
+          if (!cancelled) ensureMaskLayer(map, manifest, tintedUrl);
+        })
+        .catch((e: unknown) => console.warn('[rajo] mask overlay failed', url, e));
+    };
+    // isStyleLoaded() is false while any source still loads; 'idle' fires once loading settles,
+    // whereas 'style.load' only fires on a style swap and would leave the overlay waiting forever
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      cancelled = true;
+      map.off('style.load', apply);
+    };
+  }, [map, manifest, frame, showMask, showSeries, seriesMethod]);
+
   // the live layer (composite, index, mask) drapes over the frames and survives a style rebuild
   useEffect(() => {
     if (!map) return;
@@ -141,8 +175,10 @@ export function Observatory() {
     }
     const rgba = liveLayer.kind === 'composite' ? liveLayer.rgba : liveLayer.result.rgba;
     const apply = () => void showLive(map, liveGrid, rgba, liveOpacity);
+    // isStyleLoaded() is false while any source still loads; 'idle' fires once loading settles,
+    // whereas 'style.load' only fires on a style swap and would leave the overlay waiting forever
     if (map.isStyleLoaded()) apply();
-    else map.once('style.load', apply);
+    else map.once('idle', apply);
     map.on('style.load', apply);
     return () => {
       map.off('style.load', apply);
@@ -325,6 +361,7 @@ export function Observatory() {
         </div>
       </div>
 
+      {manifest && manifest.series && showSeries && <SeriesPanel manifest={manifest} series={manifest.series} />}
       {manifest && <Timeline manifest={manifest} onFrame={onFrame} />}
 
       <div className="overlay attrib">

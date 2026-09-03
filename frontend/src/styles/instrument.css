@@ -35,3 +35,18 @@
 .clusters .spec { display: inline-flex; align-items: flex-end; gap: 2px; height: 18px; }
 .clusters .spec i { display: inline-block; width: 6px; background: var(--fg-muted); border-radius: 1px; }
 @media (max-width: 1280px) { :root { --panel-w: 330px; } }
+
+/* --- the series drawer (signal lane) above the timeline ------------------------------------------ */
+.overlay.series { left: calc(var(--rail-w) + 28px); right: 14px; bottom: calc(14px + var(--timeline-h) + 10px); height: min(36vh, 340px); }
+.series-inner { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; gap: 6px; padding: 8px 12px; }
+.series-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; min-width: 0; }
+.series-head .spacer { flex: 1; }
+.series-plot { min-height: 0; position: relative; }
+.series-plot .uplot { font-family: var(--font-mono); font-size: 10.5px; color: var(--fg-muted); }
+.series-plot .u-legend { font-size: 11px; color: var(--fg-muted); }
+.series-plot .u-legend .u-series > * { padding: 1px 4px; }
+.series-foot { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; color: var(--fg-muted); }
+.series-foot .spacer { flex: 1; }
+.series-foot input[type="range"] { width: 110px; vertical-align: middle; margin-left: 6px; }
+.chk { display: inline-flex; align-items: center; gap: 4px; }
+.tl-right .series-btn.on { border-color: var(--accent); color: var(--accent); }

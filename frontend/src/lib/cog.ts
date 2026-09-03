@@ -103,7 +103,8 @@ export async function readGroup(
       const { scale, offset } = item.assets[k];
       for (let i = 0; i < n; i++) {
         const dn = r.values[i]!;
-        if (dn > 0) a[i] = dn * scale + offset;
+        // a negative reflectance after the BOA offset is a calibration artefact: clamp at zero (the bake does too)
+        if (dn > 0) a[i] = Math.max(0, dn * scale + offset);
       }
       arrays[k] = a;
     }

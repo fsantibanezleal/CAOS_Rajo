@@ -93,8 +93,6 @@ export async function buildStyle(theme: 'dark' | 'light'): Promise<{ style: Styl
 
   const style: StyleSpecification = {
     version: 8,
-    // the globe is part of the style, so a style swap (theme) never renders a frame without a projection
-    projection: { type: 'globe' },
     name: `rajo-${theme}`,
     ...(glyphs ? { glyphs } : {}),
     ...(sprite ? { sprite } : {}),

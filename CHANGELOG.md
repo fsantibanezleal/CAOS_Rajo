@@ -29,6 +29,18 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
   timing, area against the reference polygons, the model card, and the cursor probability readout.
 - Parallel frame workers on disjoint site lists into one sandbox root, and the harvest that moves
   complete sites into the canonical tree and runs export and validate.
+- Signal lane, offline: the masks stage (one mask per baked frame and method on the 30 m grid, scored
+  inside the reference envelope), the series stage (mined-area series per method with sensor and
+  validity, envelope index means, CUSUM and PELT change points with an in-house solver checked against
+  ruptures, and the harmonic regression with breaks on the dense series), the dense stage (every clear
+  Sentinel-2 date since 2017 at 60 m from the COG overviews); the manifest carries the frame gaps and
+  the validate stage checks them and the series shapes.
+- Signal lane, browser: the change-point code mirrored in TypeScript (golden fixture from Python), the
+  series drawer above the timeline (uPlot: area per method with Landsat years shaded, PELT segments and
+  breaks, CUSUM alarms, envelope indices, the dense series with harmonic breaks, a live PELT penalty,
+  click-to-year), and the baked mask of the year draped over the frame.
+- Reflectance is clamped at zero and normalised indices carry denominator floors, in Python and in the
+  browser alike, so a dark pixel can no longer blow up an envelope mean.
 - Deploy scripts (PowerShell and bash): guards, tests, build, tar over ssh into a release directory with
   an atomic swap, then a live check of the title, the catalog and a deep link.
 

@@ -15,11 +15,12 @@ export const RF_FEATURES = [
 export const N_FEATURES = RF_FEATURES.length;
 const EPS = 1e-6;
 
+/** NaN (no data) -> 0 like the Python chips, and negative reflectance (a calibration artefact) -> 0. */
 function zeroNaN(a: Float32Array): Float32Array {
   const out = new Float32Array(a.length);
   for (let i = 0; i < a.length; i++) {
     const v = a[i]!;
-    out[i] = Number.isFinite(v) ? v : 0;
+    out[i] = Number.isFinite(v) && v > 0 ? v : 0;
   }
   return out;
 }

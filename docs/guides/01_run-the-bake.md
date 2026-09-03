@@ -29,18 +29,24 @@ Direct form: `python data-pipeline/run.py <stage|all> [--sites a,b] [--years 199
 | `catalog` | `data/examples/sites.json`, the Maus 2022 GeoPackage (downloaded on first use to the data root) | `sites/<id>/site.json` (the accepted definition, the window, the polygon ids), `sites/<id>/polygons.geojson`, `catalog-report.json` |
 | `scenes` | `site.json`; Earth Search (Sentinel-2 L2A) and Planetary Computer (Landsat Collection 2 Level-2) STAC searches inside the site's season window, one query per year | `sites/<id>/scenes.json`: per year, the candidate same-day scene groups ranked by scene cloud cover and window coverage, per archive |
 | `frames` | `scenes.json`; the scenes' cloud-optimized GeoTIFFs, windowed onto the site grid (10 m Sentinel-2, 30 m Landsat) | `sites/<id>/frames/<year>.webp` (true colour, 1024 px), `<year>-swir.webp` (SWIR, 512 px), `frames.json` (sensor, scene ids, date, data and clear fractions, flags, gaps), and the chip cache under the data root |
-| `export` | every `sites/<id>/*.json` side-car and the files they point at | `sites/<id>/manifest.json` with bytes and sha256 per file, `catalog.json` |
-| `validate` | the exported tree | a pass, or a list of every missing or drifted file and every year without a frame or a gap reason |
+| `masks` | `frames.json`, the chip cache, `polygons.geojson`, the exported models under `RAJO_MODELS_ROOT` (optional: a missing model skips its method and records why) | `sites/<id>/masks/<year>-<method>.png` (1-bit, 30 m grid) and `masks.json`: per year and method the area inside the reference envelope (polygons dilated by 1 km), the valid fraction, flags such as `cross_sensor` |
+| `series` | `masks.json`, the chip cache, the optional `dense.json` | `sites/<id>/series.json`: the mined-area series per method, sensor and validity per year, envelope index means, CUSUM and PELT change points with segments, the harmonic breaks of the dense series, the gaps |
+| `dense` | `site.json`, `polygons.geojson`; Earth Search for every Sentinel-2 date since 2017 | `sites/<id>/dense.json`: the envelope mean of BSI (and NDVI, MNDWI) per clear date at 60 m, rejected dates with the reason; resumable |
+| `export` | every `sites/<id>/*.json` side-car and the files they point at | `sites/<id>/manifest.json` with bytes and sha256 per file, the frame gaps, `catalog.json` |
+| `validate` | the exported tree | a pass, or a list of every missing or drifted file, every year without a frame or a gap reason, and every series whose shape disagrees with the frames |
 
-The mask, series and elevation stages are added as their units land; the orchestrator's stage list names
-only what exists.
+The elevation stage is added with the relief lane; the orchestrator's stage list names only what exists.
 
 ## Sandbox versus release
 
 Without `--release` everything goes to `build/local` (or `--output DIR`). With `--release` the output is
-`data/derived`, the committed evidence; the orchestrator accepts `--release` only for `all`, `export` and
-`validate`, because a single stage into the canonical tree is how a partial bake happens. The `validate`
-stage refuses a tree with more than one engine version.
+`data/derived`, the committed evidence; the orchestrator accepts `--release` for `all`, `export`,
+`validate` and the derived stages (`masks`, `series`, `dense`, which only add side-cars on top of
+complete frames and are resumable), because a single frames stage into the canonical tree is how a
+partial bake happens. The `validate` stage refuses a tree with more than one engine version.
+
+The derived stages need the chip cache of the machine that baked the frames (`RAJO_DATA_ROOT/chips`);
+on another machine a year without its chip is recorded as skipped, never silently averaged.
 
 Text artifacts (JSON, GeoJSON) are written with LF line endings on every platform and hashed byte for
 byte; the artifact guard (`scripts/check_artifacts.py`) refuses a CR byte in a text artifact, because a

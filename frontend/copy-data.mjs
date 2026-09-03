@@ -47,6 +47,9 @@ if (existsSync(models)) {
   console.log(`[copy-data] ${nModels} model file(s) -> public/models`);
 }
 
+// (the MapLibre worker is bundled by Vite and registered with setWorkerUrl in src/map/MapView.tsx)
+rmSync(join(PUB, 'assets'), { recursive: true, force: true });
+
 // the onnxruntime-web runtime: the WASM binaries and their loaders, served from /ort/ (ort.env.wasm.wasmPaths)
 const ortDist = join(HERE, 'node_modules', 'onnxruntime-web', 'dist');
 const pubOrt = join(PUB, 'ort');

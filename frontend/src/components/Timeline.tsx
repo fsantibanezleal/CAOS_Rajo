@@ -40,6 +40,8 @@ export function Timeline({ manifest, onFrame }: TimelineProps) {
   const setPlaying = useTimeline((s) => s.setPlaying);
   const setMode = useTimeline((s) => s.setMode);
   const setOpacity = useTimeline((s) => s.setOpacity);
+  const showSeries = useTimeline((s) => s.showSeries);
+  const setShowSeries = useTimeline((s) => s.setShowSeries);
   const barRef = useRef<HTMLDivElement | null>(null);
 
   // land on the newest frame when a site arrives
@@ -170,6 +172,18 @@ export function Timeline({ manifest, onFrame }: TimelineProps) {
         </div>
 
         <div className="tl-right">
+          {manifest.series && (
+            <button
+              type="button"
+              className={`chip series-btn${showSeries ? ' on' : ''}`}
+              onClick={() => setShowSeries(!showSeries)}
+              aria-pressed={showSeries}
+              data-testid="series-btn"
+              title={t('timeline.seriesTitle')}
+            >
+              {t('timeline.series')}
+            </button>
+          )}
           <div className="seg" role="group" aria-label={t('timeline.mode')}>
             <button type="button" className={`chip${mode === 'tc' ? ' on' : ''}`} onClick={() => setMode('tc')} data-testid="mode-tc">
               {t('timeline.trueColour')}

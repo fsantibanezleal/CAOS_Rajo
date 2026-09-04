@@ -6,6 +6,26 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.001] - 2026-09-03
+
+Fixes from the first live run of 0.02.000.
+
+### Fixed
+
+- Deploy: the PowerShell twin runs the tar-over-ssh ship in Git's own bash with MSYS paths, pipefail
+  and `--no-same-owner` (a bare `bash` is the WSL launcher on a machine with WSL, where the build
+  directory and the key do not exist; the first two ship attempts failed before the swap).
+- nginx: the Data page route `/data` and `/data/` serve the app shell through exact locations (the
+  artifact rule had answered 404 after nginx redirected to the directory); `/svg/` answers 404 on a
+  missing diagram; both deploy twins load every client-side route directly and assert 200 as
+  text/html.
+- The display version is injected by vite from the repository's VERSION file (the footer, the About
+  page and the citation printed the previous version); the repository guard refuses a version literal
+  in `lib/version.ts`.
+- The time-lapse scrubber keeps a 260 px minimum; the frame count and the validity readout give way on
+  narrower bars; the fit gate measures the scrubber on a site with frames.
+- The frames range uses a locale key for its connector (an English "to" sat in the Spanish UI).
+
 ## [0.02.000] - 2026-09-03
 
 The four lanes on the thirty sites, deployed at rajo.fasl-work.com.

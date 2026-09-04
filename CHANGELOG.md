@@ -47,6 +47,14 @@ The four lanes on the thirty sites, deployed at rajo.fasl-work.com.
   docs/data/01_sources.md list the production tables and disclosures as a source group.
 - Atlas: copper mine production by country (USGS Mineral Commodity Summaries 2026, 2024 and 2025
   estimated, reserves) next to Cochilco's reported 2025 total for Chile and the catalog's site counts.
+- Held-out benchmark shipped with the models and rendered on the Methods page (validation, test and
+  catalog tiles; thresholds chosen on validation, rf 0.7 and unet 0.5); the U-Net masks baked on the
+  Sentinel-2 years and the forest masks rebaked at the chosen threshold for all thirty sites.
+- Dense walks carry a status (partial while checkpointing, complete after the last date); the series
+  stage folds complete walks only and the build overlay never ships the intermediate file.
+- Architecture modal: the container declares its tab and state, so a tab switch never shows the
+  previous diagram for a frame; the deploy's nginx site includes the MIME table and answers 404 on
+  missing artifacts, and both deploy twins assert the live content types.
 - Parallel frame workers on disjoint site lists into one sandbox root, and the harvest that moves
   complete sites into the canonical tree and runs export and validate.
 - Signal lane, offline: the masks stage (one mask per baked frame and method on the 30 m grid, scored

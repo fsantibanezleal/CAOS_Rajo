@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "udachnaya",
  "site": {
   "id": "udachnaya",
@@ -1158,7 +1158,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1212,7 +1213,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1266,7 +1268,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -1320,7 +1323,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -1374,7 +1378,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -1428,7 +1433,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -1482,7 +1488,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -1536,7 +1543,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -1590,7 +1598,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -1644,7 +1653,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -1790,34 +1800,64 @@
     10.4031
    ],
    "rf": [
-    23.9463,
-    20.7639,
+    17.2323,
+    15.6933,
     null,
-    16.1334,
-    29.709,
+    9.8667,
+    18.7884,
     null,
     null,
-    28.2987,
-    28.2447,
-    27.0198,
-    18.171,
+    19.4976,
+    21.1761,
+    21.6018,
+    11.5695,
     null,
-    24.5862,
-    27.1701,
-    28.0026,
-    25.6914,
-    25.1388,
-    21.0636,
-    30.258,
-    35.1414,
-    31.4379,
-    29.3697,
-    31.2462,
-    29.7063,
-    32.4504,
-    31.1238,
-    33.1641,
-    32.6916
+    17.7354,
+    19.7019,
+    12.7017,
+    14.8716,
+    17.919,
+    12.7053,
+    22.851,
+    22.4037,
+    16.7013,
+    14.4414,
+    16.0047,
+    16.1289,
+    16.1343,
+    14.0868,
+    14.8572,
+    14.2281
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    37.0098,
+    42.8589,
+    40.1409,
+    39.8826,
+    37.278,
+    39.5883,
+    40.9878,
+    39.2931,
+    44.3259,
+    39.9447
    ]
   },
   "index_mean": {
@@ -1959,44 +1999,59 @@
     ],
     "n": 24,
     "pelt": {
-     "breaks": [
-      2017
-     ],
+     "breaks": [],
      "segments": [
       {
        "start": 1999,
-       "end": 2016,
-       "mean": 24.5671,
-       "slope": 0.1302
-      },
-      {
-       "start": 2017,
        "end": 2026,
-       "mean": 31.6589,
-       "slope": 0.086
+       "mean": 16.6207,
+       "slope": -0.0654
       }
      ],
-     "penalty": 140.897092,
-     "sigma": 3.844234,
+     "penalty": 87.702987,
+     "sigma": 3.032955,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 1.922117,
-     "h": 15.376934,
-     "sigma": 3.844234,
-     "target": -0.5526
+     "k": 1.516477,
+     "h": 12.131819,
+     "sigma": 3.032955,
+     "target": 0.1242
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 40.131,
+       "slope": 0.2307
+      }
+     ],
+     "penalty": 91.864818,
+     "sigma": 3.646751,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 1.823376,
+     "h": 14.587005,
+     "sigma": 3.646751,
+     "target": -0.2583
     }
    }
   },
   "change_points": [
-   {
-    "year": 2017,
-    "method": "pelt",
-    "series": "rf",
-    "score": 140.897092
-   },
    {
     "year": 2018,
     "method": "pelt",
@@ -2432,8 +2487,8 @@
   {
    "path": "sites/udachnaya/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 3012,
-   "sha256": "4613688232fdb295f3084820563f02eb3d7c8c1b31b447ad8d0116e1001f614d",
+   "bytes": 2468,
+   "sha256": "c78f1de1d76af88de4a1578468cd74514dbe6a4a73c971759202ed4737e909d2",
    "year": 1999,
    "method": "rf"
   },
@@ -2448,8 +2503,8 @@
   {
    "path": "sites/udachnaya/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 3262,
-   "sha256": "57aa326163a693311b09ca277570cbd8ab420debd02c91144c33fb25f2249e58",
+   "bytes": 2812,
+   "sha256": "c0ce293e7949ca84bd7a7b68179e42e7f80d156375670ef2d5644cdcbe1845af",
    "year": 2000,
    "method": "rf"
   },
@@ -2464,8 +2519,8 @@
   {
    "path": "sites/udachnaya/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 2783,
-   "sha256": "fbab5b28622d4498299df3703f7a966fd984c9d7a72d89feac968ea7372777d6",
+   "bytes": 2329,
+   "sha256": "57ada5ce61002e6994aa271cf27a7de590bf6b449422ae2dafe9f8f5a6236259",
    "year": 2001,
    "method": "rf"
   },
@@ -2480,8 +2535,8 @@
   {
    "path": "sites/udachnaya/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 2788,
-   "sha256": "c73fe991b52cc61414062bd2900d0d9a7d49e4801eba2d136f94714a917af49f",
+   "bytes": 2020,
+   "sha256": "1598909298d2a7b5e258b0ae234f5a2be40b47cd4cbc6364d17a217242bc619c",
    "year": 2002,
    "method": "rf"
   },
@@ -2496,8 +2551,8 @@
   {
    "path": "sites/udachnaya/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 3880,
-   "sha256": "51284439ab975872c64d90ad5e1eac89ae73ec895201ac44c07058fa07268e38",
+   "bytes": 2339,
+   "sha256": "52a0008c98a8003e4a82709c2647d35d0282dc9425aaa6a8ad952ff58941d9ce",
    "year": 2003,
    "method": "rf"
   },
@@ -2512,8 +2567,8 @@
   {
    "path": "sites/udachnaya/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 3377,
-   "sha256": "762731bf406231efd0250d36f26b8df9ca9c05e16a6a035ffa390dfdf5b557b0",
+   "bytes": 2650,
+   "sha256": "5cba6689eff66df94e0b0897a6fa1acf01722fb95d236a282c2482eadfe50391",
    "year": 2004,
    "method": "rf"
   },
@@ -2528,8 +2583,8 @@
   {
    "path": "sites/udachnaya/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 2072,
-   "sha256": "4df14ca85353d944f5f5d49db213864a88e1c4d44d8665ee547e1237ad2ae99d",
+   "bytes": 1632,
+   "sha256": "d3de7399f55242f589ab95335ffbd2269dd8ae564b1f0bae570a7788d9d71873",
    "year": 2005,
    "method": "rf"
   },
@@ -2544,8 +2599,8 @@
   {
    "path": "sites/udachnaya/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 4178,
-   "sha256": "062f27a9efe71389f5fbeb1cd8ad2baaab8fef92b687a4ef037043a44dda41b4",
+   "bytes": 2970,
+   "sha256": "dcc2ae16d732bdfa2c15bf71956c5ccd05cea44d91239d49fc92aed6cc509297",
    "year": 2006,
    "method": "rf"
   },
@@ -2560,8 +2615,8 @@
   {
    "path": "sites/udachnaya/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 2828,
-   "sha256": "f118f18b83fdafa17d1a44477c1a3c737f45e281597473f072df5c302b556306",
+   "bytes": 2441,
+   "sha256": "59b1c1cf3828c82eeb3c6735ee240086eebdbb5cff826e8605132da5ce3cc5c8",
    "year": 2007,
    "method": "rf"
   },
@@ -2576,8 +2631,8 @@
   {
    "path": "sites/udachnaya/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 3746,
-   "sha256": "319421f1bdb746086c64823046b83e2775cfc177807522e9fe1f7c75ea35f1a3",
+   "bytes": 2872,
+   "sha256": "890009152ae6702a88257b619a4dc848519884890ec2e03b0548b0b0b109f103",
    "year": 2008,
    "method": "rf"
   },
@@ -2592,8 +2647,8 @@
   {
    "path": "sites/udachnaya/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 3525,
-   "sha256": "b3256e635b52f397458e6aca956a05c8a81915574cb4f62d93c9d8c6dd457b4d",
+   "bytes": 2376,
+   "sha256": "815be2aebae6f6e5dba531180da96933b8cc30b902273434e087d9399a652af2",
    "year": 2009,
    "method": "rf"
   },
@@ -2608,8 +2663,8 @@
   {
    "path": "sites/udachnaya/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 2483,
-   "sha256": "cce993ce333ef70c1223012ff665b99ad8a4e0acf8505216ef7cbbade1096b03",
+   "bytes": 1709,
+   "sha256": "4d562a4e73ac3429957fc57dbcaf261bc791a2075e3996068fa1d19ee4fba469",
    "year": 2010,
    "method": "rf"
   },
@@ -2624,8 +2679,8 @@
   {
    "path": "sites/udachnaya/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 2988,
-   "sha256": "baa8a94aa89165e5e841116d686d42e2ccabc8054798a3b3abeb67eb5a9f350c",
+   "bytes": 2378,
+   "sha256": "2effdcfff3507ea2c9d08cf713c748ed0f7c8c61e8c00cbc3e3828bdeb206d84",
    "year": 2011,
    "method": "rf"
   },
@@ -2640,8 +2695,8 @@
   {
    "path": "sites/udachnaya/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 2938,
-   "sha256": "34cb47cd769c10629b5c7ab6b9b0249eeea552e4f406a428e3ec54c53df5aaf6",
+   "bytes": 2274,
+   "sha256": "b37ed848858903e4149c4dfd59f8686d3912e094bb6963d8868d74b28ec1e62b",
    "year": 2012,
    "method": "rf"
   },
@@ -2656,8 +2711,8 @@
   {
    "path": "sites/udachnaya/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 3139,
-   "sha256": "328adba757fff1f0b424358fdd880508daf8cc6c7f7261611dd2e7685409c69e",
+   "bytes": 2336,
+   "sha256": "b3e9806959b31dc1106d4169c8940829b180f35b3d2bd22dd15518d766dbe197",
    "year": 2013,
    "method": "rf"
   },
@@ -2672,8 +2727,8 @@
   {
    "path": "sites/udachnaya/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 2990,
-   "sha256": "88d1736da18149ae90907f3edb8f2e3159893dab0a4a148312563d3d8599607a",
+   "bytes": 2250,
+   "sha256": "d70a3485314ac2564266d166ff4a61f2d5952c2586d1c7356e6d78d2a6271553",
    "year": 2014,
    "method": "rf"
   },
@@ -2688,8 +2743,8 @@
   {
    "path": "sites/udachnaya/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 3520,
-   "sha256": "8b31832ba7f4d7f052252642ed5080b69e888a0cce8a1d6dd00b679a7283ae83",
+   "bytes": 2710,
+   "sha256": "4a5fbed47f7c05c13bccad5eb44afe50ba80d09bbd385f3a6786d3065c114dd1",
    "year": 2015,
    "method": "rf"
   },
@@ -2704,8 +2759,8 @@
   {
    "path": "sites/udachnaya/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 3113,
-   "sha256": "a5df4256273025971aa2e67cdf80e43976cc24e9da90dc63d8f533f11adae341",
+   "bytes": 2229,
+   "sha256": "60b1e9da67fe5d81ed532a09be19f31319cee31b204c49b3686e6d0fc0ae6894",
    "year": 2016,
    "method": "rf"
   },
@@ -2720,10 +2775,18 @@
   {
    "path": "sites/udachnaya/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 3074,
-   "sha256": "5d48646b1331fa870415e0a6639ba315ca6fe19821d4a2ac177b71ef7d9c0f2a",
+   "bytes": 2774,
+   "sha256": "28adb4342d08b47471b1331c7b34f71be26d227fd2425f61a9d9b7275ead1e08",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 2890,
+   "sha256": "ad8b5e442905b1554446afa031396b38e51fac47af73e97464e00497c0cc5a87",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2018-otsu.png",
@@ -2736,10 +2799,18 @@
   {
    "path": "sites/udachnaya/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 3600,
-   "sha256": "bda04bd375e5e75b99bfab4c6b489c1a61feed80ed0079b3197e49c3671adc97",
+   "bytes": 3260,
+   "sha256": "bc6ea8d3af1aaba9979690748cd785eccf24caf6b8551a1917220a466e0c78f3",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2514,
+   "sha256": "59e5e6f2ffb71bc630ce50abe77bc292b7137a9a7e7d03eabad331d2f281c650",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2019-otsu.png",
@@ -2752,10 +2823,18 @@
   {
    "path": "sites/udachnaya/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 3363,
-   "sha256": "54d33319d3c1875446000b20f3fbdf052d82e18bfc60b5b7947ad3ba401e669b",
+   "bytes": 2458,
+   "sha256": "d4b73460668d3742db53817ae99f91c6c1f160d5f6f4bec81d3dc3de2629281c",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 2564,
+   "sha256": "8054603930c612e221b58b2d2a509dc9ee8855c60f623f845051ec94073de0ac",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2020-otsu.png",
@@ -2768,10 +2847,18 @@
   {
    "path": "sites/udachnaya/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 3635,
-   "sha256": "91cdda268ea112d646f8f8def4749eb5af74ade85dfc7fd7833516d21fdeeb19",
+   "bytes": 2344,
+   "sha256": "06b0219747010d4476052a65d73224000a1be9b89ff93358be2d8a2c46b024f7",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 2501,
+   "sha256": "c13c4e54d41465d26d6d11358b07ae595cd235c8bf094afdea79dbbd6c88c16b",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2021-otsu.png",
@@ -2784,10 +2871,18 @@
   {
    "path": "sites/udachnaya/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 3541,
-   "sha256": "95034b630c96363e07ea2b36608bdeec571567040833e7093c934a0013fbc438",
+   "bytes": 2396,
+   "sha256": "84f0d747719f8aaecc5fc8a638c18fe05d19c2588bef364ba03d865561a9cd39",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 2352,
+   "sha256": "392d3bcd750313af3f111dadaa1a3d4f6a2679fd27d86571728b47ac1e226151",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2022-otsu.png",
@@ -2800,10 +2895,18 @@
   {
    "path": "sites/udachnaya/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 3470,
-   "sha256": "cbcb948c5373b5e4c0478c734a92af340ec15666321a48523f1095f6d0e1a0b5",
+   "bytes": 2265,
+   "sha256": "2666a57f2467ffda8b2117cdc43a35c6a13c11018f61e7b2851b6c0daeaea9ee",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2618,
+   "sha256": "6a7451799aad16759b6ab1fb33eea18d6f03281a5c02cc76be31e91b4f826a3a",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2023-otsu.png",
@@ -2816,10 +2919,18 @@
   {
    "path": "sites/udachnaya/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 3677,
-   "sha256": "240cdca90e93a228747bafebb29bdf47827f8072ade63755332e0d11590d50d5",
+   "bytes": 2389,
+   "sha256": "520d1036a3dfee532574a837430a16ff60fc3dffa6f5ebec7a300b73a8e57e22",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2519,
+   "sha256": "d9862abac699bedce9bb804a70ec8c69aed545a0bc38e06f126ad6e7820bf163",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2024-otsu.png",
@@ -2832,10 +2943,18 @@
   {
    "path": "sites/udachnaya/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 3900,
-   "sha256": "f74a1b3848186ea3b6f874446ccafcd436767a9ced4cefd84a12d9150bdaaeec",
+   "bytes": 2281,
+   "sha256": "a7fcee37928ea6d040cfe628caebfa20c78ec17e6875028a9d73d0b4001a153e",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 2501,
+   "sha256": "d8e0fb7a96e09db57b330ee29c10a5d653859758dfc3eea6adfd96a4c973f953",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2025-otsu.png",
@@ -2848,10 +2967,18 @@
   {
    "path": "sites/udachnaya/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 3913,
-   "sha256": "4e6719605985b27603510986779d2874b3796f6a00fcd457200e9fad29c7b427",
+   "bytes": 2380,
+   "sha256": "1204b6160177087eb6e34bdf7ead7802e1a4831bfa44e061dbef200d6e8edcc8",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 2865,
+   "sha256": "5fa9afdf191e83ba73ac2eb3ed9ad4a4bc99505ad737a644b48feddcdf5ae7b1",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/masks/2026-otsu.png",
@@ -2864,10 +2991,18 @@
   {
    "path": "sites/udachnaya/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 4127,
-   "sha256": "947efbdc4b64a7d1c42b09fdf51cbd52b3e0439e447115cdb4cfe021954d82bc",
+   "bytes": 2440,
+   "sha256": "88610562e05627723e5c7cd22c9fb7fc3b4c2d5763c3865687c6d68bc89362df",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/udachnaya/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 2576,
+   "sha256": "98dbfa748f80e67601832b8b7f51cde494c73cc8d9ceb49155828a3989386bfe",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/udachnaya/polygons.geojson",

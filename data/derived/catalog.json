@@ -1,6 +1,6 @@
 {
  "schema": "rajo.catalog/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "n_sites": 30,
  "sites": [
   {

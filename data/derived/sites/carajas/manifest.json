@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "carajas",
  "site": {
   "id": "carajas",
@@ -1905,7 +1905,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1959,7 +1960,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2013,7 +2015,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2067,7 +2070,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2121,7 +2125,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2175,7 +2180,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2229,7 +2235,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2283,7 +2290,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2337,7 +2345,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2391,7 +2400,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2578,48 +2588,92 @@
     7.7472
    ],
    "rf": [
-    2.592,
-    10.6722,
-    12.7836,
-    8.8821,
-    9.8325,
-    9.5031,
-    13.7376,
-    8.685,
-    6.939,
-    11.0565,
-    10.8351,
-    11.8755,
-    15.5637,
-    12.0015,
-    12.9087,
-    14.517,
-    13.3983,
-    18.5598,
-    16.7319,
-    18.936,
-    22.4613,
-    22.6764,
-    18.0522,
-    26.7795,
-    24.7536,
-    30.1221,
-    27.3798,
-    27.7263,
-    33.1839,
-    25.2873,
-    28.89,
-    28.1457,
-    47.0673,
-    32.7681,
-    36.4176,
-    33.8256,
-    38.7486,
-    37.7127,
-    38.2734,
-    37.9188,
-    40.8969,
-    40.3749
+    0.6804,
+    0.1872,
+    0.4464,
+    0.2997,
+    0.5463,
+    0.5616,
+    0.0288,
+    0.1521,
+    0.1143,
+    0.3762,
+    0.9504,
+    0.7983,
+    1.3077,
+    0.7452,
+    1.0242,
+    0.8154,
+    1.2942,
+    2.4498,
+    2.0781,
+    2.0466,
+    2.367,
+    3.1509,
+    1.4895,
+    2.4372,
+    2.2122,
+    2.5083,
+    1.0179,
+    3.0825,
+    4.1373,
+    1.4967,
+    2.0097,
+    1.6623,
+    12.3282,
+    14.6871,
+    15.3153,
+    12.0078,
+    16.056,
+    16.2774,
+    15.6375,
+    14.7321,
+    15.6213,
+    16.6158
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    38.817,
+    40.8231,
+    44.9208,
+    42.4359,
+    48.1959,
+    47.3472,
+    50.4819,
+    50.0418,
+    50.4954,
+    48.3957
    ]
   },
   "index_mean": {
@@ -2826,46 +2880,86 @@
     "pelt": {
      "breaks": [
       2002,
-      2008,
-      2017
+      2017,
+      2021
      ],
      "segments": [
       {
        "start": 1985,
        "end": 2001,
-       "mean": 10.9284,
-       "slope": 0.3831
+       "mean": 0.6076,
+       "slope": 0.051
       },
       {
        "start": 2002,
-       "end": 2007,
-       "mean": 19.5696,
-       "slope": 0.5377
-      },
-      {
-       "start": 2008,
        "end": 2016,
-       "mean": 28.0298,
-       "slope": 0.2335
+       "mean": 2.2764,
+       "slope": -0.0095
       },
       {
        "start": 2017,
+       "end": 2020,
+       "mean": 13.5846,
+       "slope": -0.0333
+      },
+      {
+       "start": 2021,
        "end": 2026,
-       "mean": 38.4004,
-       "slope": 0.0999
+       "mean": 15.8233,
+       "slope": -0.0021
       }
      ],
-     "penalty": 216.621902,
-     "sigma": 4.395316,
+     "penalty": 7.115474,
+     "sigma": 0.796601,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2017,
+      2021
+     ],
+     "k": 0.3983,
+     "h": 3.186404,
+     "sigma": 0.796601,
+     "target": 0.2466
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2021
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2020,
+       "mean": 41.7492,
+       "slope": 1.4954
+      },
+      {
+       "start": 2021,
+       "end": 2026,
+       "mean": 49.1596,
+       "slope": 0.2858
+      }
+     ],
+     "penalty": 98.989385,
+     "sigma": 3.785523,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 2.197658,
-     "h": 17.581264,
-     "sigma": 4.395316,
-     "target": 0.5607
+     "k": 1.892761,
+     "h": 15.14209,
+     "sigma": 3.785523,
+     "target": 0.4536
     }
    }
   },
@@ -2886,7 +2980,7 @@
     "year": 2002,
     "method": "pelt",
     "series": "rf",
-    "score": 216.621902
+    "score": 7.115474
    },
    {
     "year": 2008,
@@ -2895,22 +2989,40 @@
     "score": 29.520406
    },
    {
-    "year": 2008,
-    "method": "pelt",
+    "year": 2017,
+    "method": "cusum",
     "series": "rf",
-    "score": 216.621902
+    "score": 3.186404
    },
    {
     "year": 2017,
     "method": "pelt",
     "series": "rf",
-    "score": 216.621902
+    "score": 7.115474
    },
    {
     "year": 2018,
     "method": "pelt",
     "series": "otsu",
     "score": 29.520406
+   },
+   {
+    "year": 2021,
+    "method": "cusum",
+    "series": "rf",
+    "score": 3.186404
+   },
+   {
+    "year": 2021,
+    "method": "pelt",
+    "series": "rf",
+    "score": 7.115474
+   },
+   {
+    "year": 2021,
+    "method": "pelt",
+    "series": "unet",
+    "score": 98.989385
    }
   ],
   "gaps": {},
@@ -3664,8 +3776,8 @@
   {
    "path": "sites/carajas/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 2159,
-   "sha256": "695c4bf09cd77cf464a063783db21f6ea0c7d736a49632fb30982e52d617c187",
+   "bytes": 461,
+   "sha256": "278f694fc96c9b00235f5cd2eee5dc5780eb2c1bc7b7bcdd65d119216acb6120",
    "year": 1985,
    "method": "rf"
   },
@@ -3680,8 +3792,8 @@
   {
    "path": "sites/carajas/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 4369,
-   "sha256": "f6baded3e77b07f90145e4c3d023601825e650fc72685e9e52c16bdcd3d482a9",
+   "bytes": 392,
+   "sha256": "49a9b8ad4fcf627a6b8be307200c517b88c3b5f6ffc6b4874f1ebb8d158b6e19",
    "year": 1986,
    "method": "rf"
   },
@@ -3696,8 +3808,8 @@
   {
    "path": "sites/carajas/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 5220,
-   "sha256": "9a7b8e3a3dd57ebaa0451d57d297136e2dffa5be8a5169590125596e02134801",
+   "bytes": 480,
+   "sha256": "8ae7c4110181ab74535188494e838c3503732fa7dfdb21bc892c636456ab58d6",
    "year": 1987,
    "method": "rf"
   },
@@ -3712,8 +3824,8 @@
   {
    "path": "sites/carajas/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 3670,
-   "sha256": "be9a647faa4cc6255603cfbf5e0085bb17528234e74f6f67b9b38e1bf6d88bc4",
+   "bytes": 463,
+   "sha256": "feb3c26b509208728e90b131cbdeed664932234ae95ca4322c19f405f8aea3c7",
    "year": 1988,
    "method": "rf"
   },
@@ -3728,8 +3840,8 @@
   {
    "path": "sites/carajas/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 4971,
-   "sha256": "6a803c3479be5decedfbb2c10254f58cb11744cb1831671034e126d0d4c12924",
+   "bytes": 641,
+   "sha256": "43b4421c20d0b39bba1c56d65c57f609a3c908184411f632ea0ae1852db02933",
    "year": 1989,
    "method": "rf"
   },
@@ -3744,8 +3856,8 @@
   {
    "path": "sites/carajas/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 3808,
-   "sha256": "7f4f0d72f607b5600bf9d899620a5164f2a315a088fbb94f3a465e628e265bfc",
+   "bytes": 682,
+   "sha256": "5faff89947fc9ed42090a85194332af450cb2fba611095701ce0941c8ba8b0da",
    "year": 1990,
    "method": "rf"
   },
@@ -3760,8 +3872,8 @@
   {
    "path": "sites/carajas/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 7038,
-   "sha256": "07c8adc8d362287185861a1752e5f833c35cfe9743067908a9b4d3128e20b8a9",
+   "bytes": 191,
+   "sha256": "d3ac9da4400a1082654922c404adfe1db3bbddab9dd3eabb1466a9b5b07179f9",
    "year": 1991,
    "method": "rf"
   },
@@ -3776,8 +3888,8 @@
   {
    "path": "sites/carajas/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 4461,
-   "sha256": "f4eeac29d60f9a2cec7d65b0cf83c7e8354c3b47580116b7239776deff6aeea2",
+   "bytes": 371,
+   "sha256": "0a5c2fee540859fd9496ad2a77646872a1675755ffd3267889f1f4da4fc232a2",
    "year": 1992,
    "method": "rf"
   },
@@ -3792,8 +3904,8 @@
   {
    "path": "sites/carajas/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 3261,
-   "sha256": "ab2b8a34eebec1b2d3d014ac84ca4eb84eb74a85a52383621b8772a00b766855",
+   "bytes": 454,
+   "sha256": "a915ee308d52bf533ba37ad0992ea67665ef148b5288998454fdf5c2f42f69ba",
    "year": 1993,
    "method": "rf"
   },
@@ -3808,8 +3920,8 @@
   {
    "path": "sites/carajas/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 5379,
-   "sha256": "0a2d4dbbe8deccf8e4472022684851521ca53f8ee239c944438422565731ba4c",
+   "bytes": 811,
+   "sha256": "80fb2d85f6d7d5cf9ad217d3b321ac5744e9f6bf827256ef1b65df2e6fd58db1",
    "year": 1994,
    "method": "rf"
   },
@@ -3824,8 +3936,8 @@
   {
    "path": "sites/carajas/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 4383,
-   "sha256": "b9eac35cd0b3ecbaf48d1ed731185482e3347f9e7b2934290da0af562fc0d17c",
+   "bytes": 1064,
+   "sha256": "db60cd094f608f58406e9a2218195e39e7d9a7a43965839b5ed46c5acf832c7c",
    "year": 1995,
    "method": "rf"
   },
@@ -3840,8 +3952,8 @@
   {
    "path": "sites/carajas/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 5355,
-   "sha256": "4d929d9c3df730068041a2d59ce98b9aa5e4f054653795b92f622d24c041a223",
+   "bytes": 989,
+   "sha256": "0a6e8401358086eb3e922b7eea6b5e041c0e4c6285f0916ab48bafef75c1c2a1",
    "year": 1996,
    "method": "rf"
   },
@@ -3856,8 +3968,8 @@
   {
    "path": "sites/carajas/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 6346,
-   "sha256": "726b96feb42d4cb8d6deddc8ec6136035d8e3206621a7c10bc8221e2d22495ff",
+   "bytes": 838,
+   "sha256": "1b15595d83ad3747c6dd86d57abba759d9ee29c4d193c0ff73373c0460ce17fa",
    "year": 1997,
    "method": "rf"
   },
@@ -3872,8 +3984,8 @@
   {
    "path": "sites/carajas/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 5113,
-   "sha256": "42fac16cafd60c1e9d7720d50903e9af3b2792cfa6c4ba491a28baff2fa8c96c",
+   "bytes": 762,
+   "sha256": "a0e667a352ee4955a64192240eca2242bcd68d5cfed6d4cc316f7a676ccb4d01",
    "year": 1998,
    "method": "rf"
   },
@@ -3888,8 +4000,8 @@
   {
    "path": "sites/carajas/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 4495,
-   "sha256": "7a056c9a7a8f5de9e090e54d4260c362d39d7ee436445d189de984fa6e14235c",
+   "bytes": 901,
+   "sha256": "95f64573d3fa5c88ec3a3e43399d14007b07378b0b1c54cefc0db006f84a00ed",
    "year": 1999,
    "method": "rf"
   },
@@ -3904,8 +4016,8 @@
   {
    "path": "sites/carajas/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 5101,
-   "sha256": "f33157fa78dd5a06f20282519b8f1250e35423b7e549269d4b14f820bca77f50",
+   "bytes": 926,
+   "sha256": "f864599541d0bc118d979e77c349dd70c20e17f31edd71e8d46fce1bfb7f31b2",
    "year": 2000,
    "method": "rf"
   },
@@ -3920,8 +4032,8 @@
   {
    "path": "sites/carajas/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 4972,
-   "sha256": "2c68538db5afcc84bf7fd5794b1313e32dc7b29aa922af5b603f07e1fa54a3ef",
+   "bytes": 1159,
+   "sha256": "47c0ffb6498b9a34118d2fb46d547cc2435ccb6078a8ea8d50e5263e3f5b5369",
    "year": 2001,
    "method": "rf"
   },
@@ -3936,8 +4048,8 @@
   {
    "path": "sites/carajas/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 7254,
-   "sha256": "dab96c181d1abafe35963e0253d0c6e688046d6821cc8d4df0284ed51d3f33c8",
+   "bytes": 1431,
+   "sha256": "11a45ec3a9862fa782c20fad6de10d66a13442eeca01dbb768f5925e95741a0f",
    "year": 2002,
    "method": "rf"
   },
@@ -3952,8 +4064,8 @@
   {
    "path": "sites/carajas/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 5432,
-   "sha256": "0a5650a9b5af32f846df39fe3bcc2877768c1588d80dc777941d5369f14505f4",
+   "bytes": 1395,
+   "sha256": "4d35aae85a9f0b1132caf3a8cbb99071eb1ec65b0cf53bb9e23ba17dae83de30",
    "year": 2003,
    "method": "rf"
   },
@@ -3968,8 +4080,8 @@
   {
    "path": "sites/carajas/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 5796,
-   "sha256": "8afe3a27d0e6ad0f46e0ead80f2508bb30d97f9756233cc773e4e13cc619d3bb",
+   "bytes": 1268,
+   "sha256": "065bd04255df7a9548dd295a9402ed97e3449dd336dce3a70c3e0d56f205de96",
    "year": 2004,
    "method": "rf"
   },
@@ -3984,8 +4096,8 @@
   {
    "path": "sites/carajas/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 7455,
-   "sha256": "50de0ba537aeaf69d371e05632d5e39698c837ebff5d734dd0c45a4f038f7056",
+   "bytes": 1178,
+   "sha256": "18fa0f14fa7784501d3b4d55457a21f11628da2c8efcb03852a94f958870e7be",
    "year": 2005,
    "method": "rf"
   },
@@ -4000,8 +4112,8 @@
   {
    "path": "sites/carajas/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 6344,
-   "sha256": "3d1f6af95a6e641efc09c9a929b7d582eec4678b3c567a5618d9b8d4e7030c15",
+   "bytes": 1385,
+   "sha256": "447b9aabcf0adbecbbb9c46b638b91262294ba8b34a8217c58dccce2ec204b5d",
    "year": 2006,
    "method": "rf"
   },
@@ -4016,8 +4128,8 @@
   {
    "path": "sites/carajas/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 6358,
-   "sha256": "e39904e9b119b308d98a0cefd51312cb40d7c50ce1e9c7bfe8ef732b6e53653f",
+   "bytes": 1450,
+   "sha256": "4ce452dbcb211333c55db123721d1f5f40c8d049f7a17d0f6d71000c78996959",
    "year": 2007,
    "method": "rf"
   },
@@ -4032,8 +4144,8 @@
   {
    "path": "sites/carajas/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 8913,
-   "sha256": "c5f60d19bbe0109e14c6acd4c7c876681163f0f7d3c2eedf9fcfb3db24071302",
+   "bytes": 1374,
+   "sha256": "de974f8ff6da7b7a241e7c81a239ad3cb02d5304c3ef21572fbbc8d8c0a1b0f6",
    "year": 2008,
    "method": "rf"
   },
@@ -4048,8 +4160,8 @@
   {
    "path": "sites/carajas/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 6858,
-   "sha256": "44a96a5f1e499fa13ad6a19bd1b0a218de50a8e5e38e45c25213a98d4651fe30",
+   "bytes": 1392,
+   "sha256": "5cea043f51a9748fa0cbde59983143d88ab6676951c9e21e2886cab14a6244b5",
    "year": 2009,
    "method": "rf"
   },
@@ -4064,8 +4176,8 @@
   {
    "path": "sites/carajas/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 9737,
-   "sha256": "0dd267b80e51ea161d18c2ff7647b1aef534b2e2784081ca53b8f7a0b113b18b",
+   "bytes": 1475,
+   "sha256": "7bfd65d38bb01febec9fb2d379ac45ba404f7684158f0cbed01c6087cb28f3d3",
    "year": 2010,
    "method": "rf"
   },
@@ -4080,8 +4192,8 @@
   {
    "path": "sites/carajas/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 9074,
-   "sha256": "a6785ee966722452ffad546bd3234511d02a8f07fb9637031e482bd51cd8255c",
+   "bytes": 1067,
+   "sha256": "58b08bb7fe1c5cbf6d2843da7464466c03c44eec23943364b2c1a3c16ad816cc",
    "year": 2011,
    "method": "rf"
   },
@@ -4096,8 +4208,8 @@
   {
    "path": "sites/carajas/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 7119,
-   "sha256": "4cd7264a3acd0d814822d743ea569adb7e48162b4e8674280047f56e78cbe0a8",
+   "bytes": 1594,
+   "sha256": "6ce4bd1db20f945edc217657134122d97421eb8c48fdc03e31cd0c57689b6dd8",
    "year": 2012,
    "method": "rf"
   },
@@ -4112,8 +4224,8 @@
   {
    "path": "sites/carajas/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 7458,
-   "sha256": "be8eb8a4ee97bdb4d2fa6257acebf1eefeb42492ad8b607a8f0639b7afedfcea",
+   "bytes": 1657,
+   "sha256": "58096f427e90f2d6dc49826317aa365fd695d3ff6b1445c0ff4fc66669598cc7",
    "year": 2013,
    "method": "rf"
   },
@@ -4128,8 +4240,8 @@
   {
    "path": "sites/carajas/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 9473,
-   "sha256": "accadb3410f1350275847d42c29870cfeb9437a3c4cf1a99d884f47aaca21a8e",
+   "bytes": 1045,
+   "sha256": "996fcfa9e8b05e652c77c4a00246cb6a3b1cc2a78a2d3b93f26da2c1adec8eda",
    "year": 2014,
    "method": "rf"
   },
@@ -4144,8 +4256,8 @@
   {
    "path": "sites/carajas/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 7492,
-   "sha256": "14f53b5b2ee3f647660a11e75caca0778fe8a5fda00b4ccd1d963459b78e963f",
+   "bytes": 1149,
+   "sha256": "2bb662d06e1033d8bb9efe3f7932e8c7423683f58476b2abfc46c75c6be957c4",
    "year": 2015,
    "method": "rf"
   },
@@ -4160,8 +4272,8 @@
   {
    "path": "sites/carajas/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 7143,
-   "sha256": "662f5c6f7720ced8ff83143f078f89948430cd515379f347395640aa892d1a92",
+   "bytes": 959,
+   "sha256": "85bc144810b6277eac3c3d07e39597a62ed20f2b6792b1a317918cee095037b4",
    "year": 2016,
    "method": "rf"
   },
@@ -4176,10 +4288,18 @@
   {
    "path": "sites/carajas/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 11206,
-   "sha256": "4193e96368a88236e7e1cd6ba3598cd23cbfd34fa5187f206652ca701012eac0",
+   "bytes": 3078,
+   "sha256": "ac281042d129453039c01bb1d14b0970d4727bb2c3b55e72cd72efc828572329",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3145,
+   "sha256": "06869123fda5adcc0cfee6a6e46e688a29699e372bbb017b45815540d84ae1f0",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2018-otsu.png",
@@ -4192,10 +4312,18 @@
   {
    "path": "sites/carajas/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 7189,
-   "sha256": "a08d7dc7e214a954eaeb66890be5e9ce15c6d9328d6e3a6fdb2be74d392dd943",
+   "bytes": 3226,
+   "sha256": "753d206f8ed50b061bfb15dc8eb26daeabf0acc6ab279f5930f35ea3c9efa275",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 3786,
+   "sha256": "fc87411557766f47c62f717b44315d1182999583780b949711d192af2f7cc9c7",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2019-otsu.png",
@@ -4208,10 +4336,18 @@
   {
    "path": "sites/carajas/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 8186,
-   "sha256": "1d527a80999fb60f58c59e8635a2c7b44f3a99a11d19f5c61e45a6aa4885db2a",
+   "bytes": 3321,
+   "sha256": "c356dc69d8d20f27843e1f7d2e8d78f473fe38fe615dd220de705acce36b7885",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 4336,
+   "sha256": "df13c57ff25022d2f2819d8495087d70f8ddcaa52d645c079602f81e19b57b01",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2020-otsu.png",
@@ -4224,10 +4360,18 @@
   {
    "path": "sites/carajas/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 7327,
-   "sha256": "a4fc9ae9e81a8ee212a2444913edfbf684c3518d58918c148e6835c41a2d32c0",
+   "bytes": 3189,
+   "sha256": "a68982a5fe61f237d652a13adc221b52140294ec115a4937d7ff4fac4f2b2ec5",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 3889,
+   "sha256": "32bcae8bb4de39d7fe380e4a41b3d04f972504dbb214ee1b124de60a96802a6f",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2021-otsu.png",
@@ -4240,10 +4384,18 @@
   {
    "path": "sites/carajas/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 8150,
-   "sha256": "c68a4eeaa87f80f1f3908c0b5d94b4979b6705c91e053e2fc428e2dfad2f316f",
+   "bytes": 3541,
+   "sha256": "6e5fbfc3dacb97d528e98e5d3a0de88889f196d48f02fdfb05a3d3addae872c2",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 4440,
+   "sha256": "7af8570c53aa0fa85dbf73d0e8c9f47e6879696e66e973b61db9235409159eb8",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2022-otsu.png",
@@ -4256,10 +4408,18 @@
   {
    "path": "sites/carajas/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 8554,
-   "sha256": "779bbc1d77de78121d243f169f5151d368601973418519f2fda736cbebd76ffd",
+   "bytes": 3629,
+   "sha256": "9ae6d116dc6319fa6c5594b3a470ce81b494d4cd98cb78b5c10badffb59c5cb4",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 4335,
+   "sha256": "8189ee43c3fe02e88d5e5f274e8a75ab5144994e35bd78cb9edfee3e326d082a",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2023-otsu.png",
@@ -4272,10 +4432,18 @@
   {
    "path": "sites/carajas/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 8163,
-   "sha256": "551cfd658daeb0a7d6b2433548e307377d80607a20cfaf6413e84cc70c223e92",
+   "bytes": 3642,
+   "sha256": "54c1bf36dc6663d18c42fd05d51b5045db16620036c0fd21587e6f288c2ab0a6",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 4120,
+   "sha256": "106fdfa0c470920b315bc340af222f16cf39e5569eea4fea278e1c3f7d907ebd",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2024-otsu.png",
@@ -4288,10 +4456,18 @@
   {
    "path": "sites/carajas/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 7865,
-   "sha256": "99c21ee72e8692efbf35eaf93b79746a7c9088150b34cb29bdfd7981daad9dca",
+   "bytes": 3419,
+   "sha256": "f2443da4dccc02d1db09e4fb35ca5ad446a36a9bcddb6a7d36d9096be43c6558",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 3896,
+   "sha256": "6dde1cb2463e700df00678ec9cadaf2f9df65336ae78fe5f9f0a3141a6c49a34",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2025-otsu.png",
@@ -4304,10 +4480,18 @@
   {
    "path": "sites/carajas/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 9001,
-   "sha256": "d484fca763209a1ff002cdce45dd67073a96c5c6d89054ab75b6f627ce7bee09",
+   "bytes": 3754,
+   "sha256": "e52df85a4116053c26ea9b1389721303d7f4ca3b561c2653de9d5d3633658863",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 4108,
+   "sha256": "ba688a419ddf325fc71c87ab71d6ecf03fe03883756bdc6e6d34d12d7d82c867",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/masks/2026-otsu.png",
@@ -4320,10 +4504,18 @@
   {
    "path": "sites/carajas/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 8135,
-   "sha256": "12d5a914f0b52b0581f5c2b6c4edcecaff4e9d12566898b65cd381ab3725c5d9",
+   "bytes": 3722,
+   "sha256": "8160bb6aa0d258be46e873d9f082317f13dcd2959486be38d0e7a8af591f5187",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/carajas/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3803,
+   "sha256": "f9a102b76673ff5c1ab9cacb2c3b92e9ea3615f7e9368cbd58de94e86f003f0d",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/carajas/polygons.geojson",

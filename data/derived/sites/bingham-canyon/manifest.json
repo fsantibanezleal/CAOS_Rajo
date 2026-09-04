@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "bingham-canyon",
  "site": {
   "id": "bingham-canyon",
@@ -1897,7 +1897,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1951,7 +1952,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2005,7 +2007,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2059,7 +2062,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2113,7 +2117,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2167,7 +2172,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2221,7 +2227,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2275,7 +2282,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2329,7 +2337,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2383,7 +2392,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2570,48 +2580,92 @@
     34.2522
    ],
    "rf": [
-    61.722,
-    76.2849,
-    64.4823,
-    58.7637,
-    58.2048,
-    64.4031,
-    64.557,
-    63.4878,
-    75.0987,
-    60.4908,
-    60.7707,
-    71.4285,
-    68.5782,
-    70.5402,
-    48.7098,
-    64.422,
-    53.6643,
-    59.4495,
-    65.3337,
-    50.8761,
-    53.8353,
-    60.1056,
-    54.4104,
-    71.8641,
-    53.4267,
-    60.876,
-    47.7153,
-    61.8912,
-    44.1459,
-    50.0076,
-    54.0459,
-    57.1401,
-    54.279,
-    65.9169,
-    57.6009,
-    59.1588,
-    55.8261,
-    57.483,
-    54.5778,
-    61.6806,
-    59.8248,
-    59.8239
+    27.3915,
+    28.1853,
+    29.2419,
+    28.6929,
+    29.9214,
+    28.7424,
+    29.9187,
+    28.4967,
+    29.6883,
+    28.107,
+    29.0178,
+    31.1031,
+    33.6978,
+    32.7888,
+    31.1778,
+    33.2271,
+    32.3802,
+    29.9151,
+    33.2784,
+    31.4316,
+    29.7621,
+    32.8473,
+    31.68,
+    31.7754,
+    30.5586,
+    34.164,
+    27.8748,
+    34.3845,
+    24.9615,
+    33.3243,
+    32.0697,
+    34.6536,
+    26.991,
+    33.4692,
+    35.4141,
+    33.6492,
+    36.5022,
+    33.6735,
+    32.2902,
+    33.6267,
+    34.6914,
+    34.3548
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    40.0995,
+    50.3478,
+    52.65,
+    51.4035,
+    50.2569,
+    47.7504,
+    44.2089,
+    46.7478,
+    45.8739,
+    46.5147
    ]
   },
   "index_mean": {
@@ -2787,30 +2841,82 @@
     ],
     "n": 42,
     "pelt": {
-     "breaks": [],
+     "breaks": [
+      1996
+     ],
      "segments": [
       {
        "start": 1985,
+       "end": 1995,
+       "mean": 28.8549,
+       "slope": 0.0797
+      },
+      {
+       "start": 1996,
        "end": 2026,
-       "mean": 59.9263,
-       "slope": -0.2436
+       "mean": 32.3135,
+       "slope": 0.0749
       }
      ],
-     "penalty": 879.9551,
-     "sigma": 8.858683,
+     "penalty": 71.768165,
+     "sigma": 2.529909,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 4.429342,
-     "h": 35.434733,
-     "sigma": 8.858683,
-     "target": 0.2799
+     "k": 1.264954,
+     "h": 10.119635,
+     "sigma": 2.529909,
+     "target": 0.0954
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 47.5853,
+       "slope": -0.1647
+      }
+     ],
+     "penalty": 40.471054,
+     "sigma": 2.420493,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2018
+     ],
+     "k": 1.210246,
+     "h": 9.681971,
+     "sigma": 2.420493,
+     "target": -0.8739
     }
    }
   },
-  "change_points": [],
+  "change_points": [
+   {
+    "year": 1996,
+    "method": "pelt",
+    "series": "rf",
+    "score": 71.768165
+   },
+   {
+    "year": 2018,
+    "method": "cusum",
+    "series": "unet",
+    "score": 9.681971
+   }
+  ],
   "gaps": {},
   "dense": null
  },
@@ -3559,8 +3665,8 @@
   {
    "path": "sites/bingham-canyon/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 18858,
-   "sha256": "c0f3b87d185f3dbc9b9da452d94239f226c228fb5966f05afeffa56ddf487435",
+   "bytes": 3884,
+   "sha256": "63fa4fdca74454ce15b300ef28c7b57524b232666f7eb57f9906f0c8b7033439",
    "year": 1985,
    "method": "rf"
   },
@@ -3575,8 +3681,8 @@
   {
    "path": "sites/bingham-canyon/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 20626,
-   "sha256": "961d84572fdad6fee06aa134f0195229599cd0adb13a5bbe5188f5918aca8f20",
+   "bytes": 3751,
+   "sha256": "f8d8841cb49f97034cec73704e2fb19d7199bcba4ceea8cce9216c47d27397c5",
    "year": 1986,
    "method": "rf"
   },
@@ -3591,8 +3697,8 @@
   {
    "path": "sites/bingham-canyon/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 20456,
-   "sha256": "e9aacdabc136718769b1d04d24e4b10bc8549a56f95ade32a14caccacae78cf0",
+   "bytes": 3512,
+   "sha256": "c98df78a04b9c2a497151f4292b4e303d99a06fa906dbfb7c147f6168dd95dab",
    "year": 1987,
    "method": "rf"
   },
@@ -3607,8 +3713,8 @@
   {
    "path": "sites/bingham-canyon/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 18907,
-   "sha256": "168a5d507a755745858bae5a1c11286e67625e1e704d048074df44de2eb4c881",
+   "bytes": 3996,
+   "sha256": "9c3aa11b6cca5e7a799c77b182b9743ca292102b215b0c7d97029c63fb1e1549",
    "year": 1988,
    "method": "rf"
   },
@@ -3623,8 +3729,8 @@
   {
    "path": "sites/bingham-canyon/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 17819,
-   "sha256": "af4155c359276746fcad6f405a27274eb2c1eab34ae0a7acd6d34d65569567d9",
+   "bytes": 3769,
+   "sha256": "8f69a743bda2912c8e54f3dbf4cc735ef2070ed35dc899563bd885b46a19ce31",
    "year": 1989,
    "method": "rf"
   },
@@ -3639,8 +3745,8 @@
   {
    "path": "sites/bingham-canyon/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 18485,
-   "sha256": "4589a38f848121a89bbc357c4517aabfdcb89819737dd3f80598e6f9d948ed21",
+   "bytes": 3676,
+   "sha256": "81d9e6045a73ec99f2fd0c09078179f7871e6810c8771127d2459e7aae8426ae",
    "year": 1990,
    "method": "rf"
   },
@@ -3655,8 +3761,8 @@
   {
    "path": "sites/bingham-canyon/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 18671,
-   "sha256": "4ca1a47e449058443b1a052ae2752e65408b8939a3128b8cda36883a636ff6ea",
+   "bytes": 3844,
+   "sha256": "b16ed38644640985c202ae467ef1ef661bdb2fe6d4d8f9209c659dcc14c2ac26",
    "year": 1991,
    "method": "rf"
   },
@@ -3671,8 +3777,8 @@
   {
    "path": "sites/bingham-canyon/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 19952,
-   "sha256": "4c84f48ca1a448dc0357fa054c57fa6b325716f01a37ad744af58b439dc397d6",
+   "bytes": 3975,
+   "sha256": "1bb299b977818dabed787a0acc1b169c39d6c1c78f6565c27b783164f92a5e25",
    "year": 1992,
    "method": "rf"
   },
@@ -3687,8 +3793,8 @@
   {
    "path": "sites/bingham-canyon/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 21141,
-   "sha256": "0014dfc9fe74cf4674455b30e3c30ecc4e2872a52cbabf8636e4f2447d099e60",
+   "bytes": 4598,
+   "sha256": "2f6a965d1bbfe02a2f6fe73a6c92daf06459473178d80471f6e28abcb6e4c66a",
    "year": 1993,
    "method": "rf"
   },
@@ -3703,8 +3809,8 @@
   {
    "path": "sites/bingham-canyon/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 18854,
-   "sha256": "f38ff8a7d04d6e991864805a6996a9d79d69a919c07bad3208432142bdf195a5",
+   "bytes": 4350,
+   "sha256": "c982d79dac3a9b9c15eeb7452f34843e84cec84e95b0d7e6454b03af4c7a4f26",
    "year": 1994,
    "method": "rf"
   },
@@ -3719,8 +3825,8 @@
   {
    "path": "sites/bingham-canyon/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 17584,
-   "sha256": "4ee8e0f5d72baee0c3292b93e1dd7a11edb631283fb25d0f09f9520e4af0ef48",
+   "bytes": 4140,
+   "sha256": "eeb3c6adeb8879239062e0bc3d9ce0a1c9e00288f418a4cf911667fb800dba3d",
    "year": 1995,
    "method": "rf"
   },
@@ -3735,8 +3841,8 @@
   {
    "path": "sites/bingham-canyon/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 20105,
-   "sha256": "416b5ea73ca894cb683bbedf6bb3c8c7c30813b0493eae0b1ba2435f567815fd",
+   "bytes": 5846,
+   "sha256": "68377d019e9e0a0cfd8ab2fbac88a3049b686ecc1379336e2f4c33c92fe641fa",
    "year": 1996,
    "method": "rf"
   },
@@ -3751,8 +3857,8 @@
   {
    "path": "sites/bingham-canyon/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 18879,
-   "sha256": "5c86378ea6d2e548a28dd6ec2bb2da5aa7142c83d032dae8ea3d0594a123741a",
+   "bytes": 4356,
+   "sha256": "3cfca52703bbb4e2acc09fecf39bcfb10f210787afc32b6a7bee6e410e3ed247",
    "year": 1997,
    "method": "rf"
   },
@@ -3767,8 +3873,8 @@
   {
    "path": "sites/bingham-canyon/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 19030,
-   "sha256": "c3bbfae110e02c379934437222baa236481559cfecfa9301919ae8ec8d65cfaa",
+   "bytes": 5106,
+   "sha256": "3e15dfe5237d3c7f22481c4248a021b4b54c59522dd4924d7ae8e2626746ee04",
    "year": 1998,
    "method": "rf"
   },
@@ -3783,8 +3889,8 @@
   {
    "path": "sites/bingham-canyon/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 12833,
-   "sha256": "f4ec5eb1988c4621119e7dd3a0adf9e91d70c1fd05ca4eff66a0d182505532cd",
+   "bytes": 3537,
+   "sha256": "c19c7cd05264ec80163b7e036fde9b0b64dc4ce70b2fbab08077fb56e55647a6",
    "year": 1999,
    "method": "rf"
   },
@@ -3799,8 +3905,8 @@
   {
    "path": "sites/bingham-canyon/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 19487,
-   "sha256": "8cfca747308b575e409b7e609a130cd4486ff4d9f7fef29c619ed2fc4dd1b360",
+   "bytes": 4166,
+   "sha256": "aa23aa2a7b9da95b4f6044d46b10222f389114e06e0dcbe98a1c2ce93554e3ef",
    "year": 2000,
    "method": "rf"
   },
@@ -3815,8 +3921,8 @@
   {
    "path": "sites/bingham-canyon/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 13961,
-   "sha256": "9a08f58edcc3760d163353e34d015c3de3a402f1e9006f1213c89ceb06ad8213",
+   "bytes": 3665,
+   "sha256": "979582e8a79f5e88563e52e8cdc323a7b3c7c77e59bda5c7fd81f4e1b2eada0b",
    "year": 2001,
    "method": "rf"
   },
@@ -3831,8 +3937,8 @@
   {
    "path": "sites/bingham-canyon/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 18116,
-   "sha256": "64b365cca6ca03faa0295ca4e2596bf4c57e819dbcd6dc92a0bb617a480cf3ec",
+   "bytes": 4732,
+   "sha256": "cfb6b2c47db1105bd3460e6311d7a776df91521686874b61f495a31a831cd188",
    "year": 2002,
    "method": "rf"
   },
@@ -3847,8 +3953,8 @@
   {
    "path": "sites/bingham-canyon/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 21207,
-   "sha256": "6a39ef7db294cea19d799f2f163114b083596369018b45af85ddaeb794154b3c",
+   "bytes": 5597,
+   "sha256": "6007892c5728cac3c8e4e35453904a1928d5a82cb26c3000a8a7e86a2c360e4f",
    "year": 2003,
    "method": "rf"
   },
@@ -3863,8 +3969,8 @@
   {
    "path": "sites/bingham-canyon/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 13356,
-   "sha256": "b55f78d3ef4a796924da4ceef1dfe54cd8fd76f9ff15e3283163d84b2a8ad874",
+   "bytes": 4042,
+   "sha256": "83274a7a73fb5b55c22ccaa7fc135062376c6b9cd5ca47748877c1d8219c079e",
    "year": 2004,
    "method": "rf"
   },
@@ -3879,8 +3985,8 @@
   {
    "path": "sites/bingham-canyon/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 15785,
-   "sha256": "b8d8a4325ca5a39a3860d1872c9d5e5f737128011666d75ec58a0156d6404163",
+   "bytes": 4750,
+   "sha256": "faea27dbff872caa0442b8a30d3bd2781f7b2410a488d52cf81b0f47f31c6274",
    "year": 2005,
    "method": "rf"
   },
@@ -3895,8 +4001,8 @@
   {
    "path": "sites/bingham-canyon/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 17990,
-   "sha256": "c89d7859269d991d84471f28b2ef35292f247e74e9b914795dda27345ea7e000",
+   "bytes": 5083,
+   "sha256": "ea0aefe6d05d4420607b7c05a26c851f81b8a44ba6ee31c1509b206fa8a7cdce",
    "year": 2006,
    "method": "rf"
   },
@@ -3911,8 +4017,8 @@
   {
    "path": "sites/bingham-canyon/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 14442,
-   "sha256": "06923d32568cac9ac33edf3332597642ec8704e7503e8a5ed790b7d7303ee073",
+   "bytes": 4542,
+   "sha256": "b9f7de62eab725ace0ffb755de6f7a0fb5f3d52363da5c5d08be3d36286917d5",
    "year": 2007,
    "method": "rf"
   },
@@ -3927,8 +4033,8 @@
   {
    "path": "sites/bingham-canyon/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 19183,
-   "sha256": "7322390f5035e7afdeae93a115839a321ce69be436111bad5c9f2e531398108a",
+   "bytes": 5408,
+   "sha256": "27167b4169d070f9bcfbab2d992eab6182977f90cccd5a92f5fb304eefeacf72",
    "year": 2008,
    "method": "rf"
   },
@@ -3943,8 +4049,8 @@
   {
    "path": "sites/bingham-canyon/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 14599,
-   "sha256": "edcee8f14a4def7df9f52e58d0878dbf5532becd145a217c7486fb621e6ee53a",
+   "bytes": 4342,
+   "sha256": "238cac008dd43fd9bb33ad71371ade7fb8e9b912c6411d8f1b0123d4fa4b67d2",
    "year": 2009,
    "method": "rf"
   },
@@ -3959,8 +4065,8 @@
   {
    "path": "sites/bingham-canyon/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 17000,
-   "sha256": "2dedd4f30d66e3a89ad4a62b53f0f1d8a77c7e71981484753403986b6fb28ae1",
+   "bytes": 5526,
+   "sha256": "65ce654903f89250c20ec3814e571b159f9b406a61f5eec27bbc63de43548be0",
    "year": 2010,
    "method": "rf"
   },
@@ -3975,8 +4081,8 @@
   {
    "path": "sites/bingham-canyon/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 11481,
-   "sha256": "a78bde388e5295b98e61a18da2b965c1cb86a1d9def412c673c75c6eae33d1d7",
+   "bytes": 4322,
+   "sha256": "6479657623c9a2d102fcc1edf3bb3e2840651e6f03b29dde1582e712429b706c",
    "year": 2011,
    "method": "rf"
   },
@@ -3991,8 +4097,8 @@
   {
    "path": "sites/bingham-canyon/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 17812,
-   "sha256": "494fa5fa704c7ebda990efe3a8a54c2645c6aff69dbf810671a8ceb19cf9e0f0",
+   "bytes": 5714,
+   "sha256": "36018d3705badf2d5c1c6c435752e1abd3bd5554e0b1b318ac5a03bfcc0ca8a1",
    "year": 2012,
    "method": "rf"
   },
@@ -4007,8 +4113,8 @@
   {
    "path": "sites/bingham-canyon/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 13493,
-   "sha256": "04f3319140a0b747147ed226e0640c57f7aa97f1291550b52adafe54d78453d5",
+   "bytes": 3966,
+   "sha256": "bcf532e78442a3b2316581d95f6510b8626c30712d748bf2d2e973d47d41d56f",
    "year": 2013,
    "method": "rf"
   },
@@ -4023,8 +4129,8 @@
   {
    "path": "sites/bingham-canyon/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 13489,
-   "sha256": "df7e395176e3e0577b09a142db685b97f6d0c2ccc17da66749cd1c201c0f68fc",
+   "bytes": 4796,
+   "sha256": "834cb7efdee428399bc504d55f665e0fca07e92290e8bf99ddbf87617ed6a582",
    "year": 2014,
    "method": "rf"
   },
@@ -4039,8 +4145,8 @@
   {
    "path": "sites/bingham-canyon/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 14423,
-   "sha256": "ab388d66800354f33d6a8c49b7384b19dc49676170e063475ff85cea056c2844",
+   "bytes": 5062,
+   "sha256": "f06c7ad7cdadc0ea08a7ced7d5b02e641b92abce608126eb815d657dcc44d3f2",
    "year": 2015,
    "method": "rf"
   },
@@ -4055,8 +4161,8 @@
   {
    "path": "sites/bingham-canyon/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 14236,
-   "sha256": "d799b71b7da7082af0f3baaf3ff0313a6754adc4bf08b76bbd5fe0f921989af2",
+   "bytes": 5319,
+   "sha256": "92c30705ec2660a0d42b888500ad0078054988005937a7c96cba90196a9695d8",
    "year": 2016,
    "method": "rf"
   },
@@ -4071,10 +4177,18 @@
   {
    "path": "sites/bingham-canyon/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 15013,
-   "sha256": "4bbc386ffc5a8f9335d485558d0247f85645390e16c47bcaaf5ee28548a2fc58",
+   "bytes": 4061,
+   "sha256": "d98c1e48c79e078112d1c34f924701a4791aeaa223bf1fa2b10b2358d706e27c",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3568,
+   "sha256": "56b0ae60340384681a58c663f08deb6a7927376fc94e749118b13105b5254062",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2018-otsu.png",
@@ -4087,10 +4201,18 @@
   {
    "path": "sites/bingham-canyon/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 22127,
-   "sha256": "9e60dcce88b4e5fc10fd18673670d486eefe31e9619a4d96344449454d4659a5",
+   "bytes": 3849,
+   "sha256": "0e5f04d5c1eec636d63ac26cad87f90ac180043fbdb4243bff946eac67b33088",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 3036,
+   "sha256": "0e334749f23fd3d5827a3352724e83c8380ad39725aa4ae466d8a6d7001160a8",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2019-otsu.png",
@@ -4103,10 +4225,18 @@
   {
    "path": "sites/bingham-canyon/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 17079,
-   "sha256": "52351ca48ebf272c170341de449d7cc4cd628942f2b55f436a699f367311db2e",
+   "bytes": 3232,
+   "sha256": "1bde2ac58b527c997b451e5bcb42901611087d24c19b95157a21db1e7ad6af85",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3449,
+   "sha256": "436fd2d4a9fd160c9f6860b596cdf0fe2a15fc94505eadb4c68a4d239cef3735",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2020-otsu.png",
@@ -4119,10 +4249,18 @@
   {
    "path": "sites/bingham-canyon/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 18862,
-   "sha256": "6bffa9d3ecb3ffc6a7a9c8b8cd258f564573c83518413cf714dc27a5aaa955e7",
+   "bytes": 3378,
+   "sha256": "2d65989d835153ac056a35884ef7669d35f8dfde6c74420977444da28d2625b4",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 3269,
+   "sha256": "5e2391cc9797d7716b2b339a50c7bfad7bc27a0fae2d530b8d6a14c18a95c2e9",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2021-otsu.png",
@@ -4135,10 +4273,18 @@
   {
    "path": "sites/bingham-canyon/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 14741,
-   "sha256": "d272f728856aaa080db0e2bc5e7cf5a97117979228e63278913ed0ac3e33aec0",
+   "bytes": 3856,
+   "sha256": "5047a1812e1aa1ccd097de91d6958579014831796cbd941a7de1eefc9822f08f",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 3430,
+   "sha256": "28d8c9dcbee4d56b5f2e5ebf2658e6439904949acb9ce8a3dcc66859e3170ca2",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2022-otsu.png",
@@ -4151,10 +4297,18 @@
   {
    "path": "sites/bingham-canyon/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 16321,
-   "sha256": "79cdca9770371735e703bdbbb1f11bbb0d29ad509a865a39f4ac0101339509da",
+   "bytes": 3304,
+   "sha256": "2830716c04070188075114272d8d140901be1a3faa054f2cca72a933e688507a",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 3224,
+   "sha256": "74e4c01ae9f52d4ab51f6735bc2aeff9b8792581d11449ce0122518ab37f512c",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2023-otsu.png",
@@ -4167,10 +4321,18 @@
   {
    "path": "sites/bingham-canyon/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 15473,
-   "sha256": "1b58252b81961d1b6c57c9b9b5b9d6dc5b19664c776634d290a7e2fb463c71f3",
+   "bytes": 3164,
+   "sha256": "f7c22ae29b55c955bc77749510c1627ccfd51fccf8de6ce1354d4f7bd9be3327",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2549,
+   "sha256": "dea9443859427105058fa5b97de985c1f91609486412e6b782a1713b87c75296",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2024-otsu.png",
@@ -4183,10 +4345,18 @@
   {
    "path": "sites/bingham-canyon/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 18004,
-   "sha256": "2a159e9fb71e0e4c823d547893e9313fac68b7b09520a011aeaa0b423e2fef56",
+   "bytes": 3555,
+   "sha256": "d43e1f9d53e17f2ca0eb7e564534efd1d6f48233d9675bc67135780293665534",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 2911,
+   "sha256": "6839034e1cf51476324469efe4d8ecffcd3094ac885e27b8cf394bd19c2174c8",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2025-otsu.png",
@@ -4199,10 +4369,18 @@
   {
    "path": "sites/bingham-canyon/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 18980,
-   "sha256": "90363f57aca1f287160a2664f2e7eec29f04973d7a644b39637685749ce3346d",
+   "bytes": 3610,
+   "sha256": "4aaeb35d10dab598eac247538c3dd19b951970b8936521cd535645a205315724",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 3257,
+   "sha256": "fd29b3df40f8dd0b23032ec1a85a57d2367090c6a47a07abe398e26f11628bdd",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/masks/2026-otsu.png",
@@ -4215,10 +4393,18 @@
   {
    "path": "sites/bingham-canyon/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 19196,
-   "sha256": "40ce959db1133903ab15486de8452b40a893afdc974127119b9c8073b7cd57f1",
+   "bytes": 3806,
+   "sha256": "39cec5811d4037362b394a8d4cabdf9fda65229b14d4af91d2ea1401c99cc3a0",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/bingham-canyon/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3362,
+   "sha256": "d591633fbbea34fc1dd4df4fd84e9562785a56e6f0f2cc1cca6d523a0342c118",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/bingham-canyon/polygons.geojson",

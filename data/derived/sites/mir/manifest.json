@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "mir",
  "site": {
   "id": "mir",
@@ -1144,7 +1144,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1198,7 +1199,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1252,7 +1254,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -1306,7 +1309,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -1360,7 +1364,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -1414,7 +1419,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -1468,7 +1474,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -1522,7 +1529,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -1576,7 +1584,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -1630,7 +1639,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -1776,34 +1786,64 @@
     5.9895
    ],
    "rf": [
-    31.9689,
-    32.1651,
-    39.5451,
-    34.9254,
-    28.6974,
-    38.5317,
-    42.6447,
-    46.5831,
-    38.4921,
-    37.431,
-    40.3236,
-    40.5558,
-    43.6095,
-    34.2378,
-    24.9714,
-    42.1074,
-    33.183,
-    26.5815,
-    49.3902,
-    43.1586,
-    40.6746,
-    41.4495,
-    38.8692,
-    29.7513,
-    39.5496,
-    36.0558,
-    39.4425,
-    34.6149
+    10.9044,
+    14.373,
+    17.3457,
+    15.8085,
+    10.0341,
+    17.1639,
+    17.6526,
+    19.089,
+    12.7953,
+    12.3489,
+    13.2723,
+    13.4532,
+    14.8599,
+    11.151,
+    6.5439,
+    6.4647,
+    9.5652,
+    7.9173,
+    17.6697,
+    15.1119,
+    13.2885,
+    11.1609,
+    13.2687,
+    6.9174,
+    9.5418,
+    6.9129,
+    9.0792,
+    6.7995
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    41.1813,
+    35.5518,
+    37.107,
+    40.8879,
+    36.5247,
+    38.9484,
+    41.3703,
+    36.8937,
+    39.501,
+    37.1439
    ]
   },
   "index_mean": {
@@ -1945,30 +1985,73 @@
     ],
     "n": 28,
     "pelt": {
-     "breaks": [],
+     "breaks": [
+      2012
+     ],
      "segments": [
       {
        "start": 1999,
+       "end": 2011,
+       "mean": 14.5462,
+       "slope": -0.0005
+      },
+      {
+       "start": 2012,
        "end": 2026,
-       "mean": 37.4825,
-       "slope": 0.0584
+       "mean": 10.0928,
+       "slope": -0.103
       }
      ],
-     "penalty": 586.625594,
-     "sigma": 7.660446,
+     "penalty": 110.796748,
+     "sigma": 3.329178,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 3.830223,
-     "h": 30.641784,
-     "sigma": 7.660446,
-     "target": -1.0611
+     "k": 1.664589,
+     "h": 13.316713,
+     "sigma": 3.329178,
+     "target": -0.0792
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 38.511,
+       "slope": -0.0357
+      }
+     ],
+     "penalty": 75.217377,
+     "sigma": 3.299823,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 1.649911,
+     "h": 13.199291,
+     "sigma": 3.299823,
+     "target": 1.5552
     }
    }
   },
   "change_points": [
+   {
+    "year": 2012,
+    "method": "pelt",
+    "series": "rf",
+    "score": 110.796748
+   },
    {
     "year": 2013,
     "method": "pelt",
@@ -2404,8 +2487,8 @@
   {
    "path": "sites/mir/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 4949,
-   "sha256": "023057f0d8308f46f721ad0d23cbcdf893f32ba5616b19cb69334cff350c08f3",
+   "bytes": 2465,
+   "sha256": "b95034b8d6574e5327e382b48befd486668f20c807842795646b7fa7a5065adb",
    "year": 1999,
    "method": "rf"
   },
@@ -2420,8 +2503,8 @@
   {
    "path": "sites/mir/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 4797,
-   "sha256": "f482fc181746e39087cec15a98e136ac78588b1ff9585b30e31859b859dec811",
+   "bytes": 2416,
+   "sha256": "99c2118784cbb2ca3847731146307d3553519bfd92b513d1ade3cd8b1c00f90f",
    "year": 2000,
    "method": "rf"
   },
@@ -2436,8 +2519,8 @@
   {
    "path": "sites/mir/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 5055,
-   "sha256": "875c1b4c3d5cee7bc3ff015a8be14ae291526e11a08b0528cb88cb8cc30e2dcd",
+   "bytes": 2692,
+   "sha256": "52072cd33daf24aff6584a49bcea4bd6c204f2796dc56e425d66877fd3f6e22f",
    "year": 2001,
    "method": "rf"
   },
@@ -2452,8 +2535,8 @@
   {
    "path": "sites/mir/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 5311,
-   "sha256": "b433ad77edc70a99827177c736efd8e1c9812013ca188b7487cbef74323e572c",
+   "bytes": 2728,
+   "sha256": "6725d6d6eb34ec60786aaaa87afd92c40ffb8a175726dcf981e90d23e7f2fddd",
    "year": 2002,
    "method": "rf"
   },
@@ -2468,8 +2551,8 @@
   {
    "path": "sites/mir/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 4799,
-   "sha256": "eb80dea71cf4b6d23ad7db18c74a3a3a7b5cb5168cd979c425635b3a6d8c4059",
+   "bytes": 2174,
+   "sha256": "4ab5606b17a1125ee58ecb585305533b8ba66e184177476c79140e83f9c36155",
    "year": 2003,
    "method": "rf"
   },
@@ -2484,8 +2567,8 @@
   {
    "path": "sites/mir/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 5824,
-   "sha256": "ffcc52d9d254175e18264816b45356aaf6dd8e813715456eaf40d03892920c9f",
+   "bytes": 3074,
+   "sha256": "a0a481d2ad50a2a7d4eb65ad94d134b1e13759319ea0dda4f599875dc698da24",
    "year": 2004,
    "method": "rf"
   },
@@ -2500,8 +2583,8 @@
   {
    "path": "sites/mir/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 5209,
-   "sha256": "9d38fa3083134167f1f2eaafce36f792a74ad3399f3b654b74669c469810f673",
+   "bytes": 3215,
+   "sha256": "e8036c9fabe18ac4f6661fab9c8d76a4dee49f8794e76d82009210a3b5b529b2",
    "year": 2005,
    "method": "rf"
   },
@@ -2516,8 +2599,8 @@
   {
    "path": "sites/mir/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 5736,
-   "sha256": "0578f66eaa4d18d381066a4c5a3053691a8a98521e3b69cda250ae0fbd7efd82",
+   "bytes": 3007,
+   "sha256": "1533fa9ae4b7bd0a0b2f04b43fbbb10de64da24dd1c13746556c92fae43ff6a1",
    "year": 2006,
    "method": "rf"
   },
@@ -2532,8 +2615,8 @@
   {
    "path": "sites/mir/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 5391,
-   "sha256": "704840b60d6f6822561e953f2b63579b22297e564d86a80c66d4bb4bf113155b",
+   "bytes": 2504,
+   "sha256": "dd78a47b5911874b1ef50781d6242974a2d0e8fe1503d72459220e40bb18eb08",
    "year": 2007,
    "method": "rf"
   },
@@ -2548,8 +2631,8 @@
   {
    "path": "sites/mir/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 5268,
-   "sha256": "58516369935dc0048228a9ecaa17ca010ff1236c3d6df17acef9872733ef0d08",
+   "bytes": 2499,
+   "sha256": "733ae97e2d7bb62351f6be29e1c1c8fbfb49df8c62564fe7eeaa84ea63d5ab4d",
    "year": 2008,
    "method": "rf"
   },
@@ -2564,8 +2647,8 @@
   {
    "path": "sites/mir/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 5485,
-   "sha256": "94256cc6761309ab64d74310e74a8a89e1f30ff28a5ff09b5977e4f3aff89226",
+   "bytes": 2490,
+   "sha256": "7888fdddc0d994478ac15db92a009cb3a9f1f41bad2b2def50883deae427dfba",
    "year": 2009,
    "method": "rf"
   },
@@ -2580,8 +2663,8 @@
   {
    "path": "sites/mir/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 5420,
-   "sha256": "063ce8418700759154ff75ef3848f89920af9bd83576b8d43b88341e2cfdb81e",
+   "bytes": 2540,
+   "sha256": "29384c4f0301151b5e6787d00e2d784094717d3a3daa086da4cbc7eac41f0c6a",
    "year": 2010,
    "method": "rf"
   },
@@ -2596,8 +2679,8 @@
   {
    "path": "sites/mir/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 5155,
-   "sha256": "ccf0fe98d914800db6858c469959bb356467d8c4687722fb30a8364c32eab400",
+   "bytes": 2763,
+   "sha256": "85e1669a8181ab2a97ccb36c4aea7ef2dd1fa947ccabae75ddcf67ef141235ab",
    "year": 2011,
    "method": "rf"
   },
@@ -2612,8 +2695,8 @@
   {
    "path": "sites/mir/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 5213,
-   "sha256": "46e1a63c0e17b74ed602e0063e0e243e478598ca8aea1958e6cf690f1b946f40",
+   "bytes": 2294,
+   "sha256": "2a5b3d3032c5858b473e34f4d406c99e6a9a4322668b6e8803844986b592cb5b",
    "year": 2012,
    "method": "rf"
   },
@@ -2628,8 +2711,8 @@
   {
    "path": "sites/mir/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 5112,
-   "sha256": "fa630901c850edea4c2c8265aaab5faa86e1b16b70af79ff9aba9af9beb0f122",
+   "bytes": 1773,
+   "sha256": "d4d30c9fa466618ce907de6515e2ed7543a536855ae8fbfa0438c819115fa961",
    "year": 2013,
    "method": "rf"
   },
@@ -2644,8 +2727,8 @@
   {
    "path": "sites/mir/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 5832,
-   "sha256": "910d85ef957ed266e5a004e75876c5d79ef22f4f14b005b191410e6022b26dd6",
+   "bytes": 1678,
+   "sha256": "cab7ed1583fc031335a5d22c57311fdc3b8974c9a1e35f34878fabbd2be0756f",
    "year": 2014,
    "method": "rf"
   },
@@ -2660,8 +2743,8 @@
   {
    "path": "sites/mir/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 5649,
-   "sha256": "13df580ba10046c95e8dc4b1ac30bb4f7675b4a80f1cb938dc4eb782bc0f33df",
+   "bytes": 2267,
+   "sha256": "8e0d4cb04d4c355c3abe223e40f2783e319eeb8b1fc75ed3b7c56a05ca8ab0b9",
    "year": 2015,
    "method": "rf"
   },
@@ -2676,8 +2759,8 @@
   {
    "path": "sites/mir/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 5035,
-   "sha256": "528fa090778d70f46fb809366155ac1c82ce35d52324bcbda16bac0131d99b10",
+   "bytes": 2017,
+   "sha256": "312c85fffab551730d2eb92c0a4001f4b283109cb17de65784f7dae5dee4de88",
    "year": 2016,
    "method": "rf"
   },
@@ -2692,10 +2775,18 @@
   {
    "path": "sites/mir/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 5933,
-   "sha256": "c216cdcbdb4cbd1a54967c957e9d110d6ee685355310e8a0867596658a08168e",
+   "bytes": 2765,
+   "sha256": "8b208cbb0466f54d29a2c0c592af829e1c68ee5fb237562d79d2c1b00d07b01b",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3558,
+   "sha256": "42a90116064bc6efcccabaa5935110ac5674009fba8190d3ab33dc759a862233",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2018-otsu.png",
@@ -2708,10 +2799,18 @@
   {
    "path": "sites/mir/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 5394,
-   "sha256": "26a4b6430bba3b4ad56218dacd66a3d74b1501ba281760c13e79d18afbfeeff1",
+   "bytes": 2622,
+   "sha256": "b83ebc018e52f51ccd4cc18be53ed779b6e1b591994fc709711bf79fb96ab052",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2987,
+   "sha256": "a699fc98e7311317aff930cc79dbd4b9245892e1aad7efd93dd56dc5a54463cb",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2019-otsu.png",
@@ -2724,10 +2823,18 @@
   {
    "path": "sites/mir/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 5664,
-   "sha256": "ff1b4e88e9acb4c2ed839e11b3aa33c4d73eed8c1e0d80a930d0db58763309ec",
+   "bytes": 2671,
+   "sha256": "7892859426401fdd0b1f092fb278b1083f6a7318b219a2eba731afe5f0b0f223",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3138,
+   "sha256": "ff5533da5f9eb79991675bc24cd7b79974963ebdef4e7b04641dd084bb9dfa28",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2020-otsu.png",
@@ -2740,10 +2847,18 @@
   {
    "path": "sites/mir/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 6213,
-   "sha256": "2f5cf6c1e7029d29bd0a8728e1e51e2d1d8d64c1618a18953f4478bc7e7e1ce3",
+   "bytes": 2645,
+   "sha256": "6cd88ca5562dc369c0cb2626e6df781857ac7d9c0ce3be201865c1bbdeeda8dc",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 3150,
+   "sha256": "bc3c2b155fca09a1c2f33cd24cc69b36296496febcb9882d0d07271fbcc5c262",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2021-otsu.png",
@@ -2756,10 +2871,18 @@
   {
    "path": "sites/mir/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 6048,
-   "sha256": "f51711b0d5fac343e98fb95fb8d860090556eefd3ca7df2b762720eca7106184",
+   "bytes": 2648,
+   "sha256": "4ba8281f18b6b6556c21349001a5892b9f4bb73e0dcc8664b8ada406f9a3589c",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 3070,
+   "sha256": "ab3b789088d3e8367aba9026aa79a51d189ba289968b634782d11c84be8fade0",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2022-otsu.png",
@@ -2772,10 +2895,18 @@
   {
    "path": "sites/mir/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 5413,
-   "sha256": "58d66f9cd09aac39d1786bc74a448095dfeac93bd3ca7b7b5bd8b76792f35dad",
+   "bytes": 1711,
+   "sha256": "c1ba86a3e50f36ff42d076c198415fe2a4a6df34cb47849a5a3db89a0440873f",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2855,
+   "sha256": "3812e507a840f8ce899bb52eec30498b707b18a12d9ba2c7347c473308801fe4",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2023-otsu.png",
@@ -2788,10 +2919,18 @@
   {
    "path": "sites/mir/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 6119,
-   "sha256": "191cadefe31bd87e06bf0b6683ac2ca0db1cc53d53282d64cb32461fa5ae2055",
+   "bytes": 2341,
+   "sha256": "c95300f85b86a06d49e3403520af3db653501c7b2c678e22f9799dc4618d8db4",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 3114,
+   "sha256": "7e3cc950078bb20742335b990ec3f171aed14dd943b1b1d2dd40df281cf45d30",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2024-otsu.png",
@@ -2804,10 +2943,18 @@
   {
    "path": "sites/mir/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 5917,
-   "sha256": "bddb7c06292f8cb16c2de332cfc2fea39b1efc7e9de77a9513f6353e29ee1367",
+   "bytes": 1917,
+   "sha256": "121b9682d8cc11c02739da25c08c54609176d2edf2d6ce2c42ba550ddb6d589d",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 2965,
+   "sha256": "72cdb1f98e0696ee10eef195d281033a7c9015966f290b8281a09c32f728fc4a",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2025-otsu.png",
@@ -2820,10 +2967,18 @@
   {
    "path": "sites/mir/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 6031,
-   "sha256": "64ea7fb745066a9a9cf8e122ddf3e73b1a05d3958cdb28486f270844db65f40b",
+   "bytes": 2298,
+   "sha256": "388786ebe6527fbd648150a1c88a1f611a75bf5904e8729a2203e98fe2170946",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 3065,
+   "sha256": "09c1e3b9341871623574fedd98b2fef0f7374ef3e6ac9d1fa1ff1d1b164badea",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/mir/masks/2026-otsu.png",
@@ -2836,10 +2991,18 @@
   {
    "path": "sites/mir/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 5687,
-   "sha256": "9e7ebd5d7f11639695536d292d27a8cf34a1ed2145087e0aa254c3f3c433bb7f",
+   "bytes": 1826,
+   "sha256": "4cafa0995010e7c9753261abf3dc4f4aff9ba7d15c7e968ed885a93d617a64ca",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/mir/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 2961,
+   "sha256": "0156e6e5ca01a1e5907e159e8ce2d15939c7f7a7a0107d50d0ea48caf34af457",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/mir/polygons.geojson",

@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "salar-de-atacama",
  "site": {
   "id": "salar-de-atacama",
@@ -1915,7 +1915,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1969,7 +1970,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2025,7 +2027,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2079,7 +2082,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2135,7 +2139,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2189,7 +2194,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2243,7 +2249,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2297,7 +2304,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2351,7 +2359,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2405,7 +2414,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2592,48 +2602,92 @@
     1210.9914
    ],
    "rf": [
-    299.7927,
-    303.2559,
-    569.4813,
-    310.3686,
-    794.5929,
-    147.3318,
-    407.5083,
-    127.4409,
-    621.7812,
-    210.6342,
-    315.6993,
-    409.5414,
-    234.7722,
-    875.0664,
-    774.2745,
-    491.913,
-    662.0832,
-    595.575,
-    962.8848,
-    744.8184,
-    251.3016,
-    694.5894,
-    597.2148,
-    595.0935,
-    314.9649,
-    597.1338,
-    178.2873,
-    401.0823,
-    608.4756,
-    648.6093,
-    660.0762,
-    861.5529,
-    650.169,
-    267.0021,
-    579.0348,
-    286.6545,
-    559.9089,
-    505.2843,
-    242.5266,
-    267.516,
-    256.0671,
-    288.5067
+    71.0235,
+    128.5155,
+    99.3708,
+    82.8693,
+    593.0361,
+    73.3968,
+    116.0145,
+    73.4661,
+    326.8332,
+    92.9052,
+    118.7415,
+    210.3723,
+    119.5074,
+    480.9987,
+    444.4002,
+    125.4366,
+    219.8196,
+    184.8861,
+    665.0379,
+    215.7489,
+    105.2253,
+    156.2418,
+    180.1854,
+    247.1283,
+    153.081,
+    276.3954,
+    95.562,
+    144.0027,
+    149.8086,
+    245.8503,
+    199.4634,
+    449.0496,
+    375.1983,
+    158.9427,
+    119.8152,
+    172.7397,
+    281.97,
+    213.5556,
+    160.6032,
+    167.9355,
+    163.0539,
+    178.0281
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    75.5793,
+    143.8839,
+    41.2542,
+    147.222,
+    98.0676,
+    152.37,
+    156.1779,
+    163.5156,
+    156.0591,
+    160.2198
    ]
   },
   "index_mean": {
@@ -2855,25 +2909,62 @@
       {
        "start": 1985,
        "end": 2026,
-       "mean": 480.2349,
-       "slope": 0.3153
+       "mean": 210.3861,
+       "slope": 0.6437
       }
      ],
-     "penalty": 1624302.436327,
-     "sigma": 380.603139,
+     "penalty": 135773.673223,
+     "sigma": 110.039017,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1989
+     ],
+     "k": 55.019508,
+     "h": 440.156067,
+     "sigma": 110.039017,
+     "target": 5.8059
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 129.4349,
+       "slope": 9.3301
+      }
+     ],
+     "penalty": 38175.351393,
+     "sigma": 74.340084,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 190.301569,
-     "h": 1522.412554,
-     "sigma": 380.603139,
-     "target": 3.4632
+     "k": 37.170042,
+     "h": 297.360338,
+     "sigma": 74.340084,
+     "target": 4.1607
     }
    }
   },
   "change_points": [
+   {
+    "year": 1989,
+    "method": "cusum",
+    "series": "rf",
+    "score": 440.156067
+   },
    {
     "year": 1999,
     "method": "pelt",
@@ -3767,8 +3858,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 33688,
-   "sha256": "f4c45093a521b66aa40ffbca80e573416181b6aaa27b1f6d87f53eed79717470",
+   "bytes": 13820,
+   "sha256": "3f2e22d1ed803bd0650c664a1aaa61014a12ebae9ddce49240dd48d25a36ddc1",
    "year": 1985,
    "method": "rf"
   },
@@ -3783,8 +3874,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 46743,
-   "sha256": "56e46df9abfb988537499ddbf502336dfdff2ef2427af09aa0b0eec32ae10cb1",
+   "bytes": 29020,
+   "sha256": "45b4749f9f40d30a3935f403b0e259a4256426c68788b4bf45adf0e70be06f1f",
    "year": 1986,
    "method": "rf"
   },
@@ -3799,8 +3890,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 42646,
-   "sha256": "81291fef178793c2f0aa421b515e68adc7cfdbfdb81adffbaa3e5e50f8a077fa",
+   "bytes": 18612,
+   "sha256": "5d8f4ea3c70ea6e2671ba25405550b63d3282cb0e5ddb51c2bc04a05235afbae",
    "year": 1987,
    "method": "rf"
   },
@@ -3815,8 +3906,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 36760,
-   "sha256": "5530131014d3662aa0c4c8bde8d2c2cabe3c9b14cabd5084357aa6c0662e36d6",
+   "bytes": 16747,
+   "sha256": "ca13c06ce6c5d1b4be0b9b3afdb3c91402a8be4db9ccff49bad759c4e1ceeb7f",
    "year": 1988,
    "method": "rf"
   },
@@ -3831,8 +3922,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 23687,
-   "sha256": "df3afdcedb9d182000a4a4859b6ff8fe02af05ba681addf90f96c671ff422b50",
+   "bytes": 22360,
+   "sha256": "75942a14089e70624b096228cf079fa31d039eaeb68b6b1976aabf6f13d25c46",
    "year": 1989,
    "method": "rf"
   },
@@ -3847,8 +3938,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 23095,
-   "sha256": "c335d51a03ff48b09e45c1c0cdb783430d3fa6a53f3becca3055d768911ccee7",
+   "bytes": 16135,
+   "sha256": "7c8b45ff4ce8558a206fe1253235ee7fec3813c019dea4fa3f8dc8e7574a0d7d",
    "year": 1990,
    "method": "rf"
   },
@@ -3863,8 +3954,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 34784,
-   "sha256": "76fa7c52e9239bc50bb474e90a904f042e985684530d9b64a840a0f906d40b60",
+   "bytes": 17951,
+   "sha256": "8e3f89d5cc048b0d020598c4da9a4fea0d2c930640a7f165177311fe12bf935e",
    "year": 1991,
    "method": "rf"
   },
@@ -3879,8 +3970,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 21580,
-   "sha256": "ec21230d99641c1c1b8d267f3f0008901f6c0eb4025771ade737943617626c9f",
+   "bytes": 13859,
+   "sha256": "58f3475314a830f38e28a70487cf49a1b75f68e1ba498f6be4d55072ba3d682b",
    "year": 1992,
    "method": "rf"
   },
@@ -3895,8 +3986,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 25110,
-   "sha256": "ab0971d5e7069079a618357104ee23a09cfb886778e1a3714f2426228dc66981",
+   "bytes": 26740,
+   "sha256": "78bf50201adf70f179ccf511906945a26923c996e9caedfa67ae606c58aea5e8",
    "year": 1993,
    "method": "rf"
   },
@@ -3911,8 +4002,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 24177,
-   "sha256": "f39dd8a13d3a4433569da9a7a4ba5662d810abc9453d4df98ca584c5bf11cc45",
+   "bytes": 14740,
+   "sha256": "968a13f475f3312087dd496f76d61cde13aa050176b9f3f595eda1e7ccaf302c",
    "year": 1994,
    "method": "rf"
   },
@@ -3927,8 +4018,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 27027,
-   "sha256": "7846e15ca1190013f0903788d69621e238ab936c48da348f5a74e8c13d5faa84",
+   "bytes": 17194,
+   "sha256": "d47d354e49e2e4f54b6470ba64eb2e39381e23e6b1026938b172f6fe7d15409c",
    "year": 1995,
    "method": "rf"
   },
@@ -3943,8 +4034,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 42125,
-   "sha256": "09b05a382876898684f545536ea685e5379bbd3bfa274a2aa87e4dc99c1d29d8",
+   "bytes": 22285,
+   "sha256": "66b1f52e390bbf2f2a1827ee853217694c711e118718ea2721997aa29f7dbde8",
    "year": 1996,
    "method": "rf"
   },
@@ -3959,8 +4050,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 28530,
-   "sha256": "382164c0e8defc2aba43831a4d743a5a5a46a22c0b51146a5f37cf4a4afe3c3c",
+   "bytes": 16610,
+   "sha256": "091e2a2dc52841d8b92e0beab862a86256e21e18f9423beea36b3872a88f60fa",
    "year": 1997,
    "method": "rf"
   },
@@ -3975,8 +4066,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 32730,
-   "sha256": "473c5daee07e24429cd810d03fce71f54e4161bb72a55ac2f00981726ea0a83f",
+   "bytes": 33873,
+   "sha256": "4656bc97e32da2ff5c2c60c6fa9afb804b85c0bb8469e3bdb90108581f7b670c",
    "year": 1998,
    "method": "rf"
   },
@@ -3991,8 +4082,8 @@
   {
    "path": "sites/salar-de-atacama/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 29086,
-   "sha256": "ba6ebd86ac25bdc9e6511c1859bb6f8e04dc0e6c03c1ae2f3cd9b3dc5ca233bd",
+   "bytes": 30597,
+   "sha256": "9dd44eaadaaf1e028eaaab0df839b1d840a782d582df9c2386708a1aa97591d9",
    "year": 1999,
    "method": "rf"
   },
@@ -4007,8 +4098,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 29286,
-   "sha256": "36fd444d0d5f16bbaf080e1a491c9a199c026092b04bea19d5a2eae6fe8a5ee9",
+   "bytes": 17485,
+   "sha256": "80fd2e4a3d7f816b3f8809cf196815ff9d9f83901cdf7b176098a916cd72a231",
    "year": 2000,
    "method": "rf"
   },
@@ -4023,8 +4114,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 27304,
-   "sha256": "de84f8bae67f28e7817afd57037255e64a9899b7a1ba19166ae2655a03a64c72",
+   "bytes": 23123,
+   "sha256": "e82b2c4d064eee5ae9dd7d3b59c4e7a2755dff494c658592706c534143200ce4",
    "year": 2001,
    "method": "rf"
   },
@@ -4039,8 +4130,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 37585,
-   "sha256": "15d6ca35925e5df7b73c32502cddde7e2a8faa6bd5ed961397cb0b15971bf55b",
+   "bytes": 30443,
+   "sha256": "f0bb87270a32c19acc0cd43d8f936b46f8de2852097df7819950042f49bd5636",
    "year": 2002,
    "method": "rf"
   },
@@ -4055,8 +4146,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 32962,
-   "sha256": "aa2bf4a9581e2d6871b72d47a95952e9d09396dd30bce4fb9e491acd5fbd04c4",
+   "bytes": 26195,
+   "sha256": "be6c127b43ecc4f28ecb7f4ba6b0774aa4c5027c3a76f9c289a09554a8262bde",
    "year": 2003,
    "method": "rf"
   },
@@ -4071,8 +4162,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 36423,
-   "sha256": "202a715d9c8bef0d1760de1cff65aefc6980049f15ac048d892a411b5ebb380b",
+   "bytes": 29032,
+   "sha256": "7eb4520f5a8a4f04c52f7a71597b22c5565d985ad263c762bc168f6431460a2e",
    "year": 2004,
    "method": "rf"
   },
@@ -4087,8 +4178,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 31065,
-   "sha256": "a4d788c1495e2f57d74a870a0328b73b984fba858e46a97103412e802af64c46",
+   "bytes": 17737,
+   "sha256": "9118dcebdae5c26e21ea1bd24c3b69d4484c5e3068abdf70d401e446cb186160",
    "year": 2005,
    "method": "rf"
   },
@@ -4103,8 +4194,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 47429,
-   "sha256": "fa56d45f7201d78eebcc6e7ee7a8eb410d5212e02bd83436f40cad9ec8303099",
+   "bytes": 25887,
+   "sha256": "7f05546a5cedf72934c2815dd4b6e7cc1b934a5003d61b8b89264750860296d4",
    "year": 2006,
    "method": "rf"
   },
@@ -4119,8 +4210,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 33185,
-   "sha256": "550887de5a69cadb918a08ff7c2a036db152ede19d6c946efddc6b3c43d574a1",
+   "bytes": 25092,
+   "sha256": "9d81c90f010669c219965638d68a0468701e91dd733d8f932cec921804c2e7c4",
    "year": 2007,
    "method": "rf"
   },
@@ -4135,8 +4226,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 35634,
-   "sha256": "8025cb2171b9caf19cbc5eb1d653b2a19645527f56fbb71de06eb6190a627c3d",
+   "bytes": 25203,
+   "sha256": "9085fa2dbde93b6da85f7021c967dea223b88a70f47b301063f500d86c67c427",
    "year": 2008,
    "method": "rf"
   },
@@ -4151,8 +4242,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 28413,
-   "sha256": "df0e149151b893c105c27f62e6dd238a8e466908504d4c15970d16d003954fed",
+   "bytes": 23758,
+   "sha256": "461493f1e443bee254013b973af165807bc5666d5b80ec4da01e3b65ff12b6c7",
    "year": 2009,
    "method": "rf"
   },
@@ -4167,8 +4258,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 40535,
-   "sha256": "297701d131e4e56221dfce160303eff325b094da46f2ec9cdc6e1ca0e588836f",
+   "bytes": 28367,
+   "sha256": "435e9c246249c950376af5acab5a411914ce6042d31df9a87b22f354190fe627",
    "year": 2010,
    "method": "rf"
   },
@@ -4183,8 +4274,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 26444,
-   "sha256": "b03c83385536a3cb88dee14a0301aa20a9b5c30bb19af94ddeeba47567f60c43",
+   "bytes": 16509,
+   "sha256": "981910c03def3d30ec53cd39e4c374f577edd486c10840ddc20862b0b9ce0f90",
    "year": 2011,
    "method": "rf"
   },
@@ -4199,8 +4290,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 33784,
-   "sha256": "89c668d5ce7047b79bb9ac86c29f7ffce616c3be71c04ae739fc55c3cc72b902",
+   "bytes": 18570,
+   "sha256": "989914db8642acd31a92b0cb2ab8fea2136972bf804b1259082dd026dc07f2de",
    "year": 2012,
    "method": "rf"
   },
@@ -4215,8 +4306,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 31458,
-   "sha256": "6d6ca7fa836ee383b0e49aac62a64bfc71582868f955151c1eb4cdcf41a2c287",
+   "bytes": 18653,
+   "sha256": "3eea0fc15a3476b76ea4cb7e7a8c3fd4ffceb248268d453848d3a70ab5fb8e1e",
    "year": 2013,
    "method": "rf"
   },
@@ -4231,8 +4322,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 39329,
-   "sha256": "0b8406f639a7ad5add4e5b17a22d153c78824724050314ebaa32cd76a240e3e2",
+   "bytes": 28887,
+   "sha256": "25400fc80051a96d7feacdac84df7193c73b33d2895a9bb88910feca991d4fb3",
    "year": 2014,
    "method": "rf"
   },
@@ -4247,8 +4338,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 32114,
-   "sha256": "bc27b68b963f95c2412a602c3951d60a0a9230e4b87b110d16a857009d9610fb",
+   "bytes": 22779,
+   "sha256": "1d1e211c16cde302c30eac4c0f6813aeb0e94dcc493604a2c6584e56d6bcc05c",
    "year": 2015,
    "method": "rf"
   },
@@ -4263,8 +4354,8 @@
   {
    "path": "sites/salar-de-atacama/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 21575,
-   "sha256": "6bda64b67fd4e60772cb390154ee3cd8d9d59ef2d8efe4ce73aa0bfddf443db7",
+   "bytes": 25671,
+   "sha256": "b1060008810b5161e15ecb4c455ef73c9a33407052fe7fa683d8bb3cd3199f13",
    "year": 2016,
    "method": "rf"
   },
@@ -4279,10 +4370,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 42976,
-   "sha256": "efa9dd16e39635f9b9e1bcc03ad3299d491d9742ce05dc576bcf4568c1c5a157",
+   "bytes": 40092,
+   "sha256": "695c51b3770e19e1f9a025d5ccebd2595d77d672d312ffdefcf78d8bdcdadc60",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 13964,
+   "sha256": "f49d0148d2429d0ee17c8d9a02d28e75e8cda793e7a47ef7ded7ac258befa0f0",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2018-otsu.png",
@@ -4295,10 +4394,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 31714,
-   "sha256": "ec5f696dd5ce277514b7dd6a4d32bcdad5490cf215eef37444da75d37e6b36f4",
+   "bytes": 21191,
+   "sha256": "5f053188506964433c429bf71af57b66985190f75c242558a488dc10296ac2d2",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 9199,
+   "sha256": "7899356d3f34c2f712064b5e1731c067d2e88d695b4a57f69a4cf94db554f835",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2019-otsu.png",
@@ -4311,10 +4418,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 41478,
-   "sha256": "764e1008934012ede10f661c85db489f18541c90979f286bc389eba23b44efb5",
+   "bytes": 22361,
+   "sha256": "6c83e6922a0dd338e45d7d72eafad92c993cfb96ec3ef0e1e68404c0656d2544",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 6793,
+   "sha256": "ff9a3140e60533ac01bd44b350d8b34374d4543a3f2b67d463b13b23f2df74af",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2020-otsu.png",
@@ -4327,10 +4442,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 30629,
-   "sha256": "1a388d866db3ce24dbabcec47d64c5947ab8d5ffca71daa61b380bf197a9a1ab",
+   "bytes": 22206,
+   "sha256": "f4557d4921900f23c0c42948227695fecbd3c8735ecc204510331a01420f2621",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 8719,
+   "sha256": "97ee5aa950a72e0cd1c3caf6a828443f38c548c231e0819c60b66812856d4cab",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2021-otsu.png",
@@ -4343,10 +4466,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 41725,
-   "sha256": "48ee41a53b5f03ad00c1573b7bb9ad51a95bf16ceab0885acec28bcbb097cc28",
+   "bytes": 37983,
+   "sha256": "c1664f8b2e84c5d1234881de374f7877cfec36efe0cc44b89c6d92cd71e7d72c",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 12560,
+   "sha256": "61dbec8b193af0ddf8b52cf8fa5bb53a07468cfca27e4d881b8bfacb8a815a59",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2022-otsu.png",
@@ -4359,10 +4490,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 37876,
-   "sha256": "d58201fbae125b3408a10d791d714c333a5223c63c701ab362657dcc6ce1f38b",
+   "bytes": 23497,
+   "sha256": "306d8ac4c8a7681f6f95b09367a88778996df81bb72b84e0a8275e674af9b552",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 8826,
+   "sha256": "f86224906bd67457a75898df1b9bd2aadd6b240a40acd2af94d93d280a0b459d",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2023-otsu.png",
@@ -4375,10 +4514,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 29996,
-   "sha256": "940abce0ae927cf5a3203a394d42f239c2f1154a6bf35b82abcf7af20092ceb6",
+   "bytes": 20793,
+   "sha256": "3df32d6315fd83c71f1553950fc48455753efd9c65a02a3e0667b5399ac1bc1e",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 9626,
+   "sha256": "f42ee374205d6101c9a310915a30c24c9f1c55d771f6b2b0e04341e44bf2f550",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2024-otsu.png",
@@ -4391,10 +4538,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 30646,
-   "sha256": "7f7f4e7ac1725b8d2cec54c61045cb38991ce8d5fe5d8d7e3d1cc033cf604b5c",
+   "bytes": 21414,
+   "sha256": "2636184aac1ffe841fbcdd6c5111ea80935a3b14113b59732fd6fdc8dfce46ac",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 9762,
+   "sha256": "0cf35c4d8644875150ebc1c1ef85b124490122b4730e2d37fd43995ac0acc98c",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2025-otsu.png",
@@ -4407,10 +4562,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 29340,
-   "sha256": "6e0d39999edb3b2442098dca0e30b4ff6f75e9dd2d105b5e4f517fb02bb4fcb5",
+   "bytes": 21148,
+   "sha256": "14345a388778bee9caef692556bdd303e9929bff72b8ecba51b5b3ffb9e44caf",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 9181,
+   "sha256": "7f2a6fb37daa5062dea51ee082883d4858fd2220e4daac084fe8d86ac0522ab7",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/masks/2026-otsu.png",
@@ -4423,10 +4586,18 @@
   {
    "path": "sites/salar-de-atacama/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 32739,
-   "sha256": "c9a12aef668836886925bed1fe0c1d5457f1407aee7c4dfc6bcadc3a744dacdf",
+   "bytes": 20949,
+   "sha256": "b7a71dd916193ce7132f80a7ac09a76239e8cc1399a98c4c7d3f682242ccda1c",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/salar-de-atacama/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 9223,
+   "sha256": "236cd3448e715fb5263079b68c0b4d49e7208f90686b48558094c155ceed360d",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/salar-de-atacama/polygons.geojson",

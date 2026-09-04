@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "super-pit",
  "site": {
   "id": "super-pit",
@@ -1846,7 +1846,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1900,7 +1901,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1954,7 +1956,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2008,7 +2011,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2062,7 +2066,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2116,7 +2121,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2170,7 +2176,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2224,7 +2231,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2278,7 +2286,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2332,7 +2341,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2517,47 +2527,90 @@
     11.907
    ],
    "rf": [
-    26.2584,
-    33.9273,
-    36.5067,
-    33.9507,
-    39.0789,
-    40.0383,
-    73.7883,
-    38.9187,
-    35.9703,
-    47.2212,
-    38.0826,
-    28.7586,
-    35.9658,
-    51.1281,
-    43.4214,
-    55.5831,
-    47.2905,
-    52.0965,
-    49.6665,
-    40.995,
-    44.1,
-    46.4814,
-    47.961,
-    46.2384,
-    49.6881,
-    42.5988,
-    54.9018,
-    55.233,
-    49.4217,
-    52.5411,
-    53.1918,
-    88.2702,
-    63.3519,
-    80.7165,
-    76.4082,
-    93.3282,
-    67.1652,
-    76.0077,
-    71.7255,
-    76.0068,
-    76.653
+    5.3568,
+    6.6078,
+    13.4487,
+    9.2601,
+    13.005,
+    13.8033,
+    16.2387,
+    14.5782,
+    14.238,
+    14.1417,
+    12.4893,
+    11.6946,
+    13.2669,
+    18.4356,
+    18.9036,
+    24.4449,
+    15.0147,
+    24.7014,
+    22.7538,
+    17.9001,
+    23.3253,
+    22.1886,
+    19.5732,
+    21.0384,
+    28.0107,
+    21.1734,
+    27.0567,
+    28.0701,
+    27.333,
+    25.5285,
+    25.9011,
+    27.3159,
+    31.482,
+    26.2332,
+    30.5037,
+    24.9129,
+    34.4376,
+    34.3881,
+    35.0595,
+    33.8967,
+    37.3005
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    42.2622,
+    40.7502,
+    37.4301,
+    43.812,
+    47.2239,
+    41.9598,
+    38.0016,
+    44.8263,
+    40.6341,
+    42.2064
    ]
   },
   "index_mean": {
@@ -2739,37 +2792,92 @@
     "n": 41,
     "pelt": {
      "breaks": [
-      2017
+      1999,
+      2010,
+      2022
      ],
      "segments": [
       {
        "start": 1986,
-       "end": 2016,
-       "mean": 44.8711,
-       "slope": 0.5382
+       "end": 1998,
+       "mean": 12.1638,
+       "slope": 0.4777
       },
       {
-       "start": 2017,
+       "start": 1999,
+       "end": 2009,
+       "mean": 20.7527,
+       "slope": 0.1704
+      },
+      {
+       "start": 2010,
+       "end": 2021,
+       "mean": 26.9601,
+       "slope": 0.2151
+      },
+      {
+       "start": 2022,
        "end": 2026,
-       "mean": 76.9633,
-       "slope": -0.5351
+       "mean": 35.0165,
+       "slope": 0.5234
       }
      ],
-     "penalty": 946.976854,
-     "sigma": 9.219622,
+     "penalty": 146.482326,
+     "sigma": 3.626069,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 4.609811,
-     "h": 36.878489,
-     "sigma": 9.219622,
-     "target": 1.2195
+     "k": 1.813034,
+     "h": 14.504276,
+     "sigma": 3.626069,
+     "target": 0.5697
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 41.9107,
+       "slope": 0.0786
+      }
+     ],
+     "penalty": 144.443553,
+     "sigma": 4.572783,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 2.286392,
+     "h": 18.291133,
+     "sigma": 4.572783,
+     "target": -1.512
     }
    }
   },
   "change_points": [
+   {
+    "year": 1999,
+    "method": "pelt",
+    "series": "rf",
+    "score": 146.482326
+   },
+   {
+    "year": 2010,
+    "method": "pelt",
+    "series": "rf",
+    "score": 146.482326
+   },
    {
     "year": 2017,
     "method": "pelt",
@@ -2777,10 +2885,10 @@
     "score": 743.903301
    },
    {
-    "year": 2017,
+    "year": 2022,
     "method": "pelt",
     "series": "rf",
-    "score": 946.976854
+    "score": 146.482326
    }
   ],
   "gaps": {
@@ -3497,8 +3605,8 @@
   {
    "path": "sites/super-pit/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 6979,
-   "sha256": "457014cdb2a41b32e9d31bd7ce8808f73fc5302c56d7d90b416a3a4839835198",
+   "bytes": 2470,
+   "sha256": "6c5638cfcb443ec0316ce3fb4c4d7a5826cc24badcb6089fd5a10e019e871a9d",
    "year": 1986,
    "method": "rf"
   },
@@ -3513,8 +3621,8 @@
   {
    "path": "sites/super-pit/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 9909,
-   "sha256": "f07a99fd2206082f5d8a1166ffe89a3c84f1321dcfbef38b5300ce4bc73da5ad",
+   "bytes": 2712,
+   "sha256": "264562db259d1b26dfa3609091846da1151c81018c05ddedd902d09684368ebf",
    "year": 1987,
    "method": "rf"
   },
@@ -3529,8 +3637,8 @@
   {
    "path": "sites/super-pit/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 9081,
-   "sha256": "f2c03a8c755fabc5fc00fefcda2590611c9b487c621b34a443b95fcccb2c7a98",
+   "bytes": 3970,
+   "sha256": "63da028cd3e41e7102fd4d1e2a13540e972cc4895328e2e176d1f99d7011eff5",
    "year": 1988,
    "method": "rf"
   },
@@ -3545,8 +3653,8 @@
   {
    "path": "sites/super-pit/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 9025,
-   "sha256": "cc49fd113a60a3347d690d15a47848b01ad66d389b189c5a4b40b19587ecf40d",
+   "bytes": 3097,
+   "sha256": "c15aafa9592fe26357a99a84ff84fa3dbbae84184749f3c56fac6ecdeee31c6d",
    "year": 1989,
    "method": "rf"
   },
@@ -3561,8 +3669,8 @@
   {
    "path": "sites/super-pit/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 9453,
-   "sha256": "ba7e5802c9f2503144b684d427f2cb4d98855cb612450f07048b3b8ab469d437",
+   "bytes": 3772,
+   "sha256": "a628d534746709d080bb4a233db175de1d63b09358e5a21a5e9a8f925062a458",
    "year": 1990,
    "method": "rf"
   },
@@ -3577,8 +3685,8 @@
   {
    "path": "sites/super-pit/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 10104,
-   "sha256": "89b43c2d7bd9daf7d0f1f3f09049f7d92f1881b5f15ec7e69d9c8cf468354582",
+   "bytes": 3757,
+   "sha256": "fdb6952f79fc37d73506b3a298d6fb26048db5cef831be87af0bdf3129f00e43",
    "year": 1991,
    "method": "rf"
   },
@@ -3593,8 +3701,8 @@
   {
    "path": "sites/super-pit/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 14783,
-   "sha256": "f31189cd4ee88d1279488b75b14f7890d44d357b519bcbdc3969318f3b626d59",
+   "bytes": 4472,
+   "sha256": "ba7695cde549b49ac3317158a58af1ace84584a02fbb21a88d6de79434ab3712",
    "year": 1992,
    "method": "rf"
   },
@@ -3609,8 +3717,8 @@
   {
    "path": "sites/super-pit/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 8695,
-   "sha256": "88bc777cccc108dd09a9017bd8cbc87dca9e54ea6086a9e12d4830979db07f58",
+   "bytes": 3880,
+   "sha256": "5a04adc735d209f9d17307bbe432a11d8d32983ae702283dd5963f57142c2e4c",
    "year": 1993,
    "method": "rf"
   },
@@ -3625,8 +3733,8 @@
   {
    "path": "sites/super-pit/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 9056,
-   "sha256": "a82953e1626b4b2b8e70475e68e2c77fa4be9a62f98d34d1c370465b844ae5ef",
+   "bytes": 3956,
+   "sha256": "59841a899491b8c1ae15d61af605ca5c65b786d19cd01cbc61b73e5f338eb1b4",
    "year": 1994,
    "method": "rf"
   },
@@ -3641,8 +3749,8 @@
   {
    "path": "sites/super-pit/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 9742,
-   "sha256": "ae8f1918a9c4bef95086c61a5b3746f6e4b14a1ed3e030f20ee7ed5c09f17949",
+   "bytes": 4021,
+   "sha256": "496e9b6d65e1f576168515980cea5f156bcf6b13ce0dacdeb3f4b91e2547b534",
    "year": 1995,
    "method": "rf"
   },
@@ -3657,8 +3765,8 @@
   {
    "path": "sites/super-pit/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 10539,
-   "sha256": "25e6bf5fce1f365709816507ff2a6e38e3f3c68d77baf8ffc126cfb52e96e253",
+   "bytes": 3437,
+   "sha256": "bc50dd61bde50d3ac27f18882be2eddb2928a3d55464d2f6d6b115513f9d865e",
    "year": 1996,
    "method": "rf"
   },
@@ -3673,8 +3781,8 @@
   {
    "path": "sites/super-pit/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 6756,
-   "sha256": "39c09be67f987a4f004baaf619540636b7daa25d208e5c06ef85215a80b31482",
+   "bytes": 2877,
+   "sha256": "f2f4998d32c10137fb17f3285bd2a1b96f23b41bf5181f54580d5ad4130a3faf",
    "year": 1997,
    "method": "rf"
   },
@@ -3689,8 +3797,8 @@
   {
    "path": "sites/super-pit/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 8324,
-   "sha256": "c572b3c838204b1015874741815d0914a046a44beae3e376c164c277362be625",
+   "bytes": 3548,
+   "sha256": "ee65e45204c9c438bb93b5efcb0224a8570363ef490a44eda20b46557f1f18a4",
    "year": 1998,
    "method": "rf"
   },
@@ -3705,8 +3813,8 @@
   {
    "path": "sites/super-pit/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 9160,
-   "sha256": "3c08381bd59c1321de8da64fd39e85ff04bb9fd52aa06b9f0f2b4a432e40f042",
+   "bytes": 4501,
+   "sha256": "8aa18ab0deebf95ec59d66ab73ad594e717986f7aab8748b29e1c72097cde838",
    "year": 1999,
    "method": "rf"
   },
@@ -3721,8 +3829,8 @@
   {
    "path": "sites/super-pit/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 8634,
-   "sha256": "81ea4f586371a27f6bdadb90cda636e3f49b87628a096828a820931229c1983c",
+   "bytes": 4005,
+   "sha256": "c9fb2ccb895169c0f5ce77cf4a62cc882f34a1dfddf620dd4c1301f27c453848",
    "year": 2000,
    "method": "rf"
   },
@@ -3737,8 +3845,8 @@
   {
    "path": "sites/super-pit/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 10834,
-   "sha256": "d008d473db6379c16a6ec436ba20bb4e2375df3075c60914d5f4c3703b5ac53c",
+   "bytes": 4350,
+   "sha256": "dcaf7b1960e3afb8184784d0de9339a10f0de134f3479f2850fa96548974bad4",
    "year": 2001,
    "method": "rf"
   },
@@ -3753,8 +3861,8 @@
   {
    "path": "sites/super-pit/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 12844,
-   "sha256": "491a70dfe742c5cfd48c490e97a736862cb705dc5f7d85b11f39f352b1c08dff",
+   "bytes": 3881,
+   "sha256": "54af5fc17ccbd5f44d0aa6229138b047e393284b956ffa4c524db0d0d72985f2",
    "year": 2002,
    "method": "rf"
   },
@@ -3769,8 +3877,8 @@
   {
    "path": "sites/super-pit/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 10325,
-   "sha256": "1f507cffedca37afdeb09e64ace1036e2d5dbb1c2555c2b21047bd6e877ec983",
+   "bytes": 4165,
+   "sha256": "a0f949b436cbd76d7fe1e2faa11a6367596dfd4085a946fe2bb351a183f70f54",
    "year": 2003,
    "method": "rf"
   },
@@ -3785,8 +3893,8 @@
   {
    "path": "sites/super-pit/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 9985,
-   "sha256": "6ceeb67be5e7bd9009566a20eb2e2fcce0e8b1bd315aab7ef7d7bfe758c0ba57",
+   "bytes": 4198,
+   "sha256": "372472ef5dad9ea6816579d356b2a0bc40be13ac6730cd368d36a991b83e7723",
    "year": 2004,
    "method": "rf"
   },
@@ -3801,8 +3909,8 @@
   {
    "path": "sites/super-pit/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 9904,
-   "sha256": "fdfed1286a338928acc32b5280144c0752d0dd4d332edf74f544c440f0b522d8",
+   "bytes": 4367,
+   "sha256": "653fa7735eeb19406da02d153d0abcff7fa1af43512849b1c2f68f794cc30338",
    "year": 2005,
    "method": "rf"
   },
@@ -3817,8 +3925,8 @@
   {
    "path": "sites/super-pit/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 8348,
-   "sha256": "57c97834cdecf32d8160ccca30043e1d4a9d72eac61c769015a28183a955de5e",
+   "bytes": 4209,
+   "sha256": "9e82546ce4742f650df7b269e7da2cc7e39a69ef0608573849f15112bb07fef1",
    "year": 2006,
    "method": "rf"
   },
@@ -3833,8 +3941,8 @@
   {
    "path": "sites/super-pit/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 8989,
-   "sha256": "5bce609510c3fe333a8ee6eac0f40ac732cdaecdb5b5ae6ef56348aec265cd48",
+   "bytes": 3837,
+   "sha256": "c32f727b29bd101a9369ba4176dfd92866e9d071dc63a651d5742b20e644a985",
    "year": 2007,
    "method": "rf"
   },
@@ -3849,8 +3957,8 @@
   {
    "path": "sites/super-pit/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 11407,
-   "sha256": "0b4d9e1c372b9bfd0247f713b9156e77571304dd3bc1cb9ec18623510a54fa63",
+   "bytes": 3887,
+   "sha256": "ad3958fefea0160dd4fb2554bf4129e37b08c51b3ff15f950f85b5d8a1b83b5e",
    "year": 2008,
    "method": "rf"
   },
@@ -3865,8 +3973,8 @@
   {
    "path": "sites/super-pit/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 10116,
-   "sha256": "1cdaa5dcad871feb8b99ce7193476532d2adca28f430a9b72a53aeadef57d1e6",
+   "bytes": 4133,
+   "sha256": "e1f9ca01a8fc0bb0f4d459f6cfa767ccb0f7d12d0371333d5b7fedc3a89bddb6",
    "year": 2009,
    "method": "rf"
   },
@@ -3881,8 +3989,8 @@
   {
    "path": "sites/super-pit/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 8975,
-   "sha256": "80eb3cf1c6ccdfa7a43556a1f4c0649c8872fd928c439ece770ac875f540e395",
+   "bytes": 4128,
+   "sha256": "9ff83e9cbe7ff20737be7ac2ccb93c4eb83f2705dca7a1c1270dd7c32ac0cd48",
    "year": 2010,
    "method": "rf"
   },
@@ -3897,8 +4005,8 @@
   {
    "path": "sites/super-pit/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 9012,
-   "sha256": "d00b09afcf2dbbe6d0603f40639eead538f57cc219baccb9686ab982c64c2f4c",
+   "bytes": 4538,
+   "sha256": "aadd15e30533316feb04193896268f3eec1a55b16b7bd5df22a122d526dad19c",
    "year": 2011,
    "method": "rf"
   },
@@ -3913,8 +4021,8 @@
   {
    "path": "sites/super-pit/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 10192,
-   "sha256": "46cbd23c6f99f981c905512a85c6b966ab2be21bcdc198b1eb984dc83c9e16d4",
+   "bytes": 4086,
+   "sha256": "1c8b674c1e997c3fa9ca2f012e261bac6c3db1e461f1839e7f8ed227842bac54",
    "year": 2012,
    "method": "rf"
   },
@@ -3929,8 +4037,8 @@
   {
    "path": "sites/super-pit/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 9757,
-   "sha256": "5731d8a48e87490cac35ee19e97a72b7493fb9c43cac98d2176b1d6548391262",
+   "bytes": 4618,
+   "sha256": "7cae8bf32856aaaa6ebade05f1adaf00125990b6e8254a81e62199edaee80c5a",
    "year": 2013,
    "method": "rf"
   },
@@ -3945,8 +4053,8 @@
   {
    "path": "sites/super-pit/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 8857,
-   "sha256": "b9c4ff813edc7d65de6210182509376b853d218b0c1ec3ad71f5c23e89f8e245",
+   "bytes": 4572,
+   "sha256": "1df6562add54fe066609a5dc04ae6dfafb6d115a7999eb1d6398c8591a84ba16",
    "year": 2014,
    "method": "rf"
   },
@@ -3961,8 +4069,8 @@
   {
    "path": "sites/super-pit/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 10119,
-   "sha256": "411fdccfb5b5d8292312c385f1467ba882008faba46c4bea5371a78d96bece7f",
+   "bytes": 3917,
+   "sha256": "49bd806e078a5ca301d1169608519c7f2c88729fcb580d728a6ee6a4028bf554",
    "year": 2015,
    "method": "rf"
   },
@@ -3977,8 +4085,8 @@
   {
    "path": "sites/super-pit/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 10399,
-   "sha256": "71d6947339cb59ac87be54cf49a5301d4ea5bf10d826c7ea7da1dc7da3ec6417",
+   "bytes": 4185,
+   "sha256": "18cf7fd4da9e6c1818c23cf5ea7f024f3b873e23fba6e4cda117c18d8e0391c1",
    "year": 2016,
    "method": "rf"
   },
@@ -3993,10 +4101,18 @@
   {
    "path": "sites/super-pit/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 17541,
-   "sha256": "8c4914699ac598bdcd6af53ead259be4e8d7dfa1c3478790077346164adb26ec",
+   "bytes": 4313,
+   "sha256": "a6f197b263b15bfadd09a7dd0b0e04d5eb65fd8e955b482955b07b8429446672",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3439,
+   "sha256": "aa5840354adeb0f8f3c3f4820822c8174881ab3f2436176e53d2ca90206ce29b",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2018-otsu.png",
@@ -4009,10 +4125,18 @@
   {
    "path": "sites/super-pit/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 9988,
-   "sha256": "703ff20a54ef1f4b8825ac4033f30c85287e47fb526cafcbce7b4dc01382bef7",
+   "bytes": 4734,
+   "sha256": "f4a466774e05304c81c572acf1a7e9531581430e4066b0b1b91a07494952d01a",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2812,
+   "sha256": "ff3fedd888c05a97759342c593f3e5ddbd6ff867586079247dfd977e4ec5fbdd",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2019-otsu.png",
@@ -4025,10 +4149,18 @@
   {
    "path": "sites/super-pit/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 16776,
-   "sha256": "a0c4e17698e2f4f52031b8bd7325ab83fee6a420929631e16a926cd2417b4811",
+   "bytes": 4564,
+   "sha256": "03af8ca3bcd1ffb2944c78fc418e74d77384f677158d8c9e59d8dfaba8ff73ce",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3168,
+   "sha256": "871c68f57ff0ee71c3c9cbe9f3ef75e03fb2fd7ed3f34cd83928d8cc825e9bc1",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2020-otsu.png",
@@ -4041,10 +4173,18 @@
   {
    "path": "sites/super-pit/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 14497,
-   "sha256": "5c9c1a269c0560b045e2983695607a494acecfb47787327f20594f53d76fc247",
+   "bytes": 5718,
+   "sha256": "8934542dd17e1243aa059a75cf132eba37d97f10dc637d643ba30bcd3071ae32",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 3749,
+   "sha256": "485be081de0ecfb56698ea59730d70a689227fa9d0e5e1b8d0a5de0a6ff3263b",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2021-otsu.png",
@@ -4057,10 +4197,18 @@
   {
    "path": "sites/super-pit/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 16939,
-   "sha256": "6029ae9ef6775731d4df5c26c0ea36547e1d07171ba32d8dca47f8d037aae2b9",
+   "bytes": 5176,
+   "sha256": "5942b73f57cc8cfa4d1c3a0029d9076f186ff4d283f5bb2d451682e3610ff141",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 3450,
+   "sha256": "3dbdddd7b4b3201ce5e71b11b614bb6e70a1077dc37860375610972df507ee0f",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2022-otsu.png",
@@ -4073,10 +4221,18 @@
   {
    "path": "sites/super-pit/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 10732,
-   "sha256": "afbe27af709c58f093e4df732749806923cbfd86275b2c81ad314a95c79c40dd",
+   "bytes": 4774,
+   "sha256": "5c83f7caaeb70fc92ec0f622644fc374ff9e1125452502174fd42f903706a2d5",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 3011,
+   "sha256": "d2f0aeb4449de1a6d417b163614766d696d0f1e90fc42b8e7f64fe4acc839754",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2023-otsu.png",
@@ -4089,10 +4245,18 @@
   {
    "path": "sites/super-pit/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 13969,
-   "sha256": "2e5c48c7d11123dc5cee4f97c526f0bbeb59ed3f191ca5285cdf2d23766afcb1",
+   "bytes": 5332,
+   "sha256": "30c2085f5ee93798427c460caf165141dfab3fc47b38c3e732c75cf9aede43b9",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2684,
+   "sha256": "f730512f159ff45653b8a61fccf57efa97527aac698dd26378dbbe803445057a",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2024-otsu.png",
@@ -4105,10 +4269,18 @@
   {
    "path": "sites/super-pit/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 11749,
-   "sha256": "d9b56a218ba88a2c9efa6f8c2405ec439c04ca3e944911d1ca254e55376fc6bd",
+   "bytes": 5355,
+   "sha256": "c13f4cbe537ba4c05a49657fa6521c770e178d27413c2e1c226e161fcefb9ed7",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 2858,
+   "sha256": "ac6c41c867bdf36c959cf6977917a6b71c797c76fd42f739bd159d970156785c",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2025-otsu.png",
@@ -4121,10 +4293,18 @@
   {
    "path": "sites/super-pit/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 13952,
-   "sha256": "0517103daff6fb215cdff658c35861615baf5595aca759539ccf0ef3d65b5924",
+   "bytes": 5008,
+   "sha256": "f69c99f21616f28d441ebb85a4285ae6854ad0518ec0d9d6464c631121a82b01",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 2676,
+   "sha256": "be8641ca7bac1bdd02607a8a9341c4bbcfb5ed4cf778a5c21894126a7902ff5b",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/masks/2026-otsu.png",
@@ -4137,10 +4317,18 @@
   {
    "path": "sites/super-pit/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 12451,
-   "sha256": "0fc74aefda3554ec99b22ff2c5e41f45916922d8dc7e2e9edf4fb1862a8d5ee1",
+   "bytes": 5657,
+   "sha256": "5afde3c5fc75609bf69b8bca5be4c88e7193219b058fda2d8496ce31137d4f91",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/super-pit/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 2863,
+   "sha256": "4fae4c88fb5fa3f6dcf13f830af50f91b53587ff8755a453ba5e80c04c501449",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/super-pit/polygons.geojson",

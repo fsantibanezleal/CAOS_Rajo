@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "grasberg",
  "site": {
   "id": "grasberg",
@@ -1840,7 +1840,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1896,7 +1897,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1952,7 +1954,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2008,7 +2011,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2064,7 +2068,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2120,7 +2125,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2174,7 +2180,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2230,7 +2237,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2286,7 +2294,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2340,7 +2349,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2523,45 +2533,87 @@
    ],
    "rf": [
     null,
-    9.369,
-    15.7464,
+    2.1429,
+    4.0851,
     null,
-    28.899,
-    65.8683,
-    17.9874,
-    23.8707,
-    24.0543,
+    6.5124,
+    53.1198,
+    6.3873,
+    8.5212,
+    8.0739,
     null,
-    29.6541,
-    null,
-    null,
-    null,
-    null,
-    null,
-    24.0048,
-    24.1803,
-    65.6334,
-    29.9286,
-    null,
-    null,
-    null,
-    23.1255,
+    12.5136,
     null,
     null,
     null,
     null,
-    28.7388,
-    27.1557,
-    35.0559,
-    33.2478,
-    34.3359,
-    38.2959,
-    34.7535,
-    37.4679,
-    30.6648,
+    null,
+    12.0771,
+    12.7341,
+    33.6186,
+    15.1191,
     null,
     null,
-    35.3322
+    null,
+    13.5828,
+    null,
+    null,
+    null,
+    null,
+    13.7052,
+    15.7392,
+    19.6236,
+    20.367,
+    21.105,
+    18.0918,
+    18.0009,
+    15.5511,
+    11.8926,
+    null,
+    null,
+    13.3614
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    37.1997,
+    37.2267,
+    29.7117,
+    42.1587,
+    31.4379,
+    40.158,
+    39.9609,
+    null,
+    null,
+    35.9127
    ]
   },
   "index_mean": {
@@ -2756,24 +2808,45 @@
     "n": 23,
     "pelt": {
      "breaks": [
-      1992
+      1992,
+      1995,
+      2005,
+      2022
      ],
      "segments": [
       {
        "start": 1988,
        "end": 1991,
-       "mean": 18.0048,
-       "slope": 9.765
+       "mean": 4.2468,
+       "slope": 2.1847
       },
       {
        "start": 1992,
+       "end": 1994,
+       "mean": 22.6761,
+       "slope": -22.2993
+      },
+      {
+       "start": 1995,
+       "end": 2004,
+       "mean": 11.3497,
+       "slope": 1.3544
+      },
+      {
+       "start": 2005,
+       "end": 2021,
+       "mean": 18.8953,
+       "slope": -0.3531
+      },
+      {
+       "start": 2022,
        "end": 2026,
-       "mean": 33.1678,
-       "slope": 0.0559
+       "mean": 13.6017,
+       "slope": -1.0949
       }
      ],
-     "penalty": 369.803621,
-     "sigma": 6.270064,
+     "penalty": 51.819348,
+     "sigma": 2.347104,
      "cost": "l2",
      "min_size": 3
     },
@@ -2782,10 +2855,39 @@
       1992,
       2005
      ],
-     "k": 3.135032,
-     "h": 25.080255,
-     "sigma": 6.270064,
-     "target": 1.90125
+     "k": 1.173552,
+     "h": 9.388416,
+     "sigma": 2.347104,
+     "target": 0.6975
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 8,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 36.7208,
+       "slope": 0.301
+      }
+     ],
+     "penalty": 734.325996,
+     "sigma": 10.849519,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 5.424759,
+     "h": 43.398074,
+     "sigma": 10.849519,
+     "target": -0.1971
     }
    }
   },
@@ -2806,13 +2908,19 @@
     "year": 1992,
     "method": "cusum",
     "series": "rf",
-    "score": 25.080255
+    "score": 9.388416
    },
    {
     "year": 1992,
     "method": "pelt",
     "series": "rf",
-    "score": 369.803621
+    "score": 51.819348
+   },
+   {
+    "year": 1995,
+    "method": "pelt",
+    "series": "rf",
+    "score": 51.819348
    },
    {
     "year": 2004,
@@ -2824,13 +2932,25 @@
     "year": 2005,
     "method": "cusum",
     "series": "rf",
-    "score": 25.080255
+    "score": 9.388416
+   },
+   {
+    "year": 2005,
+    "method": "pelt",
+    "series": "rf",
+    "score": 51.819348
    },
    {
     "year": 2020,
     "method": "pelt",
     "series": "otsu",
     "score": 68.642933
+   },
+   {
+    "year": 2022,
+    "method": "pelt",
+    "series": "rf",
+    "score": 51.819348
    }
   ],
   "gaps": {
@@ -3520,8 +3640,8 @@
   {
    "path": "sites/grasberg/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 5037,
-   "sha256": "44a0741decfeeaabc8ef4ecbce69bec4b2e5de685838ee91c1d396dec1b8849b",
+   "bytes": 1647,
+   "sha256": "366b891bcf7fde5f3ac782627addd81757946aaa33b1b06502b8cd902619bfe0",
    "year": 1987,
    "method": "rf"
   },
@@ -3536,8 +3656,8 @@
   {
    "path": "sites/grasberg/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 5407,
-   "sha256": "d05f37e36c01283013c9059f764a0450b7749e3ba9e815f1529133a3dda92be3",
+   "bytes": 2640,
+   "sha256": "27cf800fb3b378679f66b2b6c3ff44a0c4298f9c66e304d0c5b65aaf79011b07",
    "year": 1988,
    "method": "rf"
   },
@@ -3552,8 +3672,8 @@
   {
    "path": "sites/grasberg/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 5371,
-   "sha256": "a6a13a58025d74cbaa88c49a1d276247fd891611b42556a515d13fcf213a1aec",
+   "bytes": 2011,
+   "sha256": "9cd57e4c0ec7600a6ab618028bed9157cfb22cd9b098fe808e7b8ead9875421a",
    "year": 1989,
    "method": "rf"
   },
@@ -3568,8 +3688,8 @@
   {
    "path": "sites/grasberg/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 2249,
-   "sha256": "c0ae4f78b85c82e8656c960cec8529d9cec278d85d316dbad10b59c547d21c15",
+   "bytes": 651,
+   "sha256": "9b29cebb0b6542b8b2f20340f1af9c05d3a2fa67024b8bd87e8c875a1f2e2b31",
    "year": 1990,
    "method": "rf"
   },
@@ -3584,8 +3704,8 @@
   {
    "path": "sites/grasberg/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 11101,
-   "sha256": "40774d0afebf504d7b7a5955ea4ceb1ca395bdabe6a2c869f26b08f08c06e027",
+   "bytes": 2426,
+   "sha256": "afc965efb2204d5ab45f628d59bd0ae7a2fd9fcf74e6ee9f18686e352c5afa24",
    "year": 1991,
    "method": "rf"
   },
@@ -3600,8 +3720,8 @@
   {
    "path": "sites/grasberg/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 2311,
-   "sha256": "335c09655c8261576bc5addef5cb578896f41eecde02415a100cb0aa5b74cdea",
+   "bytes": 12727,
+   "sha256": "098e4776b82c135eb0b346e9f5bd5e0c3515e721b9727e1a747613acfd895571",
    "year": 1992,
    "method": "rf"
   },
@@ -3616,8 +3736,8 @@
   {
    "path": "sites/grasberg/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 6959,
-   "sha256": "5f24518642488b87d63ed0a594d63289353d844a663f3459445941d4f299c260",
+   "bytes": 2953,
+   "sha256": "a5569958effb78106042a62652bc727a4573052fa8d67f3e43f40d29844deacb",
    "year": 1993,
    "method": "rf"
   },
@@ -3632,8 +3752,8 @@
   {
    "path": "sites/grasberg/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 8301,
-   "sha256": "549257d9c175f333f3f08d179ab73c9d01259abb507cd2596c804fc402c365c6",
+   "bytes": 3023,
+   "sha256": "36a71872f2be26924c6f7dac281d56174b0069b9eec28e3e5d62859b77116160",
    "year": 1994,
    "method": "rf"
   },
@@ -3648,8 +3768,8 @@
   {
    "path": "sites/grasberg/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 7634,
-   "sha256": "8a45eb510fd1838884a545c67e4eb624901b63084db0d562bd0cb05259bfb407",
+   "bytes": 2815,
+   "sha256": "47de2b6aebc1c3dcec47ff5e06950f0de9788b7a761c7b59686d5a28fe8d14a4",
    "year": 1995,
    "method": "rf"
   },
@@ -3664,8 +3784,8 @@
   {
    "path": "sites/grasberg/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 7541,
-   "sha256": "3aa89938af24efad55f89dcb261c8ec9b4feae90da4bd33d58190584b478cf98",
+   "bytes": 2556,
+   "sha256": "e5d548a77a3d27a75befc8b2422cb926ed711b18ab7d67805da59a0a6e3fe019",
    "year": 1996,
    "method": "rf"
   },
@@ -3680,8 +3800,8 @@
   {
    "path": "sites/grasberg/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 8624,
-   "sha256": "995a7e1bb3ffc8b937a5f433a599ba2431a1fe830d66387821bbecdaa6bdac8f",
+   "bytes": 3363,
+   "sha256": "73a4413b693aca8e1c6ae06cc3a2823d8b60bd63d91cb5e71b8eb12168946876",
    "year": 1997,
    "method": "rf"
   },
@@ -3696,8 +3816,8 @@
   {
    "path": "sites/grasberg/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 7203,
-   "sha256": "f91068d4be9e70bb7ed873b9ab69995417d8d772e90c86629898096bb4fa3183",
+   "bytes": 4935,
+   "sha256": "88ce82eeac816fb62973c880c182a24f6d4305d3763dda8c74fd5daab27e27b5",
    "year": 1998,
    "method": "rf"
   },
@@ -3712,8 +3832,8 @@
   {
    "path": "sites/grasberg/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 4943,
-   "sha256": "6188d79747f418b31bd6cc3d985c3d93fc79adf571738acf5e6a870932bbb10b",
+   "bytes": 3031,
+   "sha256": "8d5d152c1b33da876c5939d9bba17f534aa46879586cbc8c3d3514e0b4c2d602",
    "year": 1999,
    "method": "rf"
   },
@@ -3728,8 +3848,8 @@
   {
    "path": "sites/grasberg/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 5048,
-   "sha256": "8885d719349988a18b511f1050bd1219dcf96ed96c2fb7b203f171cddbd4dab7",
+   "bytes": 2722,
+   "sha256": "bfde032917b553efa9b7ac59b1f0ef8558854dd90a180f99c16c5f9253f9aee3",
    "year": 2000,
    "method": "rf"
   },
@@ -3744,8 +3864,8 @@
   {
    "path": "sites/grasberg/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 7657,
-   "sha256": "21581463893573c591647cbc667d1b9d5818292568a9b98e43f7b9fe114db672",
+   "bytes": 1954,
+   "sha256": "b9ec5fcf16981284a095c3cfe92305e26ba82ad58350d1351087fe2a001d1395",
    "year": 2001,
    "method": "rf"
   },
@@ -3760,8 +3880,8 @@
   {
    "path": "sites/grasberg/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 1538,
-   "sha256": "93410b13821347d8ee045e2736f8b7834018340e6f5a83c741ba43693967faf3",
+   "bytes": 383,
+   "sha256": "a77be66b2be991ae414b15e43b571f69181f2aa67c2dbad66a800287ff832699",
    "year": 2002,
    "method": "rf"
   },
@@ -3776,8 +3896,8 @@
   {
    "path": "sites/grasberg/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 7479,
-   "sha256": "dc387c1d5f96986beff4d55566cd1ba186949516cced3c6aaef010590d89cbda",
+   "bytes": 3001,
+   "sha256": "fca77431a0ef7072a509fe6ce003ce97dfa59802586d8ff92d827eb071d3e05a",
    "year": 2003,
    "method": "rf"
   },
@@ -3792,8 +3912,8 @@
   {
    "path": "sites/grasberg/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 6474,
-   "sha256": "6e5f5587037ec39632c3c87e9873778d7f24954455fed316e2f54de81f5b7564",
+   "bytes": 3449,
+   "sha256": "0e49b50613961ef5ab4824c714d1919f06e875338cd30f7bc8103aa5d8d50c83",
    "year": 2004,
    "method": "rf"
   },
@@ -3808,8 +3928,8 @@
   {
    "path": "sites/grasberg/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 2560,
-   "sha256": "1f5602c395a4a7ef265e99144ddcb41a3049b51e50795988ab6e0ee20d511f46",
+   "bytes": 10918,
+   "sha256": "85d09c7f656a1dd5a035cf0c5b424ae66b69cd5438fe40654c111b3c164e1bc3",
    "year": 2005,
    "method": "rf"
   },
@@ -3824,8 +3944,8 @@
   {
    "path": "sites/grasberg/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 7996,
-   "sha256": "d30c1eec0999a393146a9bccda2e1056739ec0c4dc14e9a40fe12c03e4eca71e",
+   "bytes": 2785,
+   "sha256": "7410ff091848c21740b3c8114f5b7b30465e43c7ce6fe47ed1e779b575d1bd6e",
    "year": 2006,
    "method": "rf"
   },
@@ -3840,8 +3960,8 @@
   {
    "path": "sites/grasberg/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 7119,
-   "sha256": "88e155c15930e05e33fcf4ab6f51ba150162a707f029696334bda018a098d486",
+   "bytes": 2521,
+   "sha256": "c38e27709cda02b57f6b84b4003a4b01feb1ee5efd09df26d6393b90936043e5",
    "year": 2007,
    "method": "rf"
   },
@@ -3856,8 +3976,8 @@
   {
    "path": "sites/grasberg/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 5984,
-   "sha256": "00b5d32932c803992b24ad43458f18602d36b7e80aa2040442c7cf3254fd1eea",
+   "bytes": 2328,
+   "sha256": "d6a7fbd7e9bb0023237a0f99ad82b3f0d22abd273b0cdc8dea24376c2c58df40",
    "year": 2008,
    "method": "rf"
   },
@@ -3872,8 +3992,8 @@
   {
    "path": "sites/grasberg/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 4452,
-   "sha256": "a03b3aab3740f443e7ff734516df06e43dfc245362082940644db50979c7c06f",
+   "bytes": 2337,
+   "sha256": "e2b53da52895db381889ef275daf7d008c993155c13e8e78b3a791daca82cd3c",
    "year": 2009,
    "method": "rf"
   },
@@ -3888,8 +4008,8 @@
   {
    "path": "sites/grasberg/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 6637,
-   "sha256": "8a104958cd777e18efef3ce45f9cdd37f370bd3d33b8caf4a7a7c8385f564964",
+   "bytes": 3075,
+   "sha256": "2ff50a9ce783579cc0d875954839071096bdf63726bed0ca3a89130d44f91efa",
    "year": 2010,
    "method": "rf"
   },
@@ -3904,8 +4024,8 @@
   {
    "path": "sites/grasberg/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 7271,
-   "sha256": "9e96763fd88e371460d0d54b9f601a195bce38eb0ee4df6a1fa13b4c570a0909",
+   "bytes": 3588,
+   "sha256": "dff57b683dd3b429e7ad3da0385e561d3560dadaaf2c92bdb4545616d3238947",
    "year": 2011,
    "method": "rf"
   },
@@ -3920,8 +4040,8 @@
   {
    "path": "sites/grasberg/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 9080,
-   "sha256": "6c73d34ab1e690d63c9f3ae1b11a8e3c4d37235e46c490c89cf5d79bcb4af936",
+   "bytes": 3600,
+   "sha256": "6a42d48556b3577b85c53cad4b4fc3d535c4a2433755c4cc40f85dbc82e91f75",
    "year": 2012,
    "method": "rf"
   },
@@ -3936,8 +4056,8 @@
   {
    "path": "sites/grasberg/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 2605,
-   "sha256": "fd3b0730fa7cdd87ffac3a7ce2643981ccdd836e57f5352fbbc39793eb7a84a5",
+   "bytes": 1172,
+   "sha256": "50dc53de1fa43284ed42661c08dc47245f609a3f02e5eab5f25d87d88fee6c19",
    "year": 2013,
    "method": "rf"
   },
@@ -3952,8 +4072,8 @@
   {
    "path": "sites/grasberg/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 4908,
-   "sha256": "954080972b6b79b457bb4ea717a18d74a9ac898caebdc6bf4c8f479c09dbbbf3",
+   "bytes": 2081,
+   "sha256": "4f7e95ac04f93e938e4185f23fd07f578cede9fde92bec402ecd4f72ccf2b72b",
    "year": 2014,
    "method": "rf"
   },
@@ -3968,8 +4088,8 @@
   {
    "path": "sites/grasberg/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 7130,
-   "sha256": "8357132be223ec67711b22595668a8ecc68e689adc54862a70ca9eaae0aa86ea",
+   "bytes": 3309,
+   "sha256": "d50abc507988ccdfe2cd74913cc0e1c375eab98cd450bf398e342cf8de16346a",
    "year": 2015,
    "method": "rf"
   },
@@ -3984,8 +4104,8 @@
   {
    "path": "sites/grasberg/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 6804,
-   "sha256": "0c7dc6774582e474390666368d344197b4d8f7610be4ceeef0b1621ff53d5faf",
+   "bytes": 3232,
+   "sha256": "54d53ac7763dcf5ec3d9a3efabbd94458eea921302aabf7ed9b8c310516ec407",
    "year": 2016,
    "method": "rf"
   },
@@ -4000,10 +4120,18 @@
   {
    "path": "sites/grasberg/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 9744,
-   "sha256": "8a79a809ff214e06b8ea5fe8c1fc222b2fa21b57c5bdf07dff68e9eee2e9a299",
+   "bytes": 5648,
+   "sha256": "9638a6479dc6988df6b145b6a561633eca8d90c6c81d6614cdfb51736e92829d",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 5867,
+   "sha256": "58e0d2ad2f29c0c1771dceab1c6554d2e7e6a97a21351ff03300b86b7c93b098",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2018-otsu.png",
@@ -4016,10 +4144,18 @@
   {
    "path": "sites/grasberg/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 9787,
-   "sha256": "46cd26ea5bbdb5d1ac53d901816f6162c12fb42ed5c98b986083f6bf86b84de1",
+   "bytes": 6632,
+   "sha256": "82e4454eb1e8052c6bb6e5df731e21244b8a595ab1acac565a7048a184d03e4e",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 7014,
+   "sha256": "36843e8fdb5a3829e2bf36a355fceec59861aaebea8f8322b1292a942c154e37",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2019-otsu.png",
@@ -4032,10 +4168,18 @@
   {
    "path": "sites/grasberg/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 11392,
-   "sha256": "42c61530fb940a2028ae515236bef9ab57dadd7257de267d778ba256b1e781d7",
+   "bytes": 7142,
+   "sha256": "466b90dc2a29de6f06cf5894a64a6a9b2a831fdee7e550e7499eba178fbdd482",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 6449,
+   "sha256": "474c9099922946773b3758be0805e82fcb3bdaf6f5b5c8bd13e08010f2c54102",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2020-otsu.png",
@@ -4048,10 +4192,18 @@
   {
    "path": "sites/grasberg/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 9499,
-   "sha256": "7302e6d152412c7165e9baddf18055bf82d427129a379efaf6ef292414d17cda",
+   "bytes": 5680,
+   "sha256": "80e5385016ec7b205a9e5fb13d4c92dab06c16aa265f51314c66e0bae35d13bc",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 5037,
+   "sha256": "062bd67e390736ce895f0b3e282d15059bd9e2e7c2426e2f69cf0ba6598b284b",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2021-otsu.png",
@@ -4064,10 +4216,18 @@
   {
    "path": "sites/grasberg/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 10120,
-   "sha256": "f014ff13f3a029aa4409c5fb035e3621b3349c9bd81cb99a0ef1dc7e94cccfa1",
+   "bytes": 5678,
+   "sha256": "e693e48be46eb396af7474c7d6f4551c63475354736521d275d2f0a329d535f7",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 4882,
+   "sha256": "018420a4b5151ce3790b17ec2882c27e96b7ddab9c6824024c02447d68dce74e",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2022-otsu.png",
@@ -4080,10 +4240,18 @@
   {
    "path": "sites/grasberg/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 9771,
-   "sha256": "ccd18ddda4d98da86799aac439220a790da3d37f1bb191942cb48f22c3990c56",
+   "bytes": 4950,
+   "sha256": "808a95698238e4248c0dceae603185f0a2d590ceb8c61e89356d68dcec7a2647",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 4837,
+   "sha256": "a86c77521219c36cc6c285f106f50d79e9364ac823bd69f99e738ffbf931a6c4",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2023-otsu.png",
@@ -4096,10 +4264,18 @@
   {
    "path": "sites/grasberg/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 8095,
-   "sha256": "43f05c56f40869f3b3703a1519be9b282427ca33bf4f6ace9a396ad1e6493842",
+   "bytes": 2979,
+   "sha256": "cdf4dc6e586ba8f18a7d31b20a040b75be119c8a40e8f5b344e2f0e49a07e84f",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 5056,
+   "sha256": "49177f09615159388d9266004e40a8eff5984b3de1c42d15d32aef78adbe0dea",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2024-otsu.png",
@@ -4112,10 +4288,18 @@
   {
    "path": "sites/grasberg/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 8213,
-   "sha256": "ea290cc7d29826c347f19b4384c6bdaf180a225951a45f94c3ee3b824e243f44",
+   "bytes": 3268,
+   "sha256": "5adbf8f14ec3acb8b7c8121623454f92f994d2870128f997b8972dd4cd1f342e",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 5506,
+   "sha256": "cf940259ba176c111968bd5c0dd01a5cd3d8b7496760597831009e9d1b4afc0a",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2025-otsu.png",
@@ -4128,10 +4312,18 @@
   {
    "path": "sites/grasberg/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 7977,
-   "sha256": "53e53c49f1887ad95331291394ef675b5ef42855a0c41a3919aec7ef0c04d887",
+   "bytes": 3365,
+   "sha256": "93e4ff03441e1c75b90ee5db9c69e404287332f363d1645405e655da0b1fb85d",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 4453,
+   "sha256": "8e1fbb018942ff5c06756f60b1eab4914e4af20808922d0cdbb371a6a0ad11c5",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/masks/2026-otsu.png",
@@ -4144,10 +4336,18 @@
   {
    "path": "sites/grasberg/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 9434,
-   "sha256": "28926753531a5b49d7bcd50e9f4925e3307fcb3bbcfd8c52572022657dfde5d4",
+   "bytes": 5049,
+   "sha256": "29f0b25b47f70dcffe9b2fdbd5052ca2f5694c333e12706aaaf6a3496ffb396f",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/grasberg/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 4607,
+   "sha256": "14eef6e5c951279f47a1b0898d1a4bb3d4ef226233fcd65b4c9b79aedaf81933",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/grasberg/polygons.geojson",

@@ -14,13 +14,13 @@
    "envelope_valid_frac": 0.9734,
    "rf": {
     "file": "masks/1986-rf.png",
-    "area_km2": 69.0633,
-    "window_area_km2": 141.4593,
+    "area_km2": 36.3681,
+    "window_area_km2": 50.0913,
     "envelope_valid_frac": 0.9734,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -37,13 +37,13 @@
    "envelope_valid_frac": 0.996,
    "rf": {
     "file": "masks/1987-rf.png",
-    "area_km2": 73.7946,
-    "window_area_km2": 208.9593,
+    "area_km2": 35.946,
+    "window_area_km2": 50.3226,
     "envelope_valid_frac": 0.996,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -60,13 +60,13 @@
    "envelope_valid_frac": 0.9997,
    "rf": {
     "file": "masks/1988-rf.png",
-    "area_km2": 80.073,
-    "window_area_km2": 180.9009,
+    "area_km2": 39.861,
+    "window_area_km2": 55.1781,
     "envelope_valid_frac": 0.9997,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -83,13 +83,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/1989-rf.png",
-    "area_km2": 61.2702,
-    "window_area_km2": 117.0261,
+    "area_km2": 38.6487,
+    "window_area_km2": 47.2959,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -106,13 +106,13 @@
    "envelope_valid_frac": 0.9961,
    "rf": {
     "file": "masks/1990-rf.png",
-    "area_km2": 72.2034,
-    "window_area_km2": 118.5858,
+    "area_km2": 36.7029,
+    "window_area_km2": 43.2063,
     "envelope_valid_frac": 0.9961,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -129,13 +129,13 @@
    "envelope_valid_frac": 0.9863,
    "rf": {
     "file": "masks/1991-rf.png",
-    "area_km2": 57.0609,
-    "window_area_km2": 104.6511,
+    "area_km2": 32.2272,
+    "window_area_km2": 37.8684,
     "envelope_valid_frac": 0.9863,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -152,13 +152,13 @@
    "envelope_valid_frac": 0.9999,
    "rf": {
     "file": "masks/1992-rf.png",
-    "area_km2": 76.4775,
-    "window_area_km2": 196.6734,
+    "area_km2": 51.9804,
+    "window_area_km2": 99.0027,
     "envelope_valid_frac": 0.9999,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -175,13 +175,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/1993-rf.png",
-    "area_km2": 91.3608,
-    "window_area_km2": 222.498,
+    "area_km2": 41.436,
+    "window_area_km2": 52.6185,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -198,13 +198,13 @@
    "envelope_valid_frac": 0.9739,
    "rf": {
     "file": "masks/1994-rf.png",
-    "area_km2": 106.2612,
-    "window_area_km2": 382.6206,
+    "area_km2": 68.2461,
+    "window_area_km2": 169.3755,
     "envelope_valid_frac": 0.9739,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -221,13 +221,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/1996-rf.png",
-    "area_km2": 103.095,
-    "window_area_km2": 280.5741,
+    "area_km2": 83.6784,
+    "window_area_km2": 130.4469,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -244,13 +244,13 @@
    "envelope_valid_frac": 0.2591,
    "rf": {
     "file": "masks/1997-rf.png",
-    "area_km2": 28.0413,
-    "window_area_km2": 151.4394,
+    "area_km2": 25.9614,
+    "window_area_km2": 90.8046,
     "envelope_valid_frac": 0.2591,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -267,13 +267,13 @@
    "envelope_valid_frac": 0.9998,
    "rf": {
     "file": "masks/1998-rf.png",
-    "area_km2": 100.8216,
-    "window_area_km2": 278.7102,
+    "area_km2": 51.9579,
+    "window_area_km2": 77.5773,
     "envelope_valid_frac": 0.9998,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -290,13 +290,13 @@
    "envelope_valid_frac": 0.9988,
    "rf": {
     "file": "masks/1999-rf.png",
-    "area_km2": 107.424,
-    "window_area_km2": 323.0577,
+    "area_km2": 75.5685,
+    "window_area_km2": 117.4014,
     "envelope_valid_frac": 0.9988,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -313,13 +313,13 @@
    "envelope_valid_frac": 0.9862,
    "rf": {
     "file": "masks/2000-rf.png",
-    "area_km2": 86.5332,
-    "window_area_km2": 171.2898,
+    "area_km2": 56.0934,
+    "window_area_km2": 67.4388,
     "envelope_valid_frac": 0.9862,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -336,13 +336,13 @@
    "envelope_valid_frac": 0.9966,
    "rf": {
     "file": "masks/2001-rf.png",
-    "area_km2": 78.6969,
-    "window_area_km2": 129.0609,
+    "area_km2": 54.9837,
+    "window_area_km2": 62.9532,
     "envelope_valid_frac": 0.9966,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -359,13 +359,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2002-rf.png",
-    "area_km2": 102.6729,
-    "window_area_km2": 264.8043,
+    "area_km2": 67.3659,
+    "window_area_km2": 89.64,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -382,13 +382,13 @@
    "envelope_valid_frac": 0.9922,
    "rf": {
     "file": "masks/2003-rf.png",
-    "area_km2": 91.7847,
-    "window_area_km2": 187.9605,
+    "area_km2": 53.6778,
+    "window_area_km2": 64.4841,
     "envelope_valid_frac": 0.9922,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -405,13 +405,13 @@
    "envelope_valid_frac": 0.9952,
    "rf": {
     "file": "masks/2004-rf.png",
-    "area_km2": 74.898,
-    "window_area_km2": 116.6832,
+    "area_km2": 50.9958,
+    "window_area_km2": 57.0384,
     "envelope_valid_frac": 0.9952,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -428,13 +428,13 @@
    "envelope_valid_frac": 0.9912,
    "rf": {
     "file": "masks/2005-rf.png",
-    "area_km2": 95.778,
-    "window_area_km2": 214.5996,
+    "area_km2": 53.8488,
+    "window_area_km2": 64.8279,
     "envelope_valid_frac": 0.9912,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -451,13 +451,13 @@
    "envelope_valid_frac": 0.9977,
    "rf": {
     "file": "masks/2006-rf.png",
-    "area_km2": 76.4982,
-    "window_area_km2": 137.8341,
+    "area_km2": 51.8148,
+    "window_area_km2": 58.5288,
     "envelope_valid_frac": 0.9977,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -474,13 +474,13 @@
    "envelope_valid_frac": 0.9893,
    "rf": {
     "file": "masks/2007-rf.png",
-    "area_km2": 88.2882,
-    "window_area_km2": 213.9372,
+    "area_km2": 55.8954,
+    "window_area_km2": 65.4768,
     "envelope_valid_frac": 0.9893,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -497,13 +497,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2008-rf.png",
-    "area_km2": 107.1864,
-    "window_area_km2": 265.3272,
+    "area_km2": 62.0838,
+    "window_area_km2": 76.1526,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -520,13 +520,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2009-rf.png",
-    "area_km2": 87.3981,
-    "window_area_km2": 140.7366,
+    "area_km2": 59.2677,
+    "window_area_km2": 67.878,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -543,13 +543,13 @@
    "envelope_valid_frac": 0.7039,
    "rf": {
     "file": "masks/2010-rf.png",
-    "area_km2": 65.6973,
-    "window_area_km2": 148.4766,
+    "area_km2": 28.9782,
+    "window_area_km2": 38.9007,
     "envelope_valid_frac": 0.7039,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -566,13 +566,13 @@
    "envelope_valid_frac": 0.9796,
    "rf": {
     "file": "masks/2011-rf.png",
-    "area_km2": 97.1424,
-    "window_area_km2": 218.2203,
+    "area_km2": 62.6634,
+    "window_area_km2": 72.3501,
     "envelope_valid_frac": 0.9796,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -589,13 +589,13 @@
    "envelope_valid_frac": 0.9979,
    "rf": {
     "file": "masks/2012-rf.png",
-    "area_km2": 78.7383,
-    "window_area_km2": 121.4649,
+    "area_km2": 56.2248,
+    "window_area_km2": 62.3943,
     "envelope_valid_frac": 0.9979,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -612,13 +612,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2013-rf.png",
-    "area_km2": 84.402,
-    "window_area_km2": 123.3171,
+    "area_km2": 48.8304,
+    "window_area_km2": 51.0858,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -635,13 +635,13 @@
    "envelope_valid_frac": 0.9386,
    "rf": {
     "file": "masks/2014-rf.png",
-    "area_km2": 80.2422,
-    "window_area_km2": 136.1331,
+    "area_km2": 56.4246,
+    "window_area_km2": 61.7733,
     "envelope_valid_frac": 0.9386,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -658,13 +658,13 @@
    "envelope_valid_frac": 0.947,
    "rf": {
     "file": "masks/2015-rf.png",
-    "area_km2": 89.577,
-    "window_area_km2": 196.848,
+    "area_km2": 62.1747,
+    "window_area_km2": 71.2971,
     "envelope_valid_frac": 0.947,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -681,13 +681,13 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2016-rf.png",
-    "area_km2": 87.8454,
-    "window_area_km2": 139.2444,
+    "area_km2": 49.0122,
+    "window_area_km2": 51.6951,
     "envelope_valid_frac": 1.0,
     "flags": [
      "cross_sensor"
     ],
-    "threshold": 0.5,
+    "threshold": 0.7,
     "model": "rf-v1"
    }
   },
@@ -704,12 +704,21 @@
    "envelope_valid_frac": 0.6122,
    "rf": {
     "file": "masks/2017-rf.png",
-    "area_km2": 52.1586,
-    "window_area_km2": 199.6488,
+    "area_km2": 31.275,
+    "window_area_km2": 48.2049,
+    "envelope_valid_frac": 0.6122,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2017-unet.png",
+    "area_km2": 12.0708,
+    "window_area_km2": 12.0708,
     "envelope_valid_frac": 0.6122,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2018": {
@@ -725,12 +734,21 @@
    "envelope_valid_frac": 0.7975,
    "rf": {
     "file": "masks/2018-rf.png",
-    "area_km2": 64.8081,
-    "window_area_km2": 180.6615,
+    "area_km2": 48.0555,
+    "window_area_km2": 72.2682,
+    "envelope_valid_frac": 0.7975,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2018-unet.png",
+    "area_km2": 26.7732,
+    "window_area_km2": 37.8378,
     "envelope_valid_frac": 0.7975,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2019": {
@@ -746,12 +764,21 @@
    "envelope_valid_frac": 0.9975,
    "rf": {
     "file": "masks/2019-rf.png",
-    "area_km2": 82.6551,
-    "window_area_km2": 173.3418,
+    "area_km2": 65.9853,
+    "window_area_km2": 82.5165,
+    "envelope_valid_frac": 0.9975,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2019-unet.png",
+    "area_km2": 55.8405,
+    "window_area_km2": 57.4101,
     "envelope_valid_frac": 0.9975,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2020": {
@@ -767,12 +794,21 @@
    "envelope_valid_frac": 0.9999,
    "rf": {
     "file": "masks/2020-rf.png",
-    "area_km2": 78.1929,
-    "window_area_km2": 167.265,
+    "area_km2": 58.5225,
+    "window_area_km2": 66.9789,
+    "envelope_valid_frac": 0.9999,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2020-unet.png",
+    "area_km2": 45.7506,
+    "window_area_km2": 46.0089,
     "envelope_valid_frac": 0.9999,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2021": {
@@ -788,12 +824,21 @@
    "envelope_valid_frac": 0.9995,
    "rf": {
     "file": "masks/2021-rf.png",
-    "area_km2": 106.227,
-    "window_area_km2": 273.6432,
+    "area_km2": 86.3622,
+    "window_area_km2": 138.0069,
+    "envelope_valid_frac": 0.9995,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2021-unet.png",
+    "area_km2": 53.181,
+    "window_area_km2": 55.1682,
     "envelope_valid_frac": 0.9995,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2022": {
@@ -809,12 +854,21 @@
    "envelope_valid_frac": 0.9996,
    "rf": {
     "file": "masks/2022-rf.png",
-    "area_km2": 101.5353,
-    "window_area_km2": 185.6241,
+    "area_km2": 80.9937,
+    "window_area_km2": 88.3494,
+    "envelope_valid_frac": 0.9996,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2022-unet.png",
+    "area_km2": 45.6237,
+    "window_area_km2": 46.4517,
     "envelope_valid_frac": 0.9996,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2023": {
@@ -830,12 +884,21 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2023-rf.png",
-    "area_km2": 103.5936,
-    "window_area_km2": 286.3503,
+    "area_km2": 84.7818,
+    "window_area_km2": 120.258,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2023-unet.png",
+    "area_km2": 52.7967,
+    "window_area_km2": 54.4923,
     "envelope_valid_frac": 1.0,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2024": {
@@ -851,12 +914,21 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2024-rf.png",
-    "area_km2": 108.7974,
-    "window_area_km2": 301.3173,
+    "area_km2": 101.6793,
+    "window_area_km2": 142.1235,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2024-unet.png",
+    "area_km2": 63.3789,
+    "window_area_km2": 65.2608,
     "envelope_valid_frac": 1.0,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2025": {
@@ -872,12 +944,21 @@
    "envelope_valid_frac": 1.0,
    "rf": {
     "file": "masks/2025-rf.png",
-    "area_km2": 99.3492,
-    "window_area_km2": 205.0821,
+    "area_km2": 78.0219,
+    "window_area_km2": 89.1675,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2025-unet.png",
+    "area_km2": 65.259,
+    "window_area_km2": 71.9424,
     "envelope_valid_frac": 1.0,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   },
   "2026": {
@@ -893,12 +974,21 @@
    "envelope_valid_frac": 0.9999,
    "rf": {
     "file": "masks/2026-rf.png",
-    "area_km2": 105.8553,
-    "window_area_km2": 253.2663,
+    "area_km2": 92.1699,
+    "window_area_km2": 121.6062,
+    "envelope_valid_frac": 0.9999,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2026-unet.png",
+    "area_km2": 63.2259,
+    "window_area_km2": 71.1828,
     "envelope_valid_frac": 0.9999,
     "flags": [],
     "threshold": 0.5,
-    "model": "rf-v1"
+    "model": "unet-v1"
    }
   }
  },
@@ -919,8 +1009,8 @@
   "unet": {
    "label": "U-Net (M8)",
    "domain": "Sentinel-2 years only",
-   "model": null,
-   "skipped": "no M8 model in the registry"
+   "model": "unet-v1",
+   "skipped": null
   }
  }
 }

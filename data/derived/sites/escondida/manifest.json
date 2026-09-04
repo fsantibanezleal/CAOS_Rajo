@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "escondida",
  "site": {
   "id": "escondida",
@@ -1920,7 +1920,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1974,7 +1975,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2028,7 +2030,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2082,7 +2085,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2136,7 +2140,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2190,7 +2195,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2244,7 +2250,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2298,7 +2305,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2352,7 +2360,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2406,7 +2415,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2593,48 +2603,92 @@
     37.0719
    ],
    "rf": [
-    134.9217,
-    158.2398,
-    135.0828,
-    175.1247,
-    159.1461,
-    156.5964,
-    167.2146,
-    220.0275,
-    178.0272,
-    124.8048,
-    217.368,
-    205.8327,
-    188.3007,
-    156.9249,
-    221.3001,
-    223.2783,
-    245.2167,
-    255.1689,
-    268.2387,
-    213.8382,
-    251.091,
-    226.3932,
-    176.8743,
-    244.7865,
-    233.7372,
-    273.3291,
-    233.9253,
-    220.8078,
-    261.0387,
-    270.9117,
-    285.5511,
-    251.5347,
-    221.0445,
-    285.4476,
-    285.525,
-    277.7913,
-    271.0791,
-    277.3998,
-    273.6441,
-    293.6565,
-    291.6117,
-    292.2174
+    50.1849,
+    65.3022,
+    47.0619,
+    71.1,
+    65.7387,
+    62.8974,
+    71.5446,
+    126.2259,
+    77.6205,
+    55.9422,
+    125.0685,
+    113.2857,
+    102.5064,
+    79.9506,
+    161.3376,
+    174.2436,
+    244.2078,
+    196.0137,
+    233.7543,
+    156.1104,
+    208.3698,
+    180.0981,
+    136.4787,
+    206.2188,
+    207.9909,
+    245.9079,
+    186.3189,
+    173.0349,
+    224.2935,
+    233.1261,
+    260.8641,
+    203.2029,
+    190.5948,
+    205.9272,
+    211.6512,
+    204.966,
+    188.208,
+    192.7305,
+    207.2295,
+    258.8229,
+    249.4431,
+    250.245
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    109.4859,
+    159.5916,
+    154.8162,
+    157.7268,
+    169.9866,
+    169.0065,
+    180.3627,
+    192.0402,
+    202.6593,
+    186.5232
    ]
   },
   "index_mean": {
@@ -2858,27 +2912,64 @@
       {
        "start": 1985,
        "end": 1998,
-       "mean": 169.8294,
-       "slope": 3.2848
+       "mean": 79.6021,
+       "slope": 3.9997
       },
       {
        "start": 1999,
        "end": 2026,
-       "mean": 254.5157,
-       "slope": 2.3971
+       "mean": 206.8354,
+       "slope": 1.5965
       }
      ],
-     "penalty": 11779.048369,
-     "sigma": 32.411119,
+     "penalty": 12219.531806,
+     "sigma": 33.011572,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 16.205559,
-     "h": 129.644474,
-     "sigma": 32.411119,
-     "target": 0.0774
+     "k": 16.505786,
+     "h": 132.046286,
+     "sigma": 33.011572,
+     "target": 1.7721
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2021
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2020,
+       "mean": 145.4051,
+       "slope": 13.9947
+      },
+      {
+       "start": 2021,
+       "end": 2026,
+       "mean": 183.4298,
+       "slope": 5.5805
+      }
+     ],
+     "penalty": 902.245425,
+     "sigma": 11.428622,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 5.714311,
+     "h": 45.714488,
+     "sigma": 11.428622,
+     "target": 10.6191
     }
    }
   },
@@ -2893,7 +2984,7 @@
     "year": 1999,
     "method": "pelt",
     "series": "rf",
-    "score": 11779.048369
+    "score": 12219.531806
    },
    {
     "year": 2001,
@@ -2942,10 +3033,573 @@
     "method": "pelt",
     "series": "otsu",
     "score": 1629.714349
+   },
+   {
+    "year": 2018,
+    "method": "harmonic",
+    "series": "bsi",
+    "score": 55.5487
+   },
+   {
+    "year": 2020,
+    "method": "harmonic",
+    "series": "bsi",
+    "score": 55.5487
+   },
+   {
+    "year": 2021,
+    "method": "pelt",
+    "series": "unet",
+    "score": 902.245425
    }
   ],
   "gaps": {},
-  "dense": null
+  "dense": {
+   "index": "bsi",
+   "dates": [
+    "2017-01-29",
+    "2017-02-28",
+    "2017-03-20",
+    "2017-04-09",
+    "2017-04-29",
+    "2017-06-08",
+    "2017-06-28",
+    "2017-11-20",
+    "2018-02-18",
+    "2018-02-23",
+    "2018-02-28",
+    "2018-03-05",
+    "2018-03-10",
+    "2018-03-15",
+    "2018-03-30",
+    "2018-04-04",
+    "2018-04-09",
+    "2018-05-04",
+    "2018-05-29",
+    "2018-06-08",
+    "2018-06-13",
+    "2018-06-23",
+    "2018-07-03",
+    "2018-07-28",
+    "2018-08-07",
+    "2018-08-12",
+    "2018-08-17",
+    "2018-08-22",
+    "2018-08-27",
+    "2018-09-01",
+    "2018-09-11",
+    "2018-09-16",
+    "2018-09-26",
+    "2018-10-26",
+    "2018-11-30",
+    "2019-02-13",
+    "2019-02-18",
+    "2019-02-23",
+    "2019-02-28",
+    "2019-03-05",
+    "2019-03-10",
+    "2019-03-15",
+    "2019-03-20",
+    "2019-03-25",
+    "2019-03-30",
+    "2019-04-04",
+    "2019-04-09",
+    "2019-04-24",
+    "2019-04-29",
+    "2019-05-04",
+    "2019-05-09",
+    "2019-05-14",
+    "2019-05-19",
+    "2019-05-29",
+    "2019-06-03",
+    "2019-06-08",
+    "2019-06-13",
+    "2019-06-18",
+    "2019-06-23",
+    "2019-06-28",
+    "2019-07-08",
+    "2019-07-18",
+    "2019-07-23",
+    "2019-07-28",
+    "2019-08-07",
+    "2019-08-12",
+    "2019-08-17",
+    "2019-08-22",
+    "2019-08-27",
+    "2019-09-01",
+    "2019-09-11",
+    "2019-09-16",
+    "2019-09-21",
+    "2019-09-26",
+    "2019-10-06",
+    "2019-10-16",
+    "2019-10-21",
+    "2019-10-26",
+    "2019-11-05",
+    "2019-11-10",
+    "2019-11-15",
+    "2019-11-20",
+    "2019-11-25",
+    "2019-11-30",
+    "2019-12-05",
+    "2019-12-15",
+    "2019-12-20",
+    "2019-12-25",
+    "2019-12-30",
+    "2020-01-04",
+    "2020-01-09",
+    "2020-01-14",
+    "2020-02-03",
+    "2020-02-08",
+    "2020-02-13",
+    "2020-02-23",
+    "2020-02-28",
+    "2020-03-04",
+    "2020-03-09",
+    "2020-03-14",
+    "2020-03-19",
+    "2020-03-24",
+    "2020-03-29",
+    "2020-04-03",
+    "2020-04-13",
+    "2020-04-18",
+    "2020-04-23",
+    "2020-04-28",
+    "2020-05-03",
+    "2020-05-08",
+    "2020-05-13",
+    "2020-05-18",
+    "2020-05-23",
+    "2020-05-28",
+    "2020-06-02",
+    "2020-06-12",
+    "2020-06-22",
+    "2020-06-27",
+    "2020-07-02",
+    "2020-07-07",
+    "2020-07-12",
+    "2020-07-22",
+    "2020-07-27",
+    "2020-08-01",
+    "2020-08-11",
+    "2020-08-21",
+    "2020-09-05",
+    "2020-09-10",
+    "2020-09-15",
+    "2020-09-25",
+    "2020-10-05",
+    "2020-10-10",
+    "2020-10-15",
+    "2020-10-25",
+    "2020-11-09",
+    "2020-12-04",
+    "2020-12-09",
+    "2020-12-24",
+    "2020-12-29",
+    "2021-02-02",
+    "2021-02-07",
+    "2021-02-17",
+    "2021-02-22",
+    "2021-02-27",
+    "2021-03-04",
+    "2021-03-09",
+    "2021-03-14",
+    "2021-03-24",
+    "2021-03-29",
+    "2021-04-03",
+    "2021-04-08",
+    "2021-04-13",
+    "2021-04-23",
+    "2021-04-28",
+    "2021-05-03",
+    "2021-05-08",
+    "2021-05-18",
+    "2021-05-23",
+    "2021-05-28",
+    "2021-06-02"
+   ],
+   "values": [
+    0.15103,
+    0.1516,
+    0.15736,
+    0.15213,
+    0.14943,
+    -0.28162,
+    0.15013,
+    0.16342,
+    0.17947,
+    0.19042,
+    0.17465,
+    0.18698,
+    0.18059,
+    0.19523,
+    0.19257,
+    0.13795,
+    0.13712,
+    0.13721,
+    0.18173,
+    0.18712,
+    0.19153,
+    0.14355,
+    0.18523,
+    0.20753,
+    0.20682,
+    0.22457,
+    0.19856,
+    0.206,
+    0.20877,
+    0.20016,
+    0.13746,
+    0.18222,
+    0.17828,
+    0.17484,
+    0.17443,
+    0.13726,
+    0.14453,
+    0.14347,
+    0.14423,
+    0.1406,
+    0.1427,
+    0.13651,
+    0.14277,
+    0.1398,
+    0.15218,
+    0.13952,
+    0.15261,
+    0.14938,
+    0.23214,
+    0.21663,
+    0.1944,
+    0.20999,
+    0.231,
+    0.23633,
+    0.14382,
+    0.14485,
+    0.17079,
+    0.22339,
+    0.20906,
+    0.22709,
+    0.22971,
+    0.2223,
+    0.21366,
+    0.21946,
+    0.2267,
+    0.1918,
+    0.20697,
+    0.19147,
+    0.19982,
+    0.1888,
+    0.1514,
+    0.23689,
+    0.2093,
+    0.22084,
+    0.21586,
+    0.20894,
+    0.19511,
+    0.20472,
+    0.19707,
+    0.18592,
+    0.19915,
+    0.19204,
+    0.19561,
+    0.18147,
+    0.1857,
+    0.19519,
+    0.18516,
+    0.1942,
+    0.18786,
+    0.20186,
+    0.14142,
+    0.20367,
+    0.20364,
+    0.15927,
+    0.19034,
+    0.21019,
+    0.19966,
+    0.21151,
+    0.18753,
+    0.21832,
+    0.1967,
+    0.22008,
+    0.19747,
+    0.20647,
+    0.20538,
+    0.19538,
+    0.20465,
+    0.19236,
+    0.21021,
+    0.1982,
+    0.2105,
+    0.19057,
+    0.20862,
+    0.20407,
+    0.21045,
+    0.21959,
+    0.21532,
+    0.19864,
+    0.21473,
+    0.13404,
+    0.20842,
+    0.21118,
+    0.19411,
+    0.20909,
+    0.20537,
+    0.19788,
+    0.19215,
+    0.20012,
+    0.1875,
+    0.13525,
+    0.18528,
+    0.13714,
+    0.17175,
+    0.15913,
+    0.17564,
+    0.1677,
+    0.18413,
+    0.18117,
+    0.18856,
+    0.15053,
+    0.19068,
+    0.18959,
+    0.18767,
+    0.14501,
+    0.18413,
+    0.14524,
+    0.18871,
+    0.18395,
+    0.14002,
+    0.13476,
+    0.17731,
+    0.187,
+    0.13828,
+    0.13966,
+    0.13681,
+    0.14586,
+    0.15695,
+    0.17246,
+    0.1684,
+    0.15187
+   ],
+   "clear_frac": [
+    0.718,
+    0.704,
+    0.754,
+    0.759,
+    0.761,
+    0.989,
+    0.766,
+    0.998,
+    0.994,
+    0.999,
+    0.999,
+    0.999,
+    0.998,
+    0.999,
+    1.0,
+    0.737,
+    0.794,
+    0.761,
+    0.999,
+    1.0,
+    0.999,
+    0.729,
+    0.994,
+    0.998,
+    1.0,
+    0.847,
+    0.938,
+    1.0,
+    0.736,
+    0.944,
+    0.774,
+    0.999,
+    0.997,
+    0.788,
+    0.999,
+    0.703,
+    0.733,
+    0.745,
+    0.732,
+    0.756,
+    0.726,
+    0.74,
+    0.759,
+    0.767,
+    0.76,
+    0.765,
+    0.805,
+    0.778,
+    1.0,
+    0.999,
+    1.0,
+    0.999,
+    1.0,
+    0.999,
+    0.838,
+    0.834,
+    0.869,
+    1.0,
+    1.0,
+    1.0,
+    0.999,
+    0.999,
+    0.769,
+    0.89,
+    0.719,
+    0.984,
+    0.998,
+    0.956,
+    0.998,
+    0.792,
+    0.796,
+    0.94,
+    1.0,
+    0.997,
+    0.865,
+    1.0,
+    0.967,
+    0.865,
+    0.997,
+    1.0,
+    0.999,
+    0.999,
+    0.999,
+    0.999,
+    0.999,
+    1.0,
+    0.999,
+    0.999,
+    1.0,
+    0.999,
+    0.723,
+    0.996,
+    1.0,
+    0.997,
+    0.992,
+    0.999,
+    0.998,
+    0.998,
+    0.961,
+    0.998,
+    0.999,
+    1.0,
+    0.998,
+    1.0,
+    1.0,
+    1.0,
+    0.999,
+    0.999,
+    0.998,
+    0.997,
+    0.999,
+    0.996,
+    0.999,
+    0.999,
+    0.998,
+    0.999,
+    0.998,
+    0.998,
+    0.999,
+    0.802,
+    0.981,
+    0.792,
+    0.982,
+    0.999,
+    0.999,
+    0.998,
+    0.83,
+    0.983,
+    0.878,
+    0.716,
+    0.996,
+    0.715,
+    0.995,
+    0.998,
+    1.0,
+    0.831,
+    0.999,
+    0.998,
+    0.998,
+    0.887,
+    0.999,
+    0.999,
+    0.997,
+    0.73,
+    0.999,
+    0.743,
+    0.998,
+    0.997,
+    0.723,
+    0.709,
+    0.943,
+    0.981,
+    0.736,
+    0.726,
+    0.741,
+    0.747,
+    0.768,
+    0.942,
+    0.957,
+    0.794
+   ],
+   "envelope": "reference polygons dilated by 1000 m",
+   "n": 160,
+   "harmonic": {
+    "breaks": [
+     "2018-04-09",
+     "2020-02-23"
+    ],
+    "k": 2,
+    "period_days": 365.25,
+    "segments": [
+     {
+      "start": "2017-01-29",
+      "end": "2018-04-04",
+      "coef": [
+       0.24361613461713713,
+       -0.02630875057643685,
+       -0.17076396889630852,
+       -0.21584860559704075,
+       0.015017565435326265,
+       0.25885044634867593
+      ],
+      "rss": 0.084952,
+      "n": 16
+     },
+     {
+      "start": "2018-04-09",
+      "end": "2020-02-13",
+      "coef": [
+       0.12930281923500325,
+       0.023622670979907345,
+       -0.02677991800909742,
+       -0.005080261592612035,
+       0.0004379061214011587,
+       -0.008128475236636621
+      ],
+      "rss": 0.03676,
+      "n": 79
+     },
+     {
+      "start": "2020-02-23",
+      "end": "2021-06-02",
+      "coef": [
+       0.3407736365426077,
+       -0.042719218031096955,
+       0.00024542219013350884,
+       0.005475485660369589,
+       0.008843868721136867,
+       -0.004283180838431584
+      ],
+      "rss": 0.01884,
+      "n": 65
+     }
+    ],
+    "bic": -1024.4734,
+    "bic_no_break": -968.9247,
+    "min_segment_days": 365.0
+   }
+  }
  },
  "dem": {
   "site_id": "escondida",
@@ -3696,8 +4350,8 @@
   {
    "path": "sites/escondida/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 29048,
-   "sha256": "286ce69b10ab8584b10c37bdadfbea60c278b452086fa6e10b54fd51d5b4cdba",
+   "bytes": 13496,
+   "sha256": "bc5aafb909ca17ddef817035e3630e60fe8f61d2328101b99c4a6478685a6abf",
    "year": 1985,
    "method": "rf"
   },
@@ -3712,8 +4366,8 @@
   {
    "path": "sites/escondida/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 31335,
-   "sha256": "99a877c72178c89a2287f046864e5f05350de78de12fce432d8d2865b14f3ff2",
+   "bytes": 18740,
+   "sha256": "208e81283b574f5e1c16503156cb0a312e033a7096cc1d07c1580bcbe2206583",
    "year": 1986,
    "method": "rf"
   },
@@ -3728,8 +4382,8 @@
   {
    "path": "sites/escondida/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 29649,
-   "sha256": "fd420698e3f6690a9008a2a8436a7bf0b84e0eefd2417769ee76b68318e74eca",
+   "bytes": 14821,
+   "sha256": "9d3f8fdcd64aa5a6dec561a098c3f1e823c8e4f8e46ebb5e03294348843e58cc",
    "year": 1987,
    "method": "rf"
   },
@@ -3744,8 +4398,8 @@
   {
    "path": "sites/escondida/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 27561,
-   "sha256": "2a544ff2700a3bf4dc1261d6fc9c34f5e21eead0dee9d0e0851e874f8b210e3b",
+   "bytes": 19709,
+   "sha256": "7e145e1328a3ae70c5daf0eadbf87e71049c8b55516604e44e8103590206ea5e",
    "year": 1988,
    "method": "rf"
   },
@@ -3760,8 +4414,8 @@
   {
    "path": "sites/escondida/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 28572,
-   "sha256": "2e69ca0ae8fd2e29cc0956917f8c4db4959a16630672556c5cfce7a8b95cf5b3",
+   "bytes": 16961,
+   "sha256": "8746a89f2a0e0d74aea5c6b47d48e18fdfc0221bf5eae356fb0bb7f156317850",
    "year": 1989,
    "method": "rf"
   },
@@ -3776,8 +4430,8 @@
   {
    "path": "sites/escondida/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 29170,
-   "sha256": "9c5dafb8e58759001ada7401b2ab7a554bd22356f7c513f9f613c6b4064235ea",
+   "bytes": 16124,
+   "sha256": "6472f546e50d9dd3a9b510ba34e982a47d8a8f5156e8e3d3ef35b7f79f14c214",
    "year": 1990,
    "method": "rf"
   },
@@ -3792,8 +4446,8 @@
   {
    "path": "sites/escondida/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 29241,
-   "sha256": "bcd8d3befcfb5ce623767a94cea005c3fa1e91084054ec173834ba0d3c74fad1",
+   "bytes": 17401,
+   "sha256": "4016b601394d4e2260fe2eae025d14d6e2a1115e1fa09cc37a0a81125752e51b",
    "year": 1991,
    "method": "rf"
   },
@@ -3808,8 +4462,8 @@
   {
    "path": "sites/escondida/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 22925,
-   "sha256": "ce83d6b57716ba7d0642820f3e2ff4792a390bc55ebc08628799921e524a9741",
+   "bytes": 23153,
+   "sha256": "223f47670c72bef8cb5b49f131c860a433a9b76913ac5f4d5e9258e88cd259bb",
    "year": 1992,
    "method": "rf"
   },
@@ -3824,8 +4478,8 @@
   {
    "path": "sites/escondida/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 28247,
-   "sha256": "450f6edfec28a21ebfea8d7380d880fd17c456bb7208f9734b0ee1526789fee6",
+   "bytes": 18605,
+   "sha256": "ac1c6a129cddc76b42bc8728cba8965accdf04aff303af1af3138e5c87884e3a",
    "year": 1993,
    "method": "rf"
   },
@@ -3840,8 +4494,8 @@
   {
    "path": "sites/escondida/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 26700,
-   "sha256": "f1d293405ecaa831a16d1d685402f7e7971d6d7e4dd8d29a51ce8710c2d5f90c",
+   "bytes": 13442,
+   "sha256": "4f6e882d531310c8dbb6f080cb1803b76feadb5eef05ff8634bdd459fecda741",
    "year": 1994,
    "method": "rf"
   },
@@ -3856,8 +4510,8 @@
   {
    "path": "sites/escondida/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 24475,
-   "sha256": "90d42de18c07abfeb88439d7b7b2972a8c12c6a1014336ae2542ec4c8783374a",
+   "bytes": 22654,
+   "sha256": "f2728908fb382b8864dd34fa521c20a476c1030aea1347528f9bba31fd98685a",
    "year": 1995,
    "method": "rf"
   },
@@ -3872,8 +4526,8 @@
   {
    "path": "sites/escondida/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 26440,
-   "sha256": "ef0559005bd08475cefd46e2d946db5262ec8b1c334a9da61909de3ee1afea76",
+   "bytes": 17888,
+   "sha256": "bc13404755ad040294f297609b90ec089367e728568b454b499e6d82f619f683",
    "year": 1996,
    "method": "rf"
   },
@@ -3888,8 +4542,8 @@
   {
    "path": "sites/escondida/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 27967,
-   "sha256": "f7009edcbd397892262002c3a860541067754434971517a4ed583881631dd54d",
+   "bytes": 17482,
+   "sha256": "70fb95ba8d16d314ba1c2781a4246d18f11303e56ba5171bdd46751c5a73b329",
    "year": 1997,
    "method": "rf"
   },
@@ -3904,8 +4558,8 @@
   {
    "path": "sites/escondida/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 27094,
-   "sha256": "3380583aa441907781e3796f9bb1d77b96f4c105e873d75d66b9e57f00117e5c",
+   "bytes": 13126,
+   "sha256": "3fac22d580f825d68117e111a773d3afd02eb3aaa9d53c86092de79e41a59098",
    "year": 1998,
    "method": "rf"
   },
@@ -3920,8 +4574,8 @@
   {
    "path": "sites/escondida/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 22289,
-   "sha256": "f16bbdee79d305938a6f44faecfa75c323dc4793d57766e7d12cf62d13f69661",
+   "bytes": 21532,
+   "sha256": "3ad6c6d120aaa43d841f51272d23890c18619c6f58bd43fef9fff98339972488",
    "year": 1999,
    "method": "rf"
   },
@@ -3936,8 +4590,8 @@
   {
    "path": "sites/escondida/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 19155,
-   "sha256": "b2fa52b68fd161b28103782396348dcd63e3f64f6fde374ced8f1875813b92e1",
+   "bytes": 21683,
+   "sha256": "f5ec92f172651d4a63ad1ccaf9485ef11515ce6e50be82ef3cc90c3068fb51cd",
    "year": 2000,
    "method": "rf"
   },
@@ -3952,8 +4606,8 @@
   {
    "path": "sites/escondida/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 5026,
-   "sha256": "b1cf6279f5089e687941bc15989ec325ca949c309a8b71d03610bb8629cd3947",
+   "bytes": 7386,
+   "sha256": "6615529d65d218f7daed7cbc32ce998548a7f4ae5391c411ab260f83d701d9bd",
    "year": 2001,
    "method": "rf"
   },
@@ -3968,8 +4622,8 @@
   {
    "path": "sites/escondida/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 19843,
-   "sha256": "bcf43d9ae23a18e0438ac252e1da40d87b449cee8a5b911fb3899247bde3f40a",
+   "bytes": 22709,
+   "sha256": "3ab441826321baab0383bb10868376dfa1e49b12b242006d9c39cbd1250c34b9",
    "year": 2002,
    "method": "rf"
   },
@@ -3984,8 +4638,8 @@
   {
    "path": "sites/escondida/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 10777,
-   "sha256": "f845bbd213676a91bbcad7cfc114999fb836f20d800f0f4450f0b5fb5a5fad91",
+   "bytes": 16047,
+   "sha256": "aabbdb7df763ead42b39b8ea51298ef0c620fc1d157745ca8eec47851bd74c5d",
    "year": 2003,
    "method": "rf"
   },
@@ -4000,8 +4654,8 @@
   {
    "path": "sites/escondida/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 25989,
-   "sha256": "8f9ef47535fd1225b232d702832b715dd5d304f4a17dbcd79528a0332ffe26b0",
+   "bytes": 20400,
+   "sha256": "064d20b33b798f779ccf70fcc6f5d0981f90089b4ee7207a86e3860fc6090c89",
    "year": 2004,
    "method": "rf"
   },
@@ -4016,8 +4670,8 @@
   {
    "path": "sites/escondida/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 20352,
-   "sha256": "da4a004b22996395032c87640e70e6fd624961d9f07a7e83c88b2d4a615e4074",
+   "bytes": 23604,
+   "sha256": "6e4e3c100166efbf40dd99b9d302f9a67827266f19a1b4a6b3876cf353241cd5",
    "year": 2005,
    "method": "rf"
   },
@@ -4032,8 +4686,8 @@
   {
    "path": "sites/escondida/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 21741,
-   "sha256": "bac8284ca2cd7021201682924e5bd28f5ae1186c2412d09f8a820e70b705fee3",
+   "bytes": 20941,
+   "sha256": "1386be531a5d33374ab457027bdd575569b3cfa62fce4d556db9f7ab80702561",
    "year": 2006,
    "method": "rf"
   },
@@ -4048,8 +4702,8 @@
   {
    "path": "sites/escondida/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 23968,
-   "sha256": "4b936b9dd0f024182368dc9e2958e00135355944d2c6d915949f8643052cb65b",
+   "bytes": 20408,
+   "sha256": "8bffa1e9ae6605eec4a5aa09a0587174a238852a2b0cb280d48c5cbe37354e04",
    "year": 2007,
    "method": "rf"
   },
@@ -4064,8 +4718,8 @@
   {
    "path": "sites/escondida/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 22278,
-   "sha256": "f5594f3c7a6471a50ed49684accaed305cfed34ebabf364bfe0d64e69f8fa9dc",
+   "bytes": 20366,
+   "sha256": "33c3c1bc31a9baff3469133e782b27df8a23e492081e7766930f44e4094ff410",
    "year": 2008,
    "method": "rf"
   },
@@ -4080,8 +4734,8 @@
   {
    "path": "sites/escondida/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 20789,
-   "sha256": "7c3a59f04fe3462d2c21f531bf3900822544aac5d981b932d7dc24b88c9d400d",
+   "bytes": 23759,
+   "sha256": "918b117f8b3f8421073e7086521a1b4753d40aad3dd9a4ca398993743ef6c740",
    "year": 2009,
    "method": "rf"
   },
@@ -4096,8 +4750,8 @@
   {
    "path": "sites/escondida/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 16118,
-   "sha256": "fb5f9c58750469c6fafac539c3c7ed6b2296ed28b67528d13c4f38af7dd6285b",
+   "bytes": 20262,
+   "sha256": "194866c5c3189dac9006ad4402c18f53db85f5e20a5f9e292444d9bb56b37a94",
    "year": 2010,
    "method": "rf"
   },
@@ -4112,8 +4766,8 @@
   {
    "path": "sites/escondida/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 27620,
-   "sha256": "755ccf9ff820f22ea84dbe270cf9a71b69b92587fe2bfadfe5247589a52fb4c3",
+   "bytes": 23354,
+   "sha256": "68e4392f0a34954fdfc335d495d3ae669b87ad23ae51d4ca0da9d254af02bb17",
    "year": 2011,
    "method": "rf"
   },
@@ -4128,8 +4782,8 @@
   {
    "path": "sites/escondida/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 26178,
-   "sha256": "b1caf63823d742ff19a425d64b6ed9d0c15966362c178f823320d38327fb4881",
+   "bytes": 18160,
+   "sha256": "efa98d13f3191b491c70b4dd49a8d3d239e5d171f9d5f4a92d018bddaab29171",
    "year": 2012,
    "method": "rf"
   },
@@ -4144,8 +4798,8 @@
   {
    "path": "sites/escondida/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 21260,
-   "sha256": "54db4ac6f6c7821080661dee6ef9cdd68aa103c859f336177d771de73743ce6c",
+   "bytes": 21603,
+   "sha256": "ae738eb1e7f83d2f137a97262e1795d97c0ddab51df04c51e262f578d426e320",
    "year": 2013,
    "method": "rf"
   },
@@ -4160,8 +4814,8 @@
   {
    "path": "sites/escondida/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 21315,
-   "sha256": "c6fa0962eaf6b20fb15b9e80f819bf671c2bba3f8d6a661e9d7de56f990e2c3b",
+   "bytes": 23765,
+   "sha256": "addb462bc1cfca140db52da9aa320e488bea23f48ddb54d749c43dc8e79c9704",
    "year": 2014,
    "method": "rf"
   },
@@ -4176,8 +4830,8 @@
   {
    "path": "sites/escondida/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 13960,
-   "sha256": "0f5581bd0185947b71977e32b8040bda02e85dd4697927fd1e312ada1cbdef25",
+   "bytes": 17333,
+   "sha256": "4b679e3ff238c1d88030d710dfa943835acf0d8a59c9510d3e44c8551292e68e",
    "year": 2015,
    "method": "rf"
   },
@@ -4192,8 +4846,8 @@
   {
    "path": "sites/escondida/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 23728,
-   "sha256": "1516b2f2750834074369fb356e530b1849060602d01392c1e8265a9812c06bac",
+   "bytes": 15973,
+   "sha256": "44b0d9736abedf3db51194ab61bfee2a9936ba90aecbe914a402a2b4123e2cd1",
    "year": 2016,
    "method": "rf"
   },
@@ -4208,10 +4862,18 @@
   {
    "path": "sites/escondida/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 24197,
-   "sha256": "c1d619bae3a0b5dbb2cc049be791480dd603590dfaaa97844ed35c5d9f5db162",
+   "bytes": 29677,
+   "sha256": "e5bb4a814d2d965f780d9f87669cd6ba03ab3b0da7dbc3784202e649866f5160",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 11977,
+   "sha256": "4f5a8df676f3e686235656fa9e7b40fc2e7fe29bc877aae5ede2cdd4247f7428",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2018-otsu.png",
@@ -4224,10 +4886,18 @@
   {
    "path": "sites/escondida/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 20708,
-   "sha256": "cab8d31760d20f97d0bbb5afa4bd176cb5539fb032880480170aa88e878aa80f",
+   "bytes": 23091,
+   "sha256": "bacb8a0dc3030e12237e8666900669fa7336b2dfc24f7ff9393a8de93edb145c",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 4470,
+   "sha256": "3551ed76b71854b3d71818d03af9121447e19e603c0a05b106bd4349472c899a",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2019-otsu.png",
@@ -4240,10 +4910,18 @@
   {
    "path": "sites/escondida/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 20320,
-   "sha256": "dfd2236f9296c137e95cb0af91c575f3c764c047a43893f1302bde0679569985",
+   "bytes": 24958,
+   "sha256": "054fed13ebaec728d0435bfee5127445fef18aa4ef78c592a62b3387ba8af29c",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 4187,
+   "sha256": "c6fe6ff0ee256ec36053f686eff74083a9d714aea8d89e0478d111c5ce7d5ad9",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2020-otsu.png",
@@ -4256,10 +4934,18 @@
   {
    "path": "sites/escondida/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 23982,
-   "sha256": "016055327e5f23daf24ecfa90064c602d07d95dba0a35b93c0cc3782fed11a83",
+   "bytes": 23884,
+   "sha256": "9761494baa12545de7ffd645a8dba7f43064cc9a37ccbdbd7614978cdd366f06",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4820,
+   "sha256": "9ecdae357bdfbbdaa7a83f685503f2542e1c48cf7b5bac3db696ab2d5ee7c039",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2021-otsu.png",
@@ -4272,10 +4958,18 @@
   {
    "path": "sites/escondida/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 24078,
-   "sha256": "4f949a2e0d6f2db462d3d334a40f859883f6c178582bf48c236f1cd5cec85b23",
+   "bytes": 22622,
+   "sha256": "34f4aa2aa405ccbcecb76098b0c5aa361b502cda943c5a52d347d493c3c9b087",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5361,
+   "sha256": "7d7f5d886acf134eb073b752373f6f3d2e4fed46f7448fa76fcc17fc38dde795",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2022-otsu.png",
@@ -4288,10 +4982,18 @@
   {
    "path": "sites/escondida/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 24869,
-   "sha256": "4685b1d27a426f86a38b3876232e60bf5a9ba3d8120688718e6a16600187c92f",
+   "bytes": 21301,
+   "sha256": "f74ea1557e0b297201e4557418838987ceb567d2ddd1694ad06a1b30c079f6c5",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 5394,
+   "sha256": "e4af73680adaed5b012090154021992765aca0c5995cb716ecd192deb1152261",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2023-otsu.png",
@@ -4304,10 +5006,18 @@
   {
    "path": "sites/escondida/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 23914,
-   "sha256": "00f5a70a3e2453357ff7de60acee2ef296efe1c4e3896e75201b0cc1c801439a",
+   "bytes": 23347,
+   "sha256": "e0895318d60e10a77467e26aa02d757e49d4358c92da5cf8d795b66c7c4dd1fd",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 5436,
+   "sha256": "088861f3c1ced04efda7ec5a469ee76b5a8fd503cb6b790e84d7f99727ac61c0",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2024-otsu.png",
@@ -4320,10 +5030,18 @@
   {
    "path": "sites/escondida/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 10840,
-   "sha256": "e8b077843097da0b827481a5b11ebb182c2a2d35b78f8cf274f365bc47fe8a29",
+   "bytes": 24805,
+   "sha256": "ecaf912d44049c2937f1dea1366403fdb5a9ac4daf94c274404ced10d64e2455",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 4930,
+   "sha256": "13939507147f18af91d91ffbc7325d71d77fdb1e0d03cf6bc6fab5dd967a0136",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2025-otsu.png",
@@ -4336,10 +5054,18 @@
   {
    "path": "sites/escondida/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 13065,
-   "sha256": "9a200b7633cf663eb354115dd9163436dcec033c720e446c65fd7454dc35cc5b",
+   "bytes": 25443,
+   "sha256": "eb9724dffd326f28268ddb9d259317641cf20b4ae4deaac1c79b246f6928c825",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 5424,
+   "sha256": "49a655238e0f3874b286b2be634da3e23fcd7673fdb69aa4820828c1ed18a69c",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/masks/2026-otsu.png",
@@ -4352,10 +5078,18 @@
   {
    "path": "sites/escondida/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 14263,
-   "sha256": "f53545d1f56f59aee28e172b8e334f8a9e252b38dc826c38776dee7541b155a6",
+   "bytes": 25236,
+   "sha256": "8fda62bb045b1d395d25fdb2848c811807d8283f19ab26d0e936ba6e5fdef4f9",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 4858,
+   "sha256": "ab0c5007818546a5e6d1ae4eae0d6fd76f029e6b9e2bba63f5a2f8483003f81f",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/escondida/polygons.geojson",

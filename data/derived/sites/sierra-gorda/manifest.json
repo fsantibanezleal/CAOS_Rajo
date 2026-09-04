@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "sierra-gorda",
  "site": {
   "id": "sierra-gorda",
@@ -1882,7 +1882,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1936,7 +1937,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1990,7 +1992,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2044,7 +2047,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2098,7 +2102,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2152,7 +2157,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2206,7 +2212,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2260,7 +2267,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2314,7 +2322,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2368,7 +2377,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2555,48 +2565,92 @@
     6.696
    ],
    "rf": [
-    74.5686,
-    80.2314,
-    63.2124,
-    49.3704,
-    69.8112,
-    67.7601,
-    70.3827,
-    62.3043,
-    50.6079,
-    77.4153,
-    49.2183,
-    68.1147,
-    69.2145,
-    51.4809,
-    53.8947,
-    81.1692,
-    66.2508,
-    60.1353,
-    54.5364,
-    54.036,
-    106.245,
-    74.2257,
-    60.0876,
-    69.1065,
-    106.2099,
-    87.6789,
-    107.2143,
-    82.7316,
-    89.0802,
-    103.4361,
-    100.8621,
-    55.4076,
-    91.701,
-    72.8847,
-    94.3074,
-    97.3737,
-    91.9215,
-    100.8189,
-    108.684,
-    106.92,
-    91.7019,
-    109.5867
+    15.9003,
+    28.539,
+    20.6712,
+    12.1689,
+    24.8238,
+    24.1605,
+    31.1994,
+    23.3811,
+    14.3811,
+    33.3711,
+    11.5281,
+    14.7834,
+    27.4554,
+    9.8703,
+    8.523,
+    40.257,
+    27.0045,
+    25.0974,
+    21.4695,
+    19.7379,
+    54.4806,
+    26.1495,
+    24.3306,
+    34.5222,
+    61.2657,
+    37.1223,
+    51.9129,
+    49.9167,
+    55.1196,
+    67.1724,
+    56.2833,
+    19.5363,
+    66.1635,
+    28.0386,
+    67.7979,
+    52.5222,
+    68.6601,
+    33.6951,
+    61.0146,
+    67.2246,
+    39.9609,
+    59.8482
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    35.28,
+    35.9469,
+    34.0542,
+    34.3512,
+    43.8669,
+    41.4585,
+    49.2318,
+    45.3366,
+    36.801,
+    42.2613
    ]
   },
   "index_mean": {
@@ -2794,27 +2848,56 @@
       {
        "start": 1985,
        "end": 2008,
-       "mean": 65.9742,
-       "slope": 0.1069
+       "mean": 23.9086,
+       "slope": 0.4705
       },
       {
        "start": 2009,
        "end": 2026,
-       "mean": 94.3623,
-       "slope": 0.521
+       "mean": 52.4031,
+       "slope": 0.2529
       }
      ],
-     "penalty": 5123.658777,
-     "sigma": 21.376127,
+     "penalty": 4821.222831,
+     "sigma": 20.735644,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 10.688063,
-     "h": 85.504507,
-     "sigma": 21.376127,
-     "target": -0.5004
+     "k": 10.367822,
+     "h": 82.942574,
+     "sigma": 20.735644,
+     "target": -1.3473
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 39.8588,
+       "slope": 1.0149
+      }
+     ],
+     "penalty": 266.851054,
+     "sigma": 6.215356,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 3.107678,
+     "h": 24.861423,
+     "sigma": 6.215356,
+     "target": 0.297
     }
    }
   },
@@ -2829,7 +2912,7 @@
     "year": 2009,
     "method": "pelt",
     "series": "rf",
-    "score": 5123.658777
+    "score": 4821.222831
    },
    {
     "year": 2017,
@@ -3561,8 +3644,8 @@
   {
    "path": "sites/sierra-gorda/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 12254,
-   "sha256": "7701cec2b861f2d06b41b5e8781564b79b86ab9a82a21bf059dfcd565585b86f",
+   "bytes": 6278,
+   "sha256": "96b0187bd8abeddbeb396df587a5fc4321889b2493391b575fab162df7670869",
    "year": 1985,
    "method": "rf"
   },
@@ -3577,8 +3660,8 @@
   {
    "path": "sites/sierra-gorda/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 9889,
-   "sha256": "06c90a7cc5ccb5fda397cdf0b6699c95fe5a40df7c2aeb0c5313c8b7f78fe851",
+   "bytes": 8694,
+   "sha256": "f5437f29e1c575ce0d972bd131c537c7a51339138f291efa855c95ab29521045",
    "year": 1986,
    "method": "rf"
   },
@@ -3593,8 +3676,8 @@
   {
    "path": "sites/sierra-gorda/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 12525,
-   "sha256": "0c3356e05984380fb55f4052f74574d683790096d822959c3557001ee21f40dc",
+   "bytes": 6613,
+   "sha256": "432adafae1ec1d4f658f7b67d9c8fbea9199aa08018a6174b646d80d36bc8f01",
    "year": 1987,
    "method": "rf"
   },
@@ -3609,8 +3692,8 @@
   {
    "path": "sites/sierra-gorda/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 10841,
-   "sha256": "d55a7c2d7e19d45af4423696d966730d49ea93cc1d6bcfbb255dd078f5a1048c",
+   "bytes": 4899,
+   "sha256": "222ea22b4f62b604389001e82529bf6b281049adaf17f4484996b792b4c0393c",
    "year": 1988,
    "method": "rf"
   },
@@ -3625,8 +3708,8 @@
   {
    "path": "sites/sierra-gorda/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 12502,
-   "sha256": "7b66ea90c0890465bd88af9a77bec3143a62e8a830dba93c0ae1188b0eef717d",
+   "bytes": 7295,
+   "sha256": "64f8b108c0bbcf32deb7c34e3cf52cf4128a7e61db6ed94c5efa1a9940e3e823",
    "year": 1989,
    "method": "rf"
   },
@@ -3641,8 +3724,8 @@
   {
    "path": "sites/sierra-gorda/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 13100,
-   "sha256": "b9894b2cc60816125a1cf86b9e6e5995fb55bd9ee616af7b189f2d6f46fd2217",
+   "bytes": 7619,
+   "sha256": "eab5880e3be1652f7fe952ded6d9a91ec31b670029a50700e203dccef59e927d",
    "year": 1990,
    "method": "rf"
   },
@@ -3657,8 +3740,8 @@
   {
    "path": "sites/sierra-gorda/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 12688,
-   "sha256": "53a0a256eaf523bc2bbd6577ed16db78176766607b15e06fb1874e9681a76cf9",
+   "bytes": 8223,
+   "sha256": "b32bfefb0a63101432ef09fd70fe96bf6ad4d0babb3a4e19551c3a4f4775109c",
    "year": 1991,
    "method": "rf"
   },
@@ -3673,8 +3756,8 @@
   {
    "path": "sites/sierra-gorda/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 12129,
-   "sha256": "448682bdbaadc7ee98972414658fc5f2b91782353eac5d15616718ca876783cc",
+   "bytes": 6588,
+   "sha256": "a3953702cd8640966865d074fafddcd8df21731436811bf9a1ab2d45c0c02688",
    "year": 1992,
    "method": "rf"
   },
@@ -3689,8 +3772,8 @@
   {
    "path": "sites/sierra-gorda/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 11289,
-   "sha256": "e02aba5dac1bad27f953d3d4d0d393559974154826eab570bc3c13fd6e276258",
+   "bytes": 4547,
+   "sha256": "fc07b0522b5e261a28b9d1deca0990577a89188ce51436dcda9ccd2076327063",
    "year": 1993,
    "method": "rf"
   },
@@ -3705,8 +3788,8 @@
   {
    "path": "sites/sierra-gorda/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 11051,
-   "sha256": "2159edfef99665f86c8ad1fdd830850688fa0ba06fa8f51acf7172b88124b87d",
+   "bytes": 8264,
+   "sha256": "64517d7820e3b389f383ab89096c578834888c0bac8698eb5aa45d4dd4ba4e8a",
    "year": 1994,
    "method": "rf"
   },
@@ -3721,8 +3804,8 @@
   {
    "path": "sites/sierra-gorda/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 11265,
-   "sha256": "88d2caa5cb9788cc60181598576e15c1a49a0e5bd2a16a371e7802fabbd22e39",
+   "bytes": 4643,
+   "sha256": "a0c71aae1b6f7caffe48af23ded4eee1d7ed6be4b2f38731da090340e4c14b6b",
    "year": 1995,
    "method": "rf"
   },
@@ -3737,8 +3820,8 @@
   {
    "path": "sites/sierra-gorda/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 14431,
-   "sha256": "577fc5079117420db10a4c2e11d3eaa82e2987b36d1e36225678dae0bfbbb13b",
+   "bytes": 6091,
+   "sha256": "a8126ccb7db8f88f55678929ab0bdfaf5cc7aab6db0bb25bf1388f7e0a90cb80",
    "year": 1996,
    "method": "rf"
   },
@@ -3753,8 +3836,8 @@
   {
    "path": "sites/sierra-gorda/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 12665,
-   "sha256": "3561c1d26d8b612420565d82571e32edeab09e8962a8d99574bf09706cdde79d",
+   "bytes": 7562,
+   "sha256": "fb6b3921fc3c6defbd5e0d433081709e93b4752028a286794c4444914417991a",
    "year": 1997,
    "method": "rf"
   },
@@ -3769,8 +3852,8 @@
   {
    "path": "sites/sierra-gorda/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 12382,
-   "sha256": "875b3e2e9df1a64155cd8ac1f26cc6b69ef5e61239cac1f987f50c8d0bb3709d",
+   "bytes": 4212,
+   "sha256": "c17c04cf571add404ab01ac42e43fbb92e6634ccab5c2138f17a70e8e8789182",
    "year": 1998,
    "method": "rf"
   },
@@ -3785,8 +3868,8 @@
   {
    "path": "sites/sierra-gorda/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 12812,
-   "sha256": "78acd33c5cf4f2fd647e3dae02fc14e8f7c64b56d9c63f0ee4f7017378e20a98",
+   "bytes": 7090,
+   "sha256": "236a7aff3e0c16372ca49d0a612fcc27659fbda7254dc3e12fd13cbb92c21f1a",
    "year": 1999,
    "method": "rf"
   },
@@ -3801,8 +3884,8 @@
   {
    "path": "sites/sierra-gorda/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 7891,
-   "sha256": "27a4616a047095e56114a075fa02a4be601885de87689dc72aed7a517a196ad0",
+   "bytes": 8479,
+   "sha256": "0887a037d46fb0c1645b9f57379c7a8bdb645df481d1ff2717ee0158a4f59e75",
    "year": 2000,
    "method": "rf"
   },
@@ -3817,8 +3900,8 @@
   {
    "path": "sites/sierra-gorda/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 11790,
-   "sha256": "fcf456cb12196c0898605505ded6655d1d0d1a6a2ba4d0bec49fe0597dce024c",
+   "bytes": 6807,
+   "sha256": "1b26cbd78ab50970261ae40c2a614b02323a32e8727baffbde0f90fa23ed5a38",
    "year": 2001,
    "method": "rf"
   },
@@ -3833,8 +3916,8 @@
   {
    "path": "sites/sierra-gorda/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 11113,
-   "sha256": "fdbe8e47d5e356169033de33917b3a8397f4c2e377c17b51acdb2e50188989e6",
+   "bytes": 6144,
+   "sha256": "d22b612df5f7de16da13bf4d5c92b2ec3f6abf3baa68a6af7154e2adff60c6b4",
    "year": 2002,
    "method": "rf"
   },
@@ -3849,8 +3932,8 @@
   {
    "path": "sites/sierra-gorda/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 10223,
-   "sha256": "a1c885f8376261e639959b8a13fc60357eed68b97cc6d0e8ebe4551c3f41de77",
+   "bytes": 5717,
+   "sha256": "7fa2a3b16a910102025f283ad53c27910a64b7a7a096f9b5d593c8fb06d9f290",
    "year": 2003,
    "method": "rf"
   },
@@ -3865,8 +3948,8 @@
   {
    "path": "sites/sierra-gorda/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 10241,
-   "sha256": "6ee08c8b4bd4902fa5ba66d73e2fb832c85e486713d8e4792183746fc4552c68",
+   "bytes": 5775,
+   "sha256": "efa842c4819a1eb5ddfd72a86ce57a03b10e1184770299e74184163cbdc82047",
    "year": 2004,
    "method": "rf"
   },
@@ -3881,8 +3964,8 @@
   {
    "path": "sites/sierra-gorda/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 8922,
-   "sha256": "986e0cffa96b2913c689fdfe6e08b64a3f4b5c27eb51be16798e4e02449c8ad5",
+   "bytes": 9565,
+   "sha256": "2a0a77f18e957a37ddc30eb2e51f243b8a13f694384ee89c21620dee9f66cab7",
    "year": 2005,
    "method": "rf"
   },
@@ -3897,8 +3980,8 @@
   {
    "path": "sites/sierra-gorda/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 11707,
-   "sha256": "db5edd8d18fe097933e512dbd9ad804cded7ed45ed0ef13639457690313ceb39",
+   "bytes": 7064,
+   "sha256": "d1111bb5ee864b9fbe004ef25a6374f03307464b488811a5dd5a0f6e62b34949",
    "year": 2006,
    "method": "rf"
   },
@@ -3913,8 +3996,8 @@
   {
    "path": "sites/sierra-gorda/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 10798,
-   "sha256": "c4184c089da58eae4263d4eaa1423b56b4fe76cc31f3beeb3f8fce7ceec56adc",
+   "bytes": 6286,
+   "sha256": "6bb1f873096176d5c836b6ca0ec6a65da60d70ef794f22128302350791c65a8f",
    "year": 2007,
    "method": "rf"
   },
@@ -3929,8 +4012,8 @@
   {
    "path": "sites/sierra-gorda/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 10803,
-   "sha256": "7e08efa2a6c278c155b8ea9fec2bd16b80f1bd7267842d038c4afd8232029dd2",
+   "bytes": 7179,
+   "sha256": "f3608de8f201eb9d769fc79a4cccfe80ff099305f3bc54d4c52d6591fdcfc947",
    "year": 2008,
    "method": "rf"
   },
@@ -3945,8 +4028,8 @@
   {
    "path": "sites/sierra-gorda/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 9426,
-   "sha256": "338d9d05201691015911ad4d8123f7c975a3b7bf2a95390f2904fdd97b8d3df4",
+   "bytes": 9720,
+   "sha256": "e7e19b97779f5f519a2a6fe169c66b99a0dea5c2e00b0575e96169a29d1b1ceb",
    "year": 2009,
    "method": "rf"
   },
@@ -3961,8 +4044,8 @@
   {
    "path": "sites/sierra-gorda/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 11086,
-   "sha256": "6a634be8b654c264233381daf83c86e66c21456b28d8cbab1c30dd2e35e047fc",
+   "bytes": 7089,
+   "sha256": "761b01038e9b7eaca3a6d2b4fe08bbe1589d0c5c74d5be082d72a1b732da6d8a",
    "year": 2010,
    "method": "rf"
   },
@@ -3977,8 +4060,8 @@
   {
    "path": "sites/sierra-gorda/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 6851,
-   "sha256": "c121de028b3c4632987cb728a39be3dd21b569dfb71042ffe052f73a638611fd",
+   "bytes": 9161,
+   "sha256": "19ad624537a98cbdfe1b603d74034bdae0a5ad6752a381bef2fa4a596d6ce012",
    "year": 2011,
    "method": "rf"
   },
@@ -3993,8 +4076,8 @@
   {
    "path": "sites/sierra-gorda/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 9975,
-   "sha256": "ce5d1dbdaf9dc54e65c79af37f9fef89b00d90e7354ed64de80fee2c57a30115",
+   "bytes": 7709,
+   "sha256": "de621e3719640266c64f1cc3fa6bdd26983af9c2017f3def9e4290c23ba0cfbd",
    "year": 2012,
    "method": "rf"
   },
@@ -4009,8 +4092,8 @@
   {
    "path": "sites/sierra-gorda/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 9348,
-   "sha256": "e2b572860fd8f7d55c56dd951895cf0fff80f69688e28f11586d4cd3891b7c6b",
+   "bytes": 8979,
+   "sha256": "8694216efc78d350e31769d7e94a1807cf218ecc734e4f087536df28fae52837",
    "year": 2013,
    "method": "rf"
   },
@@ -4025,8 +4108,8 @@
   {
    "path": "sites/sierra-gorda/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 7827,
-   "sha256": "0591650ba9a0c9c9fcc9f24502f536235f8d9609abcfd2460fea94ea971d39f2",
+   "bytes": 9605,
+   "sha256": "92a1e931aa534b43e6590a6d40768a98e10069608da2dec5851f930f5a47bc65",
    "year": 2014,
    "method": "rf"
   },
@@ -4041,8 +4124,8 @@
   {
    "path": "sites/sierra-gorda/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 10032,
-   "sha256": "b3e5fab008bf494615173457c110545bb14d291c95765ea5216bf2c170903536",
+   "bytes": 9984,
+   "sha256": "661b21bcf45abe79baaf88ddb3137b61757fdf3eac6dbfc06a496e3df51b2759",
    "year": 2015,
    "method": "rf"
   },
@@ -4057,8 +4140,8 @@
   {
    "path": "sites/sierra-gorda/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 11756,
-   "sha256": "596e02316af65765d6722b2fa68c83f431e13013e56a013adcb5fd67156265f2",
+   "bytes": 6086,
+   "sha256": "7a1c38ce695719b95ed600f704d48b7d84b7f0ba378668e0a24bcc2c2057a8f7",
    "year": 2016,
    "method": "rf"
   },
@@ -4073,10 +4156,18 @@
   {
    "path": "sites/sierra-gorda/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 12942,
-   "sha256": "c346b0634290510faa40faa5a84e3cf0bdb8775eaa363af8b444e6680336690c",
+   "bytes": 13395,
+   "sha256": "48311c3be2a8ed70d63b981536f0ec71e5bda662d8de73c17b5f83bc344723fb",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3427,
+   "sha256": "f06db6b6bcc20ceacfb97d208543619204edf2bf08696a2f69786fc104ea27a4",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2018-otsu.png",
@@ -4089,10 +4180,18 @@
   {
    "path": "sites/sierra-gorda/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 13905,
-   "sha256": "1b79155af736e48870ad2ed0001ade5cde79257a56a6fe2c0aac4ab318535d2b",
+   "bytes": 5748,
+   "sha256": "871c38a2ae3ab4df0481bc3ff6782d9b47c885a0b99def85113ecf96817d8fed",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2136,
+   "sha256": "b74d1c818be1adfcfe0650bebe95b596bff4b6d3ef188b5edd45bd3f777a4fe8",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2019-otsu.png",
@@ -4105,10 +4204,18 @@
   {
    "path": "sites/sierra-gorda/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 11450,
-   "sha256": "76eff61aa30c12681e6d1290901b1770fe85f0721448fdada7982b50d4c65426",
+   "bytes": 13027,
+   "sha256": "2322fa6c88079499977846844ce3fe40dec3b8d5a79e696ec723b27b5519be76",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 2526,
+   "sha256": "f7d96b3148077f9437372fedcbac47038dc2616e1a1d2d4f14b7328074bafdc5",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2020-otsu.png",
@@ -4121,10 +4228,18 @@
   {
    "path": "sites/sierra-gorda/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 13507,
-   "sha256": "95231152a32a5d159b1fb888540c25a3bc2080afdc1701432abbb2ab353e49a7",
+   "bytes": 9112,
+   "sha256": "2dfa7b691fc15c1efa9de6caa8c3c25b026e42726f6eda5806bf55258d2085a2",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 1588,
+   "sha256": "edc891395a48eec76362e49d7027b3a66c7c6f0a6a3e90c94c942417d0dfc5d5",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2021-otsu.png",
@@ -4137,10 +4252,18 @@
   {
    "path": "sites/sierra-gorda/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 10733,
-   "sha256": "e2e3214d3286ed9aec060f8ab46cf45783ff0e9f5417e2f7f47bc82ea332dbbf",
+   "bytes": 10692,
+   "sha256": "863f2d691793e4d581ee906c56df8a0c5eee9cb8a532235672a498bda0703a9d",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 2461,
+   "sha256": "bcdd79c34182508494f0ab889d21b0fd2657800163a56d7fa8343a5ea9696321",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2022-otsu.png",
@@ -4153,10 +4276,18 @@
   {
    "path": "sites/sierra-gorda/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 14890,
-   "sha256": "a77efe97325c7d3d51da2b8b14111e7b0a44d84a82498e7b6dda2825b6b9fd92",
+   "bytes": 6847,
+   "sha256": "6ff16da4cef45b7e58112c3ddb961b70d67b313744fa2e8ef434a49e7335397c",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2453,
+   "sha256": "ec00e6da26ec0f45d8e572d1a961a9c3fa2be2098e98e8bf3e9349c42e1e0a12",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2023-otsu.png",
@@ -4169,10 +4300,18 @@
   {
    "path": "sites/sierra-gorda/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 14068,
-   "sha256": "956c5bdcded4c36b43a7644666d6a5fcf7a30d286d45ef7138218e41d1dbc7d4",
+   "bytes": 10883,
+   "sha256": "9cebb78c5126a0220d3032775a6706dad9c19c987621cde9e3ce661c5b451040",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2984,
+   "sha256": "77be8caaade587249997cfbbd0144fd11b7de1d32b6c97ac9703b1c2bc14a57b",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2024-otsu.png",
@@ -4185,10 +4324,18 @@
   {
    "path": "sites/sierra-gorda/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 13857,
-   "sha256": "57dc332705479e5c08e271ab30388b75b97a35db77c015548bca107a0ed65df8",
+   "bytes": 12452,
+   "sha256": "00a5ed7fe71281eb258de3f3d0a9e786a3a35b6e5fe9dba08c045d7e5d8652ce",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 2504,
+   "sha256": "e7412c953f42daa3adcfd8ee3d45d2de13e83e4f038be9c1b6de2f3e7c4e3af5",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2025-otsu.png",
@@ -4201,10 +4348,18 @@
   {
    "path": "sites/sierra-gorda/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 15089,
-   "sha256": "19c94771020ec54479242cc37b0df0131fd3e49476e4d68144b54caf774f78c1",
+   "bytes": 8246,
+   "sha256": "4e5fe0b0f0e747bb58b0abcd2ef939621555626b65bea21c01f32ec76d3d926e",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 1602,
+   "sha256": "a822660c3fb848c3a694024bac386ca83e039ad70fb091de64e56ac250f2fe20",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/masks/2026-otsu.png",
@@ -4217,10 +4372,18 @@
   {
    "path": "sites/sierra-gorda/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 12333,
-   "sha256": "959b74caf74e592036da0cdf30fc35b420c39842aee61b1ea2a6a8763c0d9c3b",
+   "bytes": 8625,
+   "sha256": "e55f86697bbd847f859e6ff782f118bbb4abe4efd4144023141fab635d485c99",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/sierra-gorda/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 1740,
+   "sha256": "668a43a9ebd174e6a4b4f4912382fb7fb03bafcdc21d999d383c4b5bc97cde59",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/sierra-gorda/polygons.geojson",

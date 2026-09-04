@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "quebrada-blanca",
  "site": {
   "id": "quebrada-blanca",
@@ -1911,7 +1911,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1965,7 +1966,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2019,7 +2021,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2073,7 +2076,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2127,7 +2131,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2181,7 +2186,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2235,7 +2241,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2289,7 +2296,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2343,7 +2351,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2397,7 +2406,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2585,47 +2595,91 @@
    ],
    "rf": [
     null,
-    19.6848,
-    22.7133,
-    30.51,
-    21.2553,
-    23.2956,
-    22.9518,
-    24.2865,
-    23.8689,
-    29.655,
-    28.9242,
-    17.7669,
-    37.2888,
-    21.1779,
-    28.2429,
-    20.6586,
-    18.783,
-    64.4571,
-    16.9848,
-    26.0559,
+    3.3426,
+    4.7979,
+    6.9084,
+    4.743,
+    5.4657,
+    5.4792,
+    5.1588,
+    5.5944,
+    6.0075,
+    7.2639,
+    5.1183,
+    16.8903,
+    6.3288,
+    10.7793,
+    7.1685,
+    6.3108,
+    43.677,
+    5.517,
+    10.4148,
+    10.8972,
+    11.1681,
+    8.2494,
+    17.784,
+    10.629,
+    14.517,
+    11.6631,
+    14.6484,
+    12.627,
+    9.8703,
+    10.4913,
+    18.4806,
+    31.7286,
+    31.1301,
+    28.4355,
     29.6964,
-    28.8954,
-    21.6666,
-    33.8391,
-    29.0394,
-    29.9916,
-    24.8418,
-    26.838,
-    23.8158,
-    21.9204,
-    22.5639,
-    30.4353,
-    51.2883,
-    44.8875,
-    44.7354,
-    45.4914,
-    50.1345,
-    48.6468,
-    51.1893,
-    51.0453,
-    53.5293,
-    50.1804
+    34.6869,
+    32.7609,
+    35.5779,
+    34.8435,
+    38.5263,
+    34.1532
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    25.9434,
+    32.4774,
+    28.2078,
+    32.7375,
+    31.923,
+    34.9191,
+    35.3808,
+    37.6335,
+    38.1744,
+    38.0448
    ]
   },
   "index_mean": {
@@ -2833,24 +2887,31 @@
     "n": 41,
     "pelt": {
      "breaks": [
+      2002,
       2017
      ],
      "segments": [
       {
        "start": 1986,
+       "end": 2001,
+       "mean": 6.7098,
+       "slope": 0.3192
+      },
+      {
+       "start": 2002,
        "end": 2016,
-       "mean": 26.5195,
-       "slope": 0.1112
+       "mean": 14.0423,
+       "slope": -0.4583
       },
       {
        "start": 2017,
        "end": 2026,
-       "mean": 49.1128,
-       "slope": 0.592
+       "mean": 33.1539,
+       "slope": 0.7355
       }
      ],
-     "penalty": 299.075545,
-     "sigma": 5.181242,
+     "penalty": 162.985892,
+     "sigma": 3.824886,
      "cost": "l2",
      "min_size": 3
     },
@@ -2859,10 +2920,47 @@
       2002,
       2017
      ],
-     "k": 2.590621,
-     "h": 20.724969,
-     "sigma": 5.181242,
-     "target": 0.24975
+     "k": 1.912443,
+     "h": 15.299542,
+     "sigma": 3.824886,
+     "target": 0.42435
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2022
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2021,
+       "mean": 30.2578,
+       "slope": 1.2219
+      },
+      {
+       "start": 2022,
+       "end": 2026,
+       "mean": 36.8305,
+       "slope": 0.9045
+      }
+     ],
+     "penalty": 44.492927,
+     "sigma": 2.537915,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 1.268957,
+     "h": 10.151659,
+     "sigma": 2.537915,
+     "target": 0.5409
     }
    }
   },
@@ -2883,7 +2981,13 @@
     "year": 2002,
     "method": "cusum",
     "series": "rf",
-    "score": 20.724969
+    "score": 15.299542
+   },
+   {
+    "year": 2002,
+    "method": "pelt",
+    "series": "rf",
+    "score": 162.985892
    },
    {
     "year": 2003,
@@ -2901,19 +3005,25 @@
     "year": 2017,
     "method": "cusum",
     "series": "rf",
-    "score": 20.724969
+    "score": 15.299542
    },
    {
     "year": 2017,
     "method": "pelt",
     "series": "rf",
-    "score": 299.075545
+    "score": 162.985892
    },
    {
     "year": 2021,
     "method": "pelt",
     "series": "otsu",
     "score": 60.816079
+   },
+   {
+    "year": 2022,
+    "method": "pelt",
+    "series": "unet",
+    "score": 44.492927
    }
   ],
   "gaps": {},
@@ -3660,8 +3770,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 12774,
-   "sha256": "c0c96ce5a6db1bf2d9b77ddcc3e9e71ae50e01dfc6337f6f3aec87b75431c87f",
+   "bytes": 9262,
+   "sha256": "bcb1fa746e073de3acdb650ef43b930f9d590ae49f69c990443d38492af23baa",
    "year": 1985,
    "method": "rf"
   },
@@ -3676,8 +3786,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 17115,
-   "sha256": "96cd69de1eb671a2eae84d3ce99ce34ae8355ce4a1033cea67b4ae8e1012a73e",
+   "bytes": 7578,
+   "sha256": "3073d153a0268a7ec97e32c5917f4516f71e0ba39c2a34610909dfdf822a3910",
    "year": 1986,
    "method": "rf"
   },
@@ -3692,8 +3802,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 18421,
-   "sha256": "d262a044caa701e163a1d28ff0d3603975bd8aa08ff9f198becdb2fa17bfbf70",
+   "bytes": 8496,
+   "sha256": "f1afb95b923020423a90b7bf8ba73f4c62265cbe4c8ceea135f9e3d63d4de300",
    "year": 1987,
    "method": "rf"
   },
@@ -3708,8 +3818,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 20745,
-   "sha256": "2b20a2317f66b981047d39d471e2fc5df4c37cafab835debfcced0959dfdfc08",
+   "bytes": 10982,
+   "sha256": "3b179b6df697a54c13522bd783612f0ebd0581031ca2739c7227400cf4bbf994",
    "year": 1988,
    "method": "rf"
   },
@@ -3724,8 +3834,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 17926,
-   "sha256": "196cbe55b94ecdfe999c5e3357bb154010827500832d78af58ac896dacae9cf8",
+   "bytes": 7082,
+   "sha256": "2ed2c040fefabe9865f508701e6aa4d236d7fbea1c6a38bd0e7925d8eaeab6ff",
    "year": 1989,
    "method": "rf"
   },
@@ -3740,8 +3850,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 19085,
-   "sha256": "22c00c50368b627ce04ae92a816a9fd628be4c27841652b66efafb28c290dba8",
+   "bytes": 9506,
+   "sha256": "ac8ca2d09750d973ba8e06657d5a7363536a596134f012b0c18f54964a7558bb",
    "year": 1990,
    "method": "rf"
   },
@@ -3756,8 +3866,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 18271,
-   "sha256": "147d521be9f0ed244011e2a789ca55756867c5e6bf1b44779c0cc7308f39eabf",
+   "bytes": 8713,
+   "sha256": "fe705bb17fe5a302fd38ee2ee1745eb699b8e876c284020bf6ed60676e3132d1",
    "year": 1991,
    "method": "rf"
   },
@@ -3772,8 +3882,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 19209,
-   "sha256": "3be6a273ae4c26949d066415d128ab9808475ecbc96cbd7a6db8ccfc0f39cdc0",
+   "bytes": 8450,
+   "sha256": "a8a75d046cccdcb2418a4c5fe4b0e834bec67a0db6033a2429c2d1809a4b77fe",
    "year": 1992,
    "method": "rf"
   },
@@ -3788,8 +3898,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 18983,
-   "sha256": "cba758127b26a5e5de64350723da67965b0bdc5b7ce07244c127daae586c9dca",
+   "bytes": 9181,
+   "sha256": "94f64962e3d1f126bfef6ad2ee837062cd4b3217183ae809ddf07c4b66e37cbd",
    "year": 1993,
    "method": "rf"
   },
@@ -3804,8 +3914,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 20146,
-   "sha256": "c8f447a48f2369e4f63d67dc2cc52569964c1e06fe005e2ad69cedc239649214",
+   "bytes": 8412,
+   "sha256": "c9a290f26d5d7d878f7e9b8cb23240a46b0159d74e6568e4f38fc316aae1738c",
    "year": 1994,
    "method": "rf"
   },
@@ -3820,8 +3930,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 19800,
-   "sha256": "a13c1b90cbbd51c86c62314c6eed55f6db4400871321d07aac6be7b05dab7656",
+   "bytes": 8739,
+   "sha256": "7890c068163a944bc03c1d01c8fd0c4e830707b691b486e7d85c08147ef35018",
    "year": 1995,
    "method": "rf"
   },
@@ -3836,8 +3946,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 16005,
-   "sha256": "b4ff5adab6e6bab3829ad7dc045130c92e4725e541ca0e0198a06a898831ae0a",
+   "bytes": 8605,
+   "sha256": "b173b58a780f76451a42853ec0476f3d91cf7ceae918b74171494745e2df5f83",
    "year": 1996,
    "method": "rf"
   },
@@ -3852,8 +3962,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 19921,
-   "sha256": "42a576fa221b6d27526133d542ef9a047b27ce02c31ceb42f62955d94e73c5ef",
+   "bytes": 14863,
+   "sha256": "c2b79abd5c0d7a8b6cb95ff8106b16a9d02086d0d04e0dd57695bbff76fd1245",
    "year": 1997,
    "method": "rf"
   },
@@ -3868,8 +3978,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 17324,
-   "sha256": "96b5395b8d6c18b95b702193b3736a4df525512c88c27691a5aecae41c025af7",
+   "bytes": 7990,
+   "sha256": "2a9f99e4e944b1ac268380478d2410c43ae9be0d388dba0bd7638474c644f969",
    "year": 1998,
    "method": "rf"
   },
@@ -3884,8 +3994,8 @@
   {
    "path": "sites/quebrada-blanca/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 19159,
-   "sha256": "52b727c1d9bf8946645f1d4fbb8b7ff1691fe66e79de4067f4537fddafebf20c",
+   "bytes": 9279,
+   "sha256": "0c718acf135dc9eef0e2d90422bd3b2aaf1ea29d0b6be514d45b1f3c5779cab2",
    "year": 1999,
    "method": "rf"
   },
@@ -3900,8 +4010,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 16422,
-   "sha256": "698753d45ff6b14216ff38729e4f2ef56b60b4b4da5f0597b208cd8562a4a243",
+   "bytes": 7970,
+   "sha256": "4c74997ba9cba6117948e1dc660f61ee06c4b97ce41ae4282a5827924629eb72",
    "year": 2000,
    "method": "rf"
   },
@@ -3916,8 +4026,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 16275,
-   "sha256": "e2ed1346a7d806be2e6bf3888406d65f6b88b7e113382b91f05ce9c5ff2520ae",
+   "bytes": 7853,
+   "sha256": "03300a948ce3a09e7f69734968a125c04292530b43821308202507c281efa9e9",
    "year": 2001,
    "method": "rf"
   },
@@ -3932,8 +4042,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 15046,
-   "sha256": "c9ef22fc6260f0d23897729b1a9742de0c7a7c9ab7ef3473897f0a65b980714e",
+   "bytes": 20193,
+   "sha256": "34ba46a1f77fbc1c3ce710e4e0ddd88d611515f74d257c875f22b879a96ce713",
    "year": 2002,
    "method": "rf"
   },
@@ -3948,8 +4058,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 14727,
-   "sha256": "0aa0fee206b18ffcf2aa986d0d4d9d7bb19ef79faa7563dd2cefbc08910fcc2a",
+   "bytes": 6417,
+   "sha256": "336b94ce69fcedfcc7820d7586d5ac07c57c37de338152373754fd0f3ed59914",
    "year": 2003,
    "method": "rf"
   },
@@ -3964,8 +4074,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 16898,
-   "sha256": "66b49ce2e0f5c04effc234004808c874a319b364549c0f726d67b0186538b3fe",
+   "bytes": 7330,
+   "sha256": "3ee730b1f37f1f4c552c5d4ffdf8b830c030d6030cf0aa10324d032a35bed058",
    "year": 2004,
    "method": "rf"
   },
@@ -3980,8 +4090,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 19303,
-   "sha256": "442015947af3c5c67d84d757be429294ec533be76818803cb3e018a439646dd6",
+   "bytes": 9207,
+   "sha256": "0566047369dec3e76e8b2d57ca095c752947450d73ec6823a5e0549a971ab671",
    "year": 2005,
    "method": "rf"
   },
@@ -3996,8 +4106,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 18999,
-   "sha256": "c558f033734bdfea0d24487149ce50ad4c1bd435dbd12882765c350c5b164edf",
+   "bytes": 9129,
+   "sha256": "c5c04021f975875da644578b27d38826fbfa3a098833b3772aac937a9310318b",
    "year": 2006,
    "method": "rf"
   },
@@ -4012,8 +4122,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 17103,
-   "sha256": "74a65cba62cd16f0c90637e5b78ce8d4566e16d5f36dcf8941378b07e0942ec8",
+   "bytes": 7748,
+   "sha256": "63d8faa9c80a3be0ddae6aaec1bd8c6ee1d710014cb6b335567185cfc1a29670",
    "year": 2007,
    "method": "rf"
   },
@@ -4028,8 +4138,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 17193,
-   "sha256": "65641f639f7b05c85a6d94640b82b485753c4f92f91f0590c00bace8d8162d16",
+   "bytes": 8406,
+   "sha256": "c75159adad369011d46b484da56d30f7fcb465de56f912952f4002996bb1ce32",
    "year": 2008,
    "method": "rf"
   },
@@ -4044,8 +4154,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 18808,
-   "sha256": "367c01c74888426d9f15852ac9d106116bee407222a192c95b19efcf0e9bf701",
+   "bytes": 8622,
+   "sha256": "339e2ffe1a5e8b399c8bc2f0a6d4bf7cef6bff1ebad5392a390c0c640c0f3435",
    "year": 2009,
    "method": "rf"
   },
@@ -4060,8 +4170,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 17036,
-   "sha256": "e24e51518c24ba7812a02cc20524559c1a1d2d31ec2bdc39ae90e2a0b4588355",
+   "bytes": 8100,
+   "sha256": "4096962f391d7d0287862e12205c298013e795d1a858226ddd7ff2076f35802f",
    "year": 2010,
    "method": "rf"
   },
@@ -4076,8 +4186,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 15388,
-   "sha256": "7521e9ba9774d4b08263c98641e7482a7b7b37a6ac58113613d1e1d2529b7ad7",
+   "bytes": 8509,
+   "sha256": "ddb77e19ba7bd3796c296f1feed8ef4e4cfc83a32e0cccaf67b534c1baffc0ad",
    "year": 2011,
    "method": "rf"
   },
@@ -4092,8 +4202,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 15057,
-   "sha256": "d9ac9651c9d07643527421f6be1529e035dd4cb78951e1e7ebf150b8a2c03f25",
+   "bytes": 6749,
+   "sha256": "8be4f53fa90f2eb4a8e2467e0e329d257bf46e76d2e696b69327384040940e4c",
    "year": 2012,
    "method": "rf"
   },
@@ -4108,8 +4218,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 14400,
-   "sha256": "750c1d2f709a21dcd4187a812493f1340cafe75d6cb7674975ef0ba643bb6dfd",
+   "bytes": 6640,
+   "sha256": "029a69b162f485377a4d278c3e3a893345890e3220772b18aad53b3fe3b53811",
    "year": 2013,
    "method": "rf"
   },
@@ -4124,8 +4234,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 15542,
-   "sha256": "5a022e6aff4929ef4863c210acc8e06b57c2f345b96ebc0b5774c21dc387b25b",
+   "bytes": 7452,
+   "sha256": "0f52cf9b45e7b6353f7c52b281ebbfbb598aadb10033930eff1c42d9a5fbbd59",
    "year": 2014,
    "method": "rf"
   },
@@ -4140,8 +4250,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 15383,
-   "sha256": "555e4d1d729c0590c41d72715c94915d053e838e158196c996d2fb026395261b",
+   "bytes": 7566,
+   "sha256": "b69029df323c65e6023a395f9fa97e76ea91620c870a262ad10fbac0563b3294",
    "year": 2015,
    "method": "rf"
   },
@@ -4156,8 +4266,8 @@
   {
    "path": "sites/quebrada-blanca/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 12808,
-   "sha256": "87dd9c5e59bf53b52c5b0173a5be2659dc6201008b6c7c423a9ec80be6e1c081",
+   "bytes": 5633,
+   "sha256": "675afa53d30205adcfbd34d3e770994a3cef55bd933762ff771a34ea0f85496a",
    "year": 2016,
    "method": "rf"
   },
@@ -4172,10 +4282,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 22626,
-   "sha256": "271734be66fdcc6a4131450ba7b99cd98fefd8fb4bcaa61b473318f226b04169",
+   "bytes": 12352,
+   "sha256": "88d4c2123b242a3dd749a00abe16285eb1af90f53755c93d4ad8c75f846bc186",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 6799,
+   "sha256": "fdd0beb0a0258419e137d1b91412904a86f47ad91ad60ada2bd9623f4e2c9897",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2018-otsu.png",
@@ -4188,10 +4306,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 17108,
-   "sha256": "d78ddcb78f910f58c2f1622b847544ce2d693930675480ef59562015d18cd590",
+   "bytes": 9295,
+   "sha256": "c7c9983d1ad999afe507c3eb28201796610a0c35500bec59dfbf1353c6cfec44",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 3788,
+   "sha256": "ffd890982458855011549782c39a3fe3e545299696230539d0508ddb91399791",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2019-otsu.png",
@@ -4204,10 +4330,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 17401,
-   "sha256": "99ad8156a03606ce23c23174b956575b801298431e7a1b675e48b38767d78b96",
+   "bytes": 8659,
+   "sha256": "afb0637ae7d668446f5fd3851d4aeb5d2578af1f3129463545cbd9ce9be3a486",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 2725,
+   "sha256": "251aa269b06cf0b1f63171213f56af10b8287f2dac411873013de7f56b7cd8cc",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2020-otsu.png",
@@ -4220,10 +4354,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 17856,
-   "sha256": "61e261e2f592f2b9f1466f44a48acb12435b9f98f685827f1184515cfa737f6c",
+   "bytes": 7957,
+   "sha256": "887f1f84325efd05f7a5e3370a8fc1e1f38420c1954d8185149527a65181def2",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 3643,
+   "sha256": "af843dc586a3d6f7072283cd04cb324d393f10b0cdef73f785dede6d75656ba7",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2021-otsu.png",
@@ -4236,10 +4378,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 17887,
-   "sha256": "188cfa58714d625e41ed0cb75b0916f2be4c1e6b36ff1f92afe9e208b9c4d143",
+   "bytes": 12086,
+   "sha256": "bf88919dfe9c45ad5f86c1531a9978bc18cf2bf81ac69c6e490da25e38ea2c58",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 3472,
+   "sha256": "124e91cd045312f91d78889a02398badef1b5d532d81fb6a05c6b73fe3a3eda8",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2022-otsu.png",
@@ -4252,10 +4402,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 18021,
-   "sha256": "ca80ae129d6fa7109fa059d1da0675477226e08092eea832ab6584fbed14d931",
+   "bytes": 11463,
+   "sha256": "e0f15555619661d327f7bb52ea2d5489e44da4525ceedf8f4620b1bb39490e78",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 4858,
+   "sha256": "77061800d3a00b67145c1e3d16eb3e983dbca4290e0097142302b7dc065e2c4d",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2023-otsu.png",
@@ -4268,10 +4426,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 18038,
-   "sha256": "70c7298129c62c57e732a3ce23aa66d2165f66d0da56cb55e1280328e9c4636e",
+   "bytes": 11574,
+   "sha256": "ce0e49d688c4d9125f41504298d6cd8176155951f316231efa31a946a812406a",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 3964,
+   "sha256": "fc8908595a7c42fcc5e9115477e1275f7a2d88c6620b80156352754e0f374e3d",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2024-otsu.png",
@@ -4284,10 +4450,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 17865,
-   "sha256": "b77b9b672a71912762e24bf6df8c180cbc182a1f0510d97b80e6eaf6f9b43b56",
+   "bytes": 11630,
+   "sha256": "7a16e73fd90beb9df56ed0baa10a17676bab6192c402fe7390920a883e60675b",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 4857,
+   "sha256": "124d347c2cd5839c2b2723e46b5d8deb2dd8a8fbd4426900b38409782a9a7995",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2025-otsu.png",
@@ -4300,10 +4474,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 18642,
-   "sha256": "1d343f34a4bb41c1c44f3bafc24a356a33d81501cfe3865f6c310156cb14f0ed",
+   "bytes": 12313,
+   "sha256": "6f9a67699b84b0bb9ba26c9bcd89a96673ffc29e935fff563bed51ff27351abc",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 4681,
+   "sha256": "b452417d248d0b223e92f5f7f7034fd61787b8d205bc45be78ef9d7e7093da1b",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/masks/2026-otsu.png",
@@ -4316,10 +4498,18 @@
   {
    "path": "sites/quebrada-blanca/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 17592,
-   "sha256": "459ca17c661a6e121f7dbf10c1784b0a1a0c4188c574bc4969c15455b6fc833c",
+   "bytes": 10225,
+   "sha256": "381922f12fa8d6e709132bdbe94b6fab655c24bfb52064854c7c7d7369867232",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/quebrada-blanca/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3996,
+   "sha256": "faf81c0b512bc3f7a9eefb98c20f2e4fa516fb2aae271a5168b27a31a09c5fc1",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/quebrada-blanca/polygons.geojson",

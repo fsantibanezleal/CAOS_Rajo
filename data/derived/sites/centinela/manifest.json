@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "centinela",
  "site": {
   "id": "centinela",
@@ -1880,7 +1880,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1934,7 +1935,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1990,7 +1992,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2044,7 +2047,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2098,7 +2102,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2152,7 +2157,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2206,7 +2212,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2260,7 +2267,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2314,7 +2322,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2368,7 +2377,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2555,48 +2565,92 @@
     26.7291
    ],
    "rf": [
-    96.0174,
-    108.9054,
-    102.3345,
-    91.5651,
-    105.8013,
-    102.8592,
-    100.2852,
-    106.992,
-    85.2327,
-    105.1074,
-    95.3766,
-    88.0245,
-    97.0533,
-    93.1356,
-    101.6298,
-    114.8247,
-    108.63,
-    78.5736,
-    80.2368,
-    79.4592,
-    105.903,
-    104.4999,
-    92.5812,
-    69.6816,
-    97.2828,
-    111.2373,
-    129.555,
-    96.8967,
-    103.4325,
-    100.9971,
-    108.5355,
-    83.8143,
-    128.5047,
-    121.464,
-    127.6488,
-    137.5326,
-    125.3511,
-    132.3864,
-    110.0619,
-    136.7766,
-    117.4284,
-    140.4801
+    18.5067,
+    37.5984,
+    29.349,
+    25.8138,
+    41.7537,
+    37.503,
+    31.7133,
+    40.1859,
+    18.0666,
+    33.8742,
+    31.6521,
+    15.3891,
+    27.1926,
+    22.2372,
+    37.5768,
+    54.4041,
+    55.3302,
+    29.7324,
+    28.2573,
+    31.8213,
+    52.2828,
+    36.4698,
+    39.3723,
+    27.9936,
+    60.6672,
+    53.5617,
+    66.9366,
+    57.0717,
+    59.643,
+    69.1578,
+    73.782,
+    46.4364,
+    111.879,
+    58.7232,
+    115.6059,
+    99.2907,
+    101.4984,
+    109.7766,
+    57.1842,
+    105.3306,
+    66.9249,
+    111.3705
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    61.965,
+    52.7436,
+    63.2466,
+    60.516,
+    68.9598,
+    74.3661,
+    72.5121,
+    76.2489,
+    80.4789,
+    79.5699
    ]
   },
   "index_mean": {
@@ -2804,33 +2858,77 @@
     "n": 42,
     "pelt": {
      "breaks": [
+      2009,
       2017
      ],
      "segments": [
       {
        "start": 1985,
+       "end": 2008,
+       "mean": 33.5032,
+       "slope": 0.4098
+      },
+      {
+       "start": 2009,
        "end": 2016,
-       "mean": 98.3269,
-       "slope": -0.0234
+       "mean": 60.907,
+       "slope": 0.1276
       },
       {
        "start": 2017,
        "end": 2026,
-       "mean": 127.7635,
-       "slope": 0.3018
+       "mean": 93.7584,
+       "slope": -0.7066
       }
      ],
-     "penalty": 2801.551641,
-     "sigma": 15.806592,
+     "penalty": 4250.355838,
+     "sigma": 19.469355,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 7.903296,
-     "h": 63.226367,
-     "sigma": 15.806592,
-     "target": -0.7776
+     "k": 9.734677,
+     "h": 77.87742,
+     "sigma": 19.469355,
+     "target": 2.2077
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2021
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2020,
+       "mean": 59.6178,
+       "slope": 0.6156
+      },
+      {
+       "start": 2021,
+       "end": 2026,
+       "mean": 75.356,
+       "slope": 2.1464
+      }
+     ],
+     "penalty": 336.413435,
+     "sigma": 6.978598,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 3.489299,
+     "h": 27.914393,
+     "sigma": 6.978598,
+     "target": 3.7368
     }
    }
   },
@@ -2842,6 +2940,12 @@
     "score": 467.483643
    },
    {
+    "year": 2009,
+    "method": "pelt",
+    "series": "rf",
+    "score": 4250.355838
+   },
+   {
     "year": 2017,
     "method": "pelt",
     "series": "otsu",
@@ -2851,13 +2955,19 @@
     "year": 2017,
     "method": "pelt",
     "series": "rf",
-    "score": 2801.551641
+    "score": 4250.355838
    },
    {
     "year": 2021,
     "method": "pelt",
     "series": "otsu",
     "score": 467.483643
+   },
+   {
+    "year": 2021,
+    "method": "pelt",
+    "series": "unet",
+    "score": 336.413435
    },
    {
     "year": 2022,
@@ -3598,8 +3708,8 @@
   {
    "path": "sites/centinela/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 21772,
-   "sha256": "fa76389a9ca14824724a70ab14a866f062636e48cff11d72952044bf5acf5b87",
+   "bytes": 11017,
+   "sha256": "c63969837d5d53939b14d294823b886dc6a0114e77555bdfe47666bbfb91f2d4",
    "year": 1985,
    "method": "rf"
   },
@@ -3614,8 +3724,8 @@
   {
    "path": "sites/centinela/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 19339,
-   "sha256": "68dd93b2b4267f2f6c44b76c50d5fceccf94ed700490b0f6e3ba58240ec5626a",
+   "bytes": 14617,
+   "sha256": "f6f0213be3a96669ae951798ebfee039512cd40056a1e81db75f5ea42066520b",
    "year": 1986,
    "method": "rf"
   },
@@ -3630,8 +3740,8 @@
   {
    "path": "sites/centinela/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 20839,
-   "sha256": "1a50e7e91512ccdb7cb12363fd97a17f72474c9f6e3b6a2a5c6ab5dbbbe90cba",
+   "bytes": 13704,
+   "sha256": "5f473db9f6bb55c317d651596680748be992e8fdb8759c5b33d50dc8adc2766a",
    "year": 1987,
    "method": "rf"
   },
@@ -3646,8 +3756,8 @@
   {
    "path": "sites/centinela/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 19916,
-   "sha256": "220dc7b807738fe350c316aea01b2fef61257d4e41167ce628a47398b644c1a5",
+   "bytes": 11816,
+   "sha256": "55d014d6f2d7be6d0a44b5e7723c5b6e6cba6771abd2ab449d57c903f3185c37",
    "year": 1988,
    "method": "rf"
   },
@@ -3662,8 +3772,8 @@
   {
    "path": "sites/centinela/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 19045,
-   "sha256": "f72348a7edf4dd519e4f2557412e778f94c705186cbc6a830195ca3d9736dabc",
+   "bytes": 15559,
+   "sha256": "08ad92849d6e65c3c8ea06b487d566c0f2713985016a3557483bd5adb8a3a6d3",
    "year": 1989,
    "method": "rf"
   },
@@ -3678,8 +3788,8 @@
   {
    "path": "sites/centinela/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 19203,
-   "sha256": "21aa4d72f46ac103eb43ebc02fbf60fc4a392c219704e43d0f59e884e2fe7c05",
+   "bytes": 14724,
+   "sha256": "5a69151f6e746c65ae4714a523a2fcc1bf81c0a99b749053e4c1a3d0bef4318f",
    "year": 1990,
    "method": "rf"
   },
@@ -3694,8 +3804,8 @@
   {
    "path": "sites/centinela/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 20007,
-   "sha256": "c1df6520b525cae140fc6d7117489b74dd0781c00e5e91c78bf176aece74d37a",
+   "bytes": 13823,
+   "sha256": "0df2c8f3337753f1d7c63e32923e7a6e08189933f3b94daf3478252722587f80",
    "year": 1991,
    "method": "rf"
   },
@@ -3710,8 +3820,8 @@
   {
    "path": "sites/centinela/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 18972,
-   "sha256": "9dd45fe8f7d9257f02def922942cd9d1dafa7b135571d706db08e53ec6fea194",
+   "bytes": 15218,
+   "sha256": "1840af91908e25b5c37de9bcd1ad936262167ed5d7754c03b6647adc00cfff34",
    "year": 1992,
    "method": "rf"
   },
@@ -3726,8 +3836,8 @@
   {
    "path": "sites/centinela/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 20740,
-   "sha256": "f95124f94188549e6bfba3ea7ca00b472bd58a7fa1b1484ecb1c1a31721877d0",
+   "bytes": 10678,
+   "sha256": "e8af033016ccd0af5558373583e6dcc74202a23581d6ebeb44d3858ed4f873d3",
    "year": 1993,
    "method": "rf"
   },
@@ -3742,8 +3852,8 @@
   {
    "path": "sites/centinela/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 19328,
-   "sha256": "4dacba82cc51c70a59495645c44055a8988b87ef8a41bde0d21602374583c479",
+   "bytes": 14968,
+   "sha256": "6314b0ce067a34f8c55e9b558b8f2bafdca5633f88a6c49af7a28991199ddab6",
    "year": 1994,
    "method": "rf"
   },
@@ -3758,8 +3868,8 @@
   {
    "path": "sites/centinela/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 20154,
-   "sha256": "d16c83fbd7bded87a286b1e0743ee435f69d43719e58e2668e91f3752ec4c66e",
+   "bytes": 14008,
+   "sha256": "5cebd742fead6e2b770936ac27b8a194299cbc868793fd2acc3cce4cedd1fefe",
    "year": 1995,
    "method": "rf"
   },
@@ -3774,8 +3884,8 @@
   {
    "path": "sites/centinela/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 21740,
-   "sha256": "c55438bfd60cb3ec6cfd0191c3ce642b8197849a7d005fb8b7b3a424d8a780b1",
+   "bytes": 7630,
+   "sha256": "d66b1aefbf94a7ae6c031a0a9dff326693995d9fc02675a7f4f359614f52dea7",
    "year": 1996,
    "method": "rf"
   },
@@ -3790,8 +3900,8 @@
   {
    "path": "sites/centinela/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 20301,
-   "sha256": "9e2b118b2e703bb13f46ed8181c54ea116715dad23fb7b334f966a0a84339fc3",
+   "bytes": 12923,
+   "sha256": "2981d75c35e85d58e6d94a74f9202646edd0c81c6a5086c60261e54cef54a03d",
    "year": 1997,
    "method": "rf"
   },
@@ -3806,8 +3916,8 @@
   {
    "path": "sites/centinela/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 21738,
-   "sha256": "31bad1cb379fca9353fbe4255dd46270433cd44fd871167235b84dff285bec3a",
+   "bytes": 12198,
+   "sha256": "f8275553786cfea1c99128160f02b3c8db353e67410b67e775eef3c18c7b39dd",
    "year": 1998,
    "method": "rf"
   },
@@ -3822,8 +3932,8 @@
   {
    "path": "sites/centinela/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 19967,
-   "sha256": "867b274329418caf1cc11579d20bf6e5f08fe845b7abb77fcc31f3e19535ddfd",
+   "bytes": 14868,
+   "sha256": "4188d296541364ef67f2373c5bda7cb36bc98a7e418a99b801b17c2f24162cb9",
    "year": 1999,
    "method": "rf"
   },
@@ -3838,8 +3948,8 @@
   {
    "path": "sites/centinela/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 16845,
-   "sha256": "ff9359f1d7922ee43177e35fe384ab177be95d6caae11366165858d9bd9b7b56",
+   "bytes": 17075,
+   "sha256": "74151ca187f61af7810a1ae84f458ff5b5a8fae58a851602149ad3e2b8fc5c6f",
    "year": 2000,
    "method": "rf"
   },
@@ -3854,8 +3964,8 @@
   {
    "path": "sites/centinela/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 16426,
-   "sha256": "10a36353ff1f31d39a91e70f9767b7c017ba1814bc4aa7b76c7d3d9ca912526d",
+   "bytes": 16730,
+   "sha256": "5c12276223739c06574edc029afc638778416982b99b0904e740498be1aa19d9",
    "year": 2001,
    "method": "rf"
   },
@@ -3870,8 +3980,8 @@
   {
    "path": "sites/centinela/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 20049,
-   "sha256": "d6b83da1e3ef87a8fae97b21a1a5dafaba150bd4a93a12a039b414f8a856ee96",
+   "bytes": 12048,
+   "sha256": "a7b33867f7cbc2e2f0334fd6db4efc54ca19ea297c52ae4bb9d2bc6a0f204ef5",
    "year": 2002,
    "method": "rf"
   },
@@ -3886,8 +3996,8 @@
   {
    "path": "sites/centinela/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 19288,
-   "sha256": "f79f3d8a5f0b30fb7252e83f1d7330b6855269eaa98179aac00246e603a79fe4",
+   "bytes": 11384,
+   "sha256": "ac6a4fac025984b129764015f65f1058dee3d0ffa2119f8e58fb07b8a643a2c3",
    "year": 2003,
    "method": "rf"
   },
@@ -3902,8 +4012,8 @@
   {
    "path": "sites/centinela/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 19399,
-   "sha256": "4959ec7f1eda27b1b1653b0565252714688001b65ae65a03bf140b1fbca83c49",
+   "bytes": 12387,
+   "sha256": "ec53066962b2e30e2f68bad693ce00c88151c89b0f11544657790afb8102d18d",
    "year": 2004,
    "method": "rf"
   },
@@ -3918,8 +4028,8 @@
   {
    "path": "sites/centinela/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 17010,
-   "sha256": "f3a3ed9e233d4d2e27678871820266db15ad19adbb0b4501de236c275ab16faf",
+   "bytes": 16898,
+   "sha256": "a580a8beccdad05fe07bda33582e4f3d9173020d5ec7bc195d075d909ebccccc",
    "year": 2005,
    "method": "rf"
   },
@@ -3934,8 +4044,8 @@
   {
    "path": "sites/centinela/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 19658,
-   "sha256": "ae705dd89f7ddfd668da00053d57057b1db637c8082317009eeb521fc6834367",
+   "bytes": 15180,
+   "sha256": "bff99bf8e47fc34349b50364b4b9f0466826cb07912728d3c14844654e084176",
    "year": 2006,
    "method": "rf"
   },
@@ -3950,8 +4060,8 @@
   {
    "path": "sites/centinela/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 18638,
-   "sha256": "9ad852ed06a6c1ab98fb88c7d60dd6caf5047fe745f04f161960b2201a22ba8a",
+   "bytes": 14553,
+   "sha256": "b6e8d1e2fd731b2935d39b61feebdf5703fbf9ca2eb6b7a6c3c867f664236b44",
    "year": 2007,
    "method": "rf"
   },
@@ -3966,8 +4076,8 @@
   {
    "path": "sites/centinela/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 19342,
-   "sha256": "3879e92728cfb94abc76e24b525d0955b5042f353bb1eb9ebc559ecfc1a476f4",
+   "bytes": 11791,
+   "sha256": "f1616521c657d8a6c3d3afc0849bdce42772e011b1a11052782adf98286248e8",
    "year": 2008,
    "method": "rf"
   },
@@ -3982,8 +4092,8 @@
   {
    "path": "sites/centinela/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 17544,
-   "sha256": "f6a154ba0f2c7e734d9e608b57a928a78076f7145cbab4b8c1c63d5c13f49ff4",
+   "bytes": 16905,
+   "sha256": "002989a8ebe5477ad72de18ac4b6933a66b961dd7ec7935387f453370f6069be",
    "year": 2009,
    "method": "rf"
   },
@@ -3998,8 +4108,8 @@
   {
    "path": "sites/centinela/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 17572,
-   "sha256": "e779d21243d1ef1629b429ae74c594dde081904f6597eef4c0f0428592f44e42",
+   "bytes": 14889,
+   "sha256": "6cb78fc150435775cd86323b7552f1e9a1baaf4a79c07177d851429267fd96a2",
    "year": 2010,
    "method": "rf"
   },
@@ -4014,8 +4124,8 @@
   {
    "path": "sites/centinela/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 12853,
-   "sha256": "5669513fad293e459fd0cc96f632a8c8de21582e5335f9b4b47c3dd28eaec7db",
+   "bytes": 17913,
+   "sha256": "b6a72718fb712dbd79b29a2cca56b8375f8f6d372cc0da2bc80599698159de48",
    "year": 2011,
    "method": "rf"
   },
@@ -4030,8 +4140,8 @@
   {
    "path": "sites/centinela/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 18287,
-   "sha256": "4796b77e4f3f260f2cd561d300c07ec8d4bcc17a4573e0618f6c385ce618c387",
+   "bytes": 13686,
+   "sha256": "cb8dd49f668876ccfba6eb4cb89f012a1aa8abb89548031c0dbd45d4464790d8",
    "year": 2012,
    "method": "rf"
   },
@@ -4046,8 +4156,8 @@
   {
    "path": "sites/centinela/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 18416,
-   "sha256": "7993125a145f59369cdd59a534d5ebab3816727fb2f8fd33d2247e7937581e67",
+   "bytes": 14458,
+   "sha256": "3322a3ac4fc06086a584e12bb792d7f75e8fe014a06303eb98c79c119653bb21",
    "year": 2013,
    "method": "rf"
   },
@@ -4062,8 +4172,8 @@
   {
    "path": "sites/centinela/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 17325,
-   "sha256": "061349678bd6757f14932d8899dcb56a516654640f634cbc1d12043befa71770",
+   "bytes": 13455,
+   "sha256": "fa0a400ca8e3a00dae6c950266cab749fd5a83f95a970cddbb06f71359d3324a",
    "year": 2014,
    "method": "rf"
   },
@@ -4078,8 +4188,8 @@
   {
    "path": "sites/centinela/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 17203,
-   "sha256": "10ed85b0abb4e4bf4c5a626ece88e841940235ad585eff210a31adc1bf924b0a",
+   "bytes": 14090,
+   "sha256": "3d43fd7bd13f34784ee48bf424ba20f3a37c0353d33435330e8747211f3fcc24",
    "year": 2015,
    "method": "rf"
   },
@@ -4094,8 +4204,8 @@
   {
    "path": "sites/centinela/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 18246,
-   "sha256": "ee1cb94583d5eb958b018f0745c3e92a6f83e6fba2fd5024e7057faa7bb0168f",
+   "bytes": 11193,
+   "sha256": "4e4fd0937c8de6edb800d24525b08a2c6ff250788627a338968f5f1493439310",
    "year": 2016,
    "method": "rf"
   },
@@ -4110,10 +4220,18 @@
   {
    "path": "sites/centinela/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 12544,
-   "sha256": "00de7b987341780b614b6a0676c2882a588fefca6160340b08de352de2c958ef",
+   "bytes": 22287,
+   "sha256": "f3df398b8d2e36ea8990563e74ccc87fd4ecbeb22882cce557ee098a0d4739c0",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 7548,
+   "sha256": "1d5e98f0568aff40afa1285f5223da64b95999dd9baeea7b5fa6f629d8f7988a",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2018-otsu.png",
@@ -4126,10 +4244,18 @@
   {
    "path": "sites/centinela/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 21765,
-   "sha256": "aa8310e1c1d25ea729726639ba6195ae7a544c0905c662dcab47626989850a70",
+   "bytes": 14772,
+   "sha256": "6b094c25668d5f7dc08d51b8ae1ecec5855cf05e4c3a753186d7e3cac440ae2e",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 3068,
+   "sha256": "5ee6f0c28ef44b6cbde074b0b2e803b735492327e0641df477e5c4d2d9d9a8cc",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2019-otsu.png",
@@ -4142,10 +4268,18 @@
   {
    "path": "sites/centinela/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 12310,
-   "sha256": "5fe46265f0d85efc4b601a4172d94331159523fc1b799203178bdd70832270f6",
+   "bytes": 21010,
+   "sha256": "d180f04afc6f6275bc6c10ac214a7ac01d0da71a81279eebe8ed21daa10718dc",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 6981,
+   "sha256": "aeb66314bc3e40e990e0df8783b3c5c069f1425e9bb1661178352356703a127a",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2020-otsu.png",
@@ -4158,10 +4292,18 @@
   {
    "path": "sites/centinela/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 10005,
-   "sha256": "ceae556301c0641f9bf043a950e5670d2d510de31c0e9c13e3bfc0c624f43901",
+   "bytes": 21547,
+   "sha256": "5f629ffdfe1b91f1561aef418a42ff029f53777f9956c9fd7e3052998acd6ed1",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 2834,
+   "sha256": "cbf7972b8f9cf3045794b9225fbabd4ce003ff1e1d1e0c8c6cd0eff3924839a7",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2021-otsu.png",
@@ -4174,10 +4316,18 @@
   {
    "path": "sites/centinela/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 17628,
-   "sha256": "d39a6bec0c864f222b05cd9d89278bc0039fe21fea1bbb93192f6445aae84430",
+   "bytes": 20481,
+   "sha256": "6e899b423485a7ab071784d47aa0961b47010139f4f84c948a805920d44a13bd",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 6111,
+   "sha256": "ec6913f90cf3f1ef4a6340ba4aa0edf745909fc46c2f04ec1367ca2fad008e88",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2022-otsu.png",
@@ -4190,10 +4340,18 @@
   {
    "path": "sites/centinela/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 13332,
-   "sha256": "ddaa1d350331dfd51dc706a80b8ad0616d2ea920d13394c0a578514c853f1348",
+   "bytes": 18947,
+   "sha256": "5ffc6b93848b27af65fd47210557611fd29e288ece2f834a2d9e6acacb38f807",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 3534,
+   "sha256": "0208254019c58c5199bb9d193654e7815445edb0fc60726051595819104db5de",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2023-otsu.png",
@@ -4206,10 +4364,18 @@
   {
    "path": "sites/centinela/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 24284,
-   "sha256": "5243a6ba912fd8ea44ac1d5056c634c84f162ae5316325796274eb2fc19420c9",
+   "bytes": 14271,
+   "sha256": "fa1a7e9a024db723a8f3f7ad836b9135d2fb28469546e01963b94c3467661cc6",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 3498,
+   "sha256": "07a20eaf9d83edd93e2a542968b2b28e1dc1ddc3880c3ddb213852764d1208e8",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2024-otsu.png",
@@ -4222,10 +4388,18 @@
   {
    "path": "sites/centinela/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 9135,
-   "sha256": "0834cbc823ee34aac744640c8ebbc56bd607313025a23849c5c50bd8cf814a38",
+   "bytes": 22747,
+   "sha256": "2f9b0e82e4f13fb9114b77b7c034eceb0dc96b2c6d7219425f41b8058e388e5e",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 3391,
+   "sha256": "d730060d5e2cca5910c50d75d4ed5db36686dd2ddf9e100eadeefb62bf3ff98d",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2025-otsu.png",
@@ -4238,10 +4412,18 @@
   {
    "path": "sites/centinela/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 22967,
-   "sha256": "bf09247a3acdf95ca66c50de568c65eceaf54a1712664ea4b9c6c9164fc7cb1c",
+   "bytes": 14875,
+   "sha256": "1acac89d8e1bbf8bb071cfe5040ea8e5b77ab951f1edd4115fb4ef13a51dfc9e",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 3555,
+   "sha256": "ed1eaada42d5dc6d70e985364c655178694728f886760be4ed4cc31f894a2847",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/masks/2026-otsu.png",
@@ -4254,10 +4436,18 @@
   {
    "path": "sites/centinela/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 10715,
-   "sha256": "a3b4409e91b097da5701aa2f3b860ceb612c04b2a2c17d9f833d3753c4001877",
+   "bytes": 21610,
+   "sha256": "eeb84db51b795405d8054c6355d8bd5df3ef1a58c911daf3dd27893744385982",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/centinela/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3916,
+   "sha256": "5953f06bd8c48a24d1919a328b8facef6a6bbf0cf198de2f6854d1cea158ec54",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/centinela/polygons.geojson",

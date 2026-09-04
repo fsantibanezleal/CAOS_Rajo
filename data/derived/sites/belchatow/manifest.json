@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "belchatow",
  "site": {
   "id": "belchatow",
@@ -1908,7 +1908,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1962,7 +1963,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2016,7 +2018,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2070,7 +2073,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2124,7 +2128,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2178,7 +2183,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2232,7 +2238,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2286,7 +2293,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2340,7 +2348,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2394,7 +2403,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2581,48 +2591,92 @@
     3.573
    ],
    "rf": [
-    65.1573,
-    64.3572,
-    34.4646,
-    48.9609,
-    32.8284,
-    51.9012,
-    45.9099,
-    48.5064,
-    46.4589,
-    57.1815,
-    47.7099,
-    62.379,
-    41.1156,
-    54.1305,
-    41.886,
-    43.2756,
-    40.7565,
-    39.8628,
-    43.0866,
-    35.1351,
-    43.2243,
-    42.9273,
-    40.3614,
-    38.1267,
-    32.373,
-    30.0087,
-    47.412,
-    27.9243,
-    31.8825,
-    23.1453,
-    25.4826,
-    22.3227,
-    45.9657,
-    48.717,
-    47.9574,
-    47.4957,
-    47.421,
-    41.634,
-    47.5947,
-    44.7876,
-    48.1707,
-    46.1943
+    9.6138,
+    13.8024,
+    8.9019,
+    14.8689,
+    12.0222,
+    16.3224,
+    10.7775,
+    6.3702,
+    11.3193,
+    13.3938,
+    16.0524,
+    16.5951,
+    19.1619,
+    18.1161,
+    13.7673,
+    13.0698,
+    14.1786,
+    14.3046,
+    18.6813,
+    15.0561,
+    19.9413,
+    16.3278,
+    15.3225,
+    12.9375,
+    12.1095,
+    10.1169,
+    14.3415,
+    10.1358,
+    11.7567,
+    7.8831,
+    7.5411,
+    7.6158,
+    15.5196,
+    16.245,
+    19.7487,
+    14.8005,
+    17.9424,
+    14.3262,
+    15.6393,
+    12.6126,
+    11.9115,
+    13.3308
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    31.194,
+    44.7651,
+    39.1401,
+    41.5701,
+    33.8931,
+    35.1207,
+    43.7193,
+    34.4799,
+    40.3974,
+    34.9992
    ]
   },
   "index_mean": {
@@ -2813,48 +2867,55 @@
     ],
     "n": 42,
     "pelt": {
-     "breaks": [
-      1999,
-      2012,
-      2017
-     ],
+     "breaks": [],
      "segments": [
       {
        "start": 1985,
-       "end": 1998,
-       "mean": 50.0758,
-       "slope": -0.1066
-      },
-      {
-       "start": 1999,
-       "end": 2011,
-       "mean": 39.8797,
-       "slope": -0.3823
-      },
-      {
-       "start": 2012,
-       "end": 2016,
-       "mean": 26.1515,
-       "slope": -1.7603
-      },
-      {
-       "start": 2017,
        "end": 2026,
-       "mean": 46.5938,
-       "slope": -0.14
+       "mean": 13.6781,
+       "slope": 0.0216
       }
      ],
-     "penalty": 558.050879,
-     "sigma": 7.054656,
+     "penalty": 231.875225,
+     "sigma": 4.547431,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 3.527328,
-     "h": 28.218622,
-     "sigma": 7.054656,
-     "target": -0.8001
+     "k": 2.273715,
+     "h": 18.189723,
+     "sigma": 4.547431,
+     "target": 0.0747
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 37.9279,
+       "slope": -0.0724
+      }
+     ],
+     "penalty": 713.010128,
+     "sigma": 10.159665,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 5.079832,
+     "h": 40.638659,
+     "sigma": 10.159665,
+     "target": 1.2276
     }
    }
   },
@@ -2866,32 +2927,348 @@
     "score": 188.284604
    },
    {
-    "year": 1999,
-    "method": "pelt",
-    "series": "rf",
-    "score": 558.050879
-   },
-   {
     "year": 2012,
     "method": "pelt",
     "series": "otsu",
     "score": 188.284604
-   },
-   {
-    "year": 2012,
-    "method": "pelt",
-    "series": "rf",
-    "score": 558.050879
-   },
-   {
-    "year": 2017,
-    "method": "pelt",
-    "series": "rf",
-    "score": 558.050879
    }
   ],
   "gaps": {},
-  "dense": null
+  "dense": {
+   "index": "bsi",
+   "dates": [
+    "2017-01-08",
+    "2017-01-28",
+    "2017-02-27",
+    "2017-07-12",
+    "2017-07-22",
+    "2017-08-11",
+    "2017-08-31",
+    "2017-09-30",
+    "2018-04-08",
+    "2018-04-18",
+    "2018-04-28",
+    "2018-05-03",
+    "2018-05-08",
+    "2018-05-13",
+    "2018-06-07",
+    "2018-07-07",
+    "2018-08-01",
+    "2018-08-16",
+    "2018-09-10",
+    "2018-09-20",
+    "2018-10-05",
+    "2018-10-10",
+    "2018-10-15",
+    "2019-02-22",
+    "2019-02-27",
+    "2019-03-24",
+    "2019-04-18",
+    "2019-06-12",
+    "2019-06-17",
+    "2019-06-27",
+    "2019-08-11",
+    "2019-08-26",
+    "2019-08-31",
+    "2019-09-05",
+    "2019-09-15",
+    "2019-10-20",
+    "2019-10-25",
+    "2019-12-14",
+    "2020-01-03",
+    "2020-03-18",
+    "2020-03-23",
+    "2020-03-28",
+    "2020-04-07",
+    "2020-04-12",
+    "2020-04-17",
+    "2020-04-27",
+    "2020-06-01",
+    "2020-07-01",
+    "2020-07-26",
+    "2020-07-31",
+    "2020-08-05",
+    "2020-09-09",
+    "2020-09-14",
+    "2020-11-08",
+    "2021-02-21",
+    "2021-02-26",
+    "2021-03-03",
+    "2021-04-02",
+    "2021-04-22",
+    "2021-04-27",
+    "2021-05-12",
+    "2021-06-21",
+    "2021-07-11",
+    "2021-09-04",
+    "2021-09-09",
+    "2021-10-09",
+    "2021-10-24",
+    "2021-10-29",
+    "2021-11-03",
+    "2021-12-03",
+    "2022-03-03",
+    "2022-03-13",
+    "2022-03-23",
+    "2022-03-28",
+    "2022-06-26",
+    "2022-07-01",
+    "2022-08-05",
+    "2022-08-15",
+    "2022-11-08",
+    "2023-01-12",
+    "2023-04-22",
+    "2023-05-12",
+    "2023-05-27",
+    "2023-06-01",
+    "2023-06-11",
+    "2023-07-16",
+    "2023-08-15",
+    "2023-08-20",
+    "2023-09-29",
+    "2024-05-01",
+    "2024-05-16",
+    "2024-05-26",
+    "2024-07-10",
+    "2024-07-30",
+    "2024-08-09",
+    "2024-08-14",
+    "2024-08-24",
+    "2024-08-29",
+    "2024-09-18",
+    "2024-10-08"
+   ],
+   "values": [
+    -0.30483,
+    -0.2191,
+    0.1112,
+    -0.01953,
+    -0.04217,
+    0.01571,
+    0.00846,
+    -0.03739,
+    0.1347,
+    0.02124,
+    0.02962,
+    0.01632,
+    -0.00302,
+    -0.03341,
+    -0.15515,
+    -0.10104,
+    -0.05119,
+    -0.16618,
+    -0.06593,
+    -0.1075,
+    -0.16276,
+    0.01668,
+    0.02225,
+    0.01041,
+    0.10232,
+    0.09766,
+    0.07714,
+    -0.01668,
+    -0.15857,
+    -0.11409,
+    -0.01777,
+    -0.08721,
+    0.00464,
+    -0.11023,
+    -0.14073,
+    0.02642,
+    -0.1009,
+    -0.07723,
+    -0.06211,
+    0.11763,
+    0.06205,
+    0.09005,
+    0.07809,
+    0.09581,
+    0.05671,
+    0.03855,
+    -0.15809,
+    -0.17581,
+    -0.16653,
+    -0.06074,
+    -0.23801,
+    -0.16035,
+    -0.18491,
+    -0.2739,
+    -0.36122,
+    0.03011,
+    -0.0101,
+    0.06295,
+    0.04279,
+    0.03318,
+    -0.05401,
+    -0.14416,
+    -0.17365,
+    -0.07899,
+    -0.06465,
+    -0.26417,
+    -0.15188,
+    -0.16114,
+    -0.22933,
+    -0.20848,
+    0.07122,
+    0.0741,
+    0.08,
+    0.12669,
+    -0.21304,
+    -0.15755,
+    -0.15031,
+    -0.10448,
+    -0.10923,
+    -0.21362,
+    0.01129,
+    -0.12678,
+    -0.2132,
+    -0.17299,
+    -0.16652,
+    -0.11345,
+    -0.11638,
+    -0.12657,
+    -0.16488,
+    -0.14191,
+    -0.12556,
+    -0.15558,
+    -0.06757,
+    -0.13062,
+    -0.09588,
+    -0.14123,
+    -0.13647,
+    -0.09188,
+    -0.12978,
+    -0.13545
+   ],
+   "clear_frac": [
+    0.895,
+    0.967,
+    0.953,
+    0.701,
+    0.802,
+    0.978,
+    0.863,
+    0.968,
+    0.979,
+    0.754,
+    0.977,
+    0.974,
+    0.943,
+    0.975,
+    0.996,
+    0.998,
+    0.969,
+    0.841,
+    0.841,
+    0.999,
+    0.992,
+    0.937,
+    0.99,
+    0.85,
+    0.962,
+    0.987,
+    0.91,
+    0.992,
+    0.995,
+    0.932,
+    0.779,
+    0.905,
+    0.978,
+    1.0,
+    1.0,
+    0.988,
+    0.984,
+    0.971,
+    0.964,
+    0.988,
+    0.928,
+    0.999,
+    0.994,
+    0.998,
+    0.999,
+    0.956,
+    0.97,
+    0.998,
+    0.932,
+    0.982,
+    0.98,
+    0.996,
+    1.0,
+    0.965,
+    0.886,
+    0.925,
+    0.982,
+    0.967,
+    0.955,
+    0.869,
+    0.998,
+    0.999,
+    0.881,
+    0.947,
+    0.989,
+    0.993,
+    0.881,
+    0.995,
+    0.943,
+    0.96,
+    0.731,
+    0.99,
+    0.98,
+    0.997,
+    0.995,
+    1.0,
+    0.985,
+    0.733,
+    0.974,
+    0.846,
+    0.999,
+    0.944,
+    0.946,
+    0.912,
+    0.998,
+    1.0,
+    1.0,
+    0.856,
+    1.0,
+    1.0,
+    0.946,
+    0.982,
+    0.993,
+    0.998,
+    0.745,
+    1.0,
+    1.0,
+    1.0,
+    0.999,
+    0.712
+   ],
+   "envelope": "reference polygons dilated by 1000 m",
+   "n": 100,
+   "harmonic": {
+    "breaks": [],
+    "k": 2,
+    "period_days": 365.25,
+    "segments": [
+     {
+      "start": "2017-01-08",
+      "end": "2024-10-08",
+      "coef": [
+       -0.048990086647057965,
+       -0.012520995235628711,
+       -0.020619782785461886,
+       0.07537569651219762,
+       -0.0695915721610359,
+       0.05177724347566095
+      ],
+      "rss": 0.517464,
+      "n": 100
+     }
+    ],
+    "bic": -498.7676,
+    "bic_no_break": -498.7676,
+    "min_segment_days": 365.0
+   }
+  }
  },
  "dem": {
   "site_id": "belchatow",
@@ -3695,8 +4072,8 @@
   {
    "path": "sites/belchatow/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 33291,
-   "sha256": "97183ea6f7dd74973902973c9655174ef619272354a02bcef9096c70215b5390",
+   "bytes": 2369,
+   "sha256": "73954f8b8f8832b8067028c070e8f2bbf1e58fec1713142b00e3d1424962d31f",
    "year": 1985,
    "method": "rf"
   },
@@ -3711,8 +4088,8 @@
   {
    "path": "sites/belchatow/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 33908,
-   "sha256": "78bc42760a2501e2b25aacf197618d723d6608c1bd442eda3b0348b5af011550",
+   "bytes": 2577,
+   "sha256": "95051012ff755f963b93b3ecb5c5461c69a3c65c659e47aa5af3c1abf2b7422e",
    "year": 1986,
    "method": "rf"
   },
@@ -3727,8 +4104,8 @@
   {
    "path": "sites/belchatow/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 24269,
-   "sha256": "03977edf7f8e5c173f568ae21b27bc382cfa89250cdcbc00fba16d0fb197bb40",
+   "bytes": 2358,
+   "sha256": "5857ed4286b034d7d2ae28c92e1d46db6948bbefa19ac279cdbf15393d9fb7e8",
    "year": 1987,
    "method": "rf"
   },
@@ -3743,8 +4120,8 @@
   {
    "path": "sites/belchatow/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 24266,
-   "sha256": "5fc27e2ba41c41a165334f599735cc3e3406f07ab1b6a66ee2b8d84d77eb4a67",
+   "bytes": 2468,
+   "sha256": "39206ddddc3178ad0500461a124bf5ca3b87ac9a99d1dddcf3d79574ad9686ae",
    "year": 1988,
    "method": "rf"
   },
@@ -3759,8 +4136,8 @@
   {
    "path": "sites/belchatow/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 21688,
-   "sha256": "bbf57686c72ad20546ac456e5e339f9b088fbb8235bef0674504417702017c61",
+   "bytes": 3023,
+   "sha256": "b9f9e0663c2984430c5eb9b4d9130019024ea367b39460f5134604bf024b7f8a",
    "year": 1989,
    "method": "rf"
   },
@@ -3775,8 +4152,8 @@
   {
    "path": "sites/belchatow/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 27426,
-   "sha256": "53472a227d01247546647467ceda9de2950a97f8ef7d70d5210c70836bb412bb",
+   "bytes": 3246,
+   "sha256": "3e7cc31d203c92fa3ba80e67c5c173e95b0cbec92864764a0ead31386ffcdc3e",
    "year": 1990,
    "method": "rf"
   },
@@ -3791,8 +4168,8 @@
   {
    "path": "sites/belchatow/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 26446,
-   "sha256": "63ca2d5b5cce8a0096690eca9cb16579f33bd21e189536c3f0c597c1e67f61c1",
+   "bytes": 2749,
+   "sha256": "bb48e8aaf1876452f99ffb1cb2fb9d910a77692fa4f802d8fa2364220da3d67f",
    "year": 1991,
    "method": "rf"
   },
@@ -3807,8 +4184,8 @@
   {
    "path": "sites/belchatow/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 29186,
-   "sha256": "2a0cc45b30e3fc8f7bc32a1147c5726faa65eaed69ff65d13b915510b4790907",
+   "bytes": 1565,
+   "sha256": "329ae2b61e961cb90ee13d3a5b664c876b98d507e64586a6b9c53b596ca0038f",
    "year": 1992,
    "method": "rf"
   },
@@ -3823,8 +4200,8 @@
   {
    "path": "sites/belchatow/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 25466,
-   "sha256": "caf0475d95813edb13bfb42550a8b35bafd62ee972938a3c591193e9838e603c",
+   "bytes": 2818,
+   "sha256": "a517b4b60dd15f5dd78e47794124ebc2bf1e866c86b55e23c7eca3e040ea56f6",
    "year": 1993,
    "method": "rf"
   },
@@ -3839,8 +4216,8 @@
   {
    "path": "sites/belchatow/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 28296,
-   "sha256": "2b5946bbd0c56c38f82ec3cfb1c947b533a3f74860f3746576c47198bbfd6aef",
+   "bytes": 3080,
+   "sha256": "ed0b1c12c6d50f890c5a668288417c61cc1a70f2f85088d717c667843502e6a4",
    "year": 1994,
    "method": "rf"
   },
@@ -3855,8 +4232,8 @@
   {
    "path": "sites/belchatow/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 24929,
-   "sha256": "88e20de6589a27208eb5ddf266797f2baeff919b4c9f9aacf62ea059746eedca",
+   "bytes": 3280,
+   "sha256": "a7b6f4133b455cdd062a85633e788e43beff86955087b83ce4905938f5d4af2a",
    "year": 1995,
    "method": "rf"
   },
@@ -3871,8 +4248,8 @@
   {
    "path": "sites/belchatow/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 22589,
-   "sha256": "770023b8737bc5f0e348cbbd5dac870827501374f1aa3fcb0c9c14ea56bb92fe",
+   "bytes": 2308,
+   "sha256": "00eac9fb9ca210e7b13133251e1324ac50c2244625c460efbb2a6f9546904ea6",
    "year": 1996,
    "method": "rf"
   },
@@ -3887,8 +4264,8 @@
   {
    "path": "sites/belchatow/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 19265,
-   "sha256": "27b53775ca441d67df8bf1035cdccd5c0198824dcbb45a6a857a174431579458",
+   "bytes": 2904,
+   "sha256": "a929310d865cd1d3972c67bfa20a2ef24b41d32a462292be3bca5323cfbafca0",
    "year": 1997,
    "method": "rf"
   },
@@ -3903,8 +4280,8 @@
   {
    "path": "sites/belchatow/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 24703,
-   "sha256": "f51fe113a02bac222176fd733cbcea233babd029a40d3e0dfcdd3a65074cf736",
+   "bytes": 2565,
+   "sha256": "651b1a11f6000a063fcd0e59768957ed307e68e21f2a5e07d41839810dd3c208",
    "year": 1998,
    "method": "rf"
   },
@@ -3919,8 +4296,8 @@
   {
    "path": "sites/belchatow/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 19477,
-   "sha256": "921b41950ef9dc389a5b5428bd52282bf66c4f00f0d9946286e64e400809202f",
+   "bytes": 2611,
+   "sha256": "fbaa9a24ad9f08e7b2c564e00c598abb66fbf4eb4061c698a8882718654e5949",
    "year": 1999,
    "method": "rf"
   },
@@ -3935,8 +4312,8 @@
   {
    "path": "sites/belchatow/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 23739,
-   "sha256": "3b676126f572fd317f62eefb745e0ef3a7b68c9e8c5f5dc08aac5b08291e9cc3",
+   "bytes": 2721,
+   "sha256": "1a364d7b2905a6efcea6109b8db7f7ce8361168200a8047940895d84c454de04",
    "year": 2000,
    "method": "rf"
   },
@@ -3951,8 +4328,8 @@
   {
    "path": "sites/belchatow/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 15541,
-   "sha256": "2124e726355bc3545bad50999b00e6bd67ad3dd68326085dfcfeec217ab8ef38",
+   "bytes": 3032,
+   "sha256": "70322c9bd7e2195d52f8f8780c1f6f6c51d7db85c0bbcaa1412024416ff56e1d",
    "year": 2001,
    "method": "rf"
   },
@@ -3967,8 +4344,8 @@
   {
    "path": "sites/belchatow/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 17389,
-   "sha256": "c40f211f31d1675c11ed1be26c6206d6a63e538390bad5cdf349541a6f78b70e",
+   "bytes": 3033,
+   "sha256": "db6550241f5d746afd32bdb9f484c78700e10be5fa31f0ad4d052da7efc4f740",
    "year": 2002,
    "method": "rf"
   },
@@ -3983,8 +4360,8 @@
   {
    "path": "sites/belchatow/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 17750,
-   "sha256": "17e2557cec1cef02029e4edb1f51d4d24de718340b067ab2f62b03bf2b9d3b33",
+   "bytes": 3189,
+   "sha256": "34bbacc856efa9a31e790368a3834d90d6d04d76ebbf4e7fb724b25f3a5d140d",
    "year": 2003,
    "method": "rf"
   },
@@ -3999,8 +4376,8 @@
   {
    "path": "sites/belchatow/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 12872,
-   "sha256": "a2b47957923d6ff62fd9d4e0c7f17566b7bcfcfd0a4b55cc81c6d17dd6056150",
+   "bytes": 3302,
+   "sha256": "37c69cfec3ad6463ca26062efbe80d5f6cdaa80d1ca8f2deddfdea46f6dee7b1",
    "year": 2004,
    "method": "rf"
   },
@@ -4015,8 +4392,8 @@
   {
    "path": "sites/belchatow/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 14396,
-   "sha256": "41f6da893cca1a1ab9a6c3a95639a64cf00f916b7b90b9172fd0a7226bb8dbdc",
+   "bytes": 3199,
+   "sha256": "6a0a8aacf84ff14d0318eff3abe086266e66938b1a8786875333283bbe4fa722",
    "year": 2005,
    "method": "rf"
   },
@@ -4031,8 +4408,8 @@
   {
    "path": "sites/belchatow/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 21084,
-   "sha256": "b0823de5f7d5e5af637ad0ebf04339b7b36e1e3052e9674310f0ce142fe29e87",
+   "bytes": 3020,
+   "sha256": "0efe532b6de11c8f3b3156a9fa9147d5c60ee9e778863d5abecde2e5dbc2fdc7",
    "year": 2006,
    "method": "rf"
   },
@@ -4047,8 +4424,8 @@
   {
    "path": "sites/belchatow/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 20566,
-   "sha256": "703fa4a289ddd3b099df4c4db40918d31681c5bd64ebfd7b53108b6e30505fe9",
+   "bytes": 2941,
+   "sha256": "f281556d563fab8d345a8d2727459c7f0f7cdd868c365ec9fe0c7f7c348d8327",
    "year": 2007,
    "method": "rf"
   },
@@ -4063,8 +4440,8 @@
   {
    "path": "sites/belchatow/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 18208,
-   "sha256": "baed164de1288d91f9b3426ff793baf740724bd1c7c205ec876aadfcffe616e2",
+   "bytes": 3008,
+   "sha256": "9b1292c9e5b0d2031a0d3793184d79d8bb088d0bd7ea36cf9029dea11a09ff36",
    "year": 2008,
    "method": "rf"
   },
@@ -4079,8 +4456,8 @@
   {
    "path": "sites/belchatow/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 12615,
-   "sha256": "bcf0d727356025010dc232f894ac5fb18dc87f797116ee7269f96d75568adc10",
+   "bytes": 2529,
+   "sha256": "bda7219f3853645c1d505863a140651e44986dd4f8855bee634e2b56205b17c3",
    "year": 2009,
    "method": "rf"
   },
@@ -4095,8 +4472,8 @@
   {
    "path": "sites/belchatow/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 9778,
-   "sha256": "b62a56515b87e6517f49098218b095d7992072a149c0e62d08c5579495f900c7",
+   "bytes": 2122,
+   "sha256": "e90c0aa4bc25c41bef615adbb7e1da17ab465954bfe03ce3aa0da2901247bda4",
    "year": 2010,
    "method": "rf"
   },
@@ -4111,8 +4488,8 @@
   {
    "path": "sites/belchatow/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 18328,
-   "sha256": "84d5805110415529a1570dea242017a0f1261de5dda2f419e0dbb62806851264",
+   "bytes": 2628,
+   "sha256": "92fee125a9578e14165e6d610825f117072dfd6f0f728f7390e1f06885b5e229",
    "year": 2011,
    "method": "rf"
   },
@@ -4127,8 +4504,8 @@
   {
    "path": "sites/belchatow/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 8499,
-   "sha256": "1be6b2930aad8afcfe9b560fcbd2ebc5d6304232822df990a26c4ac60bd526e7",
+   "bytes": 2307,
+   "sha256": "e5edf699e77e00a2ffeaedf27eb00f848338ed5a9852b169f87b218416dae4c2",
    "year": 2012,
    "method": "rf"
   },
@@ -4143,8 +4520,8 @@
   {
    "path": "sites/belchatow/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 11812,
-   "sha256": "02048ef02dc4da4ecea0179e183a43898bf8156820c94ce9f18206b1ac686594",
+   "bytes": 2746,
+   "sha256": "5e278931c25cf30159dbc83c5026231e662c440504b589abf0f0271c7e9c7d18",
    "year": 2013,
    "method": "rf"
   },
@@ -4159,8 +4536,8 @@
   {
    "path": "sites/belchatow/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 10900,
-   "sha256": "7b3f52797dd5fbaf99546d55738a8c177de839a632553e99e90d796e82cbd217",
+   "bytes": 1493,
+   "sha256": "1924693bdcdff14c6a7b6411a9cc4e3019ae771f8a976bff8bd5af9feec33147",
    "year": 2014,
    "method": "rf"
   },
@@ -4175,8 +4552,8 @@
   {
    "path": "sites/belchatow/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 12966,
-   "sha256": "a1eb5611ace50ab6718445f7f7f90c325f9c7650d57e0f68b7d0ccc858deb923",
+   "bytes": 1697,
+   "sha256": "31ee442b3146185380d71f02729bf4d114698dd6da370782d1115b2e72975f9b",
    "year": 2015,
    "method": "rf"
   },
@@ -4191,8 +4568,8 @@
   {
    "path": "sites/belchatow/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 11566,
-   "sha256": "82adb01e274effe54920f22ee0f0cacef5a4f11186f47e62d5ee9528bac66132",
+   "bytes": 2144,
+   "sha256": "14a1357df98dabb1a80dcf1abf8547c961dce964949a940d80e918b1b091539f",
    "year": 2016,
    "method": "rf"
   },
@@ -4207,10 +4584,18 @@
   {
    "path": "sites/belchatow/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 24966,
-   "sha256": "2203d016ccd8606fb3edacdd2a6bb5e137eb9e603424c3b23dc6e68339c7f376",
+   "bytes": 3073,
+   "sha256": "f335eb7c3f0fc1b709adccfe0b4397ed9b1107fa47b874e0fd3e5eee09b00dd7",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3990,
+   "sha256": "9ca491ab93e696f91c055372bb05dc675a9255d13916b1593ced7b83b8f865ec",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2018-otsu.png",
@@ -4223,10 +4608,18 @@
   {
    "path": "sites/belchatow/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 22201,
-   "sha256": "1c188e486219edb7026d16da361055df60a359a8a613cdea563bb768354221a0",
+   "bytes": 3024,
+   "sha256": "6b84f6a1f5cf83369409f997399a88d03896576be2170949f285b76bb96c7478",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 4592,
+   "sha256": "3fbcd506d4e2870fc0b357ba35e6f63c23fad3fdb239915f3a5867c2c5f577d3",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2019-otsu.png",
@@ -4239,10 +4632,18 @@
   {
    "path": "sites/belchatow/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 25271,
-   "sha256": "5c46d3b17df235e851167eb894b7909770a0427a3b3d421e0a562ea5c500fe72",
+   "bytes": 3578,
+   "sha256": "9310a22c7a22022ac5fb3cd7eef72a32ce02d43f91edff2b70807572557001c5",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3812,
+   "sha256": "bf7c15ae33f685b20ba6b29180632053c7e2bed27dffb5360ec6bad76c3c1aa4",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2020-otsu.png",
@@ -4255,10 +4656,18 @@
   {
    "path": "sites/belchatow/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 22127,
-   "sha256": "c85cb22ba71d61e5a2331a303754839a7923ab06da5a15d42021f399b0c3bf87",
+   "bytes": 2927,
+   "sha256": "683246ee06bdefde978f8136384de90136ebbc4a9a08b8a1569b8839d1e11b82",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4162,
+   "sha256": "7c96c557aca889baa8c687437de9ee097368e96237903108ccb9016ca557ccc1",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2021-otsu.png",
@@ -4271,10 +4680,18 @@
   {
    "path": "sites/belchatow/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 25019,
-   "sha256": "781f590e112258ca848c1c42545a0e3d53bfefe1b923586c22936c3b35923520",
+   "bytes": 3614,
+   "sha256": "a428ffbe5a26dac41f9cd5b9690c403cc853c67cb2bcc97d8e2d7bd5b9598657",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 3919,
+   "sha256": "d447ddb39cbc9d56607ac68e96a01c9e28cc4ec516052a69afe8d9c04fabaabd",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2022-otsu.png",
@@ -4287,10 +4704,18 @@
   {
    "path": "sites/belchatow/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 12451,
-   "sha256": "a78fb2a1d7da0a049ad534ff0728b66c42bd3058a958c5be4156927a1d5233b9",
+   "bytes": 2763,
+   "sha256": "5715e6002f69d5db66174c0643ab9f0b91fc4294fad891c97b15e4526995bd5a",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2932,
+   "sha256": "882b2b9613e147b70f22ba5a02cde8314722f185ec2f986f8109c841f3deb0ad",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2023-otsu.png",
@@ -4303,10 +4728,18 @@
   {
    "path": "sites/belchatow/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 20481,
-   "sha256": "09a2c1eabaccbb6b9d184899eefe89ea76964fb1d1864d19c596a0c4d59ea3b6",
+   "bytes": 3234,
+   "sha256": "df6b8edb37d7837b8ba8584d3f92c117cdef27aeb087100c8f334aead084b746",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 4408,
+   "sha256": "e27e33e45d9f61172b3da970a1640777eda9b51d3496286bef6be29f3e9d8484",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2024-otsu.png",
@@ -4319,10 +4752,18 @@
   {
    "path": "sites/belchatow/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 20728,
-   "sha256": "f2210fc8261c24470fc49486f49b4df5f1d6ff796c9db1587b581a59c3f64a9e",
+   "bytes": 2672,
+   "sha256": "e4b8f4803e98c230cbd3680d90981955d67d705062f7e598192f94bdf71b650e",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 3413,
+   "sha256": "7a1d006c850b11283492f1c926d3121fe7c795d181e409bb1d9a92e1bf16e59d",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2025-otsu.png",
@@ -4335,10 +4776,18 @@
   {
    "path": "sites/belchatow/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 22123,
-   "sha256": "2a0b6294b809e616428c4acf0cd5e3867e884a986f83a77b21415cabb8deae11",
+   "bytes": 2740,
+   "sha256": "048d379c158840dc8275db2f4c1b71799ef9a7b7e102d751e149446636806e4c",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 4120,
+   "sha256": "196d300d67397e5605a8cb75dc5cb74fca497002b7482f3a846ba48740e7407c",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/masks/2026-otsu.png",
@@ -4351,10 +4800,18 @@
   {
    "path": "sites/belchatow/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 20825,
-   "sha256": "ad44de5b17b70b03ca3896170f7d3ace692ddb98ef6386e83116fd2349ace181",
+   "bytes": 2842,
+   "sha256": "6b12582733cfc74675d7c79686365631b0c192cf96a61d3a94323df87e99f6ed",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3432,
+   "sha256": "c945e16e14289357dabf09032f601211ae36282c9c94fba8ba202d1863432aad",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/belchatow/polygons.geojson",

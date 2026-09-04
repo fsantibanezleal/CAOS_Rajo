@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "los-bronces",
  "site": {
   "id": "los-bronces",
@@ -1958,7 +1958,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -2014,7 +2015,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2071,7 +2073,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2127,7 +2130,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2183,7 +2187,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2239,7 +2244,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2295,7 +2301,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2351,7 +2358,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2407,7 +2415,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2463,7 +2472,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2651,47 +2661,91 @@
    ],
    "rf": [
     null,
-    83.8845,
-    79.5348,
+    52.9461,
+    56.7585,
     null,
-    83.7873,
-    88.335,
-    85.6134,
-    95.6178,
-    92.8917,
-    90.7641,
-    84.2535,
-    75.3453,
-    70.263,
-    68.0679,
-    78.6339,
-    87.7338,
-    85.4118,
-    91.7982,
-    81.4716,
-    83.8134,
-    90.5436,
-    80.7921,
-    81.243,
-    82.7712,
-    77.382,
-    84.4308,
-    93.8124,
-    83.0358,
-    81.6102,
-    80.4636,
-    68.8257,
-    72.2619,
-    97.9992,
-    98.3241,
-    98.145,
-    100.3266,
-    98.6391,
-    101.2374,
-    92.3049,
-    100.2249,
-    99.7839,
-    98.8641
+    55.5543,
+    59.6025,
+    55.2492,
+    73.3932,
+    67.2894,
+    65.3013,
+    59.9004,
+    27.5337,
+    46.2501,
+    46.6254,
+    55.575,
+    58.2183,
+    57.2058,
+    63.4545,
+    56.2131,
+    56.6667,
+    65.8179,
+    56.7162,
+    55.8612,
+    57.4695,
+    49.6854,
+    55.9962,
+    71.1531,
+    54.4329,
+    54.3591,
+    55.3122,
+    33.2172,
+    38.3832,
+    76.8726,
+    76.1103,
+    74.3895,
+    78.6087,
+    78.4368,
+    85.3704,
+    68.3757,
+    74.205,
+    77.6376,
+    74.3805
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    70.2486,
+    70.353,
+    79.8498,
+    65.6487,
+    66.5127,
+    77.8077,
+    65.502,
+    63.0891,
+    67.5522,
+    72.7632
    ]
   },
   "index_mean": {
@@ -2886,33 +2940,71 @@
     "n": 40,
     "pelt": {
      "breaks": [
+      2014,
       2017
      ],
      "segments": [
       {
        "start": 1986,
+       "end": 2013,
+       "mean": 56.8603,
+       "slope": 0.0173
+      },
+      {
+       "start": 2014,
        "end": 2016,
-       "mean": 82.8131,
-       "slope": -0.2193
+       "mean": 42.3042,
+       "slope": -8.4645
       },
       {
        "start": 2017,
        "end": 2026,
-       "mean": 98.5849,
-       "slope": 0.042
+       "mean": 76.4387,
+       "slope": -0.2208
       }
      ],
-     "penalty": 524.014122,
-     "sigma": 6.881191,
+     "penalty": 558.292329,
+     "sigma": 7.102692,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2017
+     ],
+     "k": 3.551346,
+     "h": 28.410767,
+     "sigma": 7.102692,
+     "target": 0.3753
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 69.9327,
+       "slope": -0.4238
+      }
+     ],
+     "penalty": 286.922242,
+     "sigma": 6.444862,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 3.440596,
-     "h": 27.524766,
-     "sigma": 6.881191,
-     "target": -0.441
+     "k": 3.222431,
+     "h": 25.779449,
+     "sigma": 6.444862,
+     "target": 0.864
     }
    }
   },
@@ -2942,10 +3034,22 @@
     "score": 1559.330872
    },
    {
+    "year": 2014,
+    "method": "pelt",
+    "series": "rf",
+    "score": 558.292329
+   },
+   {
+    "year": 2017,
+    "method": "cusum",
+    "series": "rf",
+    "score": 28.410767
+   },
+   {
     "year": 2017,
     "method": "pelt",
     "series": "rf",
-    "score": 524.014122
+    "score": 558.292329
    }
   ],
   "gaps": {},
@@ -3676,8 +3780,8 @@
   {
    "path": "sites/los-bronces/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 3315,
-   "sha256": "e8e1e2a1cd1ca1f151db97858d6fe8dd81eb12f928b984774103d04b3290266a",
+   "bytes": 3933,
+   "sha256": "2ef1a5edd90f1c60622315a1b283baead504ee576a1a90de2f84a1f1961dd832",
    "year": 1985,
    "method": "rf"
   },
@@ -3692,8 +3796,8 @@
   {
    "path": "sites/los-bronces/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 11841,
-   "sha256": "7541daa1c4feb742d78fd294c3376d02a16ed8d9ef14b84e43b35c0130bd2c43",
+   "bytes": 13787,
+   "sha256": "5417553d6c39920ae9d3f6b730f26373f17b2716da893f8cd34820d61b99102d",
    "year": 1986,
    "method": "rf"
   },
@@ -3708,8 +3812,8 @@
   {
    "path": "sites/los-bronces/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 11439,
-   "sha256": "95d139669f251620ce4d374eb950247b7154d97a938b02ce8384b3582988d01f",
+   "bytes": 12946,
+   "sha256": "76d95415b52ff15192341b0502299c854f041a6a66e0af66ed64f1575affc109",
    "year": 1987,
    "method": "rf"
   },
@@ -3724,8 +3828,8 @@
   {
    "path": "sites/los-bronces/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 10329,
-   "sha256": "052e2b8319fa6392747a8a1a1c62d641d47da9e13e13f6eab1cc6f02079cb871",
+   "bytes": 9448,
+   "sha256": "83d6edc04b345e4e3fcaf46af68fb7c9c986a1a78b25f3c0918f7eefd77aa68a",
    "year": 1988,
    "method": "rf"
   },
@@ -3740,8 +3844,8 @@
   {
    "path": "sites/los-bronces/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 12240,
-   "sha256": "143ad1636fd18e58749f43b6c647ef9902837cf93467dcd03e2ec8f71fcd24b8",
+   "bytes": 13754,
+   "sha256": "10a4d98ea458f002d99df9749cd8dc661e152c2f98b11b28726b0679c0f6bbc9",
    "year": 1989,
    "method": "rf"
   },
@@ -3756,8 +3860,8 @@
   {
    "path": "sites/los-bronces/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 11152,
-   "sha256": "6963773d6539c69a8c8f88fa541575ea61de9052e76717ff5222fed6c54fcf0a",
+   "bytes": 13754,
+   "sha256": "ccfc1704e8d31deedca916465ebad3b38345fdd9a515ae6e320f118a42b477d6",
    "year": 1990,
    "method": "rf"
   },
@@ -3772,8 +3876,8 @@
   {
    "path": "sites/los-bronces/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 11684,
-   "sha256": "c435f73ccdb7828c74937066a47e5648ad908591c4e8b21426456396a8c40b88",
+   "bytes": 13664,
+   "sha256": "f8e5e7ad7227a89d895705dafc1d65e400b72c0ce5ee16c7009a16d4f8e5ef80",
    "year": 1991,
    "method": "rf"
   },
@@ -3788,8 +3892,8 @@
   {
    "path": "sites/los-bronces/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 9708,
-   "sha256": "2b84e0df511c80e85b816d3597c958218f3046927c9759b50db9c9dc69f63b55",
+   "bytes": 13510,
+   "sha256": "117d7d06d3b6a129f136f0315fe0712d8cd6ec6ed246a6757ad0f713a9176c65",
    "year": 1992,
    "method": "rf"
   },
@@ -3804,8 +3908,8 @@
   {
    "path": "sites/los-bronces/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 10309,
-   "sha256": "59d91da5966087379bfc9945547a77434d1fb2dce7280793beb036b0d2201917",
+   "bytes": 13743,
+   "sha256": "810d5cc19374f0b0854e91307d18bbc292c9f0abc0f4ec200f45da7bbe0b6fbc",
    "year": 1993,
    "method": "rf"
   },
@@ -3820,8 +3924,8 @@
   {
    "path": "sites/los-bronces/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 10342,
-   "sha256": "5bc8fa3bf196ef92dc0951d9252c330a91ca127fd06d83cb2bce4a5d13ac7786",
+   "bytes": 13632,
+   "sha256": "a68aab734532870720bb48b9fcd86eef4f0648aa196f10ec40e992e47f35f356",
    "year": 1994,
    "method": "rf"
   },
@@ -3836,8 +3940,8 @@
   {
    "path": "sites/los-bronces/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 11913,
-   "sha256": "8f30967924f17a33693ba9d58620c8bf7a0d8ae147cd3c093d4571ce4d2c11e3",
+   "bytes": 13635,
+   "sha256": "8fda868231f22fe152c5cd5ce3132866174c6c3cf44246ba04d56ab8c2c7078d",
    "year": 1995,
    "method": "rf"
   },
@@ -3852,8 +3956,8 @@
   {
    "path": "sites/los-bronces/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 13547,
-   "sha256": "04cf91a297a5215d4cfbc765edfde12c24c6eee0f696f468353178d152a75d2f",
+   "bytes": 10602,
+   "sha256": "64d0016ba8cf879e3c32082e6be9ae5d5c01a7eb2d61a9812cd644eeb6ca6da8",
    "year": 1996,
    "method": "rf"
   },
@@ -3868,8 +3972,8 @@
   {
    "path": "sites/los-bronces/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 9905,
-   "sha256": "858bc518b738ca1aa771d39dd987671dfea971c052c62d3a0ba0e519a885ce76",
+   "bytes": 10786,
+   "sha256": "d9db27463c7b9600246f401180aad77abebba05bd3fe74295701e956561007e1",
    "year": 1997,
    "method": "rf"
   },
@@ -3884,8 +3988,8 @@
   {
    "path": "sites/los-bronces/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 10779,
-   "sha256": "a14a1bde1ff7b4d4b9363c10dd489e929a0c39050f9dab3f9da69ad81ebdd3c3",
+   "bytes": 11195,
+   "sha256": "5033b854e8e41fd3a83d8a0e7087b0db3448b133c0a228bae447e89ff07f9df0",
    "year": 1998,
    "method": "rf"
   },
@@ -3900,8 +4004,8 @@
   {
    "path": "sites/los-bronces/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 11301,
-   "sha256": "4a196d251bd1e18fa42cd3c3dc8692a8a8cc0e0c50f129b8ba59b2c52f81b658",
+   "bytes": 13286,
+   "sha256": "b99e69b1042f0f5ed3620eead8070f7b1121e5bc3b069262a73bd39a7471200d",
    "year": 1999,
    "method": "rf"
   },
@@ -3916,8 +4020,8 @@
   {
    "path": "sites/los-bronces/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 10405,
-   "sha256": "e9b694e3eb6bfaa652bf1c41fba35451cbe86fe6d600d9854400544a97d54132",
+   "bytes": 13012,
+   "sha256": "135e71f6d89c8d5b55058a4035de276ca0195be9e0002d17df19e61f6c774e77",
    "year": 2000,
    "method": "rf"
   },
@@ -3932,8 +4036,8 @@
   {
    "path": "sites/los-bronces/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 12297,
-   "sha256": "491bc0e50929451155672d934ea2f785da3ed5724afb1b12e3b648565ec93fec",
+   "bytes": 13910,
+   "sha256": "1a44a83ca45eed11212b6a0a4115f0720401e378e030c71626c9b438e6e48baa",
    "year": 2001,
    "method": "rf"
   },
@@ -3948,8 +4052,8 @@
   {
    "path": "sites/los-bronces/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 10890,
-   "sha256": "f989d9bb2be98d9d80042570ab925b6e5ed53c6a5fd82390cbba2af729b2901f",
+   "bytes": 15313,
+   "sha256": "41eb7c3de898b7499b04ae17e1ebad522ea69632e19cf60200309ee788d4a879",
    "year": 2002,
    "method": "rf"
   },
@@ -3964,8 +4068,8 @@
   {
    "path": "sites/los-bronces/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 12773,
-   "sha256": "b107f677294d936757372e6a87256ba7034da1d10a17e54657d7c8e9ebd81f20",
+   "bytes": 13813,
+   "sha256": "91b10c04a15134eff54f733ff1cef59eaff4db73888b5c8d8903ec15bb97ee47",
    "year": 2003,
    "method": "rf"
   },
@@ -3980,8 +4084,8 @@
   {
    "path": "sites/los-bronces/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 11707,
-   "sha256": "f3c69b066a7104000ecedbc8dd6483058f5ac96b7e0f229ade50c3866272578b",
+   "bytes": 13571,
+   "sha256": "690dbf06249c58778948112f435dd2944b02246916c9e4a12731144e26360317",
    "year": 2004,
    "method": "rf"
   },
@@ -3996,8 +4100,8 @@
   {
    "path": "sites/los-bronces/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 9962,
-   "sha256": "5c9814d542c74d3e1a2091cb290c19dd567de66986f97ef07485283e396c63c6",
+   "bytes": 13491,
+   "sha256": "2f7ae9f5ae62d081bba57a0c492c04832facb57948dee3880e7f896c1043b046",
    "year": 2005,
    "method": "rf"
   },
@@ -4012,8 +4116,8 @@
   {
    "path": "sites/los-bronces/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 13558,
-   "sha256": "8320904295931868de7817aee84fc8645189fc77fc9b8cb4865f184dcfacca0e",
+   "bytes": 14186,
+   "sha256": "b8ba9788545043a83427bee2cfbe4efaf56dcd2bb7ac2914ddd6bf4531cba69f",
    "year": 2006,
    "method": "rf"
   },
@@ -4028,8 +4132,8 @@
   {
    "path": "sites/los-bronces/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 11808,
-   "sha256": "959d5cc08ede3ebc89987c5f0ac8f78b873cb61c933e5b3c1c17347d055e5785",
+   "bytes": 13707,
+   "sha256": "5a6625943e75fe961f6891e2b91dbebff3ee9c2a7530f5b6f2fb858d035f7946",
    "year": 2007,
    "method": "rf"
   },
@@ -4044,8 +4148,8 @@
   {
    "path": "sites/los-bronces/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 12223,
-   "sha256": "b6a4cb979fdadf8fd2888ba356bb42b933d797b89e2a0cad9f7ac633d3874272",
+   "bytes": 13632,
+   "sha256": "b7a2e0c82d43e7cbefaca765fd5bebcb2a0c27ce55bc30108153c3d328193ac8",
    "year": 2008,
    "method": "rf"
   },
@@ -4060,8 +4164,8 @@
   {
    "path": "sites/los-bronces/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 13727,
-   "sha256": "9e83bf2ebdfa1631603c82e3613c94ca10d5ce1b4059c5ac586cc0895157309c",
+   "bytes": 13706,
+   "sha256": "a73f7f5b64dcd70f740a2e33df8b9831fadf9d75f21be59bda58e24db8cc8456",
    "year": 2009,
    "method": "rf"
   },
@@ -4076,8 +4180,8 @@
   {
    "path": "sites/los-bronces/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 11916,
-   "sha256": "8dcb9f61155b5cec536b85a33cfa4280d3aad33e9433ef83e5f8553242bb8551",
+   "bytes": 13760,
+   "sha256": "1eb194b41fa66141232dcc65eb06bc4bb4073a0bc0847344bb659e9c58195ed1",
    "year": 2010,
    "method": "rf"
   },
@@ -4092,8 +4196,8 @@
   {
    "path": "sites/los-bronces/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 8435,
-   "sha256": "9f89aa16c981e6567d6aa7b94058d3a2653886407a4f8ebf4561d48e4aca2b0b",
+   "bytes": 12811,
+   "sha256": "ffabcfff43f5519d8a17eef8048585415c586615178168ef99ce9e1974c37000",
    "year": 2011,
    "method": "rf"
   },
@@ -4108,8 +4212,8 @@
   {
    "path": "sites/los-bronces/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 12301,
-   "sha256": "e1fece53bb642c03f813c4739d00d384b40a5bd3b8eb85cd00e40349235c02a8",
+   "bytes": 12957,
+   "sha256": "293f9106cd1bf7e26f64974ad617c185a4a3f7501b3d9706f3f279ab908cd226",
    "year": 2012,
    "method": "rf"
   },
@@ -4124,8 +4228,8 @@
   {
    "path": "sites/los-bronces/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 13222,
-   "sha256": "b40e6e43953d07947e760d1d2dbf3670cddacb75f1cc1f29fe7049296c1f1287",
+   "bytes": 13616,
+   "sha256": "b7e14f801dd6b36dac558a7523d9b9516f154b97e7562e1600abccce9a2c678c",
    "year": 2013,
    "method": "rf"
   },
@@ -4140,8 +4244,8 @@
   {
    "path": "sites/los-bronces/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 12927,
-   "sha256": "0cb9e7cae0f1a711dc7d8501af20f34be4d963a19202d789f4d324fc15e86a73",
+   "bytes": 13576,
+   "sha256": "7a7bdf2daed5ce126acba1d25e886059e8ce48acbe742055bdaf3c2f6dc5882f",
    "year": 2014,
    "method": "rf"
   },
@@ -4156,8 +4260,8 @@
   {
    "path": "sites/los-bronces/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 13910,
-   "sha256": "8da0b55d8199d2e2c112ada417f17954b5014082ea05ed2e6b5f20bf59540ab2",
+   "bytes": 11346,
+   "sha256": "12a2cc3509b480ed67ea2576581a641771b01c69a61b7d42d2e641c4f3b66f07",
    "year": 2015,
    "method": "rf"
   },
@@ -4172,8 +4276,8 @@
   {
    "path": "sites/los-bronces/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 14557,
-   "sha256": "1ec5dfe9b2e25e580af5391ba5a4bcc10d558ae656ae6bf1fadf99d52b89f70e",
+   "bytes": 12865,
+   "sha256": "328f5655e97b5cd0c84d51b6bc5692dbc704db0caabe05af21484c2b9a017647",
    "year": 2016,
    "method": "rf"
   },
@@ -4188,10 +4292,18 @@
   {
    "path": "sites/los-bronces/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 10784,
-   "sha256": "a8eec0e1236011e109934e9f16f58e5dbd68275734f2d3cf882218454779798e",
+   "bytes": 15090,
+   "sha256": "ea777f8debc85eff601767b75cbdc63feb75cfd7da57026e61307be862bbb922",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 10306,
+   "sha256": "bde51f829695abb1b8a7d176c549c8395a1b671d65f660729125ef2b257159c8",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2018-otsu.png",
@@ -4204,10 +4316,18 @@
   {
    "path": "sites/los-bronces/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 8688,
-   "sha256": "cb8965ba3468f1dd9839907a3aae622764e750557daa705427b192d9072820bd",
+   "bytes": 13844,
+   "sha256": "d378437a8199b25e7695d91e11dfb9ba6b963cc43a9506233be29b9f963d00d1",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 4987,
+   "sha256": "b56dfe0afc8359dac9f4daa0d318e43347621480734c16d9e6a99e18cb989be0",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2019-otsu.png",
@@ -4220,10 +4340,18 @@
   {
    "path": "sites/los-bronces/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 10559,
-   "sha256": "987ce84a3817a70ac5e8c1ee42a9a02ee6eb895a7404f23a36e9055cb4558b63",
+   "bytes": 14150,
+   "sha256": "9514c0a31e48a90cf420e1737fa6e0bc9fe13ad7bf5c0797160cd32fcd06ed98",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 10717,
+   "sha256": "31b026d8975e51eb4cdabbbf6f587c401159ba4c56773444a22cca99fcb0584e",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2020-otsu.png",
@@ -4236,10 +4364,18 @@
   {
    "path": "sites/los-bronces/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 7079,
-   "sha256": "adc85d6e603ad5592003a826b1c2a8d053ccae70e24f21b872a6a83fae06097c",
+   "bytes": 12685,
+   "sha256": "2e61090b9784204dec1650cf0b33f8affc5fd958c090557c6aea41f706d2ee24",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4552,
+   "sha256": "b8a1e4954bbd191e82bd6184566891e0583444bab7424458d7feda68c4019ab5",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2021-otsu.png",
@@ -4252,10 +4388,18 @@
   {
    "path": "sites/los-bronces/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 8672,
-   "sha256": "bcfd9244f8e3f849bd90b92888f8281415afc5b8404e1ce9f5b3f4fc14172f06",
+   "bytes": 13682,
+   "sha256": "2dbbb59c67a3fa9948f77616c8562e03e56b1112a9f9d9c501fb9e1e4fa53238",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5052,
+   "sha256": "e8fedcaa1b27d369f35dc8a72c68120c080f56d15c48a83c6acecd5e5d412652",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2022-otsu.png",
@@ -4268,10 +4412,18 @@
   {
    "path": "sites/los-bronces/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 6504,
-   "sha256": "7e1dc1cfd1669ea6b0f2fceec61a5310ef9ccdf774594c9185be99de70e02821",
+   "bytes": 12483,
+   "sha256": "d1d6011777d65369cd4ba965e8d608c9eab221703265a975e41f3b4c360322f6",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 4438,
+   "sha256": "f48cc282897b744896c090a49a32fbcf4a6ab1098d72c41bf2383881f6de4b8a",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2023-otsu.png",
@@ -4284,10 +4436,18 @@
   {
    "path": "sites/los-bronces/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 9106,
-   "sha256": "855eda08cdf1248325d3ae91d1d8be92d73eefc18f187a19727b179e6148934f",
+   "bytes": 12902,
+   "sha256": "3a2fb448cb2029d3164b516ca0469b2b0c6a3aea9da7df9461ae39146cd174b8",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 4810,
+   "sha256": "d8c9305367a4ff9b6febe65dc2278be0dd0aa0a733c72d2892d2a693f63165fd",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2024-otsu.png",
@@ -4300,10 +4460,18 @@
   {
    "path": "sites/los-bronces/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 8013,
-   "sha256": "8c2b8dae7b67393ad1fb7a6651446e703af5671ccd4080049381129b32459474",
+   "bytes": 13644,
+   "sha256": "7364cde3a6a417dbcd5894437ca032415895bc5be61ba901197f9b80510af2e0",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 5261,
+   "sha256": "fa3ffa7c1664af91b37a765af1b064e0ed4da6858aa1dc4e503446a15e00fc7d",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2025-otsu.png",
@@ -4316,10 +4484,18 @@
   {
    "path": "sites/los-bronces/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 7794,
-   "sha256": "fc8e37df85b62c6ccd9f57f7be86d7854d00aa716b95b02e3406115f890e7b73",
+   "bytes": 13186,
+   "sha256": "7b38b7a3d1620e00dd97ced613d24daeb529c77c1fc6ebfc91a03af8c0505a94",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 5138,
+   "sha256": "d4f3a1f80bfc8a3476defc060570019446439675f6f1fbd189cc0c99ceeba993",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/masks/2026-otsu.png",
@@ -4332,10 +4508,18 @@
   {
    "path": "sites/los-bronces/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 8523,
-   "sha256": "5dddabda874f1f5efd74126d4289bacd09bbcaffc417bb427d895e8360e6b0f7",
+   "bytes": 12988,
+   "sha256": "2d8b15ace59f81345ab66f3390b1211749403e25dbe85847bc647c5a788cd83c",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 5027,
+   "sha256": "c848019ae2541d9ac27d10f1e0fe19d9ddd98a05d7c247b31e47e64680da1e51",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/los-bronces/polygons.geojson",

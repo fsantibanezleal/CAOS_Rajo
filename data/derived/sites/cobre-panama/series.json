@@ -148,7 +148,7 @@
    null
   ],
   "rf": [
-   6.5268,
+   0.0432,
    null,
    null,
    null,
@@ -172,13 +172,49 @@
    null,
    null,
    null,
-   8.2629,
-   11.8782,
-   15.3027,
+   2.1978,
+   2.7036,
+   6.2424,
    null,
    null,
    null,
-   24.0084,
+   16.2387,
+   null,
+   null,
+   null
+  ],
+  "unet": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   5.535,
+   8.6904,
+   12.9204,
+   null,
+   null,
+   null,
+   29.277,
    null,
    null,
    null
@@ -343,26 +379,56 @@
    ],
    "n": 6,
    "pelt": {
-    "breaks": [],
+    "breaks": [
+     2018
+    ],
     "segments": [
      {
       "start": 1986,
+      "end": 2017,
+      "mean": 0.747,
+      "slope": 1.0773
+     },
+     {
+      "start": 2018,
       "end": 2023,
-      "mean": 10.9965,
-      "slope": 3.9123
+      "mean": 8.3949,
+      "slope": 6.7675
      }
     ],
-    "penalty": 255.215144,
-    "sigma": 6.890532,
+    "penalty": 33.825924,
+    "sigma": 2.508559,
     "cost": "l2",
     "min_size": 3
    },
    "cusum": {
     "alarms": [],
-    "k": 3.445266,
-    "h": 27.562127,
-    "sigma": 6.890532,
-    "target": 3.6153
+    "k": 1.25428,
+    "h": 10.034237,
+    "sigma": 2.508559,
+    "target": 2.1978
+   }
+  },
+  "unet": {
+   "label": "U-Net (M8)",
+   "domain": "Sentinel-2 years only",
+   "model": "unet-v1",
+   "flags": [],
+   "n": 4,
+   "pelt": {
+    "breaks": [],
+    "segments": [],
+    "penalty": 0.0,
+    "sigma": 0.0,
+    "cost": "l2",
+    "min_size": 3
+   },
+   "cusum": {
+    "alarms": [],
+    "k": 0.0,
+    "h": 0.0,
+    "sigma": 0.0,
+    "target": 0.0
    }
   }
  },
@@ -372,6 +438,12 @@
    "method": "pelt",
    "series": "otsu",
    "score": 9.023446
+  },
+  {
+   "year": 2018,
+   "method": "pelt",
+   "series": "rf",
+   "score": 33.825924
   },
   {
    "year": 2023,

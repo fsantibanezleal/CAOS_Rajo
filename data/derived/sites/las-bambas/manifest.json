@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "las-bambas",
  "site": {
   "id": "las-bambas",
@@ -1772,7 +1772,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1826,7 +1827,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1880,7 +1882,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -1934,7 +1937,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -1988,7 +1992,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2042,7 +2047,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2096,7 +2102,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2150,7 +2157,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2204,7 +2212,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2258,7 +2267,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2440,46 +2450,88 @@
     1.9215
    ],
    "rf": [
-    24.9984,
-    11.3931,
-    8.0145,
-    6.3387,
-    37.7379,
-    44.316,
-    6.2298,
-    17.0262,
-    21.5415,
-    7.5672,
-    5.4783,
-    13.7178,
-    6.7833,
-    7.8426,
-    3.1923,
-    4.0914,
-    1.6839,
-    6.4683,
-    9.5373,
-    5.0292,
-    6.2271,
-    7.9614,
-    8.082,
-    16.3008,
-    5.7627,
-    7.7751,
-    9.945,
-    11.6397,
-    19.0053,
-    28.1313,
-    31.3344,
-    28.989,
-    34.2684,
-    41.0193,
-    39.3039,
-    34.911,
-    36.243,
-    40.1589,
-    35.7111,
-    38.7369
+    7.6455,
+    0.6102,
+    0.207,
+    0.0,
+    15.3891,
+    25.7373,
+    0.0,
+    2.1501,
+    5.1219,
+    0.0243,
+    0.0531,
+    0.9351,
+    0.3123,
+    0.4428,
+    0.0,
+    0.0,
+    0.1782,
+    0.1188,
+    0.4167,
+    0.0225,
+    0.4086,
+    0.7056,
+    0.6039,
+    2.5794,
+    0.5139,
+    1.0152,
+    3.4263,
+    3.6954,
+    7.0596,
+    13.8069,
+    15.9813,
+    12.1086,
+    23.6565,
+    26.2809,
+    24.9192,
+    20.277,
+    18.8748,
+    21.2922,
+    20.3031,
+    22.0725
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    29.2185,
+    28.0368,
+    33.4278,
+    35.6544,
+    36.3168,
+    36.4581,
+    33.8526,
+    36.2196,
+    35.2692,
+    36.7002
    ]
   },
   "index_mean": {
@@ -2684,53 +2736,104 @@
     "n": 40,
     "pelt": {
      "breaks": [
-      1991,
-      1996,
-      2016
+      1990,
+      1993,
+      2016,
+      2019
      ],
      "segments": [
       {
        "start": 1986,
-       "end": 1990,
-       "mean": 12.6862,
-       "slope": -5.9358
+       "end": 1989,
+       "mean": 2.8209,
+       "slope": -3.7193
       },
       {
-       "start": 1991,
-       "end": 1995,
-       "mean": 25.3703,
-       "slope": -5.9683
+       "start": 1990,
+       "end": 1992,
+       "mean": 13.7088,
+       "slope": 12.8686
       },
       {
-       "start": 1996,
+       "start": 1993,
        "end": 2015,
-       "mean": 8.2045,
-       "slope": 0.3215
+       "mean": 1.2949,
+       "slope": 0.1017
       },
       {
        "start": 2016,
+       "end": 2018,
+       "mean": 13.9656,
+       "slope": -0.8492
+      },
+      {
+       "start": 2019,
        "end": 2026,
-       "mean": 35.3461,
-       "slope": 0.9262
+       "mean": 22.2095,
+       "slope": -0.6341
       }
      ],
-     "penalty": 340.165907,
-     "sigma": 5.544183,
+     "penalty": 60.7572,
+     "sigma": 2.343101,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [
-      1991
+      1991,
+      2019
      ],
-     "k": 2.772091,
-     "h": 22.176731,
-     "sigma": 5.544183,
-     "target": 1.332
+     "k": 1.171551,
+     "h": 9.372404,
+     "sigma": 2.343101,
+     "target": 0.1782
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2020
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2019,
+       "mean": 30.2277,
+       "slope": 2.1047
+      },
+      {
+       "start": 2020,
+       "end": 2026,
+       "mean": 35.7816,
+       "slope": 0.0287
+      }
+     ],
+     "penalty": 39.49535,
+     "sigma": 2.391137,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 1.195569,
+     "h": 9.564549,
+     "sigma": 2.391137,
+     "target": 0.6624
     }
    }
   },
   "change_points": [
+   {
+    "year": 1990,
+    "method": "pelt",
+    "series": "rf",
+    "score": 60.7572
+   },
    {
     "year": 1991,
     "method": "cusum",
@@ -2747,25 +2850,19 @@
     "year": 1991,
     "method": "cusum",
     "series": "rf",
-    "score": 22.176731
+    "score": 9.372404
    },
    {
-    "year": 1991,
+    "year": 1993,
     "method": "pelt",
     "series": "rf",
-    "score": 340.165907
+    "score": 60.7572
    },
    {
     "year": 1994,
     "method": "pelt",
     "series": "otsu",
     "score": 27.249803
-   },
-   {
-    "year": 1996,
-    "method": "pelt",
-    "series": "rf",
-    "score": 340.165907
    },
    {
     "year": 2003,
@@ -2789,7 +2886,7 @@
     "year": 2016,
     "method": "pelt",
     "series": "rf",
-    "score": 340.165907
+    "score": 60.7572
    },
    {
     "year": 2017,
@@ -2802,6 +2899,24 @@
     "method": "cusum",
     "series": "otsu",
     "score": 6.276735
+   },
+   {
+    "year": 2019,
+    "method": "cusum",
+    "series": "rf",
+    "score": 9.372404
+   },
+   {
+    "year": 2019,
+    "method": "pelt",
+    "series": "rf",
+    "score": 60.7572
+   },
+   {
+    "year": 2020,
+    "method": "pelt",
+    "series": "unet",
+    "score": 39.49535
    }
   ],
   "gaps": {
@@ -3509,8 +3624,8 @@
   {
    "path": "sites/las-bambas/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 16882,
-   "sha256": "c5ea1a6f5aa186c19e0ba10aece221862600e95963eee47878c81dace8be2663",
+   "bytes": 7617,
+   "sha256": "a52a28659cdb34b6e1111f1f65d6b1bef5eaec56376667055115d46f5106d023",
    "year": 1986,
    "method": "rf"
   },
@@ -3525,8 +3640,8 @@
   {
    "path": "sites/las-bambas/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 10186,
-   "sha256": "e227400529049b60cc96067e6380ab3e24383ac5eb8918c27f30580e2935736b",
+   "bytes": 1117,
+   "sha256": "182fe36374fe16975b516e9033a6359431ee43ba7037b3922f34647bbfa80498",
    "year": 1988,
    "method": "rf"
   },
@@ -3541,8 +3656,8 @@
   {
    "path": "sites/las-bambas/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 8426,
-   "sha256": "099a2a2a2f84412d021d778aa1e09f21a753c9a97222ebab59a183bbae1310da",
+   "bytes": 445,
+   "sha256": "131d974671e29c6b434b431ee6dc08c48efccdb8702ffff1a12aa57fa3389130",
    "year": 1989,
    "method": "rf"
   },
@@ -3557,8 +3672,8 @@
   {
    "path": "sites/las-bambas/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 8393,
-   "sha256": "00ff60b754794ba7adb3218a1958aa59610103c7cdddbe915342469977a85ea1",
+   "bytes": 360,
+   "sha256": "7d7be9dfb374d3be02b64e717e1953afa5e20dab4b4006848bb4046dc9a178ad",
    "year": 1990,
    "method": "rf"
   },
@@ -3573,8 +3688,8 @@
   {
    "path": "sites/las-bambas/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 19858,
-   "sha256": "3c8fa22e1cfca43a1d739e88d4f400ef320d8360b60ad64dd1e11a6efaf04d98",
+   "bytes": 10308,
+   "sha256": "35a81a2506eea079a2ee4785b98178ff862f03345ba91b0002c860d215c998c6",
    "year": 1991,
    "method": "rf"
   },
@@ -3589,8 +3704,8 @@
   {
    "path": "sites/las-bambas/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 17495,
-   "sha256": "69842cee720dafb56ad5fafaa9546e72aabaff552b9022cc90b7f1925378d6bd",
+   "bytes": 12528,
+   "sha256": "d7a8ebaa9efd68a78c7e072eab42c6bffad5c8a4b7dccb62262d199d9803fd87",
    "year": 1992,
    "method": "rf"
   },
@@ -3605,8 +3720,8 @@
   {
    "path": "sites/las-bambas/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 6136,
-   "sha256": "fa1bbec862e6ce48f250ee85dd1a664be2c97bf46b56a108ba325e68aa12ce36",
+   "bytes": 244,
+   "sha256": "b19f29dcd0d996862297a06bf3413256adc22ad37fc5429162af96aa3447c547",
    "year": 1993,
    "method": "rf"
   },
@@ -3621,8 +3736,8 @@
   {
    "path": "sites/las-bambas/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 11712,
-   "sha256": "e388565b9683733b928a2c9d254436a23b9d9a3c9c8d0d1e26891176031d5281",
+   "bytes": 2748,
+   "sha256": "ed229f295a19b2f4216c0f4b183cce8024f9193740dc199c43fa4358f4203f51",
    "year": 1994,
    "method": "rf"
   },
@@ -3637,8 +3752,8 @@
   {
    "path": "sites/las-bambas/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 13429,
-   "sha256": "6efc844dd9ff7339616f9ff34d9e1a125de43175401c1097f8bb99c71ca722f2",
+   "bytes": 4782,
+   "sha256": "90d57b273b0fec2aadbc49fc758cfe71db6ab3376a7c2acf331bfd28002f7c46",
    "year": 1995,
    "method": "rf"
   },
@@ -3653,8 +3768,8 @@
   {
    "path": "sites/las-bambas/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 7808,
-   "sha256": "8af4ace49dace46dce1f0877c2c17077526fbbc7029715e4bace015787b19b72",
+   "bytes": 278,
+   "sha256": "892a9843011b0b7f61f962fe7b44ba9b159c0ee97b7d6ce787bf442003a24d5e",
    "year": 1996,
    "method": "rf"
   },
@@ -3669,8 +3784,8 @@
   {
    "path": "sites/las-bambas/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 6412,
-   "sha256": "4ddd37a1aeb5e34cb2f8f791eaebc8046ea0d79aaa213a27096f906f2f32d9de",
+   "bytes": 415,
+   "sha256": "129ae5f71065b1dca9f919db07a457c08898c52d5faad5178c8f6d7cf562dab3",
    "year": 1997,
    "method": "rf"
   },
@@ -3685,8 +3800,8 @@
   {
    "path": "sites/las-bambas/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 10927,
-   "sha256": "ee35629e045a8a560b75b818ab45266e361827f3e7b09c1af8174f68e8d03b9a",
+   "bytes": 1414,
+   "sha256": "a8782d02be3733354e50a00e9c647209af18f593fe849e1d04052588d34dac4d",
    "year": 1998,
    "method": "rf"
   },
@@ -3701,8 +3816,8 @@
   {
    "path": "sites/las-bambas/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 6935,
-   "sha256": "a4f3530f40acd704bbe2593b3320bdbcaeb88dcf50ff884051aca7703e42aa00",
+   "bytes": 691,
+   "sha256": "09058cbda9146b73fcc3666c83650522c571f3e6adafaf3d10042646acae2f2d",
    "year": 1999,
    "method": "rf"
   },
@@ -3717,8 +3832,8 @@
   {
    "path": "sites/las-bambas/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 7296,
-   "sha256": "db829a209df6cb927ef4115307227db3a46118af13f51799886f50b1d30e27e5",
+   "bytes": 815,
+   "sha256": "3e5bfda6537e202b1ba00c0cf80183828fb474b7c5e1704c51f726c55cafb55c",
    "year": 2000,
    "method": "rf"
   },
@@ -3733,8 +3848,8 @@
   {
    "path": "sites/las-bambas/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 4586,
-   "sha256": "8a44781bec426dade02e9be32cb5d8a4a46d657d0bdf7cc13af1250abff78db4",
+   "bytes": 172,
+   "sha256": "8490480b8b95e4560057e3ca2f6652f6c04e472a45c8264789d55a7176f13b16",
    "year": 2001,
    "method": "rf"
   },
@@ -3749,8 +3864,8 @@
   {
    "path": "sites/las-bambas/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 5192,
-   "sha256": "8d13f09ab53d38f09ef707938341844dcc81d43495f556943cb35f7043038d2b",
+   "bytes": 209,
+   "sha256": "8b0c1c5dedc8099707ad91f217abdf2c40d6ba09f29e1f2856a8b273bda944c8",
    "year": 2002,
    "method": "rf"
   },
@@ -3765,8 +3880,8 @@
   {
    "path": "sites/las-bambas/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 4133,
-   "sha256": "dbbf509ef1f62091916583ed258446ab8dbeae0ab8aac2454a0e3992fc3caa65",
+   "bytes": 623,
+   "sha256": "d3d0d404f8dd701c3c63dde517caabf15b080f84a000878a7c213c1f4be467f6",
    "year": 2003,
    "method": "rf"
   },
@@ -3781,8 +3896,8 @@
   {
    "path": "sites/las-bambas/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 7101,
-   "sha256": "532c54b2af1f56d5bbfd9157643211b99f5a869df5adc773f9cd400c344f900b",
+   "bytes": 269,
+   "sha256": "68aabcc9557e5e956bf23ac26381bf330340ed74600a1b620513f9d156bdb995",
    "year": 2004,
    "method": "rf"
   },
@@ -3797,8 +3912,8 @@
   {
    "path": "sites/las-bambas/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 9823,
-   "sha256": "abb34e7658908440301c33994dd9d1e96ca8ecc8504182f911d24344f93cec73",
+   "bytes": 1118,
+   "sha256": "164c498a1c2f3ebb45c97ae4e6e8e3a1c11448d62c169ec0f777692e6ac7a72a",
    "year": 2005,
    "method": "rf"
   },
@@ -3813,8 +3928,8 @@
   {
    "path": "sites/las-bambas/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 4571,
-   "sha256": "1ea0da28ef07c87caa8450f1eb2254babe1c597f35fe68f3b34249fd5dbd79a8",
+   "bytes": 228,
+   "sha256": "e21aad4c2330249293895f131ae2ce9c2c1be98e2914329c6f92b8ad994b5c2f",
    "year": 2006,
    "method": "rf"
   },
@@ -3829,8 +3944,8 @@
   {
    "path": "sites/las-bambas/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 5906,
-   "sha256": "f4b5f0a9f8e062e0995d1cae7fab36f8e31b8a61eb780d7f9611a75cdd035f7f",
+   "bytes": 406,
+   "sha256": "c69930c1db8a24256eedc5618a8c7f1de1d4ba429ca51e2c4729a85e3ee880b8",
    "year": 2007,
    "method": "rf"
   },
@@ -3845,8 +3960,8 @@
   {
    "path": "sites/las-bambas/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 8288,
-   "sha256": "e61cb1a97e5e920539cfca193069463c30c52e932acbe23271d99a74bc0cdaf7",
+   "bytes": 680,
+   "sha256": "224befb18cdb97c47950ab40293f67b702d6a1a32b43321faa8f60fd97bae703",
    "year": 2008,
    "method": "rf"
   },
@@ -3861,8 +3976,8 @@
   {
    "path": "sites/las-bambas/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 7375,
-   "sha256": "80867040f9ad7ed2aec1a11ff2ab37c1ff85f4c0e49e3d4098f19aa8f96c1097",
+   "bytes": 648,
+   "sha256": "7ccc5bee69b933e37053e07d6784ffb38547d6a663f901a920d0b7c5f03d5fad",
    "year": 2009,
    "method": "rf"
   },
@@ -3877,8 +3992,8 @@
   {
    "path": "sites/las-bambas/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 12110,
-   "sha256": "1698fe46c1deac4c4b918f4b7ce0dda5a0ca413d80cae984089d963576175700",
+   "bytes": 2096,
+   "sha256": "e6d183c46042880edf34bcd1964368b1cb6bd5f9b642b7e9c7cd919fcbd702e2",
    "year": 2010,
    "method": "rf"
   },
@@ -3893,8 +4008,8 @@
   {
    "path": "sites/las-bambas/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 5129,
-   "sha256": "a10eff20cb1edc2e7c420a93f14b5e5d89c61ac948d0eedec6ca216c2119dd90",
+   "bytes": 422,
+   "sha256": "a976662c35242d719d8362ef4cfd686f50d7e70b3c735813128b81c0d6c698ca",
    "year": 2011,
    "method": "rf"
   },
@@ -3909,8 +4024,8 @@
   {
    "path": "sites/las-bambas/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 6866,
-   "sha256": "c99ef8436e9ace5bd0a8c8b364a4d7d04d36a28f22436def8b4fffe98e094334",
+   "bytes": 931,
+   "sha256": "723d60b463d322f96e3c090bd3e2ced3d0e0e6623153d4e31e4a348070f56f4a",
    "year": 2012,
    "method": "rf"
   },
@@ -3925,8 +4040,8 @@
   {
    "path": "sites/las-bambas/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 5557,
-   "sha256": "c5c56533a65ed26a05a73171efc10652ec2f1e8fa0337fc28104ff9ab55b0762",
+   "bytes": 1515,
+   "sha256": "62b8708ccf5aced56f2945d9594ea82d1de28fcb8e91460acd70bf8e4301ab19",
    "year": 2013,
    "method": "rf"
   },
@@ -3941,8 +4056,8 @@
   {
    "path": "sites/las-bambas/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 5156,
-   "sha256": "855ded992decf7b4bc5bc155f80bd2e89b8dc300eeb29d1519b0cc55305d0991",
+   "bytes": 1470,
+   "sha256": "ff5dce7d09ce773bb774a96c74f59fe353fc9fbabfbffd916c176649d1b9de24",
    "year": 2014,
    "method": "rf"
   },
@@ -3957,8 +4072,8 @@
   {
    "path": "sites/las-bambas/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 7374,
-   "sha256": "ba242e5ec65de9b91c71184a227bf9355ab14335f55e3b7a24f95ff8cbfa693b",
+   "bytes": 2353,
+   "sha256": "fa87763bd3e5cb1aa26f9d9f30bbb26d05c0ed0618b46e25805db37d4048b9b2",
    "year": 2015,
    "method": "rf"
   },
@@ -3973,8 +4088,8 @@
   {
    "path": "sites/las-bambas/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 7843,
-   "sha256": "0080f4967f51e8096c8d9d86496d61c4d7255d6aee337e991d25959fe32f9960",
+   "bytes": 2535,
+   "sha256": "1c8bbf1111658af8c643d73de8a1b5e8043b51ab41215936a108659cca221233",
    "year": 2016,
    "method": "rf"
   },
@@ -3989,10 +4104,18 @@
   {
    "path": "sites/las-bambas/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 14327,
-   "sha256": "16ab36fbaef4ecdf7ffec6f458248941af65d899e83058a4b53d4c49b159f544",
+   "bytes": 3291,
+   "sha256": "24826d78f34b5cb464e3823a32cac06bb9395ce01c54f9157076d0030a79e3f5",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3783,
+   "sha256": "17d6756ddc6c4fd7721424ef68eafab9f90a41b80e101ab4993ccf91f62ec204",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2018-otsu.png",
@@ -4005,10 +4128,18 @@
   {
    "path": "sites/las-bambas/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 10097,
-   "sha256": "2fd83bc54e4081e22196a1abf4cf512c7e944e8ae241342d64217a1c5d4811b1",
+   "bytes": 2557,
+   "sha256": "96d4dd935d054b7bfd0ac2bc5ea41bdf9731fef57e94450ca5cd8ff4f61f6b80",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2958,
+   "sha256": "2d731fc6b8ae075b30858f6a6f7354f34ad448cac5317924982d76013dafa29f",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2019-otsu.png",
@@ -4021,10 +4152,18 @@
   {
    "path": "sites/las-bambas/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 11764,
-   "sha256": "6a6350746be74d1ab7471329a71505192c29ecbd8a11cb411c8aa71ecdc865e4",
+   "bytes": 4206,
+   "sha256": "752c61dfd501fcb454ccceabdaef615e3cc0b56f8b801107b1698a8400af4147",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3065,
+   "sha256": "cddf779c077293143195b8fa12bec75d7bca46018ff04e5a8c2a82f2a008292f",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2020-otsu.png",
@@ -4037,10 +4176,18 @@
   {
    "path": "sites/las-bambas/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 14065,
-   "sha256": "314432e968ea6b14335d8ca4e8317d084d52fb57c7a4e4b20109e914e8345d26",
+   "bytes": 4654,
+   "sha256": "2e8eea48113c2c2750413db7b7dcad7091b746e222c34fd6f017555011c49868",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 2419,
+   "sha256": "9b5b8ed728e0290032c5a68829495d2884cf4617fc9af14c3e44bb38b2ff0a20",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2021-otsu.png",
@@ -4053,10 +4200,18 @@
   {
    "path": "sites/las-bambas/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 15806,
-   "sha256": "79dbd89de42de03c50869211c53f5c03a19dbe05790d0be99a56b5d804d45f14",
+   "bytes": 5701,
+   "sha256": "454c4e5d85685c9e665068ff0c39d986e7f5ee6691a5baf7974d9cd8f6930846",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 4315,
+   "sha256": "5e401a9eb1a3732b40239b8474fdf412861f468943c3d091e10928ca6ff44b22",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2022-otsu.png",
@@ -4069,10 +4224,18 @@
   {
    "path": "sites/las-bambas/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 11779,
-   "sha256": "33c566193626dfec570d1e65d9749e05ec75a5244cec710356db5f7fca185278",
+   "bytes": 3104,
+   "sha256": "45ee6192efd37215cb963aa0f759281ab843af14c3e79e7dc65ef2be519a8ef0",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2796,
+   "sha256": "c7f04f6c3bd6b9ef6dc7fed944eafed2f8947fdb0275cfe3ce288a6c480f7d9c",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2023-otsu.png",
@@ -4085,10 +4248,18 @@
   {
    "path": "sites/las-bambas/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 11082,
-   "sha256": "a6cef28f09ea94509209487a30fb0d2ac0fc4363935e419e09fe809d365de8dc",
+   "bytes": 2920,
+   "sha256": "484ab5b8f6dceea24d1e81affa183330691afb92dfb89892a38bf35ac8e624cf",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2871,
+   "sha256": "ed4943564e9939afb84aa033b5f99e433ad2e6a5e4de9fc36236474dc2081cd0",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2024-otsu.png",
@@ -4101,10 +4272,18 @@
   {
    "path": "sites/las-bambas/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 13774,
-   "sha256": "2f35ffb304ce6c1d5881783a57c0549826e50a1b052bfd65025a54bdcfc8898e",
+   "bytes": 3252,
+   "sha256": "a0bf1b6a3f692c763ec11ed7c195bd2ca8c474ea150bf9da35238c67b937cfcc",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 3207,
+   "sha256": "c0e0cfcca21eec9912b04d35574973fb61095a5c7e54e1ddf21d1037df33f638",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2025-otsu.png",
@@ -4117,10 +4296,18 @@
   {
    "path": "sites/las-bambas/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 8872,
-   "sha256": "4e860b51f3f6dee9080fd0dfc5dcce76e7b1986437d353c202914e35c37c934b",
+   "bytes": 2922,
+   "sha256": "8c51dae83547c6d27b4194442407beaec840a6a10684d54a2225e483429bbc35",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 3192,
+   "sha256": "78bdf269399da938e33b28c79f7692d21ad33b2206e5b5eac8ad3fc429a6330f",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/masks/2026-otsu.png",
@@ -4133,10 +4320,18 @@
   {
    "path": "sites/las-bambas/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 10144,
-   "sha256": "5fc6d722b756c8423f359bfdca8a39488b1d01375ec6183e4cec92a4181044f5",
+   "bytes": 3209,
+   "sha256": "9a9745d32d64cb246d5cd126e0ea21e9c9934d8b848ed8989f4027cd01c551b4",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3225,
+   "sha256": "0271d96a1f27fb47e3da8e4e1e6769ac17f25c30feb528c28033a41942654ac2",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/las-bambas/polygons.geojson",

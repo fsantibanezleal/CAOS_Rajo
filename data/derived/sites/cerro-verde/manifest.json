@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "cerro-verde",
  "site": {
   "id": "cerro-verde",
@@ -1844,7 +1844,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1898,7 +1899,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -1952,7 +1954,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2006,7 +2009,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2060,7 +2064,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2114,7 +2119,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2168,7 +2174,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2222,7 +2229,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2276,7 +2284,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2330,7 +2339,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2515,47 +2525,90 @@
     92.1186
    ],
    "rf": [
-    90.4455,
-    83.1042,
-    92.3544,
-    80.6931,
-    80.4321,
-    89.3547,
-    106.8003,
-    95.6241,
-    96.0273,
-    96.8625,
-    98.2917,
-    101.2122,
-    89.4024,
-    59.8725,
-    89.4015,
-    81.4014,
-    77.5998,
-    70.4412,
-    82.3383,
-    91.746,
-    97.8291,
-    93.5469,
-    83.0322,
-    75.5559,
-    86.4297,
-    77.5224,
-    84.2382,
-    77.733,
-    79.704,
-    72.1566,
-    48.9105,
-    93.6549,
-    103.2372,
-    94.9329,
-    95.1849,
-    97.3503,
-    107.136,
-    99.6273,
-    106.9164,
-    104.7438,
-    104.7888
+    65.0619,
+    57.7494,
+    70.3782,
+    50.9877,
+    54.4914,
+    66.1482,
+    90.198,
+    73.1763,
+    73.9737,
+    73.3923,
+    79.5159,
+    78.5637,
+    64.8117,
+    38.0169,
+    67.8177,
+    51.3324,
+    50.607,
+    48.2787,
+    59.688,
+    71.5383,
+    80.9406,
+    73.6776,
+    55.5237,
+    50.1354,
+    63.5121,
+    50.3253,
+    49.3956,
+    37.7532,
+    37.8936,
+    40.6701,
+    26.6166,
+    64.1709,
+    78.2955,
+    55.0656,
+    56.8593,
+    66.3948,
+    85.4739,
+    60.9741,
+    80.0253,
+    76.1535,
+    75.7098
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    83.3994,
+    94.2777,
+    77.859,
+    78.8157,
+    76.4919,
+    99.1881,
+    86.769,
+    92.3013,
+    83.9511,
+    85.3173
    ]
   },
   "index_mean": {
@@ -2767,34 +2820,55 @@
     ],
     "n": 41,
     "pelt": {
-     "breaks": [
-      2017
-     ],
+     "breaks": [],
      "segments": [
       {
        "start": 1985,
-       "end": 2016,
-       "mean": 84.8408,
-       "slope": -0.6288
-      },
-      {
-       "start": 2017,
        "end": 2026,
-       "mean": 100.7572,
-       "slope": 1.1744
+       "mean": 62.2267,
+       "slope": -0.0868
       }
      ],
-     "penalty": 1443.089506,
-     "sigma": 11.381253,
+     "penalty": 3553.186288,
+     "sigma": 17.858807,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 5.690627,
-     "h": 45.525012,
-     "sigma": 11.381253,
-     "target": 0.1485
+     "k": 8.929403,
+     "h": 71.435226,
+     "sigma": 17.858807,
+     "target": -0.51255
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 85.8371,
+       "slope": 0.3863
+      }
+     ],
+     "penalty": 1315.209781,
+     "sigma": 13.79841,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 6.899205,
+     "h": 55.19364,
+     "sigma": 13.79841,
+     "target": 0.9567
     }
    }
   },
@@ -2822,12 +2896,6 @@
     "method": "pelt",
     "series": "otsu",
     "score": 4.316676
-   },
-   {
-    "year": 2017,
-    "method": "pelt",
-    "series": "rf",
-    "score": 1443.089506
    },
    {
     "year": 2018,
@@ -3561,8 +3629,8 @@
   {
    "path": "sites/cerro-verde/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 20749,
-   "sha256": "f70d62467011be8cd5630f2915abb51db1ba93887a31b358660fdc0830d17165",
+   "bytes": 21129,
+   "sha256": "eb5de68b23b052e9ef358edcb5ef9ca2565695f20a9233c8adb9acad80f71cde",
    "year": 1985,
    "method": "rf"
   },
@@ -3577,8 +3645,8 @@
   {
    "path": "sites/cerro-verde/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 20891,
-   "sha256": "be7cf7d37b0c1ecbb939e3e13925461b6a480a6aade3cf31cb63826836d971c1",
+   "bytes": 20391,
+   "sha256": "720773dc577eeb06921beeaed4af7fca0f6df733b43476e119de1f9be4fee182",
    "year": 1986,
    "method": "rf"
   },
@@ -3593,8 +3661,8 @@
   {
    "path": "sites/cerro-verde/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 19931,
-   "sha256": "377a044ad289a6bee5aecc2bd019e415cdcc3c795aa799622e62b1cf4df7f474",
+   "bytes": 20692,
+   "sha256": "37a18f02c755c985f304447e9eb48aa46d66d7e354008117b927d1edb19dc112",
    "year": 1988,
    "method": "rf"
   },
@@ -3609,8 +3677,8 @@
   {
    "path": "sites/cerro-verde/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 21837,
-   "sha256": "b2a9e901e45c2e9290e48c2baba7bf7351b10ae5c4a73bcd9ca42c6313137262",
+   "bytes": 19652,
+   "sha256": "3954bff3cbc09255351cc4d13d33daa1e89b81b4243e896ee632c1babeba9503",
    "year": 1989,
    "method": "rf"
   },
@@ -3625,8 +3693,8 @@
   {
    "path": "sites/cerro-verde/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 20901,
-   "sha256": "65547edaa10277443f812c9ed2b2e1a153865a6aedea4c77cc496beec9384794",
+   "bytes": 19873,
+   "sha256": "a42fce07176dd0897a3798d2fbcc063492f03e3c63928392591cf8b1e0a29ecd",
    "year": 1990,
    "method": "rf"
   },
@@ -3641,8 +3709,8 @@
   {
    "path": "sites/cerro-verde/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 20197,
-   "sha256": "9cce19b01a3d1d8d1c220c82f48b0647865e99eca4e0d60beea6ee11f0cfcbf2",
+   "bytes": 20241,
+   "sha256": "a341567089b56fb2b89e86b974389d951c2d966129a78daf58447d20d7384a6e",
    "year": 1991,
    "method": "rf"
   },
@@ -3657,8 +3725,8 @@
   {
    "path": "sites/cerro-verde/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 10758,
-   "sha256": "f9044af62f31a6675734627d56cc5a70653c876d5847975c426508e039568fb6",
+   "bytes": 16275,
+   "sha256": "287f5f3f2a837c00acf8d1db5121e54057bc6e989b26f9b742fcce422378fb59",
    "year": 1992,
    "method": "rf"
   },
@@ -3673,8 +3741,8 @@
   {
    "path": "sites/cerro-verde/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 16491,
-   "sha256": "a93e7212623004fa86aa272f32ed12e1c07002a23e33fc78f08579c1b2891e5c",
+   "bytes": 18534,
+   "sha256": "ab65963691bcc8f00927f2f26cb1a230bef66985eed3de4a212c93fe03581636",
    "year": 1993,
    "method": "rf"
   },
@@ -3689,8 +3757,8 @@
   {
    "path": "sites/cerro-verde/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 18099,
-   "sha256": "5d4c5bde9f36699fef39b5fd82ef856c3beca0293bb2297a15e5b7d0a5d7aca8",
+   "bytes": 20056,
+   "sha256": "2d1636704db63353970a97a7700bbaa1617dfe4430d54b6b95d95d2b8b22475b",
    "year": 1994,
    "method": "rf"
   },
@@ -3705,8 +3773,8 @@
   {
    "path": "sites/cerro-verde/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 19391,
-   "sha256": "a11a12c3b958ab510df3cfc1858d09683b1b77d24fec7a28be8ea658609d484d",
+   "bytes": 21586,
+   "sha256": "38cc22803d2d12ad99aa630f3c21c13c46ce131b7489b11eac78d26b01a80f65",
    "year": 1995,
    "method": "rf"
   },
@@ -3721,8 +3789,8 @@
   {
    "path": "sites/cerro-verde/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 16692,
-   "sha256": "dfc27a6a1bc69f63830a9d0ce4cd45cb78220d6511eb3d03f74b47e34832040f",
+   "bytes": 19272,
+   "sha256": "7ebff66bb50b6cd42ef91a442ac6a54222f5d43a3142c888adf3558b5b8703be",
    "year": 1996,
    "method": "rf"
   },
@@ -3737,8 +3805,8 @@
   {
    "path": "sites/cerro-verde/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 17001,
-   "sha256": "0495c3596ce42a9568878ff0f1b47761cab657e4097a94c69fae8ae9833a4c61",
+   "bytes": 20564,
+   "sha256": "5ccc651483664eefdd551832fba9a15e1456e288e71b45175dabfd1eb502f731",
    "year": 1997,
    "method": "rf"
   },
@@ -3753,8 +3821,8 @@
   {
    "path": "sites/cerro-verde/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 19650,
-   "sha256": "56540c31a38a1b30f1f60611bd84d825806b6d00ec601c35f3342863c9aa46e5",
+   "bytes": 19577,
+   "sha256": "bd5a9e4a91d3a9114ff469410d5e9d1c32a0ffd177ec9327b7c6732435e75f18",
    "year": 1998,
    "method": "rf"
   },
@@ -3769,8 +3837,8 @@
   {
    "path": "sites/cerro-verde/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 19735,
-   "sha256": "83fa19aa77f0d5d8dc77da5e940b6f48ccb95ff50cb950efac2a6d2a3b2ba430",
+   "bytes": 15825,
+   "sha256": "c1d450b7b72614431b67a875acc6c8b49cad08f0d94681b2a25a806a9e448c43",
    "year": 1999,
    "method": "rf"
   },
@@ -3785,8 +3853,8 @@
   {
    "path": "sites/cerro-verde/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 18737,
-   "sha256": "f48c18ede3a5561b30dc2da9d15a513c378934d15434fb3dbfa5f1740c0880ae",
+   "bytes": 20412,
+   "sha256": "49a6d94bd3594599bdc45328901b4580bedee2d2b8b1698c5a767e39dc3e7f10",
    "year": 2000,
    "method": "rf"
   },
@@ -3801,8 +3869,8 @@
   {
    "path": "sites/cerro-verde/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 20158,
-   "sha256": "4867402ef5717cea54a78800b2bdff147ddbaeeb43599335780fa45f9b93c79d",
+   "bytes": 18852,
+   "sha256": "f302a86f4d052ca906a1b934444faaf98d071a5ac9bf50640cb802e7504a9538",
    "year": 2001,
    "method": "rf"
   },
@@ -3817,8 +3885,8 @@
   {
    "path": "sites/cerro-verde/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 23090,
-   "sha256": "9bbdffc8e0d54440c6cd858936d3ca44884ea99a34b7dce1bd4a4853a8c19cf1",
+   "bytes": 19198,
+   "sha256": "b9e0b4c2018dcfb6f796dcdc869c0dd5311347aa209bf846c282e31fadfe771c",
    "year": 2002,
    "method": "rf"
   },
@@ -3833,8 +3901,8 @@
   {
    "path": "sites/cerro-verde/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 18463,
-   "sha256": "ca12375882821e6912e33dadc6f798d0ec586df695c96e9600b6231c80d6dad8",
+   "bytes": 17560,
+   "sha256": "a9f767cd154493c5cb9ad68e59de655f955a7be07511c10efcd02b9406517e0b",
    "year": 2003,
    "method": "rf"
   },
@@ -3849,8 +3917,8 @@
   {
    "path": "sites/cerro-verde/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 19161,
-   "sha256": "ed494febfe014b7e734485f96c55eebd0f11bc17da47423e4490b188b7285717",
+   "bytes": 19817,
+   "sha256": "a6841d30db761c1e5f216a081f2319ef256beba8d27aa63d7b8dd09cec57341d",
    "year": 2004,
    "method": "rf"
   },
@@ -3865,8 +3933,8 @@
   {
    "path": "sites/cerro-verde/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 16479,
-   "sha256": "c05375f4077acdc8db63ccb488b49fac1d2aa89bebe028134872e73c8954de83",
+   "bytes": 18944,
+   "sha256": "c20eb44224774fa26ea7bf88bb17859b26f63819804bf4917679a89d37b08ddc",
    "year": 2005,
    "method": "rf"
   },
@@ -3881,8 +3949,8 @@
   {
    "path": "sites/cerro-verde/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 15935,
-   "sha256": "8a57393ee21eb01d5c1c206ef7a8ff53f0bfda8ff8c676ea4d321990db29c09b",
+   "bytes": 18551,
+   "sha256": "5c83eff4013d81c47ce4c44350a72a210fb94cf5b68785cb679a81a5ee34e68e",
    "year": 2006,
    "method": "rf"
   },
@@ -3897,8 +3965,8 @@
   {
    "path": "sites/cerro-verde/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 17735,
-   "sha256": "82559010d39bd6b5804251a878c5ffd1d9e27f809033f993290e19a3eb11987d",
+   "bytes": 18847,
+   "sha256": "0c46e7160b9a8a7588cbe2cbc45f25ccabccc42d73732fe54dba6bd61ce82c5e",
    "year": 2007,
    "method": "rf"
   },
@@ -3913,8 +3981,8 @@
   {
    "path": "sites/cerro-verde/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 20812,
-   "sha256": "22cecccd8ce76a0493eae86eaa2b3ab64e91750f116d2b5a63208b5ed377572d",
+   "bytes": 19537,
+   "sha256": "e8733d9cc99ed879e3c29bee30999c9e103c7a7bef30eee7a975ca2c39abca00",
    "year": 2008,
    "method": "rf"
   },
@@ -3929,8 +3997,8 @@
   {
    "path": "sites/cerro-verde/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 21802,
-   "sha256": "9bd45239ce21496de7731daeca9aeebb3ee067ccb20ce56b18740a26a7a172e3",
+   "bytes": 18471,
+   "sha256": "48a5dcc3c3a87203329f7fd30f1f9ea8c1bac2bba0495f591df8b05316bce51d",
    "year": 2009,
    "method": "rf"
   },
@@ -3945,8 +4013,8 @@
   {
    "path": "sites/cerro-verde/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 18959,
-   "sha256": "5faa5d47740bf306dc234ab8e40fd822490f4a6f6ef005fc579960a169afba22",
+   "bytes": 19072,
+   "sha256": "d12e4d134f65289ef3e3858ed6253f77e67566b2f349d8a0737e7ea9c63c90e5",
    "year": 2010,
    "method": "rf"
   },
@@ -3961,8 +4029,8 @@
   {
    "path": "sites/cerro-verde/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 21726,
-   "sha256": "b986d8f402857995d49bbb0bf79a331bd2c926c021c04451bf0a298661299f5c",
+   "bytes": 18452,
+   "sha256": "77283e11ee9f02a3d09a6acaeb2caba58a4ac4ee093db19be50aac0ec04bda4d",
    "year": 2011,
    "method": "rf"
   },
@@ -3977,8 +4045,8 @@
   {
    "path": "sites/cerro-verde/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 21457,
-   "sha256": "58165bf0a643580eb3ac7035cd90eeb676d2b992f3288e5c38bde3bf274de843",
+   "bytes": 18336,
+   "sha256": "230237ebe94483aff85547594ac88f60fb466cd0ec5f16f32824075ceb63d36f",
    "year": 2012,
    "method": "rf"
   },
@@ -3993,8 +4061,8 @@
   {
    "path": "sites/cerro-verde/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 22623,
-   "sha256": "e992da5dc0ade0b459ad389aca5b4c27a7ad3b46824dabfe8e8f386f930586a2",
+   "bytes": 13213,
+   "sha256": "192d1713baa78992933338d3954dde42b5823b738e3e230489eac18a928abd60",
    "year": 2013,
    "method": "rf"
   },
@@ -4009,8 +4077,8 @@
   {
    "path": "sites/cerro-verde/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 22204,
-   "sha256": "a12434a9358ba853458218258b2a9108dd609550cb302e2171149bc5e4c71bf1",
+   "bytes": 14159,
+   "sha256": "75842d42bf4b172d465008a03d90cc60fdc0bb17dd3ef7d02ed4ebca1ad5541c",
    "year": 2014,
    "method": "rf"
   },
@@ -4025,8 +4093,8 @@
   {
    "path": "sites/cerro-verde/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 23661,
-   "sha256": "0b57909259c48495f1a2e99d48409f7c536962ff22c7ba596dc7fd50095925ab",
+   "bytes": 15741,
+   "sha256": "be3b946c5dbf9ab372a95a79f748acfa3170e3ce6d976d2516326640eb808c89",
    "year": 2015,
    "method": "rf"
   },
@@ -4041,8 +4109,8 @@
   {
    "path": "sites/cerro-verde/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 20602,
-   "sha256": "7390b50f8883f358ba368479185472413feea70f7d3a809de2bff6b18d282579",
+   "bytes": 6296,
+   "sha256": "bfca73e861f285996b557ce5f582a588cb08e5c1bdf088bd29c85574c130af28",
    "year": 2016,
    "method": "rf"
   },
@@ -4057,10 +4125,18 @@
   {
    "path": "sites/cerro-verde/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 21076,
-   "sha256": "3e18918bf3a47b6d39012c01980d1fdf1e00706bf9bbc9d3ab647d10f5ac8c5b",
+   "bytes": 20130,
+   "sha256": "c160811e63b499c5c39d159dfc1b16c991759d58fb86b774e5d8f8af4ad5b7d6",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 8230,
+   "sha256": "d31fd33826298c550685282df5ddf58f8ad5cfbeb46eeffd0f5239f030ed21fa",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2018-otsu.png",
@@ -4073,10 +4149,18 @@
   {
    "path": "sites/cerro-verde/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 20465,
-   "sha256": "e8d3639bfd07fd73e3801a79a5a68ce2630d2ecb9d2dfb1c491b1e2f0a785532",
+   "bytes": 23847,
+   "sha256": "e235113326148ed0dba740f59acc3c5dd9938369b4e6b5331f50ec396ba3816d",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 11205,
+   "sha256": "82afea74918140714e6ff0fa3cbb79c78802d965b4ded87eb9a7bbe8bdcc7976",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2019-otsu.png",
@@ -4089,10 +4173,18 @@
   {
    "path": "sites/cerro-verde/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 21544,
-   "sha256": "5978b68d1eb001ed27a4142da828ca1dd3b0cf3bc927a1287e322e0b57a24268",
+   "bytes": 13909,
+   "sha256": "915af29f7941307deac383d8e18e570db06e9fd98ca9063eb08790144a042ff4",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 6106,
+   "sha256": "69fa5a63e00e25cdb8e9de246c09af9e8e57589eb4237a800c9498e805a89fd8",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2020-otsu.png",
@@ -4105,10 +4197,18 @@
   {
    "path": "sites/cerro-verde/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 21035,
-   "sha256": "5b661d61e08def5fc78c989cc44150489085a3786ed0786a3cf518c1c56dfa5d",
+   "bytes": 15853,
+   "sha256": "375724ae9d1d7fce886132c011e7859fb451b3c37b8c649bd317d9cf2d70bcd4",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 5352,
+   "sha256": "34dc6d010ae93a339c06be2a00fba0805c132775880b0843b0d02c851bbdd845",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2021-otsu.png",
@@ -4121,10 +4221,18 @@
   {
    "path": "sites/cerro-verde/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 21712,
-   "sha256": "8da56c8c49904f5335c374fa4792c3429a7c83c480ae05637404407f81f9e83f",
+   "bytes": 16393,
+   "sha256": "1eca043a92c8f708cafea9409d12520bf08c95268ab83cc3b8b89991e406294b",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5592,
+   "sha256": "8fcb0b431a140201241bc1645cc79bd1ea18754edd6487551dce6c9303349373",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2022-otsu.png",
@@ -4137,10 +4245,18 @@
   {
    "path": "sites/cerro-verde/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 15837,
-   "sha256": "aef091ddc72d3370610bcd39a43bd593a150d3f95f4173a381dfeb69c39db750",
+   "bytes": 21389,
+   "sha256": "430ff862234624bee6ea2408e68d1777f2b35c6f9f98b5100ddcc795466c6000",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 4279,
+   "sha256": "a106aefb5d04c2b28028dddbccfb1b7087cfcb833069ca8b50c1f827bcbc12f0",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2023-otsu.png",
@@ -4153,10 +4269,18 @@
   {
    "path": "sites/cerro-verde/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 20734,
-   "sha256": "eee5b46ea529b8954f851e7282d7cbf4a1eeb6386634ffc1cc8d71fae7e48afb",
+   "bytes": 17893,
+   "sha256": "201e745babc6bbaeb256f2be9c8cfa1132b34f55dea72b389457d60c638b9bdc",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 5167,
+   "sha256": "c34953303fe2d75993a10d7d5dbd6d883a12af6841e0d36c4f7a24a79dbe5148",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2024-otsu.png",
@@ -4169,10 +4293,18 @@
   {
    "path": "sites/cerro-verde/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 17338,
-   "sha256": "0be43d56ecfd67802424ba20cea7e946afbb58ebb3bf9db50451290295a0de9b",
+   "bytes": 19794,
+   "sha256": "4d3da8aa91a5db9c72530cd248329ebabda7eccf4c05b8fbdc4af9ad7e865c30",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 5397,
+   "sha256": "5ba2612038be2be09addad213e94930a65a3240633fbca95f9b4d8047a516838",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2025-otsu.png",
@@ -4185,10 +4317,18 @@
   {
    "path": "sites/cerro-verde/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 18369,
-   "sha256": "64ff5910a49e79be2a5835aefbadebecfa10f92157c0a2a88a5e201dc8bdf443",
+   "bytes": 19088,
+   "sha256": "4f43464045c1e34f567d7b8aa330a31f0ff394ed4d0755631cad5e681771b157",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 5367,
+   "sha256": "2c65c919e8644fe90c0ca80c127741aea44d205a75ec618a629b942640e5ead5",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/masks/2026-otsu.png",
@@ -4201,10 +4341,18 @@
   {
    "path": "sites/cerro-verde/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 19345,
-   "sha256": "cddb9813127feb800a25377387029b5561ea9b385ad6f4a5e60f2a95f804bba7",
+   "bytes": 19157,
+   "sha256": "c4a4b14d0744f30d826d1fbc5756ae024b611b6f7c2d2f3c918113c99815b62b",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/cerro-verde/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 5870,
+   "sha256": "3c92859eee411ccedc4e2f8e2d266b7ef4ef2117e8f3d020f8c00ec1e889bac8",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/cerro-verde/polygons.geojson",

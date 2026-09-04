@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "los-pelambres",
  "site": {
   "id": "los-pelambres",
@@ -1900,7 +1900,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1954,7 +1955,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2008,7 +2010,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2062,7 +2065,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2116,7 +2120,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2170,7 +2175,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2224,7 +2230,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2278,7 +2285,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2332,7 +2340,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2386,7 +2395,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2573,48 +2583,92 @@
     12.1851
    ],
    "rf": [
-    26.6931,
-    47.1213,
-    49.5927,
-    48.7314,
-    46.9719,
-    48.9879,
-    47.4615,
-    45.1998,
-    49.1976,
-    50.2533,
-    48.5658,
-    48.3084,
-    46.3959,
-    49.8924,
-    42.2613,
-    50.4063,
-    46.3518,
-    45.018,
-    48.5991,
-    47.1384,
-    47.4174,
-    50.283,
-    48.1689,
-    45.9162,
-    47.1978,
-    46.8558,
-    46.341,
-    45.4122,
-    43.3044,
-    45.1125,
-    41.9211,
-    38.0079,
-    50.2011,
-    50.8725,
-    51.9579,
-    51.9669,
-    51.1137,
-    51.8823,
-    51.9336,
-    52.1406,
-    51.318,
-    51.1929
+    22.3011,
+    33.1047,
+    35.2152,
+    35.7147,
+    33.111,
+    35.8785,
+    35.5194,
+    36.5427,
+    35.8245,
+    38.3535,
+    35.7975,
+    36.2358,
+    33.5763,
+    38.9493,
+    23.0085,
+    38.8287,
+    33.9453,
+    32.5044,
+    36.8721,
+    36.1953,
+    36.7326,
+    40.8717,
+    38.619,
+    39.1878,
+    37.9359,
+    37.0737,
+    35.8137,
+    35.9964,
+    33.1002,
+    35.6157,
+    30.3129,
+    24.6114,
+    39.4416,
+    40.9122,
+    42.0606,
+    42.6204,
+    41.8473,
+    43.2,
+    42.7185,
+    44.3169,
+    42.3756,
+    42.5259
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    29.9619,
+    33.3657,
+    34.4097,
+    33.4782,
+    33.597,
+    37.0737,
+    39.2895,
+    36.3231,
+    34.8444,
+    35.8722
    ]
   },
   "index_mean": {
@@ -2807,63 +2861,99 @@
       {
        "start": 1985,
        "end": 1987,
-       "mean": 41.1357,
-       "slope": 11.4498
+       "mean": 30.207,
+       "slope": 6.457
       },
       {
        "start": 1988,
        "end": 2012,
-       "mean": 47.4933,
-       "slope": -0.0625
+       "mean": 35.9635,
+       "slope": 0.1039
       },
       {
        "start": 2013,
        "end": 2016,
-       "mean": 42.0865,
-       "slope": -1.9081
+       "mean": 30.9101,
+       "slope": -3.0769
       },
       {
        "start": 2017,
        "end": 2026,
-       "mean": 51.4579,
-       "slope": 0.0826
+       "mean": 42.2019,
+       "slope": 0.3087
       }
      ],
-     "penalty": 55.611915,
-     "sigma": 2.227013,
+     "penalty": 64.9723,
+     "sigma": 2.407149,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [
-      1986,
+      1987,
+      2000,
       2017
      ],
-     "k": 1.113507,
-     "h": 8.908054,
-     "sigma": 2.227013,
-     "target": -0.2574
+     "k": 1.203575,
+     "h": 9.628597,
+     "sigma": 2.407149,
+     "target": 0.1827
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 34.8215,
+       "slope": 0.5698
+      }
+     ],
+     "penalty": 58.289028,
+     "sigma": 2.904858,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 1.452429,
+     "h": 11.619433,
+     "sigma": 2.904858,
+     "target": 1.0278
     }
    }
   },
   "change_points": [
    {
-    "year": 1986,
+    "year": 1987,
     "method": "cusum",
     "series": "rf",
-    "score": 8.908054
+    "score": 9.628597
    },
    {
     "year": 1988,
     "method": "pelt",
     "series": "rf",
-    "score": 55.611915
+    "score": 64.9723
+   },
+   {
+    "year": 2000,
+    "method": "cusum",
+    "series": "rf",
+    "score": 9.628597
    },
    {
     "year": 2013,
     "method": "pelt",
     "series": "rf",
-    "score": 55.611915
+    "score": 64.9723
    },
    {
     "year": 2017,
@@ -2875,13 +2965,13 @@
     "year": 2017,
     "method": "cusum",
     "series": "rf",
-    "score": 8.908054
+    "score": 9.628597
    },
    {
     "year": 2017,
     "method": "pelt",
     "series": "rf",
-    "score": 55.611915
+    "score": 64.9723
    }
   ],
   "gaps": {},
@@ -3630,8 +3720,8 @@
   {
    "path": "sites/los-pelambres/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 9344,
-   "sha256": "c454e4a0dc2c7fa1fc9894e9bfd7c7cbfefeb5346f5f0a3fff7bcaab23490320",
+   "bytes": 10993,
+   "sha256": "964b2648685b3214ea89a4b8b94a311abcc321b0a9e7ca1a0ffe8bb2dfc0fc2f",
    "year": 1985,
    "method": "rf"
   },
@@ -3646,8 +3736,8 @@
   {
    "path": "sites/los-pelambres/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 20430,
-   "sha256": "bf0caf1a4072bf24c8a6314cadb170c3b916792b357d618170b1fafb8200071d",
+   "bytes": 18592,
+   "sha256": "97943082cb17aaaecf28974c9310c44c034803f40fc2d0e8dae2bf1c0dd4c6a4",
    "year": 1986,
    "method": "rf"
   },
@@ -3662,8 +3752,8 @@
   {
    "path": "sites/los-pelambres/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 19219,
-   "sha256": "93327662b33b4dce3bcf1afa76c4a83cdc91b5a1e7c11f2ac8e6eae870cf546f",
+   "bytes": 19981,
+   "sha256": "34d19d2855c51d0ca6fe416b581808e457d7b151cb2eed9f65374e065b8133fd",
    "year": 1987,
    "method": "rf"
   },
@@ -3678,8 +3768,8 @@
   {
    "path": "sites/los-pelambres/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 22461,
-   "sha256": "64e2f0de6cb862d0047d981e6f48824779ee62b241b3909e126f3d7d9cf1c65f",
+   "bytes": 22808,
+   "sha256": "5c3e3c4db16b649f07e3b4ce2c1f9de9ac7d0e05cbed0f01442e2ed4c406b185",
    "year": 1988,
    "method": "rf"
   },
@@ -3694,8 +3784,8 @@
   {
    "path": "sites/los-pelambres/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 20483,
-   "sha256": "c75c25c621575d27e30c8b93045730c0e2e7e83b74a81773a0849745aa0c349b",
+   "bytes": 18551,
+   "sha256": "593587efc780e93f3a2aba210bfefd9a764593a94b39f380a4fa3ce04d330e10",
    "year": 1989,
    "method": "rf"
   },
@@ -3710,8 +3800,8 @@
   {
    "path": "sites/los-pelambres/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 18878,
-   "sha256": "1c4005c95c6da9adbb6fd98e8f46d1c38d0aa208c260583761996fcfdc878d8b",
+   "bytes": 19997,
+   "sha256": "412a402856b37837a4f28828b3725730c0c9c4dec25b1bfeeada9cb7b51e9dac",
    "year": 1990,
    "method": "rf"
   },
@@ -3726,8 +3816,8 @@
   {
    "path": "sites/los-pelambres/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 19623,
-   "sha256": "e7e237e0a43c27743786b6d235811acd75d26b72f2835e5745bd7ef5c38f0702",
+   "bytes": 18906,
+   "sha256": "ec35a2da9eaeafceac4ec1903aee451bb7100434804290d28f466c7ac18b9bc2",
    "year": 1991,
    "method": "rf"
   },
@@ -3742,8 +3832,8 @@
   {
    "path": "sites/los-pelambres/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 15621,
-   "sha256": "830112355c67db7af8992db2d23c4485b3b2d91ca81a69ae11d7b1f76ce0e371",
+   "bytes": 19440,
+   "sha256": "883c444886fd6bb51b09905ad9e3ce2c5f1a9c52680bdc2b489388c8212e4698",
    "year": 1992,
    "method": "rf"
   },
@@ -3758,8 +3848,8 @@
   {
    "path": "sites/los-pelambres/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 18683,
-   "sha256": "0229a985041c981b1bacd12bb1eda3550ce1feb0eb7232e0dd1ba10baad4ace1",
+   "bytes": 19628,
+   "sha256": "b211e73cdeabf988f1b8485816024339b70a1727bd7aa5bbc9c7be38a4c9292e",
    "year": 1993,
    "method": "rf"
   },
@@ -3774,8 +3864,8 @@
   {
    "path": "sites/los-pelambres/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 18388,
-   "sha256": "f6a23803a6388e45af37d67c510391c282efe5f05ff25fb8a9fde7adcbc87536",
+   "bytes": 19602,
+   "sha256": "4f78c265c050f9284982c4b99714016419470dadd37e7d82c31f8940e33cad5a",
    "year": 1994,
    "method": "rf"
   },
@@ -3790,8 +3880,8 @@
   {
    "path": "sites/los-pelambres/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 19070,
-   "sha256": "181f212040b6cfe4a5318419137a59577e08687ccadcc5c3c583cd836b342915",
+   "bytes": 19108,
+   "sha256": "a90212673431a2873104d181a4d9cd2bbcbe394170dda7140b6bcc7a2f5d2181",
    "year": 1995,
    "method": "rf"
   },
@@ -3806,8 +3896,8 @@
   {
    "path": "sites/los-pelambres/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 18767,
-   "sha256": "143350da33cb0ab75b8996a0532b43ebe4ba7d3080c075fd962b802b3c681a36",
+   "bytes": 22130,
+   "sha256": "2137ac27271c75d1761ca05b504c64cd33b69de85b26cacb970cebc02ad77b39",
    "year": 1996,
    "method": "rf"
   },
@@ -3822,8 +3912,8 @@
   {
    "path": "sites/los-pelambres/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 19795,
-   "sha256": "38f032448c72d783d7d629713c4df600391964d5d19bf45f2fd5598793695b6f",
+   "bytes": 18534,
+   "sha256": "ef5cd21f1310b1b6d38428445d823d06b1f602439cdf17a424fbf4abd6024303",
    "year": 1997,
    "method": "rf"
   },
@@ -3838,8 +3928,8 @@
   {
    "path": "sites/los-pelambres/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 19341,
-   "sha256": "4698e246af8cec8e1ed0a5edb03e42041cfc6abe297fc37b74818316fe13d65c",
+   "bytes": 21999,
+   "sha256": "290490664df46ba27d795d20b113239cfec22fe4bdc524b319c828572ce8df4a",
    "year": 1998,
    "method": "rf"
   },
@@ -3854,8 +3944,8 @@
   {
    "path": "sites/los-pelambres/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 22309,
-   "sha256": "2f74f4a7be36e4860199a39bacbef191bae93b669f24fa12415d2e8df8d0be8a",
+   "bytes": 18082,
+   "sha256": "2fbd3648092989ba3f78f14e68f116dd4318c96ac9bc8bea1b8f10eeb034d6fd",
    "year": 1999,
    "method": "rf"
   },
@@ -3870,8 +3960,8 @@
   {
    "path": "sites/los-pelambres/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 18317,
-   "sha256": "11e620672493ec647734a3b4301cfb2cbfd52666020349c8054fade99da62601",
+   "bytes": 20825,
+   "sha256": "68b8a574e54219a14d3e3e5eb207125a70135f07cc10a694869b145260af40cb",
    "year": 2000,
    "method": "rf"
   },
@@ -3886,8 +3976,8 @@
   {
    "path": "sites/los-pelambres/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 19599,
-   "sha256": "9f0e57319a6dba6053ca4c1ccae93899637dcaa8984741e9e7839a4cc68e0779",
+   "bytes": 17564,
+   "sha256": "83738c38399a61e12ab1aa9b730ff2c1a77c91e83a10fc7aa0dd26d16b2997a7",
    "year": 2001,
    "method": "rf"
   },
@@ -3902,8 +3992,8 @@
   {
    "path": "sites/los-pelambres/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 19776,
-   "sha256": "36f7b26b4632da16ac2e660e2273474c1591921879f6049904222174f6bccec6",
+   "bytes": 16672,
+   "sha256": "9d5a3a7540ccf4bc830e25417855738547aabb463acfc7311545249991d99b49",
    "year": 2002,
    "method": "rf"
   },
@@ -3918,8 +4008,8 @@
   {
    "path": "sites/los-pelambres/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 18867,
-   "sha256": "aedac99230775b92e9092ba4914585cec82cbaeb7b7a0399db83e938a4f7f601",
+   "bytes": 20118,
+   "sha256": "d74e0830412b81c85bc315acebf1eddac0aebccf855d27fec9ffca3a1f59ce0c",
    "year": 2003,
    "method": "rf"
   },
@@ -3934,8 +4024,8 @@
   {
    "path": "sites/los-pelambres/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 18670,
-   "sha256": "24c286d7c6629590ab6db78d1c899513b182ffe5ab66f7a16196c2977acdcbbc",
+   "bytes": 18704,
+   "sha256": "130a3cc221fdd77e857358047bad4018c7898589e61bf69baaf678f65df826c2",
    "year": 2004,
    "method": "rf"
   },
@@ -3950,8 +4040,8 @@
   {
    "path": "sites/los-pelambres/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 19109,
-   "sha256": "cbe7817a19d4e944a20e2f22f29d8322d99ddd0da0f25fe08452f7594d2b7372",
+   "bytes": 18782,
+   "sha256": "604efe3a46b45aec1ff5ffb617ba2e8c847c3b59a330b311661ec24ae6837ee5",
    "year": 2005,
    "method": "rf"
   },
@@ -3966,8 +4056,8 @@
   {
    "path": "sites/los-pelambres/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 17390,
-   "sha256": "8531b58e9f412508f02aefe162f0be1967573e161b377cb19ef6f7cd4bd3935e",
+   "bytes": 19915,
+   "sha256": "cd784bb84aa961f496d67b0869afd35d716b8d7a7c736eaf53d4ed42681c382b",
    "year": 2006,
    "method": "rf"
   },
@@ -3982,8 +4072,8 @@
   {
    "path": "sites/los-pelambres/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 17908,
-   "sha256": "130646b9e0b6a32cb8d43cba2326ee163dfcb587d7b5f0245c34829840c90b61",
+   "bytes": 19362,
+   "sha256": "a329cf8903dc5e638c0cf964a073944165fdada0e1e4aa5ac56ee6e22870ecfd",
    "year": 2007,
    "method": "rf"
   },
@@ -3998,8 +4088,8 @@
   {
    "path": "sites/los-pelambres/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 19056,
-   "sha256": "ee9e112b5bc9307bb10ec18b5987407c0c700a92a5e577e79f8c368dd6baac7c",
+   "bytes": 19372,
+   "sha256": "72fdb5a85c3f565dd381d9edca6665d3236d4fd85519eb824df4cdb987c7db5d",
    "year": 2008,
    "method": "rf"
   },
@@ -4014,8 +4104,8 @@
   {
    "path": "sites/los-pelambres/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 18352,
-   "sha256": "2fb7a857c8b7800537abec7f30ab67c0b7de4bdde6d8efa1bfbd50c80d1679b7",
+   "bytes": 17817,
+   "sha256": "9ec0d076faa531c3ba0ed4ff2e2cd7993c1ef3bf43e7df67398066c3bb4c28dd",
    "year": 2009,
    "method": "rf"
   },
@@ -4030,8 +4120,8 @@
   {
    "path": "sites/los-pelambres/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 18269,
-   "sha256": "918e8d308b583958e2372a970906df7ba67a9fe03f8e3fcf538fc2415d86477f",
+   "bytes": 18643,
+   "sha256": "8585caaccc0adbedc878432a15036c3ea82d8c0d2e8a71b22600f922ba1e20f6",
    "year": 2010,
    "method": "rf"
   },
@@ -4046,8 +4136,8 @@
   {
    "path": "sites/los-pelambres/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 18308,
-   "sha256": "04e8deb2639b9ab31be510adaf507012775380099435bb22d5ce16eb733ebcda",
+   "bytes": 17322,
+   "sha256": "53fc859d46eee9fe3a31ca700270ecc31d659f436ac84f2f6a16c7c53d0c15e6",
    "year": 2011,
    "method": "rf"
   },
@@ -4062,8 +4152,8 @@
   {
    "path": "sites/los-pelambres/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 19460,
-   "sha256": "3465ad133ed544d9160d597e48c296ef57ccdf6adef041fd8a82e41d2a298577",
+   "bytes": 17057,
+   "sha256": "57806d5794bfd630fbc05c17ff223deefb1b3680158f073513be2c9d2962a356",
    "year": 2012,
    "method": "rf"
   },
@@ -4078,8 +4168,8 @@
   {
    "path": "sites/los-pelambres/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 19811,
-   "sha256": "5e63a227324c1904ae30533f77e4fd36a97f2dcbfb683231103c21452354394e",
+   "bytes": 17363,
+   "sha256": "b96c331aba3981a6311b3eef5cead3bf352d8868a085c68844b464d28ebcafbf",
    "year": 2013,
    "method": "rf"
   },
@@ -4094,8 +4184,8 @@
   {
    "path": "sites/los-pelambres/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 19051,
-   "sha256": "f1b7726557a43a49aeabb9a12acba1332cf50db7826bf0d988259d2c0c2c2aad",
+   "bytes": 17369,
+   "sha256": "bcb35a897ec7ac46ede0b0bfbc8b34dc50471e6c6b2823a78309b594318d39f2",
    "year": 2014,
    "method": "rf"
   },
@@ -4110,8 +4200,8 @@
   {
    "path": "sites/los-pelambres/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 19478,
-   "sha256": "7963c34e9da0d4968615ce2a88cb51fd3d62b0f3008798cb65028f42bf58f8e0",
+   "bytes": 15228,
+   "sha256": "b25651550e08a426e598da4874d32623c7ac9aaacd240b0807686245284a1b38",
    "year": 2015,
    "method": "rf"
   },
@@ -4126,8 +4216,8 @@
   {
    "path": "sites/los-pelambres/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 20550,
-   "sha256": "557158128641a5bc7a1ea719915d185d0b29f9fe0c3280559443fec64496d7e2",
+   "bytes": 15792,
+   "sha256": "2831be9723e5b19b75373e649d6ab172067b9ec0b377006ffd48018699fc497d",
    "year": 2016,
    "method": "rf"
   },
@@ -4142,10 +4232,18 @@
   {
    "path": "sites/los-pelambres/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 22029,
-   "sha256": "61bb0de3603e68ea19998b61859e80af414f06cce61d873038033ae82bdda70b",
+   "bytes": 18813,
+   "sha256": "6871dce365d5b76a403fb62bc59ec89b624a021177bfeec5f7eb9abab5fc24d1",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 10840,
+   "sha256": "773a525314c53a3d5daf618bf411a9cc2a31c082fa900cbc5abd36d914bf9005",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2018-otsu.png",
@@ -4158,10 +4256,18 @@
   {
    "path": "sites/los-pelambres/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 18534,
-   "sha256": "f5d4ddf36f664955d4b0022052ea98b9027d92b1283758ba84ee20f8b9e15cc1",
+   "bytes": 19119,
+   "sha256": "a2346984cd5046f8e4954c6dd7d6bc935a74d834e1b37f196e4f68c90037c1bc",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 5568,
+   "sha256": "f463329d8ec1c6da0f53d6203d141fb4e1ab267919b5797f292465380f72ea7c",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2019-otsu.png",
@@ -4174,10 +4280,18 @@
   {
    "path": "sites/los-pelambres/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 20866,
-   "sha256": "341dfc21bbb163a9d1c7f206b56e5651633b25fc706a0723ec6d857f22e61801",
+   "bytes": 19385,
+   "sha256": "5e886bc1c27bdfafba4818c644156334faafea7ee6622847d46d395b2203ec72",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 9650,
+   "sha256": "2f5bab5fee3039f97c99246440522f12ae838f6f5fb8552e1f0cbde3b4f416ee",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2020-otsu.png",
@@ -4190,10 +4304,18 @@
   {
    "path": "sites/los-pelambres/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 18576,
-   "sha256": "266706708e6a1549599e76598989d4b70ef92a1ae464942952030a475d86c8ca",
+   "bytes": 19299,
+   "sha256": "7b0548ba3eeb63620ca44c93a51668e6b166645c87508b2cb4b38f94736f428c",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 5827,
+   "sha256": "835d8736341c238eef02eadd377e638f77779d2d3cc6737cce4cb4390938361e",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2021-otsu.png",
@@ -4206,10 +4328,18 @@
   {
    "path": "sites/los-pelambres/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 18461,
-   "sha256": "77fefacec6d24eab156f6ccd4afe168f84460298d35963740dee7fc3b6e4d416",
+   "bytes": 18795,
+   "sha256": "86290ba85a69fe598c60ac1fef2e88d4fd0986c44201b2d3deea3065b304fee0",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5725,
+   "sha256": "f5452f1da571dd0c4c6f6531945ab672529d70e22985001159c324ec4bf54f6a",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2022-otsu.png",
@@ -4222,10 +4352,18 @@
   {
    "path": "sites/los-pelambres/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 17735,
-   "sha256": "e725bfcc189a9e8b583a153e5306b238818a637b0fedf4a9be03481cbf76e9d9",
+   "bytes": 19519,
+   "sha256": "12e36d5708acbfa35c6ac78d7e4ee6192e3975ad3713599dc0454f9c6aa59ad2",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 6203,
+   "sha256": "cd167d65ff13262dee27aa0fc143b2bbfdb7beb984eb1a2a9ab588b3f0c61de8",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2023-otsu.png",
@@ -4238,10 +4376,18 @@
   {
    "path": "sites/los-pelambres/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 18192,
-   "sha256": "6cc1965fbcbde698d5ed5e9bbf251fe1011b7373acf5400e1cdc04e332ba2a55",
+   "bytes": 19905,
+   "sha256": "250a0a1f64626e54f6f5fb75b2cb5c584a30cface5675d63b30332de8ef1bbfb",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 6413,
+   "sha256": "5442d1d7a916fcd56ab13510cf8644644f44094caafe4aca4d82d5396037dd51",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2024-otsu.png",
@@ -4254,10 +4400,18 @@
   {
    "path": "sites/los-pelambres/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 17886,
-   "sha256": "841b8e2385cf888f3c7b98afa92f701d7512599616190eba4f0a7450e0f555e4",
+   "bytes": 19145,
+   "sha256": "1811a3226412a907020fc58549a0fe2787cc8b1f8b541c7e04e76a12138510db",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 6131,
+   "sha256": "52aa3a8ef5377a574a6803a46dc28a8dc80b7c0e2177f10e5207ce0928981be2",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2025-otsu.png",
@@ -4270,10 +4424,18 @@
   {
    "path": "sites/los-pelambres/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 18275,
-   "sha256": "7de7f7a253b99b5f5896f1de4bc89c4fcf12d7f6f4bdb98422d30419b261fa33",
+   "bytes": 18585,
+   "sha256": "84a5cad6321efbe43d44abf5b6c96b86cd835c95e0206fea6e47e06bba52b6d9",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 6451,
+   "sha256": "44f40fad8d14c213e31b54f96c32da4b60a2b59d2bd15a0d18962c0e3c52f5bb",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/masks/2026-otsu.png",
@@ -4286,10 +4448,18 @@
   {
    "path": "sites/los-pelambres/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 18142,
-   "sha256": "8aadf460744cf6d0632e369cca7edfbc262654ba9eeff5ee0bd812043c4cf845",
+   "bytes": 18654,
+   "sha256": "d7d7ee5bff814a911293e1aa896ba7dfab394a4eebb1d50043c4b33600fba6c0",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/los-pelambres/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 6052,
+   "sha256": "a78de7ad56d1a7f3abef464080f904bd1ac2407422c9be0179ba9cf59d218490",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/los-pelambres/polygons.geojson",

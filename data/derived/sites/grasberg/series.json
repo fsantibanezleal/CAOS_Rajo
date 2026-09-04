@@ -173,45 +173,87 @@
   ],
   "rf": [
    null,
-   9.369,
-   15.7464,
+   2.1429,
+   4.0851,
    null,
-   28.899,
-   65.8683,
-   17.9874,
-   23.8707,
-   24.0543,
+   6.5124,
+   53.1198,
+   6.3873,
+   8.5212,
+   8.0739,
    null,
-   29.6541,
-   null,
-   null,
-   null,
-   null,
-   null,
-   24.0048,
-   24.1803,
-   65.6334,
-   29.9286,
-   null,
-   null,
-   null,
-   23.1255,
+   12.5136,
    null,
    null,
    null,
    null,
-   28.7388,
-   27.1557,
-   35.0559,
-   33.2478,
-   34.3359,
-   38.2959,
-   34.7535,
-   37.4679,
-   30.6648,
+   null,
+   12.0771,
+   12.7341,
+   33.6186,
+   15.1191,
    null,
    null,
-   35.3322
+   null,
+   13.5828,
+   null,
+   null,
+   null,
+   null,
+   13.7052,
+   15.7392,
+   19.6236,
+   20.367,
+   21.105,
+   18.0918,
+   18.0009,
+   15.5511,
+   11.8926,
+   null,
+   null,
+   13.3614
+  ],
+  "unet": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   null,
+   37.1997,
+   37.2267,
+   29.7117,
+   42.1587,
+   31.4379,
+   40.158,
+   39.9609,
+   null,
+   null,
+   35.9127
   ]
  },
  "index_mean": {
@@ -406,24 +448,45 @@
    "n": 23,
    "pelt": {
     "breaks": [
-     1992
+     1992,
+     1995,
+     2005,
+     2022
     ],
     "segments": [
      {
       "start": 1988,
       "end": 1991,
-      "mean": 18.0048,
-      "slope": 9.765
+      "mean": 4.2468,
+      "slope": 2.1847
      },
      {
       "start": 1992,
+      "end": 1994,
+      "mean": 22.6761,
+      "slope": -22.2993
+     },
+     {
+      "start": 1995,
+      "end": 2004,
+      "mean": 11.3497,
+      "slope": 1.3544
+     },
+     {
+      "start": 2005,
+      "end": 2021,
+      "mean": 18.8953,
+      "slope": -0.3531
+     },
+     {
+      "start": 2022,
       "end": 2026,
-      "mean": 33.1678,
-      "slope": 0.0559
+      "mean": 13.6017,
+      "slope": -1.0949
      }
     ],
-    "penalty": 369.803621,
-    "sigma": 6.270064,
+    "penalty": 51.819348,
+    "sigma": 2.347104,
     "cost": "l2",
     "min_size": 3
    },
@@ -432,10 +495,39 @@
      1992,
      2005
     ],
-    "k": 3.135032,
-    "h": 25.080255,
-    "sigma": 6.270064,
-    "target": 1.90125
+    "k": 1.173552,
+    "h": 9.388416,
+    "sigma": 2.347104,
+    "target": 0.6975
+   }
+  },
+  "unet": {
+   "label": "U-Net (M8)",
+   "domain": "Sentinel-2 years only",
+   "model": "unet-v1",
+   "flags": [],
+   "n": 8,
+   "pelt": {
+    "breaks": [],
+    "segments": [
+     {
+      "start": 2017,
+      "end": 2026,
+      "mean": 36.7208,
+      "slope": 0.301
+     }
+    ],
+    "penalty": 734.325996,
+    "sigma": 10.849519,
+    "cost": "l2",
+    "min_size": 3
+   },
+   "cusum": {
+    "alarms": [],
+    "k": 5.424759,
+    "h": 43.398074,
+    "sigma": 10.849519,
+    "target": -0.1971
    }
   }
  },
@@ -456,13 +548,19 @@
    "year": 1992,
    "method": "cusum",
    "series": "rf",
-   "score": 25.080255
+   "score": 9.388416
   },
   {
    "year": 1992,
    "method": "pelt",
    "series": "rf",
-   "score": 369.803621
+   "score": 51.819348
+  },
+  {
+   "year": 1995,
+   "method": "pelt",
+   "series": "rf",
+   "score": 51.819348
   },
   {
    "year": 2004,
@@ -474,13 +572,25 @@
    "year": 2005,
    "method": "cusum",
    "series": "rf",
-   "score": 25.080255
+   "score": 9.388416
+  },
+  {
+   "year": 2005,
+   "method": "pelt",
+   "series": "rf",
+   "score": 51.819348
   },
   {
    "year": 2020,
    "method": "pelt",
    "series": "otsu",
    "score": 68.642933
+  },
+  {
+   "year": 2022,
+   "method": "pelt",
+   "series": "rf",
+   "score": 51.819348
   }
  ],
  "gaps": {

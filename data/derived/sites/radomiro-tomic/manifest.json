@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "radomiro-tomic",
  "site": {
   "id": "radomiro-tomic",
@@ -1923,7 +1923,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -1977,7 +1978,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2031,7 +2033,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2087,7 +2090,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2141,7 +2145,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2195,7 +2200,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2249,7 +2255,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2303,7 +2310,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2357,7 +2365,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2411,7 +2420,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2598,48 +2608,92 @@
     17.235
    ],
    "rf": [
-    57.8025,
-    52.983,
-    54.7254,
-    58.5387,
-    59.1354,
-    67.5621,
-    56.3463,
-    59.1453,
-    68.6943,
-    65.9034,
-    63.5436,
-    52.794,
-    81.342,
-    72.4392,
-    91.9467,
-    77.6277,
-    96.6042,
-    84.6423,
-    93.4047,
-    96.1308,
-    101.6145,
-    102.2904,
-    110.8521,
-    95.7654,
-    108.6399,
-    103.5909,
-    109.6758,
-    103.4694,
-    104.6871,
-    95.6673,
-    111.5298,
-    114.7878,
-    125.5374,
-    110.0898,
-    123.3936,
-    112.6683,
-    112.5882,
-    106.3422,
-    120.3831,
-    119.9619,
-    122.4684,
-    122.6196
+    17.3628,
+    18.3654,
+    23.985,
+    29.0808,
+    23.445,
+    36.6813,
+    25.8246,
+    29.0871,
+    41.5971,
+    37.0908,
+    33.948,
+    20.1069,
+    39.2922,
+    42.1821,
+    57.6792,
+    45.1989,
+    66.4164,
+    55.8639,
+    64.0593,
+    66.1131,
+    73.998,
+    85.005,
+    94.5405,
+    72.9999,
+    96.1434,
+    85.4172,
+    94.7061,
+    80.7363,
+    84.4137,
+    75.3651,
+    95.5431,
+    100.6092,
+    118.1223,
+    80.3826,
+    116.4564,
+    86.247,
+    83.5119,
+    77.2056,
+    92.9826,
+    96.5943,
+    104.4477,
+    107.4564
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    90.0288,
+    73.1871,
+    95.3307,
+    73.8,
+    77.9508,
+    69.66,
+    73.3149,
+    78.84,
+    81.3573,
+    87.2154
    ]
   },
   "index_mean": {
@@ -2841,39 +2895,85 @@
     "pelt": {
      "breaks": [
       1999,
-      2015
+      2006
      ],
      "segments": [
       {
        "start": 1985,
        "end": 1998,
-       "mean": 62.2111,
-       "slope": 1.2306
+       "mean": 29.8606,
+       "slope": 1.4028
       },
       {
        "start": 1999,
-       "end": 2014,
-       "mean": 98.5381,
-       "slope": 1.2254
+       "end": 2005,
+       "mean": 61.3327,
+       "slope": 3.1581
       },
       {
-       "start": 2015,
+       "start": 2006,
        "end": 2026,
-       "mean": 116.8642,
-       "slope": 0.5326
+       "mean": 91.8517,
+       "slope": 0.6829
       }
      ],
-     "penalty": 1358.494182,
-     "sigma": 11.006971,
+     "penalty": 2107.748732,
+     "sigma": 13.710343,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 5.503485,
-     "h": 44.027883,
-     "sigma": 11.006971,
-     "target": 1.2177
+     "k": 6.855172,
+     "h": 54.841374,
+     "sigma": 13.710343,
+     "target": 3.6117
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2020,
+      2024
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2019,
+       "mean": 86.1822,
+       "slope": 2.6509
+      },
+      {
+       "start": 2020,
+       "end": 2023,
+       "mean": 73.6814,
+       "slope": -0.9746
+      },
+      {
+       "start": 2024,
+       "end": 2026,
+       "mean": 82.4709,
+       "slope": 4.1877
+      }
+     ],
+     "penalty": 73.704292,
+     "sigma": 3.266464,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2019
+     ],
+     "k": 1.633232,
+     "h": 13.065857,
+     "sigma": 3.266464,
+     "target": 3.6549
     }
    }
   },
@@ -2888,7 +2988,7 @@
     "year": 1999,
     "method": "pelt",
     "series": "rf",
-    "score": 1358.494182
+    "score": 2107.748732
    },
    {
     "year": 2001,
@@ -2897,22 +2997,40 @@
     "score": 36.929194
    },
    {
+    "year": 2006,
+    "method": "pelt",
+    "series": "rf",
+    "score": 2107.748732
+   },
+   {
     "year": 2007,
     "method": "pelt",
     "series": "otsu",
     "score": 955.744564
    },
    {
-    "year": 2015,
-    "method": "pelt",
-    "series": "rf",
-    "score": 1358.494182
-   },
-   {
     "year": 2017,
     "method": "pelt",
     "series": "otsu",
     "score": 955.744564
+   },
+   {
+    "year": 2019,
+    "method": "cusum",
+    "series": "unet",
+    "score": 13.065857
+   },
+   {
+    "year": 2020,
+    "method": "pelt",
+    "series": "unet",
+    "score": 73.704292
+   },
+   {
+    "year": 2024,
+    "method": "pelt",
+    "series": "unet",
+    "score": 73.704292
    }
   ],
   "gaps": {},
@@ -3631,8 +3749,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 11525,
-   "sha256": "5b0036ab721573359650ef4d96ed7f2b6f2c38ea2f723c0c26e8a8ed68b844c5",
+   "bytes": 5136,
+   "sha256": "6bcaf8495d5bc1e6d3c3ad41d5be0206bbd56bf80f3eacc621672ea3e2b664fa",
    "year": 1985,
    "method": "rf"
   },
@@ -3647,8 +3765,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 10584,
-   "sha256": "7e5bd939bbbd03457f22ae7a3e9de982dd3ade4a0012405e0acd8d56c286fea2",
+   "bytes": 5453,
+   "sha256": "067b6c3f8a7bf0f9091703711b18242fc47b23acb20c9a9ef37f05e1be3006b5",
    "year": 1986,
    "method": "rf"
   },
@@ -3663,8 +3781,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 10905,
-   "sha256": "b9556afbe94cf249f7e270cbf823116467ce035dc245face2bb87f7749728cc2",
+   "bytes": 7040,
+   "sha256": "165dbb4b58066f2b6faa0fefc2563ee829234e98de4aef746465784b9721df50",
    "year": 1987,
    "method": "rf"
   },
@@ -3679,8 +3797,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 10788,
-   "sha256": "53019f1cd7c6c70c3dc6e5dc164be6e706d5a10b0278e1de65b37df9330de735",
+   "bytes": 6390,
+   "sha256": "9c0bbd4ad3e987d857f8de21a90a41139266907e5e4e318380c48dc090bfd4bd",
    "year": 1988,
    "method": "rf"
   },
@@ -3695,8 +3813,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 11173,
-   "sha256": "8ef75175bf2335cd0f889d77b8d38818d227ff8e2a0ac21d70fbadf5c4f3e751",
+   "bytes": 5914,
+   "sha256": "0cd2b4f98cd399b31da34b8e5f3252213c38c8efa1f48c65a4603240ad403d06",
    "year": 1989,
    "method": "rf"
   },
@@ -3711,8 +3829,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 10757,
-   "sha256": "db7884bb1acab3e87dcbd9590aa22a92651b99d0bf914874d1ffbee440c4a779",
+   "bytes": 6839,
+   "sha256": "d4f5a0cdea1cbc7561c7896814c3232972a8e15d6515b64b61a8beb28b583851",
    "year": 1990,
    "method": "rf"
   },
@@ -3727,8 +3845,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 10921,
-   "sha256": "9fe586d6a6bd8241a8df7e95ba1015ed983ac1900ea453f5b688e38e8e9fe9f6",
+   "bytes": 6750,
+   "sha256": "0071c02300d309b084a9d38bc61286b85af15e0d6bc494c5504f6773c65cb285",
    "year": 1991,
    "method": "rf"
   },
@@ -3743,8 +3861,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 11245,
-   "sha256": "4c0956fb843b6a0b5ae1259af8f96a33ac7df3ae20982fb59ef0d9fefcffdc35",
+   "bytes": 6627,
+   "sha256": "0bc856c63cbc050a7b5bf821f561546629fcd792b65d367162e7449d60ef3a07",
    "year": 1992,
    "method": "rf"
   },
@@ -3759,8 +3877,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 11554,
-   "sha256": "5c0349ca868fe431c2766cb023d558dbd8562d50395b9393c4c615ab95be5c8b",
+   "bytes": 7532,
+   "sha256": "fc29a43e1d638a8f6b9c990ec6d72fd28c58175db401348110a540cd0ded3225",
    "year": 1993,
    "method": "rf"
   },
@@ -3775,8 +3893,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 10973,
-   "sha256": "ee86d7505556484d735102d85e26e2318cefe441bd4d48e8bf662a0d660dbbf4",
+   "bytes": 6855,
+   "sha256": "96506f5dac23b1d418e2248cfdd759300bf15d8c4c450e83c06cb70c907533d7",
    "year": 1994,
    "method": "rf"
   },
@@ -3791,8 +3909,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 11317,
-   "sha256": "534d504b6af1c7e65690750c502e7cd773b2860bae3abc167dd281310a8dc3cd",
+   "bytes": 6517,
+   "sha256": "96ad4d963eb09f663ac3146a9e68636ba44e78e239cf00e5f0ded7753e2cb518",
    "year": 1995,
    "method": "rf"
   },
@@ -3807,8 +3925,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 11190,
-   "sha256": "79fcae8727c4f80ae72d0ebe48c7cc273f3b338137deafcfa0c46a1be1a7d4ce",
+   "bytes": 5380,
+   "sha256": "84fd3b291ba4220826f9e0a15935a31d3a226dee0129247fccffe81f413144dc",
    "year": 1996,
    "method": "rf"
   },
@@ -3823,8 +3941,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 12082,
-   "sha256": "2308b43ac6cf06e8d7f02806d22479a5de7f95298e19ed963c71a68d9dcd6fa4",
+   "bytes": 7106,
+   "sha256": "1d021ac509a66176571fc5cc33e4c06d1e7ef8a8039ec5bbb813e3e205ddd106",
    "year": 1997,
    "method": "rf"
   },
@@ -3839,8 +3957,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 11305,
-   "sha256": "8bcf174f93a02b1c0e122403ec0823291fd64b9df69e032973403a2a72b3a0a1",
+   "bytes": 7657,
+   "sha256": "6bbcdbf02fde03e9bceb26e985c912b5835a68af5cdee0d3bcec0f56322aeb2e",
    "year": 1998,
    "method": "rf"
   },
@@ -3855,8 +3973,8 @@
   {
    "path": "sites/radomiro-tomic/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 11241,
-   "sha256": "1ff627426e5e46d62e444de6f6f7005672c7c8ca6c94a9ce542027c53dcf1061",
+   "bytes": 8266,
+   "sha256": "0d1d9a34bbbbf38ccb4b7d95020da1bc634eaf04669605bd11c9fe6b98f1a2f7",
    "year": 1999,
    "method": "rf"
   },
@@ -3871,8 +3989,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 11479,
-   "sha256": "9c964babed8a587196b1ccf1f5c9c284f4d2397ba6aa175e82cf1aa6991c48a4",
+   "bytes": 8084,
+   "sha256": "d38212f2112d41af87a04f483359d93793a849b47124ff52c9c95e916bc7494f",
    "year": 2000,
    "method": "rf"
   },
@@ -3887,8 +4005,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 10891,
-   "sha256": "6fb1aec40621042483bf49abd9eaa39638e142789fcdd14a238a9c6a2a39750f",
+   "bytes": 9040,
+   "sha256": "46640d681151ca830261aade7754f7feaf8a063ff7060522c49b0c0bcb06465a",
    "year": 2001,
    "method": "rf"
   },
@@ -3903,8 +4021,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 11152,
-   "sha256": "5da1fcdcba0a3cd2b2d0aaf09b97c97d418ccb174469b686d23ed4f18306d1e1",
+   "bytes": 7470,
+   "sha256": "25ceb5c216b33f956480506313388ba3f1124dee331ab1bf63b256a6118b5406",
    "year": 2002,
    "method": "rf"
   },
@@ -3919,8 +4037,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 9716,
-   "sha256": "979e985737bff52cabbcd94d204e150ed0042930fb78a4ea5ec0936026068512",
+   "bytes": 8188,
+   "sha256": "682213a5645c5c6a1f606b795b7692c17aff37975d655e9b4d074bf30e7b4bf0",
    "year": 2003,
    "method": "rf"
   },
@@ -3935,8 +4053,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 11694,
-   "sha256": "5520a86e3c1724a9755c71675f2d35d9a195b2e86b2280ac76a8d0ba94cf9943",
+   "bytes": 9031,
+   "sha256": "d710ed98bd0614f57b126e67be5df538dc72561d65fa4a8c08140bb0d80f35db",
    "year": 2004,
    "method": "rf"
   },
@@ -3951,8 +4069,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 10305,
-   "sha256": "105d2bcd5aceba97fe837dc1f1ab099a86f2bd9e37a70111f008e0dc421fd83a",
+   "bytes": 8665,
+   "sha256": "f25aaa1343afc38b9609534b1b2f490829694c2bf38af09f529b6b6de8fd77f7",
    "year": 2005,
    "method": "rf"
   },
@@ -3967,8 +4085,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 9802,
-   "sha256": "aab3e10f173aaf7f606b7d6f71c98e59030093232af238f2d332ad4b9c260367",
+   "bytes": 8272,
+   "sha256": "ad0cafb3e6f1a387472d1f3ae6952d42a9d7f259c1d4b1d1e8bd8609efcc1e82",
    "year": 2006,
    "method": "rf"
   },
@@ -3983,8 +4101,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 10029,
-   "sha256": "2c7008a6d2e95ffc31b02318819182a58997479a0475571eba5bbe247f0be7a4",
+   "bytes": 10471,
+   "sha256": "9556c6512cd90876d7d71aed15a921920128ab3b695e3239c61a2bffd28326ed",
    "year": 2007,
    "method": "rf"
   },
@@ -3999,8 +4117,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 10806,
-   "sha256": "3399cb5dac847b76b1dd0177fd6c9fefdcf408922a8c14fa3195c11961083926",
+   "bytes": 9158,
+   "sha256": "3792bf6717f968064d2bb96842b763469d98509b377cf5fe3be5d2f8958578e3",
    "year": 2008,
    "method": "rf"
   },
@@ -4015,8 +4133,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 7448,
-   "sha256": "439ea79557825bae6e9e67c960e9f8e2ca68501864411c4c94d82324832d012f",
+   "bytes": 9530,
+   "sha256": "0e61b063f19e008874c7ed4a52dff0f0a91c647a6a1533908fb43aaea41794cb",
    "year": 2009,
    "method": "rf"
   },
@@ -4031,8 +4149,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 9592,
-   "sha256": "1c2823db74176490cd36882bb3be71f6190fbd50ec51819d33d3c502f434225e",
+   "bytes": 8190,
+   "sha256": "bc440e01691682580809c2750ff78467edef2fc998e9570d5ee34ba4a5ffeb0b",
    "year": 2010,
    "method": "rf"
   },
@@ -4047,8 +4165,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 10787,
-   "sha256": "07ddc43933344e1e687a17b7288fb7446b736c5cefd58cbdde6ff7e94353f874",
+   "bytes": 11206,
+   "sha256": "cc52dc496c9e7dd9eed3d8338fd71ee5be7d441ac54df61d05da9b99e29df7fe",
    "year": 2011,
    "method": "rf"
   },
@@ -4063,8 +4181,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 10631,
-   "sha256": "1c397115385a0719ebe3e4622e28dc3bdd12e17e600fb8ce6f35fd7b477837f4",
+   "bytes": 8827,
+   "sha256": "389f47861d10e3b720e5ba29ab8107a7932ea7b076484ca778d9ba323a7686e9",
    "year": 2012,
    "method": "rf"
   },
@@ -4079,8 +4197,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 11027,
-   "sha256": "abaceafe9dc37898e708473d59eb2d28358dc02b201d3b647b2dc21853989540",
+   "bytes": 9170,
+   "sha256": "cddbd20d04ca83161dba9805217b914fdef809022aef9d57443521d1a03ef6ad",
    "year": 2013,
    "method": "rf"
   },
@@ -4095,8 +4213,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 10768,
-   "sha256": "3f5afa83e0f481cd413ade0591336d18e907b8de5346093fd14d63740c46983b",
+   "bytes": 9504,
+   "sha256": "59a1f81acf670a69ff0a127d20b2bc98b031081b382f8cf74e7fc13b67651643",
    "year": 2014,
    "method": "rf"
   },
@@ -4111,8 +4229,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 9715,
-   "sha256": "e87bcb2d1a01bfd820314301efc69cbee1c2e60ae478aaaebe03a04b821ec3a8",
+   "bytes": 9119,
+   "sha256": "f880f9c00b3bc9dd9205fa98265790a3d22e5d618c03f8d8ca33dc17d764602e",
    "year": 2015,
    "method": "rf"
   },
@@ -4127,8 +4245,8 @@
   {
    "path": "sites/radomiro-tomic/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 9343,
-   "sha256": "e6d7057f2867f7e41098076c3792fbeabcc7257abf71fe2e331b48cbb7cf3657",
+   "bytes": 8410,
+   "sha256": "22e11b2b4f252ad624495194cf157f97c3162959f4bda1808643602e194d2025",
    "year": 2016,
    "method": "rf"
   },
@@ -4143,10 +4261,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 4621,
-   "sha256": "504663a8452e2f527d2654af8f5580a8136e55dbb56c6356978379cb12c19d56",
+   "bytes": 10663,
+   "sha256": "63c18eb06a9fa15d074bb702089e2825b60087d0cfcdb0a0a1dd39d0506e643a",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3275,
+   "sha256": "aa5dd21911e3fc7fa74abdbc42c8453f23d552ce059c4d3ae60c5d9a39ca703c",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2018-otsu.png",
@@ -4159,10 +4285,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 12066,
-   "sha256": "2d4cd3db780b17090be161fff876ffc38508c4cf4dfab3a5107b7c9eba59e82c",
+   "bytes": 9773,
+   "sha256": "22fed1837bc922531c965a5e8b26f2688b02633ce4c279f080cb90ead01473c3",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2152,
+   "sha256": "2ad86c7b75dd1f9c5556544224aee27fe5c5d68bf52b5f26c75196fbb7d968fc",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2019-otsu.png",
@@ -4175,10 +4309,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 4447,
-   "sha256": "a89c86c9c5cdfa604cee01ef525a68abb4c3e1ed02ee69b608c250a7d2563b6a",
+   "bytes": 10614,
+   "sha256": "65b08157a86a76d86e6b0d7083add34035d010ce3b3d48a8a3eef4025262c0ac",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 4119,
+   "sha256": "d5f9a4a7aead42731ba3488fbf360733d1b64727793ab3131402e5f590dc1656",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2020-otsu.png",
@@ -4191,10 +4333,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 10598,
-   "sha256": "1c4eab54fb1fceb681039f3d2ec5f8e46e13861e366d1603d304ba0a9ed9538e",
+   "bytes": 10269,
+   "sha256": "9c11b9bacc0052faf7afe4ee7fbbf6b120b81a793b7d2cf9b2df053b24aca438",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 3877,
+   "sha256": "1ac8b3c262587c8ce5ffa183f270e3c57cb28bdeb6fd834d257c5a61088ab990",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2021-otsu.png",
@@ -4207,10 +4357,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 11088,
-   "sha256": "a3e01892ce61c7a86f6afbcf07dd8d677671f1eeec9ddeacf4276ce10a7317ab",
+   "bytes": 10276,
+   "sha256": "47e497dbd12e0054d4b0db22274c1a88d72915814f0b5d8c0ee0f2fbef6913e6",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 2495,
+   "sha256": "4137404755c0c7234e9e7410a8bc2346f7c7fdb89bdfe84d059dcf92f40f0367",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2022-otsu.png",
@@ -4223,10 +4381,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 12153,
-   "sha256": "cfa2d75ffead48dd26c5829524c67c8276814be01d5d23e2bcda31910d247fdd",
+   "bytes": 9179,
+   "sha256": "d202f23a4541f21bbd5cadc1a9727e10bc4e729505e9db5be9f42865dc62d52d",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2385,
+   "sha256": "ebae05eb52da0cf986b6de37af4ca6554e87416018225bf49f014bfa5578d0b1",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2023-otsu.png",
@@ -4239,10 +4405,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 8374,
-   "sha256": "42105112de355bfee946182044620b88463af31d6eac3ecf706ca692f9e27f84",
+   "bytes": 11707,
+   "sha256": "b34a1be57b4dd66d4f9e9e12bb992e0afdc0254bc2fbafa2715f63962a89c95b",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2491,
+   "sha256": "3ae75ed2b90af67cf1c74e550c61f0390ee272ef3e68b1e71f29c1ca79282536",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2024-otsu.png",
@@ -4255,10 +4429,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 9161,
-   "sha256": "ad38d6ac450aa115d708b7afcfa354c2ba4675bf937b26a1465c195c555f7bac",
+   "bytes": 10760,
+   "sha256": "d0ff332eabc61329782f5cefcbf32abbe02543f6c8d886b603fdd34787ffa1fe",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 2412,
+   "sha256": "731b774395cd7093c31f13e2e6d72d87fb9bb09140692d5aeb683d33317a1bf9",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2025-otsu.png",
@@ -4271,10 +4453,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 6305,
-   "sha256": "a205fcabaf703247758c94725116d56207194aa3e7527a39d597ef9bbcae2587",
+   "bytes": 11518,
+   "sha256": "236e2d792e14de7d903799504049c62d061415ee6ca01abbd1ccb1300a53e91e",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 2079,
+   "sha256": "1b0419c55e96bfb8ec0838e6ded765aa415d088a5c024e906f158ced89c598c1",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/masks/2026-otsu.png",
@@ -4287,10 +4477,18 @@
   {
    "path": "sites/radomiro-tomic/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 5578,
-   "sha256": "3e4915c5f1e3da4b87635dbb3f0561da353556637fc3ee957f8593d8210c03c8",
+   "bytes": 10488,
+   "sha256": "dab00b67baeb0001a174c32b5b308b37d997bef3b81ab41d1a7486a4cc78af02",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/radomiro-tomic/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 2140,
+   "sha256": "e5786c00abd660afbcbbb30d93935cab268bc2007f8d2db7d638f72852aae92f",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/radomiro-tomic/polygons.geojson",

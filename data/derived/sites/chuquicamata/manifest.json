@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "chuquicamata",
  "site": {
   "id": "chuquicamata",
@@ -1959,7 +1959,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2017-otsu.png",
-    "rf": "masks/2017-rf.png"
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
    }
   },
   {
@@ -2013,7 +2014,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2018-otsu.png",
-    "rf": "masks/2018-rf.png"
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
    }
   },
   {
@@ -2067,7 +2069,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2019-otsu.png",
-    "rf": "masks/2019-rf.png"
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
    }
   },
   {
@@ -2121,7 +2124,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2020-otsu.png",
-    "rf": "masks/2020-rf.png"
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
    }
   },
   {
@@ -2175,7 +2179,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2021-otsu.png",
-    "rf": "masks/2021-rf.png"
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
    }
   },
   {
@@ -2229,7 +2234,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2022-otsu.png",
-    "rf": "masks/2022-rf.png"
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
    }
   },
   {
@@ -2283,7 +2289,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2023-otsu.png",
-    "rf": "masks/2023-rf.png"
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
    }
   },
   {
@@ -2337,7 +2344,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2024-otsu.png",
-    "rf": "masks/2024-rf.png"
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
    }
   },
   {
@@ -2391,7 +2399,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2025-otsu.png",
-    "rf": "masks/2025-rf.png"
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
    }
   },
   {
@@ -2445,7 +2454,8 @@
    "collection": "sentinel-2-l2a",
    "masks": {
     "otsu": "masks/2026-otsu.png",
-    "rf": "masks/2026-rf.png"
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
    }
   }
  ],
@@ -2632,48 +2642,92 @@
     25.0236
    ],
    "rf": [
-    190.1097,
-    194.6214,
-    194.706,
-    217.1205,
-    210.7908,
-    203.5188,
-    199.0287,
-    201.7575,
-    219.6387,
-    199.6506,
-    213.3135,
-    195.7554,
-    216.6714,
-    188.8029,
-    229.3947,
-    219.4434,
-    230.8941,
-    220.0698,
-    227.9547,
-    230.4666,
-    243.8559,
-    221.7456,
-    240.7167,
-    219.8763,
-    234.0792,
-    234.3663,
-    226.0071,
-    235.0629,
-    246.6765,
-    221.4846,
-    240.372,
-    242.6715,
-    272.5047,
-    251.8686,
-    272.2554,
-    252.2853,
-    270.8568,
-    247.3434,
-    265.9905,
-    266.2632,
-    267.9714,
-    268.569
+    113.4396,
+    122.7924,
+    144.8667,
+    165.2616,
+    155.9106,
+    165.0492,
+    144.9252,
+    136.4517,
+    187.0479,
+    159.7392,
+    174.7665,
+    132.8274,
+    182.1735,
+    131.7069,
+    194.3316,
+    174.933,
+    205.5213,
+    163.8108,
+    205.3215,
+    198.7893,
+    220.5027,
+    194.6007,
+    217.2087,
+    192.9402,
+    223.5573,
+    216.009,
+    215.1414,
+    204.3072,
+    203.6835,
+    185.4558,
+    212.7141,
+    210.8313,
+    267.4026,
+    191.8944,
+    267.138,
+    196.7193,
+    253.9872,
+    188.3196,
+    219.9411,
+    228.6882,
+    232.8345,
+    242.8137
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    225.9909,
+    172.5894,
+    232.5861,
+    165.0717,
+    195.5844,
+    162.3843,
+    171.5661,
+    179.7867,
+    181.5057,
+    197.0226
    ]
   },
   "index_mean": {
@@ -2861,40 +2915,62 @@
     "n": 42,
     "pelt": {
      "breaks": [
-      1999,
-      2017
+      1999
      ],
      "segments": [
       {
        "start": 1985,
        "end": 1998,
-       "mean": 203.249,
-       "slope": 0.4478
+       "mean": 151.2113,
+       "slope": 2.0341
       },
       {
        "start": 1999,
-       "end": 2016,
-       "mean": 231.3965,
-       "slope": 0.7342
-      },
-      {
-       "start": 2017,
        "end": 2026,
-       "mean": 263.5908,
-       "slope": 0.3936
+       "mean": 211.7642,
+       "slope": 1.6054
       }
      ],
-     "penalty": 3699.12542,
-     "sigma": 18.163036,
+     "penalty": 13663.559652,
+     "sigma": 34.907669,
      "cost": "l2",
      "min_size": 3
     },
     "cusum": {
      "alarms": [],
-     "k": 9.081518,
-     "h": 72.652144,
-     "sigma": 18.163036,
-     "target": 2.2995
+     "k": 17.453834,
+     "h": 139.630675,
+     "sigma": 34.907669,
+     "target": 4.1463
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 188.4088,
+       "slope": -2.8849
+      }
+     ],
+     "penalty": 7545.480484,
+     "sigma": 33.050267,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 16.525134,
+     "h": 132.20107,
+     "sigma": 33.050267,
+     "target": 8.2206
     }
    }
   },
@@ -2909,19 +2985,13 @@
     "year": 1999,
     "method": "pelt",
     "series": "rf",
-    "score": 3699.12542
+    "score": 13663.559652
    },
    {
     "year": 2001,
     "method": "cusum",
     "series": "otsu",
     "score": 94.268452
-   },
-   {
-    "year": 2017,
-    "method": "pelt",
-    "series": "rf",
-    "score": 3699.12542
    },
    {
     "year": 2018,
@@ -3672,8 +3742,8 @@
   {
    "path": "sites/chuquicamata/masks/1985-rf.png",
    "kind": "mask",
-   "bytes": 22582,
-   "sha256": "9ad1290a5bece2bfc8379e5c45dbbe77df925054e61fe25fb16b1428afc46038",
+   "bytes": 15982,
+   "sha256": "c2ac4af7563e4e2e9a658908be097065d63d988a2a242c0741a064d22bbf7f11",
    "year": 1985,
    "method": "rf"
   },
@@ -3688,8 +3758,8 @@
   {
    "path": "sites/chuquicamata/masks/1986-rf.png",
    "kind": "mask",
-   "bytes": 21385,
-   "sha256": "6a2e60bef8de6ac69ee411140f934be27f0679cc317d096d9d150a1325a844a6",
+   "bytes": 16971,
+   "sha256": "343df60672a383c366c39a4d4a258fa1cae22184f9a42c5897fb8e7d9e23a651",
    "year": 1986,
    "method": "rf"
   },
@@ -3704,8 +3774,8 @@
   {
    "path": "sites/chuquicamata/masks/1987-rf.png",
    "kind": "mask",
-   "bytes": 20784,
-   "sha256": "19f13d876e38a1de71f69754cd737e16618ea64024796ed43846130aa3fe51d0",
+   "bytes": 18207,
+   "sha256": "5c5549415a003eaa45bc651ad56c3a712e626f216fa9f641e1870cf11f73313a",
    "year": 1987,
    "method": "rf"
   },
@@ -3720,8 +3790,8 @@
   {
    "path": "sites/chuquicamata/masks/1988-rf.png",
    "kind": "mask",
-   "bytes": 21606,
-   "sha256": "ddf72d2c5c9bef5102a784f30c652d2a38f81769e86b5ca6142de84987b6edd2",
+   "bytes": 17173,
+   "sha256": "947c0ddd8d520d3d7cd15a0009e2bbfd893b9116d8cbf2a301709e680169ad2c",
    "year": 1988,
    "method": "rf"
   },
@@ -3736,8 +3806,8 @@
   {
    "path": "sites/chuquicamata/masks/1989-rf.png",
    "kind": "mask",
-   "bytes": 21256,
-   "sha256": "da2e5d8ef004dd9143eac103a7d8207e41fec69c379a8fc765f67d1673522043",
+   "bytes": 16589,
+   "sha256": "289df01f295f3fbdada73c91a4bc932fe4159713d9ae9da1e4d07c2ecc9093ee",
    "year": 1989,
    "method": "rf"
   },
@@ -3752,8 +3822,8 @@
   {
    "path": "sites/chuquicamata/masks/1990-rf.png",
    "kind": "mask",
-   "bytes": 18727,
-   "sha256": "8f15d20ce74a22be0e5dfe819c3ade5920b295d379e0ae1b818753a6df034124",
+   "bytes": 18534,
+   "sha256": "9b3fd56495d952286c7e996f430a4637b8eab01e78c0f693cfc75845f6fce8a9",
    "year": 1990,
    "method": "rf"
   },
@@ -3768,8 +3838,8 @@
   {
    "path": "sites/chuquicamata/masks/1991-rf.png",
    "kind": "mask",
-   "bytes": 20356,
-   "sha256": "07b09c97ef36af79d950525244f797ecc3207e4c6f208ff88599a6222b56a82c",
+   "bytes": 17977,
+   "sha256": "099d30bae999010f96d5d4fce85cdaf50670441dcfa0336d62dffc8db64dba4b",
    "year": 1991,
    "method": "rf"
   },
@@ -3784,8 +3854,8 @@
   {
    "path": "sites/chuquicamata/masks/1992-rf.png",
    "kind": "mask",
-   "bytes": 21488,
-   "sha256": "afa70c2f2c81a77bf0787866630f4e8c2b2c977665834593b4a72bd7fc2504d3",
+   "bytes": 18164,
+   "sha256": "b8a6e7df3455b48c29cbe9964b3b5034c303c7354c28698b6cccd5acb4d3473a",
    "year": 1992,
    "method": "rf"
   },
@@ -3800,8 +3870,8 @@
   {
    "path": "sites/chuquicamata/masks/1993-rf.png",
    "kind": "mask",
-   "bytes": 18081,
-   "sha256": "20a66b9b3d211738ff1ac1c03db5b90d972bbf2a5a5aabd970de8f4d07e875e8",
+   "bytes": 18242,
+   "sha256": "dcdba825967640430d4914307928a6ec27af5fae649e1689fcf35482b8fb2fef",
    "year": 1993,
    "method": "rf"
   },
@@ -3816,8 +3886,8 @@
   {
    "path": "sites/chuquicamata/masks/1994-rf.png",
    "kind": "mask",
-   "bytes": 17227,
-   "sha256": "afa0704008315c5c2b2266943981d3a15160cbfd5c275a7a262f7e0f86259d9c",
+   "bytes": 20816,
+   "sha256": "b2439ac7a69773465dc91d83c8cb23559d4ca81604ecffd864fab41007029019",
    "year": 1994,
    "method": "rf"
   },
@@ -3832,8 +3902,8 @@
   {
    "path": "sites/chuquicamata/masks/1995-rf.png",
    "kind": "mask",
-   "bytes": 18438,
-   "sha256": "90d5132724a00151151cbb820503332aab120443a7bf51d2c56d5053f7be6238",
+   "bytes": 18080,
+   "sha256": "f07bcc5170b6fb0091684154255281e7ccadb2625096472b5ed5989ceed1c587",
    "year": 1995,
    "method": "rf"
   },
@@ -3848,8 +3918,8 @@
   {
    "path": "sites/chuquicamata/masks/1996-rf.png",
    "kind": "mask",
-   "bytes": 22079,
-   "sha256": "6c0ab10bc20c5a697f7c100198282ef08e15ba5d7ff4a6e4eeefcdae4462986d",
+   "bytes": 17163,
+   "sha256": "08be55d7fc5d080f8b8003f0173fd6449285b4f753543485f7e1c8cf6688cdc2",
    "year": 1996,
    "method": "rf"
   },
@@ -3864,8 +3934,8 @@
   {
    "path": "sites/chuquicamata/masks/1997-rf.png",
    "kind": "mask",
-   "bytes": 15694,
-   "sha256": "31c70d548ff3d3f5c892cb807afed834d8d6e392bbb7921351c9fad471fb9c25",
+   "bytes": 19600,
+   "sha256": "1351c7406c3a5a2d6ba80e60c5293780e3bc0b51aa48e4a37c8a3f1837b1fb9d",
    "year": 1997,
    "method": "rf"
   },
@@ -3880,8 +3950,8 @@
   {
    "path": "sites/chuquicamata/masks/1998-rf.png",
    "kind": "mask",
-   "bytes": 22950,
-   "sha256": "6bd624f35cba712c0ea8ad2fa49431a31527169714a3c1fb5e988bc57021ecb1",
+   "bytes": 18528,
+   "sha256": "b8a14c6e31a391fc421a3f17768f7893ca531160e0c0e8a47cfbda02b2994d0b",
    "year": 1998,
    "method": "rf"
   },
@@ -3896,8 +3966,8 @@
   {
    "path": "sites/chuquicamata/masks/1999-rf.png",
    "kind": "mask",
-   "bytes": 16800,
-   "sha256": "09fe740a1e4ddca08d16173a70e7b2fb2884fe549645c51caaa236d30f9925d3",
+   "bytes": 19896,
+   "sha256": "ae41f43e6b167d29e279bf91003eeb53846bcb3864a1e4602f6dca4cf9bade40",
    "year": 1999,
    "method": "rf"
   },
@@ -3912,8 +3982,8 @@
   {
    "path": "sites/chuquicamata/masks/2000-rf.png",
    "kind": "mask",
-   "bytes": 18391,
-   "sha256": "24d9e10a85321acd2e43b1a53e5a2be6f2d74dc773b542432b83d59b53b56fb6",
+   "bytes": 20793,
+   "sha256": "0a0d24d62675cc3be723dad5819d59df13b7188268398dc55f8aa238e03f88e7",
    "year": 2000,
    "method": "rf"
   },
@@ -3928,8 +3998,8 @@
   {
    "path": "sites/chuquicamata/masks/2001-rf.png",
    "kind": "mask",
-   "bytes": 12221,
-   "sha256": "e71332269720bfb471a6a503cc3db84f36d09ab2066fa4c53b42cf38c0441c53",
+   "bytes": 19982,
+   "sha256": "ed95ae9eb9f7ab091bd2843e3c3332b002a0ecba9a36e72b28f4a1d49df8a82c",
    "year": 2001,
    "method": "rf"
   },
@@ -3944,8 +4014,8 @@
   {
    "path": "sites/chuquicamata/masks/2002-rf.png",
    "kind": "mask",
-   "bytes": 20473,
-   "sha256": "79e03a97ee64d7f1bb27d8bdd778bdb752c986a34204a4f95166bd1bae167130",
+   "bytes": 17983,
+   "sha256": "72c333bba027a886269b1db02c4adeb1682c15123129667565b3bbb876adbce9",
    "year": 2002,
    "method": "rf"
   },
@@ -3960,8 +4030,8 @@
   {
    "path": "sites/chuquicamata/masks/2003-rf.png",
    "kind": "mask",
-   "bytes": 13738,
-   "sha256": "921a28108c8b08d9861c8007a56d3cc763d27803540ad6f5ce257b0a0889e6e9",
+   "bytes": 19877,
+   "sha256": "caa232562177d74ce34e048e95e6d23f5484cb0a73e3fd4c96f5e7a42f60800f",
    "year": 2003,
    "method": "rf"
   },
@@ -3976,8 +4046,8 @@
   {
    "path": "sites/chuquicamata/masks/2004-rf.png",
    "kind": "mask",
-   "bytes": 19743,
-   "sha256": "0ca8f27da7b430362bc8758756ddb5b6d5d9b2cd0bfb94793861227738bdaac5",
+   "bytes": 21980,
+   "sha256": "1262944bef9dce4ba99163b70d6144d4baf7afe93486853022e4b60cc1383fea",
    "year": 2004,
    "method": "rf"
   },
@@ -3992,8 +4062,8 @@
   {
    "path": "sites/chuquicamata/masks/2005-rf.png",
    "kind": "mask",
-   "bytes": 12300,
-   "sha256": "ff72735cce9cbb9e170721eb93b1ee41e74075a0d4d18425353d89a8d75b9542",
+   "bytes": 19452,
+   "sha256": "dae8d5f78f4948a99cf11ba47c649293cca306bc49299114f014aa7b4e4a613b",
    "year": 2005,
    "method": "rf"
   },
@@ -4008,8 +4078,8 @@
   {
    "path": "sites/chuquicamata/masks/2006-rf.png",
    "kind": "mask",
-   "bytes": 12838,
-   "sha256": "fbd34d500c23edef61fc8b978fc11d02e264ce91e5427a6e4bf1289ec948fd46",
+   "bytes": 20678,
+   "sha256": "97fabf0ebfef6b711c473f450c1d48f08c8e52f61ddc422b0f0b9dd5133da612",
    "year": 2006,
    "method": "rf"
   },
@@ -4024,8 +4094,8 @@
   {
    "path": "sites/chuquicamata/masks/2007-rf.png",
    "kind": "mask",
-   "bytes": 17225,
-   "sha256": "49bc8ee71e8523baa233dbfee368618e3a70e06a6af83baf5c72fbe87ebf742b",
+   "bytes": 23546,
+   "sha256": "7f21e5d54b15adc3daa0b67468f9ab4b20b8eee07a500720cb4d57693b4598ba",
    "year": 2007,
    "method": "rf"
   },
@@ -4040,8 +4110,8 @@
   {
    "path": "sites/chuquicamata/masks/2008-rf.png",
    "kind": "mask",
-   "bytes": 16317,
-   "sha256": "2f6c0b8b2938ccf9126b03574b605bdb0b98ea619bb4f4aa26c58aa2ce454730",
+   "bytes": 20699,
+   "sha256": "308e296dfec3faf641834d7e0f19d00f112a9798f42931819c9c50360b30a2b2",
    "year": 2008,
    "method": "rf"
   },
@@ -4056,8 +4126,8 @@
   {
    "path": "sites/chuquicamata/masks/2009-rf.png",
    "kind": "mask",
-   "bytes": 9703,
-   "sha256": "6acbcb2b9def94149a06cb5ab4a81e6eeab7b10dd7f713ee7ab578ccb407046c",
+   "bytes": 16258,
+   "sha256": "aa4bf5226aaf3c7b63ea5e85c7438d8e41c488a7b304850fe2d47e3878cc8dba",
    "year": 2009,
    "method": "rf"
   },
@@ -4072,8 +4142,8 @@
   {
    "path": "sites/chuquicamata/masks/2010-rf.png",
    "kind": "mask",
-   "bytes": 11860,
-   "sha256": "edf93e37487a97f28caa1d3695850c1b16ccd4616244f5b55df6f0c6cd71b65f",
+   "bytes": 16193,
+   "sha256": "f11b749b4590645bb84a7d0f626c6d572053ebd3836ec22ab3d40ce8b571bf4c",
    "year": 2010,
    "method": "rf"
   },
@@ -4088,8 +4158,8 @@
   {
    "path": "sites/chuquicamata/masks/2011-rf.png",
    "kind": "mask",
-   "bytes": 11998,
-   "sha256": "9eee3fe4a278d7419a9cc3eb2ee9c443e9a6e50bbe564ed49d1bdccd2d1c725c",
+   "bytes": 17843,
+   "sha256": "fc02195ead37a4f0e961851666bee2640c7104e0d53f85d0d1d1580dbcccd316",
    "year": 2011,
    "method": "rf"
   },
@@ -4104,8 +4174,8 @@
   {
    "path": "sites/chuquicamata/masks/2012-rf.png",
    "kind": "mask",
-   "bytes": 18652,
-   "sha256": "a2617b53d58ec57a6075352e8e9188fb1ecfce645d60053eab975fdb05a83851",
+   "bytes": 21766,
+   "sha256": "05419d7ea78131d946b9969455b50c0f445e14f235e534b8d7ebe4293281b034",
    "year": 2012,
    "method": "rf"
   },
@@ -4120,8 +4190,8 @@
   {
    "path": "sites/chuquicamata/masks/2013-rf.png",
    "kind": "mask",
-   "bytes": 18924,
-   "sha256": "a8cdf9d3c342cc03b348370295691270fe6975377ebdab2902ed6c0861564362",
+   "bytes": 22147,
+   "sha256": "44cd9bb2db0cc8ae4908ffeaf4cb2d539d592db92a71467424339d207b073000",
    "year": 2013,
    "method": "rf"
   },
@@ -4136,8 +4206,8 @@
   {
    "path": "sites/chuquicamata/masks/2014-rf.png",
    "kind": "mask",
-   "bytes": 18460,
-   "sha256": "773e99975f7fc20c1ecf290da2cc6d2ab51e9116eb21f1911f91482619f56280",
+   "bytes": 22499,
+   "sha256": "46a9fb866f06b6485d50252553b21f43b73736f9cb9306e16f7d76ca941449bf",
    "year": 2014,
    "method": "rf"
   },
@@ -4152,8 +4222,8 @@
   {
    "path": "sites/chuquicamata/masks/2015-rf.png",
    "kind": "mask",
-   "bytes": 14546,
-   "sha256": "8466549aae28563e1e9f9580820153e97e3421cd32dd8a3c130e18390393e61b",
+   "bytes": 19789,
+   "sha256": "9d062dcdad7eae29484243ebd65878e1f9ce4292915bde5322a71478615195ae",
    "year": 2015,
    "method": "rf"
   },
@@ -4168,8 +4238,8 @@
   {
    "path": "sites/chuquicamata/masks/2016-rf.png",
    "kind": "mask",
-   "bytes": 15476,
-   "sha256": "fa622c7760df3c4c4acc4fd3a68bf9455104e90b0eaa13dc2b90df2c78f72d11",
+   "bytes": 20018,
+   "sha256": "a51191f5a013ac6dacdd887a277258543929f7ec4ac5d683a8e13f04628a16c1",
    "year": 2016,
    "method": "rf"
   },
@@ -4184,10 +4254,18 @@
   {
    "path": "sites/chuquicamata/masks/2017-rf.png",
    "kind": "mask",
-   "bytes": 7801,
-   "sha256": "395c539a4a094e82ca81412bb5923f844c244e6ec3d9b54fafed9c94d593942f",
+   "bytes": 15990,
+   "sha256": "dd559c65cda079758befa1ce4b53606bfe367faf7459abd6293028e0f687cec1",
    "year": 2017,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 6861,
+   "sha256": "6d8b3648946d21bf22e92b085f32341257f8280e2530f0576abdf53ebdace7c5",
+   "year": 2017,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2018-otsu.png",
@@ -4200,10 +4278,18 @@
   {
    "path": "sites/chuquicamata/masks/2018-rf.png",
    "kind": "mask",
-   "bytes": 21541,
-   "sha256": "1e30263c68cc8fcb4509fca7116a5c3e61f3b6a8a3ac0d9ba2cd51387a9ef8bc",
+   "bytes": 24488,
+   "sha256": "db9d13239fc732858096c3c23472546b76fe35258f65663facfd62984f3a8d48",
    "year": 2018,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 5163,
+   "sha256": "17603a4cee2fd38e984e484e9dad657256df9e272eac8e921a3cdc197a7ac371",
+   "year": 2018,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2019-otsu.png",
@@ -4216,10 +4302,18 @@
   {
    "path": "sites/chuquicamata/masks/2019-rf.png",
    "kind": "mask",
-   "bytes": 6399,
-   "sha256": "fcbf32b2e81c9a216d9c8931c4a56552027bc801c457489e6cf28846d45350a4",
+   "bytes": 15785,
+   "sha256": "2cf72f9a0329c1587253d5c44e318d6f0359c46d428fb3ba2ab7690290f3cff7",
    "year": 2019,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 7662,
+   "sha256": "7f4fdf33c88526962e52947c66f63d937f8c9aedc449aab4691e731cd0f6dd0a",
+   "year": 2019,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2020-otsu.png",
@@ -4232,10 +4326,18 @@
   {
    "path": "sites/chuquicamata/masks/2020-rf.png",
    "kind": "mask",
-   "bytes": 20986,
-   "sha256": "0e091ebbf56e9f76bf2a9a72a7881e6d856965b15890120b6010ef96d016b53f",
+   "bytes": 23985,
+   "sha256": "84e36b71bc503faa938e58913330f7ca16704337b6f223406af399b5e87d4e39",
    "year": 2020,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4819,
+   "sha256": "bfb3ec2d8c9277c77950886d0d31c19a029691f361dbb68e75055802a040203b",
+   "year": 2020,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2021-otsu.png",
@@ -4248,10 +4350,18 @@
   {
    "path": "sites/chuquicamata/masks/2021-rf.png",
    "kind": "mask",
-   "bytes": 5338,
-   "sha256": "bf89263120ba0363a93bb9545c8abab65bd735dc6aaa3c24338eec8ef3f00a23",
+   "bytes": 18284,
+   "sha256": "b3da2b9c341793e6470747a56e56778cf41839a8c0883571674c26f72a779257",
    "year": 2021,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5557,
+   "sha256": "9b1f26287218485c49e57c3ec60f9a211ae71c7da268f2b22dfbef48754eafab",
+   "year": 2021,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2022-otsu.png",
@@ -4264,10 +4374,18 @@
   {
    "path": "sites/chuquicamata/masks/2022-rf.png",
    "kind": "mask",
-   "bytes": 22560,
-   "sha256": "43d35a09680a6ec85223fac27cc86121c9cbc656e2582a8a131301c1a18db325",
+   "bytes": 22910,
+   "sha256": "11b71834c23b604205d8e21af0d3c7e2c09d411e7b016954038d3bbcad333bff",
    "year": 2022,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 5838,
+   "sha256": "96ddd6d548cda46e7fd0a81dcb71f15ca895175c03de57e8cc0393d64550f2b6",
+   "year": 2022,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2023-otsu.png",
@@ -4280,10 +4398,18 @@
   {
    "path": "sites/chuquicamata/masks/2023-rf.png",
    "kind": "mask",
-   "bytes": 12800,
-   "sha256": "c0761d59957edb7daf7e5d1c225d63a0057954a69fe50043b7209ae29ad0fa08",
+   "bytes": 25811,
+   "sha256": "a06c522ca5dd04b1f89957a2741c166e33f042ac57cd1691d557ed265ec89d7f",
    "year": 2023,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 5344,
+   "sha256": "59ed89dfb7d5c21e39c4902dc34b119dc1f23c44f9077671fa1af7451391db6f",
+   "year": 2023,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2024-otsu.png",
@@ -4296,10 +4422,18 @@
   {
    "path": "sites/chuquicamata/masks/2024-rf.png",
    "kind": "mask",
-   "bytes": 12271,
-   "sha256": "06ff5796aa9e49dfc141fdc5a19b0c5031ff6618cc97fb8d77822e3bf97acd3b",
+   "bytes": 23930,
+   "sha256": "20732d5303340cfcd85c4b2af9c4b0d2c0ae4fb23aefcf20f620ce4a92f63dc5",
    "year": 2024,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 5107,
+   "sha256": "a79a154397dae44babdbdf465340faed3c727966368a72b5b68bfe5c779b41c7",
+   "year": 2024,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2025-otsu.png",
@@ -4312,10 +4446,18 @@
   {
    "path": "sites/chuquicamata/masks/2025-rf.png",
    "kind": "mask",
-   "bytes": 10088,
-   "sha256": "d8c5945ba9e3c7d074e07020cf890908a176328bf1240ccea20102e1aee53a11",
+   "bytes": 24481,
+   "sha256": "b84ee15c060bb86c9ba42e1d21e69cd28536e0258acd5acd4083f754a2fa0ddd",
    "year": 2025,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 4921,
+   "sha256": "3ee8e09f9964df9a5eaf5e6f0043b0c043b64730ad52979eaff33a502f4db5c2",
+   "year": 2025,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/masks/2026-otsu.png",
@@ -4328,10 +4470,18 @@
   {
    "path": "sites/chuquicamata/masks/2026-rf.png",
    "kind": "mask",
-   "bytes": 8666,
-   "sha256": "ad2b657d167ab520722ae62c0216b6ba7f5ccef2b4bbe5814610a8354d64e2db",
+   "bytes": 22247,
+   "sha256": "5d88d7ce2cf089d1b7ef08c9d2ea2c4707b5a6be2772ad582b767ec8d5ec1bcc",
    "year": 2026,
    "method": "rf"
+  },
+  {
+   "path": "sites/chuquicamata/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 4952,
+   "sha256": "3da2fba9216373a59cc7a91c186fc552fda6637bbcbc5898ef79dc460bac714d",
+   "year": 2026,
+   "method": "unet"
   },
   {
    "path": "sites/chuquicamata/polygons.geojson",

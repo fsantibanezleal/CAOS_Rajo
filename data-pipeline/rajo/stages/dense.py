@@ -125,8 +125,11 @@ def _read_date(g: dict, grid: Grid) -> tuple[np.ndarray, np.ndarray, np.ndarray]
 
 
 def _fresh_doc(site_id: str, grid: Grid) -> dict:
+    # status is "partial" while the walk through the archive checkpoints every twenty kept dates and
+    # "complete" only after the last candidate date; the series stage consumes a complete file only
     return {"site_id": site_id, "index": "bsi", "grid_m": grid.pixel_m, "envelope": f"reference polygons dilated by {ENVELOPE_M:.0f} m",
-            "min_clear_frac": MIN_CLEAR, "dates": [], "values": [], "ndvi": [], "mndwi": [], "clear_frac": [], "rejected": {}, "seen": []}
+            "min_clear_frac": MIN_CLEAR, "status": "partial", "n_candidates": 0,
+            "dates": [], "values": [], "ndvi": [], "mndwi": [], "clear_frac": [], "rejected": {}, "seen": []}
 
 
 def _sorted(doc: dict) -> dict:
@@ -158,6 +161,8 @@ def run_stage(ctx) -> None:
         todo = [g for g in groups if g["date"] not in seen and ctx.wants_year(int(g["date"][:4]))
                 and any(it["epsg"] == grid.epsg for it in g["items"])]
         ctx.log(f"{d.name}: {len(groups)} covering dates, {len(todo)} to read at {grid.pixel_m:.0f} m ({grid.width} px)")
+        doc["status"] = "partial"
+        doc["n_candidates"] = len(groups)
         n_done = 0
         with rasterio.Env(**GDAL_ENV):
             for g in todo:
@@ -188,5 +193,6 @@ def run_stage(ctx) -> None:
                 if n_done % 20 == 0:
                     write_json(out_path, _sorted(doc))
                     ctx.log(f"  {d.name}: {len(doc['dates'])} dates kept, {len(doc['rejected'])} rejected, last {g['date']} bsi {doc['values'][-1]:.3f}")
+        doc["status"] = "complete"
         write_json(out_path, _sorted(doc))
-        ctx.log(f"{d.name}: dense series with {len(doc['dates'])} dates ({len(doc['rejected'])} rejected) -> dense.json")
+        ctx.log(f"{d.name}: dense series with {len(doc['dates'])} dates ({len(doc['rejected'])} rejected) -> dense.json (complete)")

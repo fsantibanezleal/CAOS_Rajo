@@ -126,6 +126,11 @@ def run_stage(ctx) -> None:
         dense_path = d / "dense.json"
         if dense_path.exists():
             dd = read_json(dense_path)
+            if dd.get("status") != "complete":
+                # a checkpoint of a walk still in progress (or a file written before the status field
+                # existed) is not a series: the harmonic model would fit a truncated record
+                ctx.log(f"{d.name}: dense.json is {dd.get('status', 'without status')}, not used until the walk completes")
+                dd = {}
             if dd.get("dates"):
                 t0 = np.datetime64(dd["dates"][0])
                 t_days = [float((np.datetime64(x) - t0) / np.timedelta64(1, "D")) for x in dd["dates"]]

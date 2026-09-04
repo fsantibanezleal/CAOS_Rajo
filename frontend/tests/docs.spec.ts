@@ -17,6 +17,17 @@ test('the Methods page states twelve methods with equations and sources', async 
   expect(dois).toBeGreaterThanOrEqual(20);
   await expect(page.locator('.tex-error')).toHaveCount(0);
   await expect(page.locator('#benchmark')).toBeVisible();
+  // the held-out benchmark ships with the models: one table per split, five methods each, the U-Net
+  // row printing a pooled IoU that is a number in (0, 1)
+  for (const split of ['val', 'test', 'catalog']) {
+    const table = page.getByTestId(`benchmark-${split}`);
+    await expect(table, `benchmark table for ${split}`).toBeVisible();
+    expect(await table.locator('tbody tr').count()).toBe(5);
+    const unet = table.locator('tbody tr').filter({ hasText: /U-Net|M8/ });
+    const iou = Number((await unet.locator('td').nth(1).textContent())?.trim());
+    expect(iou, `${split} U-Net IoU is a number`).toBeGreaterThan(0);
+    expect(iou).toBeLessThan(1);
+  }
   expectNoErrors(errors);
 });
 
@@ -46,8 +57,12 @@ test('the About page and the architecture modal (five bilingual diagrams) work i
   const tabs = ['app', 'lanes', 'webapp', 'science', 'contracts'];
   for (const id of tabs) {
     await page.getByTestId(`arch-tab-${id}`).click();
-    const svg = modal.locator('[data-testid="arch-diagram"] svg');
-    await expect(svg, `tab ${id} inlines its diagram`).toBeVisible({ timeout: 15_000 });
+    // the container declares which tab's diagram it holds and whether it is ready: a tab switch must
+    // not be measured on the previous diagram (a race the full suite hit on a loaded machine)
+    const diagram = modal.locator(`[data-testid="arch-diagram"][data-tab="${id}"][data-state="ready"]`);
+    await expect(diagram, `tab ${id} inlines its diagram`).toBeVisible({ timeout: 15_000 });
+    const svg = diagram.locator('svg').first();
+    await expect(svg).toBeVisible();
     const en = await svg.locator('text.l-en').count();
     const es = await svg.locator('text.l-es').count();
     expect(en, `tab ${id} has English text nodes`).toBeGreaterThan(20);
@@ -64,7 +79,8 @@ test('the About page and the architecture modal (five bilingual diagrams) work i
   await page.getByTestId('lang-btn').click();
   await page.getByTestId('arch-btn').click();
   await expect(page.getByTestId('arch-modal')).toHaveAttribute('data-arch-lang', 'es');
-  const svgEs = page.locator('[data-testid="arch-diagram"] svg');
+  await expect(page.locator('[data-testid="arch-diagram"][data-state="ready"]')).toBeVisible({ timeout: 15_000 });
+  const svgEs = page.locator('[data-testid="arch-diagram"] svg').first();
   await expect(svgEs).toBeVisible({ timeout: 15_000 });
   const visibleEn = await svgEs.locator('text.l-en').evaluateAll((els) => els.filter((e) => getComputedStyle(e).display !== 'none').length);
   const visibleEs2 = await svgEs.locator('text.l-es').evaluateAll((els) => els.filter((e) => getComputedStyle(e).display !== 'none').length);

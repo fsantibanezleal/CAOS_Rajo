@@ -18,19 +18,22 @@ export function ArchitectureModal({ onClose }: { onClose: () => void }) {
   const { t } = useTranslation();
   const lang = useUI((s) => s.lang);
   const [active, setActive] = useState(0);
-  const [svg, setSvg] = useState<string>('');
-  const [failed, setFailed] = useState(false);
+  // the inlined markup is keyed by its file, so a tab switch never shows the previous diagram for a
+  // frame (the gates count the text nodes of the tab they clicked, and the render declares its state)
+  const [loaded, setLoaded] = useState<{ file: string; svg: string } | null>(null);
+  const [failed, setFailed] = useState<string | null>(null);
   const dialogRef = useRef<HTMLDivElement | null>(null);
   const tab = ARCH_TABS[active] ?? ARCH_TABS[0]!;
+  const svg = loaded && loaded.file === tab.svg ? loaded.svg : '';
+  const state = svg ? 'ready' : failed === tab.svg ? 'missing' : 'loading';
 
   useEffect(() => {
     let cancelled = false;
-    setSvg('');
-    setFailed(false);
-    fetch(svgUrl(tab.svg), { cache: 'no-cache' })
+    const file = tab.svg;
+    fetch(svgUrl(file), { cache: 'no-cache' })
       .then((r) => (r.ok && (r.headers.get('content-type') ?? '').includes('svg') ? r.text() : Promise.reject(new Error(String(r.status)))))
-      .then((txt) => !cancelled && setSvg(txt))
-      .catch(() => !cancelled && setFailed(true));
+      .then((txt) => !cancelled && setLoaded({ file, svg: txt }))
+      .catch(() => !cancelled && setFailed(file));
     return () => {
       cancelled = true;
     };
@@ -70,10 +73,10 @@ export function ArchitectureModal({ onClose }: { onClose: () => void }) {
           ))}
         </div>
         <div className="arch-body">
-          <div className="arch-diagram" data-testid="arch-diagram">
+          <div className="arch-diagram" data-testid="arch-diagram" data-tab={tab.id} data-state={state}>
             {svg ? (
               <div className="arch-svg-wrap" dangerouslySetInnerHTML={{ __html: svg }} />
-            ) : failed ? (
+            ) : state === 'missing' ? (
               <p className="bad small">{t('arch.diagramMissing')} ({tab.svg})</p>
             ) : (
               <p className="muted small">{t('common.loading')}</p>

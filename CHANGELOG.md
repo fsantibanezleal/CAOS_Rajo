@@ -6,6 +6,21 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.002] - 2026-09-04
+
+The dense Sentinel-2 series for all thirty sites.
+
+### Added
+
+- Dense (every clear date since 2017) envelope series of BSI, NDVI and MNDWI at 60 m for all thirty
+  sites, walked to completion (the busiest windows hold 600 to 1,000 candidate dates; Morenci 916 clear
+  dates kept, Grasberg 17; 11,506 clear dates in total), folded into every `series.json` with the
+  harmonic model and its breaks (M11, 51 breaks across the thirty sites), and rendered in the series
+  drawer's dense view.
+- The walk runs as year-range sandboxes seeded from a site's checkpoint and merged back, which is
+  how a latency-bound archive walk parallelises; launches are staggered so a burst of interpreters
+  does not exhaust the Windows page file.
+
 ## [0.02.001] - 2026-09-03
 
 Fixes from the first live run of 0.02.000.

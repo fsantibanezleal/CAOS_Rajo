@@ -6,6 +6,14 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.003] - 2026-09-04
+
+### Fixed
+
+- The Atlas production strip printed a zero in its site-count column while the catalog was still
+  loading; the column now holds a dash until the catalog arrives, and the docs gate waits for it. A
+  loading state must not read as a measured zero.
+
 ## [0.02.002] - 2026-09-04
 
 The dense Sentinel-2 series for all thirty sites.

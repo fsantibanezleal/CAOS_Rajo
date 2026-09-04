@@ -104,7 +104,11 @@ test('the Atlas prints the copper production strip from the USGS and Cochilco ta
   await expect(chile).toContainText('5,300');
   await expect(chile).toContainText('5,415 (Cochilco)');
   await expect(chile).toContainText('180,000');
-  // the site counts come from the catalog: Chile hosts the copper-chile group
+  // the site counts come from the catalog, and until it arrives the column holds a dash rather than
+  // a false zero; once it has, Chile hosts the copper-chile group
+  await expect
+    .poll(async () => (await chile.locator('td').nth(1).textContent())?.trim(), { message: 'the Chile site count leaves the loading dash', timeout: 30_000 })
+    .not.toBe('-');
   const chileSites = Number((await chile.locator('td').nth(1).textContent()) ?? '0');
   expect(chileSites).toBeGreaterThanOrEqual(10);
   await expect(strip.locator('tbody tr').last()).toContainText('23,000');

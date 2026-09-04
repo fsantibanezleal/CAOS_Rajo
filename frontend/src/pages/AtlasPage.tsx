@@ -10,6 +10,10 @@ export function AtlasPage() {
   const { t } = useTranslation();
   const lang = useUI((s) => s.lang);
   const { catalog, error } = useCatalog();
+  // the counts come from the catalog, which arrives after the first paint: until it does the column
+  // holds a dash. Printing 0 there is a wrong number on screen, not a loading state (found on the
+  // deployed site while capturing the Atlas, 2026-09-04).
+  const counted = !!catalog;
   const copperSites = new Map<string, number>();
   for (const s of catalog?.sites ?? []) {
     if (s.categories.some((c) => c.startsWith('copper'))) copperSites.set(s.country, (copperSites.get(s.country) ?? 0) + 1);
@@ -67,7 +71,7 @@ export function AtlasPage() {
                 <td>
                   {c.name[lang === 'es' ? 'es' : 'en']} <span className="mono faint">{c.iso3}</span>
                 </td>
-                <td className="mono">{copperSites.get(c.iso3) ?? 0}</td>
+                <td className="mono">{counted ? (copperSites.get(c.iso3) ?? 0) : '-'}</td>
                 <td className="mono">{kt(c.mine2024)}</td>
                 <td className="mono">{kt(c.mine2025e)}</td>
                 <td className="mono">{c.reported2025 ? `${kt(c.reported2025.value)} (Cochilco)` : ''}</td>
@@ -76,7 +80,7 @@ export function AtlasPage() {
             ))}
             <tr>
               <td>{t('atlas.production.other')}</td>
-              <td className="mono">{other}</td>
+              <td className="mono">{counted ? other : '-'}</td>
               <td className="mono">{kt(2850)}</td>
               <td className="mono">{kt(3000)}</td>
               <td className="mono"></td>
@@ -86,7 +90,7 @@ export function AtlasPage() {
               <td>
                 <strong>{t('atlas.production.world')}</strong>
               </td>
-              <td className="mono">{[...copperSites.values()].reduce((a, b) => a + b, 0)}</td>
+              <td className="mono">{counted ? [...copperSites.values()].reduce((a, b) => a + b, 0) : '-'}</td>
               <td className="mono">{kt(COPPER_WORLD.mine2024)}</td>
               <td className="mono">{kt(COPPER_WORLD.mine2025e)}</td>
               <td className="mono"></td>

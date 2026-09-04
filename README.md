@@ -20,7 +20,7 @@ to a named, dated source.
 
 ## Status
 
-Version 0.02.002 (2026-09-04; 0.02.000 plus the fixes from its first live run and the complete dense series): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
+Version 0.02.003 (2026-09-04; 0.02.000 plus the fixes from its first live run and the complete dense series): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
 2026 baked and validated for every site (Landsat then Sentinel-2), the classical and learned masks, the
 mined-area series with their change points, and the elevation difference between the year-2000 radar
 surface and the 2011 to 2015 Copernicus surface. Live: the latest clear Sentinel-2 scene read in the

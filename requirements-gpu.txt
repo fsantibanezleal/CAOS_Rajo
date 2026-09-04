@@ -1,4 +1,6 @@
 # GPU training lane (the U-Net). Installed on top of requirements-precompute.txt when a CUDA GPU exists.
-# Install with:  python -m pip install -r requirements-gpu.txt --index-url https://download.pytorch.org/whl/cu124
+# Install with:  python -m pip install -r requirements-gpu.txt --index-url https://download.pytorch.org/whl/cu126
+# (torch 2.14 ships cu126, cu128 and cu130 wheels; the default PyPI wheel is CPU-only and training then
+# silently runs on the CPU: check torch.cuda.is_available() after installing.)
 torch==2.14.0
 torchvision==0.29.0

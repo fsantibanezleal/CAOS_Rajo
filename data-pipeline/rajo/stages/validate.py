@@ -36,11 +36,22 @@ def run_stage(ctx) -> None:
             elif sha256_of(p) != f["sha256"]:
                 errors.append(f"{e['site_id']}: sha256 drift {f['path']}")
         years_have = {fr["year"] for fr in m["frames"]}
-        gaps = (m.get("series") or {}).get("gaps", {}) if m.get("series") else {}
+        gaps = dict(m.get("gaps") or {})
+        if m.get("series"):
+            gaps.update(m["series"].get("gaps") or {})
         if m["frames"]:
             for y in range(m["site"]["first_year"], LAST_YEAR + 1):
                 if y not in years_have and str(y) not in gaps:
                     errors.append(f"{e['site_id']}: year {y} has neither a frame nor a recorded gap reason")
+        # a series must name every method it declares consistently and never a year outside the frames
+        s = m.get("series")
+        if s:
+            for method, values in (s.get("area_km2") or {}).items():
+                if len(values) != len(s.get("years", [])):
+                    errors.append(f"{e['site_id']}: series {method} has {len(values)} values for {len(s.get('years', []))} years")
+            extra = set(s.get("years", [])) - years_have
+            if extra:
+                errors.append(f"{e['site_id']}: series names years without a frame: {sorted(extra)[:5]}")
     if len(versions) != 1:
         errors.append(f"mixed engine versions {sorted(versions)}")
     if errors:

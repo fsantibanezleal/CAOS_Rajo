@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 from pathlib import Path
 from typing import Any
 
@@ -32,7 +33,8 @@ def file_ref(site_dir: Path, derived_root: Path, path: Path, kind: str, **extra:
 def build_site_manifest(*, site: dict[str, Any], window: dict[str, Any], polygons: dict[str, Any],
                         frames: list[dict[str, Any]], series: dict[str, Any] | None,
                         dem: dict[str, Any] | None, models: list[dict[str, Any]],
-                        files: list[dict[str, Any]], engine_version: str) -> dict[str, Any]:
+                        files: list[dict[str, Any]], engine_version: str,
+                        gaps: dict[str, str] | None = None) -> dict[str, Any]:
     return {
         "schema": SITE_SCHEMA,
         "engine_version": engine_version,
@@ -41,6 +43,8 @@ def build_site_manifest(*, site: dict[str, Any], window: dict[str, Any], polygon
         "window": window,
         "polygons": polygons,
         "frames": sorted(frames, key=lambda f: (f["year"], f["date"])),
+        # a year without a frame carries its reason here (the validate stage refuses a silent hole)
+        "gaps": dict(sorted((gaps or {}).items())),
         "series": series,
         "dem": dem,
         "models": models,
@@ -58,8 +62,14 @@ def build_catalog(entries: list[dict[str, Any]], engine_version: str) -> dict[st
 
 
 def write_json(path: Path, obj: Any) -> None:
+    """LF on every platform (artifacts are hashed byte for byte and git stores them with LF) and atomic:
+    parallel workers and a running export or series stage may read a side-car while another process
+    writes it, so the bytes land in a temporary file first and are renamed into place."""
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8")
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    tmp.write_text(json.dumps(obj, indent=1, ensure_ascii=False, sort_keys=False) + "\n", encoding="utf-8",
+                   newline="\n")
+    os.replace(tmp, path)
 
 
 def read_json(path: Path) -> Any:

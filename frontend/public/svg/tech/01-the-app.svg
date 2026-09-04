@@ -1,0 +1,176 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" width="900" class="a" role="img" aria-label="Rajo: what the app is and how it was designed and built">
+  <!-- Hand-authored (ADR-0058). Every colour is a CSS variable of the app palette; text nodes carry both
+       languages (l-en / l-es) and identifiers are l-neutral. -->
+  <style>
+    .a text { font-family: var(--font-sans, system-ui, sans-serif); font-size: 11px; fill: var(--fg); }
+    .a .mono { font-family: var(--font-mono, ui-monospace, monospace); font-size: 10.5px; }
+    .a .ttl { font-size: 13.5px; font-weight: 700; }
+    .a .h { font-size: 11.5px; font-weight: 700; }
+    .a .sub { fill: var(--fg-muted); font-size: 10px; }
+    .a .bx { fill: var(--surface-2); stroke: var(--border-strong); stroke-width: 1.2; }
+    .a .bx-acc { stroke: var(--accent); }
+    .a .bx-cyan { stroke: var(--cyan); }
+    .a .bx-good { stroke: var(--good); }
+    .a .bx-mag { stroke: var(--magenta); }
+    .a .ln { fill: none; stroke: var(--border-strong); stroke-width: 1.4; marker-end: url(#arr); }
+    .a .ln-acc { stroke: var(--accent); }
+    .a .acc { fill: var(--accent); }
+    .a .cyan { fill: var(--cyan); }
+    .a .good { fill: var(--good); }
+    .a .mag { fill: var(--magenta); }
+    .a .globe { fill: none; stroke: var(--accent); stroke-width: 2; }
+    .a .pit { fill: none; stroke: var(--accent); stroke-width: 1.4; opacity: 0.75; }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--border-strong)" />
+    </marker>
+  </defs>
+
+  <!-- title -->
+  <text x="20" y="26" class="ttl l-en">Rajo: open pits seen from orbit, forty years, computed in the browser</text>
+  <text x="20" y="26" class="ttl l-es">Rajo: rajos vistos desde la orbita, cuarenta anos, calculados en el navegador</text>
+
+  <!-- the product picture: globe + window + years -->
+  <rect x="20" y="44" width="430" height="196" rx="8" class="bx" />
+  <text x="34" y="64" class="h l-en">What it is</text>
+  <text x="34" y="64" class="h l-es">Que es</text>
+  <ellipse cx="86" cy="150" rx="50" ry="30" class="globe" />
+  <ellipse cx="86" cy="155" rx="33" ry="19" class="pit" />
+  <ellipse cx="86" cy="159" rx="18" ry="10" class="pit" />
+  <circle cx="124" cy="112" r="3.5" class="cyan" />
+  <text x="150" y="92" class="l-en">30 sites, 12 in Chile: copper, iron, coal, gold,</text>
+  <text x="150" y="92" class="l-es">30 sitios, 12 en Chile: cobre, hierro, carbon, oro,</text>
+  <text x="150" y="107" class="l-en">oil sands, diamonds and lithium ponds</text>
+  <text x="150" y="107" class="l-es">arenas bituminosas, diamantes y pozas de litio</text>
+  <text x="150" y="126" class="l-en">one window of 12 to 40 km per site, own UTM grid</text>
+  <text x="150" y="126" class="l-es">una ventana de 12 a 40 km por sitio, grilla UTM propia</text>
+  <text x="150" y="145" class="l-en">one frame per year, 1985 to today:</text>
+  <text x="150" y="145" class="l-es">un cuadro por ano, de 1985 a hoy:</text>
+  <text x="150" y="160" class="mono l-neutral">Landsat 5/7/8/9 (30 m) to 2016</text>
+  <text x="150" y="174" class="mono l-neutral">Sentinel-2 (10 m) from 2017</text>
+  <text x="150" y="193" class="l-en">live reads of the archive, three analysis lanes,</text>
+  <text x="150" y="193" class="l-es">lecturas en vivo del archivo, tres carriles,</text>
+  <text x="150" y="208" class="l-en">no backend, nothing uploaded, every number traceable</text>
+  <text x="150" y="208" class="l-es">sin backend, nada se sube, cada numero trazable</text>
+  <text x="34" y="228" class="sub l-en">Chilean copper is the core of the catalog; the world's icons are the context.</text>
+  <text x="34" y="228" class="sub l-es">El cobre chileno es el nucleo del catalogo; los iconos del mundo son el contexto.</text>
+
+  <!-- the four questions -->
+  <rect x="470" y="44" width="410" height="196" rx="8" class="bx" />
+  <text x="484" y="64" class="h l-en">Four questions, twelve methods</text>
+  <text x="484" y="64" class="h l-es">Cuatro preguntas, doce metodos</text>
+  <rect x="484" y="76" width="188" height="70" rx="6" class="bx bx-cyan" />
+  <text x="494" y="93" class="h l-en">What am I looking at?</text>
+  <text x="494" y="93" class="h l-es">Que estoy mirando?</text>
+  <text x="494" y="109" class="mono l-neutral">M1 composites M2 indices</text>
+  <text x="494" y="124" class="mono l-neutral">M3 mineral ratios</text>
+  <text x="494" y="139" class="sub l-en">live on the latest S2 scene</text>
+  <text x="494" y="139" class="sub l-es">en vivo sobre la ultima escena S2</text>
+  <rect x="680" y="76" width="188" height="70" rx="6" class="bx bx-acc" />
+  <text x="690" y="93" class="h l-en">Where is the mine?</text>
+  <text x="690" y="93" class="h l-es">Donde esta la mina?</text>
+  <text x="690" y="109" class="mono l-neutral">M4 Otsu M5 k-means M6 SAM</text>
+  <text x="690" y="124" class="mono l-neutral">M7 forest M8 U-Net</text>
+  <text x="690" y="139" class="sub l-en">live and baked; models held out</text>
+  <text x="690" y="139" class="sub l-es">vivo y cocinado; sitios retenidos</text>
+  <rect x="484" y="156" width="188" height="70" rx="6" class="bx bx-good" />
+  <text x="494" y="173" class="h l-en">How did it change?</text>
+  <text x="494" y="173" class="h l-es">Como cambio?</text>
+  <text x="494" y="189" class="mono l-neutral">M9 CVA M10 CUSUM+PELT</text>
+  <text x="494" y="204" class="mono l-neutral">M11 harmonic breaks</text>
+  <text x="494" y="219" class="sub l-en">series; breaks rerun live</text>
+  <text x="494" y="219" class="sub l-es">series; quiebres en vivo</text>
+  <rect x="680" y="156" width="188" height="70" rx="6" class="bx bx-mag" />
+  <text x="690" y="173" class="h l-en">How much rock moved?</text>
+  <text x="690" y="173" class="h l-es">Cuanta roca se movio?</text>
+  <text x="690" y="189" class="mono l-neutral">M12 SRTM 2000 vs COP 2011-15</text>
+  <text x="690" y="204" class="mono l-neutral">floor, cut/fill, profiles</text>
+  <text x="690" y="219" class="sub l-en">baked; epoch and profile live</text>
+  <text x="690" y="219" class="sub l-es">cocinado; epoca y perfil en vivo</text>
+
+  <!-- design-build lifecycle -->
+  <text x="20" y="272" class="h l-en">Design-build lifecycle (research first, plan validated, then every unit built vertically: code, tests, docs)</text>
+  <text x="20" y="272" class="h l-es">Ciclo de diseno y construccion (investigacion primero, plan validado, luego cada unidad completa: codigo, pruebas, docs)</text>
+
+  <rect x="20" y="286" width="126" height="86" rx="7" class="bx" />
+  <text x="30" y="304" class="h l-en">1 Research</text>
+  <text x="30" y="304" class="h l-es">1 Investigacion</text>
+  <text x="30" y="320" class="sub l-en">sources probed for CORS,</text>
+  <text x="30" y="320" class="sub l-es">fuentes probadas (CORS,</text>
+  <text x="30" y="333" class="sub l-en">range reads, licences;</text>
+  <text x="30" y="333" class="sub l-es">rango, licencias);</text>
+  <text x="30" y="346" class="sub l-en">35 DOIs resolved</text>
+  <text x="30" y="346" class="sub l-es">35 DOI resueltos</text>
+  <text x="30" y="359" class="mono l-neutral">research-00..07</text>
+
+  <path d="M146,329 L166,329" class="ln" />
+  <rect x="166" y="286" width="126" height="86" rx="7" class="bx" />
+  <text x="176" y="304" class="h l-en">2 Contracts</text>
+  <text x="176" y="304" class="h l-es">2 Contratos</text>
+  <text x="176" y="320" class="sub l-en">ingestion: the catalog</text>
+  <text x="176" y="320" class="sub l-es">ingesta: el catalogo</text>
+  <text x="176" y="333" class="sub l-en">validated on polygons;</text>
+  <text x="176" y="333" class="sub l-es">validado con poligonos;</text>
+  <text x="176" y="346" class="sub l-en">artifact: manifests, sha256</text>
+  <text x="176" y="346" class="sub l-es">artefacto: sha256</text>
+  <text x="176" y="359" class="mono l-neutral">contracts.py</text>
+
+  <path d="M292,329 L312,329" class="ln" />
+  <rect x="312" y="286" width="126" height="86" rx="7" class="bx bx-acc" />
+  <text x="322" y="304" class="h l-en">3 Bake</text>
+  <text x="322" y="304" class="h l-es">3 Cocina</text>
+  <text x="322" y="320" class="sub l-en">staged, detached, parallel</text>
+  <text x="322" y="320" class="sub l-es">etapas, paralela</text>
+  <text x="322" y="333" class="mono l-neutral">catalog, scenes,</text>
+  <text x="322" y="346" class="mono l-neutral">frames, masks, ...</text>
+  <text x="322" y="359" class="mono l-neutral">run.py &lt;stage&gt;</text>
+
+  <path d="M438,329 L458,329" class="ln" />
+  <rect x="458" y="286" width="126" height="86" rx="7" class="bx bx-mag" />
+  <text x="468" y="304" class="h l-en">4 Train</text>
+  <text x="468" y="304" class="h l-es">4 Entrenar</text>
+  <text x="468" y="320" class="sub l-en">Jasansky 2024 tiles,</text>
+  <text x="468" y="320" class="sub l-es">teselas Jasansky 2024,</text>
+  <text x="468" y="333" class="sub l-en">catalog sites held out,</text>
+  <text x="468" y="333" class="sub l-es">catalogo retenido,</text>
+  <text x="468" y="346" class="sub l-en">ONNX with parity gates</text>
+  <text x="468" y="346" class="sub l-es">ONNX con paridad</text>
+  <text x="468" y="359" class="mono l-neutral">train_*.py</text>
+
+  <path d="M584,329 L604,329" class="ln" />
+  <rect x="604" y="286" width="126" height="86" rx="7" class="bx bx-cyan" />
+  <text x="614" y="304" class="h l-en">5 Web app</text>
+  <text x="614" y="304" class="h l-es">5 App web</text>
+  <text x="614" y="320" class="sub l-en">React 19, Vite, MapLibre,</text>
+  <text x="614" y="320" class="sub l-es">React 19, Vite, MapLibre,</text>
+  <text x="614" y="333" class="sub l-en">uPlot, onnxruntime-web,</text>
+  <text x="614" y="333" class="sub l-es">uPlot, onnxruntime-web,</text>
+  <text x="614" y="346" class="sub l-en">geotiff.js; EN/ES, themes</text>
+  <text x="614" y="346" class="sub l-es">geotiff.js; EN/ES, temas</text>
+  <text x="614" y="359" class="mono l-neutral">frontend/src</text>
+
+  <path d="M730,329 L750,329" class="ln" />
+  <rect x="750" y="286" width="130" height="86" rx="7" class="bx bx-good" />
+  <text x="760" y="304" class="h l-en">6 Deploy + gates</text>
+  <text x="760" y="304" class="h l-es">6 Desplegar y gates</text>
+  <text x="760" y="320" class="sub l-en">static site over ssh, atomic</text>
+  <text x="760" y="320" class="sub l-es">estatico por ssh, atomico</text>
+  <text x="760" y="333" class="sub l-en">swap, live content check;</text>
+  <text x="760" y="333" class="sub l-es">swap, chequeo en vivo;</text>
+  <text x="760" y="346" class="sub l-en">Playwright gates, CI</text>
+  <text x="760" y="346" class="sub l-es">compuertas Playwright, CI</text>
+  <text x="760" y="359" class="mono l-neutral">deploy.ps1  tests/</text>
+
+  <!-- the honesty line -->
+  <rect x="20" y="392" width="860" height="108" rx="8" class="bx" />
+  <text x="34" y="412" class="h l-en">What proves it is real, not a demo</text>
+  <text x="34" y="412" class="h l-es">Lo que prueba que es real, no una demo</text>
+  <text x="34" y="432" class="l-en">The committed artifacts (frames, masks, series, DEM deltas, terrain tiles) and the ONNX models are the product; every file is named in a manifest with its bytes and sha256.</text>
+  <text x="34" y="432" class="l-es">Los artefactos versionados (cuadros, mascaras, series, deltas de DEM, teselas) y los modelos ONNX son el producto; cada archivo tiene bytes y sha256 en un manifiesto.</text>
+  <text x="34" y="450" class="l-en">Every number on screen is computed in the browser from open data or read from a baked, checksummed artifact; a year without a frame carries its reason, never a silent hole.</text>
+  <text x="34" y="450" class="l-es">Cada numero en pantalla se calcula en el navegador desde datos abiertos o se lee de un artefacto cocinado y verificado; un ano sin cuadro lleva su razon, nunca un hueco.</text>
+  <text x="34" y="468" class="l-en">Learned models report held-out scores on tiles that never touched a catalog site; the worse arm is what the documentation quotes.</text>
+  <text x="34" y="468" class="l-es">Los modelos aprendidos reportan puntajes retenidos sobre teselas que nunca tocaron un sitio del catalogo; la documentacion cita el peor brazo.</text>
+  <text x="34" y="486" class="mono l-neutral">VERSION, CHANGELOG, git tag; MIT code; data under their own licences (CC BY-SA 4.0 polygons, Copernicus, USGS, EOX)</text>
+</svg>

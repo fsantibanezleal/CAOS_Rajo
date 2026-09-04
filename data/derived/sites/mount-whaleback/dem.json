@@ -1,0 +1,98 @@
+{
+ "site_id": "mount-whaleback",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -96.3,
+  96.3
+ ],
+ "geoid_offset_m": 0.366,
+ "stable_bias_m": -2.095,
+ "noise_floor_m": 1.56,
+ "tau_m": 3.12,
+ "stable_ground_px": 173310,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 349945376,
+ "fill_volume_m3": 323081536,
+ "envelope": {
+  "cut_m3": 349945376,
+  "fill_m3": 323081536,
+  "cut_km2": 9.4698,
+  "fill_km2": 16.2189,
+  "min_m": -214.4,
+  "max_m": 120.0
+ },
+ "window": {
+  "cut_m3": 371514944,
+  "fill_m3": 354598016,
+  "cut_km2": 14.8176,
+  "fill_km2": 23.7321,
+  "min_m": -214.4,
+  "max_m": 120.0
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/852/580.png",
+  "terrain/11/1704/1160.png",
+  "terrain/11/1704/1161.png",
+  "terrain/11/1705/1160.png",
+  "terrain/11/1705/1161.png",
+  "terrain/12/3408/2320.png",
+  "terrain/12/3408/2321.png",
+  "terrain/12/3408/2322.png",
+  "terrain/12/3409/2320.png",
+  "terrain/12/3409/2321.png",
+  "terrain/12/3409/2322.png",
+  "terrain/12/3410/2320.png",
+  "terrain/12/3410/2321.png",
+  "terrain/12/3410/2322.png",
+  "terrain/13/6817/4641.png",
+  "terrain/13/6817/4642.png",
+  "terrain/13/6817/4643.png",
+  "terrain/13/6817/4644.png",
+  "terrain/13/6817/4645.png",
+  "terrain/13/6818/4641.png",
+  "terrain/13/6818/4642.png",
+  "terrain/13/6818/4643.png",
+  "terrain/13/6818/4644.png",
+  "terrain/13/6818/4645.png",
+  "terrain/13/6819/4641.png",
+  "terrain/13/6819/4642.png",
+  "terrain/13/6819/4643.png",
+  "terrain/13/6819/4644.png",
+  "terrain/13/6819/4645.png",
+  "terrain/13/6820/4641.png",
+  "terrain/13/6820/4642.png",
+  "terrain/13/6820/4643.png",
+  "terrain/13/6820/4644.png",
+  "terrain/13/6820/4645.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 415.0,
+  "max": 791.0
+ },
+ "cop_stats": {
+  "min": 358.9,
+  "max": 791.3
+ }
+}

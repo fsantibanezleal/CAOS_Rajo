@@ -1,0 +1,94 @@
+{
+ "site_id": "radomiro-tomic",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -158.0,
+  158.0
+ ],
+ "geoid_offset_m": -0.464,
+ "stable_bias_m": -2.783,
+ "noise_floor_m": 1.592,
+ "tau_m": 3.184,
+ "stable_ground_px": 73166,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 1425004032,
+ "fill_volume_m3": 1020465216,
+ "envelope": {
+  "cut_m3": 1425004032,
+  "fill_m3": 1020465216,
+  "cut_km2": 18.3807,
+  "fill_km2": 29.0052,
+  "min_m": -399.0,
+  "max_m": 116.1
+ },
+ "window": {
+  "cut_m3": 1452219264,
+  "fill_m3": 1134263936,
+  "cut_km2": 24.5925,
+  "fill_km2": 48.8934,
+  "min_m": -399.0,
+  "max_m": 116.1
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/315/576.png",
+  "terrain/10/315/577.png",
+  "terrain/10/316/576.png",
+  "terrain/10/316/577.png",
+  "terrain/11/631/1153.png",
+  "terrain/11/631/1154.png",
+  "terrain/11/632/1153.png",
+  "terrain/11/632/1154.png",
+  "terrain/12/1263/2306.png",
+  "terrain/12/1263/2307.png",
+  "terrain/12/1263/2308.png",
+  "terrain/12/1264/2306.png",
+  "terrain/12/1264/2307.png",
+  "terrain/12/1264/2308.png",
+  "terrain/13/2526/4613.png",
+  "terrain/13/2526/4614.png",
+  "terrain/13/2526/4615.png",
+  "terrain/13/2526/4616.png",
+  "terrain/13/2527/4613.png",
+  "terrain/13/2527/4614.png",
+  "terrain/13/2527/4615.png",
+  "terrain/13/2527/4616.png",
+  "terrain/13/2528/4613.png",
+  "terrain/13/2528/4614.png",
+  "terrain/13/2528/4615.png",
+  "terrain/13/2528/4616.png",
+  "terrain/13/2529/4613.png",
+  "terrain/13/2529/4614.png",
+  "terrain/13/2529/4615.png",
+  "terrain/13/2529/4616.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 2220.0,
+  "max": 3688.0
+ },
+ "cop_stats": {
+  "min": 2091.6,
+  "max": 3688.8
+ }
+}

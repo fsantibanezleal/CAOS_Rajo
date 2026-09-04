@@ -4,10 +4,11 @@
 // the deep link. A gate that only fetches URLs is not navigation.
 import { expect, test } from '@playwright/test';
 
+import { collectErrors, expectNoErrors, gotoRajo } from './_helpers';
+
 test('language and theme toggles change what is on screen; every route is reachable by click', async ({ page }) => {
-  const errors: string[] = [];
-  page.on('pageerror', (e) => errors.push(e.message));
-  await page.goto('/');
+  const errors = collectErrors(page);
+  await gotoRajo(page, '/');
   await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
 
   const navBefore = await page.locator('.hdr nav a').allTextContents();
@@ -39,13 +40,12 @@ test('language and theme toggles change what is on screen; every route is reacha
   await expect(page.getByTestId('terrain-btn')).toHaveAttribute('aria-pressed', 'false');
   await page.getByTestId('labels-btn').click();
   await expect(page.getByTestId('labels-btn')).toHaveAttribute('aria-pressed', 'false');
-  expect(errors).toEqual([]);
+  expectNoErrors(errors);
 });
 
 test('the atlas lists the catalog and a picked site shows its card, polygons and deep link', async ({ page }) => {
-  const errors: string[] = [];
-  page.on('pageerror', (e) => errors.push(e.message));
-  await page.goto('/atlas');
+  const errors = collectErrors(page);
+  await gotoRajo(page, '/atlas');
   const rows = page.locator('[data-testid="atlas-table"] tbody tr');
   await expect(rows.first()).toBeVisible({ timeout: 30_000 });
   expect(await rows.count()).toBeGreaterThanOrEqual(24);
@@ -63,14 +63,13 @@ test('the atlas lists the catalog and a picked site shows its card, polygons and
   expect(page.url()).toContain('site=chuquicamata');
   await page.waitForTimeout(3500);
   const drawn = await page.evaluate(async () => {
-    // the polygons source must exist and carry features once the manifest and the geojson loaded
     const res = await fetch('/data/sites/chuquicamata/polygons.geojson');
     const fc = (await res.json()) as { features: unknown[] };
     return fc.features.length;
   });
   expect(drawn).toBeGreaterThan(0);
 
-  await page.goto('/?site=escondida');
+  await gotoRajo(page, '/?site=escondida');
   await expect(page.getByTestId('site-card').locator('h2')).toHaveText('Escondida', { timeout: 30_000 });
-  expect(errors).toEqual([]);
+  expectNoErrors(errors);
 });

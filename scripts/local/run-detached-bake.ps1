@@ -1,0 +1,66 @@
+# Rajo: launch a bake DETACHED from the calling shell.
+#
+# Two launcher defects this avoids, both of which cost full runs in sibling products:
+#   1. running the bake as a child of an interactive session: it dies when that session exits.
+#      Start-Process detaches it.
+#   2. piping python's output through a PowerShell pipeline: when the pipeline stalls, the writer
+#      BLOCKS and the run sits alive but idle. -RedirectStandardOutput writes the file directly.
+#
+# ASCII-ONLY STRING LITERALS: PowerShell 5.1 reads a .ps1 as CP-1252 without a UTF-8 BOM.
+#
+#   .\scripts\local\run-detached-bake.ps1                       # all stages, all sites, resume, release
+#   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites chuquicamata,escondida -Sandbox
+#   .\scripts\local\run-detached-bake.ps1 -DataRoot X:\rajo-data                  # any large disk
+#
+# Parallel workers: the frames stage is embarrassingly parallel per site. Launch several workers on
+# disjoint site lists into ONE sandbox root (they only write their own site directories), then harvest
+# with scripts\local\harvest-frames.ps1, which copies the frames into data\derived and runs the
+# canonical export and validate stages. A single-stage --release run is refused by design.
+#
+#   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites antamina,centinela -Output build\par
+#   .\scripts\local\run-detached-bake.ps1 -Stage frames -Sites belchatow,grasberg -Output build\par
+
+[CmdletBinding()]
+param(
+    [string]$Stage = "all",
+    [string]$Sites = "",
+    [string]$Years = "",
+    [string]$DataRoot = "",
+    [switch]$Sandbox,
+    [string]$Output = "",
+    [string]$LogDir = "",
+    [string]$Redo = ""   # masks stage: recompute these methods even when present, e.g. "rf,unet"
+)
+
+$ErrorActionPreference = "Stop"
+$Root = Resolve-Path (Join-Path $PSScriptRoot "..\..")
+$py = Join-Path $Root ".venv\Scripts\python.exe"
+if (-not (Test-Path $py)) { Write-Error "no .venv. Run: .\scripts\local\01_init.ps1" }
+
+if ($DataRoot) { $env:RAJO_DATA_ROOT = $DataRoot }
+if (-not $LogDir) {
+    $base = if ($env:RAJO_DATA_ROOT) { $env:RAJO_DATA_ROOT } else { Join-Path $Root "data\cache" }
+    $LogDir = Join-Path $base "logs"
+}
+New-Item -ItemType Directory -Force -Path $LogDir | Out-Null
+$stamp = Get-Date -Format "yyyyMMdd-HHmmss"
+$tag = $Stage
+if ($Sites) { $tag = "{0}-{1}" -f $Stage, (($Sites -split ",")[0]) }
+$log = Join-Path $LogDir ("bake-{0}-{1}.log" -f $tag, $stamp)
+$err = Join-Path $LogDir ("bake-{0}-{1}.err" -f $tag, $stamp)
+
+$argsList = @("data-pipeline\run.py", $Stage, "--resume")
+if ($Sites) { $argsList += @("--sites", $Sites) }
+if ($Years) { $argsList += @("--years", $Years) }
+if ($Redo) { $argsList += @("--redo", $Redo) }
+if ($Output) { $argsList += @("--output", $Output) }
+elseif ($Sandbox) { $argsList += @("--output", "build\local") }
+else { $argsList += "--release" }
+
+$p = Start-Process -FilePath $py -ArgumentList $argsList -WorkingDirectory $Root `
+    -RedirectStandardOutput $log -RedirectStandardError $err -WindowStyle Hidden -PassThru
+Write-Host ("launched pid {0}" -f $p.Id)
+Write-Host ("  log: {0}" -f $log)
+Write-Host ("  err: {0}" -f $err)
+Write-Host "  progress:  Get-Content -Tail 20 <log>"
+Write-Host "  blocked vs hung: compare CPU time over a minute with  Get-Process -Id <pid> | Select CPU"

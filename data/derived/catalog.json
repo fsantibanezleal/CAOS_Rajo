@@ -1,6 +1,6 @@
 {
  "schema": "rajo.catalog/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "n_sites": 30,
  "sites": [
   {
@@ -13,7 +13,7 @@
    ],
    "lon": -77.05,
    "lat": -9.53,
-   "n_frames": 0,
+   "n_frames": 41,
    "first_year": 1985,
    "manifest_path": "sites/antamina/manifest.json"
   },
@@ -27,7 +27,7 @@
    ],
    "lon": -111.6,
    "lat": 57.05,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/athabasca-mildred/manifest.json"
   },
@@ -41,7 +41,7 @@
    ],
    "lon": 19.33,
    "lat": 51.26,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/belchatow/manifest.json"
   },
@@ -55,7 +55,7 @@
    ],
    "lon": -112.15,
    "lat": 40.52,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/bingham-canyon/manifest.json"
   },
@@ -69,7 +69,7 @@
    ],
    "lon": -70.3,
    "lat": -27.52,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/candelaria/manifest.json"
   },
@@ -83,7 +83,7 @@
    ],
    "lon": -50.17,
    "lat": -6.05,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/carajas/manifest.json"
   },
@@ -97,7 +97,7 @@
    ],
    "lon": -69.05,
    "lat": -22.98,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/centinela/manifest.json"
   },
@@ -111,7 +111,7 @@
    ],
    "lon": -71.6,
    "lat": -16.53,
-   "n_frames": 0,
+   "n_frames": 41,
    "first_year": 1985,
    "manifest_path": "sites/cerro-verde/manifest.json"
   },
@@ -126,7 +126,7 @@
    ],
    "lon": -68.905,
    "lat": -22.305,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/chuquicamata/manifest.json"
   },
@@ -141,7 +141,7 @@
    ],
    "lon": -80.68,
    "lat": 8.85,
-   "n_frames": 0,
+   "n_frames": 34,
    "first_year": 1985,
    "manifest_path": "sites/cobre-panama/manifest.json"
   },
@@ -155,7 +155,7 @@
    ],
    "lon": -68.66,
    "lat": -20.98,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/collahuasi/manifest.json"
   },
@@ -169,7 +169,7 @@
    ],
    "lon": -69.07,
    "lat": -24.27,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/escondida/manifest.json"
   },
@@ -185,7 +185,7 @@
    ],
    "lon": 137.11,
    "lat": -4.05,
-   "n_frames": 0,
+   "n_frames": 40,
    "first_year": 1985,
    "manifest_path": "sites/grasberg/manifest.json"
   },
@@ -199,7 +199,7 @@
    ],
    "lon": 6.5,
    "lat": 50.91,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/hambach/manifest.json"
   },
@@ -213,7 +213,7 @@
    ],
    "lon": 25.4,
    "lat": -10.7,
-   "n_frames": 0,
+   "n_frames": 38,
    "first_year": 1985,
    "manifest_path": "sites/kamoa-kakula/manifest.json"
   },
@@ -227,7 +227,7 @@
    ],
    "lon": -72.3,
    "lat": -14.05,
-   "n_frames": 0,
+   "n_frames": 40,
    "first_year": 1985,
    "manifest_path": "sites/las-bambas/manifest.json"
   },
@@ -241,7 +241,7 @@
    ],
    "lon": -70.28,
    "lat": -33.15,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/los-bronces/manifest.json"
   },
@@ -255,7 +255,7 @@
    ],
    "lon": -70.49,
    "lat": -31.72,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/los-pelambres/manifest.json"
   },
@@ -270,7 +270,7 @@
    ],
    "lon": 113.99,
    "lat": 62.53,
-   "n_frames": 0,
+   "n_frames": 28,
    "first_year": 1985,
    "manifest_path": "sites/mir/manifest.json"
   },
@@ -284,7 +284,7 @@
    ],
    "lon": -109.36,
    "lat": 33.1,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/morenci/manifest.json"
   },
@@ -298,7 +298,7 @@
    ],
    "lon": 119.67,
    "lat": -23.37,
-   "n_frames": 0,
+   "n_frames": 41,
    "first_year": 1985,
    "manifest_path": "sites/mount-whaleback/manifest.json"
   },
@@ -312,7 +312,7 @@
    ],
    "lon": 64.57,
    "lat": 41.5,
-   "n_frames": 0,
+   "n_frames": 40,
    "first_year": 1985,
    "manifest_path": "sites/muruntau/manifest.json"
   },
@@ -326,7 +326,7 @@
    ],
    "lon": 106.85,
    "lat": 43.0,
-   "n_frames": 0,
+   "n_frames": 41,
    "first_year": 1985,
    "manifest_path": "sites/oyu-tolgoi/manifest.json"
   },
@@ -340,7 +340,7 @@
    ],
    "lon": -68.81,
    "lat": -21.0,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/quebrada-blanca/manifest.json"
   },
@@ -354,7 +354,7 @@
    ],
    "lon": -68.905,
    "lat": -22.225,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/radomiro-tomic/manifest.json"
   },
@@ -368,7 +368,7 @@
    ],
    "lon": -68.3,
    "lat": -23.55,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/salar-de-atacama/manifest.json"
   },
@@ -382,7 +382,7 @@
    ],
    "lon": -69.31,
    "lat": -22.9,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/sierra-gorda/manifest.json"
   },
@@ -396,7 +396,7 @@
    ],
    "lon": -69.3,
    "lat": -22.75,
-   "n_frames": 0,
+   "n_frames": 42,
    "first_year": 1985,
    "manifest_path": "sites/spence/manifest.json"
   },
@@ -410,7 +410,7 @@
    ],
    "lon": 121.5,
    "lat": -30.78,
-   "n_frames": 0,
+   "n_frames": 41,
    "first_year": 1985,
    "manifest_path": "sites/super-pit/manifest.json"
   },
@@ -424,7 +424,7 @@
    ],
    "lon": 112.32,
    "lat": 66.43,
-   "n_frames": 0,
+   "n_frames": 28,
    "first_year": 1985,
    "manifest_path": "sites/udachnaya/manifest.json"
   }

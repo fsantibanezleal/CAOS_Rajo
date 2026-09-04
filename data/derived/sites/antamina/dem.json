@@ -1,0 +1,90 @@
+{
+ "site_id": "antamina",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -199.1,
+  199.1
+ ],
+ "geoid_offset_m": -3.602,
+ "stable_bias_m": -2.218,
+ "noise_floor_m": 2.766,
+ "tau_m": 5.533,
+ "stable_ground_px": 17482,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 586484288,
+ "fill_volume_m3": 915806144,
+ "envelope": {
+  "cut_m3": 586484288,
+  "fill_m3": 915806144,
+  "cut_km2": 11.4651,
+  "fill_km2": 22.4703,
+  "min_m": -330.5,
+  "max_m": 315.4
+ },
+ "window": {
+  "cut_m3": 820300992,
+  "fill_m3": 1286901376,
+  "cut_km2": 30.8574,
+  "fill_km2": 55.521,
+  "min_m": -330.5,
+  "max_m": 315.4
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/292/539.png",
+  "terrain/10/293/539.png",
+  "terrain/11/585/1078.png",
+  "terrain/11/586/1078.png",
+  "terrain/12/1170/2156.png",
+  "terrain/12/1170/2157.png",
+  "terrain/12/1171/2156.png",
+  "terrain/12/1171/2157.png",
+  "terrain/12/1172/2156.png",
+  "terrain/12/1172/2157.png",
+  "terrain/13/2341/4312.png",
+  "terrain/13/2341/4313.png",
+  "terrain/13/2341/4314.png",
+  "terrain/13/2341/4315.png",
+  "terrain/13/2342/4312.png",
+  "terrain/13/2342/4313.png",
+  "terrain/13/2342/4314.png",
+  "terrain/13/2342/4315.png",
+  "terrain/13/2343/4312.png",
+  "terrain/13/2343/4313.png",
+  "terrain/13/2343/4314.png",
+  "terrain/13/2343/4315.png",
+  "terrain/13/2344/4312.png",
+  "terrain/13/2344/4313.png",
+  "terrain/13/2344/4314.png",
+  "terrain/13/2344/4315.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 3198.0,
+  "max": 5050.0
+ },
+ "cop_stats": {
+  "min": 3191.6,
+  "max": 5045.0
+ }
+}

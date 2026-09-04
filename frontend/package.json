@@ -1,7 +1,7 @@
 {
   "name": "rajo-web",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "description": "Rajo: open pits seen from orbit. A static web observatory over committed satellite artifacts plus browser-side computation on open cloud-optimized data.",
   "scripts": {
@@ -12,12 +12,9 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "e2e": "playwright test",
-    "preview": "vite preview --port 4173 --strictPort"
+    "preview": "vite preview --port 4901 --strictPort"
   },
   "dependencies": {
-    "@deck.gl/core": "^9.3.11",
-    "@deck.gl/layers": "^9.3.11",
-    "@deck.gl/mapbox": "^9.3.11",
     "geotiff": "^3.0.5",
     "i18next": "^26.4.1",
     "katex": "^0.18.5",

@@ -15,7 +15,13 @@
    "start_month": 11,
    "end_month": 3
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Spence produced 254,795 tonnes of fine copper in 2025 and 255,586 tonnes in 2024; its first year with reported production is 2006 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Spence produjo 254.795 toneladas de cobre fino en 2025 y 255.586 toneladas en 2024; su primer ano con produccion reportada es 2006 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
+   }
+  ],
   "commodity": "copper",
   "operator": "BHP",
   "flags": [],

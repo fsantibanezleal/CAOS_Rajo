@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" class="a" role="img" aria-label="The science: from digital numbers to reflectance, indices, masks, learned models, series, change points and elevation differences">
+  <!-- Hand-authored (ADR-0058). CSS variables only; both languages in one file (l-en / l-es), identifiers and formulas l-neutral. -->
+  <style>
+    .a text { font-family: var(--font-sans, system-ui, sans-serif); font-size: 11px; fill: var(--fg); }
+    .a .mono { font-family: var(--font-mono, ui-monospace, monospace); font-size: 10.5px; }
+    .a .ttl { font-size: 13.5px; font-weight: 700; }
+    .a .h { font-size: 11.5px; font-weight: 700; }
+    .a .sub { fill: var(--fg-muted); font-size: 10px; }
+    .a .bx { fill: var(--surface-2); stroke: var(--border-strong); stroke-width: 1.2; }
+    .a .q1 { stroke: var(--cyan); } .a .q2 { stroke: var(--accent); } .a .q3 { stroke: var(--good); } .a .q4 { stroke: var(--magenta); }
+    .a .t1 { fill: var(--cyan); font-weight: 700; font-size: 11.5px; } .a .t2 { fill: var(--accent); font-weight: 700; font-size: 11.5px; }
+    .a .t3 { fill: var(--good); font-weight: 700; font-size: 11.5px; } .a .t4 { fill: var(--magenta); font-weight: 700; font-size: 11.5px; }
+    .a .ln { fill: none; stroke: var(--border-strong); stroke-width: 1.4; marker-end: url(#arr4); }
+    .a .eq { font-family: var(--font-mono, ui-monospace, monospace); font-size: 9px; fill: var(--fg); }
+  </style>
+  <defs>
+    <marker id="arr4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="var(--border-strong)" />
+    </marker>
+  </defs>
+
+  <text x="20" y="26" class="ttl l-en">The science, step by step: every box is a method on the Methods page, with its equation and its source</text>
+  <text x="20" y="26" class="ttl l-es">La ciencia, paso a paso: cada caja es un metodo de la pagina Metodos, con su ecuacion y su fuente</text>
+
+  <!-- step 0: reflectance -->
+  <rect x="20" y="44" width="860" height="64" rx="8" class="bx" />
+  <text x="32" y="63" class="h l-en">0 From archived digital numbers to surface reflectance, with each archive's own quality mask</text>
+  <text x="32" y="63" class="h l-es">0 De los numeros digitales archivados a reflectancia de superficie, con la mascara de calidad de cada archivo</text>
+  <text x="32" y="81" class="eq l-neutral">Sentinel-2 L2A: rho = (DN - 1000) / 10000 (baseline 04.00+); SCL 0, 1, 3, 8, 9, 10 invalid, 11 snow</text>
+  <text x="32" y="96" class="eq l-neutral">Landsat C2 L2: rho = 0.0000275 DN - 0.2; QA_PIXEL bits fill, dilated cloud, cirrus, cloud, shadow, snow</text>
+  <text x="560" y="81" class="sub l-en">quality masks flag the mine itself (bright benches read</text>
+  <text x="560" y="81" class="sub l-es">las mascaras marcan la propia mina (bancos claros como</text>
+  <text x="560" y="96" class="sub l-en">as cloud), so the QA verdict is kept per pixel, not applied</text>
+  <text x="560" y="96" class="sub l-es">nube), asi el veredicto QA se guarda por pixel, no se aplica</text>
+
+  <!-- Q1 -->
+  <rect x="20" y="120" width="260" height="168" rx="8" class="bx q1" />
+  <text x="32" y="139" class="t1 l-en">1 What am I looking at</text>
+  <text x="32" y="139" class="t1 l-es">1 Que estoy mirando</text>
+  <text x="32" y="158" class="eq l-neutral">M1 (B4,B3,B2) (B8,B4,B3) (B12,B8,B4)</text>
+  <text x="32" y="172" class="sub l-en">p2 to p98 stretch, gamma 1/1.35, printed</text>
+  <text x="32" y="172" class="sub l-es">estiramiento p2 a p98, gamma 1/1,35, impreso</text>
+  <text x="32" y="192" class="eq l-neutral">M2 NDVI = (B8 - B4) / (B8 + B4)</text>
+  <text x="32" y="206" class="eq l-neutral">   MNDWI = (B3 - B11) / (B3 + B11)</text>
+  <text x="32" y="220" class="eq l-neutral">   BSI = (B11+B4-B8-B2) / (B11+B4+B8+B2)</text>
+  <text x="32" y="234" class="sub l-en">floors 0.02 (two bands), 0.04 (BSI), else NaN</text>
+  <text x="32" y="234" class="sub l-es">pisos 0,02 (dos bandas), 0,04 (BSI), si no NaN</text>
+  <text x="32" y="254" class="eq l-neutral">M3 Fe3+ = B4/B2  OH = B11/B12  Fe2+ = B12/B8A</text>
+  <text x="32" y="270" class="sub l-en">indicators of mineral groups, never maps</text>
+  <text x="32" y="270" class="sub l-es">indicadores de grupos minerales, no mapas</text>
+
+  <!-- Q2 -->
+  <rect x="296" y="120" width="290" height="168" rx="8" class="bx q2" />
+  <text x="308" y="139" class="t2 l-en">2 Where is the mine (classical, then learned)</text>
+  <text x="308" y="139" class="t2 l-es">2 Donde esta la mina (clasico, luego aprendido)</text>
+  <text x="308" y="158" class="eq l-neutral">M4 t* = argmax w0 w1 (mu0 - mu1)^2 on BSI</text>
+  <text x="308" y="172" class="eq l-neutral">   M = [BSI &gt; t*] [NDVI &lt; 0.2] [MNDWI &lt; 0]</text>
+  <text x="308" y="186" class="sub l-en">then a 3 x 3 opening; small components dropped</text>
+  <text x="308" y="186" class="sub l-es">luego una apertura 3 x 3; componentes pequenas fuera</text>
+  <text x="308" y="204" class="eq l-neutral">M5 k-means++ on z(bands, NDVI, MNDWI), Lloyd</text>
+  <text x="308" y="218" class="eq l-neutral">M6 theta = arccos(x.e/|x||e|), e = polygons</text>
+  <text x="308" y="238" class="eq l-neutral">M7 forest: 16 features, 64 trees, depth 12</text>
+  <text x="308" y="252" class="eq l-neutral">M8 U-Net 32..512, BCE + Dice, 7.85 M params</text>
+  <text x="308" y="270" class="sub l-en">Jasansky 2024; catalog sites held out; ONNX parity gates</text>
+  <text x="308" y="270" class="sub l-es">Jasansky 2024; sitios del catalogo retenidos; paridad ONNX</text>
+
+  <!-- Q3 -->
+  <rect x="602" y="120" width="278" height="168" rx="8" class="bx q3" />
+  <text x="614" y="139" class="t3 l-en">3 How did it change</text>
+  <text x="614" y="139" class="t3 l-es">3 Como cambio</text>
+  <text x="614" y="158" class="eq l-neutral">M9 dv = v(t2) - v(t1); |dv| above Otsu;</text>
+  <text x="614" y="172" class="eq l-neutral">   phi = atan2(dBSI, -dNDVI) names the kind</text>
+  <text x="614" y="190" class="eq l-neutral">M10 CUSUM S_t = max(0, S_t-1 + dA_t - mu0 - k),</text>
+  <text x="614" y="204" class="eq l-neutral">    alarm when S_t &gt; h; k = 0.5 s, h = 4 s</text>
+  <text x="614" y="218" class="eq l-neutral">    PELT min sum C(seg) + beta m, beta = 3 s^2 ln n</text>
+  <text x="614" y="232" class="sub l-en">s = 1.4826 MAD of yearly differences; segments of 3+ years</text>
+  <text x="614" y="232" class="sub l-es">s = 1,4826 MAD de las diferencias; segmentos de 3+ anos</text>
+  <text x="614" y="250" class="eq l-neutral">M11 y = a + b t + sum_k [c_k cos(2 pi k t/T)</text>
+  <text x="614" y="264" class="eq l-neutral">    + d_k sin(2 pi k t/T)], breaks by BIC, T = 365 d</text>
+  <text x="614" y="280" class="sub l-en">the signal: mined area per year inside the envelope</text>
+  <text x="614" y="280" class="sub l-es">la senal: area minada por ano dentro de la envolvente</text>
+
+  <!-- Q4 -->
+  <rect x="20" y="302" width="566" height="112" rx="8" class="bx q4" />
+  <text x="32" y="321" class="t4 l-en">4 How much rock moved</text>
+  <text x="32" y="321" class="t4 l-es">4 Cuanta roca se movio</text>
+  <text x="32" y="340" class="eq l-neutral">M12 dh = h_COP - (h_SRTM + (N96 - N2008)) - b,  b = median(dh | stable ground)</text>
+  <text x="32" y="354" class="eq l-neutral">    tau = 2 * 1.4826 MAD(dh | stable);  V_cut = sum(dh &lt; -tau) |dh| a;  V_fill = sum(dh &gt; tau) dh a;  a = 900 m2</text>
+  <text x="32" y="372" class="sub l-en">stable ground: outside the envelope and slope below 10 degrees on the Copernicus surface; both surfaces</text>
+  <text x="32" y="372" class="sub l-es">terreno estable: fuera de la envolvente y pendiente bajo 10 grados en la superficie Copernicus; ambas</text>
+  <text x="32" y="385" class="sub l-en">warped to the 30 m grid with each tile's extent taken from its alpha band (the Copernicus COGs declare no no-data).</text>
+  <text x="32" y="385" class="sub l-es">reproyectadas a 30 m con la extension de cada tesela tomada de su banda alfa (los COG Copernicus no declaran no-data).</text>
+  <text x="32" y="403" class="sub l-en">Antamina, first run: geoid -3.60 m, bias -2.22 m, floor 2.77 m, tau 5.53 m, cut 586 Mm3, fill 916 Mm3 in the envelope.</text>
+  <text x="32" y="403" class="sub l-es">Antamina, primera corrida: geoide -3,60 m, sesgo -2,22 m, piso 2,77 m, tau 5,53 m, corte 586 Mm3, relleno 916 Mm3.</text>
+
+  <!-- the envelope + the held-out rule -->
+  <rect x="602" y="302" width="278" height="112" rx="8" class="bx" />
+  <text x="614" y="321" class="h l-en">Two rules that keep the numbers honest</text>
+  <text x="614" y="321" class="h l-es">Dos reglas que mantienen honestos los numeros</text>
+  <text x="614" y="340" class="sub l-en">The envelope: the reference polygons dilated by 1 km.</text>
+  <text x="614" y="340" class="sub l-es">La envolvente: los poligonos de referencia dilatados 1 km.</text>
+  <text x="614" y="353" class="sub l-en">Areas and volumes are measured inside it; a mask over</text>
+  <text x="614" y="353" class="sub l-es">Areas y volumenes se miden dentro; una mascara sobre</text>
+  <text x="614" y="366" class="sub l-en">the whole window would measure the desert.</text>
+  <text x="614" y="366" class="sub l-es">toda la ventana mediria el desierto.</text>
+  <text x="614" y="386" class="sub l-en">Held out: every catalog site is removed from training</text>
+  <text x="614" y="386" class="sub l-es">Retenido: cada sitio del catalogo sale del entrenamiento</text>
+  <text x="614" y="399" class="sub l-en">and validation; no number on a site card is in-sample.</text>
+  <text x="614" y="399" class="sub l-es">y la validacion; ningun numero de una ficha es en muestra.</text>
+
+  <!-- flow arrows -->
+  <path d="M280,204 L296,204" class="ln" />
+  <path d="M586,204 L602,204" class="ln" />
+  <path d="M440,288 L440,302" class="ln" />
+
+  <!-- benchmark strip -->
+  <rect x="20" y="428" width="860" height="66" rx="8" class="bx" />
+  <text x="32" y="447" class="h l-en">The held-out matrix (models/benchmark.json, rendered on the Methods page)</text>
+  <text x="32" y="447" class="h l-es">La matriz retenida (models/benchmark.json, en la pagina Metodos)</text>
+  <text x="32" y="465" class="sub l-en">M4 to M8 on the same validation, test and catalog-holdout tiles; pooled IoU, F1, precision, recall; per-tile IoU; boundary F1 at 2 px; per mine type;</text>
+  <text x="32" y="465" class="sub l-es">M4 a M8 sobre las mismas teselas de validacion, prueba y retencion; IoU, F1, precision y exhaustividad agrupadas; IoU por tesela; F1 de borde a 2 px; por tipo;</text>
+  <text x="32" y="480" class="sub l-en">the learned methods under added haze (0.02, 0.05, 0.10 reflectance). Validation chooses the SAM angle and nothing else.</text>
+  <text x="32" y="480" class="sub l-es">los metodos aprendidos con bruma anadida (0,02, 0,05, 0,10 de reflectancia). La validacion elige el angulo SAM y nada mas.</text>
+
+  <text x="20" y="518" class="sub l-en">Sources on the Methods page: Otsu 1979; Lloyd 1982; Kruse 1993; Breiman 2001; Ronneberger 2015; Page 1954; Killick 2012; Verbesselt 2010; Farr 2007;</text>
+  <text x="20" y="518" class="sub l-es">Fuentes en la pagina Metodos: Otsu 1979; Lloyd 1982; Kruse 1993; Breiman 2001; Ronneberger 2015; Page 1954; Killick 2012; Verbesselt 2010; Farr 2007;</text>
+  <text x="20" y="532" class="sub l-en">Rizzoli 2017; Maus 2022; Jasansky 2024; Rouse 1974; McFeeters 1996; Xu 2006; Zha 2003; Sabins 1999; van der Meer 2012; Malila 1980; Truong 2020; Zhu 2017.</text>
+  <text x="20" y="532" class="sub l-es">Rizzoli 2017; Maus 2022; Jasansky 2024; Rouse 1974; McFeeters 1996; Xu 2006; Zha 2003; Sabins 1999; van der Meer 2012; Malila 1980; Truong 2020; Zhu 2017.</text>
+  <text x="20" y="556" class="mono l-neutral">docs/methods/ 00 band mapping, 01 composites and indices, 02 mineral ratios, 03 classical, 04 learned, 05 change, 06 relief</text>
+</svg>

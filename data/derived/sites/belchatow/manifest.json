@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "belchatow",
  "site": {
   "id": "belchatow",
@@ -18,7 +18,18 @@
    "start_month": 5,
    "end_month": 9
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "PGE describes Belchatow as the largest open-pit mine in Poland and one of the largest in Europe, in operation since 17 January 1975, with its target capacity of 38.5 million tonnes of lignite per year reached in 1988 (PGE GiEK).",
+    "text_es": "PGE describe Belchatow como la mina a rajo abierto mas grande de Polonia y una de las mas grandes de Europa, en operacion desde el 17 de enero de 1975, con su capacidad objetivo de 38,5 millones de toneladas de lignito por ano alcanzada en 1988 (PGE GiEK).",
+    "source": "https://kwbbelchatow.pgegiek.pl/o-oddziale"
+   },
+   {
+    "text_en": "Just over 30 million tonnes of lignite per year now come from the Belchatow and Szczercow fields; the first coal from the Szczercow field was mined on 17 August 2009 and its reserves are planned to last until 2038 (PGE GiEK).",
+    "text_es": "Poco mas de 30 millones de toneladas de lignito por ano salen hoy de los campos Belchatow y Szczercow; el primer carbon del campo Szczercow se extrajo el 17 de agosto de 2009 y sus reservas estan planificadas hasta 2038 (PGE GiEK).",
+    "source": "https://pgegiek.pl/nasze-oddzialy/kopalnia-wegla-brunatnego-belchatow"
+   }
+  ],
   "commodity": "lignite",
   "operator": "PGE",
   "flags": [],
@@ -67,16 +78,5126 @@
    11580
   ]
  },
- "frames": [],
- "series": null,
- "dem": null,
+ "frames": [
+  {
+   "year": 1985,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19850513_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19850513_02_T1"
+   ],
+   "date": "1985-05-13",
+   "cloud_pct": 0.98,
+   "valid_pct": 99.02,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 10.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1985.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1985-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04436500370502472,
+      0.18706248700618744
+     ],
+     [
+      0.05143250524997711,
+      0.17009501159191132
+     ],
+     [
+      0.034657493233680725,
+      0.12485750019550323
+     ]
+    ],
+    "swir": [
+     [
+      0.0458499938249588,
+      0.30413001775741577
+     ],
+     [
+      0.14319944500923157,
+      0.3996649980545044
+     ],
+     [
+      0.04436500370502472,
+      0.18706248700618744
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
+  },
+  {
+   "year": 1986,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19860804_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19860804_02_T1"
+   ],
+   "date": "1986-08-04",
+   "cloud_pct": 1.19,
+   "valid_pct": 98.81,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1986.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1986-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.041009992361068726,
+      0.19877806127071432
+     ],
+     [
+      0.05393500626087189,
+      0.1835700124502182
+     ],
+     [
+      0.04169750213623047,
+      0.14066998660564423
+     ]
+    ],
+    "swir": [
+     [
+      0.033639997243881226,
+      0.3181000351905823
+     ],
+     [
+      0.1659974902868271,
+      0.40467000007629395
+     ],
+     [
+      0.041009992361068726,
+      0.19877806127071432
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
+  },
+  {
+   "year": 1987,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19870823_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19870823_02_T1"
+   ],
+   "date": "1987-08-23",
+   "cloud_pct": 1.37,
+   "valid_pct": 98.63,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1987.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1987-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.025995001196861267,
+      0.20573556244373373
+     ],
+     [
+      0.03405250608921051,
+      0.18178249895572662
+     ],
+     [
+      0.021567493677139282,
+      0.12887249886989594
+     ]
+    ],
+    "swir": [
+     [
+      0.03039500117301941,
+      0.31733055353164724
+     ],
+     [
+      0.13726000487804413,
+      0.41432249546051025
+     ],
+     [
+      0.025995001196861267,
+      0.20573556244373373
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
+  },
+  {
+   "year": 1988,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19880724_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19880724_02_T1"
+   ],
+   "date": "1988-07-24",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1988.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1988-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.027150005102157593,
+      0.22680000960826874
+     ],
+     [
+      0.03806750476360321,
+      0.20117001235485077
+     ],
+     [
+      0.02404250204563141,
+      0.14534498751163483
+     ]
+    ],
+    "swir": [
+     [
+      0.031907498836517334,
+      0.3509899973869324
+     ],
+     [
+      0.1440799981355667,
+      0.44613999128341675
+     ],
+     [
+      0.027150005102157593,
+      0.22680000960826874
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
+  },
+  {
+   "year": 1989,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19890913_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19890913_02_T1"
+   ],
+   "date": "1989-09-13",
+   "cloud_pct": 1.37,
+   "valid_pct": 98.63,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1989.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1989-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.025637492537498474,
+      0.20854055762291007
+     ],
+     [
+      0.032622501254081726,
+      0.1835700124502182
+     ],
+     [
+      0.020907491445541382,
+      0.1314850002527237
+     ]
+    ],
+    "swir": [
+     [
+      0.03215499222278595,
+      0.3432350158691406
+     ],
+     [
+      0.12216250598430634,
+      0.3618525266647339
+     ],
+     [
+      0.025637492537498474,
+      0.20854055762291007
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
+  },
+  {
+   "year": 1990,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_19900504_02_T1+LT05_L2SP_188025_19900504_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_19900504_02_T1+LT05_L2SP_188025_19900504_02_T1"
+   ],
+   "date": "1990-05-04",
+   "cloud_pct": 0.04,
+   "valid_pct": 99.96,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.13,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1990.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1990-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.02646249532699585,
+      0.2293574959039688
+     ],
+     [
+      0.0334475040435791,
+      0.2033974975347519
+     ],
+     [
+      0.0214574933052063,
+      0.15243999660015106
+     ]
+    ],
+    "swir": [
+     [
+      0.04235750436782837,
+      0.365042507648468
+     ],
+     [
+      0.12257499992847443,
+      0.41888749599456787
+     ],
+     [
+      0.02646249532699585,
+      0.2293574959039688
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
+  },
+  {
+   "year": 1991,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19910530_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19910530_02_T1"
+   ],
+   "date": "1991-05-30",
+   "cloud_pct": 1.54,
+   "valid_pct": 98.46,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 4.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1991.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1991-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.028304994106292725,
+      0.2106025069952011
+     ],
+     [
+      0.03438249230384827,
+      0.18478053689003043
+     ],
+     [
+      0.019724994897842407,
+      0.13052250444889069
+     ]
+    ],
+    "swir": [
+     [
+      0.03977249562740326,
+      0.3481850028038025
+     ],
+     [
+      0.11701999604701996,
+      0.42422252893447876
+     ],
+     [
+      0.028304994106292725,
+      0.2106025069952011
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
+  },
+  {
+   "year": 1992,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19920516_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19920516_02_T1"
+   ],
+   "date": "1992-05-16",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1992.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1992-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03529000282287598,
+      0.18153499066829681
+     ],
+     [
+      0.04142250120639801,
+      0.1607999950647354
+     ],
+     [
+      0.025912493467330933,
+      0.11292250454425812
+     ]
+    ],
+    "swir": [
+     [
+      0.04037749767303467,
+      0.33138251304626465
+     ],
+     [
+      0.137177512049675,
+      0.4070349931716919
+     ],
+     [
+      0.03529000282287598,
+      0.18153499066829681
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
+  },
+  {
+   "year": 1993,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_19930816_02_T1+LT05_L2SP_188025_19930816_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_19930816_02_T1+LT05_L2SP_188025_19930816_02_T1"
+   ],
+   "date": "1993-08-16",
+   "cloud_pct": 0.3,
+   "valid_pct": 99.7,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.19,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1993.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1993-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.02981749176979065,
+      0.215608058571816
+     ],
+     [
+      0.0378199964761734,
+      0.18970249593257904
+     ],
+     [
+      0.026407495141029358,
+      0.13613249361515045
+     ]
+    ],
+    "swir": [
+     [
+      0.03779250383377075,
+      0.3676000237464905
+     ],
+     [
+      0.1491125077009201,
+      0.3948799967765808
+     ],
+     [
+      0.02981749176979065,
+      0.215608058571816
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
+  },
+  {
+   "year": 1994,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_19940702_02_T1+LT05_L2SP_188025_19940702_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_19940702_02_T1+LT05_L2SP_188025_19940702_02_T1"
+   ],
+   "date": "1994-07-02",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.21,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1994.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1994-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.028084993362426758,
+      0.21967749297618866
+     ],
+     [
+      0.036170005798339844,
+      0.19220499694347382
+     ],
+     [
+      0.022255003452301025,
+      0.1381949931383133
+     ]
+    ],
+    "swir": [
+     [
+      0.04111999273300171,
+      0.36157751083374023
+     ],
+     [
+      0.1440250128507614,
+      0.38987499475479126
+     ],
+     [
+      0.028084993362426758,
+      0.21967749297618866
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
+  },
+  {
+   "year": 1995,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_19950721_02_T1+LT05_L2SP_188025_19950721_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_19950721_02_T1+LT05_L2SP_188025_19950721_02_T1"
+   ],
+   "date": "1995-07-21",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1995.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1995-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.024977505207061768,
+      0.20774249732494354
+     ],
+     [
+      0.033887505531311035,
+      0.18101249635219574
+     ],
+     [
+      0.020329996943473816,
+      0.13123749196529388
+     ]
+    ],
+    "swir": [
+     [
+      0.035592496395111084,
+      0.33792752027511597
+     ],
+     [
+      0.1487549990415573,
+      0.40359753370285034
+     ],
+     [
+      0.024977505207061768,
+      0.20774249732494354
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
+  },
+  {
+   "year": 1996,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19960612_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19960612_02_T1"
+   ],
+   "date": "1996-06-12",
+   "cloud_pct": 6.05,
+   "valid_pct": 93.95,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1996.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1996-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03553749620914459,
+      0.2300174981355667
+     ],
+     [
+      0.04824249446392059,
+      0.20997001230716705
+     ],
+     [
+      0.03374999761581421,
+      0.15961749851703644
+     ]
+    ],
+    "swir": [
+     [
+      0.037269994616508484,
+      0.355940043926239
+     ],
+     [
+      0.15686748921871185,
+      0.44223499298095703
+     ],
+     [
+      0.03553749620914459,
+      0.2300174981355667
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
+  },
+  {
+   "year": 1997,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_19970912_02_T1+LT05_L2SP_188025_19970912_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_19970912_02_T1+LT05_L2SP_188025_19970912_02_T1"
+   ],
+   "date": "1997-09-12",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.8,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1997.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1997-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.020329996943473816,
+      0.2047175019979477
+     ],
+     [
+      0.03075249493122101,
+      0.178289994597435
+     ],
+     [
+      0.018377497792243958,
+      0.13186998665332794
+     ]
+    ],
+    "swir": [
+     [
+      0.03201749920845032,
+      0.32890748977661133
+     ],
+     [
+      0.14124749600887299,
+      0.3689200282096863
+     ],
+     [
+      0.020329996943473816,
+      0.2047175019979477
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
+  },
+  {
+   "year": 1998,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_19980510_02_T1+LT05_L2SP_188025_19980510_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_19980510_02_T1+LT05_L2SP_188025_19980510_02_T1"
+   ],
+   "date": "1998-05-10",
+   "cloud_pct": 11.24,
+   "valid_pct": 88.76,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 5.48,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1998.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1998-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03020249307155609,
+      0.7084900140762329
+     ],
+     [
+      0.041862502694129944,
+      0.7111580514907843
+     ],
+     [
+      0.028497502207756042,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.029542505741119385,
+      0.5307575464248657
+     ],
+     [
+      0.10329748690128326,
+      0.7729499936103821
+     ],
+     [
+      0.03020249307155609,
+      0.7084900140762329
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
+  },
+  {
+   "year": 1999,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_19990520_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_19990520_02_T1"
+   ],
+   "date": "1999-05-20",
+   "cloud_pct": 5.78,
+   "valid_pct": 94.22,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1999.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1999-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03012000024318695,
+      0.23609499633312225
+     ],
+     [
+      0.03795750439167023,
+      0.2139575034379959
+     ],
+     [
+      0.02269500494003296,
+      0.1547500044107437
+     ]
+    ],
+    "swir": [
+     [
+      0.04040500521659851,
+      0.3656200170516968
+     ],
+     [
+      0.13525194108486174,
+      0.4385775327682495
+     ],
+     [
+      0.03012000024318695,
+      0.23609499633312225
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
+  },
+  {
+   "year": 2000,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_20000506_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_20000506_02_T1"
+   ],
+   "date": "2000-05-06",
+   "cloud_pct": 0.6,
+   "valid_pct": 99.39,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2000.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2000-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.030972495675086975,
+      0.2288080441951757
+     ],
+     [
+      0.038507506251335144,
+      0.20012499392032623
+     ],
+     [
+      0.02371250092983246,
+      0.14223749935626984
+     ]
+    ],
+    "swir": [
+     [
+      0.04298999905586243,
+      0.36267751455307007
+     ],
+     [
+      0.13756249845027924,
+      0.3973824977874756
+     ],
+     [
+      0.030972495675086975,
+      0.2288080441951757
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
+  },
+  {
+   "year": 2001,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_20010728_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_20010728_02_T1"
+   ],
+   "date": "2001-07-28",
+   "cloud_pct": 0.11,
+   "valid_pct": 99.89,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2001.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2001-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.022475004196166992,
+      0.1780424863100052
+     ],
+     [
+      0.0308074951171875,
+      0.1561800092458725
+     ],
+     [
+      0.01741500198841095,
+      0.10778054475784353
+     ]
+    ],
+    "swir": [
+     [
+      0.030367493629455566,
+      0.25520747900009155
+     ],
+     [
+      0.13673751056194305,
+      0.38723504543304443
+     ],
+     [
+      0.022475004196166992,
+      0.1780424863100052
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
+  },
+  {
+   "year": 2002,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20020504_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20020504_02_T1"
+   ],
+   "date": "2002-05-04",
+   "cloud_pct": 0.03,
+   "valid_pct": 99.97,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2002.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2002-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.027315005660057068,
+      0.214369997382164
+     ],
+     [
+      0.03454749286174774,
+      0.17875750362873077
+     ],
+     [
+      0.021375000476837158,
+      0.12846000492572784
+     ]
+    ],
+    "swir": [
+     [
+      0.043952494859695435,
+      0.33993555545806936
+     ],
+     [
+      0.14289750158786774,
+      0.39155250787734985
+     ],
+     [
+      0.027315005660057068,
+      0.214369997382164
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
+  },
+  {
+   "year": 2003,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_20030920_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_20030920_02_T1"
+   ],
+   "date": "2003-09-20",
+   "cloud_pct": 0.2,
+   "valid_pct": 99.8,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 5.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2003.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2003-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.028882503509521484,
+      0.19820000231266022
+     ],
+     [
+      0.03674750030040741,
+      0.17196553826332145
+     ],
+     [
+      0.023629993200302124,
+      0.12496750056743622
+     ]
+    ],
+    "swir": [
+     [
+      0.03209999203681946,
+      0.32472753524780273
+     ],
+     [
+      0.13654498755931854,
+      0.32893502712249756
+     ],
+     [
+      0.028882503509521484,
+      0.19820000231266022
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
+  },
+  {
+   "year": 2004,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20040914_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20040914_02_T1",
+    "LE07_L2SP_188024_20040806_02_T1+LE07_L2SP_188025_20040806_02_T1"
+   ],
+   "date": "2004-09-14",
+   "cloud_pct": 3.11,
+   "valid_pct": 96.89,
+   "data_pct": 99.48,
+   "scene_cloud_pct": 8.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2004.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2004-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01914750039577484,
+      0.2283950001001358
+     ],
+     [
+      0.026297494769096375,
+      0.19349749386310577
+     ],
+     [
+      0.01548999547958374,
+      0.1441899985074997
+     ]
+    ],
+    "swir": [
+     [
+      0.027617499232292175,
+      0.3591024875640869
+     ],
+     [
+      0.10233499109745026,
+      0.3603675365447998
+     ],
+     [
+      0.01914750039577484,
+      0.2283950001001358
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
+  },
+  {
+   "year": 2005,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20050528_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20050528_02_T1",
+    "LE07_L2SP_189024_20050901_02_T1"
+   ],
+   "date": "2005-05-28",
+   "cloud_pct": 0.05,
+   "valid_pct": 99.95,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2005.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2005-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.02170500159263611,
+      0.21500249207019806
+     ],
+     [
+      0.0291299968957901,
+      0.18167304873466544
+     ],
+     [
+      0.017195001244544983,
+      0.13508860468864542
+     ]
+    ],
+    "swir": [
+     [
+      0.03853499889373779,
+      0.3353149890899658
+     ],
+     [
+      0.14229251444339752,
+      0.39391805171966604
+     ],
+     [
+      0.02170500159263611,
+      0.21500249207019806
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
+  },
+  {
+   "year": 2006,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_20060912_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_20060912_02_T1"
+   ],
+   "date": "2006-09-12",
+   "cloud_pct": 0.47,
+   "valid_pct": 99.53,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2006.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2006-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0267924964427948,
+      0.1927274912595749
+     ],
+     [
+      0.03440999984741211,
+      0.16838999092578888
+     ],
+     [
+      0.022557497024536133,
+      0.12136499583721161
+     ]
+    ],
+    "swir": [
+     [
+      0.03281499445438385,
+      0.33096998929977417
+     ],
+     [
+      0.14465750753879547,
+      0.37417250871658325
+     ],
+     [
+      0.0267924964427948,
+      0.1927274912595749
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
+  },
+  {
+   "year": 2007,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_20070924_02_T2+LT05_L2SP_188025_20070924_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_20070924_02_T2+LT05_L2SP_188025_20070924_02_T1"
+   ],
+   "date": "2007-09-24",
+   "cloud_pct": 0.8,
+   "valid_pct": 99.2,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2007.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2007-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.022667497396469116,
+      0.18835501372814178
+     ],
+     [
+      0.03372250497341156,
+      0.16577748954296112
+     ],
+     [
+      0.020054996013641357,
+      0.12067748606204987
+     ]
+    ],
+    "swir": [
+     [
+      0.03242999315261841,
+      0.33814752101898193
+     ],
+     [
+      0.13943250477313995,
+      0.3634200096130371
+     ],
+     [
+      0.022667497396469116,
+      0.18835501372814178
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
+  },
+  {
+   "year": 2008,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_189024_20080512_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_189024_20080512_02_T1"
+   ],
+   "date": "2008-05-12",
+   "cloud_pct": 4.37,
+   "valid_pct": 95.63,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2008.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2008-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.028964996337890625,
+      0.2110150009393692
+     ],
+     [
+      0.03751750290393829,
+      0.19215001165866852
+     ],
+     [
+      0.021044999361038208,
+      0.13858000934123993
+     ]
+    ],
+    "swir": [
+     [
+      0.03809499740600586,
+      0.35068750381469727
+     ],
+     [
+      0.1267550140619278,
+      0.4242500066757202
+     ],
+     [
+      0.028964996337890625,
+      0.2110150009393692
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
+  },
+  {
+   "year": 2009,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_188024_20090820_02_T1+LE07_L2SP_188025_20090820_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_188024_20090820_02_T1+LE07_L2SP_188025_20090820_02_T1",
+    "LE07_L2SP_188024_20090921_02_T1+LE07_L2SP_188025_20090921_02_T1"
+   ],
+   "date": "2009-08-20",
+   "cloud_pct": 0.41,
+   "valid_pct": 99.59,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2009.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2009-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.014802500605583191,
+      0.19047249853610992
+     ],
+     [
+      0.021952494978904724,
+      0.15563000738620758
+     ],
+     [
+      0.013647496700286865,
+      0.1260950118303299
+     ]
+    ],
+    "swir": [
+     [
+      0.03152249753475189,
+      0.3490380775928502
+     ],
+     [
+      0.1546124964952469,
+      0.3811575174331665
+     ],
+     [
+      0.014802500605583191,
+      0.19047249853610992
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
+  },
+  {
+   "year": 2010,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20100611_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20100611_02_T1",
+    "LE07_L2SP_188024_20100924_02_T1+LE07_L2SP_188025_20100924_02_T1"
+   ],
+   "date": "2010-06-11",
+   "cloud_pct": 0.86,
+   "valid_pct": 99.14,
+   "data_pct": 99.3,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2010.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2010-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.018707498908042908,
+      0.18703500926494598
+     ],
+     [
+      0.02508750557899475,
+      0.15166999399662018
+     ],
+     [
+      0.0160675048828125,
+      0.11919249594211578
+     ]
+    ],
+    "swir": [
+     [
+      0.0351250022649765,
+      0.3363550806045518
+     ],
+     [
+      0.15513499081134796,
+      0.414157509803772
+     ],
+     [
+      0.018707498908042908,
+      0.18703500926494598
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
+  },
+  {
+   "year": 2011,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_188024_20110530_02_T1+LT05_L2SP_188025_20110530_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_188024_20110530_02_T1+LT05_L2SP_188025_20110530_02_T1"
+   ],
+   "date": "2011-05-30",
+   "cloud_pct": 0.02,
+   "valid_pct": 99.98,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.87,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2011.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2011-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.027287498116493225,
+      0.1969899982213974
+     ],
+     [
+      0.03773750364780426,
+      0.17389000952243805
+     ],
+     [
+      0.02236500382423401,
+      0.12708498537540436
+     ]
+    ],
+    "swir": [
+     [
+      0.04384249448776245,
+      0.3390830886363988
+     ],
+     [
+      0.15758250653743744,
+      0.4418500065803528
+     ],
+     [
+      0.027287498116493225,
+      0.1969899982213974
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
+  },
+  {
+   "year": 2012,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20120616_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20120616_02_T1",
+    "LE07_L2SP_188024_20120828_02_T1+LE07_L2SP_188025_20120828_02_T1",
+    "LE07_L2SP_189024_20120904_02_T1"
+   ],
+   "date": "2012-06-16",
+   "cloud_pct": 0.86,
+   "valid_pct": 99.14,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 3.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2012.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2012-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.016314998269081116,
+      0.17765749990940094
+     ],
+     [
+      0.023822501301765442,
+      0.1440799981355667
+     ],
+     [
+      0.013840004801750183,
+      0.11391250789165497
+     ]
+    ],
+    "swir": [
+     [
+      0.0357850044965744,
+      0.30501057028770495
+     ],
+     [
+      0.12606750428676605,
+      0.3699924945831299
+     ],
+     [
+      0.016314998269081116,
+      0.17765749990940094
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
+  },
+  {
+   "year": 2013,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20130721_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20130721_02_T1",
+    "LE07_L2SP_189024_20130907_02_T1",
+    "LE07_L2SP_189024_20130806_02_T1"
+   ],
+   "date": "2013-07-21",
+   "cloud_pct": 1.75,
+   "valid_pct": 98.25,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2013.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2013-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.016177505254745483,
+      0.19110499322414398
+     ],
+     [
+      0.02349250018596649,
+      0.15752749145030975
+     ],
+     [
+      0.01279500126838684,
+      0.12953250110149384
+     ]
+    ],
+    "swir": [
+     [
+      0.033254995942115784,
+      0.3248100280761719
+     ],
+     [
+      0.1328050047159195,
+      0.37824249267578125
+     ],
+     [
+      0.016177505254745483,
+      0.19110499322414398
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
+  },
+  {
+   "year": 2014,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20140809_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20140809_02_T1",
+    "LE07_L2SP_188024_20140802_02_T1+LE07_L2SP_188025_20140802_02_T1"
+   ],
+   "date": "2014-08-09",
+   "cloud_pct": 8.42,
+   "valid_pct": 91.58,
+   "data_pct": 98.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2014.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2014-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01884499192237854,
+      0.19759498536586761
+     ],
+     [
+      0.0261324942111969,
+      0.1667806965112681
+     ],
+     [
+      0.017992496490478516,
+      0.1408899873495102
+     ]
+    ],
+    "swir": [
+     [
+      0.02778249979019165,
+      0.31207752227783203
+     ],
+     [
+      0.10801429927349092,
+      0.3917725086212158
+     ],
+     [
+      0.01884499192237854,
+      0.19759498536586761
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
+  },
+  {
+   "year": 2015,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20150812_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20150812_02_T1",
+    "LE07_L2SP_188024_20150704_02_T1+LE07_L2SP_188025_20150704_02_T1"
+   ],
+   "date": "2015-08-12",
+   "cloud_pct": 1.42,
+   "valid_pct": 98.58,
+   "data_pct": 99.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2015.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2015-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.02068750560283661,
+      0.17507250607013702
+     ],
+     [
+      0.028579995036125183,
+      0.13747450411319861
+     ],
+     [
+      0.017690002918243408,
+      0.11157499253749847
+     ]
+    ],
+    "swir": [
+     [
+      0.03374999761581421,
+      0.32318753004074097
+     ],
+     [
+      0.1552175134420395,
+      0.3616049885749817
+     ],
+     [
+      0.02068750560283661,
+      0.17507250607013702
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
+  },
+  {
+   "year": 2016,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_189024_20160915_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_189024_20160915_02_T1",
+    "LE07_L2SP_189024_20160510_02_T1",
+    "LE07_L2SP_188024_20160908_02_T1+LE07_L2SP_188025_20160908_02_T1"
+   ],
+   "date": "2016-09-15",
+   "cloud_pct": 3.55,
+   "valid_pct": 96.45,
+   "data_pct": 99.87,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2016.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2016-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0181024968624115,
+      0.19385500252246857
+     ],
+     [
+      0.022805005311965942,
+      0.15692250430583954
+     ],
+     [
+      0.014609992504119873,
+      0.12601248919963837
+     ]
+    ],
+    "swir": [
+     [
+      0.0301474928855896,
+      0.3482400178909302
+     ],
+     [
+      0.11766679465770723,
+      0.37692248821258545
+     ],
+     [
+      0.0181024968624115,
+      0.19385500252246857
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
+  },
+  {
+   "year": 2017,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20170930_0_L2A+S2B_33UYS_20170930_0_L2A+S2B_33UYT_20170930_0_L2A+S2B_34UCC_20170930_0_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20170930_0_L2A+S2B_33UYS_20170930_0_L2A+S2B_33UYT_20170930_0_L2A+S2B_34UCC_20170930_0_L2A"
+   ],
+   "date": "2017-09-30",
+   "cloud_pct": 0.93,
+   "valid_pct": 99.07,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 10.61,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2017.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2017-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.017500000074505806,
+      0.1955999881029129
+     ],
+     [
+      0.025200000032782555,
+      0.16699999570846558
+     ],
+     [
+      0.016699999570846558,
+      0.13679999113082886
+     ]
+    ],
+    "swir": [
+     [
+      0.03529999777674675,
+      0.3434000015258789
+     ],
+     [
+      0.09539999812841415,
+      0.399399995803833
+     ],
+     [
+      0.017500000074505806,
+      0.1955999881029129
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
+   }
+  },
+  {
+   "year": 2018,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_34UCB_20180920_1_L2A+S2A_34UCB_20180920_0_L2A+S2A_33UYS_20180920_1_L2A+S2A_33UYS_20180920_0_L2A+S2A_33UYT_20180920_1_L2A+S2A_33UYT_20180920_0_L2A+S2A_34UCC_20180920_1_L2A+S2A_34UCC_20180920_0_L2A",
+   "scene_ids": [
+    "S2A_34UCB_20180920_1_L2A+S2A_34UCB_20180920_0_L2A+S2A_33UYS_20180920_1_L2A+S2A_33UYS_20180920_0_L2A+S2A_33UYT_20180920_1_L2A+S2A_33UYT_20180920_0_L2A+S2A_34UCC_20180920_1_L2A+S2A_34UCC_20180920_0_L2A"
+   ],
+   "date": "2018-09-20",
+   "cloud_pct": 0.01,
+   "valid_pct": 99.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.08,
+   "snow_pct": 0.02,
+   "pixel_m": 10.0,
+   "image": "frames/2018.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2018-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08340000361204147,
+      0.11779998987913132
+     ],
+     [
+      -0.07640000432729721,
+      0.08299999684095383
+     ],
+     [
+      -0.08870000392198563,
+      0.04540000110864639
+     ]
+    ],
+    "swir": [
+     [
+      -0.0601000040769577,
+      0.2879999876022339
+     ],
+     [
+      0.007299996912479401,
+      0.3107999861240387
+     ],
+     [
+      -0.08340000361204147,
+      0.11779998987913132
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
+   }
+  },
+  {
+   "year": 2019,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20190831_0_L2A+S2B_34UCB_20190831_1_L2A+S2B_33UYS_20190831_0_L2A+S2B_33UYS_20190831_1_L2A+S2B_33UYT_20190831_0_L2A+S2B_33UYT_20190831_1_L2A+S2B_34UCC_20190831_0_L2A+S2B_34UCC_20190831_1_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20190831_0_L2A+S2B_34UCB_20190831_1_L2A+S2B_33UYS_20190831_0_L2A+S2B_33UYS_20190831_1_L2A+S2B_33UYT_20190831_0_L2A+S2B_33UYT_20190831_1_L2A+S2B_34UCC_20190831_0_L2A+S2B_34UCC_20190831_1_L2A"
+   ],
+   "date": "2019-08-31",
+   "cloud_pct": 0.89,
+   "valid_pct": 99.11,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.13,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2019.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2019-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.017999999225139618,
+      0.20799998939037323
+     ],
+     [
+      0.0279999990016222,
+      0.17799998819828033
+     ],
+     [
+      0.019299998879432678,
+      0.1451999992132187
+     ]
+    ],
+    "swir": [
+     [
+      0.03819999843835831,
+      0.37619999051094055
+     ],
+     [
+      0.10040000081062317,
+      0.359499990940094
+     ],
+     [
+      0.017999999225139618,
+      0.20799998939037323
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
+   }
+  },
+  {
+   "year": 2020,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20200914_1_L2A+S2B_34UCB_20200914_0_L2A+S2B_33UYS_20200914_1_L2A+S2B_33UYS_20200914_0_L2A+S2B_33UYT_20200914_1_L2A+S2B_33UYT_20200914_0_L2A+S2B_34UCC_20200914_1_L2A+S2B_34UCC_20200914_0_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20200914_1_L2A+S2B_34UCB_20200914_0_L2A+S2B_33UYS_20200914_1_L2A+S2B_33UYS_20200914_0_L2A+S2B_33UYT_20200914_1_L2A+S2B_33UYT_20200914_0_L2A+S2B_34UCC_20200914_1_L2A+S2B_34UCC_20200914_0_L2A"
+   ],
+   "date": "2020-09-14",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 4.17,
+   "snow_pct": 0.04,
+   "pixel_m": 10.0,
+   "image": "frames/2020.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2020-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08460000157356262,
+      0.132999986410141
+     ],
+     [
+      -0.07559999823570251,
+      0.0973999872803688
+     ],
+     [
+      -0.08310000598430634,
+      0.060999996960163116
+     ]
+    ],
+    "swir": [
+     [
+      -0.0632999986410141,
+      0.31200000643730164
+     ],
+     [
+      0.009199999272823334,
+      0.3107999861240387
+     ],
+     [
+      -0.08460000157356262,
+      0.132999986410141
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
+   }
+  },
+  {
+   "year": 2021,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20210909_0_L2A+S2B_34UCB_20210909_1_L2A+S2B_33UYS_20210909_1_L2A+S2B_33UYS_20210909_0_L2A+S2B_33UYT_20210909_1_L2A+S2B_33UYT_20210909_0_L2A+S2B_34UCC_20210909_0_L2A+S2B_34UCC_20210909_1_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20210909_0_L2A+S2B_34UCB_20210909_1_L2A+S2B_33UYS_20210909_1_L2A+S2B_33UYS_20210909_0_L2A+S2B_33UYT_20210909_1_L2A+S2B_33UYT_20210909_0_L2A+S2B_34UCC_20210909_0_L2A+S2B_34UCC_20210909_1_L2A"
+   ],
+   "date": "2021-09-09",
+   "cloud_pct": 0.3,
+   "valid_pct": 99.69,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.4,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2021.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2021-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.016499999910593033,
+      0.2303999960422516
+     ],
+     [
+      0.02499999850988388,
+      0.1947999894618988
+     ],
+     [
+      0.017400000244379044,
+      0.15760000050067902
+     ]
+    ],
+    "swir": [
+     [
+      0.03619999811053276,
+      0.4041999876499176
+     ],
+     [
+      0.1143999993801117,
+      0.4120999872684479
+     ],
+     [
+      0.016499999910593033,
+      0.2303999960422516
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
+   }
+  },
+  {
+   "year": 2022,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20220626_0_L2A+S2B_33UYS_20220626_0_L2A+S2B_33UYT_20220626_0_L2A+S2B_34UCC_20220626_0_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20220626_0_L2A+S2B_33UYS_20220626_0_L2A+S2B_33UYT_20220626_0_L2A+S2B_34UCC_20220626_0_L2A"
+   ],
+   "date": "2022-06-26",
+   "cloud_pct": 0.46,
+   "valid_pct": 99.54,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.59,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2022.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2022-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08220000565052032,
+      0.1435999870300293
+     ],
+     [
+      -0.06800000369548798,
+      0.10839999467134476
+     ],
+     [
+      -0.08030000329017639,
+      0.07259999960660934
+     ]
+    ],
+    "swir": [
+     [
+      -0.05250000208616257,
+      0.3319999873638153
+     ],
+     [
+      0.0299999937415123,
+      0.3788999915122986
+     ],
+     [
+      -0.08220000565052032,
+      0.1435999870300293
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
+   }
+  },
+  {
+   "year": 2023,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_34UCB_20230815_0_L2A+S2A_33UYS_20230815_0_L2A+S2A_33UYT_20230815_0_L2A+S2A_34UCC_20230815_0_L2A",
+   "scene_ids": [
+    "S2A_34UCB_20230815_0_L2A+S2A_33UYS_20230815_0_L2A+S2A_33UYT_20230815_0_L2A+S2A_34UCC_20230815_0_L2A"
+   ],
+   "date": "2023-08-15",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.36,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2023.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2023-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08259999752044678,
+      0.12039998918771744
+     ],
+     [
+      -0.07259999960660934,
+      0.08579999953508377
+     ],
+     [
+      -0.08489999920129776,
+      0.04899998754262924
+     ]
+    ],
+    "swir": [
+     [
+      -0.059700001031160355,
+      0.29440000653266907
+     ],
+     [
+      0.012099996209144592,
+      0.28360000252723694
+     ],
+     [
+      -0.08259999752044678,
+      0.12039998918771744
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
+   }
+  },
+  {
+   "year": 2024,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20240814_0_L2A+S2B_33UYS_20240814_0_L2A+S2B_33UYT_20240814_0_L2A+S2B_34UCC_20240814_0_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20240814_0_L2A+S2B_33UYS_20240814_0_L2A+S2B_33UYT_20240814_0_L2A+S2B_34UCC_20240814_0_L2A"
+   ],
+   "date": "2024-08-14",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2024.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2024-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08349999785423279,
+      0.12779998779296875
+     ],
+     [
+      -0.0738999992609024,
+      0.09179999679327011
+     ],
+     [
+      -0.08300000429153442,
+      0.057799987494945526
+     ]
+    ],
+    "swir": [
+     [
+      -0.058800000697374344,
+      0.3100000023841858
+     ],
+     [
+      0.02059999853372574,
+      0.3188000023365021
+     ],
+     [
+      -0.08349999785423279,
+      0.12779998779296875
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
+   }
+  },
+  {
+   "year": 2025,
+   "sensor": "sentinel-2c",
+   "scene_id": "S2C_34UCB_20250814_0_L2A+S2C_33UYS_20250814_0_L2A+S2C_33UYT_20250814_0_L2A+S2C_34UCC_20250814_0_L2A",
+   "scene_ids": [
+    "S2C_34UCB_20250814_0_L2A+S2C_33UYS_20250814_0_L2A+S2C_33UYT_20250814_0_L2A+S2C_34UCC_20250814_0_L2A"
+   ],
+   "date": "2025-08-14",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2025.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2025-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.07970000058412552,
+      0.12439999729394913
+     ],
+     [
+      -0.0690000057220459,
+      0.08799999207258224
+     ],
+     [
+      -0.08070000261068344,
+      0.051600001752376556
+     ]
+    ],
+    "swir": [
+     [
+      -0.05860000103712082,
+      0.28949999809265137
+     ],
+     [
+      0.02279999852180481,
+      0.31769999861717224
+     ],
+     [
+      -0.07970000058412552,
+      0.12439999729394913
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
+   }
+  },
+  {
+   "year": 2026,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_34UCB_20260814_0_L2A+S2B_33UYS_20260814_0_L2A+S2B_33UYT_20260814_0_L2A+S2B_34UCC_20260814_0_L2A",
+   "scene_ids": [
+    "S2B_34UCB_20260814_0_L2A+S2B_33UYS_20260814_0_L2A+S2B_33UYT_20260814_0_L2A+S2B_34UCC_20260814_0_L2A"
+   ],
+   "date": "2026-08-14",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.01,
+   "pixel_m": 10.0,
+   "image": "frames/2026.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2026-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.08489999920129776,
+      0.12799999117851257
+     ],
+     [
+      -0.07420000433921814,
+      0.09229999035596848
+     ],
+     [
+      -0.08430000394582748,
+      0.05909999459981918
+     ]
+    ],
+    "swir": [
+     [
+      -0.057200003415346146,
+      0.3105999827384949
+     ],
+     [
+      0.022399991750717163,
+      0.3093000054359436
+     ],
+     [
+      -0.08489999920129776,
+      0.12799999117851257
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
+   }
+  }
+ ],
+ "gaps": {},
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2c",
+   "sentinel-2b"
+  ],
+  "valid_frac": [
+   0.9869,
+   0.963,
+   0.9465,
+   1.0,
+   0.9318,
+   0.9982,
+   0.9981,
+   0.9998,
+   0.9847,
+   1.0,
+   1.0,
+   0.9586,
+   1.0,
+   0.9441,
+   0.9458,
+   0.9687,
+   0.9944,
+   0.9984,
+   0.9895,
+   0.9608,
+   0.9975,
+   0.9794,
+   0.964,
+   0.9542,
+   0.9789,
+   0.992,
+   0.9988,
+   0.9905,
+   0.9685,
+   0.9486,
+   0.9775,
+   0.9441,
+   0.9831,
+   0.9995,
+   0.9847,
+   1.0,
+   0.9948,
+   0.9967,
+   1.0,
+   1.0,
+   1.0,
+   1.0
+  ],
+  "envelope_km2": 111.0411,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    13.1202,
+    11.9826,
+    10.584,
+    16.8219,
+    16.866,
+    19.449,
+    20.4651,
+    15.4035,
+    18.5859,
+    21.7827,
+    19.7649,
+    18.2133,
+    22.0599,
+    21.879,
+    22.5288,
+    25.3953,
+    20.0223,
+    27.4671,
+    25.6203,
+    26.2809,
+    27.2889,
+    20.7801,
+    18.2646,
+    20.3067,
+    16.2792,
+    14.13,
+    17.1675,
+    12.0357,
+    14.7726,
+    6.561,
+    11.0223,
+    11.4939,
+    10.9818,
+    5.8563,
+    15.7041,
+    4.8582,
+    13.6638,
+    5.1552,
+    3.5541,
+    2.7855,
+    4.5468,
+    3.573
+   ],
+   "rf": [
+    9.6138,
+    13.8024,
+    8.9019,
+    14.8689,
+    12.0222,
+    16.3224,
+    10.7775,
+    6.3702,
+    11.3193,
+    13.3938,
+    16.0524,
+    16.5951,
+    19.1619,
+    18.1161,
+    13.7673,
+    13.0698,
+    14.1786,
+    14.3046,
+    18.6813,
+    15.0561,
+    19.9413,
+    16.3278,
+    15.3225,
+    12.9375,
+    12.1095,
+    10.1169,
+    14.3415,
+    10.1358,
+    11.7567,
+    7.8831,
+    7.5411,
+    7.6158,
+    15.5196,
+    16.245,
+    19.7487,
+    14.8005,
+    17.9424,
+    14.3262,
+    15.6393,
+    12.6126,
+    11.9115,
+    13.3308
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    31.194,
+    44.7651,
+    39.1401,
+    41.5701,
+    33.8931,
+    35.1207,
+    43.7193,
+    34.4799,
+    40.3974,
+    34.9992
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.43632,
+    0.43737,
+    0.48608,
+    0.48651,
+    0.41466,
+    0.45374,
+    0.46238,
+    0.44051,
+    0.43169,
+    0.41502,
+    0.44222,
+    0.43373,
+    0.43542,
+    0.44045,
+    0.45086,
+    0.41366,
+    0.48675,
+    0.41494,
+    0.4181,
+    0.39981,
+    0.44133,
+    0.46039,
+    0.47142,
+    0.46151,
+    0.49691,
+    0.53131,
+    0.48812,
+    0.5174,
+    0.52048,
+    0.52606,
+    0.46559,
+    0.48226,
+    0.48072,
+    0.74761,
+    0.44516,
+    0.76253,
+    0.51051,
+    0.7661,
+    0.76936,
+    0.77102,
+    0.77023,
+    0.75969
+   ],
+   "mndwi": [
+    -0.33666,
+    -0.32415,
+    -0.41506,
+    -0.39627,
+    -0.4279,
+    -0.40684,
+    -0.4075,
+    -0.38934,
+    -0.41574,
+    -0.39845,
+    -0.42721,
+    -0.34798,
+    -0.43458,
+    -0.38927,
+    -0.40492,
+    -0.40418,
+    -0.43233,
+    -0.43123,
+    -0.42072,
+    -0.45856,
+    -0.43712,
+    -0.41499,
+    -0.43238,
+    -0.4268,
+    -0.50614,
+    -0.49206,
+    -0.41756,
+    -0.49319,
+    -0.49564,
+    -0.48052,
+    -0.48004,
+    -0.49324,
+    -0.43188,
+    -0.8206,
+    -0.44316,
+    -0.82786,
+    -0.44766,
+    -0.83594,
+    -0.85146,
+    -0.84742,
+    -0.85511,
+    -0.84185
+   ],
+   "bsi": [
+    -0.0369,
+    -0.05049,
+    -0.03545,
+    -0.04919,
+    0.03605,
+    -0.01374,
+    -0.01835,
+    -0.00453,
+    0.0055,
+    0.00367,
+    0.00047,
+    -0.039,
+    0.01339,
+    -0.01726,
+    -0.01672,
+    0.01783,
+    -0.03352,
+    0.02712,
+    0.01874,
+    0.05056,
+    0.00664,
+    -0.01669,
+    -0.01515,
+    0.00059,
+    -0.02194,
+    -0.05661,
+    -0.04119,
+    -0.04123,
+    -0.05571,
+    -0.06515,
+    -0.00953,
+    -0.01183,
+    -0.03571,
+    -0.10228,
+    0.00455,
+    -0.1806,
+    -0.06338,
+    -0.21004,
+    -0.11553,
+    -0.14088,
+    -0.13322,
+    -0.1194
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1990,
+      2012
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1989,
+       "mean": 13.8749,
+       "slope": 1.2331
+      },
+      {
+       "start": 1990,
+       "end": 2011,
+       "mean": 20.8698,
+       "slope": -0.0129
+      },
+      {
+       "start": 2012,
+       "end": 2026,
+       "mean": 8.4376,
+       "slope": -0.6571
+      }
+     ],
+     "penalty": 188.284604,
+     "sigma": 4.097758,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 2.048879,
+     "h": 16.391033,
+     "sigma": 4.097758,
+     "target": -0.1809
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 42,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 2026,
+       "mean": 13.6781,
+       "slope": 0.0216
+      }
+     ],
+     "penalty": 231.875225,
+     "sigma": 4.547431,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 2.273715,
+     "h": 18.189723,
+     "sigma": 4.547431,
+     "target": 0.0747
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 37.9279,
+       "slope": -0.0724
+      }
+     ],
+     "penalty": 713.010128,
+     "sigma": 10.159665,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 5.079832,
+     "h": 40.638659,
+     "sigma": 10.159665,
+     "target": 1.2276
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1990,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 188.284604
+   },
+   {
+    "year": 2012,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 188.284604
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "belchatow",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -167.6,
+   167.6
+  ],
+  "geoid_offset_m": 0.087,
+  "stable_bias_m": 3.277,
+  "noise_floor_m": 2.017,
+  "tau_m": 4.035,
+  "stable_ground_px": 494974,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 1333243392,
+  "fill_volume_m3": 1105000192,
+  "envelope": {
+   "cut_m3": 1333243392,
+   "fill_m3": 1105000192,
+   "cut_km2": 19.3383,
+   "fill_km2": 21.573,
+   "min_m": -213.5,
+   "max_m": 188.5
+  },
+  "window": {
+   "cut_m3": 1503428096,
+   "fill_m3": 1301984640,
+   "cut_km2": 39.5451,
+   "fill_km2": 57.0645,
+   "min_m": -213.5,
+   "max_m": 188.5
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/566/341.png",
+   "terrain/10/566/342.png",
+   "terrain/10/567/341.png",
+   "terrain/10/567/342.png",
+   "terrain/11/1132/682.png",
+   "terrain/11/1132/683.png",
+   "terrain/11/1132/684.png",
+   "terrain/11/1133/682.png",
+   "terrain/11/1133/683.png",
+   "terrain/11/1133/684.png",
+   "terrain/11/1134/682.png",
+   "terrain/11/1134/683.png",
+   "terrain/11/1134/684.png",
+   "terrain/12/2265/1364.png",
+   "terrain/12/2265/1365.png",
+   "terrain/12/2265/1366.png",
+   "terrain/12/2265/1367.png",
+   "terrain/12/2265/1368.png",
+   "terrain/12/2266/1364.png",
+   "terrain/12/2266/1365.png",
+   "terrain/12/2266/1366.png",
+   "terrain/12/2266/1367.png",
+   "terrain/12/2266/1368.png",
+   "terrain/12/2267/1364.png",
+   "terrain/12/2267/1365.png",
+   "terrain/12/2267/1366.png",
+   "terrain/12/2267/1367.png",
+   "terrain/12/2267/1368.png",
+   "terrain/12/2268/1364.png",
+   "terrain/12/2268/1365.png",
+   "terrain/12/2268/1366.png",
+   "terrain/12/2268/1367.png",
+   "terrain/12/2268/1368.png",
+   "terrain/12/2269/1364.png",
+   "terrain/12/2269/1365.png",
+   "terrain/12/2269/1366.png",
+   "terrain/12/2269/1367.png",
+   "terrain/12/2269/1368.png",
+   "terrain/13/4531/2729.png",
+   "terrain/13/4531/2730.png",
+   "terrain/13/4531/2731.png",
+   "terrain/13/4531/2732.png",
+   "terrain/13/4531/2733.png",
+   "terrain/13/4531/2734.png",
+   "terrain/13/4531/2735.png",
+   "terrain/13/4531/2736.png",
+   "terrain/13/4531/2737.png",
+   "terrain/13/4532/2729.png",
+   "terrain/13/4532/2730.png",
+   "terrain/13/4532/2731.png",
+   "terrain/13/4532/2732.png",
+   "terrain/13/4532/2733.png",
+   "terrain/13/4532/2734.png",
+   "terrain/13/4532/2735.png",
+   "terrain/13/4532/2736.png",
+   "terrain/13/4532/2737.png",
+   "terrain/13/4533/2729.png",
+   "terrain/13/4533/2730.png",
+   "terrain/13/4533/2731.png",
+   "terrain/13/4533/2732.png",
+   "terrain/13/4533/2733.png",
+   "terrain/13/4533/2734.png",
+   "terrain/13/4533/2735.png",
+   "terrain/13/4533/2736.png",
+   "terrain/13/4533/2737.png",
+   "terrain/13/4534/2729.png",
+   "terrain/13/4534/2730.png",
+   "terrain/13/4534/2731.png",
+   "terrain/13/4534/2732.png",
+   "terrain/13/4534/2733.png",
+   "terrain/13/4534/2734.png",
+   "terrain/13/4534/2735.png",
+   "terrain/13/4534/2736.png",
+   "terrain/13/4534/2737.png",
+   "terrain/13/4535/2729.png",
+   "terrain/13/4535/2730.png",
+   "terrain/13/4535/2731.png",
+   "terrain/13/4535/2732.png",
+   "terrain/13/4535/2733.png",
+   "terrain/13/4535/2734.png",
+   "terrain/13/4535/2735.png",
+   "terrain/13/4535/2736.png",
+   "terrain/13/4535/2737.png",
+   "terrain/13/4536/2729.png",
+   "terrain/13/4536/2730.png",
+   "terrain/13/4536/2731.png",
+   "terrain/13/4536/2732.png",
+   "terrain/13/4536/2733.png",
+   "terrain/13/4536/2734.png",
+   "terrain/13/4536/2735.png",
+   "terrain/13/4536/2736.png",
+   "terrain/13/4536/2737.png",
+   "terrain/13/4537/2729.png",
+   "terrain/13/4537/2730.png",
+   "terrain/13/4537/2731.png",
+   "terrain/13/4537/2732.png",
+   "terrain/13/4537/2733.png",
+   "terrain/13/4537/2734.png",
+   "terrain/13/4537/2735.png",
+   "terrain/13/4537/2736.png",
+   "terrain/13/4537/2737.png",
+   "terrain/13/4538/2729.png",
+   "terrain/13/4538/2730.png",
+   "terrain/13/4538/2731.png",
+   "terrain/13/4538/2732.png",
+   "terrain/13/4538/2733.png",
+   "terrain/13/4538/2734.png",
+   "terrain/13/4538/2735.png",
+   "terrain/13/4538/2736.png",
+   "terrain/13/4538/2737.png",
+   "terrain/13/4539/2729.png",
+   "terrain/13/4539/2730.png",
+   "terrain/13/4539/2731.png",
+   "terrain/13/4539/2732.png",
+   "terrain/13/4539/2733.png",
+   "terrain/13/4539/2734.png",
+   "terrain/13/4539/2735.png",
+   "terrain/13/4539/2736.png",
+   "terrain/13/4539/2737.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": -4.0,
+   "max": 396.0
+  },
+  "cop_stats": {
+   "min": -100.3,
+   "max": 403.5
+  }
+ },
  "models": [],
  "files": [
   {
+   "path": "sites/belchatow/dem/cop.png",
+   "kind": "dem",
+   "bytes": 488037,
+   "sha256": "b15f9ede5004835e7e97d8df4e4256c451263b25b9ba67f4cb3b06f7976648fb"
+  },
+  {
+   "path": "sites/belchatow/dem/delta.png",
+   "kind": "dem",
+   "bytes": 623879,
+   "sha256": "76beb8f6aa83a91beac2834f7d99678e5c59d2d86b6c85ee91f1161a6b856979"
+  },
+  {
+   "path": "sites/belchatow/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 390339,
+   "sha256": "65234b519145d033992c2652d56a78d22561e0c8291e1dfaf1baf81bb4f84fbc"
+  },
+  {
+   "path": "sites/belchatow/frames/1985-swir.webp",
+   "kind": "frame",
+   "bytes": 70022,
+   "sha256": "292397db8969c4033257427011e1f56eeb3b27ffb7f0f3307f578d9500143e67",
+   "year": 1985
+  },
+  {
+   "path": "sites/belchatow/frames/1985.webp",
+   "kind": "frame",
+   "bytes": 152406,
+   "sha256": "5cf8b604abd610df58d2ed7ef4c0d355fb166729ee29d07f1a26bf9e72c100b0",
+   "year": 1985
+  },
+  {
+   "path": "sites/belchatow/frames/1986-swir.webp",
+   "kind": "frame",
+   "bytes": 68878,
+   "sha256": "d81f93306b963e48d7bf1ec1af52b1e5119da1e329e010610096521319b18831",
+   "year": 1986
+  },
+  {
+   "path": "sites/belchatow/frames/1986.webp",
+   "kind": "frame",
+   "bytes": 125170,
+   "sha256": "e91ffcb323a7d99a8ad1b855abdbfa8ccde2925596ba306af1306047a3b02093",
+   "year": 1986
+  },
+  {
+   "path": "sites/belchatow/frames/1987-swir.webp",
+   "kind": "frame",
+   "bytes": 74662,
+   "sha256": "e330501262d577280b150378a1ad8724c13983e2581733bfa16c3d332f8d7bb3",
+   "year": 1987
+  },
+  {
+   "path": "sites/belchatow/frames/1987.webp",
+   "kind": "frame",
+   "bytes": 141850,
+   "sha256": "f3c6d674f00912ad121ea56e2811481160e813a8fcdd13a148fd638761c2bb36",
+   "year": 1987
+  },
+  {
+   "path": "sites/belchatow/frames/1988-swir.webp",
+   "kind": "frame",
+   "bytes": 70742,
+   "sha256": "33f58cc7f7f305c76a061b2acad788054c6726faea806d8f2440b591debffc30",
+   "year": 1988
+  },
+  {
+   "path": "sites/belchatow/frames/1988.webp",
+   "kind": "frame",
+   "bytes": 120150,
+   "sha256": "bbf82dda128f1acb6e4886ed6ed494f0d6a268c4ccd6bbf7f4fb67f2ab4c7ebb",
+   "year": 1988
+  },
+  {
+   "path": "sites/belchatow/frames/1989-swir.webp",
+   "kind": "frame",
+   "bytes": 73014,
+   "sha256": "707440fcfb95e28bbe86a81bc14590c3542bfccda318f10458c50532e4fe8e78",
+   "year": 1989
+  },
+  {
+   "path": "sites/belchatow/frames/1989.webp",
+   "kind": "frame",
+   "bytes": 145374,
+   "sha256": "1f54124ab3a2a73847591b10a9c2f08dac8dad9494923eb1a88a4978dbeda8a1",
+   "year": 1989
+  },
+  {
+   "path": "sites/belchatow/frames/1990-swir.webp",
+   "kind": "frame",
+   "bytes": 73454,
+   "sha256": "19cd9a71f3de1159c39573da66597e3ab8ad171b196cd785525193ac924f8757",
+   "year": 1990
+  },
+  {
+   "path": "sites/belchatow/frames/1990.webp",
+   "kind": "frame",
+   "bytes": 160766,
+   "sha256": "df9847cca8f89b81b7020b60c1b3dba8cd4bc66907b63d755cddebf932fdadde",
+   "year": 1990
+  },
+  {
+   "path": "sites/belchatow/frames/1991-swir.webp",
+   "kind": "frame",
+   "bytes": 72528,
+   "sha256": "0567bce017bd997cc7b06bdfb2d705136602f596297232b319dfc2acdd1c00d1",
+   "year": 1991
+  },
+  {
+   "path": "sites/belchatow/frames/1991.webp",
+   "kind": "frame",
+   "bytes": 157736,
+   "sha256": "ed4ec2013edb472fd4d2ca691fad9dd6eb51a6654dafb33238c6e0c6a0163544",
+   "year": 1991
+  },
+  {
+   "path": "sites/belchatow/frames/1992-swir.webp",
+   "kind": "frame",
+   "bytes": 71344,
+   "sha256": "a045005c2f0a5f5a2002dfb0dc79abb5777104b9513e05b60d9c58f8ca84f724",
+   "year": 1992
+  },
+  {
+   "path": "sites/belchatow/frames/1992.webp",
+   "kind": "frame",
+   "bytes": 165790,
+   "sha256": "45ef3e71b5fff98bcefe0fe87db710765b2771c87863a9fc59fa55c4ce230c4d",
+   "year": 1992
+  },
+  {
+   "path": "sites/belchatow/frames/1993-swir.webp",
+   "kind": "frame",
+   "bytes": 72338,
+   "sha256": "6b75b9c44681967773e9b96f363d4787898db3282f6a8a19b15bfb400571621d",
+   "year": 1993
+  },
+  {
+   "path": "sites/belchatow/frames/1993.webp",
+   "kind": "frame",
+   "bytes": 146160,
+   "sha256": "d1c9df21f22c5bc8f8f2be5fe58943a125c21290f6c08d52e2e14da21c6be672",
+   "year": 1993
+  },
+  {
+   "path": "sites/belchatow/frames/1994-swir.webp",
+   "kind": "frame",
+   "bytes": 68336,
+   "sha256": "8bf7f203c292074773148de73b7ab1bc2438070145a6611b6e490c69809d1b78",
+   "year": 1994
+  },
+  {
+   "path": "sites/belchatow/frames/1994.webp",
+   "kind": "frame",
+   "bytes": 143292,
+   "sha256": "93017013018c1523ffd6309e8a75d839c5c858d0e3c8eddf12808ff5cc2d3657",
+   "year": 1994
+  },
+  {
+   "path": "sites/belchatow/frames/1995-swir.webp",
+   "kind": "frame",
+   "bytes": 74396,
+   "sha256": "6c344b6923d5f8c4f087f7522708c7678fbe27558086b670833fd2295d7c9e7b",
+   "year": 1995
+  },
+  {
+   "path": "sites/belchatow/frames/1995.webp",
+   "kind": "frame",
+   "bytes": 143270,
+   "sha256": "f124881195f0d460c657160ab6bc1365465a61b920fcbee4376c3b0531a593c9",
+   "year": 1995
+  },
+  {
+   "path": "sites/belchatow/frames/1996-swir.webp",
+   "kind": "frame",
+   "bytes": 63444,
+   "sha256": "d6a486faf55d38e73559c1e66fb04fb8acde83befcb376453186833f5b7bc31c",
+   "year": 1996
+  },
+  {
+   "path": "sites/belchatow/frames/1996.webp",
+   "kind": "frame",
+   "bytes": 119720,
+   "sha256": "7052b5f7127b133593c6fae83595d7717909e9eb636be2e8f7a5b30a2d8f6706",
+   "year": 1996
+  },
+  {
+   "path": "sites/belchatow/frames/1997-swir.webp",
+   "kind": "frame",
+   "bytes": 76110,
+   "sha256": "0ba39af916de7b54d622421b2c280fbe4fc9438d99952c85173646efd4195796",
+   "year": 1997
+  },
+  {
+   "path": "sites/belchatow/frames/1997.webp",
+   "kind": "frame",
+   "bytes": 155936,
+   "sha256": "98166b409014ca7db7b859ed78c6703e879ac6d950e5b9d0393c24bd559cb109",
+   "year": 1997
+  },
+  {
+   "path": "sites/belchatow/frames/1998-swir.webp",
+   "kind": "frame",
+   "bytes": 42710,
+   "sha256": "bcfbae4f23ab3727cd8859d28b8e1dcf6f80b9f18193b19bab2cff9ca98da237",
+   "year": 1998
+  },
+  {
+   "path": "sites/belchatow/frames/1998.webp",
+   "kind": "frame",
+   "bytes": 79154,
+   "sha256": "06efb435c12d313869ece8bea223058974ef46ecdeb332ccf3b33c93b7a5a09e",
+   "year": 1998
+  },
+  {
+   "path": "sites/belchatow/frames/1999-swir.webp",
+   "kind": "frame",
+   "bytes": 66328,
+   "sha256": "13a9c169c7aea7ae91b7051d8b3fe64a53572f91910d4817766a7279b93de65b",
+   "year": 1999
+  },
+  {
+   "path": "sites/belchatow/frames/1999.webp",
+   "kind": "frame",
+   "bytes": 137642,
+   "sha256": "2813493e3c0e37d8c0311eb9119576c67e81d6a6ca56a9909054ebf199ecfe04",
+   "year": 1999
+  },
+  {
+   "path": "sites/belchatow/frames/2000-swir.webp",
+   "kind": "frame",
+   "bytes": 66816,
+   "sha256": "39233e220275643fe0e5f84f2176fe03aa9ad758e8ce3977a7fb066ed8d3e054",
+   "year": 2000
+  },
+  {
+   "path": "sites/belchatow/frames/2000.webp",
+   "kind": "frame",
+   "bytes": 136936,
+   "sha256": "409a97898591cc59f6bdbf84c2ea05a14a0b28ad2522a1e34ee831568a9a5dba",
+   "year": 2000
+  },
+  {
+   "path": "sites/belchatow/frames/2001-swir.webp",
+   "kind": "frame",
+   "bytes": 75388,
+   "sha256": "13607c149a0aece1e505deea9a5ed9c6e0f6723f3fd75928f38138b2705cfe36",
+   "year": 2001
+  },
+  {
+   "path": "sites/belchatow/frames/2001.webp",
+   "kind": "frame",
+   "bytes": 144164,
+   "sha256": "780a04c7a789f22986740ab513b84dad6d21220ab0c8df23e1dae8bb1d748fa0",
+   "year": 2001
+  },
+  {
+   "path": "sites/belchatow/frames/2002-swir.webp",
+   "kind": "frame",
+   "bytes": 65452,
+   "sha256": "e88da13574a6a0851d973758cf7a011de373a90d5afd3151614d4448523769c6",
+   "year": 2002
+  },
+  {
+   "path": "sites/belchatow/frames/2002.webp",
+   "kind": "frame",
+   "bytes": 136980,
+   "sha256": "27e3a0acb35e4c0ffc90ef171cb5bb93f157605568b475b280180b54326bfb5a",
+   "year": 2002
+  },
+  {
+   "path": "sites/belchatow/frames/2003-swir.webp",
+   "kind": "frame",
+   "bytes": 76840,
+   "sha256": "d444390c01b56b4470c82dc7909a415eb4b76e128d2a2dc6b9b3294913538f0c",
+   "year": 2003
+  },
+  {
+   "path": "sites/belchatow/frames/2003.webp",
+   "kind": "frame",
+   "bytes": 154266,
+   "sha256": "605bcd9b8d1d5859b72bdc4a0cebb1ba4649463a823b7a85430f34430cfef83d",
+   "year": 2003
+  },
+  {
+   "path": "sites/belchatow/frames/2004-swir.webp",
+   "kind": "frame",
+   "bytes": 67548,
+   "sha256": "1dfabdce281516e852039fcc0ab182eb59dcb376311d07c436133522b54d1b79",
+   "year": 2004
+  },
+  {
+   "path": "sites/belchatow/frames/2004.webp",
+   "kind": "frame",
+   "bytes": 147386,
+   "sha256": "c78601c509a40490426cb96394cdd928193ee5e08c6b3c9dee94e1c100beed2b",
+   "year": 2004
+  },
+  {
+   "path": "sites/belchatow/frames/2005-swir.webp",
+   "kind": "frame",
+   "bytes": 71252,
+   "sha256": "2e0526aeaea1b1987d5274ce629b6cc058973c16e7a7cb3cdc69254d79856b29",
+   "year": 2005
+  },
+  {
+   "path": "sites/belchatow/frames/2005.webp",
+   "kind": "frame",
+   "bytes": 147600,
+   "sha256": "aed277e216d3a416ef11174990515e0dfc4ed0dc05ddac5020dbce2b35ad2615",
+   "year": 2005
+  },
+  {
+   "path": "sites/belchatow/frames/2006-swir.webp",
+   "kind": "frame",
+   "bytes": 76372,
+   "sha256": "6c671ea3f3fd3fd8df4297f5d5a6e952c9cd991ebb301e3800f5e51d1f3327d7",
+   "year": 2006
+  },
+  {
+   "path": "sites/belchatow/frames/2006.webp",
+   "kind": "frame",
+   "bytes": 156314,
+   "sha256": "5a6d8e9fc055749cb8c5cdbbb4999f1db602fbae53e949577a09930694ea30ca",
+   "year": 2006
+  },
+  {
+   "path": "sites/belchatow/frames/2007-swir.webp",
+   "kind": "frame",
+   "bytes": 76402,
+   "sha256": "6c14f59f730e865e57e1bc9c754fbbbb519a78af23dce28099617ca650d9e09f",
+   "year": 2007
+  },
+  {
+   "path": "sites/belchatow/frames/2007.webp",
+   "kind": "frame",
+   "bytes": 162934,
+   "sha256": "c69a5e10118ba6b419c505e878ffcdcd3c70d53b51b6c58afb7c9d32933684af",
+   "year": 2007
+  },
+  {
+   "path": "sites/belchatow/frames/2008-swir.webp",
+   "kind": "frame",
+   "bytes": 65608,
+   "sha256": "4466882fe425818ed94cdd58c8e7176c5e08dbca2784eb4b530e2c0b3da588e6",
+   "year": 2008
+  },
+  {
+   "path": "sites/belchatow/frames/2008.webp",
+   "kind": "frame",
+   "bytes": 147964,
+   "sha256": "230f9e4cf86aad7feecbaf1b2887264365c998e2bb00e2f1ffddc60e4de9a15a",
+   "year": 2008
+  },
+  {
+   "path": "sites/belchatow/frames/2009-swir.webp",
+   "kind": "frame",
+   "bytes": 73252,
+   "sha256": "0c5ec35c247050f1c3cd538bfbeeef2111fa2d527865d23a648ab9a8cfd884a9",
+   "year": 2009
+  },
+  {
+   "path": "sites/belchatow/frames/2009.webp",
+   "kind": "frame",
+   "bytes": 154504,
+   "sha256": "476b1e7cd49a8caf0b098103648adc0b5bd9d853d1782b19cdc90999a34b119f",
+   "year": 2009
+  },
+  {
+   "path": "sites/belchatow/frames/2010-swir.webp",
+   "kind": "frame",
+   "bytes": 75208,
+   "sha256": "63d09c6b49cac2b83f7465be888c2b6025860669f6a460f3962d8fe7a132b601",
+   "year": 2010
+  },
+  {
+   "path": "sites/belchatow/frames/2010.webp",
+   "kind": "frame",
+   "bytes": 153262,
+   "sha256": "585459d9baf2cfddace1bf6c2544851c66d2b14dc5c6fb3d734eaab19435011d",
+   "year": 2010
+  },
+  {
+   "path": "sites/belchatow/frames/2011-swir.webp",
+   "kind": "frame",
+   "bytes": 69690,
+   "sha256": "b30b08ccadba39d3c5ed4afe8e874e3e6121cf1efd97b1ed484f98e5edb093df",
+   "year": 2011
+  },
+  {
+   "path": "sites/belchatow/frames/2011.webp",
+   "kind": "frame",
+   "bytes": 151176,
+   "sha256": "6243b982003b261a60023f642881c0eeab9d983c44d1a49118c41ab080eee00a",
+   "year": 2011
+  },
+  {
+   "path": "sites/belchatow/frames/2012-swir.webp",
+   "kind": "frame",
+   "bytes": 74666,
+   "sha256": "1685fbf8d62edad98e3557bdd3dc120051a2b35e8d9ad4131f4ce3e842cc0e54",
+   "year": 2012
+  },
+  {
+   "path": "sites/belchatow/frames/2012.webp",
+   "kind": "frame",
+   "bytes": 158996,
+   "sha256": "d975b986130c133e00cbc1c1e47528133e0e34ad28ca91211dfaac3d7c80430c",
+   "year": 2012
+  },
+  {
+   "path": "sites/belchatow/frames/2013-swir.webp",
+   "kind": "frame",
+   "bytes": 75440,
+   "sha256": "7b3c379495f8c6be3ec3f9a5950ff3fb2dcfa87aec0000d1ca6ec34f43235a5f",
+   "year": 2013
+  },
+  {
+   "path": "sites/belchatow/frames/2013.webp",
+   "kind": "frame",
+   "bytes": 157754,
+   "sha256": "26f43206c751a22cbeb1d02d451823988310ed0c4dabd2f36c6a89f1b468f7b5",
+   "year": 2013
+  },
+  {
+   "path": "sites/belchatow/frames/2014-swir.webp",
+   "kind": "frame",
+   "bytes": 70144,
+   "sha256": "b1b54dbb62f5cde160c6ab004071f67c3d98cc183602d0291c1c734bcd31b380",
+   "year": 2014
+  },
+  {
+   "path": "sites/belchatow/frames/2014.webp",
+   "kind": "frame",
+   "bytes": 156130,
+   "sha256": "1e21ea0a640bfd10cb841027be031dc512797625245dacbe13470839c8fbbb4a",
+   "year": 2014
+  },
+  {
+   "path": "sites/belchatow/frames/2015-swir.webp",
+   "kind": "frame",
+   "bytes": 75228,
+   "sha256": "9546b714d01c0d5564214979ac1d949338661d0687494e888e78928dd654ae09",
+   "year": 2015
+  },
+  {
+   "path": "sites/belchatow/frames/2015.webp",
+   "kind": "frame",
+   "bytes": 171856,
+   "sha256": "aa6c4be11bab4e181457906c0e689f28ad547825e6ac3f5c2affbce2803484fe",
+   "year": 2015
+  },
+  {
+   "path": "sites/belchatow/frames/2016-swir.webp",
+   "kind": "frame",
+   "bytes": 74170,
+   "sha256": "80f395490904b956523592747d50d57b2a135412bd4e55eec8a2050d2a7f72b0",
+   "year": 2016
+  },
+  {
+   "path": "sites/belchatow/frames/2016.webp",
+   "kind": "frame",
+   "bytes": 174408,
+   "sha256": "ef2836bf0b588905e57bce19d6e356e9019b580bdc34a572194530c371664988",
+   "year": 2016
+  },
+  {
+   "path": "sites/belchatow/frames/2017-swir.webp",
+   "kind": "frame",
+   "bytes": 87594,
+   "sha256": "b5c20d20446397023d26471d33f4cf072ee8057d7f048d5be891612920858478",
+   "year": 2017
+  },
+  {
+   "path": "sites/belchatow/frames/2017.webp",
+   "kind": "frame",
+   "bytes": 283558,
+   "sha256": "3f2b8b1663f3b19c33374f58347f894bce2f1d4b0868258e9a488a5927dcfaef",
+   "year": 2017
+  },
+  {
+   "path": "sites/belchatow/frames/2018-swir.webp",
+   "kind": "frame",
+   "bytes": 81558,
+   "sha256": "3b2fa6c0ad169aaa1fc9436c630ce061b1e3b7b031af62bfa5564c3cc27aa8e2",
+   "year": 2018
+  },
+  {
+   "path": "sites/belchatow/frames/2018.webp",
+   "kind": "frame",
+   "bytes": 276152,
+   "sha256": "9e25711d0a81c383c52264f687d90edb3e0b837644fcc7eb420b3575afcc63fb",
+   "year": 2018
+  },
+  {
+   "path": "sites/belchatow/frames/2019-swir.webp",
+   "kind": "frame",
+   "bytes": 81814,
+   "sha256": "7e3b4301c40898a7e60cbc2062882397d578d283ecbb3c845c8f6c96cf830b80",
+   "year": 2019
+  },
+  {
+   "path": "sites/belchatow/frames/2019.webp",
+   "kind": "frame",
+   "bytes": 276532,
+   "sha256": "96c0e9e3a887538d6c8432f020109caabe685158fa0337985d5e8f7372fb48a3",
+   "year": 2019
+  },
+  {
+   "path": "sites/belchatow/frames/2020-swir.webp",
+   "kind": "frame",
+   "bytes": 85218,
+   "sha256": "a54e8f33582106d2c2000fe1dcc721909c5852d8d1b7a367924eed9e4909d6f4",
+   "year": 2020
+  },
+  {
+   "path": "sites/belchatow/frames/2020.webp",
+   "kind": "frame",
+   "bytes": 272790,
+   "sha256": "59caafdfc59c595019151bdda82b84a89d1a9deacb4822c06d789d41945934fb",
+   "year": 2020
+  },
+  {
+   "path": "sites/belchatow/frames/2021-swir.webp",
+   "kind": "frame",
+   "bytes": 86502,
+   "sha256": "cdaf1838ca29840503ac21aa7e3a2a686d91d869d2f282fe8cb2b629f63afb45",
+   "year": 2021
+  },
+  {
+   "path": "sites/belchatow/frames/2021.webp",
+   "kind": "frame",
+   "bytes": 269858,
+   "sha256": "18e08a0de60daed48d6d28cb7b5a215a8c00d9abfdf197748dcaba3c854436d3",
+   "year": 2021
+  },
+  {
+   "path": "sites/belchatow/frames/2022-swir.webp",
+   "kind": "frame",
+   "bytes": 80250,
+   "sha256": "f8364c3399f5bf2e2872e1d968a3ae7ac160f317ba3224c8bf6724cde1707532",
+   "year": 2022
+  },
+  {
+   "path": "sites/belchatow/frames/2022.webp",
+   "kind": "frame",
+   "bytes": 259784,
+   "sha256": "e21cfcd7b892d2300804d36caec19b04fcc79cd5b58c363ce861bde7f613e389",
+   "year": 2022
+  },
+  {
+   "path": "sites/belchatow/frames/2023-swir.webp",
+   "kind": "frame",
+   "bytes": 84554,
+   "sha256": "e78ceefe6c47b8504a37e126a5c90b7128872e79a7533e27bc68355180be263e",
+   "year": 2023
+  },
+  {
+   "path": "sites/belchatow/frames/2023.webp",
+   "kind": "frame",
+   "bytes": 271770,
+   "sha256": "d08303f4073b5044264a997bdfc14b2ffa08aa355aea966ec654778d8d224ed3",
+   "year": 2023
+  },
+  {
+   "path": "sites/belchatow/frames/2024-swir.webp",
+   "kind": "frame",
+   "bytes": 80742,
+   "sha256": "1402069fd2d5fa8e29eb5fc757591f78dcc45a9801f33b27cc942d20e67e3c1e",
+   "year": 2024
+  },
+  {
+   "path": "sites/belchatow/frames/2024.webp",
+   "kind": "frame",
+   "bytes": 279308,
+   "sha256": "935c69ba102592a9fbdfa35f7628f1109548af4b5f7666a62274b861c3ff4ee9",
+   "year": 2024
+  },
+  {
+   "path": "sites/belchatow/frames/2025-swir.webp",
+   "kind": "frame",
+   "bytes": 83570,
+   "sha256": "200e5cc04393030b725a06d06f528e6df008908a0ec00f2439bdedcb43c8835b",
+   "year": 2025
+  },
+  {
+   "path": "sites/belchatow/frames/2025.webp",
+   "kind": "frame",
+   "bytes": 274454,
+   "sha256": "e2ba6883fb51f587ae146feccf12b5719c5496cde64058557c292eed202699d9",
+   "year": 2025
+  },
+  {
+   "path": "sites/belchatow/frames/2026-swir.webp",
+   "kind": "frame",
+   "bytes": 83804,
+   "sha256": "e94b155ce3abb417825e049ecc10127d955e7d83d5102f9d1bb89cef381b1595",
+   "year": 2026
+  },
+  {
+   "path": "sites/belchatow/frames/2026.webp",
+   "kind": "frame",
+   "bytes": 278476,
+   "sha256": "e7e11b52ea88a02a69b6a34c017e342290c45f369bc7b425585b29cf91a3bb15",
+   "year": 2026
+  },
+  {
+   "path": "sites/belchatow/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 2038,
+   "sha256": "e13569a496b130b938bfadd5439ac09865adafe92088ef281c72cd9a39d31bcc",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 2369,
+   "sha256": "73954f8b8f8832b8067028c070e8f2bbf1e58fec1713142b00e3d1424962d31f",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 1625,
+   "sha256": "f8c8fa97c1f1cf43f3a8bd4e78c39e7b089c0e751ff415fb64d600879e8eaa6a",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 2577,
+   "sha256": "95051012ff755f963b93b3ecb5c5461c69a3c65c659e47aa5af3c1abf2b7422e",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 2409,
+   "sha256": "62e35ed14004aeaac3f128ce41fdebf6b2574a494e9f19d0f7b9d3322380a7cf",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 2358,
+   "sha256": "5857ed4286b034d7d2ae28c92e1d46db6948bbefa19ac279cdbf15393d9fb7e8",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 2003,
+   "sha256": "86531c5aa8f6c1eb0b799ca4656b76c5350c8ca0a965214cc5577062b45c6dc3",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 2468,
+   "sha256": "39206ddddc3178ad0500461a124bf5ca3b87ac9a99d1dddcf3d79574ad9686ae",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 3899,
+   "sha256": "b36d7c23a1d4cc7092af4227ff1509992a6b6a2407a840f401918f7110f27626",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 3023,
+   "sha256": "b9f9e0663c2984430c5eb9b4d9130019024ea367b39460f5134604bf024b7f8a",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 3113,
+   "sha256": "3da37ccb2dfeffc7d087748cfdaeb2a37bbc01bb195539e9f6ea6160d5f48211",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 3246,
+   "sha256": "3e7cc31d203c92fa3ba80e67c5c173e95b0cbec92864764a0ead31386ffcdc3e",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 2869,
+   "sha256": "887be684a158c049d2511ea4ef871208c046ae97057289ab670ea1186fca5280",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 2749,
+   "sha256": "bb48e8aaf1876452f99ffb1cb2fb9d910a77692fa4f802d8fa2364220da3d67f",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 2644,
+   "sha256": "5b3b2c83c106f8e5cf3d19b7b83d6df940bf8bf4008d26088768365ea4d75b83",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 1565,
+   "sha256": "329ae2b61e961cb90ee13d3a5b664c876b98d507e64586a6b9c53b596ca0038f",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 2474,
+   "sha256": "1fb5323396d701684d9a54508003d721409380cd04bbf51b5f44d58447529bc6",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 2818,
+   "sha256": "a517b4b60dd15f5dd78e47794124ebc2bf1e866c86b55e23c7eca3e040ea56f6",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 2726,
+   "sha256": "e67fc4ff6e71aa391df0c41916d4768d08c19101ddef01c36afce9dff3cc1a1b",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 3080,
+   "sha256": "ed0b1c12c6d50f890c5a668288417c61cc1a70f2f85088d717c667843502e6a4",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 2438,
+   "sha256": "73d3ee7b6bbb01f9369ef359fe4a88b9c5263b58ad758a365e9d9978bfb8586e",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 3280,
+   "sha256": "a7b6f4133b455cdd062a85633e788e43beff86955087b83ce4905938f5d4af2a",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 1916,
+   "sha256": "91685f171d4c0e53a32b7008d2b6ce9268ffb92c0050ce2e450f2aa69d0fedd3",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 2308,
+   "sha256": "00eac9fb9ca210e7b13133251e1324ac50c2244625c460efbb2a6f9546904ea6",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 3402,
+   "sha256": "88b9f44e8541e5dfd5876e0407da19cdeb0862f1c164bb90e0c292e3bf21a0bc",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 2904,
+   "sha256": "a929310d865cd1d3972c67bfa20a2ef24b41d32a462292be3bca5323cfbafca0",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 2122,
+   "sha256": "dfb6c41b0abf35d9ce3efb84c058cb509e7e4c446cea2c381c3a837bd1f3a56d",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 2565,
+   "sha256": "651b1a11f6000a063fcd0e59768957ed307e68e21f2a5e07d41839810dd3c208",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 2202,
+   "sha256": "07bb12c95363ace388fb2e8be84da9c12ef3b1b1d3cef32f9ccee22412f8d23f",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 2611,
+   "sha256": "fbaa9a24ad9f08e7b2c564e00c598abb66fbf4eb4061c698a8882718654e5949",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 2397,
+   "sha256": "7f9d0ad5ed0b03f77a0e406e216b2f3bd4e8d321920cce32095dffbf37841eaa",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 2721,
+   "sha256": "1a364d7b2905a6efcea6109b8db7f7ce8361168200a8047940895d84c454de04",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 2479,
+   "sha256": "4bc130c7330d850d6658bb0ada8b0c05bf0fc066a54779cabfe0646d2bfb347a",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 3032,
+   "sha256": "70322c9bd7e2195d52f8f8780c1f6f6c51d7db85c0bbcaa1412024416ff56e1d",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 2380,
+   "sha256": "92c84eab0f7a776f4410e80c2c802f477019800850a4274be18809127ddad78f",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 3033,
+   "sha256": "db6550241f5d746afd32bdb9f484c78700e10be5fa31f0ad4d052da7efc4f740",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 4438,
+   "sha256": "1ea1280f5b651f5c9da614883c1e024d30c50ef5e7a590bc3d14bba841b1fe96",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 3189,
+   "sha256": "34bbacc856efa9a31e790368a3834d90d6d04d76ebbf4e7fb724b25f3a5d140d",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 6011,
+   "sha256": "d45340c640a098eca3cc6c6816af9e276253d7af924fbe25e44197ac641a014b",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 3302,
+   "sha256": "37c69cfec3ad6463ca26062efbe80d5f6cdaa80d1ca8f2deddfdea46f6dee7b1",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 3155,
+   "sha256": "cb753a53750a61bdd103a93da6e12d3f61dfb27e4a00c63b15ef62780e0977df",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 3199,
+   "sha256": "6a0a8aacf84ff14d0318eff3abe086266e66938b1a8786875333283bbe4fa722",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 3878,
+   "sha256": "ebc12a979eb8a788d8b17643e9072f41dc3d1e320b176414657dded630b1f608",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 3020,
+   "sha256": "0efe532b6de11c8f3b3156a9fa9147d5c60ee9e778863d5abecde2e5dbc2fdc7",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 4916,
+   "sha256": "fcd5e11d7209c5c366d412cda88bc61fbceed5583d0137125413d437b17b355f",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 2941,
+   "sha256": "f281556d563fab8d345a8d2727459c7f0f7cdd868c365ec9fe0c7f7c348d8327",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 3356,
+   "sha256": "de62bc73a50ce0fe457b1f9e9e771bd992a972aec05e7d0da8e33bed9af35c4f",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 3008,
+   "sha256": "9b1292c9e5b0d2031a0d3793184d79d8bb088d0bd7ea36cf9029dea11a09ff36",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 3858,
+   "sha256": "17b396a4cc4cf769302e1280a5d180cff270acd30a329ff76062f2880f687818",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 2529,
+   "sha256": "bda7219f3853645c1d505863a140651e44986dd4f8855bee634e2b56205b17c3",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 2927,
+   "sha256": "1facef4e949e97ad70a65530f16fad8a60f94dccdec44374cc78a22ada45b5f9",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 2122,
+   "sha256": "e90c0aa4bc25c41bef615adbb7e1da17ab465954bfe03ce3aa0da2901247bda4",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 2984,
+   "sha256": "fbe0d4bb2850e880bf9d8da917e7a4894930be8ceefb2392bd474f1ad377ea4e",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 2628,
+   "sha256": "92fee125a9578e14165e6d610825f117072dfd6f0f728f7390e1f06885b5e229",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 2936,
+   "sha256": "94cc20ff818cec46aff7ed9e6b777ca4415734b8711601636f918267340260dc",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 2307,
+   "sha256": "e5edf699e77e00a2ffeaedf27eb00f848338ed5a9852b169f87b218416dae4c2",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 2922,
+   "sha256": "c0ec1dc144ae498b6d35e7d571765a4832cdb396f22b5b96fe43537753b4f1ce",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 2746,
+   "sha256": "5e278931c25cf30159dbc83c5026231e662c440504b589abf0f0271c7e9c7d18",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 1780,
+   "sha256": "e68b761746ed4e0fd8e41d9703ac577c041e7bc365143fae58b023298ec2c894",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 1493,
+   "sha256": "1924693bdcdff14c6a7b6411a9cc4e3019ae771f8a976bff8bd5af9feec33147",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 2921,
+   "sha256": "e22fd1aabcbe77b19d179b24bb9f521414a51c829b17d478ee856287c6a80605",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 1697,
+   "sha256": "31ee442b3146185380d71f02729bf4d114698dd6da370782d1115b2e72975f9b",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 3663,
+   "sha256": "d9deda61f4b23dcc43f2ca48b5a5a6e912ce5a0796c69741ddd4caaa9e3dc038",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 2144,
+   "sha256": "14a1357df98dabb1a80dcf1abf8547c961dce964949a940d80e918b1b091539f",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 4762,
+   "sha256": "bbd8cb231b432f45f6c8142c3415117c0fcdd4456a1f2e340cf2e8e17de04d5d",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 3073,
+   "sha256": "f335eb7c3f0fc1b709adccfe0b4397ed9b1107fa47b874e0fd3e5eee09b00dd7",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3990,
+   "sha256": "9ca491ab93e696f91c055372bb05dc675a9255d13916b1593ced7b83b8f865ec",
+   "year": 2017,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 1691,
+   "sha256": "46088fbbfb592a62bcc526562f072c5855ce9e13560ca100af77fbe408dcf305",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 3024,
+   "sha256": "6b84f6a1f5cf83369409f997399a88d03896576be2170949f285b76bb96c7478",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 4592,
+   "sha256": "3fbcd506d4e2870fc0b357ba35e6f63c23fad3fdb239915f3a5867c2c5f577d3",
+   "year": 2018,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 5952,
+   "sha256": "af6557e652a1fed05d2d2e2b98366006991ce6b99f1c8ab43a8f29195294bf35",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 3578,
+   "sha256": "9310a22c7a22022ac5fb3cd7eef72a32ce02d43f91edff2b70807572557001c5",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3812,
+   "sha256": "bf7c15ae33f685b20ba6b29180632053c7e2bed27dffb5360ec6bad76c3c1aa4",
+   "year": 2019,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 1481,
+   "sha256": "9149f85351f320be98b76943af688252af88e8c74d3075991035668a0fe8e327",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 2927,
+   "sha256": "683246ee06bdefde978f8136384de90136ebbc4a9a08b8a1569b8839d1e11b82",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4162,
+   "sha256": "7c96c557aca889baa8c687437de9ee097368e96237903108ccb9016ca557ccc1",
+   "year": 2020,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 4931,
+   "sha256": "0001d255dd1e7d6434a0bed3275599ff7ac9aeac0e5006f37c198467132bb8fd",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 3614,
+   "sha256": "a428ffbe5a26dac41f9cd5b9690c403cc853c67cb2bcc97d8e2d7bd5b9598657",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 3919,
+   "sha256": "d447ddb39cbc9d56607ac68e96a01c9e28cc4ec516052a69afe8d9c04fabaabd",
+   "year": 2021,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 1609,
+   "sha256": "7efeadcde7b976b0f36569e2bdd8f27ba77b0783370fbb325574f6e50c6053de",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 2763,
+   "sha256": "5715e6002f69d5db66174c0643ab9f0b91fc4294fad891c97b15e4526995bd5a",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2932,
+   "sha256": "882b2b9613e147b70f22ba5a02cde8314722f185ec2f986f8109c841f3deb0ad",
+   "year": 2022,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 1419,
+   "sha256": "807792922aa58ffc53543b546deb5a4682224eeab9c1a680d1b22034ad9ba8ba",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 3234,
+   "sha256": "df6b8edb37d7837b8ba8584d3f92c117cdef27aeb087100c8f334aead084b746",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 4408,
+   "sha256": "e27e33e45d9f61172b3da970a1640777eda9b51d3496286bef6be29f3e9d8484",
+   "year": 2023,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 1221,
+   "sha256": "ad49df9f5081c52c573bd1fcc150d680bee61c6df5a6c3376d676ac7e634313b",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 2672,
+   "sha256": "e4b8f4803e98c230cbd3680d90981955d67d705062f7e598192f94bdf71b650e",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 3413,
+   "sha256": "7a1d006c850b11283492f1c926d3121fe7c795d181e409bb1d9a92e1bf16e59d",
+   "year": 2024,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 1677,
+   "sha256": "23c74dc06f0d3002c6df99b5dcd76bef03c0379cc203c84a2f9e7cc1e76e1a82",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 2740,
+   "sha256": "048d379c158840dc8275db2f4c1b71799ef9a7b7e102d751e149446636806e4c",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 4120,
+   "sha256": "196d300d67397e5605a8cb75dc5cb74fca497002b7482f3a846ba48740e7407c",
+   "year": 2025,
+   "method": "unet"
+  },
+  {
+   "path": "sites/belchatow/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 1465,
+   "sha256": "9c4cd92668642c888bb24b1553ffc553ef10bb7f23d8e1c1e081dfb76138da09",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/belchatow/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 2842,
+   "sha256": "6b12582733cfc74675d7c79686365631b0c192cf96a61d3a94323df87e99f6ed",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
+   "path": "sites/belchatow/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3432,
+   "sha256": "c945e16e14289357dabf09032f601211ae36282c9c94fba8ba202d1863432aad",
+   "year": 2026,
+   "method": "unet"
+  },
+  {
    "path": "sites/belchatow/polygons.geojson",
    "kind": "polygons",
-   "bytes": 9316,
-   "sha256": "87db20004f699119a629ec037c8e168d760a998d25caa5a8011a1f3bac85300f"
+   "bytes": 8713,
+   "sha256": "b2dd0da003473627534ffc989f62077ac7a442c8794efba31a0ab1eaa2ff1e0a"
+  },
+  {
+   "path": "sites/belchatow/terrain/10/566/341.png",
+   "kind": "terrain",
+   "bytes": 115700,
+   "sha256": "dd262c3d1a67605fdbb32a141480d53de93e0eb0c9195c57963e7224d588c073"
+  },
+  {
+   "path": "sites/belchatow/terrain/10/566/342.png",
+   "kind": "terrain",
+   "bytes": 91879,
+   "sha256": "e5456afbe640e411a1a013e74a7cfbb25cb578b4d47524e04183730001f3cc7f"
+  },
+  {
+   "path": "sites/belchatow/terrain/10/567/341.png",
+   "kind": "terrain",
+   "bytes": 119021,
+   "sha256": "6ef9989fba027797b7072471030834ac5b71c20b23d1fd35e1f3b247390ed579"
+  },
+  {
+   "path": "sites/belchatow/terrain/10/567/342.png",
+   "kind": "terrain",
+   "bytes": 98996,
+   "sha256": "cd1e17fa782af34e34417457a384f549fd62ea488a2ed1f33f4dedff4f6e78f9"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1132/682.png",
+   "kind": "terrain",
+   "bytes": 104653,
+   "sha256": "1a7cec656a8d6dbf40f6cedf0b21786b238dbcc050a7ecad8586fda6ff9de89b"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1132/683.png",
+   "kind": "terrain",
+   "bytes": 101767,
+   "sha256": "3fcd919cac9474ecbb9ddaceec6f69c5bd1f8a1bdd2549c2de7d6051d2410465"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1132/684.png",
+   "kind": "terrain",
+   "bytes": 99607,
+   "sha256": "b3a3903985be4954c4e4bb24608230b9be912b0d05ba78a000e3e0bd7fb24b88"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1133/682.png",
+   "kind": "terrain",
+   "bytes": 118808,
+   "sha256": "f63af9916fa6d4940f9e03a20dd17dcbd5107f49f0149eabe1f51a2cde328e5c"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1133/683.png",
+   "kind": "terrain",
+   "bytes": 114588,
+   "sha256": "c183c110a5c186d209783ca15d8474a23af4ac27d948797c9ed5ab95b2906b86"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1133/684.png",
+   "kind": "terrain",
+   "bytes": 106063,
+   "sha256": "8c9fa3c4391f774d714ebc8157f201596cf6bc8e39795f5f9de548483a69f94a"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1134/682.png",
+   "kind": "terrain",
+   "bytes": 114813,
+   "sha256": "8bd7ea8b82e343bf899fde7ee43ce4cbec072aa9c84d2386c416c162012f9bda"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1134/683.png",
+   "kind": "terrain",
+   "bytes": 116990,
+   "sha256": "a5d254f9ab0ea8219e1c7ffbb9b92c892ed3613e86c3f96e90284608dee5dd53"
+  },
+  {
+   "path": "sites/belchatow/terrain/11/1134/684.png",
+   "kind": "terrain",
+   "bytes": 112887,
+   "sha256": "de439b8679f3cf1c38caf41f08a90e52c0ccc6420e50197a3de6ddaf25192ec8"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2265/1364.png",
+   "kind": "terrain",
+   "bytes": 108400,
+   "sha256": "dacf01472aabee93591c6e2f795780c035a092a7784b59cd1860f851566f42a1"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2265/1365.png",
+   "kind": "terrain",
+   "bytes": 104966,
+   "sha256": "50c4c6271b420c9ac0394b00daaf77dce965bee9b0b3378c59ec2aeb719eb65a"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2265/1366.png",
+   "kind": "terrain",
+   "bytes": 108329,
+   "sha256": "3bcba0a5793be85f43d188bf157c734717b2c63428159dc2126aaa8835138bd7"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2265/1367.png",
+   "kind": "terrain",
+   "bytes": 101682,
+   "sha256": "fa7572abe2d8209eaf0026d347883fdc0d95fd017f03e675d502c8651582bee3"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2265/1368.png",
+   "kind": "terrain",
+   "bytes": 101089,
+   "sha256": "ec9c2bf6022d490fee6a0bc69a8c53ba9b91f490e53814bd5e0392633007faaa"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2266/1364.png",
+   "kind": "terrain",
+   "bytes": 112010,
+   "sha256": "1ffa26790c42c1c8d119b7a79a8dc447fa66612c6aba03b8f478222363a96d79"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2266/1365.png",
+   "kind": "terrain",
+   "bytes": 112204,
+   "sha256": "2fa4959899598b23a8f5adf1a4b8ba6c8859b4acb6c44fc504486706af149854"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2266/1366.png",
+   "kind": "terrain",
+   "bytes": 108037,
+   "sha256": "b7ba1fa6c2153f94123c723be3e4ca24cab2b35e7bb5c4a7516c0a8a4ca2a8f1"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2266/1367.png",
+   "kind": "terrain",
+   "bytes": 106916,
+   "sha256": "690f055095bbe4137e9591960d99763b98b6d954a513039b3dd8e586a0f8008d"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2266/1368.png",
+   "kind": "terrain",
+   "bytes": 99315,
+   "sha256": "140d0f5821286fdfbeb53558676ae8c7a2e1647aade00b052545dcf4c76c363e"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2267/1364.png",
+   "kind": "terrain",
+   "bytes": 111098,
+   "sha256": "920298d8fee0f3cf796a60762c53297476b19ab602d4b4870a46ccabeaef570f"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2267/1365.png",
+   "kind": "terrain",
+   "bytes": 112282,
+   "sha256": "f3dfa7626d24c3b9193f30ad36c9fe7088df4a53a244171483eaea036105f054"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2267/1366.png",
+   "kind": "terrain",
+   "bytes": 110780,
+   "sha256": "bbcda0dbcdbcdaecf2c8bf3429d32d3a661c26ff436fbaf1eaca00afb25c30e1"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2267/1367.png",
+   "kind": "terrain",
+   "bytes": 104414,
+   "sha256": "6545a432690f784a07120df706de3b8c2036f971d73e6633a7095dbcd7bce670"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2267/1368.png",
+   "kind": "terrain",
+   "bytes": 99028,
+   "sha256": "7b97ab8773816c4ba18c388c7114586b8991d7f860ed31af7daef3b5ed004c66"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2268/1364.png",
+   "kind": "terrain",
+   "bytes": 105776,
+   "sha256": "cbb3308bf6b01765ba9fcc533a90b6001c331f310e72ffbfcc06e740c769c294"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2268/1365.png",
+   "kind": "terrain",
+   "bytes": 111228,
+   "sha256": "f60079cc6b8c67789683c103ddcd81893ec582d85d57c5b528b6dc99c06e7c96"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2268/1366.png",
+   "kind": "terrain",
+   "bytes": 111133,
+   "sha256": "ca11b0b01d8464c50ac09eada3e4fb382e7924143d858749732f14f8947246d4"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2268/1367.png",
+   "kind": "terrain",
+   "bytes": 106040,
+   "sha256": "4c130a54aed07aa8688d689660e83f1055c09fbb49ec276a1af6d29ac3a67c2b"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2268/1368.png",
+   "kind": "terrain",
+   "bytes": 101825,
+   "sha256": "5704779e9aff965a5ad0f288817f2aef7ca63a1c5a418669e33441a479998729"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2269/1364.png",
+   "kind": "terrain",
+   "bytes": 106153,
+   "sha256": "52a9e5e56fc739cd8643396ac6ef56fe53ac23350010121ffd20c9fc5b24e92a"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2269/1365.png",
+   "kind": "terrain",
+   "bytes": 108816,
+   "sha256": "0cc672036c2942fcf940b918917d9cb83c887b1ffa7f42cddff52947aa86a8df"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2269/1366.png",
+   "kind": "terrain",
+   "bytes": 109856,
+   "sha256": "ff265af509919b402607902e3291ec344b392eacc9b3b1235d519e69cf6df1ed"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2269/1367.png",
+   "kind": "terrain",
+   "bytes": 108283,
+   "sha256": "31c6679c9103b7989cfabbca83f9714f29f4417be9a2ce89495fde4510a53d97"
+  },
+  {
+   "path": "sites/belchatow/terrain/12/2269/1368.png",
+   "kind": "terrain",
+   "bytes": 113778,
+   "sha256": "c581ea222b620c1f783967fa365fadb7d05b85ed22a60c9b4921d776c76f95b5"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2729.png",
+   "kind": "terrain",
+   "bytes": 93870,
+   "sha256": "bf50cb45a562403cd2d292df14949f64f29a29f1fbd41034d14f6d9785b610b3"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2730.png",
+   "kind": "terrain",
+   "bytes": 91855,
+   "sha256": "5f07cbb329a62fd183edf993c174ab90194eb7dc4278abf11272e3c9cda0759d"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2731.png",
+   "kind": "terrain",
+   "bytes": 96748,
+   "sha256": "29b122d1bd2e2684ca8c8d71fe546b80efaa9a90b867cad2bb34b579136957f0"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2732.png",
+   "kind": "terrain",
+   "bytes": 94043,
+   "sha256": "7d73614954f6e526d8a5138a4e349993d8e9add04cc11416b9047cd2c6e48073"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2733.png",
+   "kind": "terrain",
+   "bytes": 99208,
+   "sha256": "2f0cf9ef51ea6ad20dce79d08ba7ba0df49ac95e07c564100a1049f61d8aa423"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2734.png",
+   "kind": "terrain",
+   "bytes": 90936,
+   "sha256": "c2e53aa816f52147a3516fea902aa0c0750dfb4850423e14cb83a0cec879bd34"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2735.png",
+   "kind": "terrain",
+   "bytes": 89228,
+   "sha256": "ddb6f9f4187944847bcc739dac0a417234c88da81cbc8f86123bd14e8f7430f7"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2736.png",
+   "kind": "terrain",
+   "bytes": 90596,
+   "sha256": "795ee5a55e192c474aa973795c418240ff86c00d71417bd1f557d4c16c070f54"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4531/2737.png",
+   "kind": "terrain",
+   "bytes": 86155,
+   "sha256": "acf9a3d17129e9a18cdab553878d51106dda0281eef3abadbef25ad332764df2"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2729.png",
+   "kind": "terrain",
+   "bytes": 97054,
+   "sha256": "43d3d6d315a086ec01926fef9de0c986edeb70f8327c6dfa2ea60b2efb92cb92"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2730.png",
+   "kind": "terrain",
+   "bytes": 102169,
+   "sha256": "9c437671a9cd16e3987e050ad567fccf2f27ab96b0709047274599764b4beb26"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2731.png",
+   "kind": "terrain",
+   "bytes": 99067,
+   "sha256": "31b2245aa1d6703b158b86c295cd0e2c1b33c6dc442ec2f0d7e6bb09a9d8d33b"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2732.png",
+   "kind": "terrain",
+   "bytes": 88199,
+   "sha256": "17cb6ebf4e4b7a9c1f2f4d4fa56be11a0d2ccb243329465d3bcb8da139b4c4ad"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2733.png",
+   "kind": "terrain",
+   "bytes": 100353,
+   "sha256": "2913656c04c1e7a3aac43c23423d234592a79a57592c7c85c47df1eb62b770e2"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2734.png",
+   "kind": "terrain",
+   "bytes": 96934,
+   "sha256": "59a371b53eceeb2b5c9a55b0446a9dfc04758457a8cb40024b6c2a5dc4f2308b"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2735.png",
+   "kind": "terrain",
+   "bytes": 94881,
+   "sha256": "2a94ee6910f5efd25ad6f8db1feb273b2d66c8daf57350dc9bebcfaa0f954a06"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2736.png",
+   "kind": "terrain",
+   "bytes": 93206,
+   "sha256": "1e8c2cfbeaa865a988b8dc7eb446913c1998d45d0ec99fd257a0feed1e7017d3"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4532/2737.png",
+   "kind": "terrain",
+   "bytes": 84611,
+   "sha256": "9e1775f3128056a2634b6d3900f0bf90d09eea57732ba8c577f19c6135102588"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2729.png",
+   "kind": "terrain",
+   "bytes": 101566,
+   "sha256": "b5fa4a439284890806221ab8b0f12df2b8d40134ac501866f6077fc4ca29aa7e"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2730.png",
+   "kind": "terrain",
+   "bytes": 98766,
+   "sha256": "8365e4ab9d3583e8cefae62856242a26af4717215d4582ec5f7f0da6b8c7e2e8"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2731.png",
+   "kind": "terrain",
+   "bytes": 99686,
+   "sha256": "5150bbdf3e664d4e63bacf9001c54ee29a4f87bf35f3aebd517cb391ebcf6e16"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2732.png",
+   "kind": "terrain",
+   "bytes": 95466,
+   "sha256": "05ea3e18519f09d8f5207eeb780506211a9f93309dd3d0d28e77292dcccf0fd1"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2733.png",
+   "kind": "terrain",
+   "bytes": 100375,
+   "sha256": "6dcc0ab5c8062f298c9924a0f048a5b315d13650228bdd996a1a0f14962a4629"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2734.png",
+   "kind": "terrain",
+   "bytes": 97762,
+   "sha256": "a760f977d3b85046ade5bc14710a003d892b0dc90e26bee5177fb7ec91debb45"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2735.png",
+   "kind": "terrain",
+   "bytes": 90836,
+   "sha256": "f14d5496cb91b489aea53505b9e84e6a494af2c1cea6d932790037827467e04c"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2736.png",
+   "kind": "terrain",
+   "bytes": 85024,
+   "sha256": "679210b980f325e5f5f140fdc4a85619cf87faf9753a9ce2f54097ec6825b544"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4533/2737.png",
+   "kind": "terrain",
+   "bytes": 82455,
+   "sha256": "9b3db7a7e4d406788684706d83e5d27d6b83c9b9f390c917d7c6383a72fe3ff6"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2729.png",
+   "kind": "terrain",
+   "bytes": 102314,
+   "sha256": "dba4147819d48e8d4208441d61be8168caf183093cb43785f7bade47378515b3"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2730.png",
+   "kind": "terrain",
+   "bytes": 98461,
+   "sha256": "a1de43ee2943a8e03ec61ee33275e0f282f76f309c50e4410bbf7cd2c49da60a"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2731.png",
+   "kind": "terrain",
+   "bytes": 98105,
+   "sha256": "7dbef21b73621a710bdebfb7379765f0fe052e0f4ab60f5c8de0285cc0da0604"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2732.png",
+   "kind": "terrain",
+   "bytes": 87988,
+   "sha256": "7eba92dc4f757406b142a74f605c6b8afb62f183c9a6a3dfd9fd99c7c6139b8b"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2733.png",
+   "kind": "terrain",
+   "bytes": 104217,
+   "sha256": "a1dadad17cdd404095975298d72dd5cd36dfba020947a31682283adff42fb8b2"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2734.png",
+   "kind": "terrain",
+   "bytes": 95490,
+   "sha256": "cc93665a71b6e3719c2a56fe613f977c97d1121358d1d22fe246940c9bf8379a"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2735.png",
+   "kind": "terrain",
+   "bytes": 88371,
+   "sha256": "096e578a002e843def29044e53d330216dc96e6080150ca58366f0ae4d225a42"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2736.png",
+   "kind": "terrain",
+   "bytes": 85645,
+   "sha256": "a2343982ca870f63aca83bfbe889fce14d03f1c0432f7b6ec94470ac7c3e1c65"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4534/2737.png",
+   "kind": "terrain",
+   "bytes": 90922,
+   "sha256": "ae62933b85f6648fa15e0f61bc4406f7ceea534cb567d7ef8cfa9935d39b0929"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2729.png",
+   "kind": "terrain",
+   "bytes": 100486,
+   "sha256": "dd7199135b92f6c67cc4138783f43284eaf79359faa43d20b03dd82ea4f4c25d"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2730.png",
+   "kind": "terrain",
+   "bytes": 101206,
+   "sha256": "2875757e73f8b2061397d191c00b66a9f87148518d95fca1b30e2b36e68c7fe2"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2731.png",
+   "kind": "terrain",
+   "bytes": 102431,
+   "sha256": "7508c9f92e95288403893ba76de34980fc91775ceffba34be927f28d1fd75d5b"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2732.png",
+   "kind": "terrain",
+   "bytes": 100491,
+   "sha256": "5dedd0e51bc8d75ebe1f3cbacd3b129d0193589e94c64e48703ba20feeff2714"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2733.png",
+   "kind": "terrain",
+   "bytes": 101906,
+   "sha256": "1e1e8742bd8f15eebb211826207b956d1640261aa033a7726cac1f6a01542bc5"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2734.png",
+   "kind": "terrain",
+   "bytes": 92205,
+   "sha256": "6cecf09955f2fc430866ba9b718468ef1dddbb91bcc1cc4cb500c508d7a5d3c7"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2735.png",
+   "kind": "terrain",
+   "bytes": 93011,
+   "sha256": "27dbeccc505a07a65f445eac353d2b2edf09b7b738c061fccb437dfd45c8b5b5"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2736.png",
+   "kind": "terrain",
+   "bytes": 82666,
+   "sha256": "cde70bd0411f1def9ef109f0ccdecf26259126ebe3c7e0122bbe47eb1156e870"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4535/2737.png",
+   "kind": "terrain",
+   "bytes": 84314,
+   "sha256": "7d71e8deb649c80e1ebdb8dbd09d0de5b10b999639734558cf7ceb2e6259889f"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2729.png",
+   "kind": "terrain",
+   "bytes": 98698,
+   "sha256": "cd3ecbf26250ac801e7a4dbb707f0a3e9f4c1b32700d168d4299cdca29345286"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2730.png",
+   "kind": "terrain",
+   "bytes": 98153,
+   "sha256": "dbdb5ada739e606191101251a2d8a6e6958d798edaf22203d0f2da1a307ccfde"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2731.png",
+   "kind": "terrain",
+   "bytes": 102221,
+   "sha256": "6c3961c88bffb020fd4898ff5b8dda981372d5d25e43a665d809836653fa469f"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2732.png",
+   "kind": "terrain",
+   "bytes": 96688,
+   "sha256": "93f912b573844446af5386649bdbd209793bdb172c82321f920d2e300b5ab2e8"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2733.png",
+   "kind": "terrain",
+   "bytes": 98069,
+   "sha256": "3e408b159195a50a6bcba542ad687d240c367c78cecc687e2c2dfa4df2a2d1fd"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2734.png",
+   "kind": "terrain",
+   "bytes": 87419,
+   "sha256": "41c36ee22cbe665b50a9af252ca2f55ea963eafa067f604b80015933974afd5c"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2735.png",
+   "kind": "terrain",
+   "bytes": 89343,
+   "sha256": "9fee8aa859ed5e62bb71419cf9a94c807a40047d6b00c99b3c4dce97a790d970"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2736.png",
+   "kind": "terrain",
+   "bytes": 87857,
+   "sha256": "e1cf64c0acc5ce9affd862ce429e3df07a33a90255d94feaecceaee3f9a13e89"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4536/2737.png",
+   "kind": "terrain",
+   "bytes": 89314,
+   "sha256": "526a035190aae0e6eb061dbc0562a6dec73d7c900c0decb0b935eaf08a950fda"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2729.png",
+   "kind": "terrain",
+   "bytes": 96289,
+   "sha256": "8b58371e345f56207df31482783e7f68ae401e4a5b2ec20f8c71821d9361a1ce"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2730.png",
+   "kind": "terrain",
+   "bytes": 96970,
+   "sha256": "75d84b3db09c902a0597e33e19ab3838fd4c1c590b645cfb43ce04130dd12803"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2731.png",
+   "kind": "terrain",
+   "bytes": 102413,
+   "sha256": "56e9bc23931240f9faa387dae44cb8380d0838be4ee1efd87de362d66101c8be"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2732.png",
+   "kind": "terrain",
+   "bytes": 98624,
+   "sha256": "3e5fbee293a672da1e15fe43deacb9a8150e095635e3431ba0efcae133979a4e"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2733.png",
+   "kind": "terrain",
+   "bytes": 102019,
+   "sha256": "48e163ef2a0ec10ecd4c3a38f7d02d4cbfa27ab6ba36a8809a4919f172765313"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2734.png",
+   "kind": "terrain",
+   "bytes": 98780,
+   "sha256": "5ed9d6ac4d1d405de6168d416d40abb6392f6bb96a5e58309cea8ab1d7cb7c1b"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2735.png",
+   "kind": "terrain",
+   "bytes": 100853,
+   "sha256": "557c4b289e03efd016cb16846b74192d7dc01a16a5f63c80e1b34380d6fc3c9f"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2736.png",
+   "kind": "terrain",
+   "bytes": 92092,
+   "sha256": "a120aabe226c0e4b2781f001730fee03cd7f28e8eeef1a4a8749b391bfedce74"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4537/2737.png",
+   "kind": "terrain",
+   "bytes": 90559,
+   "sha256": "8545a01fd9e2c75d48502a59da3108580c1d91f27b45f2f15e25fe2d4d0523d5"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2729.png",
+   "kind": "terrain",
+   "bytes": 96620,
+   "sha256": "f862d70984a042e4aeed893eccd480ab3aa4188cf046f82ae4a84dc3f65093ad"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2730.png",
+   "kind": "terrain",
+   "bytes": 94170,
+   "sha256": "9dcc7432716f0b81eeda07a9f2ecef2de7d38df3099f66312f3d27f6e5882123"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2731.png",
+   "kind": "terrain",
+   "bytes": 99407,
+   "sha256": "f5ab72ff5ba92364c4a6d625f89a6a50a608001cea0894c45db6c80844ef1734"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2732.png",
+   "kind": "terrain",
+   "bytes": 100811,
+   "sha256": "de72e1b4ccd467bbf9751ce811340872c13891ae87cb3616cde2e64fabcdb8e8"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2733.png",
+   "kind": "terrain",
+   "bytes": 97987,
+   "sha256": "02b9fec73793b8e18a048daad615e79aa40088f8090345fa8231136363a33b93"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2734.png",
+   "kind": "terrain",
+   "bytes": 98288,
+   "sha256": "38908334e11f7a56d746a1dedca64432a3562d9df7e5d64eecb4cd09033a841f"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2735.png",
+   "kind": "terrain",
+   "bytes": 102009,
+   "sha256": "fab36efcfb4efb9c8459b3f72ab45d85ab7f9f751730de29205a35f867207f6d"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2736.png",
+   "kind": "terrain",
+   "bytes": 102309,
+   "sha256": "6407f9452d9131a8ca44d9c1f17fc0df910def45a7f77a118a2cb7fc6937a7a7"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4538/2737.png",
+   "kind": "terrain",
+   "bytes": 102239,
+   "sha256": "13ad1f8890703af493829fb18d4107d11bbf841899e0609fa756b1ad31742c55"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2729.png",
+   "kind": "terrain",
+   "bytes": 97813,
+   "sha256": "0eb92a7562b384d208c8fb8dcdfe2cba762fb0d5cc2d1f64dc8216f68e504954"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2730.png",
+   "kind": "terrain",
+   "bytes": 97159,
+   "sha256": "31f8286bbbc0fdfc5d47258dd32ed01deb3e584ef2db50ff2bc922d85036df69"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2731.png",
+   "kind": "terrain",
+   "bytes": 99232,
+   "sha256": "f1e6c9116d520630589ad9c4ec4ffc5674acebeb9ec00bfead1033be6d85e5f0"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2732.png",
+   "kind": "terrain",
+   "bytes": 98836,
+   "sha256": "bbfd4e2ebac5d7599a745b9b9477fa3d25d8235a69b67263989d4aea90907237"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2733.png",
+   "kind": "terrain",
+   "bytes": 95915,
+   "sha256": "91fbe192d3283ff888e587432379c723e27b5c7396e172be71e4a39f1cb760cf"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2734.png",
+   "kind": "terrain",
+   "bytes": 91614,
+   "sha256": "b1e8f4234d6f14283978b98899721fcd49ee72d9f454c2d824dd70c46ca9649a"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2735.png",
+   "kind": "terrain",
+   "bytes": 95781,
+   "sha256": "b49c3954f667ee178494b7c37b72f39bbc8d31171eed706b28e1114f99877822"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2736.png",
+   "kind": "terrain",
+   "bytes": 100597,
+   "sha256": "e1f3e1568e5fc9065cc6a9c7bbd87d2150a6c8c6f29873299586ae75691c127f"
+  },
+  {
+   "path": "sites/belchatow/terrain/13/4539/2737.png",
+   "kind": "terrain",
+   "bytes": 102725,
+   "sha256": "e7dba954ad3182d44e2591079b551b62628c4900deb3834656fa7d2586ce9e85"
   }
  ]
 }

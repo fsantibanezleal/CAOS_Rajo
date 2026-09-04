@@ -1,0 +1,120 @@
+{
+ "site_id": "kamoa-kakula",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -12.1,
+  12.1
+ ],
+ "geoid_offset_m": -0.647,
+ "stable_bias_m": -0.658,
+ "noise_floor_m": 1.404,
+ "tau_m": 2.808,
+ "stable_ground_px": 203151,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 70472120,
+ "fill_volume_m3": 184083920,
+ "envelope": {
+  "cut_m3": 70472120,
+  "fill_m3": 184083920,
+  "cut_km2": 9.1143,
+  "fill_km2": 19.7253,
+  "min_m": -103.6,
+  "max_m": 53.9
+ },
+ "window": {
+  "cut_m3": 180552768,
+  "fill_m3": 216932704,
+  "cut_km2": 22.005,
+  "fill_km2": 27.9324,
+  "min_m": -103.6,
+  "max_m": 53.9
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/583/542.png",
+  "terrain/10/584/542.png",
+  "terrain/11/1167/1084.png",
+  "terrain/11/1167/1085.png",
+  "terrain/11/1168/1084.png",
+  "terrain/11/1168/1085.png",
+  "terrain/11/1169/1084.png",
+  "terrain/11/1169/1085.png",
+  "terrain/12/2335/2169.png",
+  "terrain/12/2335/2170.png",
+  "terrain/12/2335/2171.png",
+  "terrain/12/2336/2169.png",
+  "terrain/12/2336/2170.png",
+  "terrain/12/2336/2171.png",
+  "terrain/12/2337/2169.png",
+  "terrain/12/2337/2170.png",
+  "terrain/12/2337/2171.png",
+  "terrain/12/2338/2169.png",
+  "terrain/12/2338/2170.png",
+  "terrain/12/2338/2171.png",
+  "terrain/13/4671/4338.png",
+  "terrain/13/4671/4339.png",
+  "terrain/13/4671/4340.png",
+  "terrain/13/4671/4341.png",
+  "terrain/13/4671/4342.png",
+  "terrain/13/4671/4343.png",
+  "terrain/13/4672/4338.png",
+  "terrain/13/4672/4339.png",
+  "terrain/13/4672/4340.png",
+  "terrain/13/4672/4341.png",
+  "terrain/13/4672/4342.png",
+  "terrain/13/4672/4343.png",
+  "terrain/13/4673/4338.png",
+  "terrain/13/4673/4339.png",
+  "terrain/13/4673/4340.png",
+  "terrain/13/4673/4341.png",
+  "terrain/13/4673/4342.png",
+  "terrain/13/4673/4343.png",
+  "terrain/13/4674/4338.png",
+  "terrain/13/4674/4339.png",
+  "terrain/13/4674/4340.png",
+  "terrain/13/4674/4341.png",
+  "terrain/13/4674/4342.png",
+  "terrain/13/4674/4343.png",
+  "terrain/13/4675/4338.png",
+  "terrain/13/4675/4339.png",
+  "terrain/13/4675/4340.png",
+  "terrain/13/4675/4341.png",
+  "terrain/13/4675/4342.png",
+  "terrain/13/4675/4343.png",
+  "terrain/13/4676/4338.png",
+  "terrain/13/4676/4339.png",
+  "terrain/13/4676/4340.png",
+  "terrain/13/4676/4341.png",
+  "terrain/13/4676/4342.png",
+  "terrain/13/4676/4343.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 1245.0,
+  "max": 1551.0
+ },
+ "cop_stats": {
+  "min": 1242.1,
+  "max": 1551.9
+ }
+}

@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "los-bronces",
  "site": {
   "id": "los-bronces",
@@ -18,7 +18,13 @@
    "start_month": 12,
    "end_month": 3
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "Anglo American Sur, the Cochilco reporting unit that covers Los Bronces and El Soldado, produced 207,207 tonnes of fine copper in 2025 and 220,615 tonnes in 2024 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Anglo American Sur, la unidad de reporte de Cochilco que cubre Los Bronces y El Soldado, produjo 207.207 toneladas de cobre fino en 2025 y 220.615 toneladas en 2024 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
+   }
+  ],
   "commodity": "copper",
   "operator": "Anglo American",
   "flags": [],
@@ -62,16 +68,4716 @@
    1914
   ]
  },
- "frames": [],
- "series": null,
- "dem": null,
+ "frames": [
+  {
+   "year": 1985,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19841224_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19841224_02_T1"
+   ],
+   "date": "1984-12-24",
+   "cloud_pct": 31.68,
+   "valid_pct": 68.32,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 39.0,
+   "snow_pct": 61.09,
+   "pixel_m": 30.0,
+   "image": "frames/1985.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1985-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.10920999944210052,
+      1.0590875148773193
+     ],
+     [
+      0.1020049899816513,
+      1.6022124290466309
+     ],
+     [
+      0.07354249060153961,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.029927492141723633,
+      0.25363999605178833
+     ],
+     [
+      0.1194400042295456,
+      1.6022124290466309
+     ],
+     [
+      0.10920999944210052,
+      1.0590875148773193
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
+  },
+  {
+   "year": 1986,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19860128_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19860128_02_T1"
+   ],
+   "date": "1986-01-28",
+   "cloud_pct": 3.35,
+   "valid_pct": 96.65,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 12.5,
+   "pixel_m": 30.0,
+   "image": "frames/1986.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1986-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03012000024318695,
+      0.6199125051498413
+     ],
+     [
+      0.0311100035905838,
+      0.6400150060653687
+     ],
+     [
+      0.0278099924325943,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006387501955032349,
+      0.3278900384902954
+     ],
+     [
+      0.02844250202178955,
+      0.46334073066711373
+     ],
+     [
+      0.03012000024318695,
+      0.6199125051498413
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
+  },
+  {
+   "year": 1987,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19870131_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19870131_02_T1"
+   ],
+   "date": "1987-01-31",
+   "cloud_pct": 18.54,
+   "valid_pct": 81.46,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 15.98,
+   "pixel_m": 30.0,
+   "image": "frames/1987.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1987-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03086249530315399,
+      1.6022124290466309
+     ],
+     [
+      0.0331449955701828,
+      0.8286716580390927
+     ],
+     [
+      0.030972495675086975,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.008230000734329224,
+      0.31837499141693115
+     ],
+     [
+      0.027480006217956543,
+      0.70301753282547
+     ],
+     [
+      0.03086249530315399,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
+  },
+  {
+   "year": 1988,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19880118_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19880118_02_T1"
+   ],
+   "date": "1988-01-18",
+   "cloud_pct": 40.96,
+   "valid_pct": 59.04,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 26.47,
+   "pixel_m": 30.0,
+   "image": "frames/1988.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1988-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.051377490162849426,
+      1.6022124290466309
+     ],
+     [
+      0.05231250822544098,
+      1.6022124290466309
+     ],
+     [
+      0.04648250341415405,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.007624998688697815,
+      0.3181549906730652
+     ],
+     [
+      0.04505249857902527,
+      0.6398291373252866
+     ],
+     [
+      0.051377490162849426,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
+  },
+  {
+   "year": 1989,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19881219_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19881219_02_T1"
+   ],
+   "date": "1988-12-19",
+   "cloud_pct": 8.24,
+   "valid_pct": 91.76,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 13.17,
+   "pixel_m": 30.0,
+   "image": "frames/1989.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1989-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04785089492797852,
+      1.4485424757003784
+     ],
+     [
+      0.04683999717235565,
+      0.7139966273307797
+     ],
+     [
+      0.038617491722106934,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.007927492260932922,
+      0.3128200173377991
+     ],
+     [
+      0.0478300005197525,
+      0.5757200121879578
+     ],
+     [
+      0.04785089492797852,
+      1.4485424757003784
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
+  },
+  {
+   "year": 1990,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19900123_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19900123_02_T1"
+   ],
+   "date": "1990-01-23",
+   "cloud_pct": 2.38,
+   "valid_pct": 97.62,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 24.0,
+   "snow_pct": 12.4,
+   "pixel_m": 30.0,
+   "image": "frames/1990.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1990-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03352999687194824,
+      0.6069599986076355
+     ],
+     [
+      0.035977497696876526,
+      0.6449441099166867
+     ],
+     [
+      0.029294997453689575,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006332501769065857,
+      0.31760501861572266
+     ],
+     [
+      0.030835002660751343,
+      0.4199391388893125
+     ],
+     [
+      0.03352999687194824,
+      0.6069599986076355
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
+  },
+  {
+   "year": 1991,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19910211_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19910211_02_T1"
+   ],
+   "date": "1991-02-11",
+   "cloud_pct": 2.75,
+   "valid_pct": 97.25,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 5.0,
+   "snow_pct": 10.01,
+   "pixel_m": 30.0,
+   "image": "frames/1991.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1991-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.019339993596076965,
+      0.48607663154602027
+     ],
+     [
+      0.02082499861717224,
+      0.4897550344467163
+     ],
+     [
+      0.019532501697540283,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.006854996085166931,
+      0.3298425078392029
+     ],
+     [
+      0.017222493886947632,
+      0.3984407353401179
+     ],
+     [
+      0.019339993596076965,
+      0.48607663154602027
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
+  },
+  {
+   "year": 1992,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19920301_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19920301_02_T1"
+   ],
+   "date": "1992-03-01",
+   "cloud_pct": 2.7,
+   "valid_pct": 97.3,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 26.0,
+   "snow_pct": 18.82,
+   "pixel_m": 30.0,
+   "image": "frames/1992.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1992-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04939749836921692,
+      0.7790549993515015
+     ],
+     [
+      0.05066250264644623,
+      0.7684950232505798
+     ],
+     [
+      0.04098249971866608,
+      1.4114450216293335
+     ]
+    ],
+    "swir": [
+     [
+      0.010759994387626648,
+      0.32767663240432715
+     ],
+     [
+      0.0461525022983551,
+      0.6716675162315369
+     ],
+     [
+      0.04939749836921692,
+      0.7790549993515015
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
+  },
+  {
+   "year": 1993,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19930320_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19930320_02_T1"
+   ],
+   "date": "1993-03-20",
+   "cloud_pct": 3.86,
+   "valid_pct": 96.14,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 26.0,
+   "snow_pct": 11.66,
+   "pixel_m": 30.0,
+   "image": "frames/1993.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1993-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.030230000615119934,
+      0.6544041419029233
+     ],
+     [
+      0.03133000433444977,
+      0.6502516198158261
+     ],
+     [
+      0.0263184005022049,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.005809992551803589,
+      0.33121752738952637
+     ],
+     [
+      0.029157504439353943,
+      0.5544416093826291
+     ],
+     [
+      0.030230000615119934,
+      0.6544041419029233
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
+  },
+  {
+   "year": 1994,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19940203_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19940203_02_T1"
+   ],
+   "date": "1994-02-03",
+   "cloud_pct": 5.72,
+   "valid_pct": 94.28,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 11.52,
+   "pixel_m": 30.0,
+   "image": "frames/1994.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1994-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.028710901141166693,
+      0.6605300307273865
+     ],
+     [
+      0.02937750518321991,
+      0.6849631977081294
+     ],
+     [
+      0.027287498116493225,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.008835002779960632,
+      0.3259649872779846
+     ],
+     [
+      0.025692492723464966,
+      0.4838700294494629
+     ],
+     [
+      0.028710901141166693,
+      0.6605300307273865
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
+  },
+  {
+   "year": 1995,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19950105_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19950105_02_T1"
+   ],
+   "date": "1995-01-05",
+   "cloud_pct": 13.11,
+   "valid_pct": 86.89,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 13.2,
+   "pixel_m": 30.0,
+   "image": "frames/1995.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1995-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03647249937057495,
+      1.6022124290466309
+     ],
+     [
+      0.037984997034072876,
+      0.8171975016593933
+     ],
+     [
+      0.03385999798774719,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.008065000176429749,
+      0.31928253173828125
+     ],
+     [
+      0.0317700058221817,
+      0.5785800218582153
+     ],
+     [
+      0.03647249937057495,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
+  },
+  {
+   "year": 1996,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19960124_02_T2",
+   "scene_ids": [
+    "LT05_L2SP_233083_19960124_02_T2"
+   ],
+   "date": "1996-01-24",
+   "cloud_pct": 7.25,
+   "valid_pct": 92.75,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 1.54,
+   "pixel_m": 30.0,
+   "image": "frames/1996.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1996-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03149500489234924,
+      0.2450666064023969
+     ],
+     [
+      0.03149500489234924,
+      0.208773204684257
+     ],
+     [
+      0.03075249493122101,
+      0.183026605248451
+     ]
+    ],
+    "swir": [
+     [
+      0.022805005311965942,
+      0.22630499303340912
+     ],
+     [
+      0.04427589774131775,
+      0.28751999139785767
+     ],
+     [
+      0.03149500489234924,
+      0.2450666064023969
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
+  },
+  {
+   "year": 1997,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19970126_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19970126_02_T1"
+   ],
+   "date": "1997-01-26",
+   "cloud_pct": 24.75,
+   "valid_pct": 75.25,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 6.56,
+   "pixel_m": 30.0,
+   "image": "frames/1997.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1997-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.029184997081756592,
+      1.6022124290466309
+     ],
+     [
+      0.028662502765655518,
+      0.7630225419998169
+     ],
+     [
+      0.028304994106292725,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.015517503023147583,
+      0.31053751707077026
+     ],
+     [
+      0.029349997639656067,
+      0.77473640680313
+     ],
+     [
+      0.029184997081756592,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
+  },
+  {
+   "year": 1998,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19980214_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_19980214_02_T1"
+   ],
+   "date": "1998-02-14",
+   "cloud_pct": 31.89,
+   "valid_pct": 68.11,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 17.0,
+   "snow_pct": 18.99,
+   "pixel_m": 30.0,
+   "image": "frames/1998.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1998-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04343000054359436,
+      1.6022124290466309
+     ],
+     [
+      0.046750902533531195,
+      1.6022124290466309
+     ],
+     [
+      0.03839750587940216,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.010072499513626099,
+      0.31766003370285034
+     ],
+     [
+      0.038920000195503235,
+      1.5451774597167969
+     ],
+     [
+      0.04343000054359436,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
+  },
+  {
+   "year": 1999,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_19981215_02_T2",
+   "scene_ids": [
+    "LT05_L2SP_233083_19981215_02_T2"
+   ],
+   "date": "1998-12-15",
+   "cloud_pct": 0.02,
+   "valid_pct": 99.98,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1999.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1999-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.07934500277042389,
+      0.2986299991607666
+     ],
+     [
+      0.06914250552654266,
+      0.23527660310268378
+     ],
+     [
+      0.052773392796516425,
+      0.15034998953342438
+     ]
+    ],
+    "swir": [
+     [
+      0.07997749745845795,
+      0.32395750284194946
+     ],
+     [
+      0.09418839156627655,
+      0.33185660123825045
+     ],
+     [
+      0.07934500277042389,
+      0.2986299991607666
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
+  },
+  {
+   "year": 2000,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20000204_02_T2",
+   "scene_ids": [
+    "LT05_L2SP_233083_20000204_02_T2"
+   ],
+   "date": "2000-02-04",
+   "cloud_pct": 11.54,
+   "valid_pct": 88.46,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 6.48,
+   "pixel_m": 30.0,
+   "image": "frames/2000.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2000-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.023987501859664917,
+      0.661080002784729
+     ],
+     [
+      0.024867504835128784,
+      0.6607224941253662
+     ],
+     [
+      0.0244549959897995,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.014527499675750732,
+      0.3028925061225891
+     ],
+     [
+      0.022640004754066467,
+      0.5410216236114499
+     ],
+     [
+      0.023987501859664917,
+      0.661080002784729
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
+  },
+  {
+   "year": 2001,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20010302_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20010302_02_T1"
+   ],
+   "date": "2001-03-02",
+   "cloud_pct": 3.79,
+   "valid_pct": 96.21,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 9.35,
+   "pixel_m": 30.0,
+   "image": "frames/2001.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2001-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.020852506160736084,
+      0.5740700364112854
+     ],
+     [
+      0.02283249795436859,
+      0.5635924935340881
+     ],
+     [
+      0.022887498140335083,
+      0.49883002042770386
+     ]
+    ],
+    "swir": [
+     [
+      0.006387501955032349,
+      0.32533911705017066
+     ],
+     [
+      0.01944999396800995,
+      0.430245041847229
+     ],
+     [
+      0.020852506160736084,
+      0.5740700364112854
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
+  },
+  {
+   "year": 2002,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20020209_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_20020209_02_T1"
+   ],
+   "date": "2002-02-09",
+   "cloud_pct": 0.01,
+   "valid_pct": 99.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 10.69,
+   "pixel_m": 30.0,
+   "image": "frames/2002.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2002-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.012614995241165161,
+      1.6022124290466309
+     ],
+     [
+      -0.023670002818107605,
+      0.8107416272163388
+     ],
+     [
+      -0.04715500771999359,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      -0.0024400055408477783,
+      0.3116375207901001
+     ],
+     [
+      -0.0040625035762786865,
+      0.7734923458099358
+     ],
+     [
+      -0.012614995241165161,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
+  },
+  {
+   "year": 2003,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20030324_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20030324_02_T1"
+   ],
+   "date": "2003-03-24",
+   "cloud_pct": 14.2,
+   "valid_pct": 85.8,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 12.22,
+   "pixel_m": 30.0,
+   "image": "frames/2003.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2003-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.016452491283416748,
+      0.6804675459861755
+     ],
+     [
+      0.019257500767707825,
+      0.6687250137329102
+     ],
+     [
+      0.020549997687339783,
+      0.6077916407585141
+     ]
+    ],
+    "swir": [
+     [
+      0.0049300044775009155,
+      0.3215925097465515
+     ],
+     [
+      0.014005005359649658,
+      0.5374466109275815
+     ],
+     [
+      0.016452491283416748,
+      0.6804675459861755
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
+  },
+  {
+   "year": 2004,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20040318_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_20040318_02_T1"
+   ],
+   "date": "2004-03-18",
+   "cloud_pct": 7.85,
+   "valid_pct": 92.15,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 9.06,
+   "pixel_m": 30.0,
+   "image": "frames/2004.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2004-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01634250581264496,
+      0.5100775361061096
+     ],
+     [
+      0.017305001616477966,
+      0.5139825344085693
+     ],
+     [
+      0.017690002918243408,
+      0.4590573406219475
+     ]
+    ],
+    "swir": [
+     [
+      0.005397498607635498,
+      0.3285500407218933
+     ],
+     [
+      0.013537496328353882,
+      0.4099774956703186
+     ],
+     [
+      0.01634250581264496,
+      0.5100775361061096
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
+  },
+  {
+   "year": 2005,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20050305_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_20050305_02_T1"
+   ],
+   "date": "2005-03-05",
+   "cloud_pct": 5.51,
+   "valid_pct": 94.49,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 8.22,
+   "pixel_m": 30.0,
+   "image": "frames/2005.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2005-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.019229993224143982,
+      0.47743499279022217
+     ],
+     [
+      0.020137503743171692,
+      0.4690816187858579
+     ],
+     [
+      0.021017491817474365,
+      0.45498514175414756
+     ]
+    ],
+    "swir": [
+     [
+      0.007184997200965881,
+      0.31592750549316406
+     ],
+     [
+      0.01663839757442475,
+      0.40761911153793307
+     ],
+     [
+      0.019229993224143982,
+      0.47743499279022217
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
+  },
+  {
+   "year": 2006,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20060316_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20060316_02_T1",
+    "LE07_L2SP_233083_20060111_02_T1"
+   ],
+   "date": "2006-03-16",
+   "cloud_pct": 13.2,
+   "valid_pct": 86.8,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 14.49,
+   "pixel_m": 30.0,
+   "image": "frames/2006.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2006-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01878999173641205,
+      1.6022124290466309
+     ],
+     [
+      0.020879998803138733,
+      1.6022124290466309
+     ],
+     [
+      0.02115499973297119,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.005644991993904114,
+      0.3141125440597534
+     ],
+     [
+      0.016727492213249207,
+      0.5485775470733643
+     ],
+     [
+      0.01878999173641205,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
+  },
+  {
+   "year": 2007,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20070207_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_20070207_02_T1"
+   ],
+   "date": "2007-02-07",
+   "cloud_pct": 14.47,
+   "valid_pct": 85.53,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 10.64,
+   "pixel_m": 30.0,
+   "image": "frames/2007.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2007-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04048089981079102,
+      0.6644966387748715
+     ],
+     [
+      0.04172499477863312,
+      0.6888275146484375
+     ],
+     [
+      0.03405250608921051,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.008642494678497314,
+      0.3106750249862671
+     ],
+     [
+      0.03869999945163727,
+      0.49774322032928414
+     ],
+     [
+      0.04048089981079102,
+      0.6644966387748715
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
+  },
+  {
+   "year": 2008,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20080218_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20080218_02_T1",
+    "LE07_L2SP_233083_20080101_02_T1"
+   ],
+   "date": "2008-02-18",
+   "cloud_pct": 7.52,
+   "valid_pct": 92.48,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 9.64,
+   "pixel_m": 30.0,
+   "image": "frames/2008.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2008-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.030285000801086426,
+      1.4366393375396704
+     ],
+     [
+      0.030945003032684326,
+      0.6601230311393725
+     ],
+     [
+      0.028882503509521484,
+      1.0895024538040161
+     ]
+    ],
+    "swir": [
+     [
+      0.008560001850128174,
+      0.30451500415802
+     ],
+     [
+      0.029927492141723633,
+      0.5351300239562988
+     ],
+     [
+      0.030285000801086426,
+      1.4366393375396704
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
+  },
+  {
+   "year": 2009,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20090204_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20090204_02_T1",
+    "LE07_L2SP_233083_20090119_02_T1",
+    "LE07_L2SP_233083_20090220_02_T1"
+   ],
+   "date": "2009-02-04",
+   "cloud_pct": 11.99,
+   "valid_pct": 88.01,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 11.44,
+   "pixel_m": 30.0,
+   "image": "frames/2009.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2009-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03655499219894409,
+      1.1854631471633905
+     ],
+     [
+      0.03619090020656586,
+      0.6311039209365834
+     ],
+     [
+      0.032319992780685425,
+      1.058674931526184
+     ]
+    ],
+    "swir": [
+     [
+      0.007927492260932922,
+      0.3098500370979309
+     ],
+     [
+      0.036334991455078125,
+      0.5249550342559814
+     ],
+     [
+      0.03655499219894409,
+      1.1854631471633905
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
+  },
+  {
+   "year": 2010,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20100319_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_20100319_02_T1"
+   ],
+   "date": "2010-03-19",
+   "cloud_pct": 6.33,
+   "valid_pct": 93.67,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 7.87,
+   "pixel_m": 30.0,
+   "image": "frames/2010.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2010-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.018652498722076416,
+      0.425570011138916
+     ],
+     [
+      0.0204399973154068,
+      0.43420499563217163
+     ],
+     [
+      0.02002750337123871,
+      0.3703775405883789
+     ]
+    ],
+    "swir": [
+     [
+      0.006634995341300964,
+      0.33449000120162964
+     ],
+     [
+      0.016865000128746033,
+      0.3478550314903259
+     ],
+     [
+      0.018652498722076416,
+      0.425570011138916
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
+  },
+  {
+   "year": 2011,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233083_20110202_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233083_20110202_02_T1"
+   ],
+   "date": "2011-02-02",
+   "cloud_pct": 4.01,
+   "valid_pct": 95.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 7.62,
+   "pixel_m": 30.0,
+   "image": "frames/2011.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2011-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.036664992570877075,
+      0.505127489566803
+     ],
+     [
+      0.036225005984306335,
+      0.4961141133308408
+     ],
+     [
+      0.03075249493122101,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.009357497096061707,
+      0.30272752046585083
+     ],
+     [
+      0.034905001521110535,
+      0.42947500944137573
+     ],
+     [
+      0.036664992570877075,
+      0.505127489566803
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
+  },
+  {
+   "year": 2012,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20120128_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20120128_02_T1",
+    "LE07_L2SP_233083_20120112_02_T1"
+   ],
+   "date": "2012-01-28",
+   "cloud_pct": 4.86,
+   "valid_pct": 95.14,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 7.5,
+   "pixel_m": 30.0,
+   "image": "frames/2012.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2012-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0394974946975708,
+      0.5411723351478569
+     ],
+     [
+      0.03721499443054199,
+      0.5120300054550171
+     ],
+     [
+      0.03207249939441681,
+      0.460687518119812
+     ]
+    ],
+    "swir": [
+     [
+      0.011007502675056458,
+      0.3088875412940979
+     ],
+     [
+      0.04089999198913574,
+      0.46926748752593994
+     ],
+     [
+      0.0394974946975708,
+      0.5411723351478569
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
+  },
+  {
+   "year": 2013,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20130303_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20130303_02_T1",
+    "LE07_L2SP_233083_20121229_02_T1"
+   ],
+   "date": "2013-03-03",
+   "cloud_pct": 8.52,
+   "valid_pct": 91.48,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 4.0,
+   "snow_pct": 8.34,
+   "pixel_m": 30.0,
+   "image": "frames/2013.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2013-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.024317502975463867,
+      1.1270190715789792
+     ],
+     [
+      0.02516999840736389,
+      0.6577239060401906
+     ],
+     [
+      0.02384999394416809,
+      0.9793759799003575
+     ]
+    ],
+    "swir": [
+     [
+      0.010759994387626648,
+      0.3129575252532959
+     ],
+     [
+      0.024069994688034058,
+      0.5462256979942317
+     ],
+     [
+      0.024317502975463867,
+      1.1270190715789792
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
+  },
+  {
+   "year": 2014,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233083_20140101_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233083_20140101_02_T1",
+    "LE07_L2SP_233083_20140202_02_T1"
+   ],
+   "date": "2014-01-01",
+   "cloud_pct": 9.08,
+   "valid_pct": 90.92,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 7.49,
+   "pixel_m": 30.0,
+   "image": "frames/2014.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2014-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04345749318599701,
+      1.6022124290466309
+     ],
+     [
+      0.041339993476867676,
+      1.1864399909973145
+     ],
+     [
+      0.03540000319480896,
+      1.6022124290466309
+     ]
+    ],
+    "swir": [
+     [
+      0.00938500463962555,
+      0.3079250454902649
+     ],
+     [
+      0.04450249671936035,
+      0.504281618595123
+     ],
+     [
+      0.04345749318599701,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
+  },
+  {
+   "year": 2015,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_233083_20150213_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_233083_20150213_02_T1"
+   ],
+   "date": "2015-02-13",
+   "cloud_pct": 9.67,
+   "valid_pct": 90.33,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.46,
+   "snow_pct": 6.0,
+   "pixel_m": 30.0,
+   "image": "frames/2015.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2015-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.01947750151157379,
+      0.45687160730361914
+     ],
+     [
+      0.013262495398521423,
+      0.44652503728866577
+     ],
+     [
+      -0.004447504878044128,
+      0.3983581972122187
+     ]
+    ],
+    "swir": [
+     [
+      0.010374993085861206,
+      0.3023491287231443
+     ],
+     [
+      0.02378839552402497,
+      0.38058000802993774
+     ],
+     [
+      0.01947750151157379,
+      0.45687160730361914
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
+  },
+  {
+   "year": 2016,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_233083_20160303_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_233083_20160303_02_T1"
+   ],
+   "date": "2016-03-03",
+   "cloud_pct": 10.24,
+   "valid_pct": 89.76,
+   "data_pct": 99.99,
+   "scene_cloud_pct": 19.97,
+   "snow_pct": 7.78,
+   "pixel_m": 30.0,
+   "image": "frames/2016.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2016-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.009605005383491516,
+      0.6381725072860718
+     ],
+     [
+      0.005232498049736023,
+      0.6454325318336487
+     ],
+     [
+      -0.012449994683265686,
+      0.5982699990272522
+     ]
+    ],
+    "swir": [
+     [
+      0.008175000548362732,
+      0.3024162149429319
+     ],
+     [
+      0.012602493166923523,
+      0.47454750537872314
+     ],
+     [
+      0.009605005383491516,
+      0.6381725072860718
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
+  },
+  {
+   "year": 2017,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_19HCD_20170129_0_L2A",
+   "scene_ids": [
+    "S2A_19HCD_20170129_0_L2A"
+   ],
+   "date": "2017-01-29",
+   "cloud_pct": 5.67,
+   "valid_pct": 94.33,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.37,
+   "snow_pct": 11.52,
+   "pixel_m": 10.0,
+   "image": "frames/2017.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2017-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.05119999870657921,
+      0.7051999568939209
+     ],
+     [
+      0.045399997383356094,
+      0.7027999758720398
+     ],
+     [
+      0.02070000022649765,
+      0.6395999789237976
+     ]
+    ],
+    "swir": [
+     [
+      0.011399999260902405,
+      0.3227999806404114
+     ],
+     [
+      0.05609999969601631,
+      0.5803999900817871
+     ],
+     [
+      0.05119999870657921,
+      0.7051999568939209
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
+   }
+  },
+  {
+   "year": 2018,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20180310_1_L2A+S2B_19HCD_20180310_0_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20180310_1_L2A+S2B_19HCD_20180310_0_L2A"
+   ],
+   "date": "2018-03-10",
+   "cloud_pct": 0.02,
+   "valid_pct": 99.98,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.77,
+   "snow_pct": 9.73,
+   "pixel_m": 10.0,
+   "image": "frames/2018.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2018-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.060200002044439316,
+      0.48239997029304504
+     ],
+     [
+      -0.06040000170469284,
+      0.4848000109195709
+     ],
+     [
+      -0.06679999828338623,
+      0.4699999988079071
+     ]
+    ],
+    "swir": [
+     [
+      -0.08240000158548355,
+      0.21790000796318054
+     ],
+     [
+      -0.06180000305175781,
+      0.4220000207424164
+     ],
+     [
+      -0.060200002044439316,
+      0.48239997029304504
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
+   }
+  },
+  {
+   "year": 2019,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20190325_0_L2A+S2B_19HCD_20190325_1_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20190325_0_L2A+S2B_19HCD_20190325_1_L2A"
+   ],
+   "date": "2019-03-25",
+   "cloud_pct": 4.51,
+   "valid_pct": 95.49,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.74,
+   "snow_pct": 6.45,
+   "pixel_m": 10.0,
+   "image": "frames/2019.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2019-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.000699999975040555,
+      0.495199978351593
+     ],
+     [
+      9.999999747378752e-05,
+      0.5223999619483948
+     ],
+     [
+      9.999999747378752e-05,
+      0.49799999594688416
+     ]
+    ],
+    "swir": [
+     [
+      0.00969999935477972,
+      0.33570000529289246
+     ],
+     [
+      0.006199999712407589,
+      0.3962000012397766
+     ],
+     [
+      0.000699999975040555,
+      0.495199978351593
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
+   }
+  },
+  {
+   "year": 2020,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20200228_1_L2A+S2B_19HCD_20200228_0_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20200228_1_L2A+S2B_19HCD_20200228_0_L2A"
+   ],
+   "date": "2020-02-28",
+   "cloud_pct": 0.28,
+   "valid_pct": 99.72,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.87,
+   "snow_pct": 6.63,
+   "pixel_m": 10.0,
+   "image": "frames/2020.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2020-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.047300003468990326,
+      0.2924000024795532
+     ],
+     [
+      -0.05010000243782997,
+      0.3012000024318695
+     ],
+     [
+      -0.057500001043081284,
+      0.2759999930858612
+     ]
+    ],
+    "swir": [
+     [
+      -0.09059999883174896,
+      0.23690000176429749
+     ],
+     [
+      -0.04990000277757645,
+      0.2475999891757965
+     ],
+     [
+      -0.047300003468990326,
+      0.2924000024795532
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
+   }
+  },
+  {
+   "year": 2021,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20210304_1_L2A+S2B_19HCD_20210304_0_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20210304_1_L2A+S2B_19HCD_20210304_0_L2A"
+   ],
+   "date": "2021-03-04",
+   "cloud_pct": 0.07,
+   "valid_pct": 99.93,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.76,
+   "snow_pct": 14.24,
+   "pixel_m": 10.0,
+   "image": "frames/2021.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2021-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.05420000106096268,
+      0.6663999557495117
+     ],
+     [
+      -0.056300003081560135,
+      0.6735999584197998
+     ],
+     [
+      -0.06480000168085098,
+      0.6583999395370483
+     ]
+    ],
+    "swir": [
+     [
+      -0.08470000326633453,
+      0.2173999845981598
+     ],
+     [
+      -0.055500004440546036,
+      0.5719999670982361
+     ],
+     [
+      -0.05420000106096268,
+      0.6663999557495117
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
+   }
+  },
+  {
+   "year": 2022,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_19HCD_20220314_0_L2A",
+   "scene_ids": [
+    "S2A_19HCD_20220314_0_L2A"
+   ],
+   "date": "2022-03-14",
+   "cloud_pct": 0.01,
+   "valid_pct": 99.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 6.26,
+   "pixel_m": 10.0,
+   "image": "frames/2022.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2022-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.06370000541210175,
+      0.3368000090122223
+     ],
+     [
+      -0.06640000641345978,
+      0.3508000075817108
+     ],
+     [
+      -0.07430000603199005,
+      0.32519999146461487
+     ]
+    ],
+    "swir": [
+     [
+      -0.08969999849796295,
+      0.2120000123977661
+     ],
+     [
+      -0.06460000574588776,
+      0.2595999836921692
+     ],
+     [
+      -0.06370000541210175,
+      0.3368000090122223
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
+   }
+  },
+  {
+   "year": 2023,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20230113_0_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20230113_0_L2A"
+   ],
+   "date": "2023-01-13",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 18.28,
+   "pixel_m": 10.0,
+   "image": "frames/2023.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2023-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.022400006651878357,
+      0.7951999306678772
+     ],
+     [
+      -0.03320000320672989,
+      0.7919999361038208
+     ],
+     [
+      -0.048600003123283386,
+      0.7879999279975891
+     ]
+    ],
+    "swir": [
+     [
+      -0.05730000138282776,
+      0.2141999900341034
+     ],
+     [
+      -0.011800006031990051,
+      0.7375999689102173
+     ],
+     [
+      -0.022400006651878357,
+      0.7951999306678772
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
+   }
+  },
+  {
+   "year": 2024,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20240217_0_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20240217_0_L2A"
+   ],
+   "date": "2024-02-17",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 10.92,
+   "pixel_m": 10.0,
+   "image": "frames/2024.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2024-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.0479000024497509,
+      0.5043999552726746
+     ],
+     [
+      -0.04930000379681587,
+      0.5091999769210815
+     ],
+     [
+      -0.06000000238418579,
+      0.4723999798297882
+     ]
+    ],
+    "swir": [
+     [
+      -0.08969999849796295,
+      0.25349998474121094
+     ],
+     [
+      -0.04620000347495079,
+      0.3840000033378601
+     ],
+     [
+      -0.0479000024497509,
+      0.5043999552726746
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
+   }
+  },
+  {
+   "year": 2025,
+   "sensor": "sentinel-2c",
+   "scene_id": "S2C_19HCD_20250206_0_L2A",
+   "scene_ids": [
+    "S2C_19HCD_20250206_0_L2A"
+   ],
+   "date": "2025-02-06",
+   "cloud_pct": 0.15,
+   "valid_pct": 99.85,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.01,
+   "snow_pct": 8.38,
+   "pixel_m": 10.0,
+   "image": "frames/2025.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2025-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.04320000112056732,
+      0.41279998421669006
+     ],
+     [
+      -0.047600001096725464,
+      0.4044000208377838
+     ],
+     [
+      -0.06300000101327896,
+      0.3619999885559082
+     ]
+    ],
+    "swir": [
+     [
+      -0.08860000222921371,
+      0.22659999132156372
+     ],
+     [
+      -0.03720000386238098,
+      0.3263999819755554
+     ],
+     [
+      -0.04320000112056732,
+      0.41279998421669006
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
+   }
+  },
+  {
+   "year": 2026,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19HCD_20260206_0_L2A",
+   "scene_ids": [
+    "S2B_19HCD_20260206_0_L2A"
+   ],
+   "date": "2026-02-06",
+   "cloud_pct": 0.07,
+   "valid_pct": 99.93,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 9.03,
+   "pixel_m": 10.0,
+   "image": "frames/2026.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2026-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.04440000280737877,
+      0.5596999526023865
+     ],
+     [
+      -0.04780000448226929,
+      0.5586999654769897
+     ],
+     [
+      -0.05960000306367874,
+      0.5425999760627747
+     ]
+    ],
+    "swir": [
+     [
+      -0.08349999785423279,
+      0.22859999537467957
+     ],
+     [
+      -0.04070000350475311,
+      0.49619999527931213
+     ],
+     [
+      -0.04440000280737877,
+      0.5596999526023865
+     ]
+    ]
+   },
+   "flags": [
+    "snow"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
+   }
+  }
+ ],
+ "gaps": {},
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2c",
+   "sentinel-2b"
+  ],
+  "valid_frac": [
+   0.6675,
+   0.9813,
+   0.8732,
+   0.6596,
+   0.9503,
+   0.9886,
+   0.973,
+   0.9876,
+   0.9831,
+   0.9676,
+   0.9157,
+   0.9549,
+   0.8034,
+   0.7487,
+   1.0,
+   0.9644,
+   0.9677,
+   0.9999,
+   0.8911,
+   0.922,
+   0.9488,
+   0.8839,
+   0.8881,
+   0.9295,
+   0.8855,
+   0.9238,
+   0.9561,
+   0.9503,
+   0.9116,
+   0.9078,
+   0.8739,
+   0.8752,
+   0.9889,
+   0.9997,
+   0.9904,
+   1.0,
+   0.9987,
+   1.0,
+   1.0,
+   1.0,
+   0.9972,
+   0.9985
+  ],
+  "envelope_km2": 104.8734,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    null,
+    88.4286,
+    71.721,
+    null,
+    85.4235,
+    87.3207,
+    89.8137,
+    73.0521,
+    78.4341,
+    87.0453,
+    79.1613,
+    16.1478,
+    79.0164,
+    58.5873,
+    40.3029,
+    88.7868,
+    88.4952,
+    0.0,
+    75.2724,
+    82.3356,
+    88.2972,
+    74.5218,
+    79.6302,
+    86.0508,
+    79.5087,
+    84.6756,
+    91.3761,
+    91.224,
+    84.6252,
+    86.2875,
+    85.0734,
+    81.7056,
+    92.4939,
+    61.9722,
+    92.9565,
+    72.9117,
+    65.4759,
+    68.4108,
+    68.9814,
+    78.7419,
+    75.3435,
+    67.0626
+   ],
+   "rf": [
+    null,
+    52.9461,
+    56.7585,
+    null,
+    55.5543,
+    59.6025,
+    55.2492,
+    73.3932,
+    67.2894,
+    65.3013,
+    59.9004,
+    27.5337,
+    46.2501,
+    46.6254,
+    55.575,
+    58.2183,
+    57.2058,
+    63.4545,
+    56.2131,
+    56.6667,
+    65.8179,
+    56.7162,
+    55.8612,
+    57.4695,
+    49.6854,
+    55.9962,
+    71.1531,
+    54.4329,
+    54.3591,
+    55.3122,
+    33.2172,
+    38.3832,
+    76.8726,
+    76.1103,
+    74.3895,
+    78.6087,
+    78.4368,
+    85.3704,
+    68.3757,
+    74.205,
+    77.6376,
+    74.3805
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    70.2486,
+    70.353,
+    79.8498,
+    65.6487,
+    66.5127,
+    77.8077,
+    65.502,
+    63.0891,
+    67.5522,
+    72.7632
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    null,
+    0.06331,
+    0.05662,
+    null,
+    0.04615,
+    0.04665,
+    0.0507,
+    0.04122,
+    0.04479,
+    0.04514,
+    0.04241,
+    0.25716,
+    0.06779,
+    0.04431,
+    0.10453,
+    0.06366,
+    0.04614,
+    0.11079,
+    0.04216,
+    0.04407,
+    0.04718,
+    0.03556,
+    0.05216,
+    0.04133,
+    0.04961,
+    0.04775,
+    0.03674,
+    0.04886,
+    0.04723,
+    0.0404,
+    0.06143,
+    0.06636,
+    0.03198,
+    0.116,
+    0.04203,
+    0.08673,
+    0.0917,
+    0.0892,
+    0.09638,
+    0.08603,
+    0.09831,
+    0.10684
+   ],
+   "mndwi": [
+    null,
+    -0.15983,
+    -0.11992,
+    null,
+    -0.14416,
+    -0.12503,
+    -0.16424,
+    -0.04697,
+    -0.09029,
+    -0.15383,
+    -0.1254,
+    -0.28851,
+    -0.2359,
+    -0.07727,
+    -0.24513,
+    -0.19675,
+    -0.1662,
+    -0.33265,
+    -0.13889,
+    -0.15652,
+    -0.18074,
+    -0.13191,
+    -0.15298,
+    -0.17152,
+    -0.16029,
+    -0.16113,
+    -0.17768,
+    -0.19167,
+    -0.18317,
+    -0.17793,
+    -0.23828,
+    -0.22957,
+    -0.16466,
+    -0.4306,
+    -0.2094,
+    -0.41398,
+    -0.41075,
+    -0.46309,
+    -0.33344,
+    -0.33571,
+    -0.40451,
+    -0.40835
+   ],
+   "bsi": [
+    null,
+    0.11829,
+    0.09611,
+    null,
+    0.11607,
+    0.11442,
+    0.13368,
+    0.07776,
+    0.10167,
+    0.12934,
+    0.11148,
+    0.03098,
+    0.14401,
+    0.08802,
+    0.13463,
+    0.13115,
+    0.12651,
+    0.23537,
+    0.11263,
+    0.12787,
+    0.13908,
+    0.11439,
+    0.12321,
+    0.13174,
+    0.12082,
+    0.13186,
+    0.14748,
+    0.13785,
+    0.13351,
+    0.13522,
+    0.18589,
+    0.18066,
+    0.13809,
+    0.27943,
+    0.15655,
+    0.28635,
+    0.2914,
+    0.32683,
+    0.24361,
+    0.23348,
+    0.27795,
+    0.27014
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 40,
+    "pelt": {
+     "breaks": [
+      1996,
+      2003
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 1995,
+       "mean": 82.2667,
+       "slope": -0.3224
+      },
+      {
+       "start": 1996,
+       "end": 2002,
+       "mean": 53.0481,
+       "slope": 0.0255
+      },
+      {
+       "start": 2003,
+       "end": 2026,
+       "mean": 79.7889,
+       "slope": -0.5455
+      }
+     ],
+     "penalty": 1559.330872,
+     "sigma": 11.870289,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1997,
+      2003
+     ],
+     "k": 5.935144,
+     "h": 47.481155,
+     "sigma": 11.870289,
+     "target": 0.5706
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 40,
+    "pelt": {
+     "breaks": [
+      2014,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 2013,
+       "mean": 56.8603,
+       "slope": 0.0173
+      },
+      {
+       "start": 2014,
+       "end": 2016,
+       "mean": 42.3042,
+       "slope": -8.4645
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 76.4387,
+       "slope": -0.2208
+      }
+     ],
+     "penalty": 558.292329,
+     "sigma": 7.102692,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2017
+     ],
+     "k": 3.551346,
+     "h": 28.410767,
+     "sigma": 7.102692,
+     "target": 0.3753
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 69.9327,
+       "slope": -0.4238
+      }
+     ],
+     "penalty": 286.922242,
+     "sigma": 6.444862,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 3.222431,
+     "h": 25.779449,
+     "sigma": 6.444862,
+     "target": 0.864
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1996,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1559.330872
+   },
+   {
+    "year": 1997,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 47.481155
+   },
+   {
+    "year": 2003,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 47.481155
+   },
+   {
+    "year": 2003,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1559.330872
+   },
+   {
+    "year": 2014,
+    "method": "pelt",
+    "series": "rf",
+    "score": 558.292329
+   },
+   {
+    "year": 2017,
+    "method": "cusum",
+    "series": "rf",
+    "score": 28.410767
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "rf",
+    "score": 558.292329
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "los-bronces",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -129.3,
+   129.3
+  ],
+  "geoid_offset_m": 0.737,
+  "stable_bias_m": -7.792,
+  "noise_floor_m": 3.219,
+  "tau_m": 6.437,
+  "stable_ground_px": 22679,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 625719744,
+  "fill_volume_m3": 541635840,
+  "envelope": {
+   "cut_m3": 625719744,
+   "fill_m3": 541635840,
+   "cut_km2": 16.605,
+   "fill_km2": 19.6254,
+   "min_m": -361.7,
+   "max_m": 295.5
+  },
+  "window": {
+   "cut_m3": 927844736,
+   "fill_m3": 721858496,
+   "cut_km2": 35.5365,
+   "fill_km2": 35.6877,
+   "min_m": -361.7,
+   "max_m": 295.5
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/311/611.png",
+   "terrain/10/311/612.png",
+   "terrain/10/312/611.png",
+   "terrain/10/312/612.png",
+   "terrain/11/623/1223.png",
+   "terrain/11/623/1224.png",
+   "terrain/11/624/1223.png",
+   "terrain/11/624/1224.png",
+   "terrain/12/1247/2447.png",
+   "terrain/12/1247/2448.png",
+   "terrain/12/1247/2449.png",
+   "terrain/12/1248/2447.png",
+   "terrain/12/1248/2448.png",
+   "terrain/12/1248/2449.png",
+   "terrain/12/1249/2447.png",
+   "terrain/12/1249/2448.png",
+   "terrain/12/1249/2449.png",
+   "terrain/13/2494/4894.png",
+   "terrain/13/2494/4895.png",
+   "terrain/13/2494/4896.png",
+   "terrain/13/2494/4897.png",
+   "terrain/13/2494/4898.png",
+   "terrain/13/2495/4894.png",
+   "terrain/13/2495/4895.png",
+   "terrain/13/2495/4896.png",
+   "terrain/13/2495/4897.png",
+   "terrain/13/2495/4898.png",
+   "terrain/13/2496/4894.png",
+   "terrain/13/2496/4895.png",
+   "terrain/13/2496/4896.png",
+   "terrain/13/2496/4897.png",
+   "terrain/13/2496/4898.png",
+   "terrain/13/2497/4894.png",
+   "terrain/13/2497/4895.png",
+   "terrain/13/2497/4896.png",
+   "terrain/13/2497/4897.png",
+   "terrain/13/2497/4898.png",
+   "terrain/13/2498/4894.png",
+   "terrain/13/2498/4895.png",
+   "terrain/13/2498/4896.png",
+   "terrain/13/2498/4897.png",
+   "terrain/13/2498/4898.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 2432.0,
+   "max": 5371.0
+  },
+  "cop_stats": {
+   "min": 2424.4,
+   "max": 5368.6
+  }
+ },
  "models": [],
  "files": [
   {
+   "path": "sites/los-bronces/dem/cop.png",
+   "kind": "dem",
+   "bytes": 294845,
+   "sha256": "7f8575799fb6669309815dbbdd7ed8596d4346c34b6ef557994540b16f0924c3"
+  },
+  {
+   "path": "sites/los-bronces/dem/delta.png",
+   "kind": "dem",
+   "bytes": 466557,
+   "sha256": "971aa5f3fe7bc0ea11776f0fcaee7a36f675d6f9c0c7ee07658568b4b8a98184"
+  },
+  {
+   "path": "sites/los-bronces/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 319081,
+   "sha256": "20e97f7f78d222828161b7288f9e812e8bcaa2398f242969c729a55e8d7fbc83"
+  },
+  {
+   "path": "sites/los-bronces/frames/1985-swir.webp",
+   "kind": "frame",
+   "bytes": 57140,
+   "sha256": "05412642e6f59c83b3b6c2402eb376556eccce7e003940847deac5a45d3184d0",
+   "year": 1985
+  },
+  {
+   "path": "sites/los-bronces/frames/1985.webp",
+   "kind": "frame",
+   "bytes": 156320,
+   "sha256": "9814b272d47626300debcc7024aaaae706dcb2f3ffdbbe2cd877249c072bc755",
+   "year": 1985
+  },
+  {
+   "path": "sites/los-bronces/frames/1986-swir.webp",
+   "kind": "frame",
+   "bytes": 42396,
+   "sha256": "a2b1a65fd03eea2feea9743dde111d96d84b0cf64cce9f77a4214a6e65d766a8",
+   "year": 1986
+  },
+  {
+   "path": "sites/los-bronces/frames/1986.webp",
+   "kind": "frame",
+   "bytes": 85978,
+   "sha256": "e31798a7522ea55266fe1d9f2b05486638941dbffe48fec89a512a5f08f21e70",
+   "year": 1986
+  },
+  {
+   "path": "sites/los-bronces/frames/1987-swir.webp",
+   "kind": "frame",
+   "bytes": 45402,
+   "sha256": "63507b9ef4fc667076bf6e4c4d84920be51936b7b0f217caa7e7795e81de5ce9",
+   "year": 1987
+  },
+  {
+   "path": "sites/los-bronces/frames/1987.webp",
+   "kind": "frame",
+   "bytes": 108336,
+   "sha256": "0ec0583868027aab349a6a7675c58e6a94e6b74dd5f3b38ec79648375caae2fd",
+   "year": 1987
+  },
+  {
+   "path": "sites/los-bronces/frames/1988-swir.webp",
+   "kind": "frame",
+   "bytes": 55972,
+   "sha256": "0d32393154dbb82aa9cfa01ed56f1de83efe3c525a7d5d4cc33e6bd1012afc3e",
+   "year": 1988
+  },
+  {
+   "path": "sites/los-bronces/frames/1988.webp",
+   "kind": "frame",
+   "bytes": 143440,
+   "sha256": "08bcbdd8c80ef992e01332ef75306189595746caf561c85917560d65f6de32de",
+   "year": 1988
+  },
+  {
+   "path": "sites/los-bronces/frames/1989-swir.webp",
+   "kind": "frame",
+   "bytes": 40970,
+   "sha256": "7e71ec208e6dc1d1a5d87c89d04d33d071317651c235bf909a06ac286f00987c",
+   "year": 1989
+  },
+  {
+   "path": "sites/los-bronces/frames/1989.webp",
+   "kind": "frame",
+   "bytes": 91064,
+   "sha256": "457850168c23e24bc0fdf18facedb4cd5c6d91efab658362f08b2352c6c615cc",
+   "year": 1989
+  },
+  {
+   "path": "sites/los-bronces/frames/1990-swir.webp",
+   "kind": "frame",
+   "bytes": 42940,
+   "sha256": "dd4f7b5bde450e59cceca90a451f5717cb2accf18aeff1b81c793fb8601ebc7e",
+   "year": 1990
+  },
+  {
+   "path": "sites/los-bronces/frames/1990.webp",
+   "kind": "frame",
+   "bytes": 86782,
+   "sha256": "9bca85bd91e6635071b234a13ad3b8015e524a56b551d510e8345b13e1f269c8",
+   "year": 1990
+  },
+  {
+   "path": "sites/los-bronces/frames/1991-swir.webp",
+   "kind": "frame",
+   "bytes": 42616,
+   "sha256": "20d97a3d346bd20f30a0520d93ae1d6d2a97596810d5fb9524814b113b1c67c8",
+   "year": 1991
+  },
+  {
+   "path": "sites/los-bronces/frames/1991.webp",
+   "kind": "frame",
+   "bytes": 90112,
+   "sha256": "ebdefa9c82d6237ff7cc7d33f164b5088fc60b3a3be76f650504a8e4365d5e60",
+   "year": 1991
+  },
+  {
+   "path": "sites/los-bronces/frames/1992-swir.webp",
+   "kind": "frame",
+   "bytes": 43648,
+   "sha256": "a06f5b3e8a10fbcbfde49800611f5d5c15ed6d0e5a0d06d3adaec3deb382b750",
+   "year": 1992
+  },
+  {
+   "path": "sites/los-bronces/frames/1992.webp",
+   "kind": "frame",
+   "bytes": 98120,
+   "sha256": "391106542160f9274e45562058cab7c22e740528d189f8010f1161156f5cb841",
+   "year": 1992
+  },
+  {
+   "path": "sites/los-bronces/frames/1993-swir.webp",
+   "kind": "frame",
+   "bytes": 42068,
+   "sha256": "8d9e58f7abccd33ba7900a5649a26cc1921ff277db42875d19bafe90435e9762",
+   "year": 1993
+  },
+  {
+   "path": "sites/los-bronces/frames/1993.webp",
+   "kind": "frame",
+   "bytes": 84474,
+   "sha256": "97e0111738f1835b511b9bbf746f1a7c1f5d3343b4b7b2589c85953abc2544de",
+   "year": 1993
+  },
+  {
+   "path": "sites/los-bronces/frames/1994-swir.webp",
+   "kind": "frame",
+   "bytes": 42840,
+   "sha256": "70e4e91497cfe77f0d0e47f81395e3230e35eac138b4358483002838daf27061",
+   "year": 1994
+  },
+  {
+   "path": "sites/los-bronces/frames/1994.webp",
+   "kind": "frame",
+   "bytes": 85466,
+   "sha256": "b72984f8d659352518c0cb8f3f4a528ce94a2ddc4d51938516bf2cac50fb7225",
+   "year": 1994
+  },
+  {
+   "path": "sites/los-bronces/frames/1995-swir.webp",
+   "kind": "frame",
+   "bytes": 45312,
+   "sha256": "908d82fd692bd717ae9cedfa0cc38ea310488652acc8e4aaa2514eef3951183e",
+   "year": 1995
+  },
+  {
+   "path": "sites/los-bronces/frames/1995.webp",
+   "kind": "frame",
+   "bytes": 91922,
+   "sha256": "21ceecfcd9beaa550cbfb27b7ee96246acbc802b37f00d4d440ed1bc2e2fbed7",
+   "year": 1995
+  },
+  {
+   "path": "sites/los-bronces/frames/1996-swir.webp",
+   "kind": "frame",
+   "bytes": 49270,
+   "sha256": "d967c75443cb94ac0aaf5d6a63de95a24539c5832cadcdc68ed233ac9210cedc",
+   "year": 1996
+  },
+  {
+   "path": "sites/los-bronces/frames/1996.webp",
+   "kind": "frame",
+   "bytes": 98636,
+   "sha256": "eab91a377bf530b93d9c60eea79aa7131d22fa83b93e83c986c2e24d82da568e",
+   "year": 1996
+  },
+  {
+   "path": "sites/los-bronces/frames/1997-swir.webp",
+   "kind": "frame",
+   "bytes": 36980,
+   "sha256": "7caf24c032de503ce1ef983ffdf891d916f00d5383427c20320fd04f9d15e93c",
+   "year": 1997
+  },
+  {
+   "path": "sites/los-bronces/frames/1997.webp",
+   "kind": "frame",
+   "bytes": 67288,
+   "sha256": "a343bfb3b63dcddc29883338494e380566c0b29129eb3d837ee8b63444f31ecd",
+   "year": 1997
+  },
+  {
+   "path": "sites/los-bronces/frames/1998-swir.webp",
+   "kind": "frame",
+   "bytes": 41486,
+   "sha256": "7c0023f04efd20b699db9e466f33676b2ecb4c54456e93684424269ebe169979",
+   "year": 1998
+  },
+  {
+   "path": "sites/los-bronces/frames/1998.webp",
+   "kind": "frame",
+   "bytes": 103184,
+   "sha256": "8ca45be520318c94fc850763eaf18cbf9792398ae0506fe793653c7b80bd88e7",
+   "year": 1998
+  },
+  {
+   "path": "sites/los-bronces/frames/1999-swir.webp",
+   "kind": "frame",
+   "bytes": 46088,
+   "sha256": "49a34f6ef55c8f7e981e04d0480ef57ed6bc31350618768b62b7d901280e45b9",
+   "year": 1999
+  },
+  {
+   "path": "sites/los-bronces/frames/1999.webp",
+   "kind": "frame",
+   "bytes": 113600,
+   "sha256": "770f151ca4193d6acbcf615420436ef13bdb5d7c7f42a252182ed1891266cc97",
+   "year": 1999
+  },
+  {
+   "path": "sites/los-bronces/frames/2000-swir.webp",
+   "kind": "frame",
+   "bytes": 41484,
+   "sha256": "cc7a40909b32d12fc11441f264515c039806543a0c95922d6dd5032a2c6cd2cf",
+   "year": 2000
+  },
+  {
+   "path": "sites/los-bronces/frames/2000.webp",
+   "kind": "frame",
+   "bytes": 82218,
+   "sha256": "a9b90e663455aa9dd67db009d92344273eca0f1ef19fe04870734ede3742585a",
+   "year": 2000
+  },
+  {
+   "path": "sites/los-bronces/frames/2001-swir.webp",
+   "kind": "frame",
+   "bytes": 43516,
+   "sha256": "1c336d152f3a46ef0b384ae199876c00f4248f9ae6cb0162da9c88d75c0e5f17",
+   "year": 2001
+  },
+  {
+   "path": "sites/los-bronces/frames/2001.webp",
+   "kind": "frame",
+   "bytes": 78758,
+   "sha256": "5790501c658d7b97b7d6614faf8f8b3402ff918e72121ee21bbb1dd734e54b72",
+   "year": 2001
+  },
+  {
+   "path": "sites/los-bronces/frames/2002-swir.webp",
+   "kind": "frame",
+   "bytes": 37324,
+   "sha256": "d507dd50a03bdf1e687f2ae1dfe2d6f967e7bfeccb0c06671bf5c7263051e948",
+   "year": 2002
+  },
+  {
+   "path": "sites/los-bronces/frames/2002.webp",
+   "kind": "frame",
+   "bytes": 68166,
+   "sha256": "4d128941e97f58129259a5b0696a78d3ee09549bbf068d8a2b1f01007c086bf3",
+   "year": 2002
+  },
+  {
+   "path": "sites/los-bronces/frames/2003-swir.webp",
+   "kind": "frame",
+   "bytes": 44150,
+   "sha256": "ab47a4798269c8738e67a0544206501e5ae0f4d23189a7086ae940dcb283a964",
+   "year": 2003
+  },
+  {
+   "path": "sites/los-bronces/frames/2003.webp",
+   "kind": "frame",
+   "bytes": 81790,
+   "sha256": "1c6f705f330e506bd705694f9eb6c7871ce248d474da5c70ca92e30b83fe080c",
+   "year": 2003
+  },
+  {
+   "path": "sites/los-bronces/frames/2004-swir.webp",
+   "kind": "frame",
+   "bytes": 44722,
+   "sha256": "907866c069587df1ed55598992feb5197bd00e5425da8941bfa06fe913ea2a53",
+   "year": 2004
+  },
+  {
+   "path": "sites/los-bronces/frames/2004.webp",
+   "kind": "frame",
+   "bytes": 81834,
+   "sha256": "493c35a30dc9410e01eecf693c6c3fb13d2d1a803a74d783575c0c5fea534806",
+   "year": 2004
+  },
+  {
+   "path": "sites/los-bronces/frames/2005-swir.webp",
+   "kind": "frame",
+   "bytes": 42318,
+   "sha256": "a4e5813af66d5d4b79aade76faf8e7723b429829c563135402144e2068e623db",
+   "year": 2005
+  },
+  {
+   "path": "sites/los-bronces/frames/2005.webp",
+   "kind": "frame",
+   "bytes": 80770,
+   "sha256": "bdcf4ab57b3e238f4ec83662b916828cfdd784bd6d7c4f9d0461f3ec35c7683c",
+   "year": 2005
+  },
+  {
+   "path": "sites/los-bronces/frames/2006-swir.webp",
+   "kind": "frame",
+   "bytes": 50058,
+   "sha256": "3247d23d4fa84c08c34d80678fd8d6b2e8bdff9f4d56bb1ef02009e06d7f58b0",
+   "year": 2006
+  },
+  {
+   "path": "sites/los-bronces/frames/2006.webp",
+   "kind": "frame",
+   "bytes": 72422,
+   "sha256": "bdd6ef974cf81c0418f9658099625d6f67230216fdf5ca3b453427bc53d0a3cf",
+   "year": 2006
+  },
+  {
+   "path": "sites/los-bronces/frames/2007-swir.webp",
+   "kind": "frame",
+   "bytes": 44604,
+   "sha256": "8dda7044caa05a9cc630fa655f3a702124e2208531f59f404ba19bff7c470456",
+   "year": 2007
+  },
+  {
+   "path": "sites/los-bronces/frames/2007.webp",
+   "kind": "frame",
+   "bytes": 93768,
+   "sha256": "9193df72d19a82952cf1c70c8d9c22521dc7805183bbca482850ff1d7d3c5eb8",
+   "year": 2007
+  },
+  {
+   "path": "sites/los-bronces/frames/2008-swir.webp",
+   "kind": "frame",
+   "bytes": 40682,
+   "sha256": "a6ee7e949c751e922ddb987b247bfb8a1be1fd91d4b3000a8b08b7eea38174d1",
+   "year": 2008
+  },
+  {
+   "path": "sites/los-bronces/frames/2008.webp",
+   "kind": "frame",
+   "bytes": 70390,
+   "sha256": "a685538a9e04489880e661bbb24bb446c0505eac9d60612852b3b6d0a99128b3",
+   "year": 2008
+  },
+  {
+   "path": "sites/los-bronces/frames/2009-swir.webp",
+   "kind": "frame",
+   "bytes": 44450,
+   "sha256": "74c433bc56f8944aeacb5b9fcc78596634293e6b21f71838e5edef2a9dc54e2e",
+   "year": 2009
+  },
+  {
+   "path": "sites/los-bronces/frames/2009.webp",
+   "kind": "frame",
+   "bytes": 87566,
+   "sha256": "7127fa97410edc5c5dea8a35b479a4ae73db185b70d5a947f6b99bf27be6b4b1",
+   "year": 2009
+  },
+  {
+   "path": "sites/los-bronces/frames/2010-swir.webp",
+   "kind": "frame",
+   "bytes": 45030,
+   "sha256": "32c4c7c06495a2f338d24804f6c7a1646ef593fbf5e94ed002486fe47be2ba07",
+   "year": 2010
+  },
+  {
+   "path": "sites/los-bronces/frames/2010.webp",
+   "kind": "frame",
+   "bytes": 86806,
+   "sha256": "e98c40732eeb64ecc60f124ae298c28205f1eba39ebe616cb407680953fbbae9",
+   "year": 2010
+  },
+  {
+   "path": "sites/los-bronces/frames/2011-swir.webp",
+   "kind": "frame",
+   "bytes": 38822,
+   "sha256": "b75a66f3540406f11d9d63e938626be8f89bffc524bba4f2e5d0686a5c62cc01",
+   "year": 2011
+  },
+  {
+   "path": "sites/los-bronces/frames/2011.webp",
+   "kind": "frame",
+   "bytes": 84852,
+   "sha256": "40475b79fcdaea524ebea3d512f612adb0acd73eebc2a08217a4db5ab9e92268",
+   "year": 2011
+  },
+  {
+   "path": "sites/los-bronces/frames/2012-swir.webp",
+   "kind": "frame",
+   "bytes": 38736,
+   "sha256": "0f11c963f70d57d03a1c6316433b6e3054f90b7766218680abb65e50f5806208",
+   "year": 2012
+  },
+  {
+   "path": "sites/los-bronces/frames/2012.webp",
+   "kind": "frame",
+   "bytes": 73642,
+   "sha256": "b1cfa34a8d68c95c0ecf8535f4838a9e721ca0f9cf0078ebe225fda0ac08d472",
+   "year": 2012
+  },
+  {
+   "path": "sites/los-bronces/frames/2013-swir.webp",
+   "kind": "frame",
+   "bytes": 41976,
+   "sha256": "b7ff3b3c6af63a434b3c0b90196dabaf5d3248b83eb3e7e22cbe269f644ecab0",
+   "year": 2013
+  },
+  {
+   "path": "sites/los-bronces/frames/2013.webp",
+   "kind": "frame",
+   "bytes": 73078,
+   "sha256": "1b2e22788b2d73053ceb02452a819dc9ca05506162893add192b90ef9912f79e",
+   "year": 2013
+  },
+  {
+   "path": "sites/los-bronces/frames/2014-swir.webp",
+   "kind": "frame",
+   "bytes": 40306,
+   "sha256": "d921391894a28531d0afedb2dead17481ede9d2d3c15fbc2e34a00e18644dd61",
+   "year": 2014
+  },
+  {
+   "path": "sites/los-bronces/frames/2014.webp",
+   "kind": "frame",
+   "bytes": 54364,
+   "sha256": "2b4eb3dfaa2bd002a4a38d7f1c6a9ce64c13441cab2ee7ceb81cbfabc0a6ce55",
+   "year": 2014
+  },
+  {
+   "path": "sites/los-bronces/frames/2015-swir.webp",
+   "kind": "frame",
+   "bytes": 41772,
+   "sha256": "481d3be89e5484cf6e3170d32946c1dc99853bf9dc5bc7ac4eb8315221b72732",
+   "year": 2015
+  },
+  {
+   "path": "sites/los-bronces/frames/2015.webp",
+   "kind": "frame",
+   "bytes": 80818,
+   "sha256": "34d6b7a721918e21ddb483f6469cb5e2301e46f70160f6ece2b58213f4c9bc9d",
+   "year": 2015
+  },
+  {
+   "path": "sites/los-bronces/frames/2016-swir.webp",
+   "kind": "frame",
+   "bytes": 43800,
+   "sha256": "aead0b7fad965832174bc2cc9c3c1b5b2711dc57417611657f658dbc0e29d8bf",
+   "year": 2016
+  },
+  {
+   "path": "sites/los-bronces/frames/2016.webp",
+   "kind": "frame",
+   "bytes": 79380,
+   "sha256": "399fbb314e42271dd47c84c175e6b6f85721a88ef8358fe673e9a3784a5173bd",
+   "year": 2016
+  },
+  {
+   "path": "sites/los-bronces/frames/2017-swir.webp",
+   "kind": "frame",
+   "bytes": 57950,
+   "sha256": "bdf3121736e496088030ac0656ceaae62db53420a8ac128aeeb401e2d993c642",
+   "year": 2017
+  },
+  {
+   "path": "sites/los-bronces/frames/2017.webp",
+   "kind": "frame",
+   "bytes": 181128,
+   "sha256": "0831470d48792ff69e8a8eefaf50a1d343e34311d25aac277e0de4dc6025fcae",
+   "year": 2017
+  },
+  {
+   "path": "sites/los-bronces/frames/2018-swir.webp",
+   "kind": "frame",
+   "bytes": 58504,
+   "sha256": "b6767233d8f56c9c0811af742ec51d6a32c2f6a11255b7f5d6b376f4f8af8144",
+   "year": 2018
+  },
+  {
+   "path": "sites/los-bronces/frames/2018.webp",
+   "kind": "frame",
+   "bytes": 182046,
+   "sha256": "f0f789b639b23fdee2d9da9b393ce5a6fb01f2d1c16c07534b10a549169a6eac",
+   "year": 2018
+  },
+  {
+   "path": "sites/los-bronces/frames/2019-swir.webp",
+   "kind": "frame",
+   "bytes": 65410,
+   "sha256": "d493f1aaa0d65cff1a28fbfe5cfb1849a1b151e97544098aa445cc0aea1c3f0e",
+   "year": 2019
+  },
+  {
+   "path": "sites/los-bronces/frames/2019.webp",
+   "kind": "frame",
+   "bytes": 198708,
+   "sha256": "6458cbbde76711be5f87cdedc162b7694ffca3e603ed6d59799932281b549038",
+   "year": 2019
+  },
+  {
+   "path": "sites/los-bronces/frames/2020-swir.webp",
+   "kind": "frame",
+   "bytes": 67372,
+   "sha256": "98afa38b5d4884e0e52ddc2707eb41f2f057d4fbc3cf4f61c6c4ceabb35e73e6",
+   "year": 2020
+  },
+  {
+   "path": "sites/los-bronces/frames/2020.webp",
+   "kind": "frame",
+   "bytes": 232812,
+   "sha256": "8b510d45951f4425f99a736cd7140d123d993cc9f6c43ee1d1b17f06e6e5e622",
+   "year": 2020
+  },
+  {
+   "path": "sites/los-bronces/frames/2021-swir.webp",
+   "kind": "frame",
+   "bytes": 55312,
+   "sha256": "ad36e80e169701756f0be4d71d5b1a8017ad43aeca807858e8dd0294856cefe5",
+   "year": 2021
+  },
+  {
+   "path": "sites/los-bronces/frames/2021.webp",
+   "kind": "frame",
+   "bytes": 179150,
+   "sha256": "a3e2b89700b87620795fcf7ad59be2fd3bfd4fb634ec5cd52b669b72c5624603",
+   "year": 2021
+  },
+  {
+   "path": "sites/los-bronces/frames/2022-swir.webp",
+   "kind": "frame",
+   "bytes": 65126,
+   "sha256": "bc005f0e179ff19af64faeee1e9720e19cbeb2b98b7c64b9a146526c63f29715",
+   "year": 2022
+  },
+  {
+   "path": "sites/los-bronces/frames/2022.webp",
+   "kind": "frame",
+   "bytes": 208398,
+   "sha256": "ae0e80ed719c1fff568b7e6c5b844a74d2162fe190a130bf612e86fccc1f2a6c",
+   "year": 2022
+  },
+  {
+   "path": "sites/los-bronces/frames/2023-swir.webp",
+   "kind": "frame",
+   "bytes": 51538,
+   "sha256": "2315a53dc2efef136921b3de9dcaef0507035d8b083ec742552c915e5cadddff",
+   "year": 2023
+  },
+  {
+   "path": "sites/los-bronces/frames/2023.webp",
+   "kind": "frame",
+   "bytes": 148154,
+   "sha256": "16237abd517939f1b61739556d9b887c02a9b8298cdc251079dc963d562d1ebe",
+   "year": 2023
+  },
+  {
+   "path": "sites/los-bronces/frames/2024-swir.webp",
+   "kind": "frame",
+   "bytes": 61416,
+   "sha256": "a5f3116d66f4f3c6b6bd31feaf5896d76809d0600e2b87afe4d46965430e6ebc",
+   "year": 2024
+  },
+  {
+   "path": "sites/los-bronces/frames/2024.webp",
+   "kind": "frame",
+   "bytes": 193336,
+   "sha256": "b0054bc8f7a6ac8a1f015f1a68d99cf69bec3c3db02df250080f8d52af6bf0ac",
+   "year": 2024
+  },
+  {
+   "path": "sites/los-bronces/frames/2025-swir.webp",
+   "kind": "frame",
+   "bytes": 63070,
+   "sha256": "121f867f8e5855041323212f47a63d9f442d2ca78826bc9fd178e5f11692dffa",
+   "year": 2025
+  },
+  {
+   "path": "sites/los-bronces/frames/2025.webp",
+   "kind": "frame",
+   "bytes": 207416,
+   "sha256": "1627cb48a67ae1fb0d05b7a197be6e521d3c01b958ec19618553da902a5ca2f7",
+   "year": 2025
+  },
+  {
+   "path": "sites/los-bronces/frames/2026-swir.webp",
+   "kind": "frame",
+   "bytes": 53578,
+   "sha256": "e6746be1a89b86c16d7cf229473bb3200a2abff724fbd8a1e23b637fffc220cd",
+   "year": 2026
+  },
+  {
+   "path": "sites/los-bronces/frames/2026.webp",
+   "kind": "frame",
+   "bytes": 168786,
+   "sha256": "ca2655ee1459fd090373783b1264dad9006f4153b81e83dc2d66d828896d7858",
+   "year": 2026
+  },
+  {
+   "path": "sites/los-bronces/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 2991,
+   "sha256": "99f8bec625c806f67e8dbb3a6dd2c517e91c5536b1e57f38154e2146a39743be",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 3933,
+   "sha256": "2ef1a5edd90f1c60622315a1b283baead504ee576a1a90de2f84a1f1961dd832",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 8436,
+   "sha256": "0eb6f2fdfedf618194da097b899c817f62182040765c0ab40c38e432feac92b3",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 13787,
+   "sha256": "5417553d6c39920ae9d3f6b730f26373f17b2716da893f8cd34820d61b99102d",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 8899,
+   "sha256": "af618e588030d5d546da00ac6cbd1d3a00658d6c920678560b393274eee96fe2",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 12946,
+   "sha256": "76d95415b52ff15192341b0502299c854f041a6a66e0af66ed64f1575affc109",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 6550,
+   "sha256": "fb8d77751e2fe3804ab0eb203480072060853a02784d4a690cd41ceb6a864f90",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 9448,
+   "sha256": "83d6edc04b345e4e3fcaf46af68fb7c9c986a1a78b25f3c0918f7eefd77aa68a",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 8724,
+   "sha256": "306c04b4c59b5773c83bafffff2ae212cd02e8a0e5e5d78e6cde801e854e511c",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 13754,
+   "sha256": "10a4d98ea458f002d99df9749cd8dc661e152c2f98b11b28726b0679c0f6bbc9",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 8674,
+   "sha256": "d7ab2dd710eb50956299e66335a8085f03a8b911ad02c70b914cb95a99c54525",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 13754,
+   "sha256": "ccfc1704e8d31deedca916465ebad3b38345fdd9a515ae6e320f118a42b477d6",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 8006,
+   "sha256": "eac61fee2d019864276e5913ec399728762239b80e2dfee629fc4da4e80433be",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 13664,
+   "sha256": "f8e5e7ad7227a89d895705dafc1d65e400b72c0ce5ee16c7009a16d4f8e5ef80",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 9953,
+   "sha256": "559845733d3e15c10ec46396d6372d6e541e208afb3d3230523aa7cc01cef175",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 13510,
+   "sha256": "117d7d06d3b6a129f136f0315fe0712d8cd6ec6ed246a6757ad0f713a9176c65",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 10172,
+   "sha256": "660e2953298740cf18baee87764736187770072bcacce5a03851f18681d2a53e",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 13743,
+   "sha256": "810d5cc19374f0b0854e91307d18bbc292c9f0abc0f4ec200f45da7bbe0b6fbc",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 8953,
+   "sha256": "6eca602afceee7ed385f07c856851ab876770f01961227bd5c3da7b990e9ec76",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 13632,
+   "sha256": "a68aab734532870720bb48b9fcd86eef4f0648aa196f10ec40e992e47f35f356",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 9053,
+   "sha256": "950aa593d88d7a48368293b85a4f219f15273a8acadf25154b28bdaaf4f23e2b",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 13635,
+   "sha256": "8fda868231f22fe152c5cd5ce3132866174c6c3cf44246ba04d56ab8c2c7078d",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 8140,
+   "sha256": "64a76673a1d2fb6fc63ac82f71c80dbd2d669a5e0c9506d71c18294b1120cbfc",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 10602,
+   "sha256": "64d0016ba8cf879e3c32082e6be9ae5d5c01a7eb2d61a9812cd644eeb6ca6da8",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 6056,
+   "sha256": "484f76ed2902571fba63a2ecc96925d63dbc2cb0ba0a5800c3bd8c7a9a5001fa",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 10786,
+   "sha256": "d9db27463c7b9600246f401180aad77abebba05bd3fe74295701e956561007e1",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 7900,
+   "sha256": "afc2ddff6a4d94194caf5b5e20e75413f8725825ed3151e05af1bfdea11052ca",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 11195,
+   "sha256": "5033b854e8e41fd3a83d8a0e7087b0db3448b133c0a228bae447e89ff07f9df0",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 8426,
+   "sha256": "952001d3ac791b22f71e4bc50dee448c5555641c1fdbc630ac34aa9618d998cb",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 13286,
+   "sha256": "b99e69b1042f0f5ed3620eead8070f7b1121e5bc3b069262a73bd39a7471200d",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 9490,
+   "sha256": "566d9966f78e6b57421aa23271ff2d221b35338c8ce905e4b564e62e8b9bf70c",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 13012,
+   "sha256": "135e71f6d89c8d5b55058a4035de276ca0195be9e0002d17df19e61f6c774e77",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 9662,
+   "sha256": "b5150aebdc694f787204fa637dd7c518d8450886cb098d4cd984f90c3ac6c109",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 13910,
+   "sha256": "1a44a83ca45eed11212b6a0a4115f0720401e378e030c71626c9b438e6e48baa",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 115,
+   "sha256": "6bcf24699936b8e89e5a8017b86289fc66b71a5a263358e54629fd917bf71fe2",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 15313,
+   "sha256": "41eb7c3de898b7499b04ae17e1ebad522ea69632e19cf60200309ee788d4a879",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 9991,
+   "sha256": "5d464d48c9a6f57333c504c6221c8f211a16a0ecee288f6fd2fb566b7880aec6",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 13813,
+   "sha256": "91b10c04a15134eff54f733ff1cef59eaff4db73888b5c8d8903ec15bb97ee47",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 8898,
+   "sha256": "e80cfdab925e9c39be509bf3d2cc3a360837208eb77630b16cd5bf5528243214",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 13571,
+   "sha256": "690dbf06249c58778948112f435dd2944b02246916c9e4a12731144e26360317",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 8265,
+   "sha256": "02100662862723c31a841d445ccaf2ee0e7b237d7461c4c169ea790e1a3d991e",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 13491,
+   "sha256": "2f7ae9f5ae62d081bba57a0c492c04832facb57948dee3880e7f896c1043b046",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 10551,
+   "sha256": "919962bd789ac57a3a4315ba355cfd99c2064489a061a9fdacf5801b1d1620b7",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 14186,
+   "sha256": "b8ba9788545043a83427bee2cfbe4efaf56dcd2bb7ac2914ddd6bf4531cba69f",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 9222,
+   "sha256": "6a19ab15e1e420f5ca3763483bdf97248214ca6d88f5fedfd3c2f54e33a9e187",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 13707,
+   "sha256": "5a6625943e75fe961f6891e2b91dbebff3ee9c2a7530f5b6f2fb858d035f7946",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 8740,
+   "sha256": "17ea5e6ce38ff345a5f035d293b6e13c4c48689042e760f332303f7fc05d3de8",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 13632,
+   "sha256": "b7a2e0c82d43e7cbefaca765fd5bebcb2a0c27ce55bc30108153c3d328193ac8",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 10069,
+   "sha256": "179824b6a10a38040bd55e58c7d951c7fedf3a3e11fd529d7974e38862724e24",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 13706,
+   "sha256": "a73f7f5b64dcd70f740a2e33df8b9831fadf9d75f21be59bda58e24db8cc8456",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 8852,
+   "sha256": "3bf7fea0a0258f6f0c1e03b46d2960c14faeb4702468661141eeca6b7dbfa476",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 13760,
+   "sha256": "1eb194b41fa66141232dcc65eb06bc4bb4073a0bc0847344bb659e9c58195ed1",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 7730,
+   "sha256": "01770efa058fbb8f36b7277f88dfc013e5078d090298c097955bda7fb78a984d",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 12811,
+   "sha256": "ffabcfff43f5519d8a17eef8048585415c586615178168ef99ce9e1974c37000",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 7920,
+   "sha256": "a4aca8ad8b7d25c33c44bbd22e44d8c102a365de8dada35f96201095d2029fdf",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 12957,
+   "sha256": "293f9106cd1bf7e26f64974ad617c185a4a3f7501b3d9706f3f279ab908cd226",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 9249,
+   "sha256": "d5811fbd51458671e54ca2bd0b339352395b4ca7d4efa789836a2078e1463d58",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 13616,
+   "sha256": "b7e14f801dd6b36dac558a7523d9b9516f154b97e7562e1600abccce9a2c678c",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 8629,
+   "sha256": "d6b835f3985e11208f918a36363eec12533924a26775ba6eb8b960ace39ba53a",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 13576,
+   "sha256": "7a7bdf2daed5ce126acba1d25e886059e8ce48acbe742055bdaf3c2f6dc5882f",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 7458,
+   "sha256": "3fb4b97a11b029020518dd527bd4429046d17255184887cba756126a38457830",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 11346,
+   "sha256": "12a2cc3509b480ed67ea2576581a641771b01c69a61b7d42d2e641c4f3b66f07",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 9501,
+   "sha256": "3c41463853d523139343f54b98c1faed240eaf5756caee4c6d12cbccc0170785",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 12865,
+   "sha256": "328f5655e97b5cd0c84d51b6bc5692dbc704db0caabe05af21484c2b9a017647",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 10733,
+   "sha256": "1f24af72e53bce9fc19e3b1eba777a282cd3189d6d19cbeb5218dd182de57196",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 15090,
+   "sha256": "ea777f8debc85eff601767b75cbdc63feb75cfd7da57026e61307be862bbb922",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 10306,
+   "sha256": "bde51f829695abb1b8a7d176c549c8395a1b671d65f660729125ef2b257159c8",
+   "year": 2017,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 12573,
+   "sha256": "f34dbaaa280250eaecc56f2b0a9f95ae91a1df8241ca569df9a517a80a5c88f1",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 13844,
+   "sha256": "d378437a8199b25e7695d91e11dfb9ba6b963cc43a9506233be29b9f963d00d1",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 4987,
+   "sha256": "b56dfe0afc8359dac9f4daa0d318e43347621480734c16d9e6a99e18cb989be0",
+   "year": 2018,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 10511,
+   "sha256": "3ee19988bb2d7227100c5a32f21fee510a5e2a55e2005d50166b00f19a9e14c4",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 14150,
+   "sha256": "9514c0a31e48a90cf420e1737fa6e0bc9fe13ad7bf5c0797160cd32fcd06ed98",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 10717,
+   "sha256": "31b026d8975e51eb4cdabbbf6f587c401159ba4c56773444a22cca99fcb0584e",
+   "year": 2019,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 13355,
+   "sha256": "c98ffdfd4e04353a50102a1c918e0d802a7966c330182e4d2146a2983d41bfa8",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 12685,
+   "sha256": "2e61090b9784204dec1650cf0b33f8affc5fd958c090557c6aea41f706d2ee24",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4552,
+   "sha256": "b8a1e4954bbd191e82bd6184566891e0583444bab7424458d7feda68c4019ab5",
+   "year": 2020,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 12218,
+   "sha256": "3517d441cfff6206558c3b70c17d95ac690a283f1f63bbca034f8dab15e960c3",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 13682,
+   "sha256": "2dbbb59c67a3fa9948f77616c8562e03e56b1112a9f9d9c501fb9e1e4fa53238",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5052,
+   "sha256": "e8fedcaa1b27d369f35dc8a72c68120c080f56d15c48a83c6acecd5e5d412652",
+   "year": 2021,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 13546,
+   "sha256": "f0899e1e3e32d02b6b875ff97c22fa85ec7071a580b0c7fee49d8c7ac599c9ad",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 12483,
+   "sha256": "d1d6011777d65369cd4ba965e8d608c9eab221703265a975e41f3b4c360322f6",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 4438,
+   "sha256": "f48cc282897b744896c090a49a32fbcf4a6ab1098d72c41bf2383881f6de4b8a",
+   "year": 2022,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 11893,
+   "sha256": "6e7eb9df002a7ba007f035d23550ef3e64a79a3608cd5a71dd22631f364138ae",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 12902,
+   "sha256": "3a2fb448cb2029d3164b516ca0469b2b0c6a3aea9da7df9461ae39146cd174b8",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 4810,
+   "sha256": "d8c9305367a4ff9b6febe65dc2278be0dd0aa0a733c72d2892d2a693f63165fd",
+   "year": 2023,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 13152,
+   "sha256": "77ede1d184f837fe9e3dfaa434a0f616e83b0a3aea9bd72e26fc7cfb7d2f3cdb",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 13644,
+   "sha256": "7364cde3a6a417dbcd5894437ca032415895bc5be61ba901197f9b80510af2e0",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 5261,
+   "sha256": "fa3ffa7c1664af91b37a765af1b064e0ed4da6858aa1dc4e503446a15e00fc7d",
+   "year": 2024,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 13334,
+   "sha256": "ae012f3566a6219adfc1f663bbdafcece565e6a24275aa665bb231a1d279121b",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 13186,
+   "sha256": "7b38b7a3d1620e00dd97ced613d24daeb529c77c1fc6ebfc91a03af8c0505a94",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 5138,
+   "sha256": "d4f3a1f80bfc8a3476defc060570019446439675f6f1fbd189cc0c99ceeba993",
+   "year": 2025,
+   "method": "unet"
+  },
+  {
+   "path": "sites/los-bronces/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 13135,
+   "sha256": "90f0975444d84aefa80997110e286cfac819ff0756fa1865bb7b353a8f8bed92",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/los-bronces/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 12988,
+   "sha256": "2d8b15ace59f81345ab66f3390b1211749403e25dbe85847bc647c5a788cd83c",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
+   "path": "sites/los-bronces/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 5027,
+   "sha256": "c848019ae2541d9ac27d10f1e0fe19d9ddd98a05d7c247b31e47e64680da1e51",
+   "year": 2026,
+   "method": "unet"
+  },
+  {
    "path": "sites/los-bronces/polygons.geojson",
    "kind": "polygons",
-   "bytes": 7119,
-   "sha256": "cf67716965337ba1e0a64f21598bfcf793c04e517a964619eeb1da4ee05c7939"
+   "bytes": 6643,
+   "sha256": "a339aeb6ebeeb515649e5ecc8e59342f3d27640f823f34b4f9c7f8a153d8848d"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/311/611.png",
+   "kind": "terrain",
+   "bytes": 71715,
+   "sha256": "cdc168c54793015a93df00d3d5ce90bf9463567d722d8e9926d576d74aa5af58"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/311/612.png",
+   "kind": "terrain",
+   "bytes": 149535,
+   "sha256": "5440ed0de75bc8a5e77ecd4c1e0c54559a6d2b2a6440be076d7cc538891a2b6d"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/312/611.png",
+   "kind": "terrain",
+   "bytes": 66017,
+   "sha256": "9a30b8064bc1d0c2a9f62c0d815483119859c4f7ef6b9ec922c77c8addb4c68a"
+  },
+  {
+   "path": "sites/los-bronces/terrain/10/312/612.png",
+   "kind": "terrain",
+   "bytes": 139028,
+   "sha256": "3f4fc2209e136bc15fe03bd8ae38fdaeed0512d74effe32a9e3e920fd73386dc"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/623/1223.png",
+   "kind": "terrain",
+   "bytes": 136320,
+   "sha256": "7a43e96d72db999e9384eab16e4b0bb4a900105848183d9e248c0a4ad099f5ed"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/623/1224.png",
+   "kind": "terrain",
+   "bytes": 147562,
+   "sha256": "4afc13040185ac80d9949f81ed86669cc138a8ed0bcc6119789cbc481b8047b9"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/624/1223.png",
+   "kind": "terrain",
+   "bytes": 138982,
+   "sha256": "15eae21cbb616ce9ba124e51c112f73de341ae9df528f6ae913483add98f6fb1"
+  },
+  {
+   "path": "sites/los-bronces/terrain/11/624/1224.png",
+   "kind": "terrain",
+   "bytes": 148390,
+   "sha256": "87804cbd7d3440cd603d95002e5758cb576ec768840a1d37c8be7a9697dcb601"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1247/2447.png",
+   "kind": "terrain",
+   "bytes": 136347,
+   "sha256": "d9e6a84166c646c80f7c2e281665fc15b995ab51007822ab07e19136090230ce"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1247/2448.png",
+   "kind": "terrain",
+   "bytes": 140314,
+   "sha256": "c36ad8151ef1f0466b5b57e3e9943eeca1224cc6d03799b9ad8c1aadb9d6522d"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1247/2449.png",
+   "kind": "terrain",
+   "bytes": 140335,
+   "sha256": "c35b3b595668177e9287516cb96b5aa42ccf1b5093fe603ebb3f0bd5e37c1977"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1248/2447.png",
+   "kind": "terrain",
+   "bytes": 140557,
+   "sha256": "f5a789664902d5f42c75c45a72f9baaf012d8bb12dae52690aa2611790c2a242"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1248/2448.png",
+   "kind": "terrain",
+   "bytes": 140181,
+   "sha256": "5096071b7b07ebb4d4d4b78b18f9542ca0375892d2e66bae5f203aefd11125aa"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1248/2449.png",
+   "kind": "terrain",
+   "bytes": 141833,
+   "sha256": "51ff276a4a34a1d12a5a23196821c96a1e3737bf1b7d88819ce719f8d5b8e3fc"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1249/2447.png",
+   "kind": "terrain",
+   "bytes": 138998,
+   "sha256": "41717ddece7e71e4290936619d896976182be005d2fe124899cf2bea6d9f4ffe"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1249/2448.png",
+   "kind": "terrain",
+   "bytes": 137536,
+   "sha256": "ea3ae4f40aed24af8c61f334f7efb4ec0421d9568f8791a193237d23d1e63099"
+  },
+  {
+   "path": "sites/los-bronces/terrain/12/1249/2449.png",
+   "kind": "terrain",
+   "bytes": 141667,
+   "sha256": "3ebfc1592775096ffd550cea17b3cce90ff8be9f95c460a464645c622599d8e2"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4894.png",
+   "kind": "terrain",
+   "bytes": 124857,
+   "sha256": "8940c1a77a8e9367495ff6d9684d854e5f777af79344ebb674cffef048519932"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4895.png",
+   "kind": "terrain",
+   "bytes": 126673,
+   "sha256": "0d5012a9cb8060a1ec6cfb13cf849139d275068f6c6d5bd8a453c63d442fe5c7"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4896.png",
+   "kind": "terrain",
+   "bytes": 128050,
+   "sha256": "c94788cf50acd085a7f2b322984bcc78a840b2c846918909db3b1d959c409326"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4897.png",
+   "kind": "terrain",
+   "bytes": 131097,
+   "sha256": "fdb68e961b59e5d8f6232a1ad2b07d77f3c29bdc83ca1d0e4e8e42555e6b1ee7"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2494/4898.png",
+   "kind": "terrain",
+   "bytes": 130635,
+   "sha256": "015e1191bb7e99e7ed6ba11ac91ffb30008b0259b6f20a55f758553163bce168"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4894.png",
+   "kind": "terrain",
+   "bytes": 125186,
+   "sha256": "027004dd593a7e6f525f9351367f4ff4614a6eabf4324839c5d0b3418170454b"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4895.png",
+   "kind": "terrain",
+   "bytes": 127124,
+   "sha256": "146fb34624db7e27eaed61bd9de68a3090c0a0c03526b0595ac302e019b5fe7b"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4896.png",
+   "kind": "terrain",
+   "bytes": 132835,
+   "sha256": "6e849d29164e1fafb94c4284e2249a710683f3e4633b29092835a2ca08f9ce36"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4897.png",
+   "kind": "terrain",
+   "bytes": 132659,
+   "sha256": "f45644754781e2df0935275d5f90916c26ff5e5710f31e1228f9a18325b3bdd2"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2495/4898.png",
+   "kind": "terrain",
+   "bytes": 131710,
+   "sha256": "828623e1adf3af71bb96e3af2fca49a4263f181c9345eb8a7f50743b570b7240"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4894.png",
+   "kind": "terrain",
+   "bytes": 130999,
+   "sha256": "961f97dc3bb0b3d21f9d663bcabf9ca444ee72cfa6e95aecff7b2de2f0863765"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4895.png",
+   "kind": "terrain",
+   "bytes": 128937,
+   "sha256": "ab561ab5823b4c05da593cdd7c0ec434fe4cc64ad6a6ad95523baa92277cea48"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4896.png",
+   "kind": "terrain",
+   "bytes": 131497,
+   "sha256": "8a01648c36836379b5fbe8c82ab3c5a24105f7925c3a817b4abc59931795afec"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4897.png",
+   "kind": "terrain",
+   "bytes": 132934,
+   "sha256": "4885cb905b779bc5563e9847505ca0d89ee06c430f6b7d3ab834b5e1013dc52b"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2496/4898.png",
+   "kind": "terrain",
+   "bytes": 134288,
+   "sha256": "acfab33bf61e748a6e88ed413616963867d68e766b1a248550081970c65825dc"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4894.png",
+   "kind": "terrain",
+   "bytes": 133523,
+   "sha256": "39c348850cf0de2076395979a4e9b2245742a3d009a7bb9113857fdc1e39cfb7"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4895.png",
+   "kind": "terrain",
+   "bytes": 133160,
+   "sha256": "089ea95ff945b71bd8224fa2e26be81fc7a277989db20d22e46d847fbaf2b7fa"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4896.png",
+   "kind": "terrain",
+   "bytes": 130429,
+   "sha256": "985d3975ce1d9075978edea585390db4087241d2ba5f4a55124cfdd1fa7dfcc3"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4897.png",
+   "kind": "terrain",
+   "bytes": 131540,
+   "sha256": "fb2ac6803353fcb11a61d81bc0a83ec8c5bd31833da56d8a37f6933e59e23f53"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2497/4898.png",
+   "kind": "terrain",
+   "bytes": 133091,
+   "sha256": "ea0e92159f1aecc7de6ebb9e2f38ccc55d9726e6317c9ff3d66ad82028c41275"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4894.png",
+   "kind": "terrain",
+   "bytes": 130649,
+   "sha256": "0a1d7c9ec6604132a135392badf19762e4eb05051dbc7e2dc6e1420eca0e00c6"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4895.png",
+   "kind": "terrain",
+   "bytes": 128993,
+   "sha256": "fcc3b0cec00844e22d00cdf193f7dd9fa54da5f1da54fcdc27f61b7721756222"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4896.png",
+   "kind": "terrain",
+   "bytes": 121080,
+   "sha256": "38b6a866b4631c47bb57e9db094860a294eaf100b875bd68522590f3bfc96566"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4897.png",
+   "kind": "terrain",
+   "bytes": 130391,
+   "sha256": "d4127a118098d13e5a9b6298335afb5879ef2b1a94f86011df44ac820a1743da"
+  },
+  {
+   "path": "sites/los-bronces/terrain/13/2498/4898.png",
+   "kind": "terrain",
+   "bytes": 133720,
+   "sha256": "ac83e22203f87a4c4052bc78d4a161568f142d7cb2bfcf7c04625f646c556439"
   }
  ]
 }

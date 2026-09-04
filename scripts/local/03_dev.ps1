@@ -6,12 +6,12 @@
 # ASCII-ONLY STRING LITERALS: PowerShell 5.1 reads a .ps1 as CP-1252 without a UTF-8 BOM.
 #
 #   .\scripts\local\03_dev.ps1
-#   .\scripts\local\03_dev.ps1 -Port 5180
+#   .\scripts\local\03_dev.ps1 -Port 5190
 #   .\scripts\local\03_dev.ps1 -Preview      # build, then serve the built site
 
 [CmdletBinding()]
 param(
-    [int]$Port = 5173,
+    [int]$Port = 5901,
     [switch]$Preview
 )
 

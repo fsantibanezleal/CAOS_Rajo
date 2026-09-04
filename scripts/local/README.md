@@ -83,13 +83,13 @@ Runs the Vite dev server over the committed artifacts (`copy-data.mjs` copies th
 
 ```powershell
 .\scripts\local\03_dev.ps1
-.\scripts\local\03_dev.ps1 -Port 5180
+.\scripts\local\03_dev.ps1 -Port 5190
 .\scripts\local\03_dev.ps1 -Preview      # build, then serve the built site
 ```
 
 ```bash
 ./scripts/local/03_dev.sh
-PORT=5180 ./scripts/local/03_dev.sh
+PORT=5190 ./scripts/local/03_dev.sh
 PREVIEW=1 ./scripts/local/03_dev.sh
 ```
 

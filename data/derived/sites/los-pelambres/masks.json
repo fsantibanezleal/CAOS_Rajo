@@ -1,0 +1,1062 @@
+{
+ "site_id": "los-pelambres",
+ "years": {
+  "1985": {
+   "otsu": {
+    "file": "masks/1985-otsu.png",
+    "area_km2": 16.9434,
+    "window_area_km2": 79.2684,
+    "envelope_valid_frac": 0.7028,
+    "flags": [],
+    "threshold": -0.2332
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.7028,
+   "rf": {
+    "file": "masks/1985-rf.png",
+    "area_km2": 22.3011,
+    "window_area_km2": 100.368,
+    "envelope_valid_frac": 0.7028,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1986": {
+   "otsu": {
+    "file": "masks/1986-otsu.png",
+    "area_km2": 27.7272,
+    "window_area_km2": 151.056,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.1311
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1986-rf.png",
+    "area_km2": 33.1047,
+    "window_area_km2": 165.8754,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1987": {
+   "otsu": {
+    "file": "masks/1987-otsu.png",
+    "area_km2": 34.8597,
+    "window_area_km2": 208.7244,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.0988
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1987-rf.png",
+    "area_km2": 35.2152,
+    "window_area_km2": 192.7962,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1988": {
+   "otsu": {
+    "file": "masks/1988-otsu.png",
+    "area_km2": 37.5084,
+    "window_area_km2": 205.4016,
+    "envelope_valid_frac": 0.9978,
+    "flags": [],
+    "threshold": -0.1346
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9978,
+   "rf": {
+    "file": "masks/1988-rf.png",
+    "area_km2": 35.7147,
+    "window_area_km2": 190.9422,
+    "envelope_valid_frac": 0.9978,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1989": {
+   "otsu": {
+    "file": "masks/1989-otsu.png",
+    "area_km2": 30.7899,
+    "window_area_km2": 165.5262,
+    "envelope_valid_frac": 0.9999,
+    "flags": [],
+    "threshold": 0.1248
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9999,
+   "rf": {
+    "file": "masks/1989-rf.png",
+    "area_km2": 33.111,
+    "window_area_km2": 165.0816,
+    "envelope_valid_frac": 0.9999,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1990": {
+   "otsu": {
+    "file": "masks/1990-otsu.png",
+    "area_km2": 39.6,
+    "window_area_km2": 237.9087,
+    "envelope_valid_frac": 0.9998,
+    "flags": [],
+    "threshold": 0.0908
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9998,
+   "rf": {
+    "file": "masks/1990-rf.png",
+    "area_km2": 35.8785,
+    "window_area_km2": 195.0435,
+    "envelope_valid_frac": 0.9998,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1991": {
+   "otsu": {
+    "file": "masks/1991-otsu.png",
+    "area_km2": 30.0141,
+    "window_area_km2": 180.9774,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.1266
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1991-rf.png",
+    "area_km2": 35.5194,
+    "window_area_km2": 179.4429,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1992": {
+   "otsu": {
+    "file": "masks/1992-otsu.png",
+    "area_km2": 35.4708,
+    "window_area_km2": 230.337,
+    "envelope_valid_frac": 0.9029,
+    "flags": [],
+    "threshold": -0.0361
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9029,
+   "rf": {
+    "file": "masks/1992-rf.png",
+    "area_km2": 36.5427,
+    "window_area_km2": 238.1616,
+    "envelope_valid_frac": 0.9029,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1993": {
+   "otsu": {
+    "file": "masks/1993-otsu.png",
+    "area_km2": 34.0119,
+    "window_area_km2": 206.8344,
+    "envelope_valid_frac": 0.9999,
+    "flags": [],
+    "threshold": 0.0979
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9999,
+   "rf": {
+    "file": "masks/1993-rf.png",
+    "area_km2": 35.8245,
+    "window_area_km2": 193.824,
+    "envelope_valid_frac": 0.9999,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1994": {
+   "otsu": {
+    "file": "masks/1994-otsu.png",
+    "area_km2": 28.4112,
+    "window_area_km2": 171.7884,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.1287
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1994-rf.png",
+    "area_km2": 38.3535,
+    "window_area_km2": 202.0356,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1995": {
+   "otsu": {
+    "file": "masks/1995-otsu.png",
+    "area_km2": 28.8234,
+    "window_area_km2": 167.2533,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.1236
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1995-rf.png",
+    "area_km2": 35.7975,
+    "window_area_km2": 184.4154,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1996": {
+   "otsu": {
+    "file": "masks/1996-otsu.png",
+    "area_km2": 25.056,
+    "window_area_km2": 196.2918,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.0822
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1996-rf.png",
+    "area_km2": 36.2358,
+    "window_area_km2": 221.4324,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1997": {
+   "otsu": {
+    "file": "masks/1997-otsu.png",
+    "area_km2": 30.4605,
+    "window_area_km2": 176.958,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.1273
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1997-rf.png",
+    "area_km2": 33.5763,
+    "window_area_km2": 169.4862,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1998": {
+   "otsu": {
+    "file": "masks/1998-otsu.png",
+    "area_km2": 48.1437,
+    "window_area_km2": 286.3359,
+    "envelope_valid_frac": 0.9997,
+    "flags": [],
+    "threshold": -0.0216
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9997,
+   "rf": {
+    "file": "masks/1998-rf.png",
+    "area_km2": 38.9493,
+    "window_area_km2": 222.9624,
+    "envelope_valid_frac": 0.9997,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "1999": {
+   "otsu": {
+    "file": "masks/1999-otsu.png",
+    "area_km2": 18.9477,
+    "window_area_km2": 158.1291,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.139
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/1999-rf.png",
+    "area_km2": 23.0085,
+    "window_area_km2": 141.1893,
+    "envelope_valid_frac": 1.0,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2000": {
+   "otsu": {
+    "file": "masks/2000-otsu.png",
+    "area_km2": 50.6178,
+    "window_area_km2": 307.5201,
+    "envelope_valid_frac": 0.999,
+    "flags": [],
+    "threshold": -0.0072
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.999,
+   "rf": {
+    "file": "masks/2000-rf.png",
+    "area_km2": 38.8287,
+    "window_area_km2": 218.4453,
+    "envelope_valid_frac": 0.999,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2001": {
+   "otsu": {
+    "file": "masks/2001-otsu.png",
+    "area_km2": 33.2334,
+    "window_area_km2": 189.9144,
+    "envelope_valid_frac": 0.9993,
+    "flags": [],
+    "threshold": 0.1088
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9993,
+   "rf": {
+    "file": "masks/2001-rf.png",
+    "area_km2": 33.9453,
+    "window_area_km2": 166.7961,
+    "envelope_valid_frac": 0.9993,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2002": {
+   "otsu": {
+    "file": "masks/2002-otsu.png",
+    "area_km2": 27.5292,
+    "window_area_km2": 161.0055,
+    "envelope_valid_frac": 0.9917,
+    "flags": [],
+    "threshold": 0.1217
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9917,
+   "rf": {
+    "file": "masks/2002-rf.png",
+    "area_km2": 32.5044,
+    "window_area_km2": 155.295,
+    "envelope_valid_frac": 0.9917,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2003": {
+   "otsu": {
+    "file": "masks/2003-otsu.png",
+    "area_km2": 49.6449,
+    "window_area_km2": 281.5938,
+    "envelope_valid_frac": 0.9997,
+    "flags": [],
+    "threshold": 0.0373
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9997,
+   "rf": {
+    "file": "masks/2003-rf.png",
+    "area_km2": 36.8721,
+    "window_area_km2": 197.8425,
+    "envelope_valid_frac": 0.9997,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2004": {
+   "otsu": {
+    "file": "masks/2004-otsu.png",
+    "area_km2": 38.295,
+    "window_area_km2": 224.1189,
+    "envelope_valid_frac": 0.983,
+    "flags": [],
+    "threshold": 0.0959
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.983,
+   "rf": {
+    "file": "masks/2004-rf.png",
+    "area_km2": 36.1953,
+    "window_area_km2": 184.8996,
+    "envelope_valid_frac": 0.983,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2005": {
+   "otsu": {
+    "file": "masks/2005-otsu.png",
+    "area_km2": 26.0829,
+    "window_area_km2": 164.907,
+    "envelope_valid_frac": 0.9752,
+    "flags": [],
+    "threshold": 0.1206
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9752,
+   "rf": {
+    "file": "masks/2005-rf.png",
+    "area_km2": 36.7326,
+    "window_area_km2": 178.7508,
+    "envelope_valid_frac": 0.9752,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2006": {
+   "otsu": {
+    "file": "masks/2006-otsu.png",
+    "area_km2": 26.3934,
+    "window_area_km2": 171.3177,
+    "envelope_valid_frac": 0.9767,
+    "flags": [],
+    "threshold": 0.1277
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9767,
+   "rf": {
+    "file": "masks/2006-rf.png",
+    "area_km2": 40.8717,
+    "window_area_km2": 212.7213,
+    "envelope_valid_frac": 0.9767,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2007": {
+   "otsu": {
+    "file": "masks/2007-otsu.png",
+    "area_km2": 23.6835,
+    "window_area_km2": 165.2481,
+    "envelope_valid_frac": 0.9504,
+    "flags": [],
+    "threshold": 0.1289
+   },
+   "sensor": "landsat-5",
+   "envelope_valid_frac": 0.9504,
+   "rf": {
+    "file": "masks/2007-rf.png",
+    "area_km2": 38.619,
+    "window_area_km2": 194.976,
+    "envelope_valid_frac": 0.9504,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2008": {
+   "otsu": {
+    "file": "masks/2008-otsu.png",
+    "area_km2": 28.3824,
+    "window_area_km2": 208.386,
+    "envelope_valid_frac": 0.9226,
+    "flags": [],
+    "threshold": 0.1081
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9226,
+   "rf": {
+    "file": "masks/2008-rf.png",
+    "area_km2": 39.1878,
+    "window_area_km2": 195.6636,
+    "envelope_valid_frac": 0.9226,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2009": {
+   "otsu": {
+    "file": "masks/2009-otsu.png",
+    "area_km2": 27.108,
+    "window_area_km2": 174.9078,
+    "envelope_valid_frac": 0.9626,
+    "flags": [],
+    "threshold": 0.1156
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9626,
+   "rf": {
+    "file": "masks/2009-rf.png",
+    "area_km2": 37.9359,
+    "window_area_km2": 180.6534,
+    "envelope_valid_frac": 0.9626,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2010": {
+   "otsu": {
+    "file": "masks/2010-otsu.png",
+    "area_km2": 31.608,
+    "window_area_km2": 200.3805,
+    "envelope_valid_frac": 0.9412,
+    "flags": [],
+    "threshold": 0.0993
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9412,
+   "rf": {
+    "file": "masks/2010-rf.png",
+    "area_km2": 37.0737,
+    "window_area_km2": 189.4158,
+    "envelope_valid_frac": 0.9412,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2011": {
+   "otsu": {
+    "file": "masks/2011-otsu.png",
+    "area_km2": 23.733,
+    "window_area_km2": 171.3645,
+    "envelope_valid_frac": 0.945,
+    "flags": [],
+    "threshold": 0.1164
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.945,
+   "rf": {
+    "file": "masks/2011-rf.png",
+    "area_km2": 35.8137,
+    "window_area_km2": 166.7781,
+    "envelope_valid_frac": 0.945,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2012": {
+   "otsu": {
+    "file": "masks/2012-otsu.png",
+    "area_km2": 23.0769,
+    "window_area_km2": 162.5652,
+    "envelope_valid_frac": 0.9423,
+    "flags": [],
+    "threshold": 0.1261
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9423,
+   "rf": {
+    "file": "masks/2012-rf.png",
+    "area_km2": 35.9964,
+    "window_area_km2": 161.0091,
+    "envelope_valid_frac": 0.9423,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2013": {
+   "otsu": {
+    "file": "masks/2013-otsu.png",
+    "area_km2": 29.0259,
+    "window_area_km2": 193.9284,
+    "envelope_valid_frac": 0.9357,
+    "flags": [],
+    "threshold": 0.1153
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9357,
+   "rf": {
+    "file": "masks/2013-rf.png",
+    "area_km2": 33.1002,
+    "window_area_km2": 155.5641,
+    "envelope_valid_frac": 0.9357,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2014": {
+   "otsu": {
+    "file": "masks/2014-otsu.png",
+    "area_km2": 25.0587,
+    "window_area_km2": 175.1067,
+    "envelope_valid_frac": 0.9481,
+    "flags": [],
+    "threshold": 0.1256
+   },
+   "sensor": "landsat-7",
+   "envelope_valid_frac": 0.9481,
+   "rf": {
+    "file": "masks/2014-rf.png",
+    "area_km2": 35.6157,
+    "window_area_km2": 164.1897,
+    "envelope_valid_frac": 0.9481,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2015": {
+   "otsu": {
+    "file": "masks/2015-otsu.png",
+    "area_km2": 18.2898,
+    "window_area_km2": 118.6407,
+    "envelope_valid_frac": 0.9002,
+    "flags": [],
+    "threshold": 0.1592
+   },
+   "sensor": "landsat-8",
+   "envelope_valid_frac": 0.9002,
+   "rf": {
+    "file": "masks/2015-rf.png",
+    "area_km2": 30.3129,
+    "window_area_km2": 129.8295,
+    "envelope_valid_frac": 0.9002,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2016": {
+   "otsu": {
+    "file": "masks/2016-otsu.png",
+    "area_km2": 29.6757,
+    "window_area_km2": 217.0953,
+    "envelope_valid_frac": 0.8237,
+    "flags": [],
+    "threshold": 0.1138
+   },
+   "sensor": "landsat-8",
+   "envelope_valid_frac": 0.8237,
+   "rf": {
+    "file": "masks/2016-rf.png",
+    "area_km2": 24.6114,
+    "window_area_km2": 123.5889,
+    "envelope_valid_frac": 0.8237,
+    "flags": [
+     "cross_sensor"
+    ],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   }
+  },
+  "2017": {
+   "otsu": {
+    "file": "masks/2017-otsu.png",
+    "area_km2": 9.0612,
+    "window_area_km2": 113.4774,
+    "envelope_valid_frac": 0.9819,
+    "flags": [],
+    "threshold": 0.145
+   },
+   "sensor": "sentinel-2a",
+   "envelope_valid_frac": 0.9819,
+   "rf": {
+    "file": "masks/2017-rf.png",
+    "area_km2": 39.4416,
+    "window_area_km2": 173.1366,
+    "envelope_valid_frac": 0.9819,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2017-unet.png",
+    "area_km2": 29.9619,
+    "window_area_km2": 143.3061,
+    "envelope_valid_frac": 0.9819,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2018": {
+   "otsu": {
+    "file": "masks/2018-otsu.png",
+    "area_km2": 12.9501,
+    "window_area_km2": 84.5163,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.2475
+   },
+   "sensor": "sentinel-2a",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/2018-rf.png",
+    "area_km2": 40.9122,
+    "window_area_km2": 208.1772,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2018-unet.png",
+    "area_km2": 33.3657,
+    "window_area_km2": 202.9068,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2019": {
+   "otsu": {
+    "file": "masks/2019-otsu.png",
+    "area_km2": 8.5689,
+    "window_area_km2": 97.0119,
+    "envelope_valid_frac": 0.9962,
+    "flags": [],
+    "threshold": 0.1595
+   },
+   "sensor": "sentinel-2a",
+   "envelope_valid_frac": 0.9962,
+   "rf": {
+    "file": "masks/2019-rf.png",
+    "area_km2": 42.0606,
+    "window_area_km2": 187.7256,
+    "envelope_valid_frac": 0.9962,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2019-unet.png",
+    "area_km2": 34.4097,
+    "window_area_km2": 162.7362,
+    "envelope_valid_frac": 0.9962,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2020": {
+   "otsu": {
+    "file": "masks/2020-otsu.png",
+    "area_km2": 10.3689,
+    "window_area_km2": 73.4229,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.2669
+   },
+   "sensor": "sentinel-2b",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/2020-rf.png",
+    "area_km2": 42.6204,
+    "window_area_km2": 210.6324,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2020-unet.png",
+    "area_km2": 33.4782,
+    "window_area_km2": 193.5072,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2021": {
+   "otsu": {
+    "file": "masks/2021-otsu.png",
+    "area_km2": 12.7521,
+    "window_area_km2": 91.8981,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.2659
+   },
+   "sensor": "sentinel-2a",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/2021-rf.png",
+    "area_km2": 41.8473,
+    "window_area_km2": 209.6163,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2021-unet.png",
+    "area_km2": 33.597,
+    "window_area_km2": 191.3886,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2022": {
+   "otsu": {
+    "file": "masks/2022-otsu.png",
+    "area_km2": 7.8147,
+    "window_area_km2": 62.4177,
+    "envelope_valid_frac": 0.9993,
+    "flags": [],
+    "threshold": 0.2788
+   },
+   "sensor": "sentinel-2b",
+   "envelope_valid_frac": 0.9993,
+   "rf": {
+    "file": "masks/2022-rf.png",
+    "area_km2": 43.2,
+    "window_area_km2": 219.9663,
+    "envelope_valid_frac": 0.9993,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2022-unet.png",
+    "area_km2": 37.0737,
+    "window_area_km2": 224.7084,
+    "envelope_valid_frac": 0.9993,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2023": {
+   "otsu": {
+    "file": "masks/2023-otsu.png",
+    "area_km2": 10.71,
+    "window_area_km2": 60.255,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.2686
+   },
+   "sensor": "sentinel-2a",
+   "envelope_valid_frac": 1.0,
+   "rf": {
+    "file": "masks/2023-rf.png",
+    "area_km2": 42.7185,
+    "window_area_km2": 215.9739,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2023-unet.png",
+    "area_km2": 39.2895,
+    "window_area_km2": 234.2133,
+    "envelope_valid_frac": 1.0,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2024": {
+   "otsu": {
+    "file": "masks/2024-otsu.png",
+    "area_km2": 10.6857,
+    "window_area_km2": 77.8086,
+    "envelope_valid_frac": 0.9994,
+    "flags": [],
+    "threshold": 0.2614
+   },
+   "sensor": "sentinel-2a",
+   "envelope_valid_frac": 0.9994,
+   "rf": {
+    "file": "masks/2024-rf.png",
+    "area_km2": 44.3169,
+    "window_area_km2": 219.1203,
+    "envelope_valid_frac": 0.9994,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2024-unet.png",
+    "area_km2": 36.3231,
+    "window_area_km2": 202.257,
+    "envelope_valid_frac": 0.9994,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2025": {
+   "otsu": {
+    "file": "masks/2025-otsu.png",
+    "area_km2": 10.8486,
+    "window_area_km2": 69.9282,
+    "envelope_valid_frac": 0.9989,
+    "flags": [],
+    "threshold": 0.2517
+   },
+   "sensor": "sentinel-2b",
+   "envelope_valid_frac": 0.9989,
+   "rf": {
+    "file": "masks/2025-rf.png",
+    "area_km2": 42.3756,
+    "window_area_km2": 203.3172,
+    "envelope_valid_frac": 0.9989,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2025-unet.png",
+    "area_km2": 34.8444,
+    "window_area_km2": 199.0251,
+    "envelope_valid_frac": 0.9989,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  },
+  "2026": {
+   "otsu": {
+    "file": "masks/2026-otsu.png",
+    "area_km2": 12.1851,
+    "window_area_km2": 75.5649,
+    "envelope_valid_frac": 0.9973,
+    "flags": [],
+    "threshold": 0.2774
+   },
+   "sensor": "sentinel-2c",
+   "envelope_valid_frac": 0.9973,
+   "rf": {
+    "file": "masks/2026-rf.png",
+    "area_km2": 42.5259,
+    "window_area_km2": 211.3704,
+    "envelope_valid_frac": 0.9973,
+    "flags": [],
+    "threshold": 0.7,
+    "model": "rf-v1"
+   },
+   "unet": {
+    "file": "masks/2026-unet.png",
+    "area_km2": 35.8722,
+    "window_area_km2": 197.4816,
+    "envelope_valid_frac": 0.9973,
+    "flags": [],
+    "threshold": 0.5,
+    "model": "unet-v1"
+   }
+  }
+ },
+ "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+ "envelope_km2": 56.3508,
+ "grid_m": 30.0,
+ "methods": {
+  "otsu": {
+   "label": "Otsu bare-ground (M4)",
+   "domain": "all sensors"
+  },
+  "rf": {
+   "label": "Random forest (M7)",
+   "domain": "all sensors; Landsat years flagged cross_sensor",
+   "model": "rf-v1",
+   "skipped": null
+  },
+  "unet": {
+   "label": "U-Net (M8)",
+   "domain": "Sentinel-2 years only",
+   "model": "unet-v1",
+   "skipped": null
+  }
+ }
+}

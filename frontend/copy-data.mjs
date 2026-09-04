@@ -17,7 +17,9 @@ const pubData = join(PUB, 'data');
 rmSync(pubData, { recursive: true, force: true });
 mkdirSync(pubData, { recursive: true });
 if (existsSync(join(derived, 'catalog.json'))) {
-  cpSync(derived, pubData, { recursive: true });
+  // dense.json is a bake intermediate (the series stage folds a complete walk into series.json); the
+  // site never reads it and a walk still in progress must not ship
+  cpSync(derived, pubData, { recursive: true, filter: (src) => !src.endsWith('dense.json') });
   console.log(`[copy-data] ${derived} -> public/data`);
 } else {
   console.warn('[copy-data] no data/derived/catalog.json: the app runs the browser lanes only (no baked sites)');

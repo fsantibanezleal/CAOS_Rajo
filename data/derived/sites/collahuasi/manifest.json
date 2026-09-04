@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.02.000",
+ "engine_version": "0.02.002",
  "site_id": "collahuasi",
  "site": {
   "id": "collahuasi",

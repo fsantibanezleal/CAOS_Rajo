@@ -20,15 +20,15 @@ to a named, dated source.
 
 ## Status
 
-Version 0.02.001 (2026-09-03; 0.02.000 plus the fixes from its first live run): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
+Version 0.02.002 (2026-09-04; 0.02.000 plus the fixes from its first live run and the complete dense series): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
 2026 baked and validated for every site (Landsat then Sentinel-2), the classical and learned masks, the
 mined-area series with their change points, and the elevation difference between the year-2000 radar
 surface and the 2011 to 2015 Copernicus surface. Live: the latest clear Sentinel-2 scene read in the
 browser, nine indices, Otsu, k-means, spectral angle, the random forest walked from flat node arrays and
 the U-Net on WebGPU or WASM. Every site card carries sourced facts (Cochilco and the operators' own
 disclosures), the Atlas prints the USGS copper table by country, and the Methods page reads the
-held-out benchmark. The dense (all-dates) series exists for the sites the detached workers have
-finished; the rest land as they complete. See the [CHANGELOG](CHANGELOG.md) and the open issues.
+held-out benchmark. The dense (every clear Sentinel-2 date since 2017) series is complete for all
+thirty sites and carries the harmonic breaks. See the [CHANGELOG](CHANGELOG.md) and the open issues.
 
 ## Run it locally
 

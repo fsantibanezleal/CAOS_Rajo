@@ -78,7 +78,9 @@
     "threshold": 1e-06,
     "pass": true
    },
-   "browser_runtime": "flat-array traversal in the worker (onnxruntime-web has no TreeEnsembleClassifier kernel)"
+   "browser_runtime": "flat-array traversal in the worker (onnxruntime-web has no TreeEnsembleClassifier kernel)",
+   "threshold": 0.7,
+   "threshold_rule": "pooled IoU on the validation split over 0.3 to 0.8"
   },
   {
    "id": "unet-v1",
@@ -142,7 +144,9 @@
    "split": "published train/val/test; catalog sites held out",
    "engine_version": "0.01.000",
    "license": "MIT (weights); training data CC BY-SA 4.0",
-   "trained": "2026-09-03"
+   "trained": "2026-09-03",
+   "threshold": 0.5,
+   "threshold_rule": "pooled IoU on the validation split over 0.3 to 0.8"
   }
  ]
 }

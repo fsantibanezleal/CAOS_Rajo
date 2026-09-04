@@ -50,6 +50,11 @@ def main() -> int:
     m = re.search(r"^## \[(\d+\.\d{2}\.\d{3})\]", changelog, re.M)
     if not m or m.group(1) != version:
         errors.append(f"CHANGELOG newest entry {m.group(1) if m else None} != VERSION {version}")
+    # the display version is injected at build time from VERSION; a literal copy in the source went
+    # stale on the first deploy (the footer printed 0.01.000 for 0.02.000)
+    version_ts = ROOT / "frontend" / "src" / "lib" / "version.ts"
+    if version_ts.exists() and re.search(r"\d\.\d\d\.\d\d\d", version_ts.read_text(encoding="utf-8").replace("0.00.000", "")):
+        errors.append("frontend/src/lib/version.ts carries a version literal; it must come from VERSION through vite's define")
 
     rows = tracked()
     for mode, path in rows:

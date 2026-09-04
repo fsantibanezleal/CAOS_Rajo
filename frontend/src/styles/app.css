@@ -143,7 +143,16 @@ code, .mono { font-family: var(--font-mono); font-size: 0.92em; }
 .tl-left .play { width: 38px; height: 38px; border: 1px solid var(--border-strong); background: var(--surface-solid); color: var(--fg); }
 .tl-left .play.on { color: var(--accent-2); border-color: var(--accent); }
 .tl-year { font-size: 26px; font-weight: 700; letter-spacing: -0.02em; min-width: 68px; text-align: right; color: var(--accent-2); font-variant-numeric: tabular-nums; }
-.tl-track { position: relative; min-width: 0; padding: 4px 6px 18px; }
+/* the scrubber keeps a usable width at every viewport: forty-two years on ninety pixels is not a
+   timeline (measured live at 1400 px, 2026-09-03); the meta and the count give way first */
+.tl-track { position: relative; min-width: 260px; padding: 4px 6px 18px; }
+@media (max-width: 1600px) {
+  .tl-count { display: none; }
+  .tl-meta .tl-valid { display: none; }
+}
+@media (max-width: 1360px) {
+  .tl-meta .mono, .tl-meta .dot { display: none; }
+}
 .tl-track input[type=range] { width: 100%; margin: 0; accent-color: var(--accent); }
 .tl-ticks { position: absolute; left: 6px; right: 6px; bottom: 0; height: 14px; font-size: 10px; color: var(--fg-faint); font-family: var(--font-mono); }
 .tl-ticks span { position: absolute; transform: translateX(-50%); }

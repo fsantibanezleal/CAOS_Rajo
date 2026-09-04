@@ -18,8 +18,10 @@ for (const theme of ['dark', 'light'] as const) {
       const page = await ctx.newPage();
       const errors = collectErrors(page);
       await page.addInitScript((t) => localStorage.setItem('rajo.theme', t), theme);
-      await gotoRajo(page, '/');
+      // the floor is measured on a site with frames: the timeline bar is part of it
+      await gotoRajo(page, '/?site=chuquicamata');
       await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
+      await page.waitForSelector('[data-testid="tl-range"]', { timeout: 60_000 });
       await page.waitForTimeout(2500);
 
       const r = await page.evaluate(() => {
@@ -36,6 +38,7 @@ for (const theme of ['dark', 'light'] as const) {
           vizPct: cr ? (cr.width * cr.height) / (innerWidth * innerHeight) : 0,
           navRows: rows.size,
           navCount: links.length,
+          trackW: (document.querySelector('[data-testid="tl-range"]') as HTMLElement | null)?.getBoundingClientRect().width ?? 0,
         };
       });
       expect(r.theme).toBe(theme);
@@ -44,6 +47,7 @@ for (const theme of ['dark', 'light'] as const) {
       expect(r.navRows, 'one navigation row').toBe(1);
       expect(r.navCount).toBe(5);
       expect(r.vizPct, 'the map takes at least half the viewport').toBeGreaterThan(0.5);
+      expect(r.trackW, 'the time-lapse scrubber is at least 240 px wide').toBeGreaterThanOrEqual(240);
       expectNoErrors(errors);
       await ctx.close();
     });

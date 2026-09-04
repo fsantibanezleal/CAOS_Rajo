@@ -6,6 +6,10 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.000] - 2026-09-03
+
+The four lanes on the thirty sites, deployed at rajo.fasl-work.com.
+
 ### Added
 
 - Bake: the scenes stage (Earth Search and Planetary Computer searches grouped by acquisition day) and the

@@ -20,10 +20,15 @@ to a named, dated source.
 
 ## Status
 
-Version 0.01.000 (2026-09-03): the repository scaffold, the site catalog with its two data contracts, and
-the map shell (globe, terrain, basemaps, bilingual chrome, light and dark). The bake, the method lanes, the
-learned models and the deep documentation land unit by unit; see the [CHANGELOG](CHANGELOG.md) and the
-open issues.
+Version 0.02.000 (2026-09-03): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
+2026 baked and validated for every site (Landsat then Sentinel-2), the classical and learned masks, the
+mined-area series with their change points, and the elevation difference between the year-2000 radar
+surface and the 2011 to 2015 Copernicus surface. Live: the latest clear Sentinel-2 scene read in the
+browser, nine indices, Otsu, k-means, spectral angle, the random forest walked from flat node arrays and
+the U-Net on WebGPU or WASM. Every site card carries sourced facts (Cochilco and the operators' own
+disclosures), the Atlas prints the USGS copper table by country, and the Methods page reads the
+held-out benchmark. The dense (all-dates) series exists for the sites the detached workers have
+finished; the rest land as they complete. See the [CHANGELOG](CHANGELOG.md) and the open issues.
 
 ## Run it locally
 

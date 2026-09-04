@@ -1,6 +1,6 @@
 # Rajo, open pits seen from orbit
 
-Live: the site is not deployed yet (target `https://rajo.fasl-work.com`, updated here on first deploy).
+Live: https://rajo.fasl-work.com (vps-static on the prod box, first content deploy 2026-09-03; the footer prints the deployed version).
 
 [![CI](https://img.shields.io/github/actions/workflow/status/fsantibanezleal/CAOS_Rajo/ci.yml?branch=main&label=CI)](https://github.com/fsantibanezleal/CAOS_Rajo/actions)
 [![License](https://img.shields.io/github/license/fsantibanezleal/CAOS_Rajo)](LICENSE)
@@ -20,7 +20,7 @@ to a named, dated source.
 
 ## Status
 
-Version 0.02.000 (2026-09-03): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
+Version 0.02.001 (2026-09-03; 0.02.000 plus the fixes from its first live run): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
 2026 baked and validated for every site (Landsat then Sentinel-2), the classical and learned masks, the
 mined-area series with their change points, and the elevation difference between the year-2000 radar
 surface and the 2011 to 2015 Copernicus surface. Live: the latest clear Sentinel-2 scene read in the

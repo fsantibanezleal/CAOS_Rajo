@@ -7,7 +7,6 @@ import { useTranslation } from 'react-i18next';
 
 import type { Frame, SiteManifest } from '../lib/contract';
 import { useTimeline } from '../state/timeline';
-import { useUI } from '../state/ui';
 
 export interface TimelineProps {
   manifest: SiteManifest;
@@ -26,7 +25,6 @@ const SENSOR_LABEL: Record<string, string> = {
 
 export function Timeline({ manifest, onFrame }: TimelineProps) {
   const { t } = useTranslation();
-  const lang = useUI((s) => s.lang);
   const frames = manifest.frames;
   const count = frames.length;
   const index = useTimeline((s) => s.index);
@@ -155,8 +153,8 @@ export function Timeline({ manifest, onFrame }: TimelineProps) {
               <span className="tl-sensor">{SENSOR_LABEL[frame.sensor] ?? frame.sensor}</span>
               <span className="dot">&middot;</span>
               <span className="mono">{frame.date}</span>
-              <span className="dot">&middot;</span>
-              <span title={t('timeline.validHelp')}>
+              <span className="dot tl-valid">&middot;</span>
+              <span className="tl-valid" title={t('timeline.validHelp')}>
                 {t('timeline.valid')} {frame.valid_pct.toFixed(1)}%
               </span>
               {frame.flags.length > 0 && (
@@ -197,7 +195,7 @@ export function Timeline({ manifest, onFrame }: TimelineProps) {
             <input type="range" min={0} max={100} value={Math.round(opacity * 100)} onChange={(e) => setOpacity(Number(e.target.value) / 100)} aria-label={t('timeline.opacity')} />
           </label>
           <span className="faint tl-count">
-            {count} {lang === 'es' ? 'cuadros' : 'frames'} {first} to {last}
+            {count} {t('timeline.framesWord')} {first} {t('common.rangeTo')} {last}
           </span>
         </div>
       </div>

@@ -49,6 +49,14 @@ if ! cmp -s <(curl -fsS "https://${DOMAIN}/data/catalog.json?v=${STAMP}") "$DIST
 fi
 CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://${DOMAIN}/?site=chuquicamata")
 [ "$CODE" = "200" ] || { echo "deep link answered ${CODE}" >&2; exit 1; }
+# every client-side route answers the app shell when loaded directly (no redirect); /data shares its
+# name with the artifact prefix and once answered 404
+for ROUTE in /data /data/ /methods /atlas /about; do
+  RC=$(curl -s -o /dev/null -w "%{http_code}" "https://${DOMAIN}${ROUTE}")
+  [ "$RC" = "200" ] || { echo "route ${ROUTE} answered ${RC} instead of 200" >&2; exit 1; }
+  RT=$(curl -sI "https://${DOMAIN}${ROUTE}" | grep -i "^content-type:" | tr -d '\r')
+  case "$RT" in *text/html*) ;; *) echo "route ${ROUTE} served as '${RT}', not text/html" >&2; exit 1;; esac
+done
 # the server must name the types (a server-level `types` block without the mime include served the app
 # shell and the hashed modules as application/octet-stream), and a missing artifact must answer 404
 INDEX_TYPE=$(curl -sI "https://${DOMAIN}/index.html?v=${STAMP}" | grep -i "^content-type:" | tr -d '\r')

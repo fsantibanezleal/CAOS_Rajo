@@ -25,11 +25,20 @@ RAJO_SSH_KEY=<vault>/credentials/general/ssh/hetzner_fasl_prod ./deploy/deploy.s
 4. Refuses to continue without `dist/index.html` and a `<title>`.
 5. Ships `dist/` with tar over ssh into a fresh release directory
    (`/var/www/<domain>.releases/<stamp>`), swaps the web root symlink atomically, tests and reloads
-   nginx, keeps the last three releases.
+   nginx, keeps the last three releases. The PowerShell twin runs the pipeline in Git's own
+   `bin\bash.exe` with MSYS paths (`/d/...`), `set -o pipefail` and `--no-same-owner` on the remote
+   tar: a bare `bash` from PowerShell is the WSL launcher on a machine with WSL installed, where neither
+   `D:/` nor `/d/` exists, and GNU tar reads `D:/...` as a remote host (both measured on the first
+   deploy, 2026-09-03). A long ship is best launched detached with its output redirected to a log.
 6. Fetches the live `index.html` and `catalog.json` with a cache-busting query and refuses to report
    success unless the live title equals the build's, the live catalog is byte-identical to the build's,
-   and `/?site=chuquicamata` answers 200. A 200 from an SPA fallback proves only that nginx is up, which
-   is why the content check exists.
+   `/?site=chuquicamata` answers 200, every client-side route (`/data`, `/data/`, `/methods`, `/atlas`,
+   `/about`) answers 200 as `text/html` without a redirect, `index.html` is `text/html`, the hashed module
+   named by it is `javascript`, the forest file is not the app shell, and a missing tile answers 404. A
+   200 from an SPA fallback proves only that nginx is up, which is why the content checks exist.
+7. After the script, run the live smoke by hand: a Playwright spec pointed at the live URL that loads
+   the observatory, screenshots both themes and languages and the pages, and counts console errors. It
+   found the `/data` route answering 404 and a stale footer version that the script's checks had passed.
 
 ## First-time host setup (once per domain)
 
@@ -40,10 +49,17 @@ ssh -i <key> root@<host> "mkdir -p /var/www/rajo.fasl-work.com; \
   certbot --nginx -d rajo.fasl-work.com --non-interactive --agree-tos -m <email> --redirect"
 ```
 
-The nginx site sets `no-cache` on `index.html` (it names the hashed assets), immutable caching on
-`/assets/`, one day on `/data/`, seven days on `.onnx` and `.wasm`, gzip including wasm and geo+json, and
-the MIME types the app needs (onnx, wasm, geojson). DNS is a wildcard on the domain; no record is added
-per host.
+The nginx site includes the standard MIME table first and then adds the types the app needs (onnx,
+bin, wasm, geojson): a `types` block at server level replaces the whole table, so without the include
+the app shell and the hashed modules are served as `application/octet-stream`. It sets `no-cache` on
+`index.html` (it names the hashed assets), immutable caching on `/assets/`, one day on `/data/` and
+`/svg/`, seven days on `/models/` and `/ort/`, gzip including wasm and geo+json. The SPA fallback
+applies to routes only: `/assets/`, `/data/`, `/svg/`, `/models/` and `/ort/` answer 404 for a missing
+file (the browser decoders treat a non-PNG tile as missing), and because the Data PAGE route `/data`
+shares its name with the artifact prefix, exact `location = /data` and `location = /data/` blocks serve
+the app shell. On the host, certbot appends its TLS and redirect blocks to the installed file: a change
+to the repo file is applied by rebuilding the installed file from the repo file plus those blocks,
+`nginx -t`, and a reload. DNS is a wildcard on the domain; no record is added per host.
 
 ## Before a release
 

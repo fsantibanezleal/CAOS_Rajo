@@ -257,7 +257,8 @@
       "snow": "snow"
     },
     "series": "Series",
-    "seriesTitle": "The mined-area series, its change points and the yearly masks"
+    "seriesTitle": "The mined-area series, its change points and the yearly masks",
+    "framesWord": "frames"
   },
   "instrument": {
     "title": "Instrument",
@@ -448,7 +449,8 @@
   },
   "common": {
     "loading": "Loading",
-    "yes": "yes"
+    "yes": "yes",
+    "rangeTo": "to"
   },
   "arch": {
     "title": "How Rajo works",

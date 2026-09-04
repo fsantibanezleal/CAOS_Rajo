@@ -355,7 +355,7 @@ export function Observatory() {
                   <>
                     <dt>{t('observatory.frames')}</dt>
                     <dd className="mono">
-                      {manifest.frames.length} / {manifest.frames[0]!.year} to {manifest.frames[manifest.frames.length - 1]!.year}
+                      {manifest.frames.length} / {manifest.frames[0]!.year} {t('common.rangeTo')} {manifest.frames[manifest.frames.length - 1]!.year}
                     </dd>
                   </>
                 )}

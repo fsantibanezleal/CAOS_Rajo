@@ -31,12 +31,31 @@ server {
         try_files $uri =404;
     }
 
+    # the Data PAGE is a client-side route that shares its name with the artifact prefix: the exact
+    # path (with or without the slash) serves the app shell; anything below /data/ is an artifact.
+    # Without these two blocks nginx redirected /data to /data/ (a real directory) and the artifact
+    # rule answered 404 for the page (found by the live smoke on the first deploy, 2026-09-03)
+    location = /data {
+        add_header Cache-Control "no-cache";
+        try_files /index.html =404;
+    }
+    location = /data/ {
+        add_header Cache-Control "no-cache";
+        try_files /index.html =404;
+    }
+
     # baked artifacts change with a release; a missing artifact answers 404, never the app shell
     # (the browser decoders treat a non-PNG tile as missing, and a 200 with HTML hid a missing tile
     # behind "The source image could not be decoded")
     location /data/ {
         add_header Cache-Control "public, max-age=86400";
         add_header Access-Control-Allow-Origin "*";
+        try_files $uri =404;
+    }
+
+    # the architecture diagrams are fetched by the modal, which refuses anything but image/svg+xml
+    location /svg/ {
+        add_header Cache-Control "public, max-age=86400";
         try_files $uri =404;
     }
 

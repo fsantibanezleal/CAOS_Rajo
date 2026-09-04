@@ -257,7 +257,8 @@
       "snow": "nieve"
     },
     "series": "Series",
-    "seriesTitle": "La serie de area minada, sus puntos de cambio y las mascaras anuales"
+    "seriesTitle": "La serie de area minada, sus puntos de cambio y las mascaras anuales",
+    "framesWord": "cuadros"
   },
   "instrument": {
     "title": "Instrumento",
@@ -448,7 +449,8 @@
   },
   "common": {
     "loading": "Cargando",
-    "yes": "si"
+    "yes": "si",
+    "rangeTo": "a"
   },
   "arch": {
     "title": "Como funciona Rajo",

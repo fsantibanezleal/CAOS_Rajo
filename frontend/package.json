@@ -1,7 +1,7 @@
 {
   "name": "rajo-web",
   "private": true,
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "description": "Rajo: open pits seen from orbit. A static web observatory over committed satellite artifacts plus browser-side computation on open cloud-optimized data.",
   "scripts": {

@@ -64,9 +64,20 @@ $release = "$WebRoot.releases/$stamp"
 $sshArgs = @("-i", $Key, "-o", "StrictHostKeyChecking=accept-new", $Target)
 & ssh @sshArgs "mkdir -p $release"
 if ($LASTEXITCODE -ne 0) { throw "ssh mkdir failed" }
-# tar from Git Bash's tar (bsdtar on Windows also works); the stream lands in the release dir
-$tarCmd = "tar -C `"$dist`" -cf - . | ssh -i `"$Key`" $Target `"tar -C $release -xf -`""
-& bash -lc $tarCmd.Replace("\", "/")
+# tar from Git Bash; the stream lands in the release dir. Paths are handed to bash in MSYS form
+# (/d/...): GNU tar reads "D:/..." as a remote host spec and ssh could not open the key given that way
+# (measured on the first deploy, 2026-09-03). pipefail makes a tar failure fail the pipeline.
+function ToBashPath([string]$p) {
+    $u = $p -replace "\\", "/"
+    if ($u -match "^([A-Za-z]):/(.*)$") { return ("/" + $Matches[1].ToLower() + "/" + $Matches[2]) }
+    return $u
+}
+$tarCmd = "set -o pipefail; tar -C '{0}' -cf - . | ssh -i '{1}' -o StrictHostKeyChecking=accept-new {2} 'tar -C {3} --no-same-owner -xf -'" -f (ToBashPath $dist), (ToBashPath $Key), $Target, $release
+# Git's own bash, never a bare "bash": on this machine PATH resolves bash to the WSL launcher
+# (C:\Windows\System32\bash.exe), where neither D:/ nor /d/ exists (second failed ship, 2026-09-03)
+$gitBash = Join-Path (Split-Path (Split-Path (Get-Command git).Source)) "bin\bash.exe"
+if (-not (Test-Path $gitBash)) { throw "Git Bash not found next to git.exe ($gitBash)" }
+& $gitBash "-lc" $tarCmd
 if ($LASTEXITCODE -ne 0) { throw "tar over ssh failed" }
 & ssh @sshArgs "set -e; test -f $release/index.html; rm -rf $WebRoot.previous; if [ -d $WebRoot ] && [ ! -L $WebRoot ]; then mv $WebRoot $WebRoot.previous; fi; ln -sfn $release $WebRoot.next && mv -Tf $WebRoot.next $WebRoot; nginx -t >/dev/null 2>&1 && systemctl reload nginx; ls -1d $WebRoot.releases/* | head -n -3 | xargs -r rm -rf"
 if ($LASTEXITCODE -ne 0) { throw "remote swap failed" }
@@ -79,6 +90,14 @@ $liveCatalog = (Invoke-WebRequest -Uri "https://$Domain/data/catalog.json?v=$sta
 if ($liveCatalog.Trim() -ne $localCatalog.Trim()) { throw "live catalog.json differs from the build" }
 $deep = Invoke-WebRequest -Uri "https://$Domain/?site=chuquicamata" -UseBasicParsing
 if ($deep.StatusCode -ne 200) { throw ("deep link answered {0}" -f $deep.StatusCode) }
+# every client-side route answers the app shell when loaded directly; /data shares its name with the
+# artifact prefix and once answered 404 (found by the live smoke on the first deploy)
+foreach ($route in @("/data", "/data/", "/methods", "/atlas", "/about")) {
+    $r = Invoke-WebRequest -Uri "https://$Domain$route" -UseBasicParsing -MaximumRedirection 0 -ErrorAction SilentlyContinue
+    if (-not $r -or $r.StatusCode -ne 200) { throw ("route {0} answered {1} instead of 200" -f $route, $(if ($r) { $r.StatusCode } else { "no response or a redirect" })) }
+    if ("$($r.Headers['Content-Type'])" -notmatch "text/html") { throw ("route {0} served as '{1}', not text/html" -f $route, $r.Headers['Content-Type']) }
+    if ($r.Content -notmatch "<title>") { throw ("route {0} did not serve the app shell" -f $route) }
+}
 # the server must name the types: a server-level `types` block without the mime include served the
 # app shell and the hashed modules as application/octet-stream (found before the first deploy)
 $indexType = (Invoke-WebRequest -Uri "https://$Domain/index.html?v=$stamp" -UseBasicParsing -Method Head).Headers["Content-Type"]

@@ -9,8 +9,13 @@ server {
     gzip_types text/plain text/css application/json application/javascript application/geo+json image/svg+xml application/wasm;
     gzip_min_length 1024;
 
+    # a `types` block at server level REPLACES the http-level mapping (nginx inherits the directive as a
+    # whole), so the standard table is included first and the extra extensions merged into it; without
+    # the include, index.html and the hashed .js would be served as application/octet-stream
+    include /etc/nginx/mime.types;
     types {
         application/octet-stream onnx;
+        application/octet-stream bin;
         application/wasm wasm;
         application/geo+json geojson;
     }
@@ -23,19 +28,29 @@ server {
     # hashed build assets are immutable
     location /assets/ {
         add_header Cache-Control "public, max-age=31536000, immutable";
+        try_files $uri =404;
     }
 
-    # baked artifacts change with a release
+    # baked artifacts change with a release; a missing artifact answers 404, never the app shell
+    # (the browser decoders treat a non-PNG tile as missing, and a 200 with HTML hid a missing tile
+    # behind "The source image could not be decoded")
     location /data/ {
         add_header Cache-Control "public, max-age=86400";
         add_header Access-Control-Allow-Origin "*";
+        try_files $uri =404;
     }
 
-    # models and wasm are large and change rarely
-    location ~* \.(onnx|wasm)$ {
+    # models, the flat-array forest and the onnxruntime wasm are large and change rarely
+    location /models/ {
         add_header Cache-Control "public, max-age=604800";
+        try_files $uri =404;
+    }
+    location /ort/ {
+        add_header Cache-Control "public, max-age=604800";
+        try_files $uri =404;
     }
 
+    # every other path is a client-side route of the single-page app
     location / {
         try_files $uri $uri/ /index.html;
     }

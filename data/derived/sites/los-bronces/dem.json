@@ -1,0 +1,106 @@
+{
+ "site_id": "los-bronces",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -129.3,
+  129.3
+ ],
+ "geoid_offset_m": 0.737,
+ "stable_bias_m": -7.792,
+ "noise_floor_m": 3.219,
+ "tau_m": 6.437,
+ "stable_ground_px": 22679,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 625719744,
+ "fill_volume_m3": 541635840,
+ "envelope": {
+  "cut_m3": 625719744,
+  "fill_m3": 541635840,
+  "cut_km2": 16.605,
+  "fill_km2": 19.6254,
+  "min_m": -361.7,
+  "max_m": 295.5
+ },
+ "window": {
+  "cut_m3": 927844736,
+  "fill_m3": 721858496,
+  "cut_km2": 35.5365,
+  "fill_km2": 35.6877,
+  "min_m": -361.7,
+  "max_m": 295.5
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/311/611.png",
+  "terrain/10/311/612.png",
+  "terrain/10/312/611.png",
+  "terrain/10/312/612.png",
+  "terrain/11/623/1223.png",
+  "terrain/11/623/1224.png",
+  "terrain/11/624/1223.png",
+  "terrain/11/624/1224.png",
+  "terrain/12/1247/2447.png",
+  "terrain/12/1247/2448.png",
+  "terrain/12/1247/2449.png",
+  "terrain/12/1248/2447.png",
+  "terrain/12/1248/2448.png",
+  "terrain/12/1248/2449.png",
+  "terrain/12/1249/2447.png",
+  "terrain/12/1249/2448.png",
+  "terrain/12/1249/2449.png",
+  "terrain/13/2494/4894.png",
+  "terrain/13/2494/4895.png",
+  "terrain/13/2494/4896.png",
+  "terrain/13/2494/4897.png",
+  "terrain/13/2494/4898.png",
+  "terrain/13/2495/4894.png",
+  "terrain/13/2495/4895.png",
+  "terrain/13/2495/4896.png",
+  "terrain/13/2495/4897.png",
+  "terrain/13/2495/4898.png",
+  "terrain/13/2496/4894.png",
+  "terrain/13/2496/4895.png",
+  "terrain/13/2496/4896.png",
+  "terrain/13/2496/4897.png",
+  "terrain/13/2496/4898.png",
+  "terrain/13/2497/4894.png",
+  "terrain/13/2497/4895.png",
+  "terrain/13/2497/4896.png",
+  "terrain/13/2497/4897.png",
+  "terrain/13/2497/4898.png",
+  "terrain/13/2498/4894.png",
+  "terrain/13/2498/4895.png",
+  "terrain/13/2498/4896.png",
+  "terrain/13/2498/4897.png",
+  "terrain/13/2498/4898.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 2432.0,
+  "max": 5371.0
+ },
+ "cop_stats": {
+  "min": 2424.4,
+  "max": 5368.6
+ }
+}

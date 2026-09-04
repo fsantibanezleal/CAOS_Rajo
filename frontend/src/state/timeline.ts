@@ -18,6 +18,13 @@ interface TimelineState {
   setMode: (m: FrameMode) => void;
   setOpacity: (o: number) => void;
   setSpeed: (ms: number) => void;
+  // the signal lane: the series drawer, the method whose mask and breaks are shown, the mask overlay
+  showSeries: boolean;
+  seriesMethod: 'otsu' | 'rf' | 'unet';
+  showMask: boolean;
+  setShowSeries: (v: boolean) => void;
+  setSeriesMethod: (m: 'otsu' | 'rf' | 'unet') => void;
+  setShowMask: (v: boolean) => void;
 }
 
 export const useTimeline = create<TimelineState>((set, get) => ({
@@ -37,6 +44,12 @@ export const useTimeline = create<TimelineState>((set, get) => ({
   setMode: (mode) => set({ mode }),
   setOpacity: (opacity) => set({ opacity: Math.max(0, Math.min(1, opacity)) }),
   setSpeed: (speedMs) => set({ speedMs }),
+  showSeries: false,
+  seriesMethod: 'otsu',
+  showMask: false,
+  setShowSeries: (showSeries) => set({ showSeries }),
+  setSeriesMethod: (seriesMethod) => set({ seriesMethod }),
+  setShowMask: (showMask) => set({ showMask }),
 }));
 
 if (typeof document !== 'undefined') {

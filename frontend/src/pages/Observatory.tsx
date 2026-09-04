@@ -9,7 +9,11 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Instrument } from '../components/Instrument';
+import { SeriesPanel } from '../components/SeriesPanel';
 import { Timeline } from '../components/Timeline';
+import { ensureMaskLayer, maskUrl, removeMaskLayer, tintMask } from '../map/frameOverlay';
+import { ensureCopSource, hideDelta, hideProfileLine, profile, removeCop, setEpoch, showDelta, showProfileLine } from '../map/reliefOverlay';
+import { useRelief } from '../state/relief';
 import type { CatalogEntry, Category, Frame } from '../lib/contract';
 import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
 import { hideLive, setLiveOpacity, showLive } from '../map/liveOverlay';
@@ -71,17 +75,23 @@ export function Observatory() {
 
   const onMap = useCallback((m: MLMap | null) => {
     setMap(m);
+    // the renderer declares what it holds: the gates read layers and sources from here
+    (window as unknown as { __rajoMap?: MLMap | null }).__rajoMap = m;
     if (m) m.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
   }, []);
 
   // keep the URL in step with the selection
   useEffect(() => writeSiteParam(siteId), [siteId]);
 
-  // a new site: drop the live read of the previous one
+  // a new site: drop the live read of the previous one. Only the site is a dependency: the map handle
+  // arrives on the map's 'load' event, seconds after the page, and must not wipe a read already in flight.
   useEffect(() => {
     clearLive();
+  }, [siteId, clearLive]);
+  useEffect(() => {
     if (map && map.isStyleLoaded()) hideLive(map);
-  }, [siteId, clearLive, map]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [siteId]);
 
   // draw and fly when the manifest arrives (and again after a style rebuild)
   useEffect(() => {
@@ -132,6 +142,119 @@ export function Observatory() {
     };
   }, [map, manifest, frame, mode, opacity]);
 
+  // the baked mask of the year (signal lane) drapes over the frame when the user asks for it
+  const showMask = useTimeline((s) => s.showMask);
+  const seriesMethod = useTimeline((s) => s.seriesMethod);
+  const showSeries = useTimeline((s) => s.showSeries);
+  useEffect(() => {
+    if (!map) return;
+    const url = manifest && frame && showMask && showSeries ? maskUrl(manifest, frame, seriesMethod) : null;
+    if (!url || !manifest) {
+      if (map.isStyleLoaded()) removeMaskLayer(map);
+      return;
+    }
+    let cancelled = false;
+    const apply = () => {
+      void tintMask(url, seriesMethod)
+        .then((tintedUrl) => {
+          if (!cancelled) ensureMaskLayer(map, manifest, tintedUrl);
+        })
+        .catch((e: unknown) => console.warn('[rajo] mask overlay failed', url, e));
+    };
+    // isStyleLoaded() is false while any source still loads; 'idle' fires once loading settles,
+    // whereas 'style.load' only fires on a style swap and would leave the overlay waiting forever
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      cancelled = true;
+      map.off('style.load', apply);
+    };
+  }, [map, manifest, frame, showMask, showSeries, seriesMethod]);
+
+  // the relief lane: the site's Copernicus terrain as a second DEM source, the epoch of the 3D relief,
+  // the DEM difference draped on demand, and the profile line picked on the map
+  const relief = useRelief();
+  const resetRelief = useRelief((s) => s.reset);
+  useEffect(() => resetRelief(), [siteId, resetRelief]);
+  useEffect(() => {
+    if (!map) return;
+    const apply = () => {
+      if (manifest?.dem?.status === 'ok') ensureCopSource(map, manifest);
+      else removeCop(map);
+    };
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+      if (map.isStyleLoaded()) removeCop(map);
+    };
+  }, [map, manifest]);
+  useEffect(() => {
+    if (!map || !terrain) return;
+    const apply = () => setEpoch(map, relief.epoch, relief.exaggeration);
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, terrain, manifest, relief.epoch, relief.exaggeration]);
+  useEffect(() => {
+    if (!map) return;
+    if (!manifest?.dem?.delta_png || !relief.showDelta) {
+      if (map.isStyleLoaded()) hideDelta(map);
+      return;
+    }
+    const apply = () => showDelta(map, manifest, relief.deltaOpacity);
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, manifest, relief.showDelta, relief.deltaOpacity]);
+  useEffect(() => {
+    if (!map || !relief.picking) return;
+    const onClick = (e: { lngLat: { lng: number; lat: number } }) => useRelief.getState().addPoint([e.lngLat.lng, e.lngLat.lat]);
+    map.on('click', onClick);
+    map.getCanvas().style.cursor = 'crosshair';
+    return () => {
+      map.off('click', onClick);
+      map.getCanvas().style.cursor = '';
+    };
+  }, [map, relief.picking]);
+  useEffect(() => {
+    if (!map) return;
+    const apply = () => (relief.points.length ? showProfileLine(map, relief.points) : hideProfileLine(map));
+    if (map.isStyleLoaded()) apply();
+    else map.once('idle', apply);
+    map.on('style.load', apply);
+    return () => {
+      map.off('style.load', apply);
+    };
+  }, [map, relief.points]);
+  useEffect(() => {
+    if (!manifest || relief.points.length !== 2) return;
+    const [a, b] = relief.points as [[number, number], [number, number]];
+    let alive = true;
+    useRelief.getState().setSamples(null, true);
+    useRelief.getState().setSampled(0);
+    void profile(manifest, a, b, 200, (done) => alive && useRelief.getState().setSampled(done))
+      .then((s) => alive && useRelief.getState().setSamples(s))
+      .catch((err: unknown) => {
+        console.warn('[rajo] profile failed', err);
+        if (alive) {
+          useRelief.getState().setSamples(null);
+          useRelief.getState().setProfileError(err instanceof Error ? err.message : String(err));
+        }
+      });
+    return () => {
+      alive = false;
+    };
+  }, [manifest, relief.points]);
+
   // the live layer (composite, index, mask) drapes over the frames and survives a style rebuild
   useEffect(() => {
     if (!map) return;
@@ -141,8 +264,10 @@ export function Observatory() {
     }
     const rgba = liveLayer.kind === 'composite' ? liveLayer.rgba : liveLayer.result.rgba;
     const apply = () => void showLive(map, liveGrid, rgba, liveOpacity);
+    // isStyleLoaded() is false while any source still loads; 'idle' fires once loading settles,
+    // whereas 'style.load' only fires on a style swap and would leave the overlay waiting forever
     if (map.isStyleLoaded()) apply();
-    else map.once('style.load', apply);
+    else map.once('idle', apply);
     map.on('style.load', apply);
     return () => {
       map.off('style.load', apply);
@@ -177,6 +302,11 @@ export function Observatory() {
     if (liveLayer.kind === 'kmeans') {
       const lab = liveLayer.result.labels[i];
       return lab === undefined || lab === 255 ? null : `cluster ${lab + 1}`;
+    }
+    if (liveLayer.kind === 'rf' || liveLayer.kind === 'unet') {
+      const p = liveLayer.result.values[i];
+      const inMask = liveLayer.result.mask[i] === 1;
+      return `p(mine) ${p !== undefined && Number.isFinite(p) ? p.toFixed(3) : '-'} ${inMask ? '(in mask)' : ''}`;
     }
     return null;
   }, [cursor, liveLayer, liveGrid, t]);
@@ -320,6 +450,7 @@ export function Observatory() {
         </div>
       </div>
 
+      {manifest && manifest.series && showSeries && <SeriesPanel manifest={manifest} series={manifest.series} />}
       {manifest && <Timeline manifest={manifest} onFrame={onFrame} />}
 
       <div className="overlay attrib">

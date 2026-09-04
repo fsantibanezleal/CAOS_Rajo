@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "las-bambas",
  "site": {
   "id": "las-bambas",
@@ -20,9 +20,9 @@
   },
   "facts": [
    {
-    "text_en": "Las Bambas produced 210,637 tonnes of copper in the first half of 2025.",
-    "text_es": "Las Bambas produjo 210.637 toneladas de cobre en el primer semestre de 2025.",
-    "source": "https://www.mining.com/featured-article/ranked-top-20-biggest-copper-mines-2025/"
+    "text_en": "Las Bambas produced 410,834 tonnes of copper in concentrate in 2025, its second-highest annual output on record and 27% above 2024, on record volumes mined and milled (MMG, fourth quarter production report, 22 January 2026).",
+    "text_es": "Las Bambas produjo 410.834 toneladas de cobre en concentrado en 2025, su segunda mayor produccion anual historica y 27% por sobre 2024, con volumenes record extraidos y molidos (MMG, reporte de produccion del cuarto trimestre, 22 de enero de 2026).",
+    "source": "https://www.mmg.com/content/uploads/2026/01/e_2026-01-22_4QTR-Production-Report.pdf"
    }
   ],
   "commodity": "copper",
@@ -71,16 +71,4537 @@
    38286
   ]
  },
- "frames": [],
- "series": null,
- "dem": null,
+ "frames": [
+  {
+   "year": 1986,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19860804_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19860804_02_T1"
+   ],
+   "date": "1986-08-04",
+   "cloud_pct": 6.23,
+   "valid_pct": 93.77,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 13.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1986.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1986-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04931500554084778,
+      0.2910125255584717
+     ],
+     [
+      0.04455089867115021,
+      0.25760660409927344
+     ],
+     [
+      0.036225005984306335,
+      0.21597158968448613
+     ]
+    ],
+    "swir": [
+     [
+      0.038920000195503235,
+      0.3792941355705259
+     ],
+     [
+      0.07035250961780548,
+      0.39413750171661377
+     ],
+     [
+      0.04931500554084778,
+      0.2910125255584717
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
+  },
+  {
+   "year": 1988,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19880622_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19880622_02_T1"
+   ],
+   "date": "1988-06-22",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1988.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1988-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04958999156951904,
+      0.17130498588085175
+     ],
+     [
+      0.04109250009059906,
+      0.1310725063085556
+     ],
+     [
+      0.02778249979019165,
+      0.08578000962734222
+     ]
+    ],
+    "swir": [
+     [
+      0.06741000711917877,
+      0.3104274868965149
+     ],
+     [
+      0.09158249199390411,
+      0.34408754110336304
+     ],
+     [
+      0.04958999156951904,
+      0.17130498588085175
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
+  },
+  {
+   "year": 1989,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19890609_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19890609_02_T1"
+   ],
+   "date": "1989-06-09",
+   "cloud_pct": 2.74,
+   "valid_pct": 97.26,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1989.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1989-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.034905001521110535,
+      0.14465750753879547
+     ],
+     [
+      0.03149500489234924,
+      0.12070499360561371
+     ],
+     [
+      0.021925002336502075,
+      0.08421249687671661
+     ]
+    ],
+    "swir": [
+     [
+      0.046262502670288086,
+      0.2825149893760681
+     ],
+     [
+      0.08228090345859528,
+      0.35369161605834937
+     ],
+     [
+      0.034905001521110535,
+      0.14465750753879547
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
+  },
+  {
+   "year": 1990,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19900511_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19900511_02_T1"
+   ],
+   "date": "1990-05-11",
+   "cloud_pct": 0.14,
+   "valid_pct": 99.86,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1990.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1990-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04937000572681427,
+      0.14853499829769135
+     ],
+     [
+      0.044915005564689636,
+      0.12120001018047333
+     ],
+     [
+      0.029239997267723083,
+      0.08214999735355377
+     ]
+    ],
+    "swir": [
+     [
+      0.07073749601840973,
+      0.2847974896430969
+     ],
+     [
+      0.11119000613689423,
+      0.3775550127029419
+     ],
+     [
+      0.04937000572681427,
+      0.14853499829769135
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
+  },
+  {
+   "year": 1991,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19910818_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19910818_02_T1"
+   ],
+   "date": "1991-08-18",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1991.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1991-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.09485499560832977,
+      0.1989700049161911
+     ],
+     [
+      0.08217750489711761,
+      0.1582150012254715
+     ],
+     [
+      0.06540249288082123,
+      0.11635999381542206
+     ]
+    ],
+    "swir": [
+     [
+      0.10029999911785126,
+      0.33022749423980713
+     ],
+     [
+      0.13151250779628754,
+      0.3195574879646301
+     ],
+     [
+      0.09485499560832977,
+      0.1989700049161911
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
+  },
+  {
+   "year": 1992,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19920703_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19920703_02_T1"
+   ],
+   "date": "1992-07-03",
+   "cloud_pct": 1.15,
+   "valid_pct": 98.85,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 4.31,
+   "pixel_m": 30.0,
+   "image": "frames/1992.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1992-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.06870250403881073,
+      0.30561500787734985
+     ],
+     [
+      0.057063400149345404,
+      0.28758821010589547
+     ],
+     [
+      0.04210999608039856,
+      0.2523750066757202
+     ]
+    ],
+    "swir": [
+     [
+      0.05429248511791229,
+      0.3148000240325928
+     ],
+     [
+      0.10382001101970673,
+      0.3694700002670288
+     ],
+     [
+      0.06870250403881073,
+      0.30561500787734985
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
+  },
+  {
+   "year": 1993,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19930604_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19930604_02_T1"
+   ],
+   "date": "1993-06-04",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1993.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1993-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04409000277519226,
+      0.13836000859737396
+     ],
+     [
+      0.036637499928474426,
+      0.10736750066280365
+     ],
+     [
+      0.026875004172325134,
+      0.07552249729633331
+     ]
+    ],
+    "swir": [
+     [
+      0.05821839630603791,
+      0.28133249282836914
+     ],
+     [
+      0.0939749926328659,
+      0.347415030002594
+     ],
+     [
+      0.04409000277519226,
+      0.13836000859737396
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
+  },
+  {
+   "year": 1994,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19940725_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19940725_02_T1"
+   ],
+   "date": "1994-07-25",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1994.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1994-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.058087512850761414,
+      0.19924499094486237
+     ],
+     [
+      0.046812504529953,
+      0.14680249989032745
+     ],
+     [
+      0.03226499259471893,
+      0.09364499151706696
+     ]
+    ],
+    "swir": [
+     [
+      0.0732399970293045,
+      0.324892520904541
+     ],
+     [
+      0.0938034051656723,
+      0.34290504455566406
+     ],
+     [
+      0.058087512850761414,
+      0.19924499094486237
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
+  },
+  {
+   "year": 1995,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19950728_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19950728_02_T1"
+   ],
+   "date": "1995-07-28",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1995.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1995-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.053247496485710144,
+      0.20040000975131989
+     ],
+     [
+      0.04332000017166138,
+      0.14837001264095306
+     ],
+     [
+      0.032319992780685425,
+      0.09554250538349152
+     ]
+    ],
+    "swir": [
+     [
+      0.062432512640953064,
+      0.33666253089904785
+     ],
+     [
+      0.08157248795032501,
+      0.3428500294685364
+     ],
+     [
+      0.053247496485710144,
+      0.20040000975131989
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
+  },
+  {
+   "year": 1996,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19960612_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19960612_02_T1"
+   ],
+   "date": "1996-06-12",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1996.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1996-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.03638999164104462,
+      0.15290750563144684
+     ],
+     [
+      0.029184997081756592,
+      0.11193250119686127
+     ],
+     [
+      0.0221174955368042,
+      0.0782725065946579
+     ]
+    ],
+    "swir": [
+     [
+      0.04697750508785248,
+      0.2877950072288513
+     ],
+     [
+      0.08223249018192291,
+      0.3529700040817261
+     ],
+     [
+      0.03638999164104462,
+      0.15290750563144684
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
+  },
+  {
+   "year": 1997,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19970530_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19970530_02_T1"
+   ],
+   "date": "1997-05-30",
+   "cloud_pct": 6.11,
+   "valid_pct": 93.89,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1997.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1997-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.025609999895095825,
+      0.17054160773754096
+     ],
+     [
+      0.02244749665260315,
+      0.14526909649372075
+     ],
+     [
+      0.017717495560646057,
+      0.11597500741481781
+     ]
+    ],
+    "swir": [
+     [
+      0.03144000470638275,
+      0.30669412851333594
+     ],
+     [
+      0.05569501221179962,
+      0.36619752645492554
+     ],
+     [
+      0.025609999895095825,
+      0.17054160773754096
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
+  },
+  {
+   "year": 1998,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19980618_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19980618_02_T1"
+   ],
+   "date": "1998-06-18",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1998.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1998-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0565749853849411,
+      0.19113250076770782
+     ],
+     [
+      0.0451899915933609,
+      0.14091749489307404
+     ],
+     [
+      0.02981749176979065,
+      0.08976750075817108
+     ]
+    ],
+    "swir": [
+     [
+      0.07109500467777252,
+      0.309190034866333
+     ],
+     [
+      0.1026649922132492,
+      0.35475748777389526
+     ],
+     [
+      0.0565749853849411,
+      0.19113250076770782
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
+  },
+  {
+   "year": 1999,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_19990621_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_19990621_02_T1"
+   ],
+   "date": "1999-06-21",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1999.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1999-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04868249595165253,
+      0.16728998720645905
+     ],
+     [
+      0.04070749878883362,
+      0.13063250482082367
+     ],
+     [
+      0.028167501091957092,
+      0.08685250580310822
+     ]
+    ],
+    "swir": [
+     [
+      0.07189248502254486,
+      0.31150001287460327
+     ],
+     [
+      0.0956525057554245,
+      0.3457375168800354
+     ],
+     [
+      0.04868249595165253,
+      0.16728998720645905
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
+  },
+  {
+   "year": 2000,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20000623_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20000623_02_T1"
+   ],
+   "date": "2000-06-23",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2000.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2000-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.049699991941452026,
+      0.16225750744342804
+     ],
+     [
+      0.040515005588531494,
+      0.12422500550746918
+     ],
+     [
+      0.029899999499320984,
+      0.08567000925540924
+     ]
+    ],
+    "swir": [
+     [
+      0.07021500170230865,
+      0.3033600449562073
+     ],
+     [
+      0.09414000809192657,
+      0.32714754343032837
+     ],
+     [
+      0.049699991941452026,
+      0.16225750744342804
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
+  },
+  {
+   "year": 2001,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20010525_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20010525_02_T1"
+   ],
+   "date": "2001-05-25",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2001.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2001-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0448324978351593,
+      0.13456501066684723
+     ],
+     [
+      0.039910003542900085,
+      0.10948498547077179
+     ],
+     [
+      0.02544499933719635,
+      0.0729375034570694
+     ]
+    ],
+    "swir": [
+     [
+      0.07196840584278107,
+      0.28248751163482666
+     ],
+     [
+      0.1056625097990036,
+      0.35541749000549316
+     ],
+     [
+      0.0448324978351593,
+      0.13456501066684723
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
+  },
+  {
+   "year": 2002,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20020605_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20020605_02_T1"
+   ],
+   "date": "2002-06-05",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2002.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2002-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04337500035762787,
+      0.13786499202251434
+     ],
+     [
+      0.038920000195503235,
+      0.10530500113964081
+     ],
+     [
+      0.026160001754760742,
+      0.0709574967622757
+     ]
+    ],
+    "swir": [
+     [
+      0.06468750536441803,
+      0.2733575105667114
+     ],
+     [
+      0.10346250236034393,
+      0.351485013961792
+     ],
+     [
+      0.04337500035762787,
+      0.13786499202251434
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
+  },
+  {
+   "year": 2003,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20030928_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20030928_02_T1"
+   ],
+   "date": "2003-09-28",
+   "cloud_pct": 1.99,
+   "valid_pct": 98.01,
+   "data_pct": 98.01,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2003.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2003-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.081682488322258,
+      0.19313998520374298
+     ],
+     [
+      0.06609000265598297,
+      0.13943250477313995
+     ],
+     [
+      0.04516249895095825,
+      0.09323249757289886
+     ]
+    ],
+    "swir": [
+     [
+      0.1368749886751175,
+      0.33641499280929565
+     ],
+     [
+      0.1388549953699112,
+      0.31975001096725464
+     ],
+     [
+      0.081682488322258,
+      0.19313998520374298
+     ]
+    ]
+   },
+   "flags": [
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
+  },
+  {
+   "year": 2004,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20040517_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20040517_02_T1"
+   ],
+   "date": "2004-05-17",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2004.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2004-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04832500219345093,
+      0.13871748745441437
+     ],
+     [
+      0.044530004262924194,
+      0.1133900135755539
+     ],
+     [
+      0.028332501649856567,
+      0.07387249171733856
+     ]
+    ],
+    "swir": [
+     [
+      0.06842748820781708,
+      0.2636774778366089
+     ],
+     [
+      0.11234499514102936,
+      0.371862530708313
+     ],
+     [
+      0.04832500219345093,
+      0.13871748745441437
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
+  },
+  {
+   "year": 2005,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20050613_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20050613_02_T1",
+    "LE07_L2SP_004070_20050629_02_T1"
+   ],
+   "date": "2005-06-13",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2005.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2005-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.06328500807285309,
+      0.17861999571323395
+     ],
+     [
+      0.05165250599384308,
+      0.1286800056695938
+     ],
+     [
+      0.03762750327587128,
+      0.08775998651981354
+     ]
+    ],
+    "swir": [
+     [
+      0.0843983954191208,
+      0.2948965954780576
+     ],
+     [
+      0.11484749615192413,
+      0.33649754524230957
+     ],
+     [
+      0.06328500807285309,
+      0.17861999571323395
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
+  },
+  {
+   "year": 2006,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20060515_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20060515_02_T1"
+   ],
+   "date": "2006-05-15",
+   "cloud_pct": 3.4,
+   "valid_pct": 96.6,
+   "data_pct": 97.64,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2006.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2006-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04175250232219696,
+      0.13055001199245453
+     ],
+     [
+      0.038644999265670776,
+      0.10428749024868011
+     ],
+     [
+      0.023574993014335632,
+      0.07079251110553741
+     ]
+    ],
+    "swir": [
+     [
+      0.06050749123096466,
+      0.2521275281906128
+     ],
+     [
+      0.11113499104976654,
+      0.3644925355911255
+     ],
+     [
+      0.04175250232219696,
+      0.13055001199245453
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
+  },
+  {
+   "year": 2007,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20070526_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20070526_02_T1"
+   ],
+   "date": "2007-05-26",
+   "cloud_pct": 0.91,
+   "valid_pct": 99.09,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2007.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2007-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04639999568462372,
+      0.1445266014337537
+     ],
+     [
+      0.042329996824264526,
+      0.11864249408245087
+     ],
+     [
+      0.026490002870559692,
+      0.07788749039173126
+     ]
+    ],
+    "swir": [
+     [
+      0.06713499128818512,
+      0.2735224962234497
+     ],
+     [
+      0.11000750958919525,
+      0.35882753133773804
+     ],
+     [
+      0.04639999568462372,
+      0.1445266014337537
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
+  },
+  {
+   "year": 2008,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20080528_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20080528_02_T1"
+   ],
+   "date": "2008-05-28",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2008.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2008-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.054567500948905945,
+      0.1711675077676773
+     ],
+     [
+      0.047224998474121094,
+      0.13170500099658966
+     ],
+     [
+      0.029789999127388,
+      0.0843224972486496
+     ]
+    ],
+    "swir": [
+     [
+      0.0792899876832962,
+      0.29830002784729004
+     ],
+     [
+      0.10931999981403351,
+      0.3452150225639343
+     ],
+     [
+      0.054567500948905945,
+      0.1711675077676773
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
+  },
+  {
+   "year": 2009,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20090531_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20090531_02_T1"
+   ],
+   "date": "2009-05-31",
+   "cloud_pct": 0.12,
+   "valid_pct": 99.88,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2009.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2009-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04967249929904938,
+      0.15508000552654266
+     ],
+     [
+      0.044282495975494385,
+      0.12414251267910004
+     ],
+     [
+      0.02945999801158905,
+      0.08247999846935272
+     ]
+    ],
+    "swir": [
+     [
+      0.0722775012254715,
+      0.29183751344680786
+     ],
+     [
+      0.10593749582767487,
+      0.3506324887275696
+     ],
+     [
+      0.04967249929904938,
+      0.15508000552654266
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
+  },
+  {
+   "year": 2010,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_004070_20100705_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_004070_20100705_02_T1"
+   ],
+   "date": "2010-07-05",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2010.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2010-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.05852748453617096,
+      0.1829100102186203
+     ],
+     [
+      0.04969339370727539,
+      0.14075250923633575
+     ],
+     [
+      0.03336499631404877,
+      0.09210498631000519
+     ]
+    ],
+    "swir": [
+     [
+      0.08005999028682709,
+      0.3076775074005127
+     ],
+     [
+      0.10219751298427582,
+      0.316367506980896
+     ],
+     [
+      0.05852748453617096,
+      0.1829100102186203
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
+  },
+  {
+   "year": 2011,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20110529_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20110529_02_T1"
+   ],
+   "date": "2011-05-29",
+   "cloud_pct": 2.98,
+   "valid_pct": 97.02,
+   "data_pct": 97.02,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2011.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2011-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.045547500252723694,
+      0.1501850038766861
+     ],
+     [
+      0.0401574969291687,
+      0.1144074946641922
+     ],
+     [
+      0.025692492723464966,
+      0.07808386027812997
+     ]
+    ],
+    "swir": [
+     [
+      0.07015998661518097,
+      0.2840275168418884
+     ],
+     [
+      0.11350001394748688,
+      0.3448300361633301
+     ],
+     [
+      0.045547500252723694,
+      0.1501850038766861
+     ]
+    ]
+   },
+   "flags": [
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
+  },
+  {
+   "year": 2012,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20120616_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20120616_02_T1"
+   ],
+   "date": "2012-06-16",
+   "cloud_pct": 2.4,
+   "valid_pct": 97.6,
+   "data_pct": 97.65,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2012.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2012-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04912249743938446,
+      0.1726524978876114
+     ],
+     [
+      0.041009992361068726,
+      0.1270575076341629
+     ],
+     [
+      0.027150005102157593,
+      0.08591748774051666
+     ]
+    ],
+    "swir": [
+     [
+      0.07508249580860138,
+      0.31460750102996826
+     ],
+     [
+      0.10557998716831207,
+      0.3349575400352478
+     ],
+     [
+      0.04912249743938446,
+      0.1726524978876114
+     ]
+    ]
+   },
+   "flags": [
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
+  },
+  {
+   "year": 2013,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_004070_20130729_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_004070_20130729_02_T1"
+   ],
+   "date": "2013-07-29",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.58,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2013.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2013-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.05572248995304108,
+      0.19919000566005707
+     ],
+     [
+      0.04524499177932739,
+      0.153842493891716
+     ],
+     [
+      0.028992503881454468,
+      0.10453499853610992
+     ]
+    ],
+    "swir": [
+     [
+      0.09458000957965851,
+      0.33221410989761324
+     ],
+     [
+      0.11009000241756439,
+      0.33157503604888916
+     ],
+     [
+      0.05572248995304108,
+      0.19919000566005707
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
+  },
+  {
+   "year": 2014,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20140606_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20140606_02_T1"
+   ],
+   "date": "2014-06-06",
+   "cloud_pct": 2.64,
+   "valid_pct": 97.36,
+   "data_pct": 97.36,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2014.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2014-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04642750322818756,
+      0.18714500963687897
+     ],
+     [
+      0.03839750587940216,
+      0.14446501433849335
+     ],
+     [
+      0.02646249532699585,
+      0.10722999274730682
+     ]
+    ],
+    "swir": [
+     [
+      0.07469750940799713,
+      0.3156442463397983
+     ],
+     [
+      0.10951249301433563,
+      0.3504675030708313
+     ],
+     [
+      0.04642750322818756,
+      0.18714500963687897
+     ]
+    ]
+   },
+   "flags": [
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
+  },
+  {
+   "year": 2015,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20150625_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20150625_02_T1",
+    "LE07_L2SP_004070_20150727_02_T1"
+   ],
+   "date": "2015-06-25",
+   "cloud_pct": 0.01,
+   "valid_pct": 99.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2015.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2015-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.047197505831718445,
+      0.19204660594463324
+     ],
+     [
+      0.03856249153614044,
+      0.14975160419940922
+     ],
+     [
+      0.02772749960422516,
+      0.11298409163951847
+     ]
+    ],
+    "swir": [
+     [
+      0.07068251073360443,
+      0.31424999237060547
+     ],
+     [
+      0.10263748466968536,
+      0.33432501554489136
+     ],
+     [
+      0.047197505831718445,
+      0.19204660594463324
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
+  },
+  {
+   "year": 2016,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_004070_20160510_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_004070_20160510_02_T1",
+    "LE07_L2SP_004070_20160526_02_T1"
+   ],
+   "date": "2016-05-10",
+   "cloud_pct": 0.01,
+   "valid_pct": 99.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.19,
+   "pixel_m": 30.0,
+   "image": "frames/2016.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2016-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.06361500918865204,
+      0.2040574997663498
+     ],
+     [
+      0.05814249813556671,
+      0.17372499406337738
+     ],
+     [
+      0.04208250343799591,
+      0.139102503657341
+     ]
+    ],
+    "swir": [
+     [
+      0.09317751228809357,
+      0.274649977684021
+     ],
+     [
+      0.15092749893665314,
+      0.3632825016975403
+     ],
+     [
+      0.06361500918865204,
+      0.2040574997663498
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
+  },
+  {
+   "year": 2017,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_18LYK_20170808_0_L2A+S2B_18LZK_20170808_0_L2A",
+   "scene_ids": [
+    "S2B_18LYK_20170808_0_L2A+S2B_18LZK_20170808_0_L2A"
+   ],
+   "date": "2017-08-08",
+   "cloud_pct": 6.46,
+   "valid_pct": 93.54,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.52,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2017.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2017-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.05139999836683273,
+      0.25459998846054077
+     ],
+     [
+      0.035599999129772186,
+      0.21859999001026154
+     ],
+     [
+      0.007699999958276749,
+      0.16699999570846558
+     ]
+    ],
+    "swir": [
+     [
+      0.11400000005960464,
+      0.3628000020980835
+     ],
+     [
+      0.11419999599456787,
+      0.3789999783039093
+     ],
+     [
+      0.05139999836683273,
+      0.25459998846054077
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
+   }
+  },
+  {
+   "year": 2018,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_18LYK_20180902_1_L2A+S2B_18LZK_20180902_0_L2A",
+   "scene_ids": [
+    "S2B_18LYK_20180902_1_L2A+S2B_18LZK_20180902_0_L2A"
+   ],
+   "date": "2018-09-02",
+   "cloud_pct": 0.61,
+   "valid_pct": 99.39,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.04,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2018.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2018-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.031300000846385956,
+      0.17080000042915344
+     ],
+     [
+      -0.03960000351071358,
+      0.14579999446868896
+     ],
+     [
+      -0.06180000305175781,
+      0.10819999128580093
+     ]
+    ],
+    "swir": [
+     [
+      0.05699998885393143,
+      0.26030001044273376
+     ],
+     [
+      0.04759999364614487,
+      0.25760000944137573
+     ],
+     [
+      -0.031300000846385956,
+      0.17080000042915344
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
+   }
+  },
+  {
+   "year": 2019,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_18LYK_20190818_0_L2A+S2B_18LYK_20190818_1_L2A+S2B_18LZK_20190818_1_L2A+S2B_18LZK_20190818_0_L2A",
+   "scene_ids": [
+    "S2B_18LYK_20190818_0_L2A+S2B_18LYK_20190818_1_L2A+S2B_18LZK_20190818_1_L2A+S2B_18LZK_20190818_0_L2A"
+   ],
+   "date": "2019-08-18",
+   "cloud_pct": 0.23,
+   "valid_pct": 99.77,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.12,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2019.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2019-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.07369999587535858,
+      0.2639999985694885
+     ],
+     [
+      0.05989999696612358,
+      0.2337999939918518
+     ],
+     [
+      0.03529999777674675,
+      0.19039998948574066
+     ]
+    ],
+    "swir": [
+     [
+      0.15079998970031738,
+      0.35040000081062317
+     ],
+     [
+      0.1454000025987625,
+      0.36319997906684875
+     ],
+     [
+      0.07369999587535858,
+      0.2639999985694885
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
+   }
+  },
+  {
+   "year": 2020,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_18LYK_20200723_0_L2A+S2B_18LYK_20200723_1_L2A+S2B_18LZK_20200723_1_L2A+S2B_18LZK_20200723_0_L2A",
+   "scene_ids": [
+    "S2B_18LYK_20200723_0_L2A+S2B_18LYK_20200723_1_L2A+S2B_18LZK_20200723_1_L2A+S2B_18LZK_20200723_0_L2A"
+   ],
+   "date": "2020-07-23",
+   "cloud_pct": 1.52,
+   "valid_pct": 98.48,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.82,
+   "snow_pct": 0.03,
+   "pixel_m": 10.0,
+   "image": "frames/2020.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2020-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.06359999626874924,
+      0.2791999876499176
+     ],
+     [
+      0.05289999768137932,
+      0.2451999932527542
+     ],
+     [
+      0.02979999966919422,
+      0.2061999887228012
+     ]
+    ],
+    "swir": [
+     [
+      0.12239999324083328,
+      0.35589998960494995
+     ],
+     [
+      0.13339999318122864,
+      0.3779999911785126
+     ],
+     [
+      0.06359999626874924,
+      0.2791999876499176
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
+   }
+  },
+  {
+   "year": 2021,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_18LYK_20210723_0_L2A+S2A_18LYK_20210723_1_L2A+S2A_18LZK_20210723_1_L2A+S2A_18LZK_20210723_0_L2A",
+   "scene_ids": [
+    "S2A_18LYK_20210723_0_L2A+S2A_18LYK_20210723_1_L2A+S2A_18LZK_20210723_1_L2A+S2A_18LZK_20210723_0_L2A"
+   ],
+   "date": "2021-07-23",
+   "cloud_pct": 1.11,
+   "valid_pct": 98.89,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.34,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2021.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2021-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.04079999774694443,
+      0.2924000024795532
+     ],
+     [
+      0.038599997758865356,
+      0.2741999924182892
+     ],
+     [
+      0.01860000006854534,
+      0.23539999127388
+     ]
+    ],
+    "swir": [
+     [
+      0.07490000128746033,
+      0.32819998264312744
+     ],
+     [
+      0.08489999920129776,
+      0.3628000020980835
+     ],
+     [
+      0.04079999774694443,
+      0.2924000024795532
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
+   }
+  },
+  {
+   "year": 2022,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_18LYK_20220728_0_L2A+S2A_18LZK_20220728_0_L2A",
+   "scene_ids": [
+    "S2A_18LYK_20220728_0_L2A+S2A_18LZK_20220728_0_L2A"
+   ],
+   "date": "2022-07-28",
+   "cloud_pct": 0.06,
+   "valid_pct": 99.94,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.0,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2022.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2022-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.03380000591278076,
+      0.171999990940094
+     ],
+     [
+      -0.047700002789497375,
+      0.14079999923706055
+     ],
+     [
+      -0.06970000267028809,
+      0.10179998725652695
+     ]
+    ],
+    "swir": [
+     [
+      0.024199992418289185,
+      0.23170000314712524
+     ],
+     [
+      0.040599994361400604,
+      0.27399998903274536
+     ],
+     [
+      -0.03380000591278076,
+      0.171999990940094
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
+   }
+  },
+  {
+   "year": 2023,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_18LYK_20230703_0_L2A+S2A_18LZK_20230703_0_L2A",
+   "scene_ids": [
+    "S2A_18LYK_20230703_0_L2A+S2A_18LZK_20230703_0_L2A"
+   ],
+   "date": "2023-07-03",
+   "cloud_pct": 0.19,
+   "valid_pct": 99.81,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.01,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2023.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2023-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.048600003123283386,
+      0.15200001001358032
+     ],
+     [
+      -0.055400002747774124,
+      0.12599998712539673
+     ],
+     [
+      -0.07640000432729721,
+      0.08899999409914017
+     ]
+    ],
+    "swir": [
+     [
+      0.003299996256828308,
+      0.2150999903678894
+     ],
+     [
+      0.026000000536441803,
+      0.2687999904155731
+     ],
+     [
+      -0.048600003123283386,
+      0.15200001001358032
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
+   }
+  },
+  {
+   "year": 2024,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_18LYK_20240717_0_L2A+S2A_18LZK_20240717_0_L2A",
+   "scene_ids": [
+    "S2A_18LYK_20240717_0_L2A+S2A_18LZK_20240717_0_L2A"
+   ],
+   "date": "2024-07-17",
+   "cloud_pct": 0.4,
+   "valid_pct": 99.6,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.02,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2024.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2024-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.04580000415444374,
+      0.1613999903202057
+     ],
+     [
+      -0.05380000174045563,
+      0.13600000739097595
+     ],
+     [
+      -0.07500000298023224,
+      0.09919998794794083
+     ]
+    ],
+    "swir": [
+     [
+      0.006599992513656616,
+      0.2157999873161316
+     ],
+     [
+      0.03099999576807022,
+      0.25839999318122864
+     ],
+     [
+      -0.04580000415444374,
+      0.1613999903202057
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
+   }
+  },
+  {
+   "year": 2025,
+   "sensor": "sentinel-2c",
+   "scene_id": "S2C_18LYK_20250622_0_L2A+S2C_18LZK_20250622_0_L2A",
+   "scene_ids": [
+    "S2C_18LYK_20250622_0_L2A+S2C_18LZK_20250622_0_L2A"
+   ],
+   "date": "2025-06-22",
+   "cloud_pct": 0.31,
+   "valid_pct": 99.69,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.02,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2025.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2025-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.05320000275969505,
+      0.13539999723434448
+     ],
+     [
+      -0.05740000307559967,
+      0.11479999870061874
+     ],
+     [
+      -0.07780000567436218,
+      0.0811999961733818
+     ]
+    ],
+    "swir": [
+     [
+      -0.013100005686283112,
+      0.17800000309944153
+     ],
+     [
+      0.032399989664554596,
+      0.2619999945163727
+     ],
+     [
+      -0.05320000275969505,
+      0.13539999723434448
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
+   }
+  },
+  {
+   "year": 2026,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_18LYK_20260712_0_L2A+S2B_18LZK_20260712_0_L2A",
+   "scene_ids": [
+    "S2B_18LYK_20260712_0_L2A+S2B_18LZK_20260712_0_L2A"
+   ],
+   "date": "2026-07-12",
+   "cloud_pct": 0.21,
+   "valid_pct": 99.79,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.01,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2026.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2026-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      -0.055500004440546036,
+      0.15950000286102295
+     ],
+     [
+      -0.05900000408291817,
+      0.13659998774528503
+     ],
+     [
+      -0.07660000026226044,
+      0.10099998861551285
+     ]
+    ],
+    "swir": [
+     [
+      -0.0122000053524971,
+      0.22339999675750732
+     ],
+     [
+      0.03009999543428421,
+      0.2721000015735626
+     ],
+     [
+      -0.055500004440546036,
+      0.15950000286102295
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
+   }
+  }
+ ],
+ "gaps": {
+  "1985": "no scene under 60% cloud inside the season window in either archive",
+  "1987": "no scene under 60% cloud inside the season window in either archive"
+ },
+ "series": {
+  "years": [
+   1986,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2c",
+   "sentinel-2b"
+  ],
+  "valid_frac": [
+   0.9578,
+   1.0,
+   0.9895,
+   1.0,
+   1.0,
+   0.9754,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.8913,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   1.0,
+   0.9969,
+   1.0,
+   1.0,
+   0.9935,
+   0.9726,
+   1.0,
+   0.9957,
+   1.0,
+   0.986,
+   0.9928,
+   0.9999,
+   0.9896,
+   0.9994,
+   0.9993,
+   0.9413,
+   0.9735,
+   0.997,
+   0.9991,
+   0.9921,
+   0.9976,
+   0.9923,
+   0.9813,
+   0.9869,
+   0.992
+  ],
+  "envelope_km2": 78.6501,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    3.0672,
+    0.3816,
+    0.0774,
+    0.0747,
+    24.7689,
+    4.6368,
+    0.0,
+    2.7072,
+    4.9068,
+    0.0432,
+    0.0225,
+    0.7866,
+    0.3051,
+    0.234,
+    0.0189,
+    0.0315,
+    10.1331,
+    0.0828,
+    1.0782,
+    0.2502,
+    1.1142,
+    2.0295,
+    1.7361,
+    7.5015,
+    1.7127,
+    2.9691,
+    7.2405,
+    7.1316,
+    8.1684,
+    12.1023,
+    0.5976,
+    0.0585,
+    7.4295,
+    7.4079,
+    6.2253,
+    0.225,
+    0.6399,
+    0.5175,
+    2.7315,
+    1.9215
+   ],
+   "rf": [
+    7.6455,
+    0.6102,
+    0.207,
+    0.0,
+    15.3891,
+    25.7373,
+    0.0,
+    2.1501,
+    5.1219,
+    0.0243,
+    0.0531,
+    0.9351,
+    0.3123,
+    0.4428,
+    0.0,
+    0.0,
+    0.1782,
+    0.1188,
+    0.4167,
+    0.0225,
+    0.4086,
+    0.7056,
+    0.6039,
+    2.5794,
+    0.5139,
+    1.0152,
+    3.4263,
+    3.6954,
+    7.0596,
+    13.8069,
+    15.9813,
+    12.1086,
+    23.6565,
+    26.2809,
+    24.9192,
+    20.277,
+    18.8748,
+    21.2922,
+    20.3031,
+    22.0725
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    29.2185,
+    28.0368,
+    33.4278,
+    35.6544,
+    36.3168,
+    36.4581,
+    33.8526,
+    36.2196,
+    35.2692,
+    36.7002
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.25406,
+    0.31898,
+    0.40675,
+    0.39845,
+    0.20368,
+    0.22558,
+    0.3981,
+    0.26517,
+    0.25175,
+    0.39091,
+    0.38596,
+    0.30252,
+    0.33877,
+    0.32292,
+    0.41871,
+    0.41343,
+    0.24309,
+    0.41622,
+    0.3015,
+    0.43667,
+    0.39817,
+    0.32562,
+    0.36317,
+    0.26508,
+    0.38497,
+    0.33551,
+    0.2771,
+    0.35129,
+    0.30501,
+    0.34109,
+    0.22638,
+    0.50299,
+    0.17289,
+    0.16715,
+    0.18247,
+    0.40092,
+    0.4807,
+    0.42267,
+    0.59086,
+    0.46892
+   ],
+   "mndwi": [
+    -0.48814,
+    -0.53378,
+    -0.53834,
+    -0.53811,
+    -0.43757,
+    -0.39026,
+    -0.55725,
+    -0.5127,
+    -0.50417,
+    -0.55636,
+    -0.55893,
+    -0.52038,
+    -0.54431,
+    -0.5394,
+    -0.55917,
+    -0.5609,
+    -0.54397,
+    -0.53683,
+    -0.5186,
+    -0.54845,
+    -0.54026,
+    -0.54245,
+    -0.53923,
+    -0.5009,
+    -0.55671,
+    -0.54961,
+    -0.5123,
+    -0.53318,
+    -0.5044,
+    -0.42422,
+    -0.45829,
+    -0.75589,
+    -0.39998,
+    -0.36921,
+    -0.38519,
+    -0.68467,
+    -0.71739,
+    -0.68938,
+    -0.72526,
+    -0.67362
+   ],
+   "bsi": [
+    0.19249,
+    0.18862,
+    0.12947,
+    0.1375,
+    0.18906,
+    0.147,
+    0.14018,
+    0.20657,
+    0.20948,
+    0.1345,
+    0.15341,
+    0.18329,
+    0.18494,
+    0.18377,
+    0.14172,
+    0.13602,
+    0.24375,
+    0.1213,
+    0.17457,
+    0.10677,
+    0.1417,
+    0.1953,
+    0.16512,
+    0.20261,
+    0.15186,
+    0.18153,
+    0.19872,
+    0.14747,
+    0.15801,
+    0.07324,
+    0.19264,
+    0.29592,
+    0.18001,
+    0.15856,
+    0.17815,
+    0.28863,
+    0.27812,
+    0.29098,
+    0.20861,
+    0.23829
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 40,
+    "pelt": {
+     "breaks": [
+      1991,
+      1994,
+      2013,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 1990,
+       "mean": 0.9002,
+       "slope": -0.9282
+      },
+      {
+       "start": 1991,
+       "end": 1993,
+       "mean": 9.8019,
+       "slope": -12.3845
+      },
+      {
+       "start": 1994,
+       "end": 2012,
+       "mean": 1.9823,
+       "slope": 0.0894
+      },
+      {
+       "start": 2013,
+       "end": 2016,
+       "mean": 8.6607,
+       "slope": 1.5622
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 2.7754,
+       "slope": -0.1833
+      }
+     ],
+     "penalty": 27.249803,
+     "sigma": 1.569184,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1991,
+      2003,
+      2016,
+      2019
+     ],
+     "k": 0.784592,
+     "h": 6.276735,
+     "sigma": 1.569184,
+     "target": -0.0216
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 40,
+    "pelt": {
+     "breaks": [
+      1990,
+      1993,
+      2016,
+      2019
+     ],
+     "segments": [
+      {
+       "start": 1986,
+       "end": 1989,
+       "mean": 2.8209,
+       "slope": -3.7193
+      },
+      {
+       "start": 1990,
+       "end": 1992,
+       "mean": 13.7088,
+       "slope": 12.8686
+      },
+      {
+       "start": 1993,
+       "end": 2015,
+       "mean": 1.2949,
+       "slope": 0.1017
+      },
+      {
+       "start": 2016,
+       "end": 2018,
+       "mean": 13.9656,
+       "slope": -0.8492
+      },
+      {
+       "start": 2019,
+       "end": 2026,
+       "mean": 22.2095,
+       "slope": -0.6341
+      }
+     ],
+     "penalty": 60.7572,
+     "sigma": 2.343101,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      1991,
+      2019
+     ],
+     "k": 1.171551,
+     "h": 9.372404,
+     "sigma": 2.343101,
+     "target": 0.1782
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2020
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2019,
+       "mean": 30.2277,
+       "slope": 2.1047
+      },
+      {
+       "start": 2020,
+       "end": 2026,
+       "mean": 35.7816,
+       "slope": 0.0287
+      }
+     ],
+     "penalty": 39.49535,
+     "sigma": 2.391137,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 1.195569,
+     "h": 9.564549,
+     "sigma": 2.391137,
+     "target": 0.6624
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1990,
+    "method": "pelt",
+    "series": "rf",
+    "score": 60.7572
+   },
+   {
+    "year": 1991,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 6.276735
+   },
+   {
+    "year": 1991,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 27.249803
+   },
+   {
+    "year": 1991,
+    "method": "cusum",
+    "series": "rf",
+    "score": 9.372404
+   },
+   {
+    "year": 1993,
+    "method": "pelt",
+    "series": "rf",
+    "score": 60.7572
+   },
+   {
+    "year": 1994,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 27.249803
+   },
+   {
+    "year": 2003,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 6.276735
+   },
+   {
+    "year": 2013,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 27.249803
+   },
+   {
+    "year": 2016,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 6.276735
+   },
+   {
+    "year": 2016,
+    "method": "pelt",
+    "series": "rf",
+    "score": 60.7572
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 27.249803
+   },
+   {
+    "year": 2019,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 6.276735
+   },
+   {
+    "year": 2019,
+    "method": "cusum",
+    "series": "rf",
+    "score": 9.372404
+   },
+   {
+    "year": 2019,
+    "method": "pelt",
+    "series": "rf",
+    "score": 60.7572
+   },
+   {
+    "year": 2020,
+    "method": "pelt",
+    "series": "unet",
+    "score": 39.49535
+   }
+  ],
+  "gaps": {
+   "1985": "no scene under 60% cloud inside the season window in either archive",
+   "1987": "no scene under 60% cloud inside the season window in either archive"
+  },
+  "dense": null
+ },
+ "dem": {
+  "site_id": "las-bambas",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -10.0,
+   10.0
+  ],
+  "geoid_offset_m": -0.851,
+  "stable_bias_m": 0.809,
+  "noise_floor_m": 2.725,
+  "tau_m": 5.45,
+  "stable_ground_px": 100602,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 36741708,
+  "fill_volume_m3": 47936964,
+  "envelope": {
+   "cut_m3": 36741708,
+   "fill_m3": 47936964,
+   "cut_km2": 4.9572,
+   "fill_km2": 5.8536,
+   "min_m": -22.8,
+   "max_m": 31.5
+  },
+  "window": {
+   "cut_m3": 149394736,
+   "fill_m3": 230434960,
+   "cut_km2": 19.4886,
+   "fill_km2": 28.152,
+   "min_m": -74.1,
+   "max_m": 61.2
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/306/552.png",
+   "terrain/11/612/1104.png",
+   "terrain/11/612/1105.png",
+   "terrain/11/613/1104.png",
+   "terrain/11/613/1105.png",
+   "terrain/12/1224/2208.png",
+   "terrain/12/1224/2209.png",
+   "terrain/12/1224/2210.png",
+   "terrain/12/1225/2208.png",
+   "terrain/12/1225/2209.png",
+   "terrain/12/1225/2210.png",
+   "terrain/12/1226/2208.png",
+   "terrain/12/1226/2209.png",
+   "terrain/12/1226/2210.png",
+   "terrain/13/2448/4416.png",
+   "terrain/13/2448/4417.png",
+   "terrain/13/2448/4418.png",
+   "terrain/13/2448/4419.png",
+   "terrain/13/2448/4420.png",
+   "terrain/13/2448/4421.png",
+   "terrain/13/2449/4416.png",
+   "terrain/13/2449/4417.png",
+   "terrain/13/2449/4418.png",
+   "terrain/13/2449/4419.png",
+   "terrain/13/2449/4420.png",
+   "terrain/13/2449/4421.png",
+   "terrain/13/2450/4416.png",
+   "terrain/13/2450/4417.png",
+   "terrain/13/2450/4418.png",
+   "terrain/13/2450/4419.png",
+   "terrain/13/2450/4420.png",
+   "terrain/13/2450/4421.png",
+   "terrain/13/2451/4416.png",
+   "terrain/13/2451/4417.png",
+   "terrain/13/2451/4418.png",
+   "terrain/13/2451/4419.png",
+   "terrain/13/2451/4420.png",
+   "terrain/13/2451/4421.png",
+   "terrain/13/2452/4416.png",
+   "terrain/13/2452/4417.png",
+   "terrain/13/2452/4418.png",
+   "terrain/13/2452/4419.png",
+   "terrain/13/2452/4420.png",
+   "terrain/13/2452/4421.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 3396.0,
+   "max": 4713.0
+  },
+  "cop_stats": {
+   "min": 3393.2,
+   "max": 4725.5
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/las-bambas/dem/cop.png",
+   "kind": "dem",
+   "bytes": 382239,
+   "sha256": "7961e784f35ea3e314d7bc1f506dc243e047e78571bf70ab65947eef92e7d1c4"
+  },
+  {
+   "path": "sites/las-bambas/dem/delta.png",
+   "kind": "dem",
+   "bytes": 1439466,
+   "sha256": "d44b756ae488eaee532fa05c9bb93f39e8e7c427ea840a04f8ee066e5deab935"
+  },
+  {
+   "path": "sites/las-bambas/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 430177,
+   "sha256": "066ce1bd9e617e7f11864b64245122c607bb21e7bd1a797fe23fb3da90c6f765"
+  },
+  {
+   "path": "sites/las-bambas/frames/1986-swir.webp",
+   "kind": "frame",
+   "bytes": 54800,
+   "sha256": "f0380f1f5b6b425f77cff095393c1901831eac9b4c8105deda99b031e870028f",
+   "year": 1986
+  },
+  {
+   "path": "sites/las-bambas/frames/1986.webp",
+   "kind": "frame",
+   "bytes": 113898,
+   "sha256": "4bd9beefb5cfc7a63573efc5efe1ddc85146f2703949256107ca2297dc917c16",
+   "year": 1986
+  },
+  {
+   "path": "sites/las-bambas/frames/1988-swir.webp",
+   "kind": "frame",
+   "bytes": 63316,
+   "sha256": "7620e7dfbc0e7463745d46897ff95adad8aa4d395a651f4980efe92242798f10",
+   "year": 1988
+  },
+  {
+   "path": "sites/las-bambas/frames/1988.webp",
+   "kind": "frame",
+   "bytes": 157748,
+   "sha256": "3dccbc4c423804465e5162e85f0470039af24ecbfe80b1e2451b0aa315ff7b29",
+   "year": 1988
+  },
+  {
+   "path": "sites/las-bambas/frames/1989-swir.webp",
+   "kind": "frame",
+   "bytes": 62384,
+   "sha256": "4f662ee664e9aef8e4018b6ce5dea5ef65adfbec7f34ac943bca2a37a653556b",
+   "year": 1989
+  },
+  {
+   "path": "sites/las-bambas/frames/1989.webp",
+   "kind": "frame",
+   "bytes": 147668,
+   "sha256": "9089f0c0879ad7f3480d77a93d2645172fd8493b5f12a55c668ede6fa72e55a1",
+   "year": 1989
+  },
+  {
+   "path": "sites/las-bambas/frames/1990-swir.webp",
+   "kind": "frame",
+   "bytes": 64952,
+   "sha256": "47df68fb47b3cba02674f634cfd823e1fd5aafa50d89125222a1ce19db00207d",
+   "year": 1990
+  },
+  {
+   "path": "sites/las-bambas/frames/1990.webp",
+   "kind": "frame",
+   "bytes": 161470,
+   "sha256": "b3e4749fc52d9c8ce32a56697b0191ae3d150bd1530c872f3a9027aa2e434720",
+   "year": 1990
+  },
+  {
+   "path": "sites/las-bambas/frames/1991-swir.webp",
+   "kind": "frame",
+   "bytes": 60666,
+   "sha256": "60bfc90b2a178b3b5b7494b76d77d9866d2892487d4374babddb385666ef86b8",
+   "year": 1991
+  },
+  {
+   "path": "sites/las-bambas/frames/1991.webp",
+   "kind": "frame",
+   "bytes": 155394,
+   "sha256": "29062656229ee6552701cc6001cd8635bd8efecd3bdac9c1cd49111287184b57",
+   "year": 1991
+  },
+  {
+   "path": "sites/las-bambas/frames/1992-swir.webp",
+   "kind": "frame",
+   "bytes": 59660,
+   "sha256": "d5248ccac71ad24820a4be003f1b0b86766d346cc4e88789731491a919410e61",
+   "year": 1992
+  },
+  {
+   "path": "sites/las-bambas/frames/1992.webp",
+   "kind": "frame",
+   "bytes": 120736,
+   "sha256": "541e415157dee35b385b0e90395e6a233c494cac575195df8861b32ca07696f1",
+   "year": 1992
+  },
+  {
+   "path": "sites/las-bambas/frames/1993-swir.webp",
+   "kind": "frame",
+   "bytes": 64342,
+   "sha256": "40bb365ad35dabb0cce2efefe6244cae61f032f7f681d81295982648f3c2cdcf",
+   "year": 1993
+  },
+  {
+   "path": "sites/las-bambas/frames/1993.webp",
+   "kind": "frame",
+   "bytes": 163710,
+   "sha256": "582db2236bd5cc1f3c7bf8d32b618a8f287f338a6e357e611181b06604a475f6",
+   "year": 1993
+  },
+  {
+   "path": "sites/las-bambas/frames/1994-swir.webp",
+   "kind": "frame",
+   "bytes": 62616,
+   "sha256": "aea983d343c6839e968852a4ff19cc46014363f9df05792e1412678947e9745c",
+   "year": 1994
+  },
+  {
+   "path": "sites/las-bambas/frames/1994.webp",
+   "kind": "frame",
+   "bytes": 157382,
+   "sha256": "f4a9cc1459a41e2dcac86e5d698423f78648cbb6b9a8e4bc50d4c6f764416da0",
+   "year": 1994
+  },
+  {
+   "path": "sites/las-bambas/frames/1995-swir.webp",
+   "kind": "frame",
+   "bytes": 60966,
+   "sha256": "3e4cf6a657c4c011beb69a3772a50a44f059806144c0f63d9e813f614f8184c0",
+   "year": 1995
+  },
+  {
+   "path": "sites/las-bambas/frames/1995.webp",
+   "kind": "frame",
+   "bytes": 155052,
+   "sha256": "a03b5fcf3d4798c49310ab829a2a530cfd084a1fa4bc71c38334bd3b84b20883",
+   "year": 1995
+  },
+  {
+   "path": "sites/las-bambas/frames/1996-swir.webp",
+   "kind": "frame",
+   "bytes": 63912,
+   "sha256": "a7c94bd3ebf753dce66c9a0ef88b19d64899fc2c79cb5bd571af4aa1263cdb81",
+   "year": 1996
+  },
+  {
+   "path": "sites/las-bambas/frames/1996.webp",
+   "kind": "frame",
+   "bytes": 158998,
+   "sha256": "4c407d0685b55f408a3c8e6aabdd6b409d984045290546ebb6fb93e630095c0c",
+   "year": 1996
+  },
+  {
+   "path": "sites/las-bambas/frames/1997-swir.webp",
+   "kind": "frame",
+   "bytes": 54956,
+   "sha256": "dbc98f7e3e5577a1a68692430912769812435efdbb2e8ba65c16744e26826fc8",
+   "year": 1997
+  },
+  {
+   "path": "sites/las-bambas/frames/1997.webp",
+   "kind": "frame",
+   "bytes": 121554,
+   "sha256": "119834e0249d96f6109ba5fb9bd1999a63c49deb8e42525d80e5893b4eba0f10",
+   "year": 1997
+  },
+  {
+   "path": "sites/las-bambas/frames/1998-swir.webp",
+   "kind": "frame",
+   "bytes": 63854,
+   "sha256": "e5a549ece922eee7a6578c66c4e6a6a02de817f3a4ea157a654d1ddeba272f23",
+   "year": 1998
+  },
+  {
+   "path": "sites/las-bambas/frames/1998.webp",
+   "kind": "frame",
+   "bytes": 162688,
+   "sha256": "bead41f273f23f677cc38cae0ec27549b51e1672104f5ecd411a00a77a97a436",
+   "year": 1998
+  },
+  {
+   "path": "sites/las-bambas/frames/1999-swir.webp",
+   "kind": "frame",
+   "bytes": 63828,
+   "sha256": "75823addaf7ccb1c5853e7054936a380a1e52695ff8f50e1501bc080b2624aeb",
+   "year": 1999
+  },
+  {
+   "path": "sites/las-bambas/frames/1999.webp",
+   "kind": "frame",
+   "bytes": 154234,
+   "sha256": "a8f29e60bd6c1d630b3d02af3f256e864872e4841717c437c7c2e78caad008a0",
+   "year": 1999
+  },
+  {
+   "path": "sites/las-bambas/frames/2000-swir.webp",
+   "kind": "frame",
+   "bytes": 63098,
+   "sha256": "c3a62cd048b4a1db6b1c04427a71a1577c61306ba21e17550ab79ae7b639e2d1",
+   "year": 2000
+  },
+  {
+   "path": "sites/las-bambas/frames/2000.webp",
+   "kind": "frame",
+   "bytes": 156750,
+   "sha256": "969e07877f9d736915b45a23ea87aa5e5e310fe44b6afe93709863cee0bc50d0",
+   "year": 2000
+  },
+  {
+   "path": "sites/las-bambas/frames/2001-swir.webp",
+   "kind": "frame",
+   "bytes": 67616,
+   "sha256": "c7c6db38b5794e96b489c54fb7c85379c0f99f365acb3b289fc044599df3e9d6",
+   "year": 2001
+  },
+  {
+   "path": "sites/las-bambas/frames/2001.webp",
+   "kind": "frame",
+   "bytes": 171274,
+   "sha256": "76140b1b64dcad19575f6c6fe0520d0b41137ad435928cfc226c29a3f2a3bb26",
+   "year": 2001
+  },
+  {
+   "path": "sites/las-bambas/frames/2002-swir.webp",
+   "kind": "frame",
+   "bytes": 64372,
+   "sha256": "68e654bab2fb3448f50f672748129fb98d2914c4131d4ea38dea448f92acf2d5",
+   "year": 2002
+  },
+  {
+   "path": "sites/las-bambas/frames/2002.webp",
+   "kind": "frame",
+   "bytes": 163228,
+   "sha256": "b937f2a89d5c619d2791bc9767cec7a5bf1bb9791ed5e7aa2fb49e38004af9a7",
+   "year": 2002
+  },
+  {
+   "path": "sites/las-bambas/frames/2003-swir.webp",
+   "kind": "frame",
+   "bytes": 68302,
+   "sha256": "9663574761e74f84b778792cd8e24d8338cb8b5129fa5c945a776893148107c0",
+   "year": 2003
+  },
+  {
+   "path": "sites/las-bambas/frames/2003.webp",
+   "kind": "frame",
+   "bytes": 171200,
+   "sha256": "e15875c9235f4b06c98441d6605b8e14a1d988a3dc2d7c2850edad43b99ca212",
+   "year": 2003
+  },
+  {
+   "path": "sites/las-bambas/frames/2004-swir.webp",
+   "kind": "frame",
+   "bytes": 68132,
+   "sha256": "a0b122562c42c6882d4b7727abf910db7dc8bbfd484f902580981223ff627e72",
+   "year": 2004
+  },
+  {
+   "path": "sites/las-bambas/frames/2004.webp",
+   "kind": "frame",
+   "bytes": 174814,
+   "sha256": "89388b8c5ea95717c9e36f7b5182c1d3917f6d53688e3d75415c3f3cff02d099",
+   "year": 2004
+  },
+  {
+   "path": "sites/las-bambas/frames/2005-swir.webp",
+   "kind": "frame",
+   "bytes": 61026,
+   "sha256": "356c091c8df92eb100fa3a96371d814d820eab106bc410e161fc64d61249ce92",
+   "year": 2005
+  },
+  {
+   "path": "sites/las-bambas/frames/2005.webp",
+   "kind": "frame",
+   "bytes": 157654,
+   "sha256": "499e2ed5cc09e679d9d003b1c0011e54dce166650a077ac0639da7506869712b",
+   "year": 2005
+  },
+  {
+   "path": "sites/las-bambas/frames/2006-swir.webp",
+   "kind": "frame",
+   "bytes": 69138,
+   "sha256": "1a5dba2e1b47f9efd5b8e2cf143e1bf46d28d8c31d7173e2c294b4815a0a6462",
+   "year": 2006
+  },
+  {
+   "path": "sites/las-bambas/frames/2006.webp",
+   "kind": "frame",
+   "bytes": 171118,
+   "sha256": "cc63f0ea8e812dd92117afa6c6b78de6c142c514d05780648981d8ad0b61384f",
+   "year": 2006
+  },
+  {
+   "path": "sites/las-bambas/frames/2007-swir.webp",
+   "kind": "frame",
+   "bytes": 66364,
+   "sha256": "f67e589415f84d9d1212adcc4c26cf7b3841eeb908583213a9eaabb0c3d8a083",
+   "year": 2007
+  },
+  {
+   "path": "sites/las-bambas/frames/2007.webp",
+   "kind": "frame",
+   "bytes": 163704,
+   "sha256": "0d7259f37f695611776e73290417f4a556f7cc40d55c36e2e95e81a5c29c0951",
+   "year": 2007
+  },
+  {
+   "path": "sites/las-bambas/frames/2008-swir.webp",
+   "kind": "frame",
+   "bytes": 66328,
+   "sha256": "953e382817c644f6f12473ee061d4c022091d182da68bfdba1cfb845babb4fa5",
+   "year": 2008
+  },
+  {
+   "path": "sites/las-bambas/frames/2008.webp",
+   "kind": "frame",
+   "bytes": 166518,
+   "sha256": "46a64c915a0b8b299cab8df0c91a042da7225908e82348abe4510701ee3337ec",
+   "year": 2008
+  },
+  {
+   "path": "sites/las-bambas/frames/2009-swir.webp",
+   "kind": "frame",
+   "bytes": 66582,
+   "sha256": "cbe92f5cc5d46ddf100fc350b0d98cd8324438077ce53749329ec6bd6962df3e",
+   "year": 2009
+  },
+  {
+   "path": "sites/las-bambas/frames/2009.webp",
+   "kind": "frame",
+   "bytes": 166278,
+   "sha256": "b0d3691de79525251943e7a478a8ec171a8d924615e4d629734372d09a7324de",
+   "year": 2009
+  },
+  {
+   "path": "sites/las-bambas/frames/2010-swir.webp",
+   "kind": "frame",
+   "bytes": 64534,
+   "sha256": "536cc5c68ca2d989342165e7da177efb36417a4682b5242f66ba11a3dd06c00d",
+   "year": 2010
+  },
+  {
+   "path": "sites/las-bambas/frames/2010.webp",
+   "kind": "frame",
+   "bytes": 161794,
+   "sha256": "cab2d7c546edc8bdc4e63207403f35e0552fddd931fe75eb3c46c1bd1b0865e8",
+   "year": 2010
+  },
+  {
+   "path": "sites/las-bambas/frames/2011-swir.webp",
+   "kind": "frame",
+   "bytes": 70616,
+   "sha256": "d9a8aa063aa7a4f8bd16e2005cb2ed4d524897d03f29042a7caa5bc683848729",
+   "year": 2011
+  },
+  {
+   "path": "sites/las-bambas/frames/2011.webp",
+   "kind": "frame",
+   "bytes": 169042,
+   "sha256": "289b4a13cca8481a233595ae4ab3a7a669c44bcec555fd40080b67b4e37e1ec8",
+   "year": 2011
+  },
+  {
+   "path": "sites/las-bambas/frames/2012-swir.webp",
+   "kind": "frame",
+   "bytes": 67656,
+   "sha256": "5363cbbc335b756c59b310592bb4ad39c4c415f1c62accd9c9731647b49e933f",
+   "year": 2012
+  },
+  {
+   "path": "sites/las-bambas/frames/2012.webp",
+   "kind": "frame",
+   "bytes": 160970,
+   "sha256": "816854321d55a18890924315949c69df6e7c9d8abbc755854ffd11abd780b388",
+   "year": 2012
+  },
+  {
+   "path": "sites/las-bambas/frames/2013-swir.webp",
+   "kind": "frame",
+   "bytes": 67098,
+   "sha256": "bf4174ad198a37e3c4efbf10089f2c3cbf8831c0b90e5829733487b2d6a6e3ad",
+   "year": 2013
+  },
+  {
+   "path": "sites/las-bambas/frames/2013.webp",
+   "kind": "frame",
+   "bytes": 153188,
+   "sha256": "df8a4c2fd5956b5de74c1dbec2faec7dd88ff463dfdb01967fc93db8ffc4008b",
+   "year": 2013
+  },
+  {
+   "path": "sites/las-bambas/frames/2014-swir.webp",
+   "kind": "frame",
+   "bytes": 67832,
+   "sha256": "7cf7d73d736f91f921875655ca1d0c2524b1b8416f0a133724bc5b84d05eae6c",
+   "year": 2014
+  },
+  {
+   "path": "sites/las-bambas/frames/2014.webp",
+   "kind": "frame",
+   "bytes": 144436,
+   "sha256": "da97514d379e9229bb3d10f16f6ee07b615cb411f52c7f58d2ebdcceb1fdd2d8",
+   "year": 2014
+  },
+  {
+   "path": "sites/las-bambas/frames/2015-swir.webp",
+   "kind": "frame",
+   "bytes": 63572,
+   "sha256": "dbf3e245250f10b037bec4861970630175b839320b829325ba0fe3e48b8d254e",
+   "year": 2015
+  },
+  {
+   "path": "sites/las-bambas/frames/2015.webp",
+   "kind": "frame",
+   "bytes": 137706,
+   "sha256": "286073230eedb2a66fc181fc9bb6466c8df879e2539d9d3fc78602d397278eba",
+   "year": 2015
+  },
+  {
+   "path": "sites/las-bambas/frames/2016-swir.webp",
+   "kind": "frame",
+   "bytes": 61498,
+   "sha256": "72ef4be29a574fe5b5eb98926fcedbe81c637b899466dfc0dfaf043cbaf275a4",
+   "year": 2016
+  },
+  {
+   "path": "sites/las-bambas/frames/2016.webp",
+   "kind": "frame",
+   "bytes": 119130,
+   "sha256": "496a308fbca01ea9aa055b9aa994866176ac08d0a13d44993166edd4d6383827",
+   "year": 2016
+  },
+  {
+   "path": "sites/las-bambas/frames/2017-swir.webp",
+   "kind": "frame",
+   "bytes": 78916,
+   "sha256": "ed533ddd1386ba06fec360ee97258030a1ccb26093140130ec24201d535ff490",
+   "year": 2017
+  },
+  {
+   "path": "sites/las-bambas/frames/2017.webp",
+   "kind": "frame",
+   "bytes": 257868,
+   "sha256": "b6a0026a6c6bdea4480edc2c0e5ad365401d20e1e01e6b5c1c882ea0baf44928",
+   "year": 2017
+  },
+  {
+   "path": "sites/las-bambas/frames/2018-swir.webp",
+   "kind": "frame",
+   "bytes": 83894,
+   "sha256": "96fd58396e51b7a8311ad987f133b9eaaeb5b18222ff661d69d5f46502050732",
+   "year": 2018
+  },
+  {
+   "path": "sites/las-bambas/frames/2018.webp",
+   "kind": "frame",
+   "bytes": 257230,
+   "sha256": "935511a30e029ec2ed774eaea4ce2ca1c26fe455856f275150c418e5513fc043",
+   "year": 2018
+  },
+  {
+   "path": "sites/las-bambas/frames/2019-swir.webp",
+   "kind": "frame",
+   "bytes": 89904,
+   "sha256": "09083ed2d825f16de19e360afc246b993965eb160e3b09f541d602f1793c61f5",
+   "year": 2019
+  },
+  {
+   "path": "sites/las-bambas/frames/2019.webp",
+   "kind": "frame",
+   "bytes": 289488,
+   "sha256": "e2616c0dc5791a80c4351d1b660b32477c918c9b3e0ce36e0c933fd876ac2ed3",
+   "year": 2019
+  },
+  {
+   "path": "sites/las-bambas/frames/2020-swir.webp",
+   "kind": "frame",
+   "bytes": 80580,
+   "sha256": "ba9be4661bd6b1967ee42d8fbdd4a797bc5f3000bc9fc8505f9e01f8ea089533",
+   "year": 2020
+  },
+  {
+   "path": "sites/las-bambas/frames/2020.webp",
+   "kind": "frame",
+   "bytes": 259040,
+   "sha256": "2e275e39d32c1eb2a245f084c1d208bf27506b101b3ce1226c30e54bd7ddee41",
+   "year": 2020
+  },
+  {
+   "path": "sites/las-bambas/frames/2021-swir.webp",
+   "kind": "frame",
+   "bytes": 73138,
+   "sha256": "3924fab67476f8c6163119fc91eae0b77e3576edcd30870868018345aa20356a",
+   "year": 2021
+  },
+  {
+   "path": "sites/las-bambas/frames/2021.webp",
+   "kind": "frame",
+   "bytes": 236548,
+   "sha256": "89ff7424e562efa6c7d6470e5b160f209c42c9261d4b4a7707665a9aecb45c50",
+   "year": 2021
+  },
+  {
+   "path": "sites/las-bambas/frames/2022-swir.webp",
+   "kind": "frame",
+   "bytes": 87786,
+   "sha256": "7ad852fdfac68748e360d523acb84f1dddeeffbde90268ba04d24d552d98e5f5",
+   "year": 2022
+  },
+  {
+   "path": "sites/las-bambas/frames/2022.webp",
+   "kind": "frame",
+   "bytes": 287818,
+   "sha256": "ca71ae7855ba943e1c25befc0a7d37496dcabd831fd07e7bb7f4538637c877ab",
+   "year": 2022
+  },
+  {
+   "path": "sites/las-bambas/frames/2023-swir.webp",
+   "kind": "frame",
+   "bytes": 85200,
+   "sha256": "ce61597a92391f3acc19ffb37d425218cf3dced2227f5841a303d2ab21223aee",
+   "year": 2023
+  },
+  {
+   "path": "sites/las-bambas/frames/2023.webp",
+   "kind": "frame",
+   "bytes": 277238,
+   "sha256": "9652880c1223171b04507b5b47f9f63c0c34189a11214b945a889e20fde2c238",
+   "year": 2023
+  },
+  {
+   "path": "sites/las-bambas/frames/2024-swir.webp",
+   "kind": "frame",
+   "bytes": 84202,
+   "sha256": "189976eda01552a3db74c4aaf9a043eb15f46ce18cbd2383d60e6f1fb91e86c7",
+   "year": 2024
+  },
+  {
+   "path": "sites/las-bambas/frames/2024.webp",
+   "kind": "frame",
+   "bytes": 281002,
+   "sha256": "5e6b5d66470e6d758985b14c67d5ece4ec6e35cbcde18981d90d7cc041faa14c",
+   "year": 2024
+  },
+  {
+   "path": "sites/las-bambas/frames/2025-swir.webp",
+   "kind": "frame",
+   "bytes": 86706,
+   "sha256": "7eea1396c52a4fd0febd8ca68b7581cdc959a0572d73e265fef34982e96325fa",
+   "year": 2025
+  },
+  {
+   "path": "sites/las-bambas/frames/2025.webp",
+   "kind": "frame",
+   "bytes": 266000,
+   "sha256": "8484352f25663f68f1a5d6d311bb61a3c2bcb324edb6503adf4fb16c38095214",
+   "year": 2025
+  },
+  {
+   "path": "sites/las-bambas/frames/2026-swir.webp",
+   "kind": "frame",
+   "bytes": 84880,
+   "sha256": "fa5fb4a34942bdbb24c0d8ca88c2f95cb6470dbc120b1a22446e4f12bdc6386d",
+   "year": 2026
+  },
+  {
+   "path": "sites/las-bambas/frames/2026.webp",
+   "kind": "frame",
+   "bytes": 275328,
+   "sha256": "49aa4b56bd2432dcb1ed46ef798751ead158fb2bfa1fb4aa2f0e0011ea5d5ba1",
+   "year": 2026
+  },
+  {
+   "path": "sites/las-bambas/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 4043,
+   "sha256": "36dfd6629dbf8719333f9081f38d0c2d2624f28b417b6ebd00024c99d5b3f7f7",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 7617,
+   "sha256": "a52a28659cdb34b6e1111f1f65d6b1bef5eaec56376667055115d46f5106d023",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 871,
+   "sha256": "4a565096b17f1e8008767ebc1c143adbd1047193b5aff7745b266910117d7259",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 1117,
+   "sha256": "182fe36374fe16975b516e9033a6359431ee43ba7037b3922f34647bbfa80498",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 365,
+   "sha256": "86b7b66d640f4e5b620cbd9bd8c9f51f73ffe80402d86b06d9f68a67d36d39d7",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 445,
+   "sha256": "131d974671e29c6b434b431ee6dc08c48efccdb8702ffff1a12aa57fa3389130",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 346,
+   "sha256": "bb104af9b4ec1388d67eca02d18c0cb5774a771bc406e693925cf11b63a7e44d",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 360,
+   "sha256": "7d7be9dfb374d3be02b64e717e1953afa5e20dab4b4006848bb4046dc9a178ad",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 16617,
+   "sha256": "aa135efb5c2fcfd5d7d20c7c219bf7872614d0bc630eefbd8401812ab3555300",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 10308,
+   "sha256": "35a81a2506eea079a2ee4785b98178ff862f03345ba91b0002c860d215c998c6",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 5991,
+   "sha256": "c263398efe7c61cc05570170bd358b7cbbe56aa945e8ee56544d9aabff3239cc",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 12528,
+   "sha256": "d7a8ebaa9efd68a78c7e072eab42c6bffad5c8a4b7dccb62262d199d9803fd87",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 181,
+   "sha256": "5c412a51a7cc650183d0e8eda292c12902921f6e78faeeafef9943c9efb58dba",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 244,
+   "sha256": "b19f29dcd0d996862297a06bf3413256adc22ad37fc5429162af96aa3447c547",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 2996,
+   "sha256": "a9c5505b1be48555ce39cceaf32aa80950c68f43bfe566c551c2bcaf324cd2b3",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 2748,
+   "sha256": "ed229f295a19b2f4216c0f4b183cce8024f9193740dc199c43fa4358f4203f51",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 4593,
+   "sha256": "c936524aa05217c7fbe03fcebde23280e3dd6ba3a41e90ad962c0e8408733d07",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 4782,
+   "sha256": "90d57b273b0fec2aadbc49fc758cfe71db6ab3376a7c2acf331bfd28002f7c46",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 324,
+   "sha256": "3a6f9ce67ec6a9669ec7d1df565e88f6bd3d642b081274f45fea074031424e28",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 278,
+   "sha256": "892a9843011b0b7f61f962fe7b44ba9b159c0ee97b7d6ce787bf442003a24d5e",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 278,
+   "sha256": "e1789f36bdfeed2d908064ba0435b6218cc818f8c35ae69b5776ad4c9d4ebfaa",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 415,
+   "sha256": "129ae5f71065b1dca9f919db07a457c08898c52d5faad5178c8f6d7cf562dab3",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 1375,
+   "sha256": "7be8f822bceb19cc47bdd038bfd23ec3892599696fa7abfb8d36132437d7dc24",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 1414,
+   "sha256": "a8782d02be3733354e50a00e9c647209af18f593fe849e1d04052588d34dac4d",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 853,
+   "sha256": "b9bdcd738d88b4368fc3b6fe73a89c8d94aab0d734398cb53941e83ef1470fc3",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 691,
+   "sha256": "09058cbda9146b73fcc3666c83650522c571f3e6adafaf3d10042646acae2f2d",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 827,
+   "sha256": "038aaf251d4f6948b4d8cc32b24e563632d6a516be4be7a52ecbfff1460d9250",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 815,
+   "sha256": "3e5bfda6537e202b1ba00c0cf80183828fb474b7c5e1704c51f726c55cafb55c",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 178,
+   "sha256": "08fcb80436c74dd51094bb6cb2b74a8a469856139491fbf3fdbd0286fdba7b2c",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 172,
+   "sha256": "8490480b8b95e4560057e3ca2f6652f6c04e472a45c8264789d55a7176f13b16",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 332,
+   "sha256": "7f9065f6462cb834f61b13007c0dbbe74e031bb67a3382681a6f45b8577990f5",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 209,
+   "sha256": "8b0c1c5dedc8099707ad91f217abdf2c40d6ba09f29e1f2856a8b273bda944c8",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 8188,
+   "sha256": "4440f7e9608a4d35da9b2324d769ffa6bf1eefc22e2627250227dcecc45e23c8",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 623,
+   "sha256": "d3d0d404f8dd701c3c63dde517caabf15b080f84a000878a7c213c1f4be467f6",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 300,
+   "sha256": "2fbe58b91a1ac555d7d7bd84ab1a38109c95fbd03a52672fdf565347d17d7948",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 269,
+   "sha256": "68aabcc9557e5e956bf23ac26381bf330340ed74600a1b620513f9d156bdb995",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 1368,
+   "sha256": "a9d94deeef69f04c76dd998a6cd4d4497a823ffeaecba51b124578d663256fa3",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 1118,
+   "sha256": "164c498a1c2f3ebb45c97ae4e6e8e3a1c11448d62c169ec0f777692e6ac7a72a",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 362,
+   "sha256": "f5442cbe7fadb03bb41a7c9df01316bd032556e0c6336bda3ecca9b84684be96",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 228,
+   "sha256": "e21aad4c2330249293895f131ae2ce9c2c1be98e2914329c6f92b8ad994b5c2f",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 651,
+   "sha256": "f26f49e07a18e3b2656b1524d3d61f97ea5c4450dfdfbebe1fff71f573cc996d",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 406,
+   "sha256": "c69930c1db8a24256eedc5618a8c7f1de1d4ba429ca51e2c4729a85e3ee880b8",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 1360,
+   "sha256": "c5633ae9a1b27d6d2ed6a239028efa3115402bb3b1f66a8d21fd5c24efcf48f2",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 680,
+   "sha256": "224befb18cdb97c47950ab40293f67b702d6a1a32b43321faa8f60fd97bae703",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 925,
+   "sha256": "cc6204f70d68acedc30445bcc6a093ac2e75d2a4393ada1aa11739f98cc0e0da",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 648,
+   "sha256": "7ccc5bee69b933e37053e07d6784ffb38547d6a663f901a920d0b7c5f03d5fad",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 5209,
+   "sha256": "ee4ac8eb8db2f03eb8d848b543d35866e91b6f18f605d232b2dd06302c73a57d",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 2096,
+   "sha256": "e6d183c46042880edf34bcd1964368b1cb6bd5f9b642b7e9c7cd919fcbd702e2",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 858,
+   "sha256": "77c86aa23bbf835107b7d8aa94bf501e752318410dfb047fd663f767b6351a4f",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 422,
+   "sha256": "a976662c35242d719d8362ef4cfd686f50d7e70b3c735813128b81c0d6c698ca",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 1635,
+   "sha256": "375bf70149a4f7846450ad4316456413d0c2b7de18a0928f749f303dc3cf14a9",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 931,
+   "sha256": "723d60b463d322f96e3c090bd3e2ced3d0e0e6623153d4e31e4a348070f56f4a",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 2766,
+   "sha256": "c5dbfe61c93e3997583d54ce59fab39a027c1ef10d2a07bcce97bd8836c0940d",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 1515,
+   "sha256": "62b8708ccf5aced56f2945d9594ea82d1de28fcb8e91460acd70bf8e4301ab19",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 2170,
+   "sha256": "b0ad977be45eef590aa60c9b709dda66a5d45bb5b51fdec5b503b67f25340a98",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 1470,
+   "sha256": "ff5dce7d09ce773bb774a96c74f59fe353fc9fbabfbffd916c176649d1b9de24",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 2544,
+   "sha256": "983df6c28b27623e0edcb30d0893fd0cf033509d890be512737d54a7ddc9aed9",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 2353,
+   "sha256": "fa87763bd3e5cb1aa26f9d9f30bbb26d05c0ed0618b46e25805db37d4048b9b2",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 2513,
+   "sha256": "11959650bcf4b56051a4f50da3ca918bbae85670b480447c6e299f8b66e3324c",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 2535,
+   "sha256": "1c8bbf1111658af8c643d73de8a1b5e8043b51ab41215936a108659cca221233",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 1093,
+   "sha256": "3645c723bef893463e30e57a7f4f222e7902f30085603ab657c29b0b3af8762a",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 3291,
+   "sha256": "24826d78f34b5cb464e3823a32cac06bb9395ce01c54f9157076d0030a79e3f5",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 3783,
+   "sha256": "17d6756ddc6c4fd7721424ef68eafab9f90a41b80e101ab4993ccf91f62ec204",
+   "year": 2017,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 220,
+   "sha256": "4ad60f03853603096631cb3d0734a262945bb907e08403d4a4133862333c25ac",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 2557,
+   "sha256": "96d4dd935d054b7bfd0ac2bc5ea41bdf9731fef57e94450ca5cd8ff4f61f6b80",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 2958,
+   "sha256": "2d731fc6b8ae075b30858f6a6f7354f34ad448cac5317924982d76013dafa29f",
+   "year": 2018,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 6654,
+   "sha256": "4cf84f74efe1ae740d5efeb675e07da1a56a09c71084d69f716b31257ce0c7df",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 4206,
+   "sha256": "752c61dfd501fcb454ccceabdaef615e3cc0b56f8b801107b1698a8400af4147",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 3065,
+   "sha256": "cddf779c077293143195b8fa12bec75d7bca46018ff04e5a8c2a82f2a008292f",
+   "year": 2019,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 4927,
+   "sha256": "d2d4fefebf0ce6ec5c1c6e252f8283f4a8be9b775df5b9f28e912dbedcce8f4e",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 4654,
+   "sha256": "2e8eea48113c2c2750413db7b7dcad7091b746e222c34fd6f017555011c49868",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 2419,
+   "sha256": "9b5b8ed728e0290032c5a68829495d2884cf4617fc9af14c3e44bb38b2ff0a20",
+   "year": 2020,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 5538,
+   "sha256": "40b2d921813a36e640b272959ae0275105b371b36c4809f9a3a5c09ef23eb5c5",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 5701,
+   "sha256": "454c4e5d85685c9e665068ff0c39d986e7f5ee6691a5baf7974d9cd8f6930846",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 4315,
+   "sha256": "5e401a9eb1a3732b40239b8474fdf412861f468943c3d091e10928ca6ff44b22",
+   "year": 2021,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 346,
+   "sha256": "b440d89f031122b21bfc791b1ff3d820f6e31eb76ad08bbc8bf3eaa00f418036",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 3104,
+   "sha256": "45ee6192efd37215cb963aa0f759281ab843af14c3e79e7dc65ef2be519a8ef0",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 2796,
+   "sha256": "c7f04f6c3bd6b9ef6dc7fed944eafed2f8947fdb0275cfe3ce288a6c480f7d9c",
+   "year": 2022,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 509,
+   "sha256": "06f8e2d87e345561fd9e125d098b6ac9b369deab8cef1b63ddef0e41a340eaaf",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 2920,
+   "sha256": "484ab5b8f6dceea24d1e81affa183330691afb92dfb89892a38bf35ac8e624cf",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 2871,
+   "sha256": "ed4943564e9939afb84aa033b5f99e433ad2e6a5e4de9fc36236474dc2081cd0",
+   "year": 2023,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 482,
+   "sha256": "d86d97bfccf90d0b09a00efc5fdeed803a0c6a2574d5391c62ef6478c42a4739",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 3252,
+   "sha256": "a0bf1b6a3f692c763ec11ed7c195bd2ca8c474ea150bf9da35238c67b937cfcc",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 3207,
+   "sha256": "c0e0cfcca21eec9912b04d35574973fb61095a5c7e54e1ddf21d1037df33f638",
+   "year": 2024,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 1225,
+   "sha256": "4a8e9ce23832fc2b8b354b6c27ffe98fa4a50d58ef3a462f266c260cabcc469f",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 2922,
+   "sha256": "8c51dae83547c6d27b4194442407beaec840a6a10684d54a2225e483429bbc35",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 3192,
+   "sha256": "78bdf269399da938e33b28c79f7692d21ad33b2206e5b5eac8ad3fc429a6330f",
+   "year": 2025,
+   "method": "unet"
+  },
+  {
+   "path": "sites/las-bambas/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 873,
+   "sha256": "868ff7ea505f5d79553003eaeea9c495d7678cf2b0f4fd604bb2dfcdf30c667e",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/las-bambas/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 3209,
+   "sha256": "9a9745d32d64cb246d5cd126e0ea21e9c9934d8b848ed8989f4027cd01c551b4",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
+   "path": "sites/las-bambas/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 3225,
+   "sha256": "0271d96a1f27fb47e3da8e4e1e6769ac17f25c30feb528c28033a41942654ac2",
+   "year": 2026,
+   "method": "unet"
+  },
   {
    "path": "sites/las-bambas/polygons.geojson",
    "kind": "polygons",
    "bytes": 9078,
    "sha256": "abc4286567b058d33634bcf3190c8fd89e33299d389c2a61d4e271825346cc61"
+  },
+  {
+   "path": "sites/las-bambas/terrain/10/306/552.png",
+   "kind": "terrain",
+   "bytes": 151678,
+   "sha256": "fb80e88e1c53c5a53ad759a6833a2cdf60ad5f89e79731b40914eeb803f7d3ed"
+  },
+  {
+   "path": "sites/las-bambas/terrain/11/612/1104.png",
+   "kind": "terrain",
+   "bytes": 141484,
+   "sha256": "c20a447f1f7f0aa7a7268c33ce0acaf3b91e0d268df1fa5bfb71130dbb63af60"
+  },
+  {
+   "path": "sites/las-bambas/terrain/11/612/1105.png",
+   "kind": "terrain",
+   "bytes": 142826,
+   "sha256": "c9f29a71ac5c71a709a1b73347e3af44de3d74c3e4b6b9ea6596f30afbec6a11"
+  },
+  {
+   "path": "sites/las-bambas/terrain/11/613/1104.png",
+   "kind": "terrain",
+   "bytes": 147462,
+   "sha256": "18b952f8134347a6343e148240cdc824f78fdbe689f82244e3af72e097e6dde5"
+  },
+  {
+   "path": "sites/las-bambas/terrain/11/613/1105.png",
+   "kind": "terrain",
+   "bytes": 146327,
+   "sha256": "2dff92e0065fe29bb5b5afe707dceda6a525d88f16483f621d39c91208bb70cb"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1224/2208.png",
+   "kind": "terrain",
+   "bytes": 134169,
+   "sha256": "7a95613767cc2cf46b5b3b86f0d92d664b7a6c293764605f4c9a50c77bad9615"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1224/2209.png",
+   "kind": "terrain",
+   "bytes": 134178,
+   "sha256": "3a26834201a0e2bdb22ff55f4551d6cb28d57f02043e950021227b8633956933"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1224/2210.png",
+   "kind": "terrain",
+   "bytes": 136485,
+   "sha256": "ddae83eca1d5593ef1aac922cde3c4766c82e88c368b592d2676fe2eee105e92"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1225/2208.png",
+   "kind": "terrain",
+   "bytes": 132796,
+   "sha256": "76f27358bcd0a96d80d302d069e414ba1e93d178027760127c37157b01fd87cb"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1225/2209.png",
+   "kind": "terrain",
+   "bytes": 134530,
+   "sha256": "29c93c5cc5666dc59d7188c86b3b7141747ef5048d340ce419e2b2c83c388c09"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1225/2210.png",
+   "kind": "terrain",
+   "bytes": 134430,
+   "sha256": "3f732900656f90886c508c02165ca6d786246af16355bdf6441ccd175a265b31"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1226/2208.png",
+   "kind": "terrain",
+   "bytes": 138760,
+   "sha256": "93183ed611cb9749c1a0e70f975ba31cdf85048a167e348c4f7a301781c22ce5"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1226/2209.png",
+   "kind": "terrain",
+   "bytes": 137386,
+   "sha256": "0fd109323a834f1bea6f9d1c250c502b8003615323c8d255248aaadf6ae82f73"
+  },
+  {
+   "path": "sites/las-bambas/terrain/12/1226/2210.png",
+   "kind": "terrain",
+   "bytes": 134475,
+   "sha256": "5484601104307142607a13d113a1878086922420f2819d9d8acd8db4cc20d3aa"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2448/4416.png",
+   "kind": "terrain",
+   "bytes": 126429,
+   "sha256": "785d9db70bf1495cd7bbe17d2cd3547f2f1a0fa0d26ee3636154133264fc0ec1"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2448/4417.png",
+   "kind": "terrain",
+   "bytes": 119424,
+   "sha256": "49f4bccfce7310c60128b4f3269dcf1898b8f1d09336a5d00487324e90bdbc92"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2448/4418.png",
+   "kind": "terrain",
+   "bytes": 119441,
+   "sha256": "89622b61ec43dba156e223ac7b8a214f15f0baac851a662ea97bbb2f8dcf5426"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2448/4419.png",
+   "kind": "terrain",
+   "bytes": 126432,
+   "sha256": "b41d88212ceec6ad13b5298ac166843d38031b211ea293bd0629056922b9f289"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2448/4420.png",
+   "kind": "terrain",
+   "bytes": 127539,
+   "sha256": "ca5e5f882911f290cfab32eeeb105329429ab0e4d2f755438401d86ae34bebd2"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2448/4421.png",
+   "kind": "terrain",
+   "bytes": 127889,
+   "sha256": "ff0d21e567a9ead87787e3c2479c483326a60b1ae5c3e0dbad748faf5a06eced"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2449/4416.png",
+   "kind": "terrain",
+   "bytes": 127592,
+   "sha256": "929608b59ddfb34520894b7c393162fe7c9c4788cece1d5a6780084197cb27bc"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2449/4417.png",
+   "kind": "terrain",
+   "bytes": 122013,
+   "sha256": "047c7717f1ea56da606050dcb02fd65f46b14f7186c298a7c590bb7908b65bfd"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2449/4418.png",
+   "kind": "terrain",
+   "bytes": 121220,
+   "sha256": "77f17035c8237ac63ca06eee9ea734de2c56025fbdc7e82e409046e29ab25d3d"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2449/4419.png",
+   "kind": "terrain",
+   "bytes": 126362,
+   "sha256": "8bf34aa93020735d06717a6f125d819cb0b3fa99a59f3eff8d1348c59937389e"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2449/4420.png",
+   "kind": "terrain",
+   "bytes": 122192,
+   "sha256": "fdd10f73ca8d3c6e10aa55434a1d5712bab187708f194b3c45b27d49f918f6e3"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2449/4421.png",
+   "kind": "terrain",
+   "bytes": 126554,
+   "sha256": "3d954044083dca526548b8280bf1da6742df796ac09c0b98cbcc92f3680e7170"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2450/4416.png",
+   "kind": "terrain",
+   "bytes": 117393,
+   "sha256": "63dfd4a8cc11ebdee233cfdccfe2f9f15842e438ef61ad0284172244121f04ff"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2450/4417.png",
+   "kind": "terrain",
+   "bytes": 122129,
+   "sha256": "01f3c7996778b850e16ae1736d59328e4c9fae15ee1abdaeb464dc973e8d8794"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2450/4418.png",
+   "kind": "terrain",
+   "bytes": 120417,
+   "sha256": "43cbe3ac993185c87185d50685a62678aa6e692aaee90b159082a519a136b12b"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2450/4419.png",
+   "kind": "terrain",
+   "bytes": 123776,
+   "sha256": "264e6142cfa206d3d0e47ec246927c41dda8b860008a5136cfed8e65fe2fbbc9"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2450/4420.png",
+   "kind": "terrain",
+   "bytes": 123567,
+   "sha256": "80dd98e757133aeb0677510c9d80eb3dbaa51d8f9e3c847ffdaae326ac2bba85"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2450/4421.png",
+   "kind": "terrain",
+   "bytes": 120585,
+   "sha256": "d199b9155b7bfbfa0365c6bad34a7bbf5ecc04aa689db98709655fb556a4c315"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2451/4416.png",
+   "kind": "terrain",
+   "bytes": 124994,
+   "sha256": "f55fb61b55400eb002bd02643ac98e06720c592c0f7e3a77f5cbf5b921591c25"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2451/4417.png",
+   "kind": "terrain",
+   "bytes": 120918,
+   "sha256": "e0c0e755e3a071bfff968efd27c130f42069c4ce5c6b25fb047658ded9792c08"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2451/4418.png",
+   "kind": "terrain",
+   "bytes": 122917,
+   "sha256": "b89b885dcc391285a3e086d1f98fb7dc0f5d00fffca16c938edc5978c3de2af3"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2451/4419.png",
+   "kind": "terrain",
+   "bytes": 126590,
+   "sha256": "a0a0424a35cdc582a71f8374ca72ff765a1beb6140f032616a2710ca990d4e09"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2451/4420.png",
+   "kind": "terrain",
+   "bytes": 125710,
+   "sha256": "1978eac767203ced4271d9a719da80634a03fd2217570feda85a323d4374bf04"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2451/4421.png",
+   "kind": "terrain",
+   "bytes": 125045,
+   "sha256": "e09b80502fe8cf57b69bf729dd6c2fa904a35d034a8fec4a1ceb4fd15f1c8025"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2452/4416.png",
+   "kind": "terrain",
+   "bytes": 127115,
+   "sha256": "4af9475be26833034ca6eee08a7d0e9993c2151ce4f8bb06a589cf28e988f817"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2452/4417.png",
+   "kind": "terrain",
+   "bytes": 128554,
+   "sha256": "773e7147757864b3926fcac28f6daee0024c905c19314e30a5bef6d67d7b7c87"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2452/4418.png",
+   "kind": "terrain",
+   "bytes": 128511,
+   "sha256": "77a558b06d4cbc148dfe3e431046f4729e13716d9999a9d1078280e0ec38ccdb"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2452/4419.png",
+   "kind": "terrain",
+   "bytes": 127934,
+   "sha256": "a58cdcdae2633532051aba9334fb2bd0ec94e67ae64dd87c1cab1f6f9dd8f48d"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2452/4420.png",
+   "kind": "terrain",
+   "bytes": 127172,
+   "sha256": "430c78f7095629ffed825dbfeb2c6cd8a3d98ea83fffd22350dad0957aca20e5"
+  },
+  {
+   "path": "sites/las-bambas/terrain/13/2452/4421.png",
+   "kind": "terrain",
+   "bytes": 120807,
+   "sha256": "d91f9caf1f71906653f55ac97c4aebe20915eac318776328c7c8caac7a0198f4"
   }
  ]
 }

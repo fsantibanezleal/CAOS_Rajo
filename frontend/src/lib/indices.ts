@@ -48,16 +48,23 @@ function nd(a: Float32Array, b: Float32Array, valid: Uint8Array): Float32Array {
       continue;
     }
     const s = a[i]! + b[i]!;
-    out[i] = s > 1e-6 ? (a[i]! - b[i]!) / s : NaN;
+    // a normalised difference of two near-zero reflectances (deep shadow, dark water) is noise, not a
+    // value: the same floors are used offline (data-pipeline/train/baselines.py)
+    out[i] = s > ND_FLOOR ? (a[i]! - b[i]!) / s : NaN;
   }
   return out;
 }
+
+/** Denominator floors shared with the Python mirrors: reflectance sums below these give NaN. */
+export const ND_FLOOR = 0.02;
+export const BSI_FLOOR = 0.04;
+export const RATIO_FLOOR = 0.01;
 
 function ratio(a: Float32Array, b: Float32Array, valid: Uint8Array): Float32Array {
   const n = a.length;
   const out = new Float32Array(n);
   for (let i = 0; i < n; i++) {
-    out[i] = valid[i] && b[i]! > 1e-4 ? a[i]! / b[i]! : NaN;
+    out[i] = valid[i] && b[i]! > RATIO_FLOOR ? a[i]! / b[i]! : NaN;
   }
   return out;
 }
@@ -85,7 +92,7 @@ export function computeIndex(bands: Bands, name: IndexName): Float32Array {
         }
         const a = swir16[i]! + red[i]!;
         const b = nir[i]! + blue[i]!;
-        out[i] = a + b > 1e-6 ? (a - b) / (a + b) : NaN;
+        out[i] = a + b > BSI_FLOOR ? (a - b) / (a + b) : NaN;
       }
       return out;
     }

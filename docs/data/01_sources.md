@@ -49,6 +49,29 @@ Terrarium decoding: `elevation_m = (R * 256 + G + B / 256) - 32768`.
 | OpenFreeMap (OpenMapTiles over OpenStreetMap) | `tiles.openfreemap.org/styles/{dark,positron}` | yes: CORS `*`, no key, no request limits | attribution "OpenFreeMap (c) OpenMapTiles Data from OpenStreetMap" (MapLibre adds it automatically) |
 | CARTO raster basemaps | `basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png` | yes: CORS `*` | fallback only; CARTO free basemap terms, attribution "(c) OpenStreetMap contributors (c) CARTO" |
 
+## Production tables and operator disclosures (the site facts)
+
+Every fact on a site card carries a source URL (Contract 1 rejects a fact without one). The
+production numbers come from two primary tables and from operator disclosures; trade press is used
+only where the operator's own page is unreachable, and the card then names the outlet in the text.
+
+| Source | Content used | Access | License and attribution |
+|---|---|---|---|
+| U.S. Geological Survey, *Mineral Commodity Summaries 2026*, Copper (February 2026) | world mine production 2024 and 2025 (estimated) and reserves by country, in thousand metric tons of copper content; Arizona about 70% of US output | `pubs.usgs.gov/periodicals/mcs2026/mcs2026-copper.pdf` (the server refuses non-browser clients) | public domain, cite USGS |
+| Cochilco (Comision Chilena del Cobre), *Produccion Chilena de Cobre de Mina por Empresa*, annual workbook 1960 to 2025 | fine copper per operation for 2024 and 2025 and the first year with reported production, for the eleven Chilean copper sites (Los Bronces is reported inside Anglo American Sur, together with El Soldado) | `cochilco.cl/web/historico-produccion-de-cobre-y-molibdeno/` (XLSX, unit "Miles TM") | Chilean government statistics, cite Cochilco |
+| Freeport-McMoRan operations pages (North America, South America, Indonesia) | Morenci (open pit since 1939, ownership, 2015 mill expansion), Cerro Verde (ownership 55.08%, 2015 expansion, 2018 permit), Grasberg (final open-pit phase mined in 2019, the three underground mines, PTFI ownership) | `fcx.com/operations/...` | company disclosure |
+| MMG Limited, *Fourth Quarter Production Report* for the three months ended 31 December 2025 (22 January 2026) | Las Bambas 410,834 t of copper in concentrate in 2025, +27% on 2024 | `mmg.com` (PDF) | company disclosure (Hong Kong listing announcement) |
+| Compania Minera Antamina, "Quienes somos" and the 16 December 2025 export release | altitude 4,300 m, products, shareholders; 2025 exports US$ 3,916 million FOB, 5.45% of Peru's exports (ADEX Data Trade) | `antamina.com` | company disclosure |
+| Rio Tinto plc, Form 6-K, fourth quarter 2025 production results (21 January 2026) | Oyu Tolgoi 345 kt of copper in concentrate in 2025 (Rio Tinto share, 66%), +61% on 2024 | `sec.gov/Archives/edgar/data/0000863064/000086306426000006/ex1_2025-q4results.htm` | SEC filing, public |
+| Ivanhoe Mines, "Ivanhoe Mines Provides 2025 Production Results, 2026 Production Guidance" (15 January 2026) | Kamoa-Kakula 388,838 t of copper in concentrate in 2025; 14.175 Mt milled at 3.15% Cu; 2026 guidance 380,000 to 420,000 t | `ivanhoemines.com` | company disclosure |
+| PGE GiEK, Kopalnia Wegla Brunatnego Belchatow pages (Polish) | largest open-pit mine in Poland, in operation since 17 January 1975; 38.5 Mt/yr target reached 1988; about 30 Mt/yr today from the Belchatow and Szczercow fields; first Szczercow coal 17 August 2009; reserves to 2038 | `pgegiek.pl`, `kwbbelchatow.pgegiek.pl` | company disclosure |
+| Tourism Western Australia, "BHP Mt Whaleback Mine Tour" | "the world's largest single open-cut iron ore mine", discovered in 1957 by Stan Hilditch; used because `bhp.com` serves a bot wall to non-browser clients | `westernaustralia.com` | state agency page; the card attributes the wording to Tourism Western Australia |
+| IDEX Online, "Open-Pit Mining Ends at Udachnaya Pipe; Production Moves Underground" (27 July 2015) | ALROSA's statements: open-pit mining ended in 2015 at 640 m depth; underground mine targeted at 4 Mt of ore per year from 2019; used because ALROSA's English site no longer resolves | `idexonline.com` | trade press reporting the operator's release; the card attributes it |
+
+Facts that found no primary or attributable source were dropped from the cards rather than shown
+unsourced (Collahuasi's 4,400 m, Los Bronces' 3,500 m, Spence's SGO year, Bingham Canyon's 2013
+Manefay slide, Morenci as "largest US producer", Las Bambas "since 2016").
+
 ## Rejected sources, and why
 
 | Source | Reason |

@@ -1,0 +1,122 @@
+{
+ "site_id": "quebrada-blanca",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -121.3,
+  121.3
+ ],
+ "geoid_offset_m": -0.902,
+ "stable_bias_m": -4.322,
+ "noise_floor_m": 2.018,
+ "tau_m": 4.035,
+ "stable_ground_px": 119020,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 260741312,
+ "fill_volume_m3": 887837760,
+ "envelope": {
+  "cut_m3": 260741312,
+  "fill_m3": 887837760,
+  "cut_km2": 5.6196,
+  "fill_km2": 21.249,
+  "min_m": -217.3,
+  "max_m": 176.1
+ },
+ "window": {
+  "cut_m3": 413283712,
+  "fill_m3": 1133505664,
+  "cut_km2": 29.3553,
+  "fill_km2": 57.0672,
+  "min_m": -217.3,
+  "max_m": 176.1
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/315/572.png",
+  "terrain/10/315/573.png",
+  "terrain/10/316/572.png",
+  "terrain/10/316/573.png",
+  "terrain/11/631/1145.png",
+  "terrain/11/631/1146.png",
+  "terrain/11/632/1145.png",
+  "terrain/11/632/1146.png",
+  "terrain/11/633/1145.png",
+  "terrain/11/633/1146.png",
+  "terrain/12/1263/2291.png",
+  "terrain/12/1263/2292.png",
+  "terrain/12/1263/2293.png",
+  "terrain/12/1264/2291.png",
+  "terrain/12/1264/2292.png",
+  "terrain/12/1264/2293.png",
+  "terrain/12/1265/2291.png",
+  "terrain/12/1265/2292.png",
+  "terrain/12/1265/2293.png",
+  "terrain/12/1266/2291.png",
+  "terrain/12/1266/2292.png",
+  "terrain/12/1266/2293.png",
+  "terrain/13/2527/4582.png",
+  "terrain/13/2527/4583.png",
+  "terrain/13/2527/4584.png",
+  "terrain/13/2527/4585.png",
+  "terrain/13/2527/4586.png",
+  "terrain/13/2527/4587.png",
+  "terrain/13/2528/4582.png",
+  "terrain/13/2528/4583.png",
+  "terrain/13/2528/4584.png",
+  "terrain/13/2528/4585.png",
+  "terrain/13/2528/4586.png",
+  "terrain/13/2528/4587.png",
+  "terrain/13/2529/4582.png",
+  "terrain/13/2529/4583.png",
+  "terrain/13/2529/4584.png",
+  "terrain/13/2529/4585.png",
+  "terrain/13/2529/4586.png",
+  "terrain/13/2529/4587.png",
+  "terrain/13/2530/4582.png",
+  "terrain/13/2530/4583.png",
+  "terrain/13/2530/4584.png",
+  "terrain/13/2530/4585.png",
+  "terrain/13/2530/4586.png",
+  "terrain/13/2530/4587.png",
+  "terrain/13/2531/4582.png",
+  "terrain/13/2531/4583.png",
+  "terrain/13/2531/4584.png",
+  "terrain/13/2531/4585.png",
+  "terrain/13/2531/4586.png",
+  "terrain/13/2531/4587.png",
+  "terrain/13/2532/4582.png",
+  "terrain/13/2532/4583.png",
+  "terrain/13/2532/4584.png",
+  "terrain/13/2532/4585.png",
+  "terrain/13/2532/4586.png",
+  "terrain/13/2532/4587.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 3079.0,
+  "max": 4889.0
+ },
+ "cop_stats": {
+  "min": 3076.0,
+  "max": 4891.3
+ }
+}

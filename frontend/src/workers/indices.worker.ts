@@ -12,7 +12,11 @@ import {
   maskArea,
   otsuThreshold,
   percentiles,
+  removeSmall,
 } from '../lib/indices';
+import { rfFeatures } from './features';
+import { forestProb, loadForest } from './forest';
+import { runUnet } from './onnx';
 
 export interface LoadMsg {
   type: 'load';
@@ -46,8 +50,40 @@ export interface SamMsg {
   endmemberMask?: Uint8Array;
   angleRad: number;
 }
-export type RequestBody = LoadMsg | CompositeMsg | IndexMsg | OtsuMsg | KmeansMsg | SamMsg;
+export interface RfMsg {
+  type: 'rf';
+  modelUrl: string; // the flat-array forest file (models/rf/rf-<version>.forest.bin)
+  threshold: number;
+  scale: 1 | 2; // 2 = run on a 2x coarser grid (mean pooled), the default for speed
+}
+export interface UnetMsg {
+  type: 'unet';
+  modelUrl: string;
+  threshold: number;
+  scale: 1 | 2; // 2 = run on a 2x coarser grid (mean pooled), for the WASM fallback
+  prefer?: 'webgpu' | 'wasm' | 'auto';
+}
+export type RequestBody = LoadMsg | CompositeMsg | IndexMsg | OtsuMsg | KmeansMsg | SamMsg | RfMsg | UnetMsg;
 export type Request = RequestBody & { reqId: number };
+
+export interface LearnedResult {
+  type: 'rf' | 'unet';
+  threshold: number;
+  mask: Uint8Array;
+  rgba: Uint8ClampedArray;
+  areaKm2: number;
+  values: Float32Array; // the probability map on the live grid
+  backend: 'webgpu' | 'wasm' | 'js'; // js: the forest traversed in the worker
+  ms: number;
+  windows?: number;
+  scale?: number;
+}
+export interface ProgressMsg {
+  type: 'progress';
+  done: number;
+  total: number;
+  note: string;
+}
 
 export interface IndexResult {
   type: 'index';
@@ -81,7 +117,15 @@ export interface CompositeResult {
   rgba: Uint8ClampedArray;
   clips: [number, number][];
 }
-export type ResponseBody = IndexResult | MaskResult | KmeansResult | CompositeResult | { type: 'loaded' } | { type: 'error'; message: string };
+export type ResponseBody =
+  | IndexResult
+  | MaskResult
+  | KmeansResult
+  | CompositeResult
+  | LearnedResult
+  | ProgressMsg
+  | { type: 'loaded' }
+  | { type: 'error'; message: string };
 export type Response = ResponseBody & { reqId: number };
 
 let data: (Bands & { pixelM: number }) | null = null;
@@ -398,16 +442,138 @@ function sam(msg: SamMsg): MaskResult {
   return { type: 'sam', threshold: msg.angleRad, mask, rgba: maskRgba(mask, n, [125, 211, 252]), areaKm2: maskArea(mask, d0.pixelM), values: angles };
 }
 
+// --- learned methods (M7 random forest, M8 U-Net) ----------------------------------------------------
+
+/** The clean-up every learned mask gets, mirroring common.clean_mask: threshold, a 3 x 3 binary opening
+ *  with scipy's border rule (erosion treats outside as 0, dilation ignores outside), drop blobs under
+ *  minPx (4-connected). */
+export function cleanMask(prob: Float32Array, valid: Uint8Array, w: number, h: number, threshold: number, minPx = 25): Uint8Array {
+  const n = w * h;
+  const raw = new Uint8Array(n);
+  for (let i = 0; i < n; i++) raw[i] = valid[i] && at(prob, i) >= threshold ? 1 : 0;
+  const er = new Uint8Array(n);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      if (x === 0 || y === 0 || x === w - 1 || y === h - 1) continue; // outside counts as 0
+      let all = 1;
+      for (let dy = -1; dy <= 1 && all; dy++) for (let dx = -1; dx <= 1; dx++) if (!raw[(y + dy) * w + x + dx]) { all = 0; break; }
+      er[y * w + x] = all;
+    }
+  }
+  const di = new Uint8Array(n);
+  for (let y = 0; y < h; y++) {
+    for (let x = 0; x < w; x++) {
+      let any = 0;
+      for (let dy = -1; dy <= 1 && !any; dy++) {
+        const yy = y + dy;
+        if (yy < 0 || yy >= h) continue;
+        for (let dx = -1; dx <= 1; dx++) {
+          const xx = x + dx;
+          if (xx < 0 || xx >= w) continue;
+          if (er[yy * w + xx]) { any = 1; break; }
+        }
+      }
+      di[y * w + x] = any;
+    }
+  }
+  return removeSmall(di, w, h, minPx);
+}
+
+function pool2(a: Float32Array, w: number, h: number): Float32Array {
+  const w2 = Math.floor(w / 2);
+  const h2 = Math.floor(h / 2);
+  const out = new Float32Array(w2 * h2);
+  for (let y = 0; y < h2; y++) {
+    for (let x = 0; x < w2; x++) {
+      let s = 0;
+      let c = 0;
+      for (let dy = 0; dy < 2; dy++) for (let dx = 0; dx < 2; dx++) {
+        const v = at(a, (2 * y + dy) * w + 2 * x + dx);
+        if (Number.isFinite(v)) { s += v; c++; }
+      }
+      out[y * w2 + x] = c ? s / c : NaN;
+    }
+  }
+  return out;
+}
+
+function unpool2(a: Float32Array, w2: number, h2: number, w: number, h: number): Float32Array {
+  const out = new Float32Array(w * h);
+  for (let y = 0; y < h; y++) {
+    const sy = Math.min(h2 - 1, y >> 1);
+    for (let x = 0; x < w; x++) out[y * w + x] = at(a, sy * w2 + Math.min(w2 - 1, x >> 1));
+  }
+  return out;
+}
+
+async function rf(msg: RfMsg, progress: (done: number, total: number, note: string) => void): Promise<LearnedResult> {
+  if (!data) throw new Error('no data loaded');
+  const d0 = data;
+  const n = d0.width * d0.height;
+  const t0 = performance.now();
+  const forest = await loadForest(msg.modelUrl);
+  let w = d0.width;
+  let h = d0.height;
+  let bands: Parameters<typeof rfFeatures>[0] = d0;
+  if (msg.scale === 2) {
+    w = Math.floor(d0.width / 2);
+    h = Math.floor(d0.height / 2);
+    const [blue, green, red, nir, swir16, swir22] = [d0.blue, d0.green, d0.red, d0.nir, d0.swir16, d0.swir22].map((c) => pool2(c, d0.width, d0.height));
+    bands = { width: w, height: h, blue: blue!, green: green!, red: red!, nir: nir!, swir16: swir16!, swir22: swir22! };
+  }
+  const planes = rfFeatures(bands);
+  const coarse = forestProb(forest, planes, w * h, (done, total) => progress(done, total, 'rf'));
+  const prob = msg.scale === 2 ? unpool2(coarse, w, h, d0.width, d0.height) : coarse;
+  for (let i = 0; i < n; i++) if (!d0.valid[i]) prob[i] = NaN;
+  const mask = cleanMask(prob, d0.valid, d0.width, d0.height, msg.threshold);
+  return { type: 'rf', threshold: msg.threshold, mask, rgba: maskRgba(mask, n, [244, 114, 182]), areaKm2: maskArea(mask, d0.pixelM), values: prob, backend: 'js', ms: performance.now() - t0, scale: msg.scale };
+}
+
+async function unet(msg: UnetMsg, progress: (done: number, total: number, note: string) => void): Promise<LearnedResult> {
+  if (!data) throw new Error('no data loaded');
+  const d0 = data;
+  const n = d0.width * d0.height;
+  const chans = [d0.blue, d0.green, d0.red, d0.nir, d0.swir16, d0.swir22];
+  let planes = chans;
+  let w = d0.width;
+  let h = d0.height;
+  if (msg.scale === 2) {
+    planes = chans.map((c) => pool2(c, d0.width, d0.height));
+    w = Math.floor(d0.width / 2);
+    h = Math.floor(d0.height / 2);
+  }
+  const r = await runUnet(msg.modelUrl, planes, w, h, { prefer: msg.prefer ?? 'auto', onProgress: (done, total) => progress(done, total, 'unet') });
+  const prob = msg.scale === 2 ? unpool2(r.prob, w, h, d0.width, d0.height) : r.prob;
+  for (let i = 0; i < n; i++) if (!d0.valid[i]) prob[i] = NaN;
+  const mask = cleanMask(prob, d0.valid, d0.width, d0.height, msg.threshold);
+  return { type: 'unet', threshold: msg.threshold, mask, rgba: maskRgba(mask, n, [96, 165, 250]), areaKm2: maskArea(mask, d0.pixelM), values: prob, backend: r.backend, ms: r.ms, windows: r.windows, scale: msg.scale };
+}
+
 function post(res: Response, transfer: ArrayBuffer[] = []): void {
   (self as unknown as Worker).postMessage(res, transfer);
 }
 
+function reply(body: ResponseBody, reqId: number): void {
+  const transfer: ArrayBuffer[] = [];
+  for (const v of Object.values(body)) {
+    if (ArrayBuffer.isView(v)) transfer.push(v.buffer as ArrayBuffer);
+  }
+  post({ ...body, reqId }, transfer);
+}
+
 self.onmessage = (ev: MessageEvent<Request>) => {
   const msg = ev.data;
+  const fail = (e: unknown) => post({ type: 'error', message: e instanceof Error ? e.message : String(e), reqId: msg.reqId });
   try {
     if (msg.type === 'load') {
       data = { width: msg.width, height: msg.height, pixelM: msg.pixelM, valid: msg.valid, ...msg.bands };
       post({ type: 'loaded', reqId: msg.reqId });
+      return;
+    }
+    if (msg.type === 'rf' || msg.type === 'unet') {
+      const progress = (done: number, total: number, note: string) => post({ type: 'progress', done, total, note, reqId: msg.reqId });
+      const job = msg.type === 'rf' ? rf(msg, progress) : unet(msg, progress);
+      job.then((body) => reply(body, msg.reqId)).catch(fail);
       return;
     }
     let body: ResponseBody;
@@ -416,12 +582,8 @@ self.onmessage = (ev: MessageEvent<Request>) => {
     else if (msg.type === 'otsu') body = otsu(msg);
     else if (msg.type === 'kmeans') body = kmeans(msg);
     else body = sam(msg);
-    const transfer: ArrayBuffer[] = [];
-    for (const v of Object.values(body)) {
-      if (ArrayBuffer.isView(v)) transfer.push(v.buffer as ArrayBuffer);
-    }
-    post({ ...body, reqId: msg.reqId }, transfer);
+    reply(body, msg.reqId);
   } catch (e) {
-    post({ type: 'error', message: e instanceof Error ? e.message : String(e), reqId: msg.reqId });
+    fail(e);
   }
 };

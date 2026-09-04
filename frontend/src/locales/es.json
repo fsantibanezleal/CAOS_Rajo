@@ -70,19 +70,160 @@
       "categories": "Categorías",
       "seed": "Semilla (lon, lat)",
       "frames": "Cuadros"
+    },
+    "production": {
+      "title": "Produccion de cobre de mina por pais",
+      "lede": "Donde se ubican los sitios de cobre en el cuadro mundial: produccion de mina en miles de toneladas metricas de cobre contenido, 2025 estimado por el USGS, junto a la cifra que la oficina de estadisticas de Chile reporto para el mismo ano.",
+      "columns": {
+        "country": "Pais",
+        "sites": "Sitios de cobre aqui",
+        "mine2024": "Mina 2024 (kt)",
+        "mine2025": "Mina 2025e (kt)",
+        "reported2025": "Reportado 2025 (kt)",
+        "reserves": "Reservas (kt)"
+      },
+      "other": "Otros paises (entre ellos Mongolia, Brasil, Panama, Uzbekistan)",
+      "world": "Total mundial (redondeado)",
+      "note": "Transcrito de U.S. Geological Survey, Mineral Commodity Summaries 2026, Copper (febrero de 2026), y de la produccion de cobre de mina por empresa de Cochilco (libro 1960 a 2025). La columna USGS 2025 es una estimacion; la columna Cochilco es el total nacional reportado."
     }
   },
   "methods": {
     "title": "Métodos",
-    "lede": "Los doce cálculos que Rajo realiza sobre píxeles reales, con sus ecuaciones, fuentes y advertencias."
+    "lede": "Los doce cálculos que Rajo realiza sobre píxeles reales, con sus ecuaciones, fuentes y advertencias.",
+    "notation": "Notacion: la reflectancia en la banda b se escribe rho_b, en [0, 1] tras la escala y el desplazamiento de nivel 2; se usan los nombres de banda Sentinel-2, con los equivalentes Landsat mapeados en la cocina.",
+    "lanes": {
+      "live": "en vivo en el navegador",
+      "baked": "cocinado offline",
+      "both": "en vivo y cocinado"
+    },
+    "where": "Donde corre",
+    "sources": "Fuentes",
+    "wiki": "La pagina completa en la wiki de documentacion",
+    "benchmark": {
+      "title": "El benchmark retenido",
+      "text": "Cada metodo de delineacion se evalua sobre las mismas teselas con las mismas metricas: IoU, F1, precision y exhaustividad agrupadas por pixel sobre pixeles validos, la IoU media por tesela y F1 de borde a 2 pixeles. La validacion elige el umbral del angulo espectral y nada mas; las teselas de prueba y de catalogo se reportan tal como salen, y todos los sitios del catalogo quedaron fuera del entrenamiento. La documentacion cita el peor brazo.",
+      "generated": "Generado",
+      "engine": "motor",
+      "method": "Metodo",
+      "precision": "Precision",
+      "recall": "Exhaustividad",
+      "perTile": "IoU por tesela",
+      "boundary": "F1 de borde",
+      "haze": "IoU con bruma anadida (reflectancia sumada a todas las bandas)",
+      "missing": "Esta compilacion aun no incluye un benchmark: los modelos siguen entrenando. La tabla aparece cuando llegue models/benchmark.json.",
+      "splits": {
+        "val": "Validacion (usada para elegir el angulo SAM)",
+        "test": "Prueba (particion publicada, sin sitios del catalogo)",
+        "catalog": "Retenido del catalogo (teselas que tocan un sitio Rajo)"
+      },
+      "methods": {
+        "otsu": "M4 suelo desnudo Otsu",
+        "kmeans": "M5 k-means (cluster de mayor BSI)",
+        "sam": "M6 angulo espectral",
+        "rf": "M7 bosque aleatorio",
+        "unet": "M8 U-Net"
+      }
+    }
   },
   "data": {
     "title": "Datos",
-    "lede": "Cada fuente que Rajo lee, su licencia, y los dos contratos de datos entre el horneado fuera de línea y esta página."
+    "lede": "Cada fuente que Rajo lee, su licencia, y los dos contratos de datos entre el horneado fuera de línea y esta página.",
+    "sources": {
+      "title": "Fuentes, probadas y con licencia",
+      "text": "Cada fila fue probada en vivo el 2026-09-02 con un encabezado Origin como el de un navegador. \"Navegador: si\" significa que la respuesta traia CORS para una pagina estatica, que es lo que deja a la app leer los datos directamente; las fuentes sin CORS las lee solo la cocina offline.",
+      "groups": {
+        "imagery": "Imagenes satelitales",
+        "elevation": "Elevacion",
+        "footprints": "Huellas mineras y datos de entrenamiento",
+        "basemaps": "Mapas base y etiquetas",
+        "context": "Tablas de produccion y divulgaciones de operadores (los hechos de cada sitio)"
+      },
+      "columns": {
+        "source": "Fuente",
+        "role": "Rol en Rajo",
+        "access": "Acceso",
+        "browser": "Navegador",
+        "licence": "Licencia y atribucion"
+      },
+      "browser": {
+        "yes": "en vivo en el navegador",
+        "no": "solo cocina",
+        "partial": "cocinado, servido por sitio"
+      },
+      "rejected": "Fuentes rechazadas, y por que: Esri World Imagery (el servicio de teselas heredado esta en estado maduro y el reemplazo requiere cuenta y clave de API); el Global Tailings Portal de GRID-Arendal (la descarga requiere permiso); el DEM Copernicus y Landsat leidos en vivo en el navegador (sin CORS, plomeria de tokens), ambos cocinados offline."
+    },
+    "facts": {
+      "title": "Hechos de los que depende la cocina",
+      "s2": "La reflectancia de superficie Sentinel-2 L2A es (DN + BOA_ADD_OFFSET) / 10000 con BOA_ADD_OFFSET = -1000 desde la linea base 04.00; los items de Earth Search traen escala 0,0001 y desplazamiento -0,1 en los activos de reflectancia; DN 0 es sin dato. Clasificacion de escena: 0 sin dato, 1 saturado o defectuoso, 3 sombra de nube, 8 y 9 nube, 10 cirro fino son invalidos; 11 es nieve o hielo.",
+      "landsat": "La reflectancia de superficie Landsat Collection 2 es DN x 0,0000275 - 0,2; bits de QA_PIXEL 0 relleno, 1 nube dilatada, 2 cirro, 3 nube, 4 sombra de nube, 5 nieve. Landsat 5 hasta 2011, Landsat 7 como puente de 2012 (vacios de linea compuestos desde las siguientes fechas de la temporada), Landsat 8 y 9 desde 2013.",
+      "terrarium": "Decodificacion terrarium: elevacion en metros = R x 256 + G + B / 256 - 32768. Las teselas Copernicus por sitio usan la misma codificacion en zooms 10 a 13.",
+      "qa": "Las mascaras de calidad marcan la propia mina: en una escena Landsat 5 que el archivo califica 0,0% nublada, la mascara QA igual marco 10,7% de una ventana de 24 km y 69% de esos pixeles caian dentro de los poligonos mineros (bancos claros leidos como nube, fondos de rajo como sombra). Los cuadros se renderizan con cada pixel con dato; el veredicto QA se guarda por pixel para los carriles de analisis; una escena se acepta cuando su cobertura de nubes a nivel de escena es a lo sumo 2% y 85% de la ventana esta limpia por QA, marcada qa_flagged."
+    },
+    "contracts": {
+      "title": "Los dos contratos de datos",
+      "ingestion": "Contrato 1, ingesta: data/examples/sites.json declara cada sitio (id, nombres, pais ISO3, categorias, semilla, ventana en km, primer ano, meses de temporada, hechos con URL de fuente). La etapa catalog rechaza una semilla a mas de 3 km de un poligono de referencia, una ventana fuera de 4 a 40 km, un hecho sin fuente o una categoria fuera del vocabulario, y escribe la grilla del sitio (una ventana UTM cuyo ancho es multiplo de tres, para que la grilla Landsat de 30 m anide en la de 10 m) y los poligonos de referencia.",
+      "artifact": "Contrato 2, artefacto: cada etapa escribe un JSON lateral y la etapa export arma un manifiesto por sitio con los bytes y sha256 de cada archivo mas el indice del catalogo. La etapa validate relee todo y rechaza un archivo faltante, un hash desviado, un ano sin cuadro ni razon registrada, una serie que nombra un ano sin cuadro, o dos versiones del motor en un arbol. Los artefactos de texto son LF en toda plataforma y se hashean tal como se guardan.",
+      "guards": "El mismo contrato se refleja en la app (contract.ts), asi la web lee solo lo que un manifiesto declara; la guarda de artefactos corre en CI y antes de cada despliegue, que luego verifica el titulo en vivo, el catalogo y un enlace profundo."
+    },
+    "catalog": {
+      "title": "El catalogo tal como esta cocinado",
+      "text": "{{sites}} sitios en el catalogo, {{frames}} cuadros anuales en disco. Un sitio sin cuadros es uno cuya cocina aun no ha llegado; un hueco es un ano con razon registrada (ninguna escena bajo 60% de nubes dentro de la ventana de temporada en ningun archivo, o todos los candidatos fallaron al leer).",
+      "columns": {
+        "frames": "Cuadros",
+        "span": "Anos",
+        "gaps": "Huecos",
+        "masks": "Metodos de mascara",
+        "series": "Series",
+        "dem": "Delta DEM"
+      },
+      "pending": "aun sin cocinar",
+      "note": "Los chips, los checkpoints y el venv nunca se despliegan; el sitio sirve los artefactos versionados y lee los archivos en vivo."
+    },
+    "attribution": {
+      "title": "Atribucion",
+      "text": "Mostrada textualmente aqui, en el control de atribucion del mapa y en el pie; la cadena de EOX es la redaccion que EOX prescribe.",
+      "derived": "Las capas de poligonos derivadas que Rajo publica (el polygons.geojson por sitio) son CC BY-SA 4.0, como exige el termino share-alike del dataset de Maus."
+    }
   },
   "about": {
     "title": "Acerca de",
-    "lede": "Qué es Rajo, qué no es, quién lo construyó y por qué."
+    "lede": "Qué es Rajo, qué no es, quién lo construyó y por qué.",
+    "body": [
+      "Rajo es un observatorio abierto de los grandes rajos y las pozas de evaporacion de litio del mundo vistos desde satelites a lo largo de cuatro decadas. Muestra cada sitio en un globo 3D con relieve real, reproduce una secuencia anual desde 1985 (Landsat) hasta hoy (Sentinel-2), calcula indices espectrales y minerales en vivo en su navegador desde los GeoTIFF optimizados para la nube, corre una segmentacion aprendida de la huella minera en el navegador, detecta puntos de cambio en la senal de area minada, y muestra donde y cuanta roca se movio entre los modelos de elevacion globales de 2000 y de 2011 a 2015. El cobre chileno es el nucleo del catalogo; los iconos del mundo son el contexto.",
+      "Todo corre en el navegador o viene de un artefacto cocinado y verificado. No hay backend, ni cuenta, y nada se sube a ninguna parte. Cada numero en pantalla se rastrea a un calculo que usted puede repetir o a una fuente nombrada y fechada.",
+      "Rajo es un proyecto CAOS de Felipe Santibanez-Leal: una muestra publica y de codigo abierto de teledeteccion, procesamiento de imagenes, procesamiento de senales y modelos aprendidos aplicados a la mineria, construida con los mismos estandares que el resto de la linea de productos CAOS (contratos de datos compartidos, compuertas por uso, documentacion bilingue, repositorios profundos)."
+    ],
+    "lifecycleTitle": "Como se diseno y construyo",
+    "lifecycle": [
+      "Investigacion primero: cada fuente de datos probada en vivo por CORS, lecturas por rango y licencia; los metodos revisados contra sus articulos primarios (treinta y cinco DOI resueltos); el concepto, los sitios y el destino de despliegue decididos desde esa investigacion y persistidos como dosieres fechados.",
+      "Un plan con cinco ejes (estado, plan, backlog, historia, hallazgos) que cubre todo el producto, validado antes de implementar.",
+      "Los dos contratos de datos, luego la cocina offline por etapas (catalog, scenes, frames, masks, series, dense, dem, export, validate), corrida desacoplada y en paralelo, con una cosecha que rechaza un sitio incompleto.",
+      "Los modelos aprendidos entrenados con las teselas de Jasansky et al. 2024 con todos los sitios del catalogo retenidos, exportados a ONNX con compuertas de paridad, y evaluados sobre las mismas teselas retenidas que los metodos clasicos.",
+      "La app web construida unidad por unidad, cada una con su codigo, sus pruebas, su compuerta por uso y su documentacion en el mismo commit; el modal de arquitectura y las paginas Metodos y Datos transcritas desde la investigacion persistida, nunca de memoria.",
+      "Un despliegue estatico con cambio atomico de release y verificacion de contenido en vivo; versionado X.XX.XXX con changelog y etiqueta por release."
+    ],
+    "rulesTitle": "Reglas que obedece cada numero",
+    "rules": [
+      "Un estiramiento, un umbral, una penalizacion o un angulo se imprime junto a la imagen que produjo; nada se esconde tras un valor por defecto.",
+      "Un ano sin cuadro lleva su razon; una envolvente nublada es un nulo en cada serie, nunca un valor interpolado.",
+      "Las areas y volumenes se miden dentro de la envolvente de referencia (los poligonos mineros dilatados un kilometro); una mascara sobre toda la ventana mediria el desierto.",
+      "Los modelos aprendidos reportan puntajes retenidos sobre teselas que nunca tocaron un sitio del catalogo; la documentacion cita el peor brazo.",
+      "Cada metodo nombra su carril: en vivo en el navegador, cocinado offline, o ambos; la app nunca etiqueta mal lo que hace.",
+      "Las licencias viajan con los datos: los poligonos por sitio siguen CC BY-SA 4.0; las cadenas de Copernicus, USGS, EOX y OpenFreeMap se muestran textuales."
+    ],
+    "versionTitle": "Version",
+    "versionText": "Las versiones siguen X.XX.XXX (mayor = hito de capacidad, menor = funcionalidad completa, parche = correcciones y pulido), registradas en VERSION, el CHANGELOG y una etiqueta git por release. Esta compilacion es",
+    "licenceTitle": "Licencia",
+    "licenceText": "El codigo es MIT. Los datos estan bajo sus propias licencias: datos Copernicus Sentinel (libres, completos y abiertos), USGS Landsat (dominio publico), el DEM Copernicus (atribucion a DLR, Airbus, ESA y la UE), SRTM via OpenTopography, los datasets de Maus 2022 y Jasansky 2024 (CC BY-SA 4.0), Tang y Werner 2023 (CC BY 4.0), EOX Sentinel-2 cloudless (CC BY-NC-SA 4.0) y OpenFreeMap.",
+    "citeTitle": "Como citar",
+    "citeText": "Santibanez-Leal, F. (2026). Rajo: rajos vistos desde la orbita, version {{version}}. https://rajo.fasl-work.com, fuente https://github.com/fsantibanezleal/CAOS_Rajo",
+    "depthTitle": "Donde vive la profundidad",
+    "depth": {
+      "wiki": "La wiki de documentacion en el repositorio: metodos con ecuaciones y DOI, fuentes de datos, el catalogo de sitios, las guias",
+      "modal": "El modal de arquitectura tras el boton de informacion del encabezado: cinco diagramas bilingues de la app, los carriles, el flujo web, la ciencia y los contratos de datos",
+      "repo": "El repositorio: el pipeline, los scripts de entrenamiento, el frontend, las pruebas y compuertas, el changelog",
+      "changelog": "El changelog, una entrada por version"
+    }
   },
   "categories": {
     "copper-chile": "Cobre, Chile",
@@ -114,13 +255,16 @@
       "composite": "compuesto de dos fechas",
       "slc_off": "franjas Landsat 7 rellenadas",
       "snow": "nieve"
-    }
+    },
+    "series": "Series",
+    "seriesTitle": "La serie de area minada, sus puntos de cambio y las mascaras anuales"
   },
   "instrument": {
     "title": "Instrumento",
     "tabs": {
       "look": "Mirar",
-      "find": "Encontrar"
+      "find": "Encontrar",
+      "relief": "Relieve"
     },
     "fetch": "Cargar la escena reciente sin nubes",
     "refetch": "Recargar",
@@ -166,7 +310,22 @@
       "endmemberRef": "Miembro final: espectro medio de los polígonos mineros de referencia en esta escena.",
       "endmemberBare": "Miembro final: el cuartil más brillante de suelo desnudo de esta escena (sin polígonos de referencia en la grilla)."
     },
-    "findNote": "Estas son delineaciones clásicas de suelo intervenido en una escena, no de mineral. Los modelos aprendidos llegan con la siguiente unidad."
+    "findNote": "Delineaciones clasicas de suelo alterado sobre una escena, y dos aprendidas; ninguna es mineral. Las areas se comparan con los poligonos de referencia cuando el sitio los tiene.",
+    "learned": {
+      "title": "Delineacion aprendida",
+      "text": "Dos modelos entrenados fuera de linea con las teselas de Jasansky et al. 2024 corren aqui sobre la misma escena: un bosque aleatorio sobre dieciseis atributos por pixel y una U-Net sobre las seis bandas. Este sitio nunca estuvo en su conjunto de entrenamiento.",
+      "rf": "Bosque aleatorio",
+      "unet": "U-Net",
+      "grid": "Grilla",
+      "threshold": "Umbral de probabilidad",
+      "running": "Ejecutando",
+      "windows": "ventanas",
+      "coarse": "grilla gruesa",
+      "trained": "entrenado",
+      "heldOut": "Teselas de prueba no vistas",
+      "neverSeen": "Todos los sitios del catalogo quedaron fuera del entrenamiento y la validacion, asi que este numero no es dentro de muestra.",
+      "missing": "Esta compilacion no incluye archivos de modelos."
+    }
   },
   "indices": {
     "groups": {
@@ -219,5 +378,83 @@
       "formula": "SWIR2 / NIR",
       "caveat": "El hierro ferroso baja el NIR; responde a roca fresca y botaderos oscuros."
     }
+  },
+  "series": {
+    "title": "Carril de senal",
+    "view": "Vista",
+    "views": {
+      "area": "Area minada",
+      "index": "Indices de la envolvente",
+      "dense": "Sentinel-2 denso"
+    },
+    "method": "Metodo",
+    "showMask": "mostrar la mascara del ano",
+    "date": "Fecha",
+    "year": "Ano",
+    "envelopeMean": "media de la envolvente",
+    "indexAxis": "indice",
+    "hoverHint": "Pase el cursor para ver valores; clic en un ano mueve la linea de tiempo",
+    "envelope": "Envolvente",
+    "penalty": "Penalizacion PELT",
+    "noBreak": "sin quiebre",
+    "noAlarm": "sin alarma",
+    "harmonic": "Quiebres armonicos",
+    "indexNote": "Medias anuales de NDVI, MNDWI y BSI en la envolvente, de los mismos cuadros; anos Landsat sombreados.",
+    "flags": {
+      "cross_sensor": "Los anos Landsat estan fuera del dominio de entrenamiento del bosque (otro sensor)"
+    }
+  },
+  "relief": {
+    "none": "Este sitio aun no tiene una diferencia de elevacion cocinada.",
+    "epochTitle": "Epoca del relieve",
+    "epochText": "El relieve 3D y el sombreado vienen de las teselas globales (la superficie radar del ano 2000 en Sudamerica) o de la superficie Copernicus de 2011 a 2015 cocinada para esta ventana.",
+    "epochs": {
+      "global": "Global (era SRTM)",
+      "cop": "Copernicus 2011 a 2015"
+    },
+    "exaggeration": "Exageracion vertical",
+    "deltaTitle": "Diferencia de elevacion 2000 a 2011-2015",
+    "deltaText": "Copernicus menos SRTM en la grilla de 30 m, corregida por geoide y sin sesgo sobre terreno estable; azul donde el terreno bajo, rojo donde subio.",
+    "showDelta": "drapear la diferencia sobre el mapa",
+    "deltaAxis": "diferencia (m)",
+    "cut": "Corte (envolvente)",
+    "fill": "Relleno (envolvente)",
+    "deepest": "Mas profundo / mas alto",
+    "floor": "Piso de ruido",
+    "tau": "umbral",
+    "geoid": "Geoide EGM96 a EGM2008",
+    "geoidNone": "no aplicado (grillas no disponibles)",
+    "window": "Ventana completa corte / relleno",
+    "envelopeNote": "Los volumenes cuentan celdas mas alla del umbral dentro de los poligonos de referencia dilatados 1 km; ambas superficies son modelos radar de superficie y el intervalo es una sola decada.",
+    "flags": {
+      "geoid_uncorrected": "desplazamiento de geoide no aplicado",
+      "stable_ground_includes_slopes": "pocas celdas estables planas: las pendientes entran en el piso de ruido"
+    },
+    "profileTitle": "Perfil",
+    "profileText": "Elija dos puntos en el mapa: ambas superficies se muestrean desde las teselas de terreno en su navegador a lo largo de la linea.",
+    "pick": "Elegir dos puntos",
+    "picking": "Haga clic en el mapa ({{n}} de 2)",
+    "clear": "Limpiar",
+    "sampling": "Muestreando ambas superficies",
+    "distance": "Distancia",
+    "length": "Largo",
+    "globalRange": "Superficie global",
+    "coverage": "Muestras Copernicus",
+    "noSamples": "ningun tile respondio",
+    "outsideWindow": "la linea queda fuera de la ventana Copernicus horneada",
+    "deepestChange": "Cambio mas profundo",
+    "highestChange": "Cambio mas alto",
+    "at": "en"
+  },
+  "common": {
+    "loading": "Cargando",
+    "yes": "si"
+  },
+  "arch": {
+    "title": "Como funciona Rajo",
+    "subtitle": "La app, los carriles, el flujo web, la ciencia y los contratos de datos, cada uno en un diagrama que sigue el tema y el idioma.",
+    "close": "Cerrar",
+    "footer": "Cada diagrama esta dibujado a mano e incrustado; el texto y los dibujos cambian con el idioma. La profundidad completa esta en la wiki de documentacion del repositorio.",
+    "diagramMissing": "El archivo del diagrama no esta en esta compilacion"
   }
 }

@@ -1,7 +1,9 @@
 import { Code, Info, Languages, Moon, Sun } from 'lucide-react';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink, Outlet } from 'react-router-dom';
 
+import { ArchitectureModal } from './components/ArchitectureModal';
 import { APP_VERSION } from './lib/version';
 import { ROUTES } from './router';
 import { useUI } from './state/ui';
@@ -25,9 +27,11 @@ export function App() {
   const lang = useUI((s) => s.lang);
   const toggleTheme = useUI((s) => s.toggleTheme);
   const setLang = useUI((s) => s.setLang);
+  const [archOpen, setArchOpen] = useState(false);
 
   return (
     <div className="app">
+      {archOpen && <ArchitectureModal onClose={() => setArchOpen(false)} />}
       <header className="hdr">
         <NavLink to="/" className="brand">
           <Mark />
@@ -47,7 +51,7 @@ export function App() {
             <Code size={17} />
           </a>
           <span className="sep" />
-          <button className="iconbtn" type="button" title={t('header.architecture')} aria-label={t('header.architecture')} data-testid="arch-btn">
+          <button className="iconbtn" type="button" title={t('header.architecture')} aria-label={t('header.architecture')} data-testid="arch-btn" onClick={() => setArchOpen(true)} aria-haspopup="dialog" aria-expanded={archOpen}>
             <Info size={17} />
           </button>
           <button

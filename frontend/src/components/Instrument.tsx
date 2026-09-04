@@ -5,7 +5,7 @@
 // spectra, spectral angle against the reference polygons), each with its area. Every control drives a
 // computation in the worker; nothing here is decorative.
 import type { FeatureCollection } from 'geojson';
-import { Download, Eye, Layers, RefreshCw, Search } from 'lucide-react';
+import { Cpu, Download, Eye, Layers, Mountain, RefreshCw, Search } from 'lucide-react';
 import { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -14,10 +14,12 @@ import type { SiteManifest } from '../lib/contract';
 import { INDEX_SPECS, type IndexName } from '../lib/indices';
 import { rasterizeFeatures } from '../lib/rasterize';
 import { useLive } from '../state/live';
+import { useModels } from '../state/models';
 import { useUI } from '../state/ui';
 import { Histogram } from './Histogram';
+import { ReliefPanel } from './ReliefPanel';
 
-export type InstrumentTab = 'look' | 'find';
+export type InstrumentTab = 'look' | 'find' | 'relief';
 
 const INDEX_GROUPS: Array<{ key: string; items: IndexName[] }> = [
   { key: 'vegetationWater', items: ['ndvi', 'ndwi', 'mndwi'] },
@@ -39,6 +41,21 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
   const [samAngle, setSamAngle] = useState(0.12);
   const [otsuT, setOtsuT] = useState<number | null>(null);
   const [refMask, setRefMask] = useState<Uint8Array | null>(null);
+  const [learnedT, setLearnedT] = useState(0.5);
+  const [unetScale, setUnetScale] = useState<1 | 2>(2);
+  const models = useModels();
+  useEffect(() => void models.load(), [models]);
+  const rfModel = models.byMethod('M7');
+  const unetModel = models.byMethod('M8');
+  // the slider starts at the threshold chosen on validation for the shipped model (the bake uses the same)
+  const [learnedTSeeded, setLearnedTSeeded] = useState(false);
+  useEffect(() => {
+    const seed = unetModel?.threshold ?? rfModel?.threshold;
+    if (!learnedTSeeded && typeof seed === 'number') {
+      setLearnedT(seed);
+      setLearnedTSeeded(true);
+    }
+  }, [rfModel, unetModel, learnedTSeeded]);
 
   const win = manifest.window;
   const bbox = win.bbox_wgs84;
@@ -88,9 +105,17 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
           <button role="tab" aria-selected={tab === 'find'} className={`chip${tab === 'find' ? ' on' : ''}`} onClick={() => setTab('find')} data-testid="tab-find">
             <Search size={13} /> {t('instrument.tabs.find')}
           </button>
+          {manifest.dem && (
+            <button role="tab" aria-selected={tab === 'relief'} className={`chip${tab === 'relief' ? ' on' : ''}`} onClick={() => setTab('relief')} data-testid="tab-relief">
+              <Mountain size={13} /> {t('instrument.tabs.relief')}
+            </button>
+          )}
         </div>
 
-        {/* the live scene block is shared by both tabs */}
+        {tab === 'relief' && <ReliefPanel manifest={manifest} />}
+
+        {/* the live scene block is shared by the Look and Find tabs; the relief lane is baked */}
+        {tab !== 'relief' && (
         <section className="inst-scene">
           <div className="inst-row">
             <button
@@ -134,6 +159,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
             </p>
           )}
         </section>
+        )}
 
         {tab === 'look' && (
           <section className="inst-body" role="tabpanel">
@@ -351,6 +377,87 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                   <Histogram counts={histOf(layer.result.values, 0, 0.6)} lo={0} hi={0.6} threshold={layer.result.threshold} format={(v) => v.toFixed(2)} />
                   <Readout label={t('instrument.area')} value={`${layer.result.areaKm2.toFixed(2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
                   <p className="small faint">{refMask ? t('instrument.sam.endmemberRef') : t('instrument.sam.endmemberBare')}</p>
+                </>
+              )}
+            </div>
+            <div className="method learned" data-testid="learned">
+              <h3>
+                <Cpu size={13} /> {t('instrument.learned.title')}
+              </h3>
+              <p className="small muted">{t('instrument.learned.text')}</p>
+              {models.status === 'missing' && <p className="small bad">{t('instrument.learned.missing')}</p>}
+              <div className="inst-row">
+                <button
+                  className="btn"
+                  type="button"
+                  disabled={live.status !== 'ready' || live.busy || !rfModel}
+                  onClick={() => void live.rf(learnedT, unetScale)}
+                  data-testid="rf-run"
+                  title={rfModel ? `${rfModel.id} / ${(rfModel.bytes / 1e6).toFixed(1)} MB` : ''}
+                >
+                  {t('instrument.learned.rf')}
+                </button>
+                <button
+                  className="btn"
+                  type="button"
+                  disabled={live.status !== 'ready' || live.busy || !unetModel}
+                  onClick={() => void live.unet(learnedT, unetScale)}
+                  data-testid="unet-run"
+                  title={unetModel ? `${unetModel.id} / ${(unetModel.bytes / 1e6).toFixed(1)} MB` : ''}
+                >
+                  {t('instrument.learned.unet')}
+                </button>
+                <label className="small">
+                  {t('instrument.learned.grid')}
+                  <select value={unetScale} onChange={(e) => setUnetScale(Number(e.target.value) as 1 | 2)} aria-label={t('instrument.learned.grid')}>
+                    <option value={2}>{live.grid ? live.grid.pixelM * 2 : 20} m</option>
+                    <option value={1}>{live.grid ? live.grid.pixelM : 10} m</option>
+                  </select>
+                </label>
+              </div>
+              <label className="small">
+                {t('instrument.learned.threshold')}
+                <input type="range" min={0.1} max={0.9} step={0.05} value={learnedT} onChange={(e) => setLearnedT(Number(e.target.value))} />
+                <span className="mono">{learnedT.toFixed(2)}</span>
+              </label>
+              {live.learnedProgress && (
+                <div className="progress" aria-label={t('instrument.learned.running')}>
+                  <div style={{ width: `${Math.round((100 * live.learnedProgress.done) / Math.max(1, live.learnedProgress.total))}%` }} />
+                  <span className="mono small">
+                    {t('instrument.learned.running')} {live.learnedProgress.done}/{live.learnedProgress.total}
+                  </span>
+                </div>
+              )}
+              {live.learnedError && (
+                <p className="small bad" data-testid="learned-error">
+                  {live.learnedError}
+                </p>
+              )}
+              {(layer?.kind === 'rf' || layer?.kind === 'unet') && (
+                <>
+                  <Histogram counts={histOf(layer.result.values, 0, 1)} lo={0} hi={1} threshold={layer.result.threshold} format={(v) => v.toFixed(2)} />
+                  <Readout label={t('instrument.area')} value={`${layer.result.areaKm2.toFixed(2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
+                  <p className="small faint mono" data-testid="learned-run">
+                    {layer.kind === 'rf' ? 'M7' : 'M8'} / {layer.result.backend} / {(layer.result.ms / 1000).toFixed(1)} s
+                    {layer.result.windows ? ` / ${layer.result.windows} ${t('instrument.learned.windows')}` : ''}
+                    {layer.result.scale === 2 ? ` / ${t('instrument.learned.coarse')}` : ''}
+                  </p>
+                  {(() => {
+                    const m = layer.kind === 'rf' ? rfModel : unetModel;
+                    const test = m?.scores?.test ?? (m?.val_full ? { pooled_iou: m.val_full.pooled.iou, pooled_f1: m.val_full.pooled.f1, n_tiles: m.val_full.n_tiles } : null);
+                    const bench = models.benchmark?.splits.test?.methods[layer.kind];
+                    return (
+                      <p className="small faint" data-testid="learned-card">
+                        {m ? `${m.id}, ${t('instrument.learned.trained')} ${m.trained}. ` : ''}
+                        {bench
+                          ? `${t('instrument.learned.heldOut')}: IoU ${bench.pooled.iou.toFixed(2)}, F1 ${bench.pooled.f1.toFixed(2)} (${bench.n_tiles} ${t('instrument.tiles')}). `
+                          : test
+                            ? `${t('instrument.learned.heldOut')}: IoU ${test.pooled_iou.toFixed(2)}, F1 ${test.pooled_f1.toFixed(2)} (${test.n_tiles} ${t('instrument.tiles')}). `
+                            : ''}
+                        {t('instrument.learned.neverSeen')}
+                      </p>
+                    );
+                  })()}
                 </>
               )}
             </div>

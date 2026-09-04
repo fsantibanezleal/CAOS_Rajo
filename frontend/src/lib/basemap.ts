@@ -35,7 +35,7 @@ export function ofmStyleUrl(theme: 'dark' | 'light'): string {
 const KEEP_LAYER = /(boundary|admin|place|label|road|highway|water_name|waterway|transportation_name|poi|housenumber)/i;
 
 /** Builds the initial style: imagery + hillshade, then the label/border/road layers of the OpenFreeMap
- *  style (fills dropped). Returns the style plus the id of the first label layer (deck.gl inserts under it). */
+ *  style (fills dropped). Returns the style plus the id of the first label layer (overlays insert under it). */
 export async function buildStyle(theme: 'dark' | 'light'): Promise<{ style: StyleSpecification; firstLabelLayer?: string }> {
   let ofm: StyleSpecification | null = null;
   try {

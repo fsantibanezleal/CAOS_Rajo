@@ -26,6 +26,17 @@ test('timeline steps years, swaps composites, plays only on demand, and names th
   const prev = Number(await yearEl.textContent());
   expect(prev).toBeLessThan(newest);
 
+  // the site card prints sourced facts: every fact carries a link to its source (Contract 1)
+  const facts = page.locator('ul.facts li');
+  await expect(facts.first()).toBeVisible();
+  const nFacts = await facts.count();
+  expect(nFacts).toBeGreaterThanOrEqual(1);
+  for (let i = 0; i < nFacts; i++) {
+    const href = await facts.nth(i).locator('a').getAttribute('href');
+    expect(href, `fact ${i} links to its source`).toMatch(/^https?:\/\//);
+  }
+  await expect(page.locator('ul.facts')).toContainText(/Cochilco/); // Chuquicamata carries the primary production table
+
   // composite toggle
   await page.getByTestId('mode-swir').click();
   await expect(page.getByTestId('mode-swir')).toHaveClass(/on/);

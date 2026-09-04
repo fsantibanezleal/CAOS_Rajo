@@ -1,12 +1,20 @@
 import { useTranslation } from 'react-i18next';
 
+import { COCHILCO_BY_COMPANY_URL, COPPER_BY_COUNTRY, COPPER_OTHER_COUNTRIES, COPPER_WORLD, USGS_MCS_2026_COPPER_URL } from '../content/production';
 import { useCatalog } from '../state/catalog';
 import { useUI } from '../state/ui';
+
+const kt = (v: number) => v.toLocaleString('en-US', { maximumFractionDigits: 0 });
 
 export function AtlasPage() {
   const { t } = useTranslation();
   const lang = useUI((s) => s.lang);
   const { catalog, error } = useCatalog();
+  const copperSites = new Map<string, number>();
+  for (const s of catalog?.sites ?? []) {
+    if (s.categories.some((c) => c.startsWith('copper'))) copperSites.set(s.country, (copperSites.get(s.country) ?? 0) + 1);
+  }
+  const other = COPPER_OTHER_COUNTRIES.reduce((n, iso) => n + (copperSites.get(iso) ?? 0), 0);
   return (
     <div className="page">
       <div className="inner">
@@ -39,6 +47,63 @@ export function AtlasPage() {
             </tbody>
           </table>
         )}
+
+        <h2 id="copper-by-country">{t('atlas.production.title')}</h2>
+        <p className="lede">{t('atlas.production.lede')}</p>
+        <table data-testid="atlas-production">
+          <thead>
+            <tr>
+              <th>{t('atlas.production.columns.country')}</th>
+              <th>{t('atlas.production.columns.sites')}</th>
+              <th>{t('atlas.production.columns.mine2024')}</th>
+              <th>{t('atlas.production.columns.mine2025')}</th>
+              <th>{t('atlas.production.columns.reported2025')}</th>
+              <th>{t('atlas.production.columns.reserves')}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {COPPER_BY_COUNTRY.map((c) => (
+              <tr key={c.iso3}>
+                <td>
+                  {c.name[lang === 'es' ? 'es' : 'en']} <span className="mono faint">{c.iso3}</span>
+                </td>
+                <td className="mono">{copperSites.get(c.iso3) ?? 0}</td>
+                <td className="mono">{kt(c.mine2024)}</td>
+                <td className="mono">{kt(c.mine2025e)}</td>
+                <td className="mono">{c.reported2025 ? `${kt(c.reported2025.value)} (Cochilco)` : ''}</td>
+                <td className="mono">{c.reserves === null ? '' : kt(c.reserves)}</td>
+              </tr>
+            ))}
+            <tr>
+              <td>{t('atlas.production.other')}</td>
+              <td className="mono">{other}</td>
+              <td className="mono">{kt(2850)}</td>
+              <td className="mono">{kt(3000)}</td>
+              <td className="mono"></td>
+              <td className="mono">{kt(210000)}</td>
+            </tr>
+            <tr>
+              <td>
+                <strong>{t('atlas.production.world')}</strong>
+              </td>
+              <td className="mono">{[...copperSites.values()].reduce((a, b) => a + b, 0)}</td>
+              <td className="mono">{kt(COPPER_WORLD.mine2024)}</td>
+              <td className="mono">{kt(COPPER_WORLD.mine2025e)}</td>
+              <td className="mono"></td>
+              <td className="mono">{kt(COPPER_WORLD.reserves)}</td>
+            </tr>
+          </tbody>
+        </table>
+        <p className="small muted">
+          {t('atlas.production.note')}{' '}
+          <a href={USGS_MCS_2026_COPPER_URL} target="_blank" rel="noreferrer">
+            USGS MCS 2026
+          </a>
+          {' / '}
+          <a href={COCHILCO_BY_COMPANY_URL} target="_blank" rel="noreferrer">
+            Cochilco
+          </a>
+        </p>
       </div>
     </div>
   );

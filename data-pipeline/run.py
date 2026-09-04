@@ -28,6 +28,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--resume", action="store_true", help="skip site-years already baked")
     parser.add_argument("--limit-years", type=int, default=0, help="bake only the first N years (smoke)")
     parser.add_argument("--years", default="", help="only these years: a list and ranges, e.g. 1990,2012,2023-2025")
+    parser.add_argument("--redo", default="", help="masks stage: recompute these methods even when present, e.g. rf,unet (after a threshold or model change)")
     args = parser.parse_args(argv)
 
     sites = [s.strip() for s in args.sites.split(",") if s.strip()]
@@ -49,6 +50,7 @@ def main(argv: list[str] | None = None) -> int:
         limit_years=args.limit_years,
         years=years,
         repo_root=root,
+        redo=[m.strip() for m in args.redo.split(",") if m.strip()],
     )
 
 

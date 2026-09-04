@@ -28,17 +28,22 @@ def run_stage(ctx) -> None:
         if site_doc is None:
             ctx.log(f"{d.name}: no site.json, skipped")
             continue
-        frames_doc = _optional(d / "frames.json") or {"frames": []}
+        frames_doc = _optional(d / "frames.json") or {"frames": [], "gaps": {}}
+        masks_doc = _optional(d / "masks.json")
         series_doc = _optional(d / "series.json")
         dem_doc = _optional(d / "dem.json")
         models_doc = _optional(d / "models.json") or {"models": []}
 
         files = [file_ref(d, ctx.output, d / "polygons.geojson", "polygons")]
         for fr in frames_doc["frames"]:
-            for key in ("image", "chip_preview"):
+            for key in ("image", "swir_image", "chip_preview"):
                 if fr.get(key):
                     files.append(file_ref(d, ctx.output, d / fr[key], "frame", year=fr["year"]))
-            for mk, mfile in (fr.get("masks") or {}).items():
+            # the masks stage writes one file per year and method; the frame record points at them
+            year_masks = ((masks_doc or {}).get("years") or {}).get(str(fr["year"]), {})
+            # a year record also carries the sensor and the valid fraction; only the method records name a file
+            fr["masks"] = {mk: rec["file"] for mk, rec in year_masks.items() if isinstance(rec, dict) and rec.get("file")}
+            for mk, mfile in fr["masks"].items():
                 files.append(file_ref(d, ctx.output, d / mfile, "mask", year=fr["year"], method=mk))
         if dem_doc:
             for key in ("delta_png", "srtm_png", "cop_png"):
@@ -50,7 +55,7 @@ def run_stage(ctx) -> None:
         manifest = build_site_manifest(
             site=site_doc["site"], window=site_doc["window"], polygons=site_doc["polygons"],
             frames=frames_doc["frames"], series=series_doc, dem=dem_doc, models=models_doc["models"],
-            files=files, engine_version=ctx.engine_version,
+            files=files, engine_version=ctx.engine_version, gaps=frames_doc.get("gaps", {}),
         )
         write_json(d / "manifest.json", manifest)
         entries.append({

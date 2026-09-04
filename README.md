@@ -20,10 +20,15 @@ to a named, dated source.
 
 ## Status
 
-Version 0.01.000 (2026-09-03): the repository scaffold, the site catalog with its two data contracts, and
-the map shell (globe, terrain, basemaps, bilingual chrome, light and dark). The bake, the method lanes, the
-learned models and the deep documentation land unit by unit; see the [CHANGELOG](CHANGELOG.md) and the
-open issues.
+Version 0.02.000 (2026-09-03): the four lanes on the thirty sites. Replay: the yearly time-lapse 1985 to
+2026 baked and validated for every site (Landsat then Sentinel-2), the classical and learned masks, the
+mined-area series with their change points, and the elevation difference between the year-2000 radar
+surface and the 2011 to 2015 Copernicus surface. Live: the latest clear Sentinel-2 scene read in the
+browser, nine indices, Otsu, k-means, spectral angle, the random forest walked from flat node arrays and
+the U-Net on WebGPU or WASM. Every site card carries sourced facts (Cochilco and the operators' own
+disclosures), the Atlas prints the USGS copper table by country, and the Methods page reads the
+held-out benchmark. The dense (all-dates) series exists for the sites the detached workers have
+finished; the rest land as they complete. See the [CHANGELOG](CHANGELOG.md) and the open issues.
 
 ## Run it locally
 
@@ -42,7 +47,7 @@ The offline bake (`02_generate-data`) is not needed to run the app: the committe
 
 | Path | What |
 |---|---|
-| `frontend/` | React 19 + Vite + TypeScript SPA: MapLibre GL JS (globe, 3D terrain), deck.gl overlays, geotiff.js range reads, onnxruntime-web inference, uPlot charts, KaTeX, EN/ES |
+| `frontend/` | React 19 + Vite + TypeScript SPA: MapLibre GL JS (globe, 3D terrain, image overlays), geotiff.js range reads, a band-math Web Worker (indices, classical masks, the random forest traversed from flat arrays), onnxruntime-web for the U-Net, uPlot charts, KaTeX, EN/ES |
 | `data-pipeline/` | the offline bake, plain Python scripts invoked by path (no package): catalog, scenes, frames, masks, series, dem, export, validate |
 | `data/` | the site catalog (`examples/sites.json`), the two data contracts (`README.md`), the committed derived artifacts |
 | `models/` | exported ONNX models with their registry (checkpoints stay out of git) |

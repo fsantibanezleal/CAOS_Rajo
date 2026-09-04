@@ -15,7 +15,18 @@
    "start_month": 5,
    "end_month": 9
   },
-  "facts": [],
+  "facts": [
+   {
+    "text_en": "PGE describes Belchatow as the largest open-pit mine in Poland and one of the largest in Europe, in operation since 17 January 1975, with its target capacity of 38.5 million tonnes of lignite per year reached in 1988 (PGE GiEK).",
+    "text_es": "PGE describe Belchatow como la mina a rajo abierto mas grande de Polonia y una de las mas grandes de Europa, en operacion desde el 17 de enero de 1975, con su capacidad objetivo de 38,5 millones de toneladas de lignito por ano alcanzada en 1988 (PGE GiEK).",
+    "source": "https://kwbbelchatow.pgegiek.pl/o-oddziale"
+   },
+   {
+    "text_en": "Just over 30 million tonnes of lignite per year now come from the Belchatow and Szczercow fields; the first coal from the Szczercow field was mined on 17 August 2009 and its reserves are planned to last until 2038 (PGE GiEK).",
+    "text_es": "Poco mas de 30 millones de toneladas de lignito por ano salen hoy de los campos Belchatow y Szczercow; el primer carbon del campo Szczercow se extrajo el 17 de agosto de 2009 y sus reservas estan planificadas hasta 2038 (PGE GiEK).",
+    "source": "https://pgegiek.pl/nasze-oddzialy/kopalnia-wegla-brunatnego-belchatow"
+   }
+  ],
   "commodity": "lignite",
   "operator": "PGE",
   "flags": [],

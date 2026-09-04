@@ -1,0 +1,103 @@
+{
+ "site_id": "cobre-panama",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -22.2,
+  22.2
+ ],
+ "geoid_offset_m": -0.399,
+ "stable_bias_m": -1.284,
+ "noise_floor_m": 3.921,
+ "tau_m": 7.843,
+ "stable_ground_px": 175677,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 152467728,
+ "fill_volume_m3": 15873043,
+ "envelope": {
+  "cut_m3": 152467728,
+  "fill_m3": 15873043,
+  "cut_km2": 10.2168,
+  "fill_km2": 1.584,
+  "min_m": -73.9,
+  "max_m": 29.1
+ },
+ "window": {
+  "cut_m3": 549014720,
+  "fill_m3": 137362192,
+  "cut_km2": 40.6755,
+  "fill_km2": 13.9068,
+  "min_m": -73.9,
+  "max_m": 32.2
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/282/486.png",
+  "terrain/11/564/972.png",
+  "terrain/11/564/973.png",
+  "terrain/11/565/972.png",
+  "terrain/11/565/973.png",
+  "terrain/12/1129/1945.png",
+  "terrain/12/1129/1946.png",
+  "terrain/12/1129/1947.png",
+  "terrain/12/1130/1945.png",
+  "terrain/12/1130/1946.png",
+  "terrain/12/1130/1947.png",
+  "terrain/12/1131/1945.png",
+  "terrain/12/1131/1946.png",
+  "terrain/12/1131/1947.png",
+  "terrain/13/2258/3891.png",
+  "terrain/13/2258/3892.png",
+  "terrain/13/2258/3893.png",
+  "terrain/13/2258/3894.png",
+  "terrain/13/2258/3895.png",
+  "terrain/13/2259/3891.png",
+  "terrain/13/2259/3892.png",
+  "terrain/13/2259/3893.png",
+  "terrain/13/2259/3894.png",
+  "terrain/13/2259/3895.png",
+  "terrain/13/2260/3891.png",
+  "terrain/13/2260/3892.png",
+  "terrain/13/2260/3893.png",
+  "terrain/13/2260/3894.png",
+  "terrain/13/2260/3895.png",
+  "terrain/13/2261/3891.png",
+  "terrain/13/2261/3892.png",
+  "terrain/13/2261/3893.png",
+  "terrain/13/2261/3894.png",
+  "terrain/13/2261/3895.png",
+  "terrain/13/2262/3891.png",
+  "terrain/13/2262/3892.png",
+  "terrain/13/2262/3893.png",
+  "terrain/13/2262/3894.png",
+  "terrain/13/2262/3895.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 9.0,
+  "max": 421.0
+ },
+ "cop_stats": {
+  "min": 4.4,
+  "max": 424.5
+ }
+}

@@ -70,19 +70,160 @@
       "categories": "Categories",
       "seed": "Seed (lon, lat)",
       "frames": "Frames"
+    },
+    "production": {
+      "title": "Copper mine production by country",
+      "lede": "Where the copper sites sit in the world picture: mine production in thousand metric tons of copper content, 2025 estimated by the USGS, next to the figure Chile's statistics office reported for the same year.",
+      "columns": {
+        "country": "Country",
+        "sites": "Copper sites here",
+        "mine2024": "Mine 2024 (kt)",
+        "mine2025": "Mine 2025e (kt)",
+        "reported2025": "Reported 2025 (kt)",
+        "reserves": "Reserves (kt)"
+      },
+      "other": "Other countries (Mongolia, Brazil, Panama, Uzbekistan among them)",
+      "world": "World total (rounded)",
+      "note": "Transcribed from U.S. Geological Survey, Mineral Commodity Summaries 2026, Copper (February 2026), and from Cochilco's copper mine production by company (workbook 1960 to 2025). The USGS 2025 column is an estimate; the Cochilco column is the reported national total."
     }
   },
   "methods": {
     "title": "Methods",
-    "lede": "The twelve computations Rajo performs on real pixels, with their equations, sources and caveats."
+    "lede": "The twelve computations Rajo performs on real pixels, with their equations, sources and caveats.",
+    "notation": "Notation: reflectance in band b is written rho_b, in [0, 1] after the Level-2 scale and offset; Sentinel-2 band names are used, with the Landsat equivalents mapped in the bake.",
+    "lanes": {
+      "live": "live in the browser",
+      "baked": "baked offline",
+      "both": "live and baked"
+    },
+    "where": "Where it runs",
+    "sources": "Sources",
+    "wiki": "The full page in the docs wiki",
+    "benchmark": {
+      "title": "The held-out benchmark",
+      "text": "Every delineation method is scored on the same tiles with the same metrics: pixel-pooled IoU, F1, precision and recall over valid pixels, the per-tile mean IoU, and boundary F1 at 2 pixels. Validation chooses the spectral-angle threshold and nothing else; test and catalog tiles are reported as they come, and every catalog site was held out of training. The worse arm is what the documentation quotes.",
+      "generated": "Generated",
+      "engine": "engine",
+      "method": "Method",
+      "precision": "Precision",
+      "recall": "Recall",
+      "perTile": "Per-tile IoU",
+      "boundary": "Boundary F1",
+      "haze": "IoU under added haze (reflectance added to every band)",
+      "missing": "No benchmark is shipped with this build yet: the models are still training. The table appears when models/benchmark.json lands.",
+      "splits": {
+        "val": "Validation (used to choose the SAM angle)",
+        "test": "Test (published split, catalog sites removed)",
+        "catalog": "Catalog holdout (tiles touching a Rajo site)"
+      },
+      "methods": {
+        "otsu": "M4 Otsu bare-ground",
+        "kmeans": "M5 k-means (highest-BSI cluster)",
+        "sam": "M6 spectral angle",
+        "rf": "M7 random forest",
+        "unet": "M8 U-Net"
+      }
+    }
   },
   "data": {
     "title": "Data",
-    "lede": "Every source Rajo reads, its license, and the two data contracts between the offline bake and this page."
+    "lede": "Every source Rajo reads, its license, and the two data contracts between the offline bake and this page.",
+    "sources": {
+      "title": "Sources, probed and licensed",
+      "text": "Every row was probed live on 2026-09-02 with a browser-like Origin header. \"Browser: yes\" means the response carried CORS for a static page, which is what lets the app read the data directly; sources without CORS are read by the offline bake only.",
+      "groups": {
+        "imagery": "Satellite imagery",
+        "elevation": "Elevation",
+        "footprints": "Mining footprints and training data",
+        "basemaps": "Basemaps and labels",
+        "context": "Production tables and operator disclosures (the site facts)"
+      },
+      "columns": {
+        "source": "Source",
+        "role": "Role in Rajo",
+        "access": "Access",
+        "browser": "Browser",
+        "licence": "Licence and attribution"
+      },
+      "browser": {
+        "yes": "live in the browser",
+        "no": "bake only",
+        "partial": "baked, served per site"
+      },
+      "rejected": "Rejected sources, and why: Esri World Imagery (the legacy tile service is in mature status and the replacement needs an account and an API key); the GRID-Arendal Global Tailings Portal (download requires permission); the Copernicus DEM and Landsat read live in the browser (no CORS, token plumbing), both baked offline instead."
+    },
+    "facts": {
+      "title": "Facts the bake relies on",
+      "s2": "Sentinel-2 L2A surface reflectance is (DN + BOA_ADD_OFFSET) / 10000 with BOA_ADD_OFFSET = -1000 from processing baseline 04.00; Earth Search items carry scale 0.0001 and offset -0.1 on the reflectance assets; DN 0 is no data. Scene classification: 0 no data, 1 saturated or defective, 3 cloud shadow, 8 and 9 cloud, 10 thin cirrus are invalid; 11 is snow or ice.",
+      "landsat": "Landsat Collection 2 surface reflectance is DN x 0.0000275 - 0.2; QA_PIXEL bits 0 fill, 1 dilated cloud, 2 cirrus, 3 cloud, 4 cloud shadow, 5 snow. Landsat 5 to 2011, Landsat 7 as the 2012 bridge (scan-line gaps composited from the next dates of the season), Landsat 8 and 9 from 2013.",
+      "terrarium": "Terrarium decoding: elevation in metres = R x 256 + G + B / 256 - 32768. The per-site Copernicus tiles use the same encoding at zooms 10 to 13.",
+      "qa": "Quality masks flag the mine itself: on a Landsat 5 scene the archive rates 0.0% cloudy, the QA mask still flagged 10.7% of a 24 km window and 69% of those pixels lay inside the mining polygons (bright benches read as cloud, pit floors as shadow). Frames render from every pixel with data; the QA verdict is kept per pixel for the analysis lanes; a scene is accepted when its scene-level cloud cover is at most 2% and 85% of the window is QA-clear, flagged qa_flagged."
+    },
+    "contracts": {
+      "title": "The two data contracts",
+      "ingestion": "Contract 1, ingestion: data/examples/sites.json declares each site (id, names, ISO3 country, categories, seed, window in km, first year, season months, facts with a source URL). The catalog stage refuses a seed farther than 3 km from a reference polygon, a window outside 4 to 40 km, a fact without a source or a category outside the vocabulary, and writes the site grid (a UTM window whose width is a multiple of three, so the 30 m Landsat grid nests inside the 10 m one) and the reference polygons.",
+      "artifact": "Contract 2, artifact: every stage writes a JSON side-car and the export stage assembles one manifest per site with the bytes and sha256 of every file plus the catalog index. The validate stage re-reads everything and refuses a missing file, a drifted hash, a year without a frame or a recorded reason, a series that names a year without a frame, or two engine versions in one tree. Text artifacts are LF on every platform and hashed as stored.",
+      "guards": "The same contract is mirrored in the app (contract.ts), so the web reads only what a manifest declares; the artifact guard runs in CI and before every deploy, which then checks the live title, catalog and a deep link."
+    },
+    "catalog": {
+      "title": "The catalog as baked",
+      "text": "{{sites}} sites in the catalog, {{frames}} yearly frames on disk. A site without frames is one whose bake has not landed yet; a gap is a year with a recorded reason (no scene under 60% cloud inside the season window in either archive, or every candidate failed to read).",
+      "columns": {
+        "frames": "Frames",
+        "span": "Years",
+        "gaps": "Gaps",
+        "masks": "Mask methods",
+        "series": "Series",
+        "dem": "DEM delta"
+      },
+      "pending": "not baked yet",
+      "note": "Chips, checkpoints and the venv never ship; the site serves the committed artifacts and reads the archives live."
+    },
+    "attribution": {
+      "title": "Attribution",
+      "text": "Rendered verbatim here, in the map attribution control and in the footer; the EOX string is the wording EOX prescribes.",
+      "derived": "Derived polygon layers published by Rajo (the per-site polygons.geojson) are CC BY-SA 4.0, as the share-alike term of the Maus dataset requires."
+    }
   },
   "about": {
     "title": "About",
-    "lede": "What Rajo is, what it is not, who built it and why."
+    "lede": "What Rajo is, what it is not, who built it and why.",
+    "body": [
+      "Rajo (\"open pit\" in Chilean Spanish) is an open observatory of the great open-pit mines and lithium evaporation ponds of the world as seen from satellites over four decades. It shows each site on a 3D globe with real relief, replays a yearly time-lapse from 1985 (Landsat) to today (Sentinel-2), computes spectral and mineral indices live in your browser from the raw cloud-optimized GeoTIFFs, runs a learned mine-footprint segmentation in the browser, detects change points on the mined-area signal, and shows where and how much rock moved between the 2000 and the 2011 to 2015 global elevation models. Chilean copper is the core of the catalog; the world's icons are the context.",
+      "Everything runs in the browser or comes from a baked, checksummed artifact. There is no backend, no account, and nothing is uploaded anywhere. Every number on screen traces to a computation you can rerun or to a named, dated source.",
+      "Rajo is a CAOS project by Felipe Santibanez-Leal: a public, open-source showcase of remote sensing, image processing, signal processing and learned models applied to mining, built to the same standards as the rest of the CAOS product line (shared data contracts, gates by use, bilingual documentation, deep repositories)."
+    ],
+    "lifecycleTitle": "How it was designed and built",
+    "lifecycle": [
+      "Research first: every data source probed live for CORS, range reads and licence; the methods surveyed against their primary papers (thirty-five DOIs resolved); the concept, the sites and the deploy target decided from that research and persisted as dated dossiers.",
+      "A plan with five axes (status, plan, backlog, history, findings) covering the whole product, validated before implementation.",
+      "The two data contracts, then the staged offline bake (catalog, scenes, frames, masks, series, dense, dem, export, validate), run detached and in parallel, with a harvest that refuses an incomplete site.",
+      "The learned models trained on the Jasansky et al. 2024 tiles with every catalog site held out, exported to ONNX with parity gates, and scored on the same held-out tiles as the classical methods.",
+      "The web app built unit by unit, each with its code, its tests, its gate by use and its documentation in the same commit; the architecture modal and the Methods and Data pages transcribed from the persisted research, never recalled from memory.",
+      "A static deploy with an atomic release swap and a live content check; versioning by X.XX.XXX with a changelog and a tag per release."
+    ],
+    "rulesTitle": "Rules every number obeys",
+    "rules": [
+      "A stretch, a threshold, a penalty or an angle is printed next to the picture it produced; nothing is hidden behind a default.",
+      "A year without a frame carries its reason; a cloudy envelope is a null in every series, never an interpolated value.",
+      "Areas and volumes are measured inside the reference envelope (the mining polygons dilated by one kilometre); a mask over the whole window would measure the desert.",
+      "Learned models report held-out scores on tiles that never touched a catalog site; the worse arm is what the documentation quotes.",
+      "Every method names its lane: live in the browser, baked offline, or both; the app never mislabels what it is doing.",
+      "Licences travel with the data: the per-site polygons stay CC BY-SA 4.0; Copernicus, USGS, EOX and OpenFreeMap strings are rendered verbatim."
+    ],
+    "versionTitle": "Version",
+    "versionText": "Versions follow X.XX.XXX (major = capability milestone, minor = completed feature, patch = fixes and polish), recorded in VERSION, the CHANGELOG and a git tag per release. This build is",
+    "licenceTitle": "Licence",
+    "licenceText": "The code is MIT. The data are under their own licences: Copernicus Sentinel data (free, full and open), USGS Landsat (public domain), the Copernicus DEM (attribution to DLR, Airbus, ESA and the EU), SRTM via OpenTopography, the Maus 2022 and Jasansky 2024 datasets (CC BY-SA 4.0), Tang and Werner 2023 (CC BY 4.0), EOX Sentinel-2 cloudless (CC BY-NC-SA 4.0) and OpenFreeMap.",
+    "citeTitle": "How to cite",
+    "citeText": "Santibanez-Leal, F. (2026). Rajo: open pits seen from orbit, version {{version}}. https://rajo.fasl-work.com, source https://github.com/fsantibanezleal/CAOS_Rajo",
+    "depthTitle": "Where the depth lives",
+    "depth": {
+      "wiki": "The docs wiki in the repository: methods with equations and DOIs, data sources, the site catalog, the guides",
+      "modal": "The architecture modal behind the info button in the header: five bilingual diagrams of the app, the lanes, the web flow, the science and the data contracts",
+      "repo": "The repository: the pipeline, the training scripts, the frontend, the tests and gates, the changelog",
+      "changelog": "The changelog, one entry per version"
+    }
   },
   "categories": {
     "copper-chile": "Copper, Chile",
@@ -114,13 +255,16 @@
       "composite": "two-date composite",
       "slc_off": "Landsat 7 stripes filled",
       "snow": "snow"
-    }
+    },
+    "series": "Series",
+    "seriesTitle": "The mined-area series, its change points and the yearly masks"
   },
   "instrument": {
     "title": "Instrument",
     "tabs": {
       "look": "Look",
-      "find": "Find"
+      "find": "Find",
+      "relief": "Relief"
     },
     "fetch": "Load the latest clear scene",
     "refetch": "Reload",
@@ -166,7 +310,22 @@
       "endmemberRef": "Endmember: mean spectrum of the reference mining polygons on this scene.",
       "endmemberBare": "Endmember: the brightest bare quartile of this scene (no reference polygons on the grid)."
     },
-    "findNote": "These are classical delineations of disturbed land on one scene, not ore. The learned models arrive with the next unit."
+    "findNote": "Classical delineations of disturbed land on one scene, and two learned ones; none of them is ore. Areas are compared with the reference polygons when the site has them.",
+    "learned": {
+      "title": "Learned delineation",
+      "text": "Two models trained offline on the Jasansky et al. 2024 tiles run here on the same scene: a random forest on sixteen per-pixel features, and a U-Net on the six bands. This site was never in their training set.",
+      "rf": "Random forest",
+      "unet": "U-Net",
+      "grid": "Grid",
+      "threshold": "Probability threshold",
+      "running": "Running",
+      "windows": "windows",
+      "coarse": "coarse grid",
+      "trained": "trained",
+      "heldOut": "Held-out test tiles",
+      "neverSeen": "Every catalog site was held out of training and validation, so this number is not in-sample.",
+      "missing": "No model files are shipped with this build."
+    }
   },
   "indices": {
     "groups": {
@@ -219,5 +378,83 @@
       "formula": "SWIR2 / NIR",
       "caveat": "Ferrous iron lowers the NIR; responds to fresh rock and dark dumps."
     }
+  },
+  "series": {
+    "title": "Signal lane",
+    "view": "View",
+    "views": {
+      "area": "Mined area",
+      "index": "Envelope indices",
+      "dense": "Dense Sentinel-2"
+    },
+    "method": "Method",
+    "showMask": "show the mask of the year",
+    "date": "Date",
+    "year": "Year",
+    "envelopeMean": "envelope mean",
+    "indexAxis": "index",
+    "hoverHint": "Hover for values; click a year to move the timeline",
+    "envelope": "Envelope",
+    "penalty": "PELT penalty",
+    "noBreak": "no break",
+    "noAlarm": "no alarm",
+    "harmonic": "Harmonic breaks",
+    "indexNote": "Yearly envelope means of NDVI, MNDWI and BSI from the same frames; Landsat years shaded.",
+    "flags": {
+      "cross_sensor": "Landsat years are outside the forest training domain (cross-sensor)"
+    }
+  },
+  "relief": {
+    "none": "No elevation difference is baked for this site yet.",
+    "epochTitle": "Relief epoch",
+    "epochText": "The 3D relief and hillshade come from the global terrain tiles (the year-2000 radar surface in South America) or from the Copernicus surface of 2011 to 2015 baked for this window.",
+    "epochs": {
+      "global": "Global (SRTM era)",
+      "cop": "Copernicus 2011 to 2015"
+    },
+    "exaggeration": "Vertical exaggeration",
+    "deltaTitle": "Elevation difference 2000 to 2011-2015",
+    "deltaText": "Copernicus minus SRTM on the 30 m grid, geoid-corrected and de-biased on stable ground; blue where the ground went down, red where it went up.",
+    "showDelta": "drape the difference on the map",
+    "deltaAxis": "difference (m)",
+    "cut": "Cut (envelope)",
+    "fill": "Fill (envelope)",
+    "deepest": "Deepest / highest",
+    "floor": "Noise floor",
+    "tau": "threshold",
+    "geoid": "Geoid EGM96 to EGM2008",
+    "geoidNone": "not applied (grids unavailable)",
+    "window": "Whole window cut / fill",
+    "envelopeNote": "Volumes count cells beyond the threshold inside the reference polygons dilated by 1 km; both surfaces are radar surface models and the interval is a single decade.",
+    "flags": {
+      "geoid_uncorrected": "geoid offset not applied",
+      "stable_ground_includes_slopes": "too few flat stable cells: slopes included in the noise floor"
+    },
+    "profileTitle": "Profile",
+    "profileText": "Pick two points on the map: both surfaces are sampled from the terrain tiles in your browser along the line.",
+    "pick": "Pick two points",
+    "picking": "Click on the map ({{n}} of 2)",
+    "clear": "Clear",
+    "sampling": "Sampling both surfaces",
+    "distance": "Distance",
+    "length": "Length",
+    "globalRange": "Global surface",
+    "coverage": "Copernicus samples",
+    "noSamples": "no tile answered",
+    "outsideWindow": "the line lies outside the baked Copernicus window",
+    "deepestChange": "Deepest change",
+    "highestChange": "Highest change",
+    "at": "at"
+  },
+  "common": {
+    "loading": "Loading",
+    "yes": "yes"
+  },
+  "arch": {
+    "title": "How Rajo works",
+    "subtitle": "The app, the lanes, the web flow, the science and the data contracts, each on one diagram that follows the theme and the language.",
+    "close": "Close",
+    "footer": "Every diagram is hand-authored and inlined; the text and the drawings switch with the language toggle. The full depth is in the docs wiki of the repository.",
+    "diagramMissing": "The diagram file is not in this build"
   }
 }

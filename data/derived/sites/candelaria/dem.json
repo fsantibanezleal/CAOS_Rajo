@@ -1,0 +1,104 @@
+{
+ "site_id": "candelaria",
+ "status": "ok",
+ "grid_m": 30.0,
+ "coverage": 1.0,
+ "epochs": [
+  {
+   "id": "srtm2000",
+   "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+   "date_range": "2000-02"
+  },
+  {
+   "id": "cop2011_2015",
+   "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+   "date_range": "2011 to 2015"
+  }
+ ],
+ "delta_png": "dem/delta.png",
+ "srtm_png": "dem/srtm.png",
+ "cop_png": "dem/cop.png",
+ "delta_range_m": [
+  -135.7,
+  135.7
+ ],
+ "geoid_offset_m": -0.311,
+ "stable_bias_m": -2.213,
+ "noise_floor_m": 2.115,
+ "tau_m": 4.23,
+ "stable_ground_px": 47247,
+ "stable_rule": "outside the envelope and slope below 10 degrees",
+ "cut_volume_m3": 406196256,
+ "fill_volume_m3": 684672384,
+ "envelope": {
+  "cut_m3": 406196256,
+  "fill_m3": 684672384,
+  "cut_km2": 9.5562,
+  "fill_km2": 22.9779,
+  "min_m": -384.3,
+  "max_m": 245.1
+ },
+ "window": {
+  "cut_m3": 492220224,
+  "fill_m3": 866948288,
+  "cut_km2": 22.7601,
+  "fill_km2": 49.2138,
+  "min_m": -384.3,
+  "max_m": 245.1
+ },
+ "flags": [],
+ "terrain_tiles": [
+  "terrain/10/311/593.png",
+  "terrain/10/312/593.png",
+  "terrain/11/623/1186.png",
+  "terrain/11/623/1187.png",
+  "terrain/11/624/1186.png",
+  "terrain/11/624/1187.png",
+  "terrain/12/1247/2372.png",
+  "terrain/12/1247/2373.png",
+  "terrain/12/1247/2374.png",
+  "terrain/12/1248/2372.png",
+  "terrain/12/1248/2373.png",
+  "terrain/12/1248/2374.png",
+  "terrain/12/1249/2372.png",
+  "terrain/12/1249/2373.png",
+  "terrain/12/1249/2374.png",
+  "terrain/13/2494/4745.png",
+  "terrain/13/2494/4746.png",
+  "terrain/13/2494/4747.png",
+  "terrain/13/2494/4748.png",
+  "terrain/13/2494/4749.png",
+  "terrain/13/2495/4745.png",
+  "terrain/13/2495/4746.png",
+  "terrain/13/2495/4747.png",
+  "terrain/13/2495/4748.png",
+  "terrain/13/2495/4749.png",
+  "terrain/13/2496/4745.png",
+  "terrain/13/2496/4746.png",
+  "terrain/13/2496/4747.png",
+  "terrain/13/2496/4748.png",
+  "terrain/13/2496/4749.png",
+  "terrain/13/2497/4745.png",
+  "terrain/13/2497/4746.png",
+  "terrain/13/2497/4747.png",
+  "terrain/13/2497/4748.png",
+  "terrain/13/2497/4749.png",
+  "terrain/13/2498/4745.png",
+  "terrain/13/2498/4746.png",
+  "terrain/13/2498/4747.png",
+  "terrain/13/2498/4748.png",
+  "terrain/13/2498/4749.png"
+ ],
+ "terrain_tile_zooms": [
+  10,
+  13
+ ],
+ "srtm_stats": {
+  "min": 336.0,
+  "max": 1504.0
+ },
+ "cop_stats": {
+  "min": 72.7,
+  "max": 1509.7
+ }
+}

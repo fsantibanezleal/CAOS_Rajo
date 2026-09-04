@@ -1,6 +1,6 @@
 {
  "schema": "rajo.site/v1",
- "engine_version": "0.01.000",
+ "engine_version": "0.02.000",
  "site_id": "escondida",
  "site": {
   "id": "escondida",
@@ -30,9 +30,9 @@
     "source": "https://eros.usgs.gov/earthshots/pit-production"
    },
    {
-    "text_en": "In 2025 Escondida produced 1,345,100 tonnes of fine copper, its highest level since 2007.",
-    "text_es": "En 2025 Escondida produjo 1.345.100 toneladas de cobre fino, su nivel mas alto desde 2007.",
-    "source": "https://www.df.cl/empresas/produccion-de-cobre-de-chile-cae-casi-2-en-2025-y-escondida-por-si-sola"
+    "text_en": "Escondida produced 1,345,132 tonnes of fine copper in 2025 and 1,277,539 tonnes in 2024; its first year with reported production is 1990 (Cochilco, Chilean copper mine production by company).",
+    "text_es": "Escondida produjo 1.345.132 toneladas de cobre fino en 2025 y 1.277.539 toneladas en 2024; su primer ano con produccion reportada es 1990 (Cochilco, produccion chilena de cobre de mina por empresa).",
+    "source": "https://www.cochilco.cl/web/download/951/cobre/12682/produccion-de-cobre-mina-por-empresa-anual.xlsx"
    }
   ],
   "commodity": "copper",
@@ -77,16 +77,4864 @@
    2266
   ]
  },
- "frames": [],
- "series": null,
- "dem": null,
+ "frames": [
+  {
+   "year": 1985,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19850125_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19850125_02_T1"
+   ],
+   "date": "1985-01-25",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 4.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1985.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1985-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.15265999734401703,
+      0.321015551090241
+     ],
+     [
+      0.1201000064611435,
+      0.2548224925994873
+     ],
+     [
+      0.08454249799251556,
+      0.1832674890756607
+     ]
+    ],
+    "swir": [
+     [
+      0.16225750744342804,
+      0.4037899971008301
+     ],
+     [
+      0.17091944932937622,
+      0.36223751306533813
+     ],
+     [
+      0.15265999734401703,
+      0.321015551090241
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1985-otsu.png",
+    "rf": "masks/1985-rf.png"
+   }
+  },
+  {
+   "year": 1986,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19860112_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19860112_02_T1"
+   ],
+   "date": "1986-01-12",
+   "cloud_pct": 0.04,
+   "valid_pct": 99.96,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1986.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1986-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1555749922990799,
+      0.3282474875450134
+     ],
+     [
+      0.12334500253200531,
+      0.26200002431869507
+     ],
+     [
+      0.08627499639987946,
+      0.18574251234531403
+     ]
+    ],
+    "swir": [
+     [
+      0.164622500538826,
+      0.40420252084732056
+     ],
+     [
+      0.17301000654697418,
+      0.3658674955368042
+     ],
+     [
+      0.1555749922990799,
+      0.3282474875450134
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1986-otsu.png",
+    "rf": "masks/1986-rf.png"
+   }
+  },
+  {
+   "year": 1987,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19861214_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19861214_02_T1"
+   ],
+   "date": "1986-12-14",
+   "cloud_pct": 0.13,
+   "valid_pct": 99.87,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1987.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1987-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.14462999999523163,
+      0.3031400442123413
+     ],
+     [
+      0.11525999009609222,
+      0.23964248597621918
+     ],
+     [
+      0.07997749745845795,
+      0.16946248710155487
+     ]
+    ],
+    "swir": [
+     [
+      0.16159750521183014,
+      0.4046425223350525
+     ],
+     [
+      0.16544748842716217,
+      0.3449400067329407
+     ],
+     [
+      0.14462999999523163,
+      0.3031400442123413
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1987-otsu.png",
+    "rf": "masks/1987-rf.png"
+   }
+  },
+  {
+   "year": 1988,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19880102_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19880102_02_T1"
+   ],
+   "date": "1988-01-02",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1988.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1988-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1571974903345108,
+      0.32222503423690796
+     ],
+     [
+      0.12251998484134674,
+      0.2541624903678894
+     ],
+     [
+      0.0846249908208847,
+      0.18005000054836273
+     ]
+    ],
+    "swir": [
+     [
+      0.16542001068592072,
+      0.4018099904060364
+     ],
+     [
+      0.17257000505924225,
+      0.35662752389907837
+     ],
+     [
+      0.1571974903345108,
+      0.32222503423690796
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1988-otsu.png",
+    "rf": "masks/1988-rf.png"
+   }
+  },
+  {
+   "year": 1989,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19881117_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19881117_02_T1"
+   ],
+   "date": "1988-11-17",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1989.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1989-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.16976501047611237,
+      0.34922999143600464
+     ],
+     [
+      0.1327499896287918,
+      0.27709752321243286
+     ],
+     [
+      0.09089501202106476,
+      0.1965775042772293
+     ]
+    ],
+    "swir": [
+     [
+      0.17826248705387115,
+      0.4195200204849243
+     ],
+     [
+      0.1867324858903885,
+      0.38833554029464773
+     ],
+     [
+      0.16976501047611237,
+      0.34922999143600464
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1989-otsu.png",
+    "rf": "masks/1989-rf.png"
+   }
+  },
+  {
+   "year": 1990,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19891003_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19891003_02_T1"
+   ],
+   "date": "1989-10-03",
+   "cloud_pct": 0.06,
+   "valid_pct": 99.94,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1990.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1990-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.15711499750614166,
+      0.3573150038719177
+     ],
+     [
+      0.12444500625133514,
+      0.28174556612968493
+     ],
+     [
+      0.08440499007701874,
+      0.19432251155376434
+     ]
+    ],
+    "swir": [
+     [
+      0.16338498890399933,
+      0.41366249322891235
+     ],
+     [
+      0.16965501010417938,
+      0.3889405858516698
+     ],
+     [
+      0.15711499750614166,
+      0.3573150038719177
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1990-otsu.png",
+    "rf": "masks/1990-rf.png"
+   }
+  },
+  {
+   "year": 1991,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19901006_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19901006_02_T1"
+   ],
+   "date": "1990-10-06",
+   "cloud_pct": 0.2,
+   "valid_pct": 99.8,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1991.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1991-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1521099954843521,
+      0.36487752199172974
+     ],
+     [
+      0.12122748792171478,
+      0.28930747509002686
+     ],
+     [
+      0.08437751233577728,
+      0.20276500284671783
+     ]
+    ],
+    "swir": [
+     [
+      0.15634499490261078,
+      0.40505504608154297
+     ],
+     [
+      0.16305498778820038,
+      0.39108502864837646
+     ],
+     [
+      0.1521099954843521,
+      0.36487752199172974
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1991-otsu.png",
+    "rf": "masks/1991-rf.png"
+   }
+  },
+  {
+   "year": 1992,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19911228_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19911228_02_T1"
+   ],
+   "date": "1991-12-28",
+   "cloud_pct": 1.6,
+   "valid_pct": 98.4,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 3.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1992.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1992-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.18491749465465546,
+      0.366225004196167
+     ],
+     [
+      0.15227501094341278,
+      0.29686999320983887
+     ],
+     [
+      0.11135499179363251,
+      0.21923749148845673
+     ]
+    ],
+    "swir": [
+     [
+      0.16772943913936614,
+      0.4104999899864197
+     ],
+     [
+      0.19330500066280365,
+      0.38896806359291125
+     ],
+     [
+      0.18491749465465546,
+      0.366225004196167
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1992-otsu.png",
+    "rf": "masks/1992-rf.png"
+   }
+  },
+  {
+   "year": 1993,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19930131_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19930131_02_T1"
+   ],
+   "date": "1993-01-31",
+   "cloud_pct": 1.73,
+   "valid_pct": 98.27,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1993.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1993-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.16602499783039093,
+      0.3773624897003174
+     ],
+     [
+      0.1350875049829483,
+      0.31394749879837036
+     ],
+     [
+      0.09851248562335968,
+      0.2331800013780594
+     ]
+    ],
+    "swir": [
+     [
+      0.15717001259326935,
+      0.4185025095939636
+     ],
+     [
+      0.17606250941753387,
+      0.39479750394821167
+     ],
+     [
+      0.16602499783039093,
+      0.3773624897003174
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1993-otsu.png",
+    "rf": "masks/1993-rf.png"
+   }
+  },
+  {
+   "year": 1994,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19931217_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19931217_02_T1"
+   ],
+   "date": "1993-12-17",
+   "cloud_pct": 2.51,
+   "valid_pct": 97.49,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 3.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1994.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1994-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.16712500154972076,
+      0.38998502492904663
+     ],
+     [
+      0.13294251263141632,
+      0.313480019569397
+     ],
+     [
+      0.09482748806476593,
+      0.2293574959039688
+     ]
+    ],
+    "swir": [
+     [
+      0.16577748954296112,
+      0.43577253818511963
+     ],
+     [
+      0.17702500522136688,
+      0.406760036945343
+     ],
+     [
+      0.16712500154972076,
+      0.38998502492904663
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1994-otsu.png",
+    "rf": "masks/1994-rf.png"
+   }
+  },
+  {
+   "year": 1995,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19941017_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19941017_02_T1"
+   ],
+   "date": "1994-10-17",
+   "cloud_pct": 1.17,
+   "valid_pct": 98.83,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1995.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1995-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.16968248784542084,
+      0.41102309346199084
+     ],
+     [
+      0.13426248729228973,
+      0.3251950144767761
+     ],
+     [
+      0.09452499449253082,
+      0.22699250280857086
+     ]
+    ],
+    "swir": [
+     [
+      0.1701499968767166,
+      0.4336000084877014
+     ],
+     [
+      0.18029750883579254,
+      0.43288499116897583
+     ],
+     [
+      0.16968248784542084,
+      0.41102309346199084
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1995-otsu.png",
+    "rf": "masks/1995-rf.png"
+   }
+  },
+  {
+   "year": 1996,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19951004_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19951004_02_T1"
+   ],
+   "date": "1995-10-04",
+   "cloud_pct": 0.61,
+   "valid_pct": 99.39,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.01,
+   "pixel_m": 30.0,
+   "image": "frames/1996.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1996-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1558225005865097,
+      0.38885809302330065
+     ],
+     [
+      0.12120001018047333,
+      0.3004724979400635
+     ],
+     [
+      0.09183000028133392,
+      0.22286750376224518
+     ]
+    ],
+    "swir": [
+     [
+      0.15920500457286835,
+      0.4323350191116333
+     ],
+     [
+      0.16926999390125275,
+      0.4233975410461426
+     ],
+     [
+      0.1558225005865097,
+      0.38885809302330065
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1996-otsu.png",
+    "rf": "masks/1996-rf.png"
+   }
+  },
+  {
+   "year": 1997,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19970126_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19970126_02_T1"
+   ],
+   "date": "1997-01-26",
+   "cloud_pct": 2.89,
+   "valid_pct": 97.11,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1997.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1997-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.16764749586582184,
+      0.39180004596710205
+     ],
+     [
+      0.13558249175548553,
+      0.314222514629364
+     ],
+     [
+      0.10112498700618744,
+      0.2267174869775772
+     ]
+    ],
+    "swir": [
+     [
+      0.16737250983715057,
+      0.4326925277709961
+     ],
+     [
+      0.1823049932718277,
+      0.4211699962615967
+     ],
+     [
+      0.16764749586582184,
+      0.39180004596710205
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1997-otsu.png",
+    "rf": "masks/1997-rf.png"
+   }
+  },
+  {
+   "year": 1998,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19971009_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19971009_02_T1"
+   ],
+   "date": "1997-10-09",
+   "cloud_pct": 2.03,
+   "valid_pct": 97.97,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1998.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1998-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1524675041437149,
+      0.3703775405883789
+     ],
+     [
+      0.11814750730991364,
+      0.2917274832725525
+     ],
+     [
+      0.08737500011920929,
+      0.22228999435901642
+     ]
+    ],
+    "swir": [
+     [
+      0.15279750525951385,
+      0.41498249769210815
+     ],
+     [
+      0.17083750665187836,
+      0.4026625156402588
+     ],
+     [
+      0.1524675041437149,
+      0.3703775405883789
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1998-otsu.png",
+    "rf": "masks/1998-rf.png"
+   }
+  },
+  {
+   "year": 1999,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_19981129_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_19981129_02_T1"
+   ],
+   "date": "1998-11-29",
+   "cloud_pct": 4.94,
+   "valid_pct": 95.06,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/1999.webp",
+   "image_px": 1024,
+   "swir_image": "frames/1999-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.19278250634670258,
+      0.43734002113342285
+     ],
+     [
+      0.15615250170230865,
+      0.35385000705718994
+     ],
+     [
+      0.1133900135755539,
+      0.2560874819755554
+     ]
+    ],
+    "swir": [
+     [
+      0.18678750097751617,
+      0.4635475277900696
+     ],
+     [
+      0.20548750460147858,
+      0.4611549973487854
+     ],
+     [
+      0.19278250634670258,
+      0.43734002113342285
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/1999-otsu.png",
+    "rf": "masks/1999-rf.png"
+   }
+  },
+  {
+   "year": 2000,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_19991210_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_19991210_02_T1"
+   ],
+   "date": "1999-12-10",
+   "cloud_pct": 6.41,
+   "valid_pct": 93.59,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2000.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2000-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.20128001272678375,
+      1.6022124290466309
+     ],
+     [
+      0.1554100066423416,
+      0.3402100205421448
+     ],
+     [
+      0.11487500369548798,
+      0.2549874782562256
+     ]
+    ],
+    "swir": [
+     [
+      0.18851999938488007,
+      0.4448475241661072
+     ],
+     [
+      0.20793499052524567,
+      0.43794500827789307
+     ],
+     [
+      0.20128001272678375,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2000-otsu.png",
+    "rf": "masks/2000-rf.png"
+   }
+  },
+  {
+   "year": 2001,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20010129_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20010129_02_T1"
+   ],
+   "date": "2001-01-29",
+   "cloud_pct": 11.85,
+   "valid_pct": 88.15,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.2,
+   "pixel_m": 30.0,
+   "image": "frames/2001.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2001-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.21046499907970428,
+      0.3886375427246094
+     ],
+     [
+      0.17622749507427216,
+      0.33894503116607666
+     ],
+     [
+      0.1504874974489212,
+      0.30206751823425293
+     ]
+    ],
+    "swir": [
+     [
+      0.19088499248027802,
+      0.3376525044441223
+     ],
+     [
+      0.21978749334812164,
+      0.3926525115966797
+     ],
+     [
+      0.21046499907970428,
+      0.3886375427246094
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2001-otsu.png",
+    "rf": "masks/2001-rf.png"
+   }
+  },
+  {
+   "year": 2002,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20020305_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20020305_02_T1"
+   ],
+   "date": "2002-03-05",
+   "cloud_pct": 1.46,
+   "valid_pct": 98.54,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2002.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2002-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.17251498997211456,
+      0.4015899896621704
+     ],
+     [
+      0.13228251039981842,
+      0.3165600299835205
+     ],
+     [
+      0.09829248487949371,
+      0.23777250945568085
+     ]
+    ],
+    "swir": [
+     [
+      0.15590499341487885,
+      0.4240575432777405
+     ],
+     [
+      0.17861999571323395,
+      0.404229998588562
+     ],
+     [
+      0.17251498997211456,
+      0.4015899896621704
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2002-otsu.png",
+    "rf": "masks/2002-rf.png"
+   }
+  },
+  {
+   "year": 2003,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20021015_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20021015_02_T1"
+   ],
+   "date": "2002-10-15",
+   "cloud_pct": 2.76,
+   "valid_pct": 97.24,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 4.0,
+   "snow_pct": 0.15,
+   "pixel_m": 30.0,
+   "image": "frames/2003.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2003-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.20356251299381256,
+      0.37326502799987793
+     ],
+     [
+      0.16322000324726105,
+      0.30281001329421997
+     ],
+     [
+      0.12983499467372894,
+      0.23865306198597006
+     ]
+    ],
+    "swir": [
+     [
+      0.17551250755786896,
+      0.36919504404067993
+     ],
+     [
+      0.2166524976491928,
+      0.3794800043106079
+     ],
+     [
+      0.20356251299381256,
+      0.37326502799987793
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2003-otsu.png",
+    "rf": "masks/2003-rf.png"
+   }
+  },
+  {
+   "year": 2004,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20031221_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20031221_02_T1",
+    "LE07_L2SP_233077_20040326_02_T1"
+   ],
+   "date": "2003-12-21",
+   "cloud_pct": 2.92,
+   "valid_pct": 97.08,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 3.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2004.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2004-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.17413748800754547,
+      1.6022124290466309
+     ],
+     [
+      0.13343749940395355,
+      0.3428230428695684
+     ],
+     [
+      0.10090498626232147,
+      0.2631549835205078
+     ]
+    ],
+    "swir": [
+     [
+      0.17116695761680603,
+      0.4375600218772888
+     ],
+     [
+      0.18538500368595123,
+      0.4325005555152898
+     ],
+     [
+      0.17413748800754547,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2004-otsu.png",
+    "rf": "masks/2004-rf.png"
+   }
+  },
+  {
+   "year": 2005,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20041207_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20041207_02_T1",
+    "LE07_L2SP_233077_20041223_02_T1",
+    "LE07_L2SP_233077_20041105_02_T1"
+   ],
+   "date": "2004-12-07",
+   "cloud_pct": 2.54,
+   "valid_pct": 97.46,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2005.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2005-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.19877751171588898,
+      0.4394305491447454
+     ],
+     [
+      0.1534299999475479,
+      0.35684752464294434
+     ],
+     [
+      0.1130325049161911,
+      0.2780050039291382
+     ]
+    ],
+    "swir": [
+     [
+      0.19168250262737274,
+      0.4439125061035156
+     ],
+     [
+      0.20746751129627228,
+      0.442840039730072
+     ],
+     [
+      0.19877751171588898,
+      0.4394305491447454
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2005-otsu.png",
+    "rf": "masks/2005-rf.png"
+   }
+  },
+  {
+   "year": 2006,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20060127_02_T2",
+   "scene_ids": [
+    "LE07_L2SP_233077_20060127_02_T2",
+    "LE07_L2SP_233077_20051210_02_T1",
+    "LE07_L2SP_233077_20060228_02_T1"
+   ],
+   "date": "2006-01-27",
+   "cloud_pct": 8.69,
+   "valid_pct": 91.31,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.61,
+   "pixel_m": 30.0,
+   "image": "frames/2006.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2006-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.17608998715877533,
+      0.4030200242996216
+     ],
+     [
+      0.13673751056194305,
+      0.3278630518913274
+     ],
+     [
+      0.10296748578548431,
+      0.2786099910736084
+     ]
+    ],
+    "swir": [
+     [
+      0.14460249245166779,
+      0.4127824902534485
+     ],
+     [
+      0.18752999603748322,
+      0.41407501697540283
+     ],
+     [
+      0.17608998715877533,
+      0.4030200242996216
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2006-otsu.png",
+    "rf": "masks/2006-rf.png"
+   }
+  },
+  {
+   "year": 2007,
+   "sensor": "landsat-5",
+   "scene_id": "LT05_L2SP_233077_20061103_02_T1",
+   "scene_ids": [
+    "LT05_L2SP_233077_20061103_02_T1"
+   ],
+   "date": "2006-11-03",
+   "cloud_pct": 12.9,
+   "valid_pct": 87.1,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2007.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2007-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1859074980020523,
+      0.44149249792099
+     ],
+     [
+      0.14913998544216156,
+      0.3903700113296509
+     ],
+     [
+      0.10821999609470367,
+      0.31400306344032336
+     ]
+    ],
+    "swir": [
+     [
+      0.18719999492168427,
+      0.4364050030708313
+     ],
+     [
+      0.19544999301433563,
+      0.43393003940582275
+     ],
+     [
+      0.1859074980020523,
+      0.44149249792099
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2007-otsu.png",
+    "rf": "masks/2007-rf.png"
+   }
+  },
+  {
+   "year": 2008,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20071130_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20071130_02_T1",
+    "LE07_L2SP_233077_20071013_02_T1"
+   ],
+   "date": "2007-11-30",
+   "cloud_pct": 3.24,
+   "valid_pct": 96.76,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2008.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2008-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.19569750130176544,
+      0.45158499479293823
+     ],
+     [
+      0.15040500462055206,
+      0.3725225329399109
+     ],
+     [
+      0.11132751405239105,
+      0.2938724756240845
+     ]
+    ],
+    "swir": [
+     [
+      0.1967424899339676,
+      0.4552150368690491
+     ],
+     [
+      0.20843000710010529,
+      0.454307496547699
+     ],
+     [
+      0.19569750130176544,
+      0.45158499479293823
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2008-otsu.png",
+    "rf": "masks/2008-rf.png"
+   }
+  },
+  {
+   "year": 2009,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20081218_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20081218_02_T1",
+    "LE07_L2SP_233077_20090103_02_T1",
+    "LE07_L2SP_233077_20090308_02_T1",
+    "LE07_L2SP_233077_20090324_02_T1"
+   ],
+   "date": "2008-12-18",
+   "cloud_pct": 9.67,
+   "valid_pct": 90.33,
+   "data_pct": 98.05,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2009.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2009-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.21084998548030853,
+      1.6022124290466309
+     ],
+     [
+      0.16739998757839203,
+      0.3667238676548008
+     ],
+     [
+      0.12636999785900116,
+      0.283174991607666
+     ]
+    ],
+    "swir": [
+     [
+      0.20353500545024872,
+      0.4631350040435791
+     ],
+     [
+      0.22063998878002167,
+      0.4556275010108948
+     ],
+     [
+      0.21084998548030853,
+      1.6022124290466309
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2009-otsu.png",
+    "rf": "masks/2009-rf.png"
+   }
+  },
+  {
+   "year": 2010,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20091103_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20091103_02_T1",
+    "LE07_L2SP_233077_20091119_02_T1"
+   ],
+   "date": "2009-11-03",
+   "cloud_pct": 2.57,
+   "valid_pct": 97.43,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2010.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2010-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.22146500647068024,
+      0.44718503952026367
+     ],
+     [
+      0.17455001175403595,
+      0.3661699891090393
+     ],
+     [
+      0.13197998702526093,
+      0.2849075198173523
+     ]
+    ],
+    "swir": [
+     [
+      0.21703696370124817,
+      0.4701474905014038
+     ],
+     [
+      0.23367498815059662,
+      0.4570850133895874
+     ],
+     [
+      0.22146500647068024,
+      0.44718503952026367
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2010-otsu.png",
+    "rf": "masks/2010-rf.png"
+   }
+  },
+  {
+   "year": 2011,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20110314_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20110314_02_T1",
+    "LE07_L2SP_233077_20101106_02_T1",
+    "LE07_L2SP_233077_20101208_02_T1",
+    "LE07_L2SP_233077_20101224_02_T1",
+    "LE07_L2SP_233077_20110330_02_T1"
+   ],
+   "date": "2011-03-14",
+   "cloud_pct": 4.36,
+   "valid_pct": 95.64,
+   "data_pct": 99.5,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2011.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2011-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1718275099992752,
+      0.4183358752727493
+     ],
+     [
+      0.13230998814105988,
+      0.3429875373840332
+     ],
+     [
+      0.09699998795986176,
+      0.26521748304367065
+     ]
+    ],
+    "swir": [
+     [
+      0.1678125113248825,
+      0.4346175193786621
+     ],
+     [
+      0.18175499141216278,
+      0.42039837479591213
+     ],
+     [
+      0.1718275099992752,
+      0.4183358752727493
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2011-otsu.png",
+    "rf": "masks/2011-rf.png"
+   }
+  },
+  {
+   "year": 2012,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20111008_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20111008_02_T1",
+    "LE07_L2SP_233077_20111024_02_T1"
+   ],
+   "date": "2011-10-08",
+   "cloud_pct": 1.88,
+   "valid_pct": 98.12,
+   "data_pct": 99.49,
+   "scene_cloud_pct": 6.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2012.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2012-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.18233250081539154,
+      0.44531500339508057
+     ],
+     [
+      0.13957001268863678,
+      0.3685075044631958
+     ],
+     [
+      0.1023624986410141,
+      0.28691500425338745
+     ]
+    ],
+    "swir": [
+     [
+      0.18318499624729156,
+      0.4615675210952759
+     ],
+     [
+      0.19514749944210052,
+      0.44963252544403076
+     ],
+     [
+      0.18233250081539154,
+      0.44531500339508057
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2012-otsu.png",
+    "rf": "masks/2012-rf.png"
+   }
+  },
+  {
+   "year": 2013,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20121213_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20121213_02_T1",
+    "LE07_L2SP_233077_20121111_02_T1",
+    "LE07_L2SP_233077_20121127_02_T1"
+   ],
+   "date": "2012-12-13",
+   "cloud_pct": 3.11,
+   "valid_pct": 96.89,
+   "data_pct": 99.66,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2013.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2013-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.21161998808383942,
+      0.4452325105667114
+     ],
+     [
+      0.1655300110578537,
+      0.3625950217247009
+     ],
+     [
+      0.12320749461650848,
+      0.2769874930381775
+     ]
+    ],
+    "swir": [
+     [
+      0.2073024958372116,
+      0.467886469364167
+     ],
+     [
+      0.22256501019001007,
+      0.4567275047302246
+     ],
+     [
+      0.21161998808383942,
+      0.4452325105667114
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged",
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2013-otsu.png",
+    "rf": "masks/2013-rf.png"
+   }
+  },
+  {
+   "year": 2014,
+   "sensor": "landsat-7",
+   "scene_id": "LE07_L2SP_233077_20131216_02_T1",
+   "scene_ids": [
+    "LE07_L2SP_233077_20131216_02_T1",
+    "LE07_L2SP_233077_20131130_02_T2"
+   ],
+   "date": "2013-12-16",
+   "cloud_pct": 2.64,
+   "valid_pct": 97.36,
+   "data_pct": 99.92,
+   "scene_cloud_pct": 1.0,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2014.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2014-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.21186914682388305,
+      0.4607425332069397
+     ],
+     [
+      0.1632475107908249,
+      0.3724675178527832
+     ],
+     [
+      0.12012751400470734,
+      0.2796825170516968
+     ]
+    ],
+    "swir": [
+     [
+      0.199630007147789,
+      0.4791949987411499
+     ],
+     [
+      0.2247375100851059,
+      0.47515249252319336
+     ],
+     [
+      0.21186914682388305,
+      0.4607425332069397
+     ]
+    ]
+   },
+   "flags": [
+    "composite",
+    "slc_off"
+   ],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2014-otsu.png",
+    "rf": "masks/2014-rf.png"
+   }
+  },
+  {
+   "year": 2015,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_233077_20141109_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_233077_20141109_02_T1"
+   ],
+   "date": "2014-11-09",
+   "cloud_pct": 1.23,
+   "valid_pct": 98.77,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 1.43,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2015.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2015-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.2093374878168106,
+      0.4411900043487549
+     ],
+     [
+      0.1655300110578537,
+      0.368755042552948
+     ],
+     [
+      0.11795501410961151,
+      0.285319983959198
+     ]
+    ],
+    "swir": [
+     [
+      0.2063949853181839,
+      0.44586503505706787
+     ],
+     [
+      0.2252875119447708,
+      0.4623650312423706
+     ],
+     [
+      0.2093374878168106,
+      0.4411900043487549
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2015-otsu.png",
+    "rf": "masks/2015-rf.png"
+   }
+  },
+  {
+   "year": 2016,
+   "sensor": "landsat-8",
+   "scene_id": "LC08_L2SP_233077_20151230_02_T1",
+   "scene_ids": [
+    "LC08_L2SP_233077_20151230_02_T1"
+   ],
+   "date": "2015-12-30",
+   "cloud_pct": 1.01,
+   "valid_pct": 98.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.91,
+   "snow_pct": 0.0,
+   "pixel_m": 30.0,
+   "image": "frames/2016.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2016-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.17454891145229343,
+      0.433132529258728
+     ],
+     [
+      0.13566391408443454,
+      0.3720011377334605
+     ],
+     [
+      0.09633998572826385,
+      0.2943674921989441
+     ]
+    ],
+    "swir": [
+     [
+      0.1786475032567978,
+      0.4318400025367737
+     ],
+     [
+      0.19118748605251312,
+      0.4441875219345093
+     ],
+     [
+      0.17454891145229343,
+      0.433132529258728
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "landsat-c2-l2",
+   "masks": {
+    "otsu": "masks/2016-otsu.png",
+    "rf": "masks/2016-rf.png"
+   }
+  },
+  {
+   "year": 2017,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_19KDP_20170320_0_L2A+S2A_19KEP_20170320_0_L2A",
+   "scene_ids": [
+    "S2A_19KDP_20170320_0_L2A+S2A_19KEP_20170320_0_L2A"
+   ],
+   "date": "2017-03-20",
+   "cloud_pct": 13.57,
+   "valid_pct": 86.43,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 11.15,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2017.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2017-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.17379999160766602,
+      0.45399999618530273
+     ],
+     [
+      0.12860000133514404,
+      0.41119998693466187
+     ],
+     [
+      0.0867999941110611,
+      0.3407999873161316
+     ]
+    ],
+    "swir": [
+     [
+      0.18599998950958252,
+      0.41449999809265137
+     ],
+     [
+      0.1873999983072281,
+      0.4495999813079834
+     ],
+     [
+      0.17379999160766602,
+      0.45399999618530273
+     ]
+    ]
+   },
+   "flags": [
+    "qa_flagged"
+   ],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2017-otsu.png",
+    "rf": "masks/2017-rf.png",
+    "unet": "masks/2017-unet.png"
+   }
+  },
+  {
+   "year": 2018,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19KDP_20180330_1_L2A+S2B_19KDP_20180330_0_L2A+S2B_19KEP_20180330_1_L2A+S2B_19KEP_20180330_0_L2A",
+   "scene_ids": [
+    "S2B_19KDP_20180330_1_L2A+S2B_19KDP_20180330_0_L2A+S2B_19KEP_20180330_1_L2A+S2B_19KEP_20180330_0_L2A"
+   ],
+   "date": "2018-03-30",
+   "cloud_pct": 0.0,
+   "valid_pct": 100.0,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 2.57,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2018.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2018-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.08699999004602432,
+      0.3059999942779541
+     ],
+     [
+      0.04759999364614487,
+      0.2524000108242035
+     ],
+     [
+      0.019399993121623993,
+      0.1996000111103058
+     ]
+    ],
+    "swir": [
+     [
+      0.08959998935461044,
+      0.3174999952316284
+     ],
+     [
+      0.0989999994635582,
+      0.30959999561309814
+     ],
+     [
+      0.08699999004602432,
+      0.3059999942779541
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2018-otsu.png",
+    "rf": "masks/2018-rf.png",
+    "unet": "masks/2018-unet.png"
+   }
+  },
+  {
+   "year": 2019,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_19KDP_20181130_1_L2A+S2A_19KDP_20181130_0_L2A+S2A_19KEP_20181130_1_L2A",
+   "scene_ids": [
+    "S2A_19KDP_20181130_1_L2A+S2A_19KDP_20181130_0_L2A+S2A_19KEP_20181130_1_L2A"
+   ],
+   "date": "2018-11-30",
+   "cloud_pct": 0.03,
+   "valid_pct": 99.97,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 7.45,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2019.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2019-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.10479999333620071,
+      0.38119998574256897
+     ],
+     [
+      0.05879998952150345,
+      0.31759998202323914
+     ],
+     [
+      0.024799995124340057,
+      0.24959999322891235
+     ]
+    ],
+    "swir": [
+     [
+      0.1176999881863594,
+      0.36959999799728394
+     ],
+     [
+      0.1281999945640564,
+      0.3919999897480011
+     ],
+     [
+      0.10479999333620071,
+      0.38119998574256897
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2019-otsu.png",
+    "rf": "masks/2019-rf.png",
+    "unet": "masks/2019-unet.png"
+   }
+  },
+  {
+   "year": 2020,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_19KDP_20191215_1_L2A",
+   "scene_ids": [
+    "S2A_19KDP_20191215_1_L2A"
+   ],
+   "date": "2019-12-15",
+   "cloud_pct": 0.03,
+   "valid_pct": 99.97,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.03,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2020.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2020-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0989999994635582,
+      0.3752000033855438
+     ],
+     [
+      0.05119999498128891,
+      0.31200000643730164
+     ],
+     [
+      0.017999999225139618,
+      0.2459999918937683
+     ]
+    ],
+    "swir": [
+     [
+      0.10969998687505722,
+      0.35979998111724854
+     ],
+     [
+      0.11939998716115952,
+      0.3831999897956848
+     ],
+     [
+      0.0989999994635582,
+      0.3752000033855438
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2020-otsu.png",
+    "rf": "masks/2020-rf.png",
+    "unet": "masks/2020-unet.png"
+   }
+  },
+  {
+   "year": 2021,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19KDP_20210314_1_L2A+S2B_19KDP_20210314_0_L2A+S2B_19KEP_20210314_0_L2A+S2B_19KEP_20210314_1_L2A",
+   "scene_ids": [
+    "S2B_19KDP_20210314_1_L2A+S2B_19KDP_20210314_0_L2A+S2B_19KEP_20210314_0_L2A+S2B_19KEP_20210314_1_L2A"
+   ],
+   "date": "2021-03-14",
+   "cloud_pct": 1.01,
+   "valid_pct": 98.99,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 3.43,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2021.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2021-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.10080000013113022,
+      0.35359999537467957
+     ],
+     [
+      0.06139998883008957,
+      0.29600000381469727
+     ],
+     [
+      0.03179999440908432,
+      0.23519998788833618
+     ]
+    ],
+    "swir": [
+     [
+      0.11109999567270279,
+      0.3671000003814697
+     ],
+     [
+      0.1119999960064888,
+      0.35839998722076416
+     ],
+     [
+      0.10080000013113022,
+      0.35359999537467957
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2021-otsu.png",
+    "rf": "masks/2021-rf.png",
+    "unet": "masks/2021-unet.png"
+   }
+  },
+  {
+   "year": 2022,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19KDP_20220309_0_L2A+S2B_19KEP_20220309_0_L2A",
+   "scene_ids": [
+    "S2B_19KDP_20220309_0_L2A+S2B_19KEP_20220309_0_L2A"
+   ],
+   "date": "2022-03-09",
+   "cloud_pct": 0.28,
+   "valid_pct": 99.72,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.08,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2022.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2022-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.0843999907374382,
+      0.3255999982357025
+     ],
+     [
+      0.043199993669986725,
+      0.27480000257492065
+     ],
+     [
+      0.014199994504451752,
+      0.21799999475479126
+     ]
+    ],
+    "swir": [
+     [
+      0.09749998897314072,
+      0.33969998359680176
+     ],
+     [
+      0.09859999269247055,
+      0.3319999873638153
+     ],
+     [
+      0.0843999907374382,
+      0.3255999982357025
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2022-otsu.png",
+    "rf": "masks/2022-rf.png",
+    "unet": "masks/2022-unet.png"
+   }
+  },
+  {
+   "year": 2023,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19KDP_20230123_0_L2A+S2B_19KEP_20230123_0_L2A",
+   "scene_ids": [
+    "S2B_19KDP_20230123_0_L2A+S2B_19KEP_20230123_0_L2A"
+   ],
+   "date": "2023-01-23",
+   "cloud_pct": 0.44,
+   "valid_pct": 99.56,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.12,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2023.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2023-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.1167999878525734,
+      0.3472000062465668
+     ],
+     [
+      0.07199998944997787,
+      0.29159998893737793
+     ],
+     [
+      0.03999999910593033,
+      0.23519998788833618
+     ]
+    ],
+    "swir": [
+     [
+      0.12559998035430908,
+      0.3625999987125397
+     ],
+     [
+      0.12939998507499695,
+      0.3563999831676483
+     ],
+     [
+      0.1167999878525734,
+      0.3472000062465668
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2023-otsu.png",
+    "rf": "masks/2023-rf.png",
+    "unet": "masks/2023-unet.png"
+   }
+  },
+  {
+   "year": 2024,
+   "sensor": "sentinel-2a",
+   "scene_id": "S2A_19KDP_20240123_0_L2A+S2A_19KEP_20240123_0_L2A",
+   "scene_ids": [
+    "S2A_19KDP_20240123_0_L2A+S2A_19KEP_20240123_0_L2A"
+   ],
+   "date": "2024-01-23",
+   "cloud_pct": 0.29,
+   "valid_pct": 99.71,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.11,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2024.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2024-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.12139999121427536,
+      0.3540000021457672
+     ],
+     [
+      0.07359998673200607,
+      0.2903999984264374
+     ],
+     [
+      0.03759998828172684,
+      0.22760000824928284
+     ]
+    ],
+    "swir": [
+     [
+      0.13029998540878296,
+      0.3517000079154968
+     ],
+     [
+      0.13580000400543213,
+      0.36480000615119934
+     ],
+     [
+      0.12139999121427536,
+      0.3540000021457672
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2024-otsu.png",
+    "rf": "masks/2024-rf.png",
+    "unet": "masks/2024-unet.png"
+   }
+  },
+  {
+   "year": 2025,
+   "sensor": "sentinel-2b",
+   "scene_id": "S2B_19KDP_20250221_0_L2A+S2B_19KEP_20250221_0_L2A+S2B_19KDP_20250221_1_L2A+S2B_19KEP_20250221_1_L2A",
+   "scene_ids": [
+    "S2B_19KDP_20250221_0_L2A+S2B_19KEP_20250221_0_L2A+S2B_19KDP_20250221_1_L2A+S2B_19KEP_20250221_1_L2A"
+   ],
+   "date": "2025-02-21",
+   "cloud_pct": 0.45,
+   "valid_pct": 99.55,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.09,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2025.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2025-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.11219999939203262,
+      0.35440000891685486
+     ],
+     [
+      0.0697999969124794,
+      0.29600000381469727
+     ],
+     [
+      0.03739999979734421,
+      0.23519998788833618
+     ]
+    ],
+    "swir": [
+     [
+      0.12680000066757202,
+      0.36879998445510864
+     ],
+     [
+      0.121799997985363,
+      0.3563999831676483
+     ],
+     [
+      0.11219999939203262,
+      0.35440000891685486
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2025-otsu.png",
+    "rf": "masks/2025-rf.png",
+    "unet": "masks/2025-unet.png"
+   }
+  },
+  {
+   "year": 2026,
+   "sensor": "sentinel-2c",
+   "scene_id": "S2C_19KDP_20260313_0_L2A+S2C_19KEP_20260313_0_L2A",
+   "scene_ids": [
+    "S2C_19KDP_20260313_0_L2A+S2C_19KEP_20260313_0_L2A"
+   ],
+   "date": "2026-03-13",
+   "cloud_pct": 0.46,
+   "valid_pct": 99.54,
+   "data_pct": 100.0,
+   "scene_cloud_pct": 0.09,
+   "snow_pct": 0.0,
+   "pixel_m": 10.0,
+   "image": "frames/2026.webp",
+   "image_px": 1024,
+   "swir_image": "frames/2026-swir.webp",
+   "stretch": {
+    "true_colour": [
+     [
+      0.09779999405145645,
+      0.3352999985218048
+     ],
+     [
+      0.051099993288517,
+      0.2687000036239624
+     ],
+     [
+      0.015199996531009674,
+      0.19999998807907104
+     ]
+    ],
+    "swir": [
+     [
+      0.10739999264478683,
+      0.3244999945163727
+     ],
+     [
+      0.11169999092817307,
+      0.3465000092983246
+     ],
+     [
+      0.09779999405145645,
+      0.3352999985218048
+     ]
+    ]
+   },
+   "flags": [],
+   "collection": "sentinel-2-l2a",
+   "masks": {
+    "otsu": "masks/2026-otsu.png",
+    "rf": "masks/2026-rf.png",
+    "unet": "masks/2026-unet.png"
+   }
+  }
+ ],
+ "gaps": {},
+ "series": {
+  "years": [
+   1985,
+   1986,
+   1987,
+   1988,
+   1989,
+   1990,
+   1991,
+   1992,
+   1993,
+   1994,
+   1995,
+   1996,
+   1997,
+   1998,
+   1999,
+   2000,
+   2001,
+   2002,
+   2003,
+   2004,
+   2005,
+   2006,
+   2007,
+   2008,
+   2009,
+   2010,
+   2011,
+   2012,
+   2013,
+   2014,
+   2015,
+   2016,
+   2017,
+   2018,
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025,
+   2026
+  ],
+  "sensor": [
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-5",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-7",
+   "landsat-8",
+   "landsat-8",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2b",
+   "sentinel-2a",
+   "sentinel-2b",
+   "sentinel-2c"
+  ],
+  "valid_frac": [
+   1.0,
+   0.9997,
+   0.9976,
+   1.0,
+   1.0,
+   0.9989,
+   0.9962,
+   0.9695,
+   0.9669,
+   0.9521,
+   0.9777,
+   0.9884,
+   0.9497,
+   0.97,
+   0.9133,
+   0.8777,
+   0.8134,
+   0.9726,
+   0.9485,
+   0.9444,
+   0.9517,
+   0.8619,
+   0.754,
+   0.9382,
+   0.8362,
+   0.951,
+   0.9244,
+   0.9717,
+   0.9462,
+   0.9554,
+   0.9766,
+   0.9807,
+   0.8078,
+   1.0,
+   0.9996,
+   0.9995,
+   0.9984,
+   0.9952,
+   0.9923,
+   0.9951,
+   0.9924,
+   0.9924
+  ],
+  "envelope_km2": 301.9464,
+  "envelope": "reference polygons dilated by 1000 m on the 30 m grid",
+  "min_valid_frac": 0.7,
+  "area_km2": {
+   "otsu": [
+    149.8896,
+    148.8141,
+    139.9662,
+    152.9604,
+    145.3032,
+    144.1242,
+    134.5266,
+    120.6378,
+    129.6153,
+    125.9514,
+    123.2505,
+    121.3578,
+    119.4282,
+    131.9481,
+    6.5826,
+    32.5962,
+    64.6281,
+    142.8723,
+    118.2438,
+    12.8619,
+    117.1008,
+    123.6186,
+    43.0524,
+    87.2649,
+    24.8139,
+    108.2889,
+    97.8543,
+    95.5512,
+    92.2203,
+    90.4815,
+    87.2271,
+    102.3489,
+    38.025,
+    43.9002,
+    36.2871,
+    49.8735,
+    43.1271,
+    45.1062,
+    50.4414,
+    46.7739,
+    44.4627,
+    37.0719
+   ],
+   "rf": [
+    50.1849,
+    65.3022,
+    47.0619,
+    71.1,
+    65.7387,
+    62.8974,
+    71.5446,
+    126.2259,
+    77.6205,
+    55.9422,
+    125.0685,
+    113.2857,
+    102.5064,
+    79.9506,
+    161.3376,
+    174.2436,
+    244.2078,
+    196.0137,
+    233.7543,
+    156.1104,
+    208.3698,
+    180.0981,
+    136.4787,
+    206.2188,
+    207.9909,
+    245.9079,
+    186.3189,
+    173.0349,
+    224.2935,
+    233.1261,
+    260.8641,
+    203.2029,
+    190.5948,
+    205.9272,
+    211.6512,
+    204.966,
+    188.208,
+    192.7305,
+    207.2295,
+    258.8229,
+    249.4431,
+    250.245
+   ],
+   "unet": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    109.4859,
+    159.5916,
+    154.8162,
+    157.7268,
+    169.9866,
+    169.0065,
+    180.3627,
+    192.0402,
+    202.6593,
+    186.5232
+   ]
+  },
+  "index_mean": {
+   "ndvi": [
+    0.08102,
+    0.07458,
+    0.08168,
+    0.06944,
+    0.07027,
+    0.06314,
+    0.05695,
+    0.04104,
+    0.04874,
+    0.04916,
+    0.04294,
+    0.05357,
+    0.05483,
+    0.07116,
+    0.04167,
+    -0.06902,
+    0.01272,
+    0.0161,
+    0.02238,
+    -0.00986,
+    0.01939,
+    0.03053,
+    0.02305,
+    0.01987,
+    -0.06472,
+    0.01996,
+    0.02054,
+    0.02649,
+    0.02187,
+    0.02374,
+    0.02591,
+    0.03232,
+    0.02436,
+    0.02314,
+    0.03667,
+    0.04147,
+    0.0245,
+    0.03103,
+    0.02306,
+    0.02108,
+    0.00852,
+    0.02768
+   ],
+   "mndwi": [
+    -0.30853,
+    -0.2951,
+    -0.30657,
+    -0.30927,
+    -0.29073,
+    -0.28517,
+    -0.27024,
+    -0.21783,
+    -0.24814,
+    -0.25986,
+    -0.24818,
+    -0.25898,
+    -0.2519,
+    -0.29038,
+    -0.24053,
+    -0.23756,
+    -0.08339,
+    -0.21524,
+    -0.14796,
+    -0.23569,
+    -0.21265,
+    -0.17172,
+    -0.21405,
+    -0.20688,
+    -0.20047,
+    -0.19837,
+    -0.21929,
+    -0.22518,
+    -0.20368,
+    -0.19545,
+    -0.18856,
+    -0.20388,
+    -0.22173,
+    -0.27338,
+    -0.25899,
+    -0.29588,
+    -0.27155,
+    -0.28113,
+    -0.24497,
+    -0.24874,
+    -0.24406,
+    -0.27151
+   ],
+   "bsi": [
+    0.18021,
+    0.17744,
+    0.18088,
+    0.18977,
+    0.17733,
+    0.18032,
+    0.17372,
+    0.14779,
+    0.16175,
+    0.17109,
+    0.1676,
+    0.15426,
+    0.15797,
+    0.16384,
+    0.16333,
+    0.21478,
+    0.06727,
+    0.15512,
+    0.10602,
+    0.17896,
+    0.1523,
+    0.1135,
+    0.15735,
+    0.14899,
+    0.19644,
+    0.14421,
+    0.158,
+    0.15672,
+    0.14751,
+    0.14324,
+    0.13778,
+    0.14316,
+    0.15755,
+    0.1937,
+    0.17497,
+    0.19595,
+    0.18972,
+    0.19327,
+    0.17195,
+    0.1796,
+    0.18401,
+    0.19682
+   ]
+  },
+  "methods": {
+   "otsu": {
+    "label": "Otsu bare-ground (M4)",
+    "domain": "all sensors",
+    "model": null,
+    "flags": [],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1999,
+      2002,
+      2007,
+      2010,
+      2017
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1998,
+       "mean": 134.841,
+       "slope": -2.387
+      },
+      {
+       "start": 1999,
+       "end": 2001,
+       "mean": 34.6023,
+       "slope": 29.0228
+      },
+      {
+       "start": 2002,
+       "end": 2006,
+       "mean": 102.9395,
+       "slope": -3.965
+      },
+      {
+       "start": 2007,
+       "end": 2009,
+       "mean": 51.7104,
+       "slope": -9.1193
+      },
+      {
+       "start": 2010,
+       "end": 2016,
+       "mean": 96.2817,
+       "slope": -1.5766
+      },
+      {
+       "start": 2017,
+       "end": 2026,
+       "mean": 43.5069,
+       "slope": 0.312
+      }
+     ],
+     "penalty": 1629.714349,
+     "sigma": 12.055762,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [
+      2001,
+      2002,
+      2005,
+      2010
+     ],
+     "k": 6.027881,
+     "h": 48.223048,
+     "sigma": 12.055762,
+     "target": -2.3031
+    }
+   },
+   "rf": {
+    "label": "Random forest (M7)",
+    "domain": "all sensors; Landsat years flagged cross_sensor",
+    "model": "rf-v1",
+    "flags": [
+     "cross_sensor"
+    ],
+    "n": 42,
+    "pelt": {
+     "breaks": [
+      1999
+     ],
+     "segments": [
+      {
+       "start": 1985,
+       "end": 1998,
+       "mean": 79.6021,
+       "slope": 3.9997
+      },
+      {
+       "start": 1999,
+       "end": 2026,
+       "mean": 206.8354,
+       "slope": 1.5965
+      }
+     ],
+     "penalty": 12219.531806,
+     "sigma": 33.011572,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 16.505786,
+     "h": 132.046286,
+     "sigma": 33.011572,
+     "target": 1.7721
+    }
+   },
+   "unet": {
+    "label": "U-Net (M8)",
+    "domain": "Sentinel-2 years only",
+    "model": "unet-v1",
+    "flags": [],
+    "n": 10,
+    "pelt": {
+     "breaks": [
+      2021
+     ],
+     "segments": [
+      {
+       "start": 2017,
+       "end": 2020,
+       "mean": 145.4051,
+       "slope": 13.9947
+      },
+      {
+       "start": 2021,
+       "end": 2026,
+       "mean": 183.4298,
+       "slope": 5.5805
+      }
+     ],
+     "penalty": 902.245425,
+     "sigma": 11.428622,
+     "cost": "l2",
+     "min_size": 3
+    },
+    "cusum": {
+     "alarms": [],
+     "k": 5.714311,
+     "h": 45.714488,
+     "sigma": 11.428622,
+     "target": 10.6191
+    }
+   }
+  },
+  "change_points": [
+   {
+    "year": 1999,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1629.714349
+   },
+   {
+    "year": 1999,
+    "method": "pelt",
+    "series": "rf",
+    "score": 12219.531806
+   },
+   {
+    "year": 2001,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 48.223048
+   },
+   {
+    "year": 2002,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 48.223048
+   },
+   {
+    "year": 2002,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1629.714349
+   },
+   {
+    "year": 2005,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 48.223048
+   },
+   {
+    "year": 2007,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1629.714349
+   },
+   {
+    "year": 2010,
+    "method": "cusum",
+    "series": "otsu",
+    "score": 48.223048
+   },
+   {
+    "year": 2010,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1629.714349
+   },
+   {
+    "year": 2017,
+    "method": "pelt",
+    "series": "otsu",
+    "score": 1629.714349
+   },
+   {
+    "year": 2021,
+    "method": "pelt",
+    "series": "unet",
+    "score": 902.245425
+   }
+  ],
+  "gaps": {},
+  "dense": null
+ },
+ "dem": {
+  "site_id": "escondida",
+  "status": "ok",
+  "grid_m": 30.0,
+  "coverage": 1.0,
+  "epochs": [
+   {
+    "id": "srtm2000",
+    "source": "SRTM GL1 v3 (OpenTopography), EGM96",
+    "date_range": "2000-02"
+   },
+   {
+    "id": "cop2011_2015",
+    "source": "Copernicus DEM GLO-30 (TanDEM-X), EGM2008",
+    "date_range": "2011 to 2015"
+   }
+  ],
+  "delta_png": "dem/delta.png",
+  "srtm_png": "dem/srtm.png",
+  "cop_png": "dem/cop.png",
+  "delta_range_m": [
+   -135.9,
+   135.9
+  ],
+  "geoid_offset_m": -0.502,
+  "stable_bias_m": -2.769,
+  "noise_floor_m": 1.649,
+  "tau_m": 3.299,
+  "stable_ground_px": 204526,
+  "stable_rule": "outside the envelope and slope below 10 degrees",
+  "cut_volume_m3": 1816467456,
+  "fill_volume_m3": 2039199488,
+  "envelope": {
+   "cut_m3": 1816467456,
+   "fill_m3": 2039199488,
+   "cut_km2": 24.7374,
+   "fill_km2": 65.5677,
+   "min_m": -401.6,
+   "max_m": 181.7
+  },
+  "window": {
+   "cut_m3": 1880206592,
+   "fill_m3": 2100136704,
+   "cut_km2": 39.0501,
+   "fill_km2": 78.9768,
+   "min_m": -401.6,
+   "max_m": 181.7
+  },
+  "flags": [],
+  "terrain_tiles": [
+   "terrain/10/315/582.png",
+   "terrain/10/315/583.png",
+   "terrain/11/630/1165.png",
+   "terrain/11/630/1166.png",
+   "terrain/11/630/1167.png",
+   "terrain/11/631/1165.png",
+   "terrain/11/631/1166.png",
+   "terrain/11/631/1167.png",
+   "terrain/12/1260/2331.png",
+   "terrain/12/1260/2332.png",
+   "terrain/12/1260/2333.png",
+   "terrain/12/1260/2334.png",
+   "terrain/12/1261/2331.png",
+   "terrain/12/1261/2332.png",
+   "terrain/12/1261/2333.png",
+   "terrain/12/1261/2334.png",
+   "terrain/12/1262/2331.png",
+   "terrain/12/1262/2332.png",
+   "terrain/12/1262/2333.png",
+   "terrain/12/1262/2334.png",
+   "terrain/12/1263/2331.png",
+   "terrain/12/1263/2332.png",
+   "terrain/12/1263/2333.png",
+   "terrain/12/1263/2334.png",
+   "terrain/13/2521/4662.png",
+   "terrain/13/2521/4663.png",
+   "terrain/13/2521/4664.png",
+   "terrain/13/2521/4665.png",
+   "terrain/13/2521/4666.png",
+   "terrain/13/2521/4667.png",
+   "terrain/13/2521/4668.png",
+   "terrain/13/2522/4662.png",
+   "terrain/13/2522/4663.png",
+   "terrain/13/2522/4664.png",
+   "terrain/13/2522/4665.png",
+   "terrain/13/2522/4666.png",
+   "terrain/13/2522/4667.png",
+   "terrain/13/2522/4668.png",
+   "terrain/13/2523/4662.png",
+   "terrain/13/2523/4663.png",
+   "terrain/13/2523/4664.png",
+   "terrain/13/2523/4665.png",
+   "terrain/13/2523/4666.png",
+   "terrain/13/2523/4667.png",
+   "terrain/13/2523/4668.png",
+   "terrain/13/2524/4662.png",
+   "terrain/13/2524/4663.png",
+   "terrain/13/2524/4664.png",
+   "terrain/13/2524/4665.png",
+   "terrain/13/2524/4666.png",
+   "terrain/13/2524/4667.png",
+   "terrain/13/2524/4668.png",
+   "terrain/13/2525/4662.png",
+   "terrain/13/2525/4663.png",
+   "terrain/13/2525/4664.png",
+   "terrain/13/2525/4665.png",
+   "terrain/13/2525/4666.png",
+   "terrain/13/2525/4667.png",
+   "terrain/13/2525/4668.png",
+   "terrain/13/2526/4662.png",
+   "terrain/13/2526/4663.png",
+   "terrain/13/2526/4664.png",
+   "terrain/13/2526/4665.png",
+   "terrain/13/2526/4666.png",
+   "terrain/13/2526/4667.png",
+   "terrain/13/2526/4668.png"
+  ],
+  "terrain_tile_zooms": [
+   10,
+   13
+  ],
+  "srtm_stats": {
+   "min": 2588.0,
+   "max": 3833.0
+  },
+  "cop_stats": {
+   "min": 2581.3,
+   "max": 3834.5
+  }
+ },
  "models": [],
  "files": [
+  {
+   "path": "sites/escondida/dem/cop.png",
+   "kind": "dem",
+   "bytes": 468153,
+   "sha256": "f76085f96e02c2359fd0a8075c8b00678b7a58261d8b4eac12b12e7736b609b7"
+  },
+  {
+   "path": "sites/escondida/dem/delta.png",
+   "kind": "dem",
+   "bytes": 734580,
+   "sha256": "a0130a3923bf0245240f510818f99cc3b9e5190b6dadf05c380e82261884c212"
+  },
+  {
+   "path": "sites/escondida/dem/srtm.png",
+   "kind": "dem",
+   "bytes": 515137,
+   "sha256": "8180a2074f719d5eeede3f548f530056d0ff787223320e9ab77da1ed29f6c983"
+  },
+  {
+   "path": "sites/escondida/frames/1985-swir.webp",
+   "kind": "frame",
+   "bytes": 55806,
+   "sha256": "daeb9461cc65a1b64e863837df19d9d8439c87b652d63d2e15528e0e7eb9dcd2",
+   "year": 1985
+  },
+  {
+   "path": "sites/escondida/frames/1985.webp",
+   "kind": "frame",
+   "bytes": 160430,
+   "sha256": "58d4c5e9bb2043875d7afec002e9409f4b217b2bbd1ea9e2d3c2c164dc7d9fa5",
+   "year": 1985
+  },
+  {
+   "path": "sites/escondida/frames/1986-swir.webp",
+   "kind": "frame",
+   "bytes": 58760,
+   "sha256": "b9ca45858e712c71c14f26669cddbde76aa7d2e77889a65425dae596e731e1df",
+   "year": 1986
+  },
+  {
+   "path": "sites/escondida/frames/1986.webp",
+   "kind": "frame",
+   "bytes": 181924,
+   "sha256": "5ad309f154899ca7c0fcf6924a86975c082a90cd1ab8f42f8a11283b036777fd",
+   "year": 1986
+  },
+  {
+   "path": "sites/escondida/frames/1987-swir.webp",
+   "kind": "frame",
+   "bytes": 56950,
+   "sha256": "8a4931ead7d057ad1a59e7dc716a8dd0f020334f74a15101a65d91d122e05d21",
+   "year": 1987
+  },
+  {
+   "path": "sites/escondida/frames/1987.webp",
+   "kind": "frame",
+   "bytes": 172420,
+   "sha256": "c6a6dfdb3182c8c5e9b85275d32a5de965ba82a9dfcfc02c000c8a9ad78a0c99",
+   "year": 1987
+  },
+  {
+   "path": "sites/escondida/frames/1988-swir.webp",
+   "kind": "frame",
+   "bytes": 57636,
+   "sha256": "30d3d14b1c28dabc68c3ba0fa2e6062b28780030834df4108a58417d8f52f21a",
+   "year": 1988
+  },
+  {
+   "path": "sites/escondida/frames/1988.webp",
+   "kind": "frame",
+   "bytes": 167622,
+   "sha256": "7c171521099438ea509e33ad654e4bc59c79add85c6a9499f2adb880021a7bd7",
+   "year": 1988
+  },
+  {
+   "path": "sites/escondida/frames/1989-swir.webp",
+   "kind": "frame",
+   "bytes": 55420,
+   "sha256": "f6c67dd4114cf99e0a935a36f563c599fcc2418f1afceae9dbcb497b10b4b402",
+   "year": 1989
+  },
+  {
+   "path": "sites/escondida/frames/1989.webp",
+   "kind": "frame",
+   "bytes": 157952,
+   "sha256": "9b638c970727c9912e0caea0b7a82a0de6d4eb4403c2061645e396db270feeeb",
+   "year": 1989
+  },
+  {
+   "path": "sites/escondida/frames/1990-swir.webp",
+   "kind": "frame",
+   "bytes": 52398,
+   "sha256": "3ec0e7f4826161e402993aa0671b5a3ddfd037d2a15e0e7df08f73bf51f8fd72",
+   "year": 1990
+  },
+  {
+   "path": "sites/escondida/frames/1990.webp",
+   "kind": "frame",
+   "bytes": 146398,
+   "sha256": "f289210da8e587eeb437f0895328a8ce28578975fdf6f89263b5b906ab07aa08",
+   "year": 1990
+  },
+  {
+   "path": "sites/escondida/frames/1991-swir.webp",
+   "kind": "frame",
+   "bytes": 51514,
+   "sha256": "0b715f85813283e03af5d7db86d2b414cadb7c19b55f25ea2d80e1cedd7322ad",
+   "year": 1991
+  },
+  {
+   "path": "sites/escondida/frames/1991.webp",
+   "kind": "frame",
+   "bytes": 143736,
+   "sha256": "f90cecd90cdd3dec7863448354a39d83620d4913ee308dd6f35dd3228a9cad10",
+   "year": 1991
+  },
+  {
+   "path": "sites/escondida/frames/1992-swir.webp",
+   "kind": "frame",
+   "bytes": 51458,
+   "sha256": "568915b0f6a7f2093b569744e278b022f17656c028e93c9e0ca0568ba82b0716",
+   "year": 1992
+  },
+  {
+   "path": "sites/escondida/frames/1992.webp",
+   "kind": "frame",
+   "bytes": 143828,
+   "sha256": "87ff87aadb18b215505df40ff3910f602b3509a4faf5a08e92d64db4ae535599",
+   "year": 1992
+  },
+  {
+   "path": "sites/escondida/frames/1993-swir.webp",
+   "kind": "frame",
+   "bytes": 49492,
+   "sha256": "b75144d15ac0d48ca64d7549cd32004c3d315fe8ccff2aa6a040d097ba46f76c",
+   "year": 1993
+  },
+  {
+   "path": "sites/escondida/frames/1993.webp",
+   "kind": "frame",
+   "bytes": 132352,
+   "sha256": "7b7599d480a620b79d82fd3b9c32f4eaf836ab9d3fe659c73fd2f2de2f320515",
+   "year": 1993
+  },
+  {
+   "path": "sites/escondida/frames/1994-swir.webp",
+   "kind": "frame",
+   "bytes": 49930,
+   "sha256": "be0fa2bf3958364afc4634786cfe21676c7ffc580cf07bae5ace9ded0556ead9",
+   "year": 1994
+  },
+  {
+   "path": "sites/escondida/frames/1994.webp",
+   "kind": "frame",
+   "bytes": 136918,
+   "sha256": "78fbedb74720b4dda9155cb44f83f958742b2ca700b323a42de4bcdfad9271d5",
+   "year": 1994
+  },
+  {
+   "path": "sites/escondida/frames/1995-swir.webp",
+   "kind": "frame",
+   "bytes": 48908,
+   "sha256": "8e6bcbe5f4eb68fa8dec14addbad0f48b1f016158fe1719a21cbdc501993f946",
+   "year": 1995
+  },
+  {
+   "path": "sites/escondida/frames/1995.webp",
+   "kind": "frame",
+   "bytes": 127676,
+   "sha256": "2a4cf29a04c3349247330fa876b7c67fdeda53f9640c6a41a181fa533bc4cbbd",
+   "year": 1995
+  },
+  {
+   "path": "sites/escondida/frames/1996-swir.webp",
+   "kind": "frame",
+   "bytes": 49144,
+   "sha256": "cb936cd456cc4acf7d2bab7e5f3e7fe6482c5cf90dcabd9006ef168be4877c11",
+   "year": 1996
+  },
+  {
+   "path": "sites/escondida/frames/1996.webp",
+   "kind": "frame",
+   "bytes": 128314,
+   "sha256": "36942f05de64bf77bd91d1f49ec7f02d103d6d1ff923d9d06163133be9dfde48",
+   "year": 1996
+  },
+  {
+   "path": "sites/escondida/frames/1997-swir.webp",
+   "kind": "frame",
+   "bytes": 52486,
+   "sha256": "7b587771aec6c5e9e01a06330c43c816d05b4307b18eb3762d0c97fb13f6ef5b",
+   "year": 1997
+  },
+  {
+   "path": "sites/escondida/frames/1997.webp",
+   "kind": "frame",
+   "bytes": 142152,
+   "sha256": "5e2a1b29cc52c53e6f474945d8d85ab93a068e5652bcceb2e88f00e768e4f701",
+   "year": 1997
+  },
+  {
+   "path": "sites/escondida/frames/1998-swir.webp",
+   "kind": "frame",
+   "bytes": 52976,
+   "sha256": "7efa22230818c7e9e6a5309a45e05b26008c0da3ced5b1223133311b26629e21",
+   "year": 1998
+  },
+  {
+   "path": "sites/escondida/frames/1998.webp",
+   "kind": "frame",
+   "bytes": 140542,
+   "sha256": "4bb473c1fa6a9d3f57bf7b4741ad336a5469e42b5305bbcf5742d77c1aaa3627",
+   "year": 1998
+  },
+  {
+   "path": "sites/escondida/frames/1999-swir.webp",
+   "kind": "frame",
+   "bytes": 49792,
+   "sha256": "6b1df0f85903631d0af868b7db68b43ca5f13206915af0fecc2cf67bcbb529ac",
+   "year": 1999
+  },
+  {
+   "path": "sites/escondida/frames/1999.webp",
+   "kind": "frame",
+   "bytes": 130992,
+   "sha256": "13ca8b09745372811c8a8705c809557c92f9550f75061364b4f26b58d991b807",
+   "year": 1999
+  },
+  {
+   "path": "sites/escondida/frames/2000-swir.webp",
+   "kind": "frame",
+   "bytes": 52764,
+   "sha256": "ab76eb226e3c552b5e825b3593181471acb959a090564bdcd67198d20c47a5bb",
+   "year": 2000
+  },
+  {
+   "path": "sites/escondida/frames/2000.webp",
+   "kind": "frame",
+   "bytes": 145140,
+   "sha256": "0620ebed04bde867838cc3722f7897abcabd1d96a299495315c623a8b4dde024",
+   "year": 2000
+  },
+  {
+   "path": "sites/escondida/frames/2001-swir.webp",
+   "kind": "frame",
+   "bytes": 33724,
+   "sha256": "669200f30d59c6743a290f60561c71edc17a33bc7cb20c1a324ab64eedb2af16",
+   "year": 2001
+  },
+  {
+   "path": "sites/escondida/frames/2001.webp",
+   "kind": "frame",
+   "bytes": 79666,
+   "sha256": "e45284810b2ee713a29a3b4b54608357af208a4254380df5e51786dcfd160f92",
+   "year": 2001
+  },
+  {
+   "path": "sites/escondida/frames/2002-swir.webp",
+   "kind": "frame",
+   "bytes": 51504,
+   "sha256": "97fabc070fd56fe67b7dd959a456728aad5da92bfdb9822af632dbd136e86bdd",
+   "year": 2002
+  },
+  {
+   "path": "sites/escondida/frames/2002.webp",
+   "kind": "frame",
+   "bytes": 128502,
+   "sha256": "fba0e93d06e730625f1b6a7c5699b60cd89d28ee4396cf1be20db9792075396f",
+   "year": 2002
+  },
+  {
+   "path": "sites/escondida/frames/2003-swir.webp",
+   "kind": "frame",
+   "bytes": 43792,
+   "sha256": "264904f6729ba91e1e47db1e37cf147cbb6c105b5610197d2454a92e8e8de0e8",
+   "year": 2003
+  },
+  {
+   "path": "sites/escondida/frames/2003.webp",
+   "kind": "frame",
+   "bytes": 112492,
+   "sha256": "0a2ef96011e65dd332daec04f7dd1abc93a26d6afffbb426135f1719dc80f15d",
+   "year": 2003
+  },
+  {
+   "path": "sites/escondida/frames/2004-swir.webp",
+   "kind": "frame",
+   "bytes": 54938,
+   "sha256": "7aa32600f808bc8aac09754a8a63e35276ace08dddf152155548a2aafcd8dad4",
+   "year": 2004
+  },
+  {
+   "path": "sites/escondida/frames/2004.webp",
+   "kind": "frame",
+   "bytes": 138778,
+   "sha256": "11f08139c5f4d8f27043a48462f01b5f9f45ff7e87a79f53f5af584a594a086a",
+   "year": 2004
+  },
+  {
+   "path": "sites/escondida/frames/2005-swir.webp",
+   "kind": "frame",
+   "bytes": 54134,
+   "sha256": "62bf3ff8390e1d6dce06ca584711f84de8a1342cccf6dbbd19b40dfee960bec7",
+   "year": 2005
+  },
+  {
+   "path": "sites/escondida/frames/2005.webp",
+   "kind": "frame",
+   "bytes": 136018,
+   "sha256": "3112ef53934d3cb46b5be2e32a83b89514ff50b2ba2e92187b1b61358b76ca6e",
+   "year": 2005
+  },
+  {
+   "path": "sites/escondida/frames/2006-swir.webp",
+   "kind": "frame",
+   "bytes": 57834,
+   "sha256": "0a95320eb93a92d1fb6c62041b6d8f787004ec230a412f776753789ad74c90cc",
+   "year": 2006
+  },
+  {
+   "path": "sites/escondida/frames/2006.webp",
+   "kind": "frame",
+   "bytes": 159204,
+   "sha256": "256c3abbfb81b440acefefa3b9eb8b8e2a9a536a5f015a6ba2c2552e4e766ef0",
+   "year": 2006
+  },
+  {
+   "path": "sites/escondida/frames/2007-swir.webp",
+   "kind": "frame",
+   "bytes": 55086,
+   "sha256": "3e75fa5d974af0ecbf4fb720adfa3830486c2694bbcc9dc83888c0346f372a14",
+   "year": 2007
+  },
+  {
+   "path": "sites/escondida/frames/2007.webp",
+   "kind": "frame",
+   "bytes": 130986,
+   "sha256": "9dddd23b46253ba057d73647812ebe27b16f0f72002f9c891037e69a87bf6b04",
+   "year": 2007
+  },
+  {
+   "path": "sites/escondida/frames/2008-swir.webp",
+   "kind": "frame",
+   "bytes": 52774,
+   "sha256": "4a48447916b545e5332f3dec5e391f19ccfee633d4a2f9acb3a342ccc5b5b45d",
+   "year": 2008
+  },
+  {
+   "path": "sites/escondida/frames/2008.webp",
+   "kind": "frame",
+   "bytes": 127166,
+   "sha256": "22066191f4a3f2c1bbab31abc2388a61cff50db7e18d8441709a422f8ebcb216",
+   "year": 2008
+  },
+  {
+   "path": "sites/escondida/frames/2009-swir.webp",
+   "kind": "frame",
+   "bytes": 65452,
+   "sha256": "58fb81bc248e1ac2d8583491d472e72fb29be1e7d4549ce12ca77dcea894aa5c",
+   "year": 2009
+  },
+  {
+   "path": "sites/escondida/frames/2009.webp",
+   "kind": "frame",
+   "bytes": 173044,
+   "sha256": "8a814d882330eb2b6f7bf75c5e3b15338cd09eeac4dc260e9482beb0028b9b24",
+   "year": 2009
+  },
+  {
+   "path": "sites/escondida/frames/2010-swir.webp",
+   "kind": "frame",
+   "bytes": 53054,
+   "sha256": "a3c1a8b7cafc98ab9086fd70e8c0649c3946ea2f768f417031b8f87c85d16c0c",
+   "year": 2010
+  },
+  {
+   "path": "sites/escondida/frames/2010.webp",
+   "kind": "frame",
+   "bytes": 130938,
+   "sha256": "c337a01301568d35d673def12c5597ca077215565da6afcaa7e2297119eac683",
+   "year": 2010
+  },
+  {
+   "path": "sites/escondida/frames/2011-swir.webp",
+   "kind": "frame",
+   "bytes": 62832,
+   "sha256": "3826a9f916021ade285f56622e60e219085b7d494c2d787a6ca9eb95298f772b",
+   "year": 2011
+  },
+  {
+   "path": "sites/escondida/frames/2011.webp",
+   "kind": "frame",
+   "bytes": 168088,
+   "sha256": "ed9a587355b96ec82d7aab01c2193729fce66916782ab48b88ea559c2d8846df",
+   "year": 2011
+  },
+  {
+   "path": "sites/escondida/frames/2012-swir.webp",
+   "kind": "frame",
+   "bytes": 57870,
+   "sha256": "30e86e84f9a9e93e8cdcccfb9f2beb0a4106e2ea4c70be39072edb002e9aeb15",
+   "year": 2012
+  },
+  {
+   "path": "sites/escondida/frames/2012.webp",
+   "kind": "frame",
+   "bytes": 142480,
+   "sha256": "fafbf26d255eef12a1a5f6251f75e1fcabf2c622d8459143b1be5631fa9bce57",
+   "year": 2012
+  },
+  {
+   "path": "sites/escondida/frames/2013-swir.webp",
+   "kind": "frame",
+   "bytes": 56382,
+   "sha256": "6a5ba390a136a86009c8c8c689ef65b210f1aff07b672dfb4d868ab913b56fc3",
+   "year": 2013
+  },
+  {
+   "path": "sites/escondida/frames/2013.webp",
+   "kind": "frame",
+   "bytes": 141360,
+   "sha256": "e52060483f4b64885c1d1c29b31d5db417b82eef82170a156afff8f3106ed222",
+   "year": 2013
+  },
+  {
+   "path": "sites/escondida/frames/2014-swir.webp",
+   "kind": "frame",
+   "bytes": 64674,
+   "sha256": "e34a097c47d93c4db21940b1edce0ff573a1014a22fb0c285f6275a849a52bc1",
+   "year": 2014
+  },
+  {
+   "path": "sites/escondida/frames/2014.webp",
+   "kind": "frame",
+   "bytes": 163070,
+   "sha256": "a9dcafc10ac830ee6afae28563884c9e6873ff4b1577b5c43c6628ff95d00313",
+   "year": 2014
+  },
+  {
+   "path": "sites/escondida/frames/2015-swir.webp",
+   "kind": "frame",
+   "bytes": 57676,
+   "sha256": "1db692c477cb3b6106a8a80b30937ad50408aea5f514d9644c982a637e5cef02",
+   "year": 2015
+  },
+  {
+   "path": "sites/escondida/frames/2015.webp",
+   "kind": "frame",
+   "bytes": 139382,
+   "sha256": "be81198feaf53e5f93e35bab25a00d2132f244b47cca5da82309739237aa515d",
+   "year": 2015
+  },
+  {
+   "path": "sites/escondida/frames/2016-swir.webp",
+   "kind": "frame",
+   "bytes": 59254,
+   "sha256": "2bf5856ed7fea2b3506c1644ad9152b27226227572a59ed0a2d65d78539c8614",
+   "year": 2016
+  },
+  {
+   "path": "sites/escondida/frames/2016.webp",
+   "kind": "frame",
+   "bytes": 141034,
+   "sha256": "db0f305d0e92354a776da21f62699410d41403746b9a910d06577aa3f24985e2",
+   "year": 2016
+  },
+  {
+   "path": "sites/escondida/frames/2017-swir.webp",
+   "kind": "frame",
+   "bytes": 73456,
+   "sha256": "4f23c386670a2864e99d18024f2551d9421471c0376b6cdaef9dd769193020e2",
+   "year": 2017
+  },
+  {
+   "path": "sites/escondida/frames/2017.webp",
+   "kind": "frame",
+   "bytes": 263108,
+   "sha256": "5d241219ef1c5da9b35ee1d8ecddc9844a6e431a1467e8be3f0f65060e6c3249",
+   "year": 2017
+  },
+  {
+   "path": "sites/escondida/frames/2018-swir.webp",
+   "kind": "frame",
+   "bytes": 72996,
+   "sha256": "a65427b856b4ce77e82f0dfb29e5ea5cec4534f1fc75fa15cdcbda51b70cedd9",
+   "year": 2018
+  },
+  {
+   "path": "sites/escondida/frames/2018.webp",
+   "kind": "frame",
+   "bytes": 281090,
+   "sha256": "9150d3c8f658af7e8cb7a14fb8e11c9302531036a7fe7cd197341631a81e2b45",
+   "year": 2018
+  },
+  {
+   "path": "sites/escondida/frames/2019-swir.webp",
+   "kind": "frame",
+   "bytes": 63032,
+   "sha256": "709dc898df3193853d6726dd61bf39b963e9739193a5fc62a631fbb92cde1565",
+   "year": 2019
+  },
+  {
+   "path": "sites/escondida/frames/2019.webp",
+   "kind": "frame",
+   "bytes": 227478,
+   "sha256": "0eb3fea7e93796762cc59364ae3d02aac43beb8e4768663392eeadaf5f5a99a1",
+   "year": 2019
+  },
+  {
+   "path": "sites/escondida/frames/2020-swir.webp",
+   "kind": "frame",
+   "bytes": 66936,
+   "sha256": "0e2269212b14f5fc15efab00cc86e0a4701a6afc4e91b7dfd4e4c2857b6e17cf",
+   "year": 2020
+  },
+  {
+   "path": "sites/escondida/frames/2020.webp",
+   "kind": "frame",
+   "bytes": 241270,
+   "sha256": "ea171fb2e01ddff395833e76ace7b34a7d2800581e6f27a85f73137bd5e8ccdc",
+   "year": 2020
+  },
+  {
+   "path": "sites/escondida/frames/2021-swir.webp",
+   "kind": "frame",
+   "bytes": 68242,
+   "sha256": "4de86c652dfe143a8a0d9042589d9794367301d45395a5459ca3885595a3ea55",
+   "year": 2021
+  },
+  {
+   "path": "sites/escondida/frames/2021.webp",
+   "kind": "frame",
+   "bytes": 250044,
+   "sha256": "d41fbf11b2bbc056624e208a89ed8c4e4d38b6fc714f6ec0774c5687db4557d8",
+   "year": 2021
+  },
+  {
+   "path": "sites/escondida/frames/2022-swir.webp",
+   "kind": "frame",
+   "bytes": 72454,
+   "sha256": "a3d9638b8508b11effa870622b26e651ce192580c138a6cfa792f79edd61e753",
+   "year": 2022
+  },
+  {
+   "path": "sites/escondida/frames/2022.webp",
+   "kind": "frame",
+   "bytes": 257642,
+   "sha256": "72caaa5a881d00fdad2f0e60e32643aee898a69b055dbcae7f9694f066f63f28",
+   "year": 2022
+  },
+  {
+   "path": "sites/escondida/frames/2023-swir.webp",
+   "kind": "frame",
+   "bytes": 70288,
+   "sha256": "e3f6fa69a5ddcf71e5fb0c30bd39631b545afaf53d97cf871ba1b5c6f02c5d33",
+   "year": 2023
+  },
+  {
+   "path": "sites/escondida/frames/2023.webp",
+   "kind": "frame",
+   "bytes": 252744,
+   "sha256": "f56041e2f146a3bd97a1b10fc10a30eca8e6ac33df04e074590bc968dff7c514",
+   "year": 2023
+  },
+  {
+   "path": "sites/escondida/frames/2024-swir.webp",
+   "kind": "frame",
+   "bytes": 67932,
+   "sha256": "3742b805b37dc15c5b6b0fe96a481e96831fcf839db982d64cdf1dfce48e18de",
+   "year": 2024
+  },
+  {
+   "path": "sites/escondida/frames/2024.webp",
+   "kind": "frame",
+   "bytes": 248162,
+   "sha256": "3d034aeac8815a079871f613eed51c82e148b77713fb879cc7b520b82ab8afe5",
+   "year": 2024
+  },
+  {
+   "path": "sites/escondida/frames/2025-swir.webp",
+   "kind": "frame",
+   "bytes": 69794,
+   "sha256": "308df63f4b2021b2806894befa8a08b8b245404fee7491749f0be6a83d3392b2",
+   "year": 2025
+  },
+  {
+   "path": "sites/escondida/frames/2025.webp",
+   "kind": "frame",
+   "bytes": 260242,
+   "sha256": "bd7fc53f1771b50baf74dc250beaa5c690571f2ca5ce6eb51a1f15179b42dd33",
+   "year": 2025
+  },
+  {
+   "path": "sites/escondida/frames/2026-swir.webp",
+   "kind": "frame",
+   "bytes": 71568,
+   "sha256": "f5df5c15655957273762919c5ba9b613757dbb9161f5e1554fd7b491f75f1ae8",
+   "year": 2026
+  },
+  {
+   "path": "sites/escondida/frames/2026.webp",
+   "kind": "frame",
+   "bytes": 267706,
+   "sha256": "154b60c5a30eb10caf42897f788d2d716d2b4de302d6cf042ff39002936b9276",
+   "year": 2026
+  },
+  {
+   "path": "sites/escondida/masks/1985-otsu.png",
+   "kind": "mask",
+   "bytes": 20031,
+   "sha256": "e2f205bc6879dcc31e8eff0ecb28b9af5f0e1d1af68f2890188ee592bb659ee8",
+   "year": 1985,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1985-rf.png",
+   "kind": "mask",
+   "bytes": 13496,
+   "sha256": "bc5aafb909ca17ddef817035e3630e60fe8f61d2328101b99c4a6478685a6abf",
+   "year": 1985,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1986-otsu.png",
+   "kind": "mask",
+   "bytes": 21802,
+   "sha256": "c429aab8d514aa2c9e76d28ed3e37eaa82e5b217eea8b4b1b7bad0c742289e30",
+   "year": 1986,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1986-rf.png",
+   "kind": "mask",
+   "bytes": 18740,
+   "sha256": "208e81283b574f5e1c16503156cb0a312e033a7096cc1d07c1580bcbe2206583",
+   "year": 1986,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1987-otsu.png",
+   "kind": "mask",
+   "bytes": 20216,
+   "sha256": "7f702672fe0b1793a06d7dca64223f99420724b2452c7a25dffc4b46d895c38c",
+   "year": 1987,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1987-rf.png",
+   "kind": "mask",
+   "bytes": 14821,
+   "sha256": "9d3f8fdcd64aa5a6dec561a098c3f1e823c8e4f8e46ebb5e03294348843e58cc",
+   "year": 1987,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1988-otsu.png",
+   "kind": "mask",
+   "bytes": 20342,
+   "sha256": "3d5ede86a889b9f451dc658823568e69bb9b0f8c12d050887de5863051b4480e",
+   "year": 1988,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1988-rf.png",
+   "kind": "mask",
+   "bytes": 19709,
+   "sha256": "7e145e1328a3ae70c5daf0eadbf87e71049c8b55516604e44e8103590206ea5e",
+   "year": 1988,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1989-otsu.png",
+   "kind": "mask",
+   "bytes": 20219,
+   "sha256": "186129cacec303d168a9c0d2b6681dd5ac552a55329979230b718388316120b2",
+   "year": 1989,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1989-rf.png",
+   "kind": "mask",
+   "bytes": 16961,
+   "sha256": "8746a89f2a0e0d74aea5c6b47d48e18fdfc0221bf5eae356fb0bb7f156317850",
+   "year": 1989,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1990-otsu.png",
+   "kind": "mask",
+   "bytes": 20479,
+   "sha256": "ce65b3ce221bc8cb7d2270867df6bc34ca21b93446e228dab4fb8ad9a22bf711",
+   "year": 1990,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1990-rf.png",
+   "kind": "mask",
+   "bytes": 16124,
+   "sha256": "6472f546e50d9dd3a9b510ba34e982a47d8a8f5156e8e3d3ef35b7f79f14c214",
+   "year": 1990,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1991-otsu.png",
+   "kind": "mask",
+   "bytes": 20758,
+   "sha256": "58532b94fcfd8fc41416238acdb81e0d7912fa612ac9be7768c5fc8c32acb86a",
+   "year": 1991,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1991-rf.png",
+   "kind": "mask",
+   "bytes": 17401,
+   "sha256": "4016b601394d4e2260fe2eae025d14d6e2a1115e1fa09cc37a0a81125752e51b",
+   "year": 1991,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1992-otsu.png",
+   "kind": "mask",
+   "bytes": 19551,
+   "sha256": "d98e4b2c2673b2c2eff3813c7b0ca4e72ac7ec3b9b720f857a74451121e79298",
+   "year": 1992,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1992-rf.png",
+   "kind": "mask",
+   "bytes": 23153,
+   "sha256": "223f47670c72bef8cb5b49f131c860a433a9b76913ac5f4d5e9258e88cd259bb",
+   "year": 1992,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1993-otsu.png",
+   "kind": "mask",
+   "bytes": 19915,
+   "sha256": "ddb275723fe36eefddbe6eb6b210cac88c72af38da56882b42bfed48fe0f7373",
+   "year": 1993,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1993-rf.png",
+   "kind": "mask",
+   "bytes": 18605,
+   "sha256": "ac1c6a129cddc76b42bc8728cba8965accdf04aff303af1af3138e5c87884e3a",
+   "year": 1993,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1994-otsu.png",
+   "kind": "mask",
+   "bytes": 19561,
+   "sha256": "09f30b7c97a9f159d04ac92eef39de577ab05c7518417878fe02229864c05f0d",
+   "year": 1994,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1994-rf.png",
+   "kind": "mask",
+   "bytes": 13442,
+   "sha256": "4f6e882d531310c8dbb6f080cb1803b76feadb5eef05ff8634bdd459fecda741",
+   "year": 1994,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1995-otsu.png",
+   "kind": "mask",
+   "bytes": 19886,
+   "sha256": "0a38b35837ea5f124cd105a01a7faf9ad978c9caeff69c6f811d44327fa1be85",
+   "year": 1995,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1995-rf.png",
+   "kind": "mask",
+   "bytes": 22654,
+   "sha256": "f2728908fb382b8864dd34fa521c20a476c1030aea1347528f9bba31fd98685a",
+   "year": 1995,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1996-otsu.png",
+   "kind": "mask",
+   "bytes": 18776,
+   "sha256": "5932f491c891052141ffc4c69d09a06dc81af5b46ff35133dd8421ad35484d0d",
+   "year": 1996,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1996-rf.png",
+   "kind": "mask",
+   "bytes": 17888,
+   "sha256": "bc13404755ad040294f297609b90ec089367e728568b454b499e6d82f619f683",
+   "year": 1996,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1997-otsu.png",
+   "kind": "mask",
+   "bytes": 19029,
+   "sha256": "bb226f5432aeddf4ee73e2d2baac16b6ac197c130121f48dc8d95ee28cdb6670",
+   "year": 1997,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1997-rf.png",
+   "kind": "mask",
+   "bytes": 17482,
+   "sha256": "70fb95ba8d16d314ba1c2781a4246d18f11303e56ba5171bdd46751c5a73b329",
+   "year": 1997,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1998-otsu.png",
+   "kind": "mask",
+   "bytes": 20988,
+   "sha256": "80afdda5eaa09054ca6ee86cdb3fc484e163de5226619191deeb0c486ed5eb64",
+   "year": 1998,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1998-rf.png",
+   "kind": "mask",
+   "bytes": 13126,
+   "sha256": "3fac22d580f825d68117e111a773d3afd02eb3aaa9d53c86092de79e41a59098",
+   "year": 1998,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/1999-otsu.png",
+   "kind": "mask",
+   "bytes": 2168,
+   "sha256": "b1761047acf03619a6db9a89f99bd92332cdd731d6001bb65d422e6b007909bc",
+   "year": 1999,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/1999-rf.png",
+   "kind": "mask",
+   "bytes": 21532,
+   "sha256": "3ad6c6d120aaa43d841f51272d23890c18619c6f58bd43fef9fff98339972488",
+   "year": 1999,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2000-otsu.png",
+   "kind": "mask",
+   "bytes": 6732,
+   "sha256": "71d944159327768318894ee37e6a6fc39093f2b5e6a69d0af5175371a37dd67a",
+   "year": 2000,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2000-rf.png",
+   "kind": "mask",
+   "bytes": 21683,
+   "sha256": "f5ec92f172651d4a63ad1ccaf9485ef11515ce6e50be82ef3cc90c3068fb51cd",
+   "year": 2000,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2001-otsu.png",
+   "kind": "mask",
+   "bytes": 10554,
+   "sha256": "aa65549f3a64e8750fc0e694b06cacf2089ac36dbc00418eee3446e0b28116ab",
+   "year": 2001,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2001-rf.png",
+   "kind": "mask",
+   "bytes": 7386,
+   "sha256": "6615529d65d218f7daed7cbc32ce998548a7f4ae5391c411ab260f83d701d9bd",
+   "year": 2001,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2002-otsu.png",
+   "kind": "mask",
+   "bytes": 21539,
+   "sha256": "9875addc98b3c4f2f609512a34c0f7aa611fa7f8379f56538356649034d27508",
+   "year": 2002,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2002-rf.png",
+   "kind": "mask",
+   "bytes": 22709,
+   "sha256": "3ab441826321baab0383bb10868376dfa1e49b12b242006d9c39cbd1250c34b9",
+   "year": 2002,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2003-otsu.png",
+   "kind": "mask",
+   "bytes": 11872,
+   "sha256": "9dcd1f75e0bf735319f7a0b6cdb31580a901045470895d93f955056e8f849199",
+   "year": 2003,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2003-rf.png",
+   "kind": "mask",
+   "bytes": 16047,
+   "sha256": "aabbdb7df763ead42b39b8ea51298ef0c620fc1d157745ca8eec47851bd74c5d",
+   "year": 2003,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2004-otsu.png",
+   "kind": "mask",
+   "bytes": 3707,
+   "sha256": "4bc1b5df8efd64e092fef0fee3e6a2cc299bf96ea73c1d9c942e598b4085be29",
+   "year": 2004,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2004-rf.png",
+   "kind": "mask",
+   "bytes": 20400,
+   "sha256": "064d20b33b798f779ccf70fcc6f5d0981f90089b4ee7207a86e3860fc6090c89",
+   "year": 2004,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2005-otsu.png",
+   "kind": "mask",
+   "bytes": 20331,
+   "sha256": "8d67626b2210fdbc4b7a6d77f8dda5faaf1588fd8c2e27a792b7eecccd5e45c6",
+   "year": 2005,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2005-rf.png",
+   "kind": "mask",
+   "bytes": 23604,
+   "sha256": "6e4e3c100166efbf40dd99b9d302f9a67827266f19a1b4a6b3876cf353241cd5",
+   "year": 2005,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2006-otsu.png",
+   "kind": "mask",
+   "bytes": 17211,
+   "sha256": "88cb77d73c6792a98a07755354b8e03422e0ed91b2f2a33cf7d721408759cae1",
+   "year": 2006,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2006-rf.png",
+   "kind": "mask",
+   "bytes": 20941,
+   "sha256": "1386be531a5d33374ab457027bdd575569b3cfa62fce4d556db9f7ab80702561",
+   "year": 2006,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2007-otsu.png",
+   "kind": "mask",
+   "bytes": 13023,
+   "sha256": "84d78bd2a2795fa2c22797d0b9c78f8bee0ed908e44b41877f0e6edf6518b2d1",
+   "year": 2007,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2007-rf.png",
+   "kind": "mask",
+   "bytes": 20408,
+   "sha256": "8bffa1e9ae6605eec4a5aa09a0587174a238852a2b0cb280d48c5cbe37354e04",
+   "year": 2007,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2008-otsu.png",
+   "kind": "mask",
+   "bytes": 18199,
+   "sha256": "6fbbefd454c3b0111b6f6e1bb6b9c1f44974b6a5cb282bac03194516798fe46c",
+   "year": 2008,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2008-rf.png",
+   "kind": "mask",
+   "bytes": 20366,
+   "sha256": "33c3c1bc31a9baff3469133e782b27df8a23e492081e7766930f44e4094ff410",
+   "year": 2008,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2009-otsu.png",
+   "kind": "mask",
+   "bytes": 5635,
+   "sha256": "0041dda3a6ad8dd62960e770c0463a2fb7c1d39653168f44a3a1723372ea9167",
+   "year": 2009,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2009-rf.png",
+   "kind": "mask",
+   "bytes": 23759,
+   "sha256": "918b117f8b3f8421073e7086521a1b4753d40aad3dd9a4ca398993743ef6c740",
+   "year": 2009,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2010-otsu.png",
+   "kind": "mask",
+   "bytes": 18766,
+   "sha256": "655d3e5185dfc615871a75423ba0ce7da6164dd413f5e48fc1bbe8761424841f",
+   "year": 2010,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2010-rf.png",
+   "kind": "mask",
+   "bytes": 20262,
+   "sha256": "194866c5c3189dac9006ad4402c18f53db85f5e20a5f9e292444d9bb56b37a94",
+   "year": 2010,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2011-otsu.png",
+   "kind": "mask",
+   "bytes": 22078,
+   "sha256": "ca78f1fc50d0ddd89dea6e388d8d696095798ded45cf358328ffe59e2624326b",
+   "year": 2011,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2011-rf.png",
+   "kind": "mask",
+   "bytes": 23354,
+   "sha256": "68e4392f0a34954fdfc335d495d3ae669b87ad23ae51d4ca0da9d254af02bb17",
+   "year": 2011,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2012-otsu.png",
+   "kind": "mask",
+   "bytes": 20662,
+   "sha256": "fb3616667a36f5b315ea38637b0624675ddeb4912d227f7ffff5f15957f6aa57",
+   "year": 2012,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2012-rf.png",
+   "kind": "mask",
+   "bytes": 18160,
+   "sha256": "efa98d13f3191b491c70b4dd49a8d3d239e5d171f9d5f4a92d018bddaab29171",
+   "year": 2012,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2013-otsu.png",
+   "kind": "mask",
+   "bytes": 20189,
+   "sha256": "81f3c502564170200cc382485ab3c2180efcc6e0b774025a1f160e5d1536f43b",
+   "year": 2013,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2013-rf.png",
+   "kind": "mask",
+   "bytes": 21603,
+   "sha256": "ae738eb1e7f83d2f137a97262e1795d97c0ddab51df04c51e262f578d426e320",
+   "year": 2013,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2014-otsu.png",
+   "kind": "mask",
+   "bytes": 21166,
+   "sha256": "486a4b0f20b57703a4ad18a605c13a1ba8895bb3ed371d903430eb1525c21b36",
+   "year": 2014,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2014-rf.png",
+   "kind": "mask",
+   "bytes": 23765,
+   "sha256": "addb462bc1cfca140db52da9aa320e488bea23f48ddb54d749c43dc8e79c9704",
+   "year": 2014,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2015-otsu.png",
+   "kind": "mask",
+   "bytes": 18923,
+   "sha256": "ce1f6659907883abd7d906f94a47de3fa0ef4a8f7044e6d8a919d96c061f82b5",
+   "year": 2015,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2015-rf.png",
+   "kind": "mask",
+   "bytes": 17333,
+   "sha256": "4b679e3ff238c1d88030d710dfa943835acf0d8a59c9510d3e44c8551292e68e",
+   "year": 2015,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2016-otsu.png",
+   "kind": "mask",
+   "bytes": 22091,
+   "sha256": "fcc515b2396cd57245b4fff84b5c81a3414e24f8cb018f70bdb2aa0db2048e57",
+   "year": 2016,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2016-rf.png",
+   "kind": "mask",
+   "bytes": 15973,
+   "sha256": "44b0d9736abedf3db51194ab61bfee2a9936ba90aecbe914a402a2b4123e2cd1",
+   "year": 2016,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2017-otsu.png",
+   "kind": "mask",
+   "bytes": 14807,
+   "sha256": "e523c1243c63eafad0c98073b9a91dfdd2becde5075fb57fef4ae5cbef1168c0",
+   "year": 2017,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2017-rf.png",
+   "kind": "mask",
+   "bytes": 29677,
+   "sha256": "e5bb4a814d2d965f780d9f87669cd6ba03ab3b0da7dbc3784202e649866f5160",
+   "year": 2017,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2017-unet.png",
+   "kind": "mask",
+   "bytes": 11977,
+   "sha256": "4f5a8df676f3e686235656fa9e7b40fc2e7fe29bc877aae5ede2cdd4247f7428",
+   "year": 2017,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2018-otsu.png",
+   "kind": "mask",
+   "bytes": 16920,
+   "sha256": "46305998fc725f3c390aa960203738666eb3285afaef0713e940a8893116bb76",
+   "year": 2018,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2018-rf.png",
+   "kind": "mask",
+   "bytes": 23091,
+   "sha256": "bacb8a0dc3030e12237e8666900669fa7336b2dfc24f7ff9393a8de93edb145c",
+   "year": 2018,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2018-unet.png",
+   "kind": "mask",
+   "bytes": 4470,
+   "sha256": "3551ed76b71854b3d71818d03af9121447e19e603c0a05b106bd4349472c899a",
+   "year": 2018,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2019-otsu.png",
+   "kind": "mask",
+   "bytes": 14691,
+   "sha256": "b7e4263cd2afe554f83e927e8a237ac0f187850401e006c4b6bc6537cde67881",
+   "year": 2019,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2019-rf.png",
+   "kind": "mask",
+   "bytes": 24958,
+   "sha256": "054fed13ebaec728d0435bfee5127445fef18aa4ef78c592a62b3387ba8af29c",
+   "year": 2019,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2019-unet.png",
+   "kind": "mask",
+   "bytes": 4187,
+   "sha256": "c6fe6ff0ee256ec36053f686eff74083a9d714aea8d89e0478d111c5ce7d5ad9",
+   "year": 2019,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2020-otsu.png",
+   "kind": "mask",
+   "bytes": 16908,
+   "sha256": "4156e38ccc8daab254427023211d0bf0f155a94e3fc37a572cb5c0238aa3e1a8",
+   "year": 2020,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2020-rf.png",
+   "kind": "mask",
+   "bytes": 23884,
+   "sha256": "9761494baa12545de7ffd645a8dba7f43064cc9a37ccbdbd7614978cdd366f06",
+   "year": 2020,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2020-unet.png",
+   "kind": "mask",
+   "bytes": 4820,
+   "sha256": "9ecdae357bdfbbdaa7a83f685503f2542e1c48cf7b5bac3db696ab2d5ee7c039",
+   "year": 2020,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2021-otsu.png",
+   "kind": "mask",
+   "bytes": 16214,
+   "sha256": "bda7142218faae231e513e74ef41de0a0c57db003ad4cdf11372ab2d888e1059",
+   "year": 2021,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2021-rf.png",
+   "kind": "mask",
+   "bytes": 22622,
+   "sha256": "34f4aa2aa405ccbcecb76098b0c5aa361b502cda943c5a52d347d493c3c9b087",
+   "year": 2021,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2021-unet.png",
+   "kind": "mask",
+   "bytes": 5361,
+   "sha256": "7d7f5d886acf134eb073b752373f6f3d2e4fed46f7448fa76fcc17fc38dde795",
+   "year": 2021,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2022-otsu.png",
+   "kind": "mask",
+   "bytes": 16397,
+   "sha256": "89ea278fb3d98d92758f1413038f46720d151f02f63ada47718403693be61198",
+   "year": 2022,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2022-rf.png",
+   "kind": "mask",
+   "bytes": 21301,
+   "sha256": "f74ea1557e0b297201e4557418838987ceb567d2ddd1694ad06a1b30c079f6c5",
+   "year": 2022,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2022-unet.png",
+   "kind": "mask",
+   "bytes": 5394,
+   "sha256": "e4af73680adaed5b012090154021992765aca0c5995cb716ecd192deb1152261",
+   "year": 2022,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2023-otsu.png",
+   "kind": "mask",
+   "bytes": 17287,
+   "sha256": "db57b321a7e784e4a2c08494a2893b76b6f2e33b53510662b484d604afb6cf92",
+   "year": 2023,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2023-rf.png",
+   "kind": "mask",
+   "bytes": 23347,
+   "sha256": "e0895318d60e10a77467e26aa02d757e49d4358c92da5cf8d795b66c7c4dd1fd",
+   "year": 2023,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2023-unet.png",
+   "kind": "mask",
+   "bytes": 5436,
+   "sha256": "088861f3c1ced04efda7ec5a469ee76b5a8fd503cb6b790e84d7f99727ac61c0",
+   "year": 2023,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2024-otsu.png",
+   "kind": "mask",
+   "bytes": 14835,
+   "sha256": "316601365043f382736931c36a2edfa2c64ebedd5054a99d01a9962bb546cf5d",
+   "year": 2024,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2024-rf.png",
+   "kind": "mask",
+   "bytes": 24805,
+   "sha256": "ecaf912d44049c2937f1dea1366403fdb5a9ac4daf94c274404ced10d64e2455",
+   "year": 2024,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2024-unet.png",
+   "kind": "mask",
+   "bytes": 4930,
+   "sha256": "13939507147f18af91d91ffbc7325d71d77fdb1e0d03cf6bc6fab5dd967a0136",
+   "year": 2024,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2025-otsu.png",
+   "kind": "mask",
+   "bytes": 15919,
+   "sha256": "5491138e253e926e18d89ce0d825e55a7bed691e40d6019c1f13083510e7a94c",
+   "year": 2025,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2025-rf.png",
+   "kind": "mask",
+   "bytes": 25443,
+   "sha256": "eb9724dffd326f28268ddb9d259317641cf20b4ae4deaac1c79b246f6928c825",
+   "year": 2025,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2025-unet.png",
+   "kind": "mask",
+   "bytes": 5424,
+   "sha256": "49a655238e0f3874b286b2be634da3e23fcd7673fdb69aa4820828c1ed18a69c",
+   "year": 2025,
+   "method": "unet"
+  },
+  {
+   "path": "sites/escondida/masks/2026-otsu.png",
+   "kind": "mask",
+   "bytes": 15105,
+   "sha256": "64bf24950abd51e013dd3cf6769f0b4e650e0bce515b96e9d3e022183935c539",
+   "year": 2026,
+   "method": "otsu"
+  },
+  {
+   "path": "sites/escondida/masks/2026-rf.png",
+   "kind": "mask",
+   "bytes": 25236,
+   "sha256": "8fda62bb045b1d395d25fdb2848c811807d8283f19ab26d0e936ba6e5fdef4f9",
+   "year": 2026,
+   "method": "rf"
+  },
+  {
+   "path": "sites/escondida/masks/2026-unet.png",
+   "kind": "mask",
+   "bytes": 4858,
+   "sha256": "ab0c5007818546a5e6d1ae4eae0d6fd76f029e6b9e2bba63f5a2f8483003f81f",
+   "year": 2026,
+   "method": "unet"
+  },
   {
    "path": "sites/escondida/polygons.geojson",
    "kind": "polygons",
    "bytes": 3769,
    "sha256": "78ad2bb0a6d0b275717419b41ecf961eb65e8cb12eeea7657d1fe9bc79bdcaaf"
+  },
+  {
+   "path": "sites/escondida/terrain/10/315/582.png",
+   "kind": "terrain",
+   "bytes": 90122,
+   "sha256": "3fd10693b98e7cb51033a645bb1ecb0cc1942ade71eee3ffd90bdec2ac6c641c"
+  },
+  {
+   "path": "sites/escondida/terrain/10/315/583.png",
+   "kind": "terrain",
+   "bytes": 136709,
+   "sha256": "106790238c215257c63fba240cbbaae2a4580e7c9c18686001be8df95c50cf74"
+  },
+  {
+   "path": "sites/escondida/terrain/11/630/1165.png",
+   "kind": "terrain",
+   "bytes": 132583,
+   "sha256": "62ba9464bbc88b278db27e8a1d64c45b4a8ab9297a1b38ad25e0dc745500a626"
+  },
+  {
+   "path": "sites/escondida/terrain/11/630/1166.png",
+   "kind": "terrain",
+   "bytes": 131009,
+   "sha256": "5f206415f14c0a782c3a727ec7ea6b1874a5ac4c2fea7c5a48858a20defe266e"
+  },
+  {
+   "path": "sites/escondida/terrain/11/630/1167.png",
+   "kind": "terrain",
+   "bytes": 124543,
+   "sha256": "8a42e40dde9714bb32e7f84e100b7d678a7a5139d0fe759f44fd049a9727026c"
+  },
+  {
+   "path": "sites/escondida/terrain/11/631/1165.png",
+   "kind": "terrain",
+   "bytes": 134646,
+   "sha256": "29ea5dc99e06a10fe83968624e8a0f16e41a5d90adb1d82656877f9c7db52ce1"
+  },
+  {
+   "path": "sites/escondida/terrain/11/631/1166.png",
+   "kind": "terrain",
+   "bytes": 132134,
+   "sha256": "28af8e1fe541f618fa4ef47f092194e383102b8456561e5d0be622b089722f5f"
+  },
+  {
+   "path": "sites/escondida/terrain/11/631/1167.png",
+   "kind": "terrain",
+   "bytes": 124934,
+   "sha256": "ef04d4fe89ba91b05d7978c5b06d64e44918ed7fccbd3cb18909da32cfcfe544"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1260/2331.png",
+   "kind": "terrain",
+   "bytes": 128090,
+   "sha256": "754ab2c310fa01e3d07dc905d79449fa672ce76880cab2b010c674885afced0d"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1260/2332.png",
+   "kind": "terrain",
+   "bytes": 123821,
+   "sha256": "3b7429c1cc0ee4445d3eaab1a114a315e2c3af4743bb301543df713af5bf6a2a"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1260/2333.png",
+   "kind": "terrain",
+   "bytes": 118828,
+   "sha256": "d2db572f8fe4ae2a2546d501a97f9357129c8e9c00501d2afb6b63e08134c724"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1260/2334.png",
+   "kind": "terrain",
+   "bytes": 123024,
+   "sha256": "8b3a50389f1269ce64a20cac8b81e21fffaacd12425890f983f3af6df95da44a"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1261/2331.png",
+   "kind": "terrain",
+   "bytes": 123705,
+   "sha256": "16ddd2b625e754dec555826599edc6340875d957d8ba49e7204e168afe509b9b"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1261/2332.png",
+   "kind": "terrain",
+   "bytes": 121184,
+   "sha256": "13991d101f0ac002df3c221255b983572088a7cb663a81ac43127aaf5a83ed85"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1261/2333.png",
+   "kind": "terrain",
+   "bytes": 123134,
+   "sha256": "3e8feb0491e9618ba15b6fa5e41d8f9461862103053f45d4d06272d0811d8a06"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1261/2334.png",
+   "kind": "terrain",
+   "bytes": 92356,
+   "sha256": "b87278ee5ee2a8678ea77aac3ac39784540f92df95972ce0f10788a2ca1110ef"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1262/2331.png",
+   "kind": "terrain",
+   "bytes": 124848,
+   "sha256": "cf6ab6636019b698c49178cbb8d2c70e2d30f23148d4127aaa52d3f1d5172420"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1262/2332.png",
+   "kind": "terrain",
+   "bytes": 120712,
+   "sha256": "70e491e946449d3dcacba6580f50c08d729a6373cfb46f448c1ab70dd33fabc4"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1262/2333.png",
+   "kind": "terrain",
+   "bytes": 123068,
+   "sha256": "33e2a7b6e1a757e626850b4501ab2d1c624b5fce646ad2e7e12b67ceaa1e93c2"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1262/2334.png",
+   "kind": "terrain",
+   "bytes": 127483,
+   "sha256": "8a7cef67596ad8498cb1d06c22fefca7e9a5143b83fdf2b5e3e0c57bc9020a47"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1263/2331.png",
+   "kind": "terrain",
+   "bytes": 126711,
+   "sha256": "6712fdec6d315d25c56ade32f188fe388410ea89d3d7b7c6f1b12b48a8a369a5"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1263/2332.png",
+   "kind": "terrain",
+   "bytes": 117898,
+   "sha256": "4e626ca03116e78f60aa53f3bd1d66167fa0c105361cb373565c44379d172fe0"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1263/2333.png",
+   "kind": "terrain",
+   "bytes": 124250,
+   "sha256": "236084971696b2b17d52a02baa6c60e8a0e9c7ff70cee0f532356668d1993337"
+  },
+  {
+   "path": "sites/escondida/terrain/12/1263/2334.png",
+   "kind": "terrain",
+   "bytes": 112339,
+   "sha256": "2c4cd124a4156a1f3a8bd0aad669afd53f392b6131a046bbfed4b4d1b24add0f"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4662.png",
+   "kind": "terrain",
+   "bytes": 110623,
+   "sha256": "ac6063c2c03acbd719a0ef817d58b2a30bb0bbd64380076bc73fc15b2c9ef1a8"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4663.png",
+   "kind": "terrain",
+   "bytes": 123434,
+   "sha256": "b6147eb6720ae8bde202966dce26113d2c9495faed5418d429cf142e5237b8d6"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4664.png",
+   "kind": "terrain",
+   "bytes": 114705,
+   "sha256": "a20ba3c0cc02d82b7aa928b987653d8af9886ff99874daa4b822a6c6978b5199"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4665.png",
+   "kind": "terrain",
+   "bytes": 104454,
+   "sha256": "736fe8bc91f0572a9d1e9b69ca85c65662549971a6d634cabf51e92183280187"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4666.png",
+   "kind": "terrain",
+   "bytes": 114234,
+   "sha256": "d905e53c71862202e17ede050a2de981bad8fefd1032dbf9b0cbc8dd18108f43"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4667.png",
+   "kind": "terrain",
+   "bytes": 120566,
+   "sha256": "8f733b9aa84eaca921c8d57b97df3f0d02143b493519d84db605fabf6d99d233"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2521/4668.png",
+   "kind": "terrain",
+   "bytes": 112308,
+   "sha256": "e9ab3682057c5b6d3522933bbd02b38cea4e539c98d2ad63ad39b6e54e85b3b2"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4662.png",
+   "kind": "terrain",
+   "bytes": 105024,
+   "sha256": "8dcaaa963b9e26a45691099588002cec2e94daef5ba6bfffd4f77fcf8b99bda0"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4663.png",
+   "kind": "terrain",
+   "bytes": 111817,
+   "sha256": "7d54787d08a1a26e607bce085b38141ef888618a3042d819d09f758aa30538ac"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4664.png",
+   "kind": "terrain",
+   "bytes": 104738,
+   "sha256": "eb7ec11b0d7f12d68fa286b0d5f22e47c232068265a702b1127ea88c28eccd10"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4665.png",
+   "kind": "terrain",
+   "bytes": 105847,
+   "sha256": "8477b147df6abccc26b5eba2bf2ca1aaa3a901ddfc15fbe7f39ff4b263ee760b"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4666.png",
+   "kind": "terrain",
+   "bytes": 106610,
+   "sha256": "196eb648802805d2f8163fe5f3f38f9229e8102f9d4bc69b9e028cf364e41fcb"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4667.png",
+   "kind": "terrain",
+   "bytes": 118581,
+   "sha256": "39cdc9b98c3eb731d1dc85197d19f1db4902482a5f230bcabbafc2e3313ad268"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2522/4668.png",
+   "kind": "terrain",
+   "bytes": 83861,
+   "sha256": "dfe528d5f19a69e0aae392e9ce1699a837bf2ec2b6d5f2d62c431e4a983d3431"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4662.png",
+   "kind": "terrain",
+   "bytes": 110115,
+   "sha256": "b2ebc3b252ec248af9d6932fb4e26a6204a62f5d9e78a4ba8f0b88f42d24ba44"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4663.png",
+   "kind": "terrain",
+   "bytes": 114670,
+   "sha256": "0b1623220a284f0366d86a6dc49eee3a03a1767e6605544d5050fb4a2d3b6464"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4664.png",
+   "kind": "terrain",
+   "bytes": 113659,
+   "sha256": "4d6415676d40e27cbd37caf0e5fb43ad45b2de3579fb6013dc68a7c6826cf008"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4665.png",
+   "kind": "terrain",
+   "bytes": 111473,
+   "sha256": "9bf073c3661bd40828778642cbe532aa189b13476d123d5f5523e7f34b15c75a"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4666.png",
+   "kind": "terrain",
+   "bytes": 110867,
+   "sha256": "1d8a5bec3e2e6d244ed8220337345ddfbdf8c15ce1cb4c5d953a8fa6654ad95e"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4667.png",
+   "kind": "terrain",
+   "bytes": 105981,
+   "sha256": "723f2dee4da04e928dcd34f15eab1dc652be1c6fd2a8a409d09eafdfbb5f01b5"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2523/4668.png",
+   "kind": "terrain",
+   "bytes": 97225,
+   "sha256": "29ddda01cc8ecf3b00edc91cb3c91df22f5e9bad8bcaf812dae2857b0c8a30d6"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4662.png",
+   "kind": "terrain",
+   "bytes": 111870,
+   "sha256": "a878acb3817dc95261890f0b74be09d599c65e923a7c81cc15334c0db1c22e95"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4663.png",
+   "kind": "terrain",
+   "bytes": 114808,
+   "sha256": "10d874419e36058e1b452915f4f4e57cb0608ba348eef079d6d9b41ee222d75b"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4664.png",
+   "kind": "terrain",
+   "bytes": 118769,
+   "sha256": "4798d7e7d368e7ca7ea0288ef01465f831ae445b13159ef6abcabee8b8810893"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4665.png",
+   "kind": "terrain",
+   "bytes": 116988,
+   "sha256": "7f0a51101609869d36ea55fad9b21aa6b5eaf191546c9764e3c7d319f18882a8"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4666.png",
+   "kind": "terrain",
+   "bytes": 103051,
+   "sha256": "3fbedb0bba846a437033d0ef9b0f371c316f49b37ecf74c41a24692ffa5724e4"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4667.png",
+   "kind": "terrain",
+   "bytes": 114614,
+   "sha256": "37f97aad06af880fe1999dd642e89e0788f1d5fda5e14d702b49319b75cf692e"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2524/4668.png",
+   "kind": "terrain",
+   "bytes": 113145,
+   "sha256": "5943485d45c4f06665a5c13176157cfe54757ee47ead489e6d047c74cbf7a230"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4662.png",
+   "kind": "terrain",
+   "bytes": 110876,
+   "sha256": "1cdc5c0b85b8f68737bce9cc9a71208ab9e54d7f2b2bd3599f6984ef76f7890c"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4663.png",
+   "kind": "terrain",
+   "bytes": 109443,
+   "sha256": "bd86269198490b7c4782bc0dbcf7b807bd1e0bc3170532331fda6927d9612b5e"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4664.png",
+   "kind": "terrain",
+   "bytes": 101568,
+   "sha256": "b3fe1e896f6fb0fab23c9b87faa11b2e72003cbf4dfe28375edaed2b2dc73a5a"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4665.png",
+   "kind": "terrain",
+   "bytes": 103025,
+   "sha256": "180ad7097861d5d74e0dc64d5c9698c2ffd2a1aa642157ba96d727c38b8d9e80"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4666.png",
+   "kind": "terrain",
+   "bytes": 106273,
+   "sha256": "61011e1627e9d1d896bd59c24417636d14f5e6181e8dc518512986c7af016080"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4667.png",
+   "kind": "terrain",
+   "bytes": 122218,
+   "sha256": "075967a986a27655dcd9e060c7f151c580fd39e89f8f9d41b8714df45468ff2f"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2525/4668.png",
+   "kind": "terrain",
+   "bytes": 121444,
+   "sha256": "52e3a598b0c5b5635351bd25389a89e25b0bf0d4598d5eaf176a4ae1c43f49ce"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4662.png",
+   "kind": "terrain",
+   "bytes": 115611,
+   "sha256": "6530337357da5666a8c490608cd94d80aae03af45d50f12b1f8f85857d2074a4"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4663.png",
+   "kind": "terrain",
+   "bytes": 107799,
+   "sha256": "e95e06e04f2ba54a2ecc7945ea3c2d0bcab3ff1fbe8a20750d5b814f8b730e74"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4664.png",
+   "kind": "terrain",
+   "bytes": 98616,
+   "sha256": "4a732eee0f6f9fbe024bad551c8a2aa44aa76ab71c721d060e70458585a5ca68"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4665.png",
+   "kind": "terrain",
+   "bytes": 108328,
+   "sha256": "a42adb07a6931e731d9d5223fd92c80fe03c56e4a52fdf867c1217669196d8bc"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4666.png",
+   "kind": "terrain",
+   "bytes": 121448,
+   "sha256": "dd5cf7fe3695e3dd4a5e89652372fc139d7ba2feb7414854bd6a7d6902439d0f"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4667.png",
+   "kind": "terrain",
+   "bytes": 102308,
+   "sha256": "5f5a99594dbc271a962c40684298a77c5e7fac8031f75bb15f648a08446eacca"
+  },
+  {
+   "path": "sites/escondida/terrain/13/2526/4668.png",
+   "kind": "terrain",
+   "bytes": 110056,
+   "sha256": "f2b2fdcf644e0b8202ced2d33d18a76e74ae0970c516bc184be4fb902b726aa5"
   }
  ]
 }

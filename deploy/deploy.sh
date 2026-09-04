@@ -49,4 +49,16 @@ if ! cmp -s <(curl -fsS "https://${DOMAIN}/data/catalog.json?v=${STAMP}") "$DIST
 fi
 CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://${DOMAIN}/?site=chuquicamata")
 [ "$CODE" = "200" ] || { echo "deep link answered ${CODE}" >&2; exit 1; }
+# the server must name the types (a server-level `types` block without the mime include served the app
+# shell and the hashed modules as application/octet-stream), and a missing artifact must answer 404
+INDEX_TYPE=$(curl -sI "https://${DOMAIN}/index.html?v=${STAMP}" | grep -i "^content-type:" | tr -d '\r')
+case "$INDEX_TYPE" in *text/html*) ;; *) echo "index.html served as '${INDEX_TYPE}', not text/html" >&2; exit 1;; esac
+ASSET=$(curl -fsS "https://${DOMAIN}/?v=${STAMP}" | grep -oE 'src="/assets/[^"]+\.js"' | head -1 | sed -E 's/src="([^"]+)"/\1/')
+[ -n "$ASSET" ] || { echo "index.html names no /assets/*.js module" >&2; exit 1; }
+ASSET_TYPE=$(curl -sI "https://${DOMAIN}${ASSET}" | grep -i "^content-type:" | tr -d '\r')
+case "$ASSET_TYPE" in *javascript*) ;; *) echo "${ASSET} served as '${ASSET_TYPE}', not javascript" >&2; exit 1;; esac
+FOREST_TYPE=$(curl -sI "https://${DOMAIN}/models/rf/rf-v1.forest.bin" | grep -i "^content-type:" | tr -d '\r')
+case "$FOREST_TYPE" in *text/html*) echo "the forest file answers as the app shell (not shipped or no 404 rule)" >&2; exit 1;; esac
+MISSING=$(curl -s -o /dev/null -w "%{http_code}" "https://${DOMAIN}/data/sites/chuquicamata/terrain/13/0/0.png")
+[ "$MISSING" = "404" ] || { echo "a missing tile answered ${MISSING} instead of 404" >&2; exit 1; }
 step "live: title '${LIVE_TITLE}', catalog identical, deep link 200 -> https://${DOMAIN} (v${VERSION})"

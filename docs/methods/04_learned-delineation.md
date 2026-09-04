@@ -102,6 +102,42 @@ methods, the degradation under added haze (a constant reflectance added to every
 they come. The output, `models/benchmark.json`, is what the app renders; the worse arm is what the
 documentation quotes.
 
+### Measured (benchmark of 2026-09-03, models rf-v1 and unet-v1, thresholds rf 0.7 and unet 0.5 chosen on validation)
+
+Pixel-pooled over valid pixels; per-tile median IoU in the last column of each block. Validation 175
+tiles, test 106 tiles, catalog holdout 24 tiles (tiles of the Rajo sites, never trained on).
+
+| split | method | IoU | F1 | precision | recall | per-tile median IoU |
+|---|---|---|---|---|---|---|
+| test | M4 Otsu | 0.075 | 0.140 | 0.144 | 0.137 | 0.063 |
+| test | M5 k-means | 0.064 | 0.120 | 0.152 | 0.098 | 0.038 |
+| test | M6 SAM | 0.070 | 0.132 | 0.078 | 0.415 | 0.064 |
+| test | M7 random forest | 0.195 | 0.326 | 0.321 | 0.331 | 0.175 |
+| test | M8 U-Net | 0.378 | 0.548 | 0.460 | 0.678 | 0.453 |
+| catalog | M4 Otsu | 0.083 | 0.152 | 0.130 | 0.184 | 0.082 |
+| catalog | M5 k-means | 0.055 | 0.104 | 0.118 | 0.093 | 0.029 |
+| catalog | M6 SAM | 0.128 | 0.226 | 0.174 | 0.324 | 0.124 |
+| catalog | M7 random forest | 0.257 | 0.409 | 0.370 | 0.458 | 0.288 |
+| catalog | M8 U-Net | 0.502 | 0.668 | 0.624 | 0.720 | 0.581 |
+| validation | M7 random forest | 0.216 | 0.355 | 0.442 | 0.297 | 0.182 |
+| validation | M8 U-Net | 0.432 | 0.603 | 0.550 | 0.668 | 0.464 |
+
+What the numbers say. The classical masks answer a different question (bare ground, not mining land
+use) and score below 0.13 IoU everywhere; the forest, a per-pixel decision on a 3 x 3 neighbourhood,
+reaches 0.20 on the published test split and 0.26 on the catalog tiles; the U-Net, which sees context,
+reaches 0.38 and 0.50. The catalog tiles are easier than the published test split for every method
+(large open pits with clean footprints), so the test column is the one to quote. Boundary F1 at 2 px
+stays low for all (U-Net 0.10 on test, 0.12 on catalog): the label polygons are coarse and the models
+are not asked to trace edges. By mine type on the test split, the U-Net holds 0.43 on placer tiles and
+0.37 on surface mines, while the forest collapses on placer tiles (0.08) and keeps 0.21 on surface
+mines: placer workings are texture, not a per-pixel colour.
+
+Haze (a constant reflectance added to every band before inference, test split): the U-Net degrades
+gently, IoU 0.378 at 0, 0.372 at 0.02, 0.353 at 0.05 and 0.303 at 0.10, with recall rising and
+precision falling; the forest loses faster, 0.195, 0.171, 0.154 and 0.113 at the same levels, because
+its absolute-reflectance features (the raw bands, BSI) shift under haze while the normalised ones do
+not. On the catalog tiles the same curve runs 0.502 to 0.451 (U-Net) and 0.257 to 0.192 (forest).
+
 Precedents for the reader: MineSegSAT (MacDonald, Jacoby and Coady 2023, arXiv:2311.01676, SegFormer on
 Sentinel-2 over western Canada); the multi-modal mining footprint segmentation study, Remote Sensing of
 Environment 2024, doi:10.1016/j.rse.2024.114584; Gallwey et al. 2020, *A Sentinel-2 based multispectral

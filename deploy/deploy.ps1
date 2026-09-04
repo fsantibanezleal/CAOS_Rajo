@@ -79,4 +79,22 @@ $liveCatalog = (Invoke-WebRequest -Uri "https://$Domain/data/catalog.json?v=$sta
 if ($liveCatalog.Trim() -ne $localCatalog.Trim()) { throw "live catalog.json differs from the build" }
 $deep = Invoke-WebRequest -Uri "https://$Domain/?site=chuquicamata" -UseBasicParsing
 if ($deep.StatusCode -ne 200) { throw ("deep link answered {0}" -f $deep.StatusCode) }
+# the server must name the types: a server-level `types` block without the mime include served the
+# app shell and the hashed modules as application/octet-stream (found before the first deploy)
+$indexType = (Invoke-WebRequest -Uri "https://$Domain/index.html?v=$stamp" -UseBasicParsing -Method Head).Headers["Content-Type"]
+if ("$indexType" -notmatch "text/html") { throw ("index.html served as '{0}', not text/html" -f $indexType) }
+$asset = [regex]::Match($liveIndex, 'src="(/assets/[^"]+\.js)"').Groups[1].Value
+if (-not $asset) { throw "index.html names no /assets/*.js module" }
+$assetType = (Invoke-WebRequest -Uri "https://$Domain$asset" -UseBasicParsing -Method Head).Headers["Content-Type"]
+if ("$assetType" -notmatch "javascript") { throw ("{0} served as '{1}', not javascript" -f $asset, $assetType) }
+$forestType = (Invoke-WebRequest -Uri "https://$Domain/models/rf/rf-v1.forest.bin" -UseBasicParsing -Method Head).Headers["Content-Type"]
+if ("$forestType" -match "text/html") { throw "the forest file answers as the app shell (not shipped or no 404 rule)" }
+# a missing artifact must answer 404, never the app shell (the tile decoders rely on it)
+try {
+    $missing = Invoke-WebRequest -Uri "https://$Domain/data/sites/chuquicamata/terrain/13/0/0.png" -UseBasicParsing -Method Head
+    throw ("a missing tile answered {0} instead of 404" -f $missing.StatusCode)
+} catch [System.Net.WebException] {
+    $code = [int]$_.Exception.Response.StatusCode
+    if ($code -ne 404) { throw ("a missing tile answered {0} instead of 404" -f $code) }
+}
 Step ("live: title '{0}', catalog identical, deep link 200 -> https://{1} (v{2})" -f $liveTitle, $Domain, $Version)

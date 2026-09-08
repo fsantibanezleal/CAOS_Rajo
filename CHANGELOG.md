@@ -6,6 +6,15 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.006] - 2026-09-08
+
+### Changed
+
+- The Spanish surface says "frame" for a satellite frame, not "cuadro", across the locale, the
+  bilingual content modules and the architecture diagrams (32 places). "Cuadro" reads as a picture or
+  a table, not as one dated observation of a site. The Atlas lede keeps its own sense and now reads
+  "el panorama mundial".
+
 ## [0.02.005] - 2026-09-08
 
 ### Fixed

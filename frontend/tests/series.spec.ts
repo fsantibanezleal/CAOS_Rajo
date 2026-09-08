@@ -53,6 +53,18 @@ test('the series drawer charts the mined-area series, its breaks and the yearly 
   const box = await plot.boundingBox();
   expect(box && box.height).toBeGreaterThan(100);
 
+  // uPlot appends its legend under the canvas: if the canvas is sized to the whole host the legend
+  // spills out of the plot box and prints on top of the caption that states the breaks. Measured,
+  // not eyeballed: the legend has to end inside the plot box and above the caption.
+  const legend = plot.locator('.u-legend');
+  await expect(legend).toBeVisible();
+  const legendBox = await legend.boundingBox();
+  const footBox = await page.getByTestId('series-breaks').boundingBox();
+  expect(box && legendBox && legendBox.y + legendBox.height <= box.y + box.height + 1,
+    'the uPlot legend stays inside the plot box').toBeTruthy();
+  expect(legendBox && footBox && legendBox.y + legendBox.height <= footBox.y + 1,
+    'the uPlot legend does not print over the breaks caption').toBeTruthy();
+
   // the baked breaks are reported and the penalty slider reruns PELT live
   await expect(page.getByTestId('series-breaks')).toContainText(/PELT/);
   const before = await page.getByTestId('series-breaks').textContent();

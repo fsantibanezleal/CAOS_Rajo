@@ -168,7 +168,7 @@ export function DataPage() {
                     </td>
                     <td className="mono">{r.country}</td>
                     <td className="mono">{r.frames}</td>
-                    <td className="mono">{r.first !== null ? `${r.first} to ${r.last}` : t('data.catalog.pending')}</td>
+                    <td className="mono">{r.first !== null ? `${r.first} ${t('common.rangeTo')} ${r.last}` : t('data.catalog.pending')}</td>
                     <td className="mono">{r.gaps}</td>
                     <td className="mono">{r.masks.join(', ') || '-'}</td>
                     <td className="mono">{r.series ? t('common.yes') : '-'}</td>

@@ -1,6 +1,9 @@
 // A histogram on a 2D canvas with a hover readout (bin range and count), the current display range shaded,
 // and an optional threshold line. Theme-aware through the CSS tokens read at draw time.
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+
+import { int, num } from '../lib/format';
 
 export interface HistogramProps {
   counts: Uint32Array | number[];
@@ -17,7 +20,8 @@ function token(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888';
 }
 
-export function Histogram({ counts, lo, hi, rangeLo, rangeHi, threshold, height = 96, format = (v) => v.toFixed(3) }: HistogramProps) {
+export function Histogram({ counts, lo, hi, rangeLo, rangeHi, threshold, height = 96, format = (v) => num(v, 3) }: HistogramProps) {
+  const { t } = useTranslation();
   const ref = useRef<HTMLCanvasElement | null>(null);
   const [hover, setHover] = useState<{ x: number; bin: number } | null>(null);
   const bins = counts.length;
@@ -83,7 +87,7 @@ export function Histogram({ counts, lo, hi, rangeLo, rangeHi, threshold, height 
         onMouseLeave={() => setHover(null)}
       />
       <div className="hist-read mono">
-        {hover ? `${format(binLo)} to ${format(binHi)}: ${counts[hover.bin]!.toLocaleString()} px` : ' '}
+        {hover ? `${format(binLo)} ${t('common.rangeTo')} ${format(binHi)}: ${int(counts[hover.bin]!)} ${t('common.px')}` : ' '}
       </div>
     </div>
   );

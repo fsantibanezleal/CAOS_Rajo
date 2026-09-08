@@ -18,6 +18,7 @@ import { useModels } from '../state/models';
 import { useUI } from '../state/ui';
 import { Histogram } from './Histogram';
 import { ReliefPanel } from './ReliefPanel';
+import { num } from '../lib/format';
 
 export type InstrumentTab = 'look' | 'find' | 'relief';
 
@@ -93,7 +94,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
   };
 
   const label = (id: IndexName) => t(`indices.${id}.name`);
-  const fmt = (v: number) => (spec.kind === 'ratio' ? v.toFixed(2) : v.toFixed(2));
+  const fmt = (v: number) => (spec.kind === 'ratio' ? num(v, 2) : num(v, 2));
 
   return (
     <aside className="overlay instrument" data-testid="instrument" aria-label={t('instrument.title')}>
@@ -138,7 +139,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
               >
                 {live.groups.map((g) => (
                   <option key={g.date} value={g.date}>
-                    {g.date} ({g.cloud.toFixed(1)}% {t('instrument.cloud')})
+                    {g.date} ({num(g.cloud, 1)}% {t('instrument.cloud')})
                   </option>
                 ))}
               </select>
@@ -154,7 +155,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
           {live.status === 'error' && <p className="bad small">{live.message}</p>}
           {live.status === 'ready' && live.read && live.group && (
             <p className="small mono" data-testid="live-scene">
-              {live.group.date} / {live.read.itemsRead.length} {t('instrument.tiles')} / {live.grid?.pixelM} m / {(live.read.bytes / 1e6).toFixed(1)} MB / {(live.read.ms / 1000).toFixed(1)} s
+              {live.group.date} / {live.read.itemsRead.length} {t('instrument.tiles')} / {live.grid?.pixelM} m / {num((live.read.bytes / 1e6), 1)} MB / {num((live.read.ms / 1000), 1)} s
               {live.read.itemsSkipped.length > 0 && ` / ${t('instrument.skipped')}: ${live.read.itemsSkipped.length}`}
             </p>
           )}
@@ -265,7 +266,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
             )}
             {layer?.kind === 'composite' && (
               <p className="small faint mono">
-                {t('instrument.stretch')}: {layer.clips.map((c) => `${c[0].toFixed(3)}-${c[1].toFixed(3)}`).join(' / ')}
+                {t('instrument.stretch')}: {layer.clips.map((c) => `${num(c[0], 3)}-${num(c[1], 3)}`).join(' / ')}
               </p>
             )}
             <label className="inst-label small">
@@ -299,14 +300,14 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                         void live.otsu(v);
                       }}
                     />
-                    <span className="mono">{(otsuT ?? layer.result.threshold).toFixed(2)}</span>
+                    <span className="mono">{num((otsuT ?? layer.result.threshold), 2)}</span>
                   </label>
                 )}
               </div>
               {layer?.kind === 'otsu' && (
                 <>
-                  <Histogram counts={histOf(layer.result.values)} lo={-0.6} hi={0.8} threshold={layer.result.threshold} format={(v) => v.toFixed(2)} />
-                  <Readout label={t('instrument.area')} value={`${layer.result.areaKm2.toFixed(2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
+                  <Histogram counts={histOf(layer.result.values)} lo={-0.6} hi={0.8} threshold={layer.result.threshold} format={(v) => num(v, 2)} />
+                  <Readout label={t('instrument.area')} value={`${num(layer.result.areaKm2, 2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
                 </>
               )}
             </div>
@@ -345,11 +346,11 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                           <span className="sw" style={{ background: clusterColor(j, layer.result.centroids.length) }} />
                         </td>
                         <td className="mono">{j + 1}</td>
-                        <td className="mono">{layer.result.areasKm2[j]!.toFixed(2)}</td>
+                        <td className="mono">{num(layer.result.areasKm2[j]!, 2)}</td>
                         <td>
                           <span className="spec">
                             {c.map((v, f) => (
-                              <i key={f} style={{ height: `${Math.min(100, v * 200)}%` }} title={`${['B','G','R','NIR','SWIR1','SWIR2'][f]} ${v.toFixed(3)}`} />
+                              <i key={f} style={{ height: `${Math.min(100, v * 200)}%` }} title={`${['B','G','R','NIR','SWIR1','SWIR2'][f]} ${num(v, 3)}`} />
                             ))}
                           </span>
                         </td>
@@ -366,7 +367,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                 <label className="small">
                   {t('instrument.sam.angle')}
                   <input type="range" min={0.02} max={0.4} step={0.01} value={samAngle} onChange={(e) => setSamAngle(Number(e.target.value))} />
-                  <span className="mono">{samAngle.toFixed(2)} rad</span>
+                  <span className="mono">{num(samAngle, 2)} rad</span>
                 </label>
                 <button className="btn" type="button" disabled={live.status !== 'ready' || live.busy} onClick={() => void live.sam(samAngle, refMask ?? undefined)} data-testid="sam-run">
                   {t('instrument.compute')}
@@ -374,8 +375,8 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
               </div>
               {layer?.kind === 'sam' && (
                 <>
-                  <Histogram counts={histOf(layer.result.values, 0, 0.6)} lo={0} hi={0.6} threshold={layer.result.threshold} format={(v) => v.toFixed(2)} />
-                  <Readout label={t('instrument.area')} value={`${layer.result.areaKm2.toFixed(2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
+                  <Histogram counts={histOf(layer.result.values, 0, 0.6)} lo={0} hi={0.6} threshold={layer.result.threshold} format={(v) => num(v, 2)} />
+                  <Readout label={t('instrument.area')} value={`${num(layer.result.areaKm2, 2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
                   <p className="small faint">{refMask ? t('instrument.sam.endmemberRef') : t('instrument.sam.endmemberBare')}</p>
                 </>
               )}
@@ -393,7 +394,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                   disabled={live.status !== 'ready' || live.busy || !rfModel}
                   onClick={() => void live.rf(learnedT, unetScale)}
                   data-testid="rf-run"
-                  title={rfModel ? `${rfModel.id} / ${(rfModel.bytes / 1e6).toFixed(1)} MB` : ''}
+                  title={rfModel ? `${rfModel.id} / ${num((rfModel.bytes / 1e6), 1)} MB` : ''}
                 >
                   {t('instrument.learned.rf')}
                 </button>
@@ -403,7 +404,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                   disabled={live.status !== 'ready' || live.busy || !unetModel}
                   onClick={() => void live.unet(learnedT, unetScale)}
                   data-testid="unet-run"
-                  title={unetModel ? `${unetModel.id} / ${(unetModel.bytes / 1e6).toFixed(1)} MB` : ''}
+                  title={unetModel ? `${unetModel.id} / ${num((unetModel.bytes / 1e6), 1)} MB` : ''}
                 >
                   {t('instrument.learned.unet')}
                 </button>
@@ -418,7 +419,7 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
               <label className="small">
                 {t('instrument.learned.threshold')}
                 <input type="range" min={0.1} max={0.9} step={0.05} value={learnedT} onChange={(e) => setLearnedT(Number(e.target.value))} />
-                <span className="mono">{learnedT.toFixed(2)}</span>
+                <span className="mono">{num(learnedT, 2)}</span>
               </label>
               {live.learnedProgress && (
                 <div className="progress" aria-label={t('instrument.learned.running')}>
@@ -435,10 +436,10 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
               )}
               {(layer?.kind === 'rf' || layer?.kind === 'unet') && (
                 <>
-                  <Histogram counts={histOf(layer.result.values, 0, 1)} lo={0} hi={1} threshold={layer.result.threshold} format={(v) => v.toFixed(2)} />
-                  <Readout label={t('instrument.area')} value={`${layer.result.areaKm2.toFixed(2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
+                  <Histogram counts={histOf(layer.result.values, 0, 1)} lo={0} hi={1} threshold={layer.result.threshold} format={(v) => num(v, 2)} />
+                  <Readout label={t('instrument.area')} value={`${num(layer.result.areaKm2, 2)} km2`} ref2={refAreaKm2} refLabel={t('instrument.refArea')} />
                   <p className="small faint mono" data-testid="learned-run">
-                    {layer.kind === 'rf' ? 'M7' : 'M8'} / {layer.result.backend} / {(layer.result.ms / 1000).toFixed(1)} s
+                    {layer.kind === 'rf' ? 'M7' : 'M8'} / {layer.result.backend} / {num((layer.result.ms / 1000), 1)} s
                     {layer.result.windows ? ` / ${layer.result.windows} ${t('instrument.learned.windows')}` : ''}
                     {layer.result.scale === 2 ? ` / ${t('instrument.learned.coarse')}` : ''}
                   </p>
@@ -450,9 +451,9 @@ export function Instrument({ manifest, onOpacity }: { manifest: SiteManifest; on
                       <p className="small faint" data-testid="learned-card">
                         {m ? `${m.id}, ${t('instrument.learned.trained')} ${m.trained}. ` : ''}
                         {bench
-                          ? `${t('instrument.learned.heldOut')}: IoU ${bench.pooled.iou.toFixed(2)}, F1 ${bench.pooled.f1.toFixed(2)} (${bench.n_tiles} ${t('instrument.tiles')}). `
+                          ? `${t('instrument.learned.heldOut')}: IoU ${num(bench.pooled.iou, 2)}, F1 ${num(bench.pooled.f1, 2)} (${bench.n_tiles} ${t('instrument.tiles')}). `
                           : test
-                            ? `${t('instrument.learned.heldOut')}: IoU ${test.pooled_iou.toFixed(2)}, F1 ${test.pooled_f1.toFixed(2)} (${test.n_tiles} ${t('instrument.tiles')}). `
+                            ? `${t('instrument.learned.heldOut')}: IoU ${num(test.pooled_iou, 2)}, F1 ${num(test.pooled_f1, 2)} (${test.n_tiles} ${t('instrument.tiles')}). `
                             : ''}
                         {t('instrument.learned.neverSeen')}
                       </p>
@@ -477,7 +478,7 @@ function Readout({ label, value, ref2, refLabel }: { label: string; value: strin
       {ref2 !== null && (
         <>
           <dt>{refLabel}</dt>
-          <dd>{ref2.toFixed(2)} km2</dd>
+          <dd>{num(ref2, 2)} km2</dd>
         </>
       )}
     </dl>

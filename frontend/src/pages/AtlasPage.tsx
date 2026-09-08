@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { COCHILCO_BY_COMPANY_URL, COPPER_BY_COUNTRY, COPPER_OTHER_COUNTRIES, COPPER_WORLD, USGS_MCS_2026_COPPER_URL } from '../content/production';
 import { useCatalog } from '../state/catalog';
 import { useUI } from '../state/ui';
+import { num } from '../lib/format';
 
 const kt = (v: number) => v.toLocaleString('en-US', { maximumFractionDigits: 0 });
 
@@ -43,7 +44,7 @@ export function AtlasPage() {
                   <td className="mono">{s.country}</td>
                   <td>{s.categories.map((c) => t(`categories.${c}`)).join(', ')}</td>
                   <td className="mono">
-                    {s.lon.toFixed(3)}, {s.lat.toFixed(3)}
+                    {num(s.lon, 3)}, {num(s.lat, 3)}
                   </td>
                   <td className="mono">{s.n_frames}</td>
                 </tr>

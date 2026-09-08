@@ -6,6 +6,23 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.005] - 2026-09-08
+
+### Fixed
+
+- Numbers are part of the language. Every displayed number went through `toFixed`, so a Spanish
+  reader saw "272.9 km2", "0.378" and "11,506" with English separators. `lib/format.ts` formats
+  through `Intl.NumberFormat` in the reader's locale (es-CL or en-US) and 62 call sites now use it;
+  the two that must stay machine-readable, an `<input>` value and a CSS percentage, are named in the
+  gate rather than left implicit.
+- The series drawer printed the artifact's English sentence, "reference polygons dilated by 1000 m on
+  the 30 m grid", inside the Spanish UI. The numbers are read out of the artifact and the sentence
+  comes from the locale, falling back to the artifact's own text if its wording ever changes.
+- Four readouts had English welded around their numbers, out of reach of any locale: "120 to 300 m",
+  "(in mask)", "p(mine)", "angle", and the Data page's date ranges. All routed through the locale.
+- `frontend/src/lib/format.test.ts` gates it: the formatter's output per language, and a source scan
+  that fails on a `toFixed` in a component or page and on the English fragments that were welded in.
+
 ## [0.02.004] - 2026-09-07
 
 ### Fixed

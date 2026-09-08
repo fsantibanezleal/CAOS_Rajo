@@ -60,9 +60,9 @@
   <text x="452" y="228" class="h l-en">Each stage writes a side-car; export assembles; validate refuses</text>
   <text x="452" y="228" class="h l-es">Cada etapa escribe un lateral; export arma; validate rechaza</text>
   <text x="452" y="244" class="sub l-en">a missing file, a byte or sha256 drift, a year with neither a frame nor</text>
-  <text x="452" y="244" class="sub l-es">un archivo faltante, una deriva de bytes o sha256, un año sin cuadro ni</text>
+  <text x="452" y="244" class="sub l-es">un archivo faltante, una deriva de bytes o sha256, un año sin frame ni</text>
   <text x="452" y="257" class="sub l-en">a reason, a series naming a year without a frame, two engine versions,</text>
-  <text x="452" y="257" class="sub l-es">razón, una serie con un año sin cuadro, dos versiones del motor,</text>
+  <text x="452" y="257" class="sub l-es">razón, una serie con un año sin frame, dos versiones del motor,</text>
   <text x="452" y="270" class="sub l-en">a CR byte in a text artifact (LF everywhere, hashed as stored).</text>
   <text x="452" y="270" class="sub l-es">un byte CR en un artefacto de texto (LF en todo, hasheado tal cual).</text>
 

@@ -31,7 +31,7 @@ export const ARCH_TABS: ArchTab[] = [
   {
     id: 'lanes',
     svg: '02-lanes.svg',
-    label: { en: 'Lanes: web, offline, compute', es: 'Carriles: web, offline, computo' },
+    label: { en: 'Lanes: web, offline, compute', es: 'Carriles: web, offline, cómputo' },
     body: {
       en: [
         'Live in the web: the instrument reads the latest clear Sentinel-2 same-day group straight from the sentinel-cogs bucket (HTTP range requests through geotiff.js, a decoding pool, an abort signal) onto the site grid; the band-math worker (indices.worker.ts) computes composites, nine indices, Otsu, k-means and the spectral angle; the same worker builds the sixteen feature planes, walks the random forest from flat node arrays (forest.ts, since onnxruntime-web has no tree-ensemble kernel) and runs the U-Net through onnxruntime-web (webgpu when the page has it, wasm otherwise); the series drawer reruns PELT in TypeScript; the profile tool decodes terrarium tiles of both epochs.',

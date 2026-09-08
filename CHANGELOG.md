@@ -6,6 +6,19 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.007] - 2026-09-08
+
+### Fixed
+
+- The year's mask only drapped while the series drawer was open, because the overlay effect required
+  `showSeries`. Closing the drawer to see the mask over the whole map, which is the reason to turn it
+  on, removed it. The drawer is the control, not the view: the drape now depends on the mask toggle
+  alone.
+- Found by comparing the two mask screenshots taken for the diffusion deck: they were byte-identical,
+  so the deck was publishing the same unmasked map twice as "the same frame, two methods". The series
+  gate now closes the drawer, screenshots the map under each method, and fails if the two are equal
+  or if the mask layer disappears.
+
 ## [0.02.006] - 2026-09-08
 
 ### Changed

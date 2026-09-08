@@ -143,13 +143,15 @@ export function Observatory() {
     };
   }, [map, manifest, frame, mode, opacity]);
 
-  // the baked mask of the year (signal lane) drapes over the frame when the user asks for it
+  // the baked mask of the year (signal lane) drapes over the frame when the user asks for it. The
+  // drape does NOT depend on the series drawer being open: the drawer is the control, not the view,
+  // and closing it to see the mask over the whole map is the reason to turn the mask on at all.
   const showMask = useTimeline((s) => s.showMask);
   const seriesMethod = useTimeline((s) => s.seriesMethod);
   const showSeries = useTimeline((s) => s.showSeries);
   useEffect(() => {
     if (!map) return;
-    const url = manifest && frame && showMask && showSeries ? maskUrl(manifest, frame, seriesMethod) : null;
+    const url = manifest && frame && showMask ? maskUrl(manifest, frame, seriesMethod) : null;
     if (!url || !manifest) {
       if (map.isStyleLoaded()) removeMaskLayer(map);
       return;
@@ -171,7 +173,7 @@ export function Observatory() {
       cancelled = true;
       map.off('style.load', apply);
     };
-  }, [map, manifest, frame, showMask, showSeries, seriesMethod]);
+  }, [map, manifest, frame, showMask, seriesMethod]);
 
   // the relief lane: the site's Copernicus terrain as a second DEM source, the epoch of the 3D relief,
   // the DEM difference draped on demand, and the profile line picked on the map

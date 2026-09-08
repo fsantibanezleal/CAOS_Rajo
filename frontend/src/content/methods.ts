@@ -27,10 +27,10 @@ export interface MethodEntry {
 const REPO_DOCS = 'https://github.com/fsantibanezleal/CAOS_Rajo/blob/main/docs/methods/';
 
 export const QUESTIONS: Record<MethodEntry['question'], Record<Lang, string>> = {
-  look: { en: 'What am I looking at?', es: 'Que estoy mirando?' },
-  find: { en: 'Where is the mine?', es: 'Donde esta la mina?' },
-  change: { en: 'How did it change?', es: 'Como cambio?' },
-  relief: { en: 'How much rock moved?', es: 'Cuanta roca se movio?' },
+  look: { en: 'What am I looking at?', es: '¿Qué estoy mirando?' },
+  find: { en: 'Where is the mine?', es: '¿Dónde está la mina?' },
+  change: { en: 'How did it change?', es: '¿Cómo cambió?' },
+  relief: { en: 'How much rock moved?', es: '¿Cuánta roca se movió?' },
 };
 
 export const METHODS: MethodEntry[] = [
@@ -42,28 +42,28 @@ export const METHODS: MethodEntry[] = [
     name: { en: 'Colour composites', es: 'Compuestos de color' },
     summary: {
       en: 'True colour (B4, B3, B2), false colour with the near infrared (B8, B4, B3) and the SWIR geology combination (B12, B8, B4). Each channel is clipped to its 2nd and 98th percentile over valid pixels and raised to a gamma of 1/1.35; the clip values are printed next to the composite and stored per frame, so a stretch is never hidden.',
-      es: 'Color verdadero (B4, B3, B2), falso color con el infrarrojo cercano (B8, B4, B3) y la combinacion geologica SWIR (B12, B8, B4). Cada canal se recorta a sus percentiles 2 y 98 sobre los pixeles validos y se eleva a un gamma de 1/1.35; los valores de recorte se imprimen junto al compuesto y se guardan por cuadro, asi un estiramiento nunca se oculta.',
+      es: 'Color verdadero (B4, B3, B2), falso color con el infrarrojo cercano (B8, B4, B3) y la combinación geológica SWIR (B12, B8, B4). Cada canal se recorta a sus percentiles 2 y 98 sobre los píxeles válidos y se eleva a un gamma de 1/1.35; los valores de recorte se imprimen junto al compuesto y se guardan por cuadro, así un estiramiento nunca se oculta.',
     },
-    equations: [{ tex: '\\rho_b = \\frac{\\mathrm{DN} - 1000}{10000} \\;\\text{(Sentinel-2, baseline 04.00+)},\\qquad \\rho_b = 0.0000275\\,\\mathrm{DN} - 0.2 \\;\\text{(Landsat C2 L2)}', label: { en: 'Surface reflectance from the archived digital numbers', es: 'Reflectancia de superficie desde los numeros digitales archivados' } }],
+    equations: [{ tex: '\\rho_b = \\frac{\\mathrm{DN} - 1000}{10000} \\;\\text{(Sentinel-2, baseline 04.00+)},\\qquad \\rho_b = 0.0000275\\,\\mathrm{DN} - 0.2 \\;\\text{(Landsat C2 L2)}', label: { en: 'Surface reflectance from the archived digital numbers', es: 'Reflectancia de superficie desde los números digitales archivados' } }],
     sources: [
       { text: 'van der Meer, F. D. et al. (2012), Multi- and hyperspectral geologic remote sensing: a review, Int. J. Appl. Earth Obs. Geoinf. 14, 112-128', doi: '10.1016/j.jag.2011.08.002' },
       { text: 'van der Werff, H. and van der Meer, F. (2015), Sentinel-2 for mapping iron absorption feature parameters, Remote Sens. Environ. 148, 124-133', doi: '10.1016/j.rse.2014.03.022' },
     ],
     caveats: {
       en: ['The stretch is per scene: absolute brightness is not comparable across frames; the indices are.', 'Landsat frames before 2017 map their bands to the Sentinel-2 names; cross-sensor consistency is a known limitation.'],
-      es: ['El estiramiento es por escena: el brillo absoluto no es comparable entre cuadros; los indices si.', 'Los cuadros Landsat anteriores a 2017 mapean sus bandas a los nombres Sentinel-2; la consistencia entre sensores es una limitacion conocida.'],
+      es: ['El estiramiento es por escena: el brillo absoluto no es comparable entre cuadros; los índices si.', 'Los cuadros Landsat anteriores a 2017 mapean sus bandas a los nombres Sentinel-2; la consistencia entre sensores es una limitacion conocida.'],
     },
-    where: { en: 'Live in the Look view on the latest clear Sentinel-2 scene; baked as the yearly frames.', es: 'En vivo en la vista Mirar sobre la escena Sentinel-2 mas reciente; cocinado como los cuadros anuales.' },
+    where: { en: 'Live in the Look view on the latest clear Sentinel-2 scene; baked as the yearly frames.', es: 'En vivo en la vista Mirar sobre la escena Sentinel-2 más reciente; cocinado como los cuadros anuales.' },
   },
   {
     id: 'M2',
     question: 'look',
     lane: 'both',
     doc: '01_composites-and-indices.md',
-    name: { en: 'Spectral indices', es: 'Indices espectrales' },
+    name: { en: 'Spectral indices', es: 'Índices espectrales' },
     summary: {
       en: 'Six normalised differences computed per pixel from surface reflectance: vegetation (NDVI), water (NDWI, MNDWI), built-up and bare rock (NDBI), bare soil (BSI) and burn (NBR). Invalid pixels (no data, cloud, shadow, cirrus per the scene classification) are excluded from every statistic, and a difference of two near-zero reflectances is NaN rather than noise.',
-      es: 'Seis diferencias normalizadas por pixel desde la reflectancia de superficie: vegetacion (NDVI), agua (NDWI, MNDWI), construido y roca desnuda (NDBI), suelo desnudo (BSI) y quema (NBR). Los pixeles invalidos (sin dato, nube, sombra, cirro segun la clasificacion de escena) quedan fuera de toda estadistica, y una diferencia de dos reflectancias cercanas a cero es NaN y no ruido.',
+      es: 'Seis diferencias normalizadas por píxel desde la reflectancia de superficie: vegetación (NDVI), agua (NDWI, MNDWI), construido y roca desnuda (NDBI), suelo desnudo (BSI) y quema (NBR). Los píxeles inválidos (sin dato, nube, sombra, cirro según la clasificación de escena) quedan fuera de toda estadística, y una diferencia de dos reflectancias cercanas a cero es NaN y no ruido.',
     },
     equations: [
       { tex: '\\mathrm{NDVI} = \\frac{\\rho_{B8} - \\rho_{B4}}{\\rho_{B8} + \\rho_{B4}}' },
@@ -79,9 +79,9 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['Bright salt crusts mimic water in NDWI; MNDWI separates ponds from salt and tailings better, which is why it is the water test inside the bare-ground mask.', 'Deserts are bare everywhere: BSI needs a threshold that respects the scene (M4).'],
-      es: ['Las costras de sal brillantes imitan agua en NDWI; MNDWI separa mejor las pozas de la sal y los relaves, por eso es la prueba de agua dentro de la mascara de suelo desnudo.', 'Los desiertos son desnudos en todas partes: BSI necesita un umbral que respete la escena (M4).'],
+      es: ['Las costras de sal brillantes imitan agua en NDWI; MNDWI separa mejor las pozas de la sal y los relaves, por eso es la prueba de agua dentro de la máscara de suelo desnudo.', 'Los desiertos son desnudos en todas partes: BSI necesita un umbral que respete la escena (M4).'],
     },
-    where: { en: 'Live in the Look view with a perceptually uniform colormap, histogram, statistics and a cursor readout; the envelope means per year in the series drawer.', es: 'En vivo en la vista Mirar con un mapa de color perceptualmente uniforme, histograma, estadisticas y lectura bajo el cursor; las medias de la envolvente por ano en el cajon de series.' },
+    where: { en: 'Live in the Look view with a perceptually uniform colormap, histogram, statistics and a cursor readout; the envelope means per year in the series drawer.', es: 'En vivo en la vista Mirar con un mapa de color perceptualmente uniforme, histograma, estadísticas y lectura bajo el cursor; las medias de la envolvente por año en el cajón de series.' },
   },
   {
     id: 'M3',
@@ -91,7 +91,7 @@ export const METHODS: MethodEntry[] = [
     name: { en: 'Mineral group ratios', es: 'Razones de grupos minerales' },
     summary: {
       en: 'Band ratios that respond to the broad absorption features of mineral groups: iron oxides (red over blue), hydroxyl-bearing clays and carbonates (B11 over B12) and ferrous minerals (B12 over the near infrared). With two shortwave-infrared bands Sentinel-2 cannot resolve species, so the app labels them indicators, never mineral maps.',
-      es: 'Razones de bandas que responden a los rasgos de absorcion amplios de grupos minerales: oxidos de hierro (rojo sobre azul), arcillas con hidroxilo y carbonatos (B11 sobre B12) y minerales ferrosos (B12 sobre el infrarrojo cercano). Con dos bandas SWIR Sentinel-2 no resuelve especies, asi que la app los llama indicadores, nunca mapas minerales.',
+      es: 'Razones de bandas que responden a los rasgos de absorción amplios de grupos minerales: óxidos de hierro (rojo sobre azul), arcillas con hidroxilo y carbonatos (B11 sobre B12) y minerales ferrosos (B12 sobre el infrarrojo cercano). Con dos bandas SWIR Sentinel-2 no resuelve especies, así que la app los llama indicadores, nunca mapas minerales.',
     },
     equations: [
       { tex: 'R_{\\mathrm{Fe}^{3+}} = \\frac{\\rho_{B4}}{\\rho_{B2}}, \\qquad R_{\\mathrm{OH}} = \\frac{\\rho_{B11}}{\\rho_{B12}}, \\qquad R_{\\mathrm{Fe}^{2+}} = \\frac{\\rho_{B12}}{\\rho_{B8A}}' },
@@ -103,7 +103,7 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['The ratios respond to oxidised waste and leach pads as much as to outcrop.', 'Shadowed pit walls lower every band and can shift ratios; atmospheric residuals affect the blue band most, so the iron ratio is the noisiest.'],
-      es: ['Las razones responden a residuos oxidados y pilas de lixiviacion tanto como al afloramiento.', 'Las paredes en sombra bajan todas las bandas y pueden correr las razones; los residuos atmosfericos afectan mas a la banda azul, asi que la razon de hierro es la mas ruidosa.'],
+      es: ['Las razones responden a residuos oxidados y pilas de lixiviación tanto como al afloramiento.', 'Las paredes en sombra bajan todas las bandas y pueden correr las razones; los residuos atmosfericos afectan más a la banda azul, así que la razón de hierro es la más ruidosa.'],
     },
     where: { en: 'Live in the Look view (mineral group indicators).', es: 'En vivo en la vista Mirar (indicadores de grupos minerales).' },
   },
@@ -112,10 +112,10 @@ export const METHODS: MethodEntry[] = [
     question: 'find',
     lane: 'both',
     doc: '03_classical-delineation.md',
-    name: { en: 'Otsu bare-ground mask', es: 'Mascara de suelo desnudo por Otsu' },
+    name: { en: 'Otsu bare-ground mask', es: 'Máscara de suelo desnudo por Otsu' },
     summary: {
       en: "Otsu's threshold on the BSI histogram (the middle of the optimal plateau, not its first bin), combined with a vegetation test (NDVI below 0.2) and a water test (MNDWI below 0), then a 3 x 3 opening and the removal of small 4-connected components. The threshold slider lets the reader move the cut and watch the area respond.",
-      es: 'El umbral de Otsu sobre el histograma de BSI (el centro de la meseta optima, no su primer bin), combinado con una prueba de vegetacion (NDVI bajo 0.2) y una de agua (MNDWI bajo 0), luego una apertura 3 x 3 y la eliminacion de componentes 4-conexas pequenas. El deslizador del umbral deja mover el corte y ver como responde el area.',
+      es: 'El umbral de Otsu sobre el histograma de BSI (el centro de la meseta óptima, no su primer bin), combinado con una prueba de vegetación (NDVI bajo 0.2) y una de agua (MNDWI bajo 0), luego una apertura 3 x 3 y la eliminación de componentes 4-conexas pequeñas. El deslizador del umbral deja mover el corte y ver cómo responde el área.',
     },
     equations: [
       { tex: 't^* = \\arg\\max_t\\; \\omega_0(t)\\,\\omega_1(t)\\,\\left[\\mu_0(t) - \\mu_1(t)\\right]^2' },
@@ -124,7 +124,7 @@ export const METHODS: MethodEntry[] = [
     sources: [{ text: 'Otsu, N. (1979), A threshold selection method from gray-level histograms, IEEE Trans. Syst. Man Cybern. 9(1), 62-66', doi: '10.1109/TSMC.1979.4310076' }],
     caveats: {
       en: ['In a desert the whole scene is bare, so the bimodality Otsu needs is between darker rock and brighter mined ground, and the threshold drifts with the season.', 'Works best over vegetated sites (Carajas, Hambach, Athabasca).'],
-      es: ['En un desierto toda la escena es desnuda, asi que la bimodalidad que Otsu necesita esta entre roca mas oscura y suelo minado mas claro, y el umbral deriva con la estacion.', 'Funciona mejor en sitios con vegetacion (Carajas, Hambach, Athabasca).'],
+      es: ['En un desierto toda la escena es desnuda, así que la bimodalidad que Otsu necesita esta entre roca más oscura y suelo minado más claro, y el umbral deriva con la estacion.', 'Funciona mejor en sitios con vegetación (Carajas, Hambach, Athabasca).'],
     },
     where: { en: 'Live in the Find view; baked on every frame as the otsu series.', es: 'En vivo en la vista Encontrar; cocinado sobre cada cuadro como la serie otsu.' },
   },
@@ -136,7 +136,7 @@ export const METHODS: MethodEntry[] = [
     name: { en: 'k-means on the spectra', es: 'k-means sobre los espectros' },
     summary: {
       en: 'Each valid pixel is a vector of the six reflectances plus NDVI and MNDWI, standardised feature by feature; k-means++ seeding, Lloyd iterations on a stratified sample, then every pixel assigned to its nearest centroid with a seeded generator, so a run is reproducible. The table shows each cluster area and centroid spectrum; the reader decides which clusters are the mine, the honest limit of an unsupervised method.',
-      es: 'Cada pixel valido es un vector de las seis reflectancias mas NDVI y MNDWI, estandarizado atributo por atributo; siembra k-means++, iteraciones de Lloyd sobre una muestra estratificada y luego cada pixel asignado a su centroide mas cercano con un generador con semilla, asi una corrida es reproducible. La tabla muestra el area y el espectro de cada cluster; el lector decide cuales son la mina, el limite honesto de un metodo no supervisado.',
+      es: 'Cada píxel válido es un vector de las seis reflectancias más NDVI y MNDWI, estandarizado atributo por atributo; siembra k-means++, iteraciones de Lloyd sobre una muestra estratificada y luego cada píxel asignado a su centroide más cercano con un generador con semilla, así una corrida es reproducible. La tabla muestra el área y el espectro de cada cluster; el lector decide cuáles son la mina, el límite honesto de un método no supervisado.',
     },
     equations: [{ tex: '\\arg\\min_{S}\\; \\sum_{j=1}^{k} \\sum_{\\mathbf{x} \\in S_j} \\lVert \\mathbf{z}(\\mathbf{x}) - \\boldsymbol{\\mu}_j \\rVert^2' }],
     sources: [
@@ -147,35 +147,35 @@ export const METHODS: MethodEntry[] = [
       en: ['Clusters are spectral, not semantic: the pit and a road can share one, and shadow splits a material in two.'],
       es: ['Los clusters son espectrales, no semanticos: el rajo y un camino pueden compartir uno, y la sombra parte un material en dos.'],
     },
-    where: { en: 'Live in the Find view; in the benchmark the cluster with the highest mean BSI among low-NDVI clusters is scored.', es: 'En vivo en la vista Encontrar; en el benchmark se evalua el cluster de mayor BSI medio entre los de NDVI bajo.' },
+    where: { en: 'Live in the Find view; in the benchmark the cluster with the highest mean BSI among low-NDVI clusters is scored.', es: 'En vivo en la vista Encontrar; en el benchmark se evalúa el cluster de mayor BSI medio entre los de NDVI bajo.' },
   },
   {
     id: 'M6',
     question: 'find',
     lane: 'live',
     doc: '03_classical-delineation.md',
-    name: { en: 'Spectral angle mapper', es: 'Mapeador de angulo espectral' },
+    name: { en: 'Spectral angle mapper', es: 'Mapeador de ángulo espectral' },
     summary: {
       en: 'The angle between each six-band pixel spectrum and an endmember: the mean spectrum of the pixels inside the reference mining polygons on this very scene, or the brightest bare quartile when no polygon lands on the grid. The angle ignores the magnitude of the spectrum, so shadowed pit walls, the same material at lower illumination, still match.',
-      es: 'El angulo entre el espectro de seis bandas de cada pixel y un endmember: el espectro medio de los pixeles dentro de los poligonos mineros de referencia sobre esta misma escena, o el cuartil desnudo mas brillante cuando ningun poligono cae en la grilla. El angulo ignora la magnitud del espectro, asi que las paredes en sombra, el mismo material con menos iluminacion, igual coinciden.',
+      es: 'El ángulo entre el espectro de seis bandas de cada píxel y un endmember: el espectro medio de los píxeles dentro de los polígonos mineros de referencia sobre esta misma escena, o el cuartil desnudo más brillante cuando ningún polígono cae en la grilla. El ángulo ignora la magnitud del espectro, así que las paredes en sombra, el mismo material con menos iluminación, igual coinciden.',
     },
     equations: [{ tex: '\\theta(\\mathbf{x}, \\mathbf{e}) = \\arccos\\frac{\\mathbf{x}\\cdot\\mathbf{e}}{\\lVert\\mathbf{x}\\rVert\\,\\lVert\\mathbf{e}\\rVert}, \\qquad M = [\\theta \\le \\theta^*]' }],
     sources: [{ text: 'Kruse, F. A. et al. (1993), The spectral image processing system (SIPS): interactive visualization and analysis of imaging spectrometer data, Remote Sens. Environ. 44, 145-163', doi: '10.1016/0034-4257(93)90013-N' }],
     caveats: {
       en: ['The endmember is the reference polygons themselves, so the method is supervised by the dataset it is compared with; the benchmark chooses the angle on validation tiles and freezes it.'],
-      es: ['El endmember son los propios poligonos de referencia, asi que el metodo esta supervisado por el dataset con que se compara; el benchmark elige el angulo en teselas de validacion y lo congela.'],
+      es: ['El endmember son los propios polígonos de referencia, así que el método esta supervisado por el dataset con que se compara; el benchmark elige el ángulo en teselas de validación y lo congela.'],
     },
-    where: { en: 'Live in the Find view with the angle slider.', es: 'En vivo en la vista Encontrar con el deslizador del angulo.' },
+    where: { en: 'Live in the Find view with the angle slider.', es: 'En vivo en la vista Encontrar con el deslizador del ángulo.' },
   },
   {
     id: 'M7',
     question: 'find',
     lane: 'both',
     doc: '04_learned-delineation.md',
-    name: { en: 'Random forest on per-pixel features', es: 'Bosque aleatorio sobre atributos por pixel' },
+    name: { en: 'Random forest on per-pixel features', es: 'Bosque aleatorio sobre atributos por píxel' },
     summary: {
       en: 'Sixteen features per pixel (six bands, four indices, three mineral ratios, three 3 x 3 textures), computed identically in Python and in the browser and pinned by a golden fixture. Trained on two million pixels from the Jasansky et al. 2024 tiles with balanced class weights; bounded on purpose (64 trees, depth 12, 50 samples per leaf) because it ships as an ONNX tree ensemble. Every catalog site was held out.',
-      es: 'Dieciseis atributos por pixel (seis bandas, cuatro indices, tres razones minerales, tres texturas 3 x 3), calculados igual en Python y en el navegador y fijados por un fixture dorado. Entrenado con dos millones de pixeles de las teselas de Jasansky et al. 2024 con pesos de clase balanceados; acotado a proposito (64 arboles, profundidad 12, 50 muestras por hoja) porque viaja como un ensamble de arboles ONNX. Todos los sitios del catalogo quedaron fuera.',
+      es: 'Dieciséis atributos por píxel (seis bandas, cuatro índices, tres razones minerales, tres texturas 3 x 3), calculados igual en Python y en el navegador y fijados por un fixture dorado. Entrenado con dos millones de píxeles de las teselas de Jasansky et al. 2024 con pesos de clase balanceados; acotado a propósito (64 árboles, profundidad 12, 50 muestras por hoja) porque viaja como un ensamble de árboles ONNX. Todos los sitios del catálogo quedaron fuera.',
     },
     equations: [{ tex: 'p(\\text{mine} \\mid \\mathbf{f}) = \\frac{1}{T}\\sum_{t=1}^{T} h_t(\\mathbf{f}), \\qquad \\mathbf{f} \\in \\mathbb{R}^{16}' }],
     sources: [
@@ -184,7 +184,7 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['Trained on Sentinel-2 at 10 m: the Landsat years of the baked series are a domain shift and carry the flag cross_sensor.', 'The forest sees 3 x 3 neighbourhoods and nothing larger.'],
-      es: ['Entrenado con Sentinel-2 a 10 m: los anos Landsat de la serie cocinada son un cambio de dominio y llevan la bandera cross_sensor.', 'El bosque ve vecindarios 3 x 3 y nada mayor.'],
+      es: ['Entrenado con Sentinel-2 a 10 m: los años Landsat de la serie cocinada son un cambio de dominio y llevan la bandera cross_sensor.', 'El bosque ve vecindarios 3 x 3 y nada mayor.'],
     },
     where: { en: 'Live in the Find view (the forest traversed in the worker from flat node arrays); baked on every frame as the rf series.', es: 'En vivo en la vista Encontrar (el bosque recorrido en el worker desde arreglos planos de nodos); cocinado sobre cada cuadro como la serie rf.' },
   },
@@ -193,10 +193,10 @@ export const METHODS: MethodEntry[] = [
     question: 'find',
     lane: 'both',
     doc: '04_learned-delineation.md',
-    name: { en: 'U-Net semantic segmentation', es: 'Segmentacion semantica U-Net' },
+    name: { en: 'U-Net semantic segmentation', es: 'Segmentación semántica U-Net' },
     summary: {
       en: 'A four-level encoder-decoder with skip connections (base width 32, 7.85 million parameters) on the six bands at 10 m, trained with binary cross-entropy plus Dice over valid pixels, mixed precision, augmentations and early stopping on validation IoU. Exported to ONNX (opset 17, dynamic axes), it runs in the browser in 512 px windows with overlap blending on the WebGPU provider when the page has one and on single-thread WASM otherwise.',
-      es: 'Un codificador-decodificador de cuatro niveles con conexiones de salto (ancho base 32, 7.85 millones de parametros) sobre las seis bandas a 10 m, entrenado con entropia cruzada binaria mas Dice sobre pixeles validos, precision mixta, aumentos y parada temprana por IoU de validacion. Exportado a ONNX (opset 17, ejes dinamicos), corre en el navegador en ventanas de 512 px con mezcla de solape sobre el proveedor WebGPU cuando la pagina lo tiene y sobre WASM de un hilo si no.',
+      es: 'Un codificador-decodificador de cuatro niveles con conexiones de salto (ancho base 32, 7.85 millones de parámetros) sobre las seis bandas a 10 m, entrenado con entropía cruzada binaria más Dice sobre píxeles válidos, precisión mixta, aumentos y parada temprana por IoU de validación. Exportado a ONNX (opset 17, ejes dinámicos), corre en el navegador en ventanas de 512 px con mezcla de solape sobre el proveedor WebGPU cuando la página lo tiene y sobre WASM de un hilo si no.',
     },
     equations: [{ tex: '\\mathcal{L} = \\mathrm{BCE} + \\left(1 - \\frac{2\\sum_i p_i g_i + \\epsilon}{\\sum_i p_i + \\sum_i g_i + \\epsilon}\\right)' }],
     sources: [
@@ -207,7 +207,7 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['The labels are polygons of mining land use, not ore and not disturbance of a given year: a rehabilitated dump stays inside the polygon.', 'Evaluated on Sentinel-2 only; the Landsat frames are not its domain, so the baked unet series starts in 2017.'],
-      es: ['Las etiquetas son poligonos de uso minero del suelo, no mineral ni perturbacion de un ano dado: un botadero rehabilitado sigue dentro del poligono.', 'Evaluado solo con Sentinel-2; los cuadros Landsat no son su dominio, asi que la serie unet cocinada empieza en 2017.'],
+      es: ['Las etiquetas son polígonos de uso minero del suelo, no mineral ni perturbacion de un año dado: un botadero rehabilitado sigue dentro del polígono.', 'Evaluado solo con Sentinel-2; los cuadros Landsat no son su dominio, así que la serie unet cocinada empieza en 2017.'],
     },
     where: { en: 'Live in the Find view (coarse or full grid); baked on the Sentinel-2 frames as the unet series.', es: 'En vivo en la vista Encontrar (grilla gruesa o completa); cocinado sobre los cuadros Sentinel-2 como la serie unet.' },
   },
@@ -216,16 +216,16 @@ export const METHODS: MethodEntry[] = [
     question: 'change',
     lane: 'live',
     doc: '05_change-detection.md',
-    name: { en: 'Change vector analysis', es: 'Analisis de vector de cambio' },
+    name: { en: 'Change vector analysis', es: 'Análisis de vector de cambio' },
     summary: {
       en: 'For two live dates, the difference of the index vector (NDVI, MNDWI, BSI, the hydroxyl ratio): its magnitude flags change above an Otsu threshold and its direction separates vegetation to bare (a new pit or dump), bare to water (a new pond) and water to salt (a pond drying).',
-      es: 'Para dos fechas en vivo, la diferencia del vector de indices (NDVI, MNDWI, BSI, la razon de hidroxilo): su magnitud marca cambio sobre un umbral de Otsu y su direccion separa vegetacion a desnudo (un rajo o botadero nuevo), desnudo a agua (una poza nueva) y agua a sal (una poza que se seca).',
+      es: 'Para dos fechas en vivo, la diferencia del vector de índices (NDVI, MNDWI, BSI, la razón de hidroxilo): su magnitud marca cambio sobre un umbral de Otsu y su dirección separa vegetación a desnudo (un rajo o botadero nuevo), desnudo a agua (una poza nueva) y agua a sal (una poza que se seca).',
     },
     equations: [{ tex: '\\Delta\\mathbf{v} = \\mathbf{v}(t_2) - \\mathbf{v}(t_1), \\qquad \\lVert\\Delta\\mathbf{v}\\rVert_2, \\qquad \\phi = \\operatorname{atan2}(\\Delta\\mathrm{BSI}, -\\Delta\\mathrm{NDVI})' }],
     sources: [{ text: 'Malila, W. A. (1980), Change vector analysis: an approach for detecting forest changes with Landsat, LARS Symposia, Purdue University' }],
     caveats: {
       en: ['Two dates in different seasons change the illumination and the vegetation before the land does; pick the same season.'],
-      es: ['Dos fechas en estaciones distintas cambian la iluminacion y la vegetacion antes que el suelo; elija la misma estacion.'],
+      es: ['Dos fechas en estaciones distintas cambian la iluminación y la vegetación antes que el suelo; elija la misma estacion.'],
     },
     where: { en: 'Live, between two Sentinel-2 reads of the same window.', es: 'En vivo, entre dos lecturas Sentinel-2 de la misma ventana.' },
   },
@@ -237,7 +237,7 @@ export const METHODS: MethodEntry[] = [
     name: { en: 'CUSUM and PELT change points', es: 'Puntos de cambio CUSUM y PELT' },
     summary: {
       en: 'On the yearly mined-area series of each method inside the site envelope: a one-sided CUSUM on the first differences (target the median difference, k = 0.5 sigma, h = 4 sigma, reset after an alarm) and PELT with the L2 cost of a piecewise-constant mean, minimum segment three years and penalty 3 sigma squared log n, both scaled by a robust noise estimate (1.4826 times the MAD of the differences). The in-house solver agrees with ruptures; the browser reruns it with a penalty slider.',
-      es: 'Sobre la serie anual de area minada de cada metodo dentro de la envolvente del sitio: un CUSUM unilateral sobre las primeras diferencias (objetivo la mediana de la diferencia, k = 0.5 sigma, h = 4 sigma, reinicio tras una alarma) y PELT con el costo L2 de una media constante por tramos, segmento minimo de tres anos y penalizacion 3 sigma al cuadrado log n, ambos escalados por una estimacion robusta del ruido (1.4826 veces la MAD de las diferencias). El solucionador propio coincide con ruptures; el navegador lo reejecuta con un deslizador de penalizacion.',
+      es: 'Sobre la serie anual de área minada de cada método dentro de la envolvente del sitio: un CUSUM unilateral sobre las primeras diferencias (objetivo la mediana de la diferencia, k = 0.5 sigma, h = 4 sigma, reinicio tras una alarma) y PELT con el costo L2 de una media constante por tramos, segmento mínimo de tres años y penalización 3 sigma al cuadrado log n, ambos escalados por una estimación robusta del ruido (1.4826 veces la MAD de las diferencias). El solucionador propio coincide con ruptures; el navegador lo reejecuta con un deslizador de penalización.',
     },
     equations: [
       { tex: 'S_0 = 0,\\qquad S_t = \\max\\bigl(0,\\; S_{t-1} + (\\Delta A_t - \\mu_0 - k)\\bigr),\\qquad \\text{alarm when } S_t > h' },
@@ -250,19 +250,19 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['A year with a cloudy envelope is a null, never an interpolated value.', 'A break that sits on the 2017 sensor boundary is suspect until the frames on both sides are looked at.'],
-      es: ['Un ano con la envolvente nublada es un nulo, nunca un valor interpolado.', 'Un quiebre que cae en el borde de sensor de 2017 es sospechoso hasta mirar los cuadros a ambos lados.'],
+      es: ['Un año con la envolvente nublada es un nulo, nunca un valor interpolado.', 'Un quiebre que cae en el borde de sensor de 2017 es sospechoso hasta mirar los cuadros a ambos lados.'],
     },
-    where: { en: 'Baked in the series stage; rerun live in the series drawer.', es: 'Cocinado en la etapa de series; reejecutado en vivo en el cajon de series.' },
+    where: { en: 'Baked in the series stage; rerun live in the series drawer.', es: 'Cocinado en la etapa de series; reejecutado en vivo en el cajón de series.' },
   },
   {
     id: 'M11',
     question: 'change',
     lane: 'both',
     doc: '05_change-detection.md',
-    name: { en: 'Harmonic regression with breaks', es: 'Regresion armonica con quiebres' },
+    name: { en: 'Harmonic regression with breaks', es: 'Regresión armónica con quiebres' },
     summary: {
       en: 'On the dense Sentinel-2 series of the envelope mean of BSI (every clear date since 2017 at 60 m): a trend plus two harmonics of the annual cycle, fitted piecewise between break dates found by an exhaustive search over one or two breaks with a minimum segment of a year, accepted only when the BIC of the broken model beats the unbroken one. BFAST-style, not the BFAST package.',
-      es: 'Sobre la serie densa Sentinel-2 de la media de BSI en la envolvente (cada fecha despejada desde 2017 a 60 m): una tendencia mas dos armonicos del ciclo anual, ajustados por tramos entre fechas de quiebre halladas por busqueda exhaustiva sobre uno o dos quiebres con un segmento minimo de un ano, aceptadas solo cuando el BIC del modelo con quiebre supera al sin quiebre. Al estilo BFAST, no el paquete BFAST.',
+      es: 'Sobre la serie densa Sentinel-2 de la media de BSI en la envolvente (cada fecha despejada desde 2017 a 60 m): una tendencia más dos armónicos del ciclo anual, ajustados por tramos entre fechas de quiebre halladas por búsqueda exhaustiva sobre uno o dos quiebres con un segmento mínimo de un año, aceptadas solo cuando el BIC del modelo con quiebre supera al sin quiebre. Al estilo BFAST, no el paquete BFAST.',
     },
     equations: [{ tex: 'y_t = \\alpha + \\beta t + \\sum_{k=1}^{2}\\left[\\gamma_k \\cos\\frac{2\\pi k t}{T} + \\delta_k \\sin\\frac{2\\pi k t}{T}\\right] + \\varepsilon_t, \\qquad T = 365.25\\;\\text{d}' }],
     sources: [
@@ -272,19 +272,19 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['The dense series depends on how cloudy the site is; an Andean site keeps a fraction of its dates.'],
-      es: ['La serie densa depende de cuan nublado es el sitio; un sitio andino conserva una fraccion de sus fechas.'],
+      es: ['La serie densa depende de cuan nublado es el sitio; un sitio andino conserva una fracción de sus fechas.'],
     },
-    where: { en: 'Baked in the dense and series stages; charted in the series drawer.', es: 'Cocinado en las etapas dense y series; graficado en el cajon de series.' },
+    where: { en: 'Baked in the dense and series stages; charted in the series drawer.', es: 'Cocinado en las etapas dense y series; graficado en el cajón de series.' },
   },
   {
     id: 'M12',
     question: 'relief',
     lane: 'both',
     doc: '06_relief-and-volumes.md',
-    name: { en: 'DEM differencing, profiles and volumes', es: 'Diferencia de DEM, perfiles y volumenes' },
+    name: { en: 'DEM differencing, profiles and volumes', es: 'Diferencia de DEM, perfiles y volúmenes' },
     summary: {
       en: 'SRTM (February 2000) and the Copernicus DEM (TanDEM-X, 2011 to 2015) warped onto the site grid at 30 m; SRTM moved from EGM96 to EGM2008 with the geoid difference at the site; the median offset over stable ground removed; the noise floor measured there (robust scale of the difference outside the envelope on slopes below 10 degrees); cut and fill summed beyond twice that floor. The Copernicus surface is also baked as terrain tiles, so the map can switch epoch and the profile tool reads both surfaces in the browser.',
-      es: 'SRTM (febrero de 2000) y el DEM Copernicus (TanDEM-X, 2011 a 2015) reproyectados a la grilla del sitio a 30 m; SRTM llevado de EGM96 a EGM2008 con la diferencia de geoide en el sitio; el sesgo mediano sobre terreno estable removido; el piso de ruido medido alli (escala robusta de la diferencia fuera de la envolvente con pendiente bajo 10 grados); corte y relleno sumados mas alla del doble de ese piso. La superficie Copernicus tambien se cocina como teselas de terreno, asi el mapa cambia de epoca y la herramienta de perfil lee ambas superficies en el navegador.',
+      es: 'SRTM (febrero de 2000) y el DEM Copernicus (TanDEM-X, 2011 a 2015) reproyectados a la grilla del sitio a 30 m; SRTM llevado de EGM96 a EGM2008 con la diferencia de geoide en el sitio; el sesgo mediano sobre terreno estable removido; el piso de ruido medido allí (escala robusta de la diferencia fuera de la envolvente con pendiente bajo 10 grados); corte y relleno sumados más allá del doble de ese piso. La superficie Copernicus también se cocina como teselas de terreno, así el mapa cambia de época y la herramienta de perfil lee ambas superficies en el navegador.',
     },
     equations: [
       { tex: '\\Delta h = h_{\\mathrm{COP}} - \\bigl(h_{\\mathrm{SRTM}} + (N_{96} - N_{2008})\\bigr) - b, \\qquad \\tau = 2 \\cdot 1.4826\\,\\mathrm{MAD}(\\Delta h_{\\text{stable}})' },
@@ -297,9 +297,9 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['Both are radar surface models and the interval is a single decade: a pit deepened after 2015 shows nothing here.', 'Water and brine ponds are unreliable in both radars; a change below the threshold is invisible by construction.'],
-      es: ['Ambos son modelos radar de superficie y el intervalo es una sola decada: un rajo profundizado despues de 2015 no muestra nada aqui.', 'Las pozas de agua y salmuera son poco fiables en ambos radares; un cambio bajo el umbral es invisible por construccion.'],
+      es: ['Ambos son modelos radar de superficie y el intervalo es una sola década: un rajo profundizado despues de 2015 no muestra nada aquí.', 'Las pozas de agua y salmuera son poco fiables en ambos radares; un cambio bajo el umbral es invisible por construcción.'],
     },
-    where: { en: 'Baked in the dem stage; the Relief tab drapes the difference, switches the epoch and draws the profile.', es: 'Cocinado en la etapa dem; la pestana Relieve drapea la diferencia, cambia la epoca y dibuja el perfil.' },
+    where: { en: 'Baked in the dem stage; the Relief tab drapes the difference, switches the epoch and draws the profile.', es: 'Cocinado en la etapa dem; la pestaña Relieve drapea la diferencia, cambia la época y dibuja el perfil.' },
   },
 ];
 

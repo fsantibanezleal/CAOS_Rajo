@@ -176,6 +176,16 @@ export function SeriesPanel({ manifest, series }: { manifest: SiteManifest; seri
     };
     const plot = new uPlot(opts, data, host);
     plotRef.current = plot;
+    // uPlot draws the legend as a sibling of the canvas, so a canvas sized to the whole host
+    // pushes the legend out of the box and over the caption below it. Give the legend its room.
+    const fitToHost = (p: uPlot) => {
+      const legend = host.querySelector<HTMLElement>('.u-legend');
+      const legendH = legend ? Math.ceil(legend.getBoundingClientRect().height) : 0;
+      const w = Math.max(320, host.clientWidth);
+      const h = Math.max(90, host.clientHeight - legendH);
+      if (w > 0 && h > 0) p.setSize({ width: w, height: h });
+    };
+    fitToHost(plot);
     const onClick = () => {
       const i = plot.cursor.idx;
       if (i === null || i === undefined || xIsDate) return;
@@ -185,7 +195,7 @@ export function SeriesPanel({ manifest, series }: { manifest: SiteManifest; seri
     };
     host.addEventListener('click', onClick);
     const ro = new ResizeObserver(() => {
-      if (host.clientWidth > 0 && host.clientHeight > 0) plot.setSize({ width: host.clientWidth, height: host.clientHeight });
+      if (host.clientWidth > 0 && host.clientHeight > 0) fitToHost(plot);
     });
     ro.observe(host);
     return () => {

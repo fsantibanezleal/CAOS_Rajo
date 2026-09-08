@@ -20,6 +20,10 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 - A gate keeps it that way: `frontend/src/locales/spanish.test.ts` fails the build on any word from a
   list of unaccented forms, on the phrases that were wrong in context, and on a question written
   without its opening mark, over all three Spanish surfaces.
+- The series drawer sized its uPlot canvas to the whole host, so the legend, drawn as a sibling below
+  the canvas, spilled out of the plot box and printed on top of the caption stating the harmonic
+  breaks and the BIC. The plot now sizes to the host minus the measured legend height, and the series
+  gate asserts the legend ends inside the plot box and above the caption.
 
 ## [0.02.003] - 2026-09-04
 

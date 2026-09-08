@@ -59,7 +59,7 @@
     "polygons": "Polígonos de referencia",
     "source": "fuente",
     "polygonsCredit": "Huellas de referencia: Maus et al. 2022, polígonos mineros globales v2 (CC BY-SA 4.0); incluyen rajos, botaderos, relaves, pozas y plantas.",
-    "frames": "Cuadros"
+    "frames": "Frames"
   },
   "atlas": {
     "title": "Atlas",
@@ -69,11 +69,11 @@
       "country": "País",
       "categories": "Categorías",
       "seed": "Semilla (lon, lat)",
-      "frames": "Cuadros"
+      "frames": "Frames"
     },
     "production": {
       "title": "Producción de cobre de mina por país",
-      "lede": "Dónde se ubican los sitios de cobre en el cuadro mundial: producción de mina en miles de toneladas métricas de cobre contenido, 2025 estimado por el USGS, junto a la cifra que la oficina de estadísticas de Chile reportó para el mismo año.",
+      "lede": "Dónde se ubican los sitios de cobre en el panorama mundial: producción de mina en miles de toneladas métricas de cobre contenido, 2025 estimado por el USGS, junto a la cifra que la oficina de estadísticas de Chile reportó para el mismo año.",
       "columns": {
         "country": "País",
         "sites": "Sitios de cobre aquí",
@@ -157,19 +157,19 @@
       "s2": "La reflectancia de superficie Sentinel-2 L2A es (DN + BOA_ADD_OFFSET) / 10000 con BOA_ADD_OFFSET = -1000 desde la línea base 04.00; los ítems de Earth Search traen escala 0,0001 y desplazamiento -0,1 en los activos de reflectancia; DN 0 es sin dato. Clasificación de escena: 0 sin dato, 1 saturado o defectuoso, 3 sombra de nube, 8 y 9 nube, 10 cirro fino son inválidos; 11 es nieve o hielo.",
       "landsat": "La reflectancia de superficie Landsat Collection 2 es DN x 0,0000275 - 0,2; bits de QA_PIXEL 0 relleno, 1 nube dilatada, 2 cirro, 3 nube, 4 sombra de nube, 5 nieve. Landsat 5 hasta 2011, Landsat 7 como puente de 2012 (vacíos de línea compuestos desde las siguientes fechas de la temporada), Landsat 8 y 9 desde 2013.",
       "terrarium": "Decodificación terrarium: elevación en metros = R x 256 + G + B / 256 - 32768. Las teselas Copernicus por sitio usan la misma codificación en zooms 10 a 13.",
-      "qa": "Las máscaras de calidad marcan la propia mina: en una escena Landsat 5 que el archivo califica 0,0% nublada, la máscara QA igual marcó 10,7% de una ventana de 24 km y 69% de esos píxeles caían dentro de los polígonos mineros (bancos claros leídos como nube, fondos de rajo como sombra). Los cuadros se renderizan con cada píxel con dato; el veredicto QA se guarda por píxel para los carriles de análisis; una escena se acepta cuando su cobertura de nubes a nivel de escena es a lo sumo 2% y 85% de la ventana está limpia por QA, marcada qa_flagged."
+      "qa": "Las máscaras de calidad marcan la propia mina: en una escena Landsat 5 que el archivo califica 0,0% nublada, la máscara QA igual marcó 10,7% de una ventana de 24 km y 69% de esos píxeles caían dentro de los polígonos mineros (bancos claros leídos como nube, fondos de rajo como sombra). Los frames se renderizan con cada píxel con dato; el veredicto QA se guarda por píxel para los carriles de análisis; una escena se acepta cuando su cobertura de nubes a nivel de escena es a lo sumo 2% y 85% de la ventana está limpia por QA, marcada qa_flagged."
     },
     "contracts": {
       "title": "Los dos contratos de datos",
       "ingestion": "Contrato 1, ingesta: data/examples/sites.json declara cada sitio (id, nombres, país ISO3, categorías, semilla, ventana en km, primer año, meses de temporada, hechos con URL de fuente). La etapa catalog rechaza una semilla a más de 3 km de un polígono de referencia, una ventana fuera de 4 a 40 km, un hecho sin fuente o una categoría fuera del vocabulario, y escribe la grilla del sitio (una ventana UTM cuyo ancho es múltiplo de tres, para que la grilla Landsat de 30 m anide en la de 10 m) y los polígonos de referencia.",
-      "artifact": "Contrato 2, artefacto: cada etapa escribe un JSON lateral y la etapa export arma un manifiesto por sitio con los bytes y sha256 de cada archivo más el índice del catálogo. La etapa validate relee todo y rechaza un archivo faltante, un hash desviado, un año sin cuadro ni razón registrada, una serie que nombra un año sin cuadro, o dos versiones del motor en un árbol. Los artefactos de texto son LF en toda plataforma y se hashean tal como se guardan.",
+      "artifact": "Contrato 2, artefacto: cada etapa escribe un JSON lateral y la etapa export arma un manifiesto por sitio con los bytes y sha256 de cada archivo más el índice del catálogo. La etapa validate relee todo y rechaza un archivo faltante, un hash desviado, un año sin frame ni razón registrada, una serie que nombra un año sin frame, o dos versiones del motor en un árbol. Los artefactos de texto son LF en toda plataforma y se hashean tal como se guardan.",
       "guards": "El mismo contrato se refleja en la app (contract.ts), así la web lee solo lo que un manifiesto declara; la guarda de artefactos corre en CI y antes de cada despliegue, que luego verifica el título en vivo, el catálogo y un enlace profundo."
     },
     "catalog": {
       "title": "El catálogo tal como está cocinado",
-      "text": "{{sites}} sitios en el catálogo, {{frames}} cuadros anuales en disco. Un sitio sin cuadros es uno cuya cocina aún no ha llegado; un hueco es un año con razón registrada (ninguna escena bajo 60% de nubes dentro de la ventana de temporada en ningún archivo, o todos los candidatos fallaron al leer).",
+      "text": "{{sites}} sitios en el catálogo, {{frames}} frames anuales en disco. Un sitio sin frames es uno cuya cocina aún no ha llegado; un hueco es un año con razón registrada (ninguna escena bajo 60% de nubes dentro de la ventana de temporada en ningún archivo, o todos los candidatos fallaron al leer).",
       "columns": {
-        "frames": "Cuadros",
+        "frames": "Frames",
         "span": "Años",
         "gaps": "Huecos",
         "masks": "Métodos de máscara",
@@ -205,7 +205,7 @@
     "rulesTitle": "Reglas que obedece cada número",
     "rules": [
       "Un estiramiento, un umbral, una penalización o un ángulo se imprime junto a la imagen que produjo; nada se esconde tras un valor por defecto.",
-      "Un año sin cuadro lleva su razón; una envolvente nublada es un nulo en cada serie, nunca un valor interpolado.",
+      "Un año sin frame lleva su razón; una envolvente nublada es un nulo en cada serie, nunca un valor interpolado.",
       "Las áreas y volúmenes se miden dentro de la envolvente de referencia (los polígonos mineros dilatados un kilómetro); una máscara sobre toda la ventana mediría el desierto.",
       "Los modelos aprendidos reportan puntajes retenidos sobre teselas que nunca tocaron un sitio del catálogo; la documentación cita el peor brazo.",
       "Cada método nombra su carril: en vivo en el navegador, cocinado offline, o ambos; la app nunca etiqueta mal lo que hace.",
@@ -238,14 +238,14 @@
     "closure": "Cerrada o detenida"
   },
   "timeline": {
-    "noFrames": "Aún no hay cuadros de time-lapse para este sitio.",
+    "noFrames": "Aún no hay frames de time-lapse para este sitio.",
     "prev": "Año anterior",
     "next": "Año siguiente",
     "play": "Reproducir el time-lapse",
     "pause": "Pausa",
     "scrub": "Año",
     "valid": "sin nubes",
-    "validHelp": "Fracción de la ventana libre de nubes, sombras y sin datos en este cuadro, medida desde la clasificación de escena",
+    "validHelp": "Fracción de la ventana libre de nubes, sombras y sin datos en este frame, medida desde la clasificación de escena",
     "mode": "Compuesto",
     "trueColour": "Color real",
     "swir": "SWIR",
@@ -258,7 +258,7 @@
     },
     "series": "Series",
     "seriesTitle": "La serie de área minada, sus puntos de cambio y las máscaras anuales",
-    "framesWord": "cuadros"
+    "framesWord": "frames"
   },
   "instrument": {
     "title": "Instrumento",
@@ -402,7 +402,7 @@
     "noBreak": "sin quiebre",
     "noAlarm": "sin alarma",
     "harmonic": "Quiebres armónicos",
-    "indexNote": "Medias anuales de NDVI, MNDWI y BSI en la envolvente, de los mismos cuadros; años Landsat sombreados.",
+    "indexNote": "Medias anuales de NDVI, MNDWI y BSI en la envolvente, de los mismos frames; años Landsat sombreados.",
     "flags": {
       "cross_sensor": "Los años Landsat están fuera del dominio de entrenamiento del bosque (otro sensor)"
     },

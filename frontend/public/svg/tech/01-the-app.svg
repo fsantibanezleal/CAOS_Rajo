@@ -46,7 +46,7 @@
   <text x="150" y="126" class="l-en">one window of 12 to 40 km per site, own UTM grid</text>
   <text x="150" y="126" class="l-es">una ventana de 12 a 40 km por sitio, grilla UTM propia</text>
   <text x="150" y="145" class="l-en">one frame per year, 1985 to today:</text>
-  <text x="150" y="145" class="l-es">un cuadro por año, de 1985 a hoy:</text>
+  <text x="150" y="145" class="l-es">un frame por año, de 1985 a hoy:</text>
   <text x="150" y="160" class="mono l-neutral">Landsat 5/7/8/9 (30 m) to 2016</text>
   <text x="150" y="174" class="mono l-neutral">Sentinel-2 (10 m) from 2017</text>
   <text x="150" y="193" class="l-en">live reads of the archive, three analysis lanes,</text>
@@ -167,9 +167,9 @@
   <text x="34" y="412" class="h l-en">What proves it is real, not a demo</text>
   <text x="34" y="412" class="h l-es">Lo que prueba que es real, no una demo</text>
   <text x="34" y="432" class="l-en">The committed artifacts (frames, masks, series, DEM deltas, terrain tiles) and the ONNX models are the product; every file is named in a manifest with its bytes and sha256.</text>
-  <text x="34" y="432" class="l-es">Los artefactos versionados (cuadros, máscaras, series, deltas de DEM, teselas) y los modelos ONNX son el producto; cada archivo tiene bytes y sha256 en un manifiesto.</text>
+  <text x="34" y="432" class="l-es">Los artefactos versionados (frames, máscaras, series, deltas de DEM, teselas) y los modelos ONNX son el producto; cada archivo tiene bytes y sha256 en un manifiesto.</text>
   <text x="34" y="450" class="l-en">Every number on screen is computed in the browser from open data or read from a baked, checksummed artifact; a year without a frame carries its reason, never a silent hole.</text>
-  <text x="34" y="450" class="l-es">Cada número en pantalla se calcula en el navegador desde datos abiertos o se lee de un artefacto cocinado y verificado; un año sin cuadro lleva su razón, nunca un hueco.</text>
+  <text x="34" y="450" class="l-es">Cada número en pantalla se calcula en el navegador desde datos abiertos o se lee de un artefacto cocinado y verificado; un año sin frame lleva su razón, nunca un hueco.</text>
   <text x="34" y="468" class="l-en">Learned models report held-out scores on tiles that never touched a catalog site; the worse arm is what the documentation quotes.</text>
   <text x="34" y="468" class="l-es">Los modelos aprendidos reportan puntajes retenidos sobre teselas que nunca tocaron un sitio del catálogo; la documentación cita el peor brazo.</text>
   <text x="34" y="486" class="mono l-neutral">VERSION, CHANGELOG, git tag; MIT code; data under their own licences (CC BY-SA 4.0 polygons, Copernicus, USGS, EOX)</text>

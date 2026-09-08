@@ -42,7 +42,7 @@ export const METHODS: MethodEntry[] = [
     name: { en: 'Colour composites', es: 'Compuestos de color' },
     summary: {
       en: 'True colour (B4, B3, B2), false colour with the near infrared (B8, B4, B3) and the SWIR geology combination (B12, B8, B4). Each channel is clipped to its 2nd and 98th percentile over valid pixels and raised to a gamma of 1/1.35; the clip values are printed next to the composite and stored per frame, so a stretch is never hidden.',
-      es: 'Color verdadero (B4, B3, B2), falso color con el infrarrojo cercano (B8, B4, B3) y la combinación geológica SWIR (B12, B8, B4). Cada canal se recorta a sus percentiles 2 y 98 sobre los píxeles válidos y se eleva a un gamma de 1/1.35; los valores de recorte se imprimen junto al compuesto y se guardan por cuadro, así un estiramiento nunca se oculta.',
+      es: 'Color verdadero (B4, B3, B2), falso color con el infrarrojo cercano (B8, B4, B3) y la combinación geológica SWIR (B12, B8, B4). Cada canal se recorta a sus percentiles 2 y 98 sobre los píxeles válidos y se eleva a un gamma de 1/1.35; los valores de recorte se imprimen junto al compuesto y se guardan por frame, así un estiramiento nunca se oculta.',
     },
     equations: [{ tex: '\\rho_b = \\frac{\\mathrm{DN} - 1000}{10000} \\;\\text{(Sentinel-2, baseline 04.00+)},\\qquad \\rho_b = 0.0000275\\,\\mathrm{DN} - 0.2 \\;\\text{(Landsat C2 L2)}', label: { en: 'Surface reflectance from the archived digital numbers', es: 'Reflectancia de superficie desde los números digitales archivados' } }],
     sources: [
@@ -51,9 +51,9 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['The stretch is per scene: absolute brightness is not comparable across frames; the indices are.', 'Landsat frames before 2017 map their bands to the Sentinel-2 names; cross-sensor consistency is a known limitation.'],
-      es: ['El estiramiento es por escena: el brillo absoluto no es comparable entre cuadros; los índices si.', 'Los cuadros Landsat anteriores a 2017 mapean sus bandas a los nombres Sentinel-2; la consistencia entre sensores es una limitacion conocida.'],
+      es: ['El estiramiento es por escena: el brillo absoluto no es comparable entre frames; los índices si.', 'Los frames Landsat anteriores a 2017 mapean sus bandas a los nombres Sentinel-2; la consistencia entre sensores es una limitacion conocida.'],
     },
-    where: { en: 'Live in the Look view on the latest clear Sentinel-2 scene; baked as the yearly frames.', es: 'En vivo en la vista Mirar sobre la escena Sentinel-2 más reciente; cocinado como los cuadros anuales.' },
+    where: { en: 'Live in the Look view on the latest clear Sentinel-2 scene; baked as the yearly frames.', es: 'En vivo en la vista Mirar sobre la escena Sentinel-2 más reciente; cocinado como los frames anuales.' },
   },
   {
     id: 'M2',
@@ -126,7 +126,7 @@ export const METHODS: MethodEntry[] = [
       en: ['In a desert the whole scene is bare, so the bimodality Otsu needs is between darker rock and brighter mined ground, and the threshold drifts with the season.', 'Works best over vegetated sites (Carajas, Hambach, Athabasca).'],
       es: ['En un desierto toda la escena es desnuda, así que la bimodalidad que Otsu necesita esta entre roca más oscura y suelo minado más claro, y el umbral deriva con la estacion.', 'Funciona mejor en sitios con vegetación (Carajas, Hambach, Athabasca).'],
     },
-    where: { en: 'Live in the Find view; baked on every frame as the otsu series.', es: 'En vivo en la vista Encontrar; cocinado sobre cada cuadro como la serie otsu.' },
+    where: { en: 'Live in the Find view; baked on every frame as the otsu series.', es: 'En vivo en la vista Encontrar; cocinado sobre cada frame como la serie otsu.' },
   },
   {
     id: 'M5',
@@ -186,7 +186,7 @@ export const METHODS: MethodEntry[] = [
       en: ['Trained on Sentinel-2 at 10 m: the Landsat years of the baked series are a domain shift and carry the flag cross_sensor.', 'The forest sees 3 x 3 neighbourhoods and nothing larger.'],
       es: ['Entrenado con Sentinel-2 a 10 m: los años Landsat de la serie cocinada son un cambio de dominio y llevan la bandera cross_sensor.', 'El bosque ve vecindarios 3 x 3 y nada mayor.'],
     },
-    where: { en: 'Live in the Find view (the forest traversed in the worker from flat node arrays); baked on every frame as the rf series.', es: 'En vivo en la vista Encontrar (el bosque recorrido en el worker desde arreglos planos de nodos); cocinado sobre cada cuadro como la serie rf.' },
+    where: { en: 'Live in the Find view (the forest traversed in the worker from flat node arrays); baked on every frame as the rf series.', es: 'En vivo en la vista Encontrar (el bosque recorrido en el worker desde arreglos planos de nodos); cocinado sobre cada frame como la serie rf.' },
   },
   {
     id: 'M8',
@@ -207,9 +207,9 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['The labels are polygons of mining land use, not ore and not disturbance of a given year: a rehabilitated dump stays inside the polygon.', 'Evaluated on Sentinel-2 only; the Landsat frames are not its domain, so the baked unet series starts in 2017.'],
-      es: ['Las etiquetas son polígonos de uso minero del suelo, no mineral ni perturbacion de un año dado: un botadero rehabilitado sigue dentro del polígono.', 'Evaluado solo con Sentinel-2; los cuadros Landsat no son su dominio, así que la serie unet cocinada empieza en 2017.'],
+      es: ['Las etiquetas son polígonos de uso minero del suelo, no mineral ni perturbacion de un año dado: un botadero rehabilitado sigue dentro del polígono.', 'Evaluado solo con Sentinel-2; los frames Landsat no son su dominio, así que la serie unet cocinada empieza en 2017.'],
     },
-    where: { en: 'Live in the Find view (coarse or full grid); baked on the Sentinel-2 frames as the unet series.', es: 'En vivo en la vista Encontrar (grilla gruesa o completa); cocinado sobre los cuadros Sentinel-2 como la serie unet.' },
+    where: { en: 'Live in the Find view (coarse or full grid); baked on the Sentinel-2 frames as the unet series.', es: 'En vivo en la vista Encontrar (grilla gruesa o completa); cocinado sobre los frames Sentinel-2 como la serie unet.' },
   },
   {
     id: 'M9',
@@ -250,7 +250,7 @@ export const METHODS: MethodEntry[] = [
     ],
     caveats: {
       en: ['A year with a cloudy envelope is a null, never an interpolated value.', 'A break that sits on the 2017 sensor boundary is suspect until the frames on both sides are looked at.'],
-      es: ['Un año con la envolvente nublada es un nulo, nunca un valor interpolado.', 'Un quiebre que cae en el borde de sensor de 2017 es sospechoso hasta mirar los cuadros a ambos lados.'],
+      es: ['Un año con la envolvente nublada es un nulo, nunca un valor interpolado.', 'Un quiebre que cae en el borde de sensor de 2017 es sospechoso hasta mirar los frames a ambos lados.'],
     },
     where: { en: 'Baked in the series stage; rerun live in the series drawer.', es: 'Cocinado en la etapa de series; reejecutado en vivo en el cajón de series.' },
   },

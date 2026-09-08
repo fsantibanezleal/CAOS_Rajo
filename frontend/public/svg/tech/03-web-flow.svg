@@ -94,7 +94,7 @@
   <rect x="608" y="74" width="260" height="46" rx="6" class="bx" />
   <text x="618" y="91" class="mono l-neutral">/atlas  pages/AtlasPage.tsx</text>
   <text x="618" y="107" class="sub l-en">the catalog table: site, country, categories, seed, frames</text>
-  <text x="618" y="107" class="sub l-es">la tabla del catálogo: sitio, país, categorías, cuadros</text>
+  <text x="618" y="107" class="sub l-es">la tabla del catálogo: sitio, país, categorías, frames</text>
   <rect x="608" y="128" width="260" height="58" rx="6" class="bx" />
   <text x="618" y="145" class="mono l-neutral">/methods  pages/MethodsPage.tsx</text>
   <text x="618" y="161" class="sub l-en">twelve methods with KaTeX equations, DOIs,</text>

@@ -25,6 +25,7 @@ import { readSiteParam, useManifest, writeSiteParam } from '../state/site';
 import { useTimeline } from '../state/timeline';
 import { useUI } from '../state/ui';
 import { lonLatToUtm } from '../lib/utm';
+import { num } from '../lib/format';
 
 const CATEGORY_ORDER: Category[] = [
   'copper-chile',
@@ -292,12 +293,12 @@ export function Observatory() {
     const i = row * liveGrid.width + col;
     if (liveLayer.kind === 'index') {
       const v = liveLayer.result.values[i];
-      return v === undefined || !Number.isFinite(v) ? null : `${t(`indices.${liveLayer.result.name}.name`).split(',')[0]} ${v.toFixed(3)}`;
+      return v === undefined || !Number.isFinite(v) ? null : `${t(`indices.${liveLayer.result.name}.name`).split(',')[0]} ${num(v, 3)}`;
     }
     if (liveLayer.kind === 'otsu' || liveLayer.kind === 'sam') {
       const v = liveLayer.result.values?.[i];
       const inMask = liveLayer.result.mask[i] === 1;
-      return `${liveLayer.kind === 'otsu' ? 'BSI' : 'angle'} ${v !== undefined && Number.isFinite(v) ? v.toFixed(3) : '-'} ${inMask ? '(in mask)' : ''}`;
+      return `${liveLayer.kind === 'otsu' ? 'BSI' : t('instrument.angleWord')} ${v !== undefined && Number.isFinite(v) ? num(v, 3) : '-'} ${inMask ? `(${t('common.inMask')})` : ''}`;
     }
     if (liveLayer.kind === 'kmeans') {
       const lab = liveLayer.result.labels[i];
@@ -306,7 +307,7 @@ export function Observatory() {
     if (liveLayer.kind === 'rf' || liveLayer.kind === 'unet') {
       const p = liveLayer.result.values[i];
       const inMask = liveLayer.result.mask[i] === 1;
-      return `p(mine) ${p !== undefined && Number.isFinite(p) ? p.toFixed(3) : '-'} ${inMask ? '(in mask)' : ''}`;
+      return `${t('instrument.pMine')} ${p !== undefined && Number.isFinite(p) ? num(p, 3) : '-'} ${inMask ? `(${t('common.inMask')})` : ''}`;
     }
     return null;
   }, [cursor, liveLayer, liveGrid, t]);
@@ -349,7 +350,7 @@ export function Observatory() {
                 </dd>
                 <dt>{t('observatory.polygons')}</dt>
                 <dd className="mono">
-                  {manifest.polygons.n_features} / {manifest.polygons.area_km2.toFixed(1)} km2
+                  {manifest.polygons.n_features} / {num(manifest.polygons.area_km2, 1)} km2
                 </dd>
                 {hasFrames && (
                   <>
@@ -432,7 +433,7 @@ export function Observatory() {
           {cursor && (
             <>
               <span className="dot"> &middot; </span>
-              {cursor.lat.toFixed(4)}, {cursor.lon.toFixed(4)}
+              {num(cursor.lat, 4)}, {num(cursor.lon, 4)}
               {cursor.elev !== null && (
                 <>
                   <span className="dot"> &middot; </span>

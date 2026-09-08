@@ -326,7 +326,9 @@
       "heldOut": "Teselas de prueba no vistas",
       "neverSeen": "Todos los sitios del catálogo quedaron fuera del entrenamiento y la validación, así que este número no es dentro de muestra.",
       "missing": "Esta compilación no incluye archivos de modelos."
-    }
+    },
+    "pMine": "p(mina)",
+    "angleWord": "ángulo"
   },
   "indices": {
     "groups": {
@@ -403,7 +405,9 @@
     "indexNote": "Medias anuales de NDVI, MNDWI y BSI en la envolvente, de los mismos cuadros; años Landsat sombreados.",
     "flags": {
       "cross_sensor": "Los años Landsat están fuera del dominio de entrenamiento del bosque (otro sensor)"
-    }
+    },
+    "envelopeDesc": "polígonos de referencia dilatados {{m}} m sobre la grilla de {{grid}} m",
+    "envelopeDescNoGrid": "polígonos de referencia dilatados {{m}} m"
   },
   "relief": {
     "none": "Este sitio aún no tiene una diferencia de elevación cocinada.",
@@ -450,7 +454,9 @@
   "common": {
     "loading": "Cargando",
     "yes": "sí",
-    "rangeTo": "a"
+    "rangeTo": "a",
+    "px": "px",
+    "inMask": "en la máscara"
   },
   "arch": {
     "title": "Cómo funciona Rajo",

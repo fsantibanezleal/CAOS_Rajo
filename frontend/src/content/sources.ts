@@ -34,9 +34,9 @@ export const SOURCES: SourceRow[] = [
     name: 'Landsat Collection 2 Level-2, 1982 to today, 30 m',
     url: 'https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2',
     role: { en: 'The yearly frames 1985 to 2016 (Landsat 5, 7, 8 and 9)', es: 'Los cuadros anuales de 1985 a 2016 (Landsat 5, 7, 8 y 9)' },
-    access: { en: 'Microsoft Planetary Computer STAC (collection landsat-c2-l2), assets on Azure blob with an anonymous SAS token of about 24 h', es: 'STAC del Planetary Computer de Microsoft (colección landsat-c2-l2), activos en Azure blob con un token SAS anonimo de unas 24 h' },
+    access: { en: 'Microsoft Planetary Computer STAC (collection landsat-c2-l2), assets on Azure blob with an anonymous SAS token of about 24 h', es: 'STAC del Planetary Computer de Microsoft (colección landsat-c2-l2), activos en Azure blob con un token SAS anónimo de unas 24 h' },
     browser: 'no',
-    licence: { en: 'USGS Landsat data are public domain; attribution to the U.S. Geological Survey', es: 'Los datos Landsat del USGS son de dominio publico; atribución al U.S. Geological Survey' },
+    licence: { en: 'USGS Landsat data are public domain; attribution to the U.S. Geological Survey', es: 'Los datos Landsat del USGS son de dominio público; atribución al U.S. Geological Survey' },
   },
   {
     id: 'terrain',
@@ -128,7 +128,7 @@ export const SOURCES: SourceRow[] = [
     role: { en: 'World mine production 2024 and 2025 (estimated) and reserves by country, thousand metric tons of copper content; the country context on the Atlas', es: 'Producción mundial de mina 2024 y 2025 (estimada) y reservas por país, miles de toneladas métricas de cobre contenido; el contexto por país en el Atlas' },
     access: { en: 'PDF; the server refuses non-browser clients', es: 'PDF; el servidor rechaza clientes que no son navegadores' },
     browser: 'no',
-    licence: { en: 'Public domain, cite USGS', es: 'Dominio publico, citar USGS' },
+    licence: { en: 'Public domain, cite USGS', es: 'Dominio público, citar USGS' },
   },
   {
     id: 'cochilco-by-company',
@@ -148,7 +148,7 @@ export const SOURCES: SourceRow[] = [
     role: { en: 'Per-mine facts outside Chile: ownership, mining method, expansions, 2025 production (Las Bambas, Oyu Tolgoi, Kamoa-Kakula), the end of open-pit mining at Grasberg, the Belchatow fields', es: 'Hechos por mina fuera de Chile: propiedad, método de explotación, expansiones, producción 2025 (Las Bambas, Oyu Tolgoi, Kamoa-Kakula), el fin del rajo en Grasberg, los campos de Belchatow' },
     access: { en: 'Company pages, listing announcements and SEC filings; each card links the exact page', es: 'Páginas corporativas, anuncios a la bolsa y presentaciones a la SEC; cada ficha enlaza la página exacta' },
     browser: 'no',
-    licence: { en: 'Public disclosures, quoted with attribution', es: 'Divulgaciones publicas, citadas con atribución' },
+    licence: { en: 'Public disclosures, quoted with attribution', es: 'Divulgaciones públicas, citadas con atribución' },
   },
   {
     id: 'attributed-press',
@@ -156,7 +156,7 @@ export const SOURCES: SourceRow[] = [
     name: 'Attributed pages where the operator is unreachable: Tourism Western Australia (Mt Whaleback), IDEX Online (Udachnaya)',
     url: 'https://www.idexonline.com/FullArticle?Id=40952',
     role: { en: 'Two facts whose operator pages sit behind a bot wall (bhp.com) or no longer resolve (eng.alrosa.ru); the card names the outlet in the text', es: 'Dos hechos cuyas páginas del operador están tras un muro anti-bots (bhp.com) o ya no resuelven (eng.alrosa.ru); la ficha nombra el medio en el texto' },
-    access: { en: 'Public web pages', es: 'Páginas web publicas' },
+    access: { en: 'Public web pages', es: 'Páginas web públicas' },
     browser: 'no',
     licence: { en: 'Quoted with attribution; to be replaced by the operator page when reachable', es: 'Citadas con atribución; a reemplazar por la página del operador cuando sea alcanzable' },
   },

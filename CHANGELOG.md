@@ -6,6 +6,21 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.004] - 2026-09-07
+
+### Fixed
+
+- The Spanish surface is written in Spanish. The whole `es` locale, the bilingual content modules and
+  the `l-es` text nodes of the five architecture diagrams shipped in ASCII: no written accents, no
+  eñe, no opening question mark. "Ano" stood where "año" was meant, on the timeline readout and in
+  the series drawer, and the four question tabs read "Que estoy mirando?" instead of "¿Qué estoy
+  mirando?". Accents restored across 254 strings and 88 diagram nodes, with the context-dependent
+  pairs (esta/está, aun/aún, publica/pública, como/cómo, donde/dónde, marco/marcó, bajo/bajó,
+  si/sí, termino/término) read sentence by sentence rather than substituted.
+- A gate keeps it that way: `frontend/src/locales/spanish.test.ts` fails the build on any word from a
+  list of unaccented forms, on the phrases that were wrong in context, and on a question written
+  without its opening mark, over all three Spanish surfaces.
+
 ## [0.02.003] - 2026-09-04
 
 ### Fixed

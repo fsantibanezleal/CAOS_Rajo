@@ -20,12 +20,12 @@
   </defs>
 
   <text x="20" y="26" class="ttl l-en">The web app: one instrument page, four documentation pages, a static build with a gate at every step</text>
-  <text x="20" y="26" class="ttl l-es">La app web: una pagina instrumento, cuatro paginas de documentacion, una construccion estatica con compuerta en cada paso</text>
+  <text x="20" y="26" class="ttl l-es">La app web: una página instrumento, cuatro páginas de documentación, una construcción estática con compuerta en cada paso</text>
 
   <!-- the observatory stage -->
   <rect x="20" y="44" width="560" height="290" rx="8" class="stage" />
   <text x="32" y="63" class="h l-en">Observatory (the page is the viewport; the map is the instrument)</text>
-  <text x="32" y="63" class="h l-es">Observatorio (la pagina es la ventana; el mapa es el instrumento)</text>
+  <text x="32" y="63" class="h l-es">Observatorio (la página es la ventana; el mapa es el instrumento)</text>
   <text x="32" y="78" class="mono l-neutral">pages/Observatory.tsx  map/MapView.tsx (MapLibre GL, globe, raster-dem, hillshade)</text>
 
   <!-- rail -->
@@ -35,9 +35,9 @@
   <text x="42" y="122" class="sub l-en">site selector by</text>
   <text x="42" y="122" class="sub l-es">selector de sitio por</text>
   <text x="42" y="135" class="sub l-en">category; the card:</text>
-  <text x="42" y="135" class="sub l-es">categoria; la ficha:</text>
+  <text x="42" y="135" class="sub l-es">categoría; la ficha:</text>
   <text x="42" y="148" class="sub l-en">window, polygons,</text>
-  <text x="42" y="148" class="sub l-es">ventana, poligonos,</text>
+  <text x="42" y="148" class="sub l-es">ventana, polígonos,</text>
   <text x="42" y="161" class="sub l-en">sourced facts</text>
   <text x="42" y="161" class="sub l-es">hechos con fuente</text>
   <text x="42" y="180" class="mono l-neutral">state/site.ts</text>
@@ -66,11 +66,11 @@
   <text x="444" y="140" class="sub l-en">live scene loader,</text>
   <text x="444" y="140" class="sub l-es">carga de escena,</text>
   <text x="444" y="153" class="sub l-en">composites, indices,</text>
-  <text x="444" y="153" class="sub l-es">compuestos, indices,</text>
+  <text x="444" y="153" class="sub l-es">compuestos, índices,</text>
   <text x="444" y="166" class="sub l-en">masks, learned models,</text>
-  <text x="444" y="166" class="sub l-es">mascaras, modelos,</text>
+  <text x="444" y="166" class="sub l-es">máscaras, modelos,</text>
   <text x="444" y="179" class="sub l-en">epoch, delta, profile</text>
-  <text x="444" y="179" class="sub l-es">epoca, delta, perfil</text>
+  <text x="444" y="179" class="sub l-es">época, delta, perfil</text>
   <text x="444" y="198" class="mono l-neutral">Instrument.tsx</text>
   <text x="444" y="212" class="mono l-neutral">ReliefPanel.tsx</text>
   <text x="444" y="226" class="mono l-neutral">live.ts relief.ts</text>
@@ -78,39 +78,39 @@
   <!-- series drawer + timeline -->
   <rect x="32" y="250" width="536" height="34" rx="6" class="ov" />
   <text x="42" y="271" class="h l-en">Series drawer</text>
-  <text x="42" y="271" class="h l-es">Cajon de series</text>
+  <text x="42" y="271" class="h l-es">Cajón de series</text>
   <text x="140" y="271" class="sub l-en">uPlot: area per method, Landsat shaded, PELT breaks, CUSUM alarms, dense series, live penalty</text>
-  <text x="140" y="271" class="sub l-es">uPlot: area por metodo, Landsat sombreado, quiebres PELT, alarmas CUSUM, serie densa</text>
+  <text x="140" y="271" class="sub l-es">uPlot: área por método, Landsat sombreado, quiebres PELT, alarmas CUSUM, serie densa</text>
   <rect x="32" y="292" width="536" height="32" rx="6" class="ov" />
   <text x="42" y="312" class="h l-en">Timeline</text>
-  <text x="42" y="312" class="h l-es">Linea de tiempo</text>
+  <text x="42" y="312" class="h l-es">Línea de tiempo</text>
   <text x="140" y="312" class="sub l-en">paused by default, keyboard, ticks, sensor, date, flags, true colour / SWIR, opacity</text>
   <text x="140" y="312" class="sub l-es">en pausa por defecto, teclado, marcas, sensor, fecha, banderas, color / SWIR, opacidad</text>
 
   <!-- documentation pages -->
   <rect x="596" y="44" width="284" height="290" rx="8" class="bx" />
   <text x="608" y="63" class="h l-en">Documentation pages (read the same artifacts)</text>
-  <text x="608" y="63" class="h l-es">Paginas de documentacion (mismos artefactos)</text>
+  <text x="608" y="63" class="h l-es">Páginas de documentación (mismos artefactos)</text>
   <rect x="608" y="74" width="260" height="46" rx="6" class="bx" />
   <text x="618" y="91" class="mono l-neutral">/atlas  pages/AtlasPage.tsx</text>
   <text x="618" y="107" class="sub l-en">the catalog table: site, country, categories, seed, frames</text>
-  <text x="618" y="107" class="sub l-es">la tabla del catalogo: sitio, pais, categorias, cuadros</text>
+  <text x="618" y="107" class="sub l-es">la tabla del catálogo: sitio, país, categorías, cuadros</text>
   <rect x="608" y="128" width="260" height="58" rx="6" class="bx" />
   <text x="618" y="145" class="mono l-neutral">/methods  pages/MethodsPage.tsx</text>
   <text x="618" y="161" class="sub l-en">twelve methods with KaTeX equations, DOIs,</text>
-  <text x="618" y="161" class="sub l-es">doce metodos con ecuaciones KaTeX, DOI,</text>
+  <text x="618" y="161" class="sub l-es">doce métodos con ecuaciones KaTeX, DOI,</text>
   <text x="618" y="174" class="sub l-en">lane badges, caveats, the held-out benchmark</text>
   <text x="618" y="174" class="sub l-es">carriles, salvedades, el benchmark retenido</text>
   <rect x="608" y="194" width="260" height="58" rx="6" class="bx" />
   <text x="618" y="211" class="mono l-neutral">/data  pages/DataPage.tsx</text>
   <text x="618" y="227" class="sub l-en">sources probed for CORS and licence, attribution</text>
-  <text x="618" y="227" class="sub l-es">fuentes probadas por CORS y licencia, atribucion</text>
+  <text x="618" y="227" class="sub l-es">fuentes probadas por CORS y licencia, atribución</text>
   <text x="618" y="240" class="sub l-en">verbatim, the two contracts, the catalog summary</text>
-  <text x="618" y="240" class="sub l-es">textual, los dos contratos, resumen del catalogo</text>
+  <text x="618" y="240" class="sub l-es">textual, los dos contratos, resumen del catálogo</text>
   <rect x="608" y="260" width="260" height="46" rx="6" class="bx" />
   <text x="618" y="277" class="mono l-neutral">/about  pages/AboutPage.tsx  + this modal</text>
   <text x="618" y="293" class="sub l-en">what Rajo is, versioning, honesty, how to cite</text>
-  <text x="618" y="293" class="sub l-es">que es Rajo, versionado, honestidad, como citar</text>
+  <text x="618" y="293" class="sub l-es">qué es Rajo, versionado, honestidad, cómo citar</text>
   <text x="608" y="324" class="sub l-en">EN and ES, light and dark, no flash of the wrong theme.</text>
   <text x="608" y="324" class="sub l-es">EN y ES, claro y oscuro, sin destello del tema equivocado.</text>
 
@@ -142,29 +142,29 @@
   <text x="370" y="417" class="sub l-en">timeline, live, learned, series, relief;</text>
   <text x="370" y="417" class="sub l-es">timeline, live, learned, series, relief;</text>
   <text x="370" y="434" class="sub l-en">each asserts the title and WAITS</text>
-  <text x="370" y="434" class="sub l-es">cada una afirma el titulo y ESPERA</text>
+  <text x="370" y="434" class="sub l-es">cada una afirma el título y ESPERA</text>
   <path d="M536,408 L550,408" class="ln" />
   <rect x="550" y="370" width="160" height="76" rx="7" class="bx" />
   <text x="560" y="388" class="mono l-neutral">deploy/deploy.ps1 (.sh)</text>
   <text x="560" y="404" class="sub l-en">guards, build, tar over ssh into</text>
   <text x="560" y="404" class="sub l-es">guardas, build, tar por ssh a</text>
   <text x="560" y="417" class="sub l-en">a release dir, atomic symlink</text>
-  <text x="560" y="417" class="sub l-es">un dir de release, symlink atomico</text>
+  <text x="560" y="417" class="sub l-es">un dir de release, symlink atómico</text>
   <text x="560" y="434" class="sub l-en">swap, nginx reload</text>
   <text x="560" y="434" class="sub l-es">cambio, recarga de nginx</text>
   <path d="M710,408 L730,408" class="ln" />
   <rect x="730" y="370" width="150" height="76" rx="7" class="bx" />
   <text x="740" y="388" class="mono l-neutral">rajo.fasl-work.com</text>
   <text x="740" y="404" class="sub l-en">live content check: the title,</text>
-  <text x="740" y="404" class="sub l-es">verificacion en vivo: titulo,</text>
+  <text x="740" y="404" class="sub l-es">verificación en vivo: título,</text>
   <text x="740" y="417" class="sub l-en">catalog.json byte-identical,</text>
-  <text x="740" y="417" class="sub l-es">catalog.json identico,</text>
+  <text x="740" y="417" class="sub l-es">catalog.json idéntico,</text>
   <text x="740" y="434" class="sub l-en">a deep link answering 200</text>
   <text x="740" y="434" class="sub l-es">un enlace profundo con 200</text>
 
   <text x="20" y="474" class="sub l-en">The renderer declares what it drew: window.__rajoMap and window.__rajoMapLifecycle expose the map and its load events so the gates read layers, sources and the terrain</text>
-  <text x="20" y="474" class="sub l-es">El renderizador declara lo que dibujo: window.__rajoMap y window.__rajoMapLifecycle exponen el mapa y sus eventos de carga para que las compuertas lean capas, fuentes y terreno</text>
+  <text x="20" y="474" class="sub l-es">El renderizador declara lo que dibujó: window.__rajoMap y window.__rajoMapLifecycle exponen el mapa y sus eventos de carga para que las compuertas lean capas, fuentes y terreno</text>
   <text x="20" y="488" class="sub l-en">epoch instead of sampling pixels blindly. CI (dispatched per push) runs the pipeline tests, the frontend typecheck, unit tests and build, and the repository guards.</text>
-  <text x="20" y="488" class="sub l-es">y la epoca en lugar de muestrear pixeles a ciegas. CI (despachado por push) corre las pruebas del pipeline, el typecheck, las pruebas unitarias, el build y las guardas.</text>
+  <text x="20" y="488" class="sub l-es">y la época en lugar de muestrear píxeles a ciegas. CI (despachado por push) corre las pruebas del pipeline, el typecheck, las pruebas unitarias, el build y las guardas.</text>
   <text x="20" y="512" class="mono l-neutral">ports: dev 5901, preview 4901 (registered); static site, no port on the host</text>
 </svg>

@@ -97,6 +97,37 @@ test('the series drawer charts the mined-area series, its breaks and the yearly 
     )
     .toBe(true);
 
+  // the drawer is the control, not the view: the drape has to survive closing it, and two methods
+  // have to paint differently. Both shipped broken, and the diffusion deck published the same
+  // unmasked screenshot twice as "two methods on the same frame".
+  const mapEl = page.getByTestId('map');
+  const shotWith = async (method: 'otsu' | 'unet') => {
+    await page.getByTestId(`series-method-${method}`).click();
+    await page.waitForTimeout(2500);
+    await page.getByTestId('series-btn').click(); // close the drawer
+    await page.waitForTimeout(1800);
+    const buf = await mapEl.screenshot();
+    await page.getByTestId('series-btn').click(); // reopen for the next method
+    await page.waitForTimeout(1200);
+    return buf;
+  };
+  const otsuShot = await shotWith('otsu');
+  const unetShot = await shotWith('unet');
+  expect(
+    Buffer.compare(otsuShot, unetShot) !== 0,
+    'with the drawer closed, the classical mask and the U-Net mask paint different maps',
+  ).toBe(true);
+  await expect
+    .poll(
+      () =>
+        page.evaluate(() => {
+          const m = (window as unknown as { __rajoMap?: { getLayer: (id: string) => unknown } }).__rajoMap;
+          return m ? !!m.getLayer('frame-mask-layer') : null;
+        }),
+      { message: 'the mask layer survives the drawer closing', timeout: 15_000 },
+    )
+    .toBe(true);
+
   // a click on the plot moves the timeline
   const yearBefore = await page.getByTestId('tl-year').textContent();
   // uPlot listens on its .u-over element (the legend sits below it inside the host), so the pointer

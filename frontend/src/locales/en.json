@@ -326,7 +326,9 @@
       "heldOut": "Held-out test tiles",
       "neverSeen": "Every catalog site was held out of training and validation, so this number is not in-sample.",
       "missing": "No model files are shipped with this build."
-    }
+    },
+    "pMine": "p(mine)",
+    "angleWord": "angle"
   },
   "indices": {
     "groups": {
@@ -403,7 +405,9 @@
     "indexNote": "Yearly envelope means of NDVI, MNDWI and BSI from the same frames; Landsat years shaded.",
     "flags": {
       "cross_sensor": "Landsat years are outside the forest training domain (cross-sensor)"
-    }
+    },
+    "envelopeDesc": "reference polygons dilated by {{m}} m on the {{grid}} m grid",
+    "envelopeDescNoGrid": "reference polygons dilated by {{m}} m"
   },
   "relief": {
     "none": "No elevation difference is baked for this site yet.",
@@ -450,7 +454,9 @@
   "common": {
     "loading": "Loading",
     "yes": "yes",
-    "rangeTo": "to"
+    "rangeTo": "to",
+    "px": "px",
+    "inMask": "in mask"
   },
   "arch": {
     "title": "How Rajo works",

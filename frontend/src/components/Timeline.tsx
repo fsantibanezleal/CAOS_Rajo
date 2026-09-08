@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 import type { Frame, SiteManifest } from '../lib/contract';
 import { useTimeline } from '../state/timeline';
+import { num } from '../lib/format';
 
 export interface TimelineProps {
   manifest: SiteManifest;
@@ -155,7 +156,7 @@ export function Timeline({ manifest, onFrame }: TimelineProps) {
               <span className="mono">{frame.date}</span>
               <span className="dot tl-valid">&middot;</span>
               <span className="tl-valid" title={t('timeline.validHelp')}>
-                {t('timeline.valid')} {frame.valid_pct.toFixed(1)}%
+                {t('timeline.valid')} {num(frame.valid_pct, 1)}%
               </span>
               {frame.flags.length > 0 && (
                 <>

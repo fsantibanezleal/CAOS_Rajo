@@ -13,6 +13,7 @@ import { pelt } from '../lib/changepoints';
 import type { SeriesBlock, SiteManifest } from '../lib/contract';
 import { useTimeline } from '../state/timeline';
 import { useUI } from '../state/ui';
+import { num } from '../lib/format';
 
 type MethodKey = 'otsu' | 'rf' | 'unet';
 const METHOD_COLORS: Record<MethodKey, string> = { otsu: '#e8a33d', rf: '#f472b6', unet: '#60a5fa' };
@@ -20,6 +21,19 @@ const INDEX_COLORS: Record<string, string> = { ndvi: '#4ade80', mndwi: '#38bdf8'
 
 function token(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888';
+}
+
+// The artifact states the envelope as an English sentence ("reference polygons dilated by 1000 m on
+// the 30 m grid") because the bake writes one contract for both languages. The UI must not print an
+// English sentence to a Spanish reader, so the numbers are read out of it and the sentence is the
+// reader's. An artifact whose wording changes falls back to its own text rather than lying.
+export function envelopeDesc(raw: string | undefined, t: (k: string, o?: Record<string, string>) => string): string {
+  if (!raw) return '';
+  const m = /dilated by (\d+(?:\.\d+)?) m(?: on the (\d+(?:\.\d+)?) m grid)?/.exec(raw);
+  if (!m) return raw;
+  return m[2]
+    ? t('series.envelopeDesc', { m: m[1]!, grid: m[2] })
+    : t('series.envelopeDescNoGrid', { m: m[1]! });
 }
 
 export function SeriesPanel({ manifest, series }: { manifest: SiteManifest; series: SeriesBlock }) {
@@ -240,7 +254,7 @@ export function SeriesPanel({ manifest, series }: { manifest: SiteManifest; seri
           )}
           <span className="spacer" />
           <span className="small mono muted" data-testid="series-readout">
-            {hover ? `${xIsDateLabel(view, hover.year)} ${hover.values.map(([k, v]) => `${k} ${v === null ? '-' : v.toFixed(view === 'area' ? 2 : 3)}`).join(' / ')}` : t('series.hoverHint')}
+            {hover ? `${xIsDateLabel(view, hover.year)} ${hover.values.map(([k, v]) => `${k} ${v === null ? '-' : num(v, view === 'area' ? 2 : 3)}`).join(' / ')}` : t('series.hoverHint')}
           </span>
         </div>
         <div className="series-plot" ref={hostRef} data-testid="series-plot" />
@@ -248,25 +262,25 @@ export function SeriesPanel({ manifest, series }: { manifest: SiteManifest; seri
           {view === 'area' && method && (
             <>
               <span className="mono">
-                {t('series.envelope')}: {series.envelope_km2?.toFixed(1)} km2 ({series.envelope})
+                {t('series.envelope')}: {num(series.envelope_km2 ?? NaN, 1)} km2 ({envelopeDesc(series.envelope, t as unknown as (k: string, o?: Record<string, string>) => string)})
               </span>
               <span className="spacer" />
               <label className="small">
-                {t('series.penalty')} x{penaltyScale.toFixed(2)}
+                {t('series.penalty')} x{num(penaltyScale, 2)}
                 <input type="range" min={0.25} max={4} step={0.25} value={penaltyScale} onChange={(e) => setPenaltyScale(Number(e.target.value))} data-testid="series-penalty" />
               </label>
               <span className="mono" data-testid="series-breaks">
                 PELT {live ? live.breaks.join(', ') || t('series.noBreak') : '-'} / CUSUM {method.cusum.alarms.join(', ') || t('series.noAlarm')}
               </span>
               <span className="mono faint">
-                {segs.map((s) => `${s.start}-${s.end}: ${s.mean.toFixed(1)} km2, ${s.slope >= 0 ? '+' : ''}${s.slope.toFixed(2)}/yr`).join(' | ')}
+                {segs.map((s) => `${s.start}-${s.end}: ${num(s.mean, 1)} km2, ${s.slope >= 0 ? '+' : ''}${num(s.slope, 2)}/yr`).join(' | ')}
               </span>
               {method.flags.length > 0 && <span className="faint">{method.flags.map((f) => t(`series.flags.${f}`, f)).join(', ')}</span>}
             </>
           )}
           {view === 'dense' && series.dense && (
             <span className="mono">
-              {t('series.harmonic')}: {series.dense.harmonic.breaks.join(', ') || t('series.noBreak')} / BIC {series.dense.harmonic.bic.toFixed(1)} vs {series.dense.harmonic.bic_no_break.toFixed(1)}
+              {t('series.harmonic')}: {series.dense.harmonic.breaks.join(', ') || t('series.noBreak')} / BIC {num(series.dense.harmonic.bic, 1)} vs {num(series.dense.harmonic.bic_no_break, 1)}
             </span>
           )}
           {view === 'index' && <span className="faint">{t('series.indexNote')}</span>}

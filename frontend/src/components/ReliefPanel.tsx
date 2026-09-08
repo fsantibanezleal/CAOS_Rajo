@@ -9,14 +9,15 @@ import { useTranslation } from 'react-i18next';
 import type { SiteManifest } from '../lib/contract';
 import { useRelief } from '../state/relief';
 import { useUI } from '../state/ui';
+import { num } from '../lib/format';
 
 function token(name: string): string {
   return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888';
 }
 
 function fmtVolume(m3: number): string {
-  if (Math.abs(m3) >= 1e9) return `${(m3 / 1e9).toFixed(2)} km3`;
-  return `${(m3 / 1e6).toFixed(1)} Mm3`;
+  if (Math.abs(m3) >= 1e9) return `${num((m3 / 1e9), 2)} km3`;
+  return `${num((m3 / 1e6), 1)} Mm3`;
 }
 
 export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
@@ -112,7 +113,7 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
           </button>
         </div>
         <label className="inst-label small">
-          {t('relief.exaggeration')} x{r.exaggeration.toFixed(1)}
+          {t('relief.exaggeration')} x{num(r.exaggeration, 1)}
           <input type="range" min={0.5} max={3} step={0.1} value={r.exaggeration} onChange={(e) => r.setExaggeration(Number(e.target.value))} data-testid="relief-exaggeration" />
         </label>
       </div>
@@ -138,9 +139,9 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
         </div>
         <dl className="stats mono small" data-testid="relief-stats">
           <dt>{t('relief.cut')}</dt>
-          <dd>{fmtVolume(env.cut_m3)} ({env.cut_km2.toFixed(1)} km2)</dd>
+          <dd>{fmtVolume(env.cut_m3)} ({num(env.cut_km2, 1)} km2)</dd>
           <dt>{t('relief.fill')}</dt>
-          <dd>{fmtVolume(env.fill_m3)} ({env.fill_km2.toFixed(1)} km2)</dd>
+          <dd>{fmtVolume(env.fill_m3)} ({num(env.fill_km2, 1)} km2)</dd>
           <dt>{t('relief.deepest')}</dt>
           <dd>{env.min_m ?? '-'} m / {env.max_m ?? '-'} m</dd>
           <dt>{t('relief.floor')}</dt>
@@ -183,9 +184,9 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
             {stats && (
               <dl className="stats mono small" data-testid="profile-stats">
                 <dt>{t('relief.length')}</dt>
-                <dd>{(stats.lengthM / 1000).toFixed(2)} km</dd>
+                <dd>{num((stats.lengthM / 1000), 2)} km</dd>
                 <dt>{t('relief.globalRange')}</dt>
-                <dd>{stats.globalMin !== null && stats.globalMax !== null ? `${stats.globalMin.toFixed(0)} to ${stats.globalMax.toFixed(0)} m` : t('relief.noSamples')}</dd>
+                <dd>{stats.globalMin !== null && stats.globalMax !== null ? `${num(stats.globalMin, 0)} ${t('common.rangeTo')} ${num(stats.globalMax, 0)} m` : t('relief.noSamples')}</dd>
                 <dt>{t('relief.coverage')}</dt>
                 <dd data-testid="profile-coverage">
                   {stats.nCop}/{stats.n}
@@ -194,11 +195,11 @@ export function ReliefPanel({ manifest }: { manifest: SiteManifest }) {
                   <>
                     <dt>{t('relief.deepestChange')}</dt>
                     <dd>
-                      {stats.change.minDelta.toFixed(0)} m {t('relief.at')} {(stats.change.minAt / 1000).toFixed(2)} km
+                      {num(stats.change.minDelta, 0)} m {t('relief.at')} {num((stats.change.minAt / 1000), 2)} km
                     </dd>
                     <dt>{t('relief.highestChange')}</dt>
                     <dd>
-                      +{stats.change.maxDelta.toFixed(0)} m {t('relief.at')} {(stats.change.maxAt / 1000).toFixed(2)} km
+                      +{num(stats.change.maxDelta, 0)} m {t('relief.at')} {num((stats.change.maxAt / 1000), 2)} km
                     </dd>
                   </>
                 ) : (

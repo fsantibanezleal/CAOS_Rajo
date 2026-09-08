@@ -9,6 +9,7 @@ import { docUrl, METHODS, type MethodEntry, QUESTIONS } from '../content/methods
 import { Tex } from '../lib/tex';
 import { useModels } from '../state/models';
 import { useUI } from '../state/ui';
+import { num } from '../lib/format';
 
 const ORDER: MethodEntry['question'][] = ['look', 'find', 'change', 'relief'];
 
@@ -123,12 +124,12 @@ export function MethodsPage() {
                         {Object.entries(s.methods).map(([k, v]) => (
                           <tr key={k}>
                             <td>{t(`methods.benchmark.methods.${k}`, k)}</td>
-                            <td className="mono">{v.pooled.iou.toFixed(3)}</td>
-                            <td className="mono">{v.pooled.f1.toFixed(3)}</td>
-                            <td className="mono">{v.pooled.precision.toFixed(3)}</td>
-                            <td className="mono">{v.pooled.recall.toFixed(3)}</td>
-                            <td className="mono">{Number.isFinite(v.per_tile_mean_iou) ? v.per_tile_mean_iou.toFixed(3) : '-'}</td>
-                            <td className="mono">{Number.isFinite(v.boundary_f1_mean) ? v.boundary_f1_mean.toFixed(3) : '-'}</td>
+                            <td className="mono">{num(v.pooled.iou, 3)}</td>
+                            <td className="mono">{num(v.pooled.f1, 3)}</td>
+                            <td className="mono">{num(v.pooled.precision, 3)}</td>
+                            <td className="mono">{num(v.pooled.recall, 3)}</td>
+                            <td className="mono">{Number.isFinite(v.per_tile_mean_iou) ? num(v.per_tile_mean_iou, 3) : '-'}</td>
+                            <td className="mono">{Number.isFinite(v.boundary_f1_mean) ? num(v.boundary_f1_mean, 3) : '-'}</td>
                           </tr>
                         ))}
                       </tbody>
@@ -139,7 +140,7 @@ export function MethodsPage() {
                       {t('methods.benchmark.haze')}:{' '}
                       {Object.entries(s.haze)
                         .filter(([, d]) => d && Object.keys(d).length)
-                        .map(([k, d]) => `${k} ${Object.entries(d).map(([h, v]) => `+${h}: ${v.iou.toFixed(2)}`).join(', ')}`)
+                        .map(([k, d]) => `${k} ${Object.entries(d).map(([h, v]) => `+${h}: ${num(v.iou, 2)}`).join(', ')}`)
                         .join(' / ')}
                     </p>
                   )}

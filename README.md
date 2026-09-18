@@ -2,7 +2,7 @@
 
 Live: https://rajo.fasl-work.com (vps-static on the prod box, first content deploy 2026-09-03; the footer prints the deployed version).
 
-[![CI](https://img.shields.io/github/actions/workflow/status/fsantibanezleal/CAOS_Rajo/ci.yml?branch=main&label=CI)](https://github.com/fsantibanezleal/CAOS_Rajo/actions)
+[![CI](https://img.shields.io/github/actions/workflow/status/fsantibanezleal/CAOS_Rajo/ci.yaml?branch=main&label=CI)](https://github.com/fsantibanezleal/CAOS_Rajo/actions)
 [![License](https://img.shields.io/github/license/fsantibanezleal/CAOS_Rajo)](LICENSE)
 [![Version](https://img.shields.io/github/v/tag/fsantibanezleal/CAOS_Rajo?label=version&sort=semver)](https://github.com/fsantibanezleal/CAOS_Rajo/tags)
 

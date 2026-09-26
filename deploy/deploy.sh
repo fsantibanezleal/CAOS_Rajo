@@ -13,7 +13,8 @@ cd "$(dirname "$0")/.."
 
 KEY="${RAJO_SSH_KEY:?set RAJO_SSH_KEY to the vault SSH key path}"
 DOMAIN="${RAJO_DOMAIN:-rajo.fasl-work.com}"
-TARGET="${RAJO_TARGET:-root@91.99.199.70}"
+# The host is not in this public repository; the private management repository records it.
+TARGET="${RAJO_TARGET:?set RAJO_TARGET to user@host of the VPS}"
 WEBROOT="/var/www/${DOMAIN}"
 VP=".venv/bin/python"; [ -x "$VP" ] || VP=".venv/Scripts/python.exe"
 [ -x "$VP" ] || { echo "no .venv. Run: ./scripts/local/01_init.sh" >&2; exit 1; }

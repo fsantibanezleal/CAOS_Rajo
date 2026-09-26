@@ -16,10 +16,13 @@
 param(
     [switch]$SkipTests,
     [string]$Domain = "rajo.fasl-work.com",
-    [string]$Target = "root@91.99.199.70"
+    # The host is not in this public repository: pass -Target, or set RAJO_TARGET (the private
+    # management repository records it).
+    [string]$Target = $env:RAJO_TARGET
 )
 
 $ErrorActionPreference = "Stop"
+if (-not $Target) { throw "set RAJO_TARGET (user@host of the VPS) or pass -Target; the address lives in the private management repository" }
 $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
 Set-Location $Root
 if (-not $env:RAJO_SSH_KEY) { throw "set RAJO_SSH_KEY to the vault SSH key path" }

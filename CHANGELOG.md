@@ -6,6 +6,26 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.009] - 2026-10-10
+
+### Fixed
+
+- A tile host that stopped answering starved the map (issue #40). MapLibre loads every image through one
+  FIFO queue capped at 16 requests, so with every `tiles.maps.eox.at` request held open, 16 stayed in
+  flight, the terrain requests were never issued, the frame was added but not drawn, and the status line
+  named `s3.amazonaws.com`, which answers in under a second, as the silent host.
+- The EOX imagery and AWS terrain sources now go through a per-host circuit breaker
+  (`frontend/src/map/tileGuard.ts`, scheme `guarded://`). A timeout (8 s), a network error, an HTTP 429 or
+  a 5xx is a host failure; an abort by MapLibre or any other status is not. Two consecutive failures open
+  the circuit, so requests to that host reject at once and free their slots. One probe runs after 15 s,
+  doubling on every failed probe up to 300 s; any HTTP answer closes the circuit and the errored tiles of
+  that host's sources reload. The status line shows the open circuits together with the stall detector.
+- The OpenFreeMap style fetch has an 8 s timeout, so a hung style host cannot block map creation.
+- `frontend/tests/stall.spec.ts` asserts that the terrain host is not blamed 30 s after a selection, that
+  the frame is drawn on the screen (hiding it changes the screenshot) and that the held host is picked up
+  again once it answers. The first two failed against 0.02.008. New unit tests cover the guard
+  (`tileGuard.test.ts`).
+
 ## [0.02.008] - 2026-10-10
 
 ### Fixed

@@ -4,6 +4,8 @@
 // boundary and road layers are kept, so the imagery stays visible underneath.
 import type { LayerSpecification, SourceSpecification, StyleSpecification } from 'maplibre-gl';
 
+import { guardUrl } from '../map/tileGuard';
+
 export const EOX_ATTRIBUTION =
   'Sentinel-2 cloudless - <a href="https://s2maps.eu" target="_blank" rel="noreferrer">s2maps.eu</a> by <a href="https://eox.at" target="_blank" rel="noreferrer">EOX IT Services GmbH</a> (Contains modified Copernicus Sentinel data 2024)';
 export const TERRAIN_ATTRIBUTION =
@@ -11,9 +13,13 @@ export const TERRAIN_ATTRIBUTION =
 export const OFM_ATTRIBUTION =
   '<a href="https://openfreemap.org" target="_blank" rel="noreferrer">OpenFreeMap</a> &copy; <a href="https://www.openmaptiles.org/" target="_blank" rel="noreferrer">OpenMapTiles</a> Data from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a>';
 
+// the two third-party raster hosts; both are fetched through the tile guard (map/tileGuard.ts)
+export const EOX_TILES = 'https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg';
+export const TERRARIUM_TILES = 'https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png';
+
 export const IMAGERY_SOURCE: SourceSpecification = {
   type: 'raster',
-  tiles: ['https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2024_3857/default/g/{z}/{y}/{x}.jpg'],
+  tiles: [guardUrl(EOX_TILES)],
   tileSize: 256,
   maxzoom: 15,
   attribution: EOX_ATTRIBUTION,
@@ -21,7 +27,7 @@ export const IMAGERY_SOURCE: SourceSpecification = {
 
 export const TERRAIN_SOURCE: SourceSpecification = {
   type: 'raster-dem',
-  tiles: ['https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png'],
+  tiles: [guardUrl(TERRARIUM_TILES)],
   tileSize: 256,
   encoding: 'terrarium',
   maxzoom: 14,
@@ -39,7 +45,7 @@ const KEEP_LAYER = /(boundary|admin|place|label|road|highway|water_name|waterway
 export async function buildStyle(theme: 'dark' | 'light'): Promise<{ style: StyleSpecification; firstLabelLayer?: string }> {
   let ofm: StyleSpecification | null = null;
   try {
-    const res = await fetch(ofmStyleUrl(theme), { mode: 'cors' });
+    const res = await fetch(ofmStyleUrl(theme), { mode: 'cors', signal: AbortSignal.timeout(8000) });
     if (res.ok) ofm = (await res.json()) as StyleSpecification;
   } catch {
     ofm = null;

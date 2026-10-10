@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { buildStyle, TERRAIN_SOURCE } from '../lib/basemap';
 import { useUI } from '../state/ui';
 import { setStyleReady, styleReady } from './styleReady';
+import { registerTileGuard, tileGuard } from './tileGuard';
 
 export interface MapViewProps {
   onMap?: (map: MLMap | null) => void;
@@ -63,6 +64,8 @@ function lifecycle(event: string): void {
 // and the terrain never decode and the map never fires 'load' (measured 2026-09-03). Vite builds the
 // worker with its dependencies; MapLibre is told where it is before the first map is created.
 setWorkerUrl(maplibreWorkerUrl);
+// the guarded:// scheme of the imagery and terrain sources goes through the per-host circuit breaker
+registerTileGuard();
 
 export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewProps) {
   const { t } = useTranslation();
@@ -83,6 +86,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     const alive = () => !cancelled;
     let handed = false;
     let interval: ReturnType<typeof setInterval> | null = null;
+    let unsubscribeGuard: (() => void) | null = null;
     void buildStyle(useUI.getState().theme).then(({ style }) => {
       if (cancelled || !el.current) return;
       const m = new MLMap({
@@ -127,6 +131,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
         status = next;
         propsRef.current.onStatus?.(next);
       };
+      let detected: string[] = [];
       const lastTileAt: Record<string, number> = {};
       const unloadedSince: Record<string, number> = {};
       m.on('data', (e) => {
@@ -136,7 +141,20 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
       m.on('dataloading', () => report({ ...status, loading: true }));
       m.on('idle', () => {
         for (const k of Object.keys(unloadedSince)) delete unloadedSince[k];
-        report({ loading: false, stalledHosts: [] });
+        detected = [];
+        report({ loading: false, stalledHosts: tileGuard.openHosts() });
+      });
+      const publish = () => report({ loading: status.loading, stalledHosts: [...new Set([...tileGuard.openHosts(), ...detected])].sort() });
+      // a host that comes back reloads the tiles its sources errored on
+      unsubscribeGuard = tileGuard.subscribe((ev) => {
+        if (!alive()) return;
+        publish();
+        if (ev.state !== 'closed') return;
+        for (const [id, spec] of Object.entries(m.getStyle()?.sources ?? {})) {
+          const tiles = (spec as { tiles?: string[] }).tiles;
+          if (!tiles || sourceHost({ tiles }) !== ev.host) continue;
+          (m.getSource(id) as unknown as { setTiles?: (t: string[]) => void } | undefined)?.setTiles?.(tiles);
+        }
       });
       interval = setInterval(() => {
         if (!alive()) return;
@@ -159,7 +177,8 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
           const since = (unloadedSince[id] ??= now);
           if (now - since >= STALL_MS && now - (lastTileAt[id] ?? 0) >= STALL_MS) hosts.add(host);
         }
-        report({ loading: status.loading, stalledHosts: [...hosts].sort() });
+        detected = [...hosts].sort();
+        publish();
       }, STALL_CHECK_MS);
       m.on('mousemove', (e) => {
         // queryTerrainElevation returns metres multiplied by the terrain exaggeration (MapLibre docs);
@@ -177,6 +196,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     return () => {
       cancelled = true;
       if (interval) clearInterval(interval);
+      unsubscribeGuard?.();
       lifecycle('cleanup');
       propsRef.current.onMap?.(null);
       const m = created;

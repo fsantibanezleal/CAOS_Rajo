@@ -1,10 +1,12 @@
-// Gate for issue #37: the observatory must work when a third-party tile host hangs.
+// Gates for issues #37 and #40: the observatory must work when a third-party tile host hangs.
 // Every request to the imagery host (tiles.maps.eox.at) is held open and never answered, which is what
 // the office network does. The gate proves that the page still gets the map (on the first style.load, not
-// on MapLibre's 'load', which waits for tiles), that the status line names the silent host, that choosing
-// a site draws the polygons, the frame and the site's own relief source, that switching sites replaces
-// the relief source, and that "World view" returns the camera to the globe. It failed against 0.02.007
-// (the map never reached the page, so no overlay was ever added).
+// on MapLibre's 'load', which waits for tiles), that the status line names the silent host and only that
+// host, that choosing a site draws the polygons, the frame and the site's own relief source, that the frame
+// is drawn on the screen (the terrain keeps rendering because the held host no longer holds MapLibre's
+// 16 image slots), that switching sites replaces the relief source, that "World view" returns the camera
+// to the globe, and that the host is picked up again once it answers. It failed against 0.02.007 (the map
+// never reached the page) and the s3 readout and frame-drawn assertions failed against 0.02.008.
 import { expect, test, type Route } from '@playwright/test';
 
 import { collectErrors, expectNoErrors, gotoRajo } from './_helpers';
@@ -15,12 +17,13 @@ type RajoWindow = {
     getPitch(): number;
     getCenter(): { lng: number; lat: number };
     getLayer(id: string): unknown;
+    setLayoutProperty(layer: string, name: string, value: string): void;
     getStyle(): { sources: Record<string, { tiles?: string[] }> };
   };
 };
 
 test('the map works while the imagery host never answers', async ({ page, request }) => {
-  test.setTimeout(240_000);
+  test.setTimeout(300_000);
   const held: Route[] = [];
   await page.route(/tiles\.maps\.eox\.at/, (route) => {
     held.push(route);
@@ -35,17 +38,37 @@ test('the map works while the imagery host never answers', async ({ page, reques
 
     await expect(page.getByTestId('map-stalled'), 'the status line names the silent host').toContainText('tiles.maps.eox.at', { timeout: 30_000 });
 
+    // the status line is absent when no host is silent, so read it as text, never as a required element
+    const stalledText = async () => (await page.getByTestId('map-stalled').allTextContents()).join(' ');
     const terrainTile = () =>
       page.evaluate(() => (window as unknown as RajoWindow).__rajoMap?.getStyle().sources['terrain-cop']?.tiles?.[0] ?? '');
     const hasLayer = (id: string) => page.evaluate((i) => !!(window as unknown as RajoWindow).__rajoMap?.getLayer(i), id);
 
     await page.getByTestId('site-select').selectOption('chuquicamata');
+    const selectedAt = Date.now();
     await expect
       .poll(() => page.evaluate(() => { const m = (window as unknown as RajoWindow).__rajoMap; return !!m && m.getZoom() > 9 && m.getPitch() > 40; }), { message: 'the camera flew to the site', timeout: 20_000 })
       .toBe(true);
     await expect.poll(() => hasLayer('site-polygons-fill'), { message: 'site polygons drawn', timeout: 30_000 }).toBe(true);
     await expect.poll(() => hasLayer('frame-layer'), { message: 'frame layer drawn', timeout: 30_000 }).toBe(true);
     await expect.poll(terrainTile, { message: 'relief source of chuquicamata', timeout: 30_000 }).toContain('/sites/chuquicamata/');
+
+    // the held host is named; the healthy terrain host is not blamed (0.02.008 starved it and named it at about 21 s)
+    await expect(page.getByTestId('map-stalled'), 'the held imagery host is named').toContainText('tiles.maps.eox.at', { timeout: 30_000 });
+    await page.waitForTimeout(Math.max(0, 30_000 - (Date.now() - selectedAt)));
+    expect(await stalledText(), 'the terrain host is not blamed 30 s after the selection').not.toContain('s3.amazonaws.com');
+
+    // the frame is drawn on the screen, not only added to the style
+    const mapEl = page.locator('[data-testid="map"]');
+    const setFrame = (v: string) => page.evaluate((x) => (window as unknown as RajoWindow).__rajoMap!.setLayoutProperty('frame-layer', 'visibility', x), v);
+    await setFrame('visible');
+    await page.waitForTimeout(2000);
+    const withFrame = await mapEl.screenshot();
+    await setFrame('none');
+    await page.waitForTimeout(2000);
+    const withoutFrame = await mapEl.screenshot();
+    await setFrame('visible');
+    expect(Buffer.compare(withFrame, withoutFrame), 'the frame is drawn: hiding it changes the screen').not.toBe(0);
 
     await page.getByTestId('site-select').selectOption('candelaria');
     await expect.poll(terrainTile, { message: 'relief source replaced by candelaria', timeout: 30_000 }).toContain('/sites/candelaria/');
@@ -66,6 +89,12 @@ test('the map works while the imagery host never answers', async ({ page, reques
       .poll(() => page.evaluate(() => { const m = (window as unknown as RajoWindow).__rajoMap!; return m.getZoom() < 3 && m.getPitch() < 1; }), { message: 'World view returns the camera to the globe', timeout: 15_000 })
       .toBe(true);
     await expect.poll(() => hasLayer('frame-layer'), { message: 'frame layer removed', timeout: 15_000 }).toBe(false);
+
+    // recovery: the host answers again and the next probe closes its circuit
+    await page.unroute(/tiles\.maps\.eox\.at/);
+    const body = await (await request.get('/data/sites/chuquicamata/frames/2026.webp')).body();
+    await page.route(/tiles\.maps\.eox\.at/, (route) => route.fulfill({ status: 200, contentType: 'image/webp', body }));
+    await expect.poll(stalledText, { message: 'the imagery host is picked up again', timeout: 120_000 }).not.toContain('tiles.maps.eox.at');
 
     expectNoErrors(errors);
   } finally {

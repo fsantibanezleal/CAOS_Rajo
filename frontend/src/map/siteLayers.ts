@@ -5,6 +5,7 @@ import type { FeatureCollection } from 'geojson';
 import type { GeoJSONSource, Map as MLMap } from 'maplibre-gl';
 
 import type { SiteManifest } from '../lib/contract';
+import { WORLD_VIEW } from './MapView';
 
 export const SITE_POLY_SOURCE = 'site-polygons';
 export const SITE_WINDOW_SOURCE = 'site-window';
@@ -98,4 +99,9 @@ export function flyToSite(map: MLMap, manifest: SiteManifest): void {
     ],
     { padding: { top: 40, bottom: 120, left: 340, right: 60 }, pitch: 55, bearing: -20, duration: 2400, maxZoom: 13.5 },
   );
+}
+
+// "World view": the camera returns to the globe
+export function flyToWorld(map: MLMap): void {
+  map.flyTo({ ...WORLD_VIEW, duration: 2400 });
 }

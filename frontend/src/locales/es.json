@@ -45,7 +45,8 @@
     "globe": "Globo",
     "status": {
       "ready": "Listo",
-      "tiles": "Cargando teselas"
+      "tiles": "Cargando teselas",
+      "stalled": "sin respuesta de {{hosts}}"
     },
     "liveValue": "en vivo"
   },

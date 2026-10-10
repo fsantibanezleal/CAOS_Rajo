@@ -49,6 +49,8 @@ Terrarium decoding: `elevation_m = (R * 256 + G + B / 256) - 32768`.
 | OpenFreeMap (OpenMapTiles over OpenStreetMap) | `tiles.openfreemap.org/styles/{dark,positron}` | yes: CORS `*`, no key, no request limits | attribution "OpenFreeMap (c) OpenMapTiles Data from OpenStreetMap" (MapLibre adds it automatically) |
 | CARTO raster basemaps | `basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}.png` | yes: CORS `*` | fallback only; CARTO free basemap terms, attribution "(c) OpenStreetMap contributors (c) CARTO" |
 
+The EOX and Terrain Tiles sources are fetched through the tile guard (`guarded://` in `lib/basemap.ts`); a host that stops answering is shown in the status line and retried.
+
 ## Production tables and operator disclosures (the site facts)
 
 Every fact on a site card carries a source URL (Contract 1 rejects a fact without one). The

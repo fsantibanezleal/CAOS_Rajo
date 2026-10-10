@@ -45,3 +45,16 @@ only to sandboxes. The web build copies committed artifacts. The deploy verifies
 Every name in this table exists in the tree; the map is MapLibre GL JS with its worker bundled by Vite
 and registered through `setWorkerUrl` (`map/MapView.tsx`), the basemap style is assembled in
 `lib/basemap.ts`.
+
+The two third-party raster hosts (EOX imagery, AWS terrain) are fetched through a per-host circuit breaker,
+`map/tileGuard.ts`. MapLibre loads every image (raster tiles, raster-dem tiles, image sources, sprites)
+through one global FIFO queue capped at 16 requests (8 while the map moves), so a host that never answers
+holds all the slots: measured on 2026-10-10 with every EOX request held open, 16 requests stayed in flight
+for 60 s, the terrain requests were never issued, the frame image was not drawn and the status line named the
+healthy terrain host. The sources use the `guarded://` scheme (`lib/basemap.ts`), registered with
+`addProtocol`. A host failure is a timeout (8 s), a network error, an HTTP 429 or a 5xx; an abort by MapLibre
+and any other status (404, 403: the host answers) are not failures. Two consecutive failures open the circuit:
+requests to that host then reject at once and free their slots. One probe, to the last failed tile URL, runs
+after 15 s, doubling on every failed probe up to 300 s; any HTTP answer closes the circuit and the map reloads
+the errored tiles of that host's sources (`setTiles`). The status line shows the union of the open circuits
+and the 12-second stall detector.

@@ -8,16 +8,39 @@ import { useTranslation } from 'react-i18next';
 
 import { buildStyle, TERRAIN_SOURCE } from '../lib/basemap';
 import { useUI } from '../state/ui';
+import { setStyleReady, styleReady } from './styleReady';
 
 export interface MapViewProps {
   onMap?: (map: MLMap | null) => void;
   onCursor?: (info: { lon: number; lat: number; elev: number | null } | null) => void;
-  onStatus?: (loading: boolean) => void;
+  onStatus?: (s: MapStatus) => void;
   terrain: boolean;
   labels: boolean;
 }
 
+export interface MapStatus {
+  loading: boolean;
+  stalledHosts: string[];
+}
+
 export const TERRAIN_EXAGGERATION = 1.15;
+
+// the camera of the globe view, used at creation and by "World view"
+export const WORLD_VIEW = { center: [-69.5, -23.0] as [number, number], zoom: 2.2, pitch: 0, bearing: 0 };
+
+// a source that stays unloaded and delivers no tile for this long has a host that is not answering
+export const STALL_MS = 12_000;
+const STALL_CHECK_MS = 2000;
+
+function sourceHost(spec: { tiles?: string[]; url?: string }): string | null {
+  const raw = spec.tiles?.[0] ?? spec.url;
+  if (!raw) return null;
+  try {
+    return new URL(raw).host;
+  } catch {
+    return null;
+  }
+}
 
 export function hasWebGL(): boolean {
   try {
@@ -58,15 +81,14 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     // a style.load or load event delivered after the map was removed (a route change while the style
     // is still arriving) must not touch the painter
     const alive = () => !cancelled;
+    let handed = false;
+    let interval: ReturnType<typeof setInterval> | null = null;
     void buildStyle(useUI.getState().theme).then(({ style }) => {
       if (cancelled || !el.current) return;
       const m = new MLMap({
         container: el.current,
         style,
-        center: [-69.5, -23.0],
-        zoom: 2.2,
-        pitch: 0,
-        bearing: 0,
+        ...WORLD_VIEW,
         maxPitch: 80,
         minZoom: 1.2,
         attributionControl: false,
@@ -81,19 +103,64 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
       m.on('style.load', () => {
         lifecycle(alive() ? 'style.load' : 'style.load (after removal, ignored)');
         if (!alive()) return;
+        setStyleReady(m, true);
         // the globe is set after every style load (a projection declared inside the style object keeps
         // MapLibre 5 from ever firing 'load' with terrain on, measured 2026-09-03)
         m.setProjection({ type: 'globe' });
         if (propsRef.current.terrain) m.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
         setLabelVisibility(m, propsRef.current.labels);
+        // the page gets the map as soon as the style is in place: MapLibre's 'load' waits for the first
+        // tiles of every source, which never come when a tile host hangs
+        if (!handed) {
+          handed = true;
+          propsRef.current.onMap?.(m);
+        }
       });
       m.on('load', () => {
         lifecycle(alive() ? 'load' : 'load (after removal, ignored)');
-        if (alive()) propsRef.current.onMap?.(m);
       });
       m.on('error', (e) => lifecycle(`error: ${(e as { error?: { message?: string } }).error?.message ?? 'unknown'}`));
-      m.on('dataloading', () => propsRef.current.onStatus?.(true));
-      m.on('idle', () => propsRef.current.onStatus?.(false));
+      // status readout: loading flag plus the hosts that stopped answering
+      let status: MapStatus = { loading: true, stalledHosts: [] };
+      const report = (next: MapStatus) => {
+        if (next.loading === status.loading && next.stalledHosts.join('|') === status.stalledHosts.join('|')) return;
+        status = next;
+        propsRef.current.onStatus?.(next);
+      };
+      const lastTileAt: Record<string, number> = {};
+      const unloadedSince: Record<string, number> = {};
+      m.on('data', (e) => {
+        const ev = e as { sourceId?: string; tile?: unknown };
+        if (ev.sourceId && ev.tile) lastTileAt[ev.sourceId] = performance.now();
+      });
+      m.on('dataloading', () => report({ ...status, loading: true }));
+      m.on('idle', () => {
+        for (const k of Object.keys(unloadedSince)) delete unloadedSince[k];
+        report({ loading: false, stalledHosts: [] });
+      });
+      interval = setInterval(() => {
+        if (!alive()) return;
+        const sources = m.getStyle()?.sources ?? {};
+        const now = performance.now();
+        const hosts = new Set<string>();
+        for (const [id, spec] of Object.entries(sources)) {
+          const host = sourceHost(spec as { tiles?: string[]; url?: string });
+          if (!host) continue;
+          let loaded = true;
+          try {
+            loaded = m.isSourceLoaded(id);
+          } catch {
+            continue;
+          }
+          if (loaded) {
+            delete unloadedSince[id];
+            continue;
+          }
+          const since = (unloadedSince[id] ??= now);
+          if (now - since >= STALL_MS && now - (lastTileAt[id] ?? 0) >= STALL_MS) hosts.add(host);
+        }
+        report({ loading: status.loading, stalledHosts: [...hosts].sort() });
+      }, STALL_CHECK_MS);
       m.on('mousemove', (e) => {
         // queryTerrainElevation returns metres multiplied by the terrain exaggeration (MapLibre docs);
         // the readout prints the surface itself
@@ -109,6 +176,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
     });
     return () => {
       cancelled = true;
+      if (interval) clearInterval(interval);
       lifecycle('cleanup');
       propsRef.current.onMap?.(null);
       const m = created;
@@ -134,6 +202,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
       // projection ('shaderPreludeCode' of undefined in useProgram, MapLibre 6.7); the style.load
       // handler restores globe + terrain once the new style is in place
       m.setTerrain(null);
+      setStyleReady(m, false);
       m.setStyle(style, { diff: false });
     });
     return () => {
@@ -144,7 +213,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
   // terrain toggle
   useEffect(() => {
     const m = mapRef.current;
-    if (!m || !m.isStyleLoaded()) return;
+    if (!m || !styleReady(m)) return;
     if (terrain) {
       if (!m.getSource('terrain')) m.addSource('terrain', TERRAIN_SOURCE);
       m.setTerrain({ source: 'terrain', exaggeration: TERRAIN_EXAGGERATION });
@@ -156,7 +225,7 @@ export function MapView({ onMap, onCursor, onStatus, terrain, labels }: MapViewP
   // labels toggle
   useEffect(() => {
     const m = mapRef.current;
-    if (!m || !m.isStyleLoaded()) return;
+    if (!m || !styleReady(m)) return;
     setLabelVisibility(m, labels);
   }, [labels]);
 

@@ -6,6 +6,25 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 
 ## [Unreleased]
 
+## [0.02.008] - 2026-10-10
+
+### Fixed
+
+- Choosing a site did nothing, and the status line read "Loading tiles" forever, when a third-party
+  tile host did not answer (the imagery host `tiles.maps.eox.at` hangs from some networks). The map was
+  handed to the page on MapLibre's `load` event, which waits for the first tiles of every source. It is
+  now handed over on the first `style.load`, so the page and every overlay work while a host is silent.
+- Every overlay waited on `isStyleLoaded()`, which is false while any source still loads tiles, with
+  fallbacks on `idle` and `style.load` that never fired. The observatory now keeps its own style
+  readiness flag (`frontend/src/map/styleReady.ts`), true from `style.load` until the next `setStyle`,
+  and applies overlays through it. A site switch no longer keeps the previous site's relief source.
+- "World view" cleared the layers but left the camera on the last site. It now flies back to the globe.
+- The status line names a tile host that has not answered for 12 seconds ("no answer from
+  tiles.maps.eox.at", "sin respuesta de ...").
+- New gate `frontend/tests/stall.spec.ts` holds every imagery request open and checks the map handle,
+  the stall readout, the site overlays, the relief source swap and the World view camera. It failed
+  against 0.02.007.
+
 ## [0.02.007] - 2026-09-08
 
 ### Fixed

@@ -45,7 +45,8 @@
     "globe": "Globe",
     "status": {
       "ready": "Ready",
-      "tiles": "Loading tiles"
+      "tiles": "Loading tiles",
+      "stalled": "no answer from {{hosts}}"
     },
     "liveValue": "live"
   },

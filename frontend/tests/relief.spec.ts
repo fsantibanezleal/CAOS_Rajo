@@ -31,7 +31,7 @@ test('the relief lane drapes the DEM difference, switches the terrain epoch and 
   await gotoRajo(page, `/?site=${site}`);
   await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
   await expect
-    .poll(() => page.evaluate(() => !!(window as unknown as { __rajoMap?: unknown }).__rajoMap), { message: 'the map exposes __rajoMap after load', timeout: 90_000 })
+    .poll(() => page.evaluate(() => !!(window as unknown as { __rajoMap?: unknown }).__rajoMap), { message: 'the map exposes __rajoMap once the style is in place', timeout: 90_000 })
     .toBe(true);
   await expect(page.getByTestId('tab-relief')).toBeVisible({ timeout: 30_000 });
   await page.getByTestId('tab-relief').click();

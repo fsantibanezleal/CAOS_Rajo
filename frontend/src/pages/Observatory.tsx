@@ -5,7 +5,7 @@
 // writes ?site= into the URL so the view is shareable.
 import type { Map as MLMap } from 'maplibre-gl';
 import { Compass, Mountain, Tag, ZoomIn, ZoomOut } from 'lucide-react';
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { Instrument } from '../components/Instrument';
@@ -17,8 +17,9 @@ import { useRelief } from '../state/relief';
 import type { CatalogEntry, Category, Frame } from '../lib/contract';
 import { ensureFrameLayer, frameUrl, preload, removeFrameLayer, setFrameOpacity } from '../map/frameOverlay';
 import { hideLive, setLiveOpacity, showLive } from '../map/liveOverlay';
-import { MapView, TERRAIN_EXAGGERATION } from '../map/MapView';
-import { clearSite, flyToSite, showSite } from '../map/siteLayers';
+import { MapView, TERRAIN_EXAGGERATION, type MapStatus } from '../map/MapView';
+import { clearSite, flyToSite, flyToWorld, showSite } from '../map/siteLayers';
+import { onStyleReady, styleReady } from '../map/styleReady';
 import { useCatalog } from '../state/catalog';
 import { useLive } from '../state/live';
 import { readSiteParam, useManifest, writeSiteParam } from '../state/site';
@@ -44,10 +45,14 @@ export function Observatory() {
   const { catalog, error: catalogError } = useCatalog();
   const [map, setMap] = useState<MLMap | null>(null);
   const [cursor, setCursor] = useState<{ lon: number; lat: number; elev: number | null } | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [status, setStatus] = useState<MapStatus>({ loading: true, stalledHosts: [] });
+  const { loading, stalledHosts } = status;
   const [terrain, setTerrain] = useState(true);
   const [labels, setLabels] = useState(true);
   const [siteId, setSiteId] = useState<string>(readSiteParam);
+  const siteIdRef = useRef(siteId);
+  siteIdRef.current = siteId;
+  const drawnSite = useRef<string | null>(null);
   const [frame, setFrame] = useState<Frame | null>(null);
   const [liveOpacity, setLiveOpacityState] = useState(1);
   const mode = useTimeline((s) => s.mode);
@@ -90,7 +95,7 @@ export function Observatory() {
     clearLive();
   }, [siteId, clearLive]);
   useEffect(() => {
-    if (map && map.isStyleLoaded()) hideLive(map);
+    if (map && styleReady(map)) hideLive(map);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [siteId]);
 
@@ -99,22 +104,24 @@ export function Observatory() {
     if (!map) return;
     if (!manifest) {
       setFrame(null);
-      if (map.isStyleLoaded()) {
+      if (styleReady(map)) {
         clearSite(map);
         removeFrameLayer(map);
+      }
+      // World view: the camera returns to the globe; a transient null while one site is replaced by
+      // another (siteId not empty) must not fly away
+      if (siteIdRef.current === '' && drawnSite.current !== null) {
+        flyToWorld(map);
+        drawnSite.current = null;
       }
       return;
     }
     const draw = () => {
       void showSite(map, manifest, `${import.meta.env.BASE_URL}data/sites/${manifest.site_id}/polygons.geojson`);
     };
-    if (map.isStyleLoaded()) draw();
-    else map.once('style.load', draw);
+    drawnSite.current = manifest.site_id;
     flyToSite(map, manifest);
-    map.on('style.load', draw);
-    return () => {
-      map.off('style.load', draw);
-    };
+    return onStyleReady(map, draw);
   }, [map, manifest]);
 
   // the frame overlay follows the timeline (and survives a style rebuild)
@@ -126,16 +133,22 @@ export function Observatory() {
       setFrameOpacity(map, opacity);
     };
     let cancelled = false;
+    let applied = false;
+    const applyOnce = () => {
+      applied = true;
+      apply();
+    };
     void preload(url).then(() => {
-      if (cancelled) return;
-      if (map.isStyleLoaded()) apply();
-      else map.once('style.load', apply);
+      if (cancelled || applied) return;
+      if (styleReady(map)) applyOnce();
     });
     const i = manifest.frames.indexOf(frame);
     for (const j of [i + 1, i - 1, i + 2]) {
       const f = manifest.frames[j];
       if (f) void preload(frameUrl(manifest, f, mode));
     }
+    // a style swap after the preload re-applies; the first apply waits for the preload so the frame
+    // does not flash in before its image is decoded
     map.on('style.load', apply);
     return () => {
       cancelled = true;
@@ -153,7 +166,7 @@ export function Observatory() {
     if (!map) return;
     const url = manifest && frame && showMask ? maskUrl(manifest, frame, seriesMethod) : null;
     if (!url || !manifest) {
-      if (map.isStyleLoaded()) removeMaskLayer(map);
+      if (styleReady(map)) removeMaskLayer(map);
       return;
     }
     let cancelled = false;
@@ -164,14 +177,10 @@ export function Observatory() {
         })
         .catch((e: unknown) => console.warn('[rajo] mask overlay failed', url, e));
     };
-    // isStyleLoaded() is false while any source still loads; 'idle' fires once loading settles,
-    // whereas 'style.load' only fires on a style swap and would leave the overlay waiting forever
-    if (map.isStyleLoaded()) apply();
-    else map.once('idle', apply);
-    map.on('style.load', apply);
+    const off = onStyleReady(map, apply);
     return () => {
       cancelled = true;
-      map.off('style.load', apply);
+      off();
     };
   }, [map, manifest, frame, showMask, seriesMethod]);
 
@@ -186,37 +195,25 @@ export function Observatory() {
       if (manifest?.dem?.status === 'ok') ensureCopSource(map, manifest);
       else removeCop(map);
     };
-    if (map.isStyleLoaded()) apply();
-    else map.once('idle', apply);
-    map.on('style.load', apply);
+    const off = onStyleReady(map, apply);
     return () => {
-      map.off('style.load', apply);
-      if (map.isStyleLoaded()) removeCop(map);
+      off();
+      if (styleReady(map)) removeCop(map);
     };
   }, [map, manifest]);
   useEffect(() => {
     if (!map || !terrain) return;
     const apply = () => setEpoch(map, relief.epoch, relief.exaggeration);
-    if (map.isStyleLoaded()) apply();
-    else map.once('idle', apply);
-    map.on('style.load', apply);
-    return () => {
-      map.off('style.load', apply);
-    };
+    return onStyleReady(map, apply);
   }, [map, terrain, manifest, relief.epoch, relief.exaggeration]);
   useEffect(() => {
     if (!map) return;
     if (!manifest?.dem?.delta_png || !relief.showDelta) {
-      if (map.isStyleLoaded()) hideDelta(map);
+      if (styleReady(map)) hideDelta(map);
       return;
     }
     const apply = () => showDelta(map, manifest, relief.deltaOpacity);
-    if (map.isStyleLoaded()) apply();
-    else map.once('idle', apply);
-    map.on('style.load', apply);
-    return () => {
-      map.off('style.load', apply);
-    };
+    return onStyleReady(map, apply);
   }, [map, manifest, relief.showDelta, relief.deltaOpacity]);
   useEffect(() => {
     if (!map || !relief.picking) return;
@@ -231,12 +228,7 @@ export function Observatory() {
   useEffect(() => {
     if (!map) return;
     const apply = () => (relief.points.length ? showProfileLine(map, relief.points) : hideProfileLine(map));
-    if (map.isStyleLoaded()) apply();
-    else map.once('idle', apply);
-    map.on('style.load', apply);
-    return () => {
-      map.off('style.load', apply);
-    };
+    return onStyleReady(map, apply);
   }, [map, relief.points]);
   useEffect(() => {
     if (!manifest || relief.points.length !== 2) return;
@@ -262,23 +254,16 @@ export function Observatory() {
   useEffect(() => {
     if (!map) return;
     if (!liveLayer || !liveGrid) {
-      if (map.isStyleLoaded()) hideLive(map);
+      if (styleReady(map)) hideLive(map);
       return;
     }
     const rgba = liveLayer.kind === 'composite' ? liveLayer.rgba : liveLayer.result.rgba;
     const apply = () => void showLive(map, liveGrid, rgba, liveOpacity);
-    // isStyleLoaded() is false while any source still loads; 'idle' fires once loading settles,
-    // whereas 'style.load' only fires on a style swap and would leave the overlay waiting forever
-    if (map.isStyleLoaded()) apply();
-    else map.once('idle', apply);
-    map.on('style.load', apply);
-    return () => {
-      map.off('style.load', apply);
-    };
+    return onStyleReady(map, apply);
   }, [map, liveLayer, liveGrid, liveOpacity]);
 
   useEffect(() => {
-    if (map && map.isStyleLoaded()) setLiveOpacity(map, liveOpacity);
+    if (map && styleReady(map)) setLiveOpacity(map, liveOpacity);
   }, [map, liveOpacity]);
 
   const onFrame = useCallback((f: Frame) => setFrame(f), []);
@@ -316,7 +301,7 @@ export function Observatory() {
 
   return (
     <section className={`obs${manifest ? ' with-timeline' : ''}`} aria-label={t('observatory.title')}>
-      <MapView onMap={onMap} onCursor={setCursor} onStatus={setLoading} terrain={terrain} labels={labels} />
+      <MapView onMap={onMap} onCursor={setCursor} onStatus={setStatus} terrain={terrain} labels={labels} />
 
       <div className="overlay rail">
         <div className="panel">
@@ -432,6 +417,12 @@ export function Observatory() {
       <div className="overlay mapstatus" data-testid="map-status">
         <div className="panel">
           {loading ? t('map.status.tiles') : t('map.status.ready')}
+          {stalledHosts.length > 0 && (
+            <>
+              <span className="dot"> &middot; </span>
+              <span data-testid="map-stalled">{t('map.status.stalled', { hosts: stalledHosts.join(', ') })}</span>
+            </>
+          )}
           {cursor && (
             <>
               <span className="dot"> &middot; </span>

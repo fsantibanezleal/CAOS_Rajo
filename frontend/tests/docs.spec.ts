@@ -113,7 +113,7 @@ test('the Atlas prints the copper production strip from the USGS and Cochilco ta
   expect(chileSites).toBeGreaterThanOrEqual(10);
   await expect(strip.locator('tbody tr').last()).toContainText('23,000');
   await page.getByTestId('lang-btn').click();
-  await expect(strip.locator('thead')).toContainText('Pais');
-  await expect(page.locator('#copper-by-country')).toContainText('Produccion de cobre de mina por pais');
+  await expect(strip.locator('thead')).toContainText('País');
+  await expect(page.locator('#copper-by-country')).toContainText('Producción de cobre de mina por país');
   expectNoErrors(errors);
 });

@@ -28,10 +28,10 @@ test('the series drawer charts the mined-area series, its breaks and the yearly 
   await gotoRajo(page, `/?site=${siteWithSeries}`);
   await page.waitForSelector('[data-testid="map"] canvas', { timeout: 60_000 });
   await expect(page.getByTestId('timeline')).toBeVisible({ timeout: 30_000 });
-  // the map hands itself to the page on its 'load' event, which waits for the first basemap tiles;
+  // the map is handed to the page on its first style.load, before any tile arrives;
   // every overlay hangs off that handle, so the gate waits for it (WAIT for state, never assume it)
   await expect
-    .poll(() => page.evaluate(() => !!(window as unknown as { __rajoMap?: unknown }).__rajoMap), { message: 'the map exposes __rajoMap after load', timeout: 90_000 })
+    .poll(() => page.evaluate(() => !!(window as unknown as { __rajoMap?: unknown }).__rajoMap), { message: 'the map exposes __rajoMap once the style is in place', timeout: 90_000 })
     .toBe(true);
   await expect(page.getByTestId('series-btn')).toBeVisible();
   await page.getByTestId('series-btn').click();

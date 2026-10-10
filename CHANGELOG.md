@@ -24,6 +24,10 @@ The manifest (`frontend/package.json`) carries the semver form with zeros droppe
 - New gate `frontend/tests/stall.spec.ts` holds every imagery request open and checks the map handle,
   the stall readout, the site overlays, the relief source swap and the World view camera. It failed
   against 0.02.007.
+- Two gates were wrong on their own. The Atlas gate still expected the ASCII Spanish "Pais" that
+  0.02.004 corrected to "País". The shared error collector counted Chromium's "Failed to load
+  resource: net::ERR_..." lines for a tile host that never connects as app errors; it now reports
+  them, without counting, when the message location is a third-party tile host.
 
 ## [0.02.007] - 2026-09-08
 
